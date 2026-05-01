@@ -111,6 +111,7 @@ The first live implementation now uses a multi-file data layer:
 - `executive.json` = headline management KPIs
 - `business-truth.json` = finance, cash, orders, customer sample
 - `marketing-truth.json` = platform/channel truth and campaign layer
+- `customer-truth.json` = repeat-customer concentration and customer readiness layer
 - `measurement.json` = observed GA4 and warning layer
 - `audit-workspace.json` = campaign audit dataset
 - `product-stage.json` = delivery stage and next steps

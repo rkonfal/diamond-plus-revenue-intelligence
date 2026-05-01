@@ -29,6 +29,7 @@ def main():
             'executive': 'executive.json',
             'businessTruth': 'business-truth.json',
             'marketingTruth': 'marketing-truth.json',
+            'customerTruth': 'customer-truth.json',
             'measurement': 'measurement.json',
             'auditWorkspace': 'audit-workspace.json',
             'productStage': 'product-stage.json',
@@ -39,6 +40,7 @@ def main():
     write_json(OUTPUT_DIR / 'executive.json', data_layer['executive'])
     write_json(OUTPUT_DIR / 'business-truth.json', data_layer['business-truth'])
     write_json(OUTPUT_DIR / 'marketing-truth.json', data_layer['marketing-truth'])
+    write_json(OUTPUT_DIR / 'customer-truth.json', data_layer['customer-truth'])
     write_json(OUTPUT_DIR / 'measurement.json', data_layer['measurement'])
     write_json(OUTPUT_DIR / 'audit-workspace.json', data_layer['audit-workspace'])
     write_json(OUTPUT_DIR / 'product-stage.json', data_layer['product-stage'])
@@ -50,6 +52,7 @@ def main():
         'executive': data_layer['executive'],
         'businessTruth': data_layer['business-truth'],
         'marketingTruth': data_layer['marketing-truth'],
+        'customerTruth': data_layer['customer-truth'],
         'measurement': data_layer['measurement'],
         'auditWorkspace': data_layer['audit-workspace'],
         'productStage': data_layer['product-stage'],

@@ -64,6 +64,7 @@ Generated files:
 - `data/executive.json`
 - `data/business-truth.json`
 - `data/marketing-truth.json`
+- `data/customer-truth.json`
 - `data/measurement.json`
 - `data/audit-workspace.json`
 - `data/product-stage.json`
@@ -74,4 +75,4 @@ Build command:
 ## Current status
 
 Project initialized on 2026-05-01 as a separate repository to keep it isolated from existing reporting and one-off audits.
-It now includes a first production-like data layer foundation for executive, business-truth, marketing-truth, measurement, and audit views.
+It now includes a first production-like data layer foundation for executive, business-truth, marketing-truth, customer-truth, measurement, and audit views.

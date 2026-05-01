@@ -34,8 +34,8 @@
       "reason": "Meta vs GA4 gap, high unattributed traffic, mixed acquisition logic, and incomplete customer classification."
     },
     "newVsReturning": {
-      "status": "foundation_ready",
-      "label": "Backend customer classification still needs a full historical customer fact table."
+      "status": "proxy_only",
+      "label": "Repeat customer base is clearly material, but true new-vs-returning revenue still requires full-customer order history."
     }
   },
   "businessTruth": {
@@ -348,6 +348,40 @@
       "problematicOrders": 3,
       "czOrders": 322,
       "skOrders": 27
+    },
+    "orderQuality": {
+      "orders": 351,
+      "cancelledOrders": 2,
+      "problematicOrders": 3,
+      "cancelledRatePct": 0.57,
+      "problematicRatePct": 0.85,
+      "estimatedNetRevenueAfterCancellations": 578113.78,
+      "qualityLabel": "healthy"
+    },
+    "contributionTruth": {
+      "previousMonth": {
+        "revenue": 13272249.15,
+        "grossMargin": 3781304.43,
+        "afterMarketing": 3452893.29,
+        "operatingMargin": 2914659.28,
+        "profit": 2513428.21,
+        "afterMarketingPct": 26.02,
+        "operatingMarginPct": 21.96,
+        "paidMediaSpend": 356428.23
+      },
+      "latestOrderPulse": {
+        "orders": 351,
+        "cancelledOrders": 2,
+        "problematicOrders": 3,
+        "cancelledRatePct": 0.57,
+        "problematicRatePct": 0.85,
+        "estimatedNetRevenueAfterCancellations": 578113.78,
+        "qualityLabel": "healthy"
+      },
+      "nettoContributionReadiness": {
+        "status": "foundation_ready",
+        "label": "Finance-level contribution is live. Order-level netto contribution still needs returns, refunds, and product margin enrichment."
+      }
     },
     "topCustomersSample": [
       {
@@ -9182,6 +9216,182 @@
       }
     ]
   },
+  "customerTruth": {
+    "readiness": {
+      "status": "partial",
+      "label": "Customer fact is available as a high-value repeat-customer layer, not yet as a full customer universe.",
+      "nextUnlock": "Full order-history export with first confirmed purchase date per customer."
+    },
+    "coverage": {
+      "customersCount": 34501,
+      "ordersProcessed": 136013,
+      "top50RevenueSharePctOfYtd": 9.07,
+      "top10RevenueSharePctOfYtd": 4.81,
+      "top50OrdersSharePctOfProcessed": 2.02
+    },
+    "repeatSignals": {
+      "heavyRepeatCustomersInTop50": 44,
+      "top50AverageOrders": 54.84,
+      "top50AverageOrderValue": 5123.27
+    },
+    "estimatedNewVsReturning": {
+      "status": "proxy_only",
+      "returningBaseStrength": "high",
+      "label": "Repeat customer base is clearly material, but true new-vs-returning revenue still requires full-customer order history."
+    },
+    "topCustomers": [
+      {
+        "customerKey": "fallback:maloobchodní prodej",
+        "label": "Maloobchodní prodej",
+        "email": "",
+        "firm": "",
+        "person": "Maloobchodní prodej",
+        "city": "",
+        "ico": "",
+        "orders": 714,
+        "revenueWithVat": 1462299.0,
+        "lastOrderAt": "2026-04-28T18:15:51+02:00",
+        "rank": 1,
+        "averageOrderValue": 2048.04,
+        "segment": "whale"
+      },
+      {
+        "customerKey": "ico:05551323",
+        "label": "FAKAR s.r.o. (Iveta Farmačková)",
+        "email": "info@energieprirody.cz",
+        "firm": "FAKAR s.r.o.",
+        "person": "Iveta Farmačková",
+        "city": "Brno 2",
+        "ico": "05551323",
+        "orders": 175,
+        "revenueWithVat": 550786.0,
+        "lastOrderAt": "2026-04-29T08:33:07+02:00",
+        "rank": 2,
+        "averageOrderValue": 3147.35,
+        "segment": "whale"
+      },
+      {
+        "customerKey": "email:adamcechner@gmail.com",
+        "label": "Adam Cechner PRODEJ",
+        "email": "adamcechner@gmail.com",
+        "firm": "",
+        "person": "Adam Cechner PRODEJ",
+        "city": "",
+        "ico": "",
+        "orders": 118,
+        "revenueWithVat": 315670.0,
+        "lastOrderAt": "2026-04-28T18:37:02+02:00",
+        "rank": 3,
+        "averageOrderValue": 2675.17,
+        "segment": "whale"
+      },
+      {
+        "customerKey": "ico:63933357",
+        "label": "Vendula Scheichlová (Vendula Scheichlová)",
+        "email": "mgr.vendulascheichlova@seznam.cz",
+        "firm": "Vendula Scheichlová",
+        "person": "Vendula Scheichlová",
+        "city": "Litvínovice",
+        "ico": "63933357",
+        "orders": 66,
+        "revenueWithVat": 217727.0,
+        "lastOrderAt": "2026-04-19T22:31:49+02:00",
+        "rank": 4,
+        "averageOrderValue": 3298.89,
+        "segment": "core_repeat"
+      },
+      {
+        "customerKey": "ico:07952759",
+        "label": "KidPro Toys s.r.o. (Eva Domorádová)",
+        "email": "domoradova@kidpro.cz",
+        "firm": "KidPro Toys s.r.o.",
+        "person": "Eva Domorádová",
+        "city": "Praha",
+        "ico": "07952759",
+        "orders": 75,
+        "revenueWithVat": 176137.0,
+        "lastOrderAt": "2026-04-27T07:34:54+02:00",
+        "rank": 5,
+        "averageOrderValue": 2348.49,
+        "segment": "core_repeat"
+      },
+      {
+        "customerKey": "email:ivanakunes@seznam.cz",
+        "label": "Ivana Kunešová",
+        "email": "ivanakunes@seznam.cz",
+        "firm": "",
+        "person": "Ivana Kunešová",
+        "city": "Horažďovice",
+        "ico": "",
+        "orders": 156,
+        "revenueWithVat": 155016.55,
+        "lastOrderAt": "2026-04-28T15:05:36+02:00",
+        "rank": 6,
+        "averageOrderValue": 993.7,
+        "segment": "whale"
+      },
+      {
+        "customerKey": "email:nati.sz@email.cz",
+        "label": "Krystyna Kašubiaková",
+        "email": "nati.sz@email.cz",
+        "firm": "",
+        "person": "Krystyna Kašubiaková",
+        "city": "Třinec",
+        "ico": "",
+        "orders": 51,
+        "revenueWithVat": 144199.75,
+        "lastOrderAt": "2026-04-28T19:28:08+02:00",
+        "rank": 7,
+        "averageOrderValue": 2827.45,
+        "segment": "core_repeat"
+      },
+      {
+        "customerKey": "ico:25026569",
+        "label": "Merry Lynch (Jan Churan)",
+        "email": "rivox@volny.cz",
+        "firm": "Merry Lynch",
+        "person": "Jan Churan",
+        "city": "Ústí nad Labem 1",
+        "ico": "25026569",
+        "orders": 25,
+        "revenueWithVat": 138718.0,
+        "lastOrderAt": "2026-04-28T12:13:22+02:00",
+        "rank": 8,
+        "averageOrderValue": 5548.72,
+        "segment": "vip_repeat"
+      },
+      {
+        "customerKey": "email:danka.pokorna1@seznam.cz",
+        "label": "Dana Pokorná",
+        "email": "danka.pokorna1@seznam.cz",
+        "firm": "",
+        "person": "Dana Pokorná",
+        "city": "Budětsko",
+        "ico": "",
+        "orders": 40,
+        "revenueWithVat": 127589.0,
+        "lastOrderAt": "2026-04-28T11:52:55+02:00",
+        "rank": 9,
+        "averageOrderValue": 3189.72,
+        "segment": "core_repeat"
+      },
+      {
+        "customerKey": "ico:44797320",
+        "label": "SITEL, spol. s r.o. (Magda Doudová)",
+        "email": "mdoudova@seznam.cz",
+        "firm": "SITEL, spol. s r.o.",
+        "person": "Magda Doudová",
+        "city": "Praha 10 - Michle",
+        "ico": "44797320",
+        "orders": 1,
+        "revenueWithVat": 122780.0,
+        "lastOrderAt": "2025-11-26T11:57:47+01:00",
+        "rank": 10,
+        "averageOrderValue": 122780.0,
+        "segment": "vip_repeat"
+      }
+    ]
+  },
   "measurement": {
     "ga4Channels": [
       {
@@ -9707,17 +9917,18 @@
     ]
   },
   "productStage": {
-    "name": "Stage 1, live prototype with data layer foundation",
+    "name": "Stage 2, business truth and customer layer foundation",
     "done": [
       "Separate repo and product architecture",
       "Static-first live app scaffold",
       "Multi-file data layer fed from real reporting sources",
       "Backend truth blocks from finance and order pulse",
+      "Customer fact proxy layer with repeat-customer concentration signals",
       "Campaign audit workspace foundation"
     ],
     "next": [
-      "Full customer fact model for new vs returning",
-      "Refund / cancellation adjusted contribution logic",
+      "Full-customer order history for real new vs returning revenue",
+      "Refund / return / cancellation adjusted contribution logic per order",
       "Creative-level drilldown and operator workflows",
       "Anomaly detection and alert system"
     ]

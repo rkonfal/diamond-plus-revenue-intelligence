@@ -31,6 +31,7 @@ function renderHome(data) {
   const ex = data.executive;
   const biz = data.businessTruth;
   const mt = data.marketingTruth;
+  const customer = data.customerTruth;
   const ga4 = top(data.measurement.ga4Channels, 8);
 
   document.getElementById('app').innerHTML = `
@@ -51,6 +52,7 @@ function renderHome(data) {
         <div class="metric"><div class="k">After-marketing result</div><div class="v">${money(ex.grossMarginAfterMarketing.value)}</div><div class="sub">Finance after marketing, previous full month</div></div>
         <div class="metric"><div class="k">Net cash position</div><div class="v">${money(ex.netCashPosition.value)}</div><div class="sub">Current finance truth layer</div></div>
         <div class="metric"><div class="k">Measurement confidence</div><div class="v bad">${ex.measurementConfidence.label}</div><div class="sub">${ex.measurementConfidence.reason}</div></div>
+        <div class="metric"><div class="k">Returning base signal</div><div class="v">${customer.estimatedNewVsReturning.returningBaseStrength}</div><div class="sub">${customer.estimatedNewVsReturning.label}</div></div>
       </div>
     </section>
 
@@ -66,8 +68,9 @@ function renderHome(data) {
         <ul class="list">
           <li><strong>meta.json</strong> for generation state and focus period</li>
           <li><strong>executive.json</strong> for management KPI layer</li>
-          <li><strong>business-truth.json</strong> for finance, cash, order pulse, and customer base</li>
+          <li><strong>business-truth.json</strong> for finance, cash, order pulse, and contribution base</li>
           <li><strong>marketing-truth.json</strong> for platform and channel interpretation</li>
+          <li><strong>customer-truth.json</strong> for repeat-customer concentration and customer fact readiness</li>
           <li><strong>measurement.json</strong> for GA4 observations and warning layer</li>
           <li><strong>audit-workspace.json</strong> for campaign review workflows</li>
         </ul>
@@ -104,11 +107,12 @@ function renderHome(data) {
       </section>
       <section class="card">
         <h2>Customer truth layer</h2>
-        <p>${ex.newVsReturning.label}</p>
+        <p>${customer.readiness.label}</p>
         <ul class="list">
-          <li>Customer fact model is now an explicit next data-layer entity, not hidden future work.</li>
-          <li>We already expose top-customer behavior through the business-truth dataset.</li>
-          <li>The next unlock is first confirmed purchase date and return behavior per customer.</li>
+          <li>Top 10 customers represent <strong>${pct(customer.coverage.top10RevenueSharePctOfYtd)}</strong> of current YTD revenue.</li>
+          <li>Top 50 customers represent <strong>${pct(customer.coverage.top50RevenueSharePctOfYtd)}</strong> of current YTD revenue.</li>
+          <li>Heavy repeat customers in top 50: <strong>${num(customer.repeatSignals.heavyRepeatCustomersInTop50)}</strong>.</li>
+          <li>Next unlock: ${customer.readiness.nextUnlock}</li>
         </ul>
       </section>
     </div>
@@ -152,9 +156,12 @@ function renderHome(data) {
         </div>
       </section>
       <section class="card">
-        <h2>Measurement warnings</h2>
+        <h2>Contribution and quality warnings</h2>
         <ul class="list">
-          ${data.measurement.warnings.map(item => `<li>${item}</li>`).join('')}
+          <li>Previous month after-marketing contribution: <strong>${money(biz.contributionTruth.previousMonth.afterMarketing)}</strong> (${pct(biz.contributionTruth.previousMonth.afterMarketingPct)}).</li>
+          <li>Previous-day cancelled order rate: <strong>${pct(biz.orderQuality.cancelledRatePct)}</strong>.</li>
+          <li>Previous-day problematic order rate: <strong>${pct(biz.orderQuality.problematicRatePct)}</strong>.</li>
+          <li>${biz.contributionTruth.nettoContributionReadiness.label}</li>
         </ul>
       </section>
     </div>

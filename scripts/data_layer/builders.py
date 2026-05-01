@@ -1,6 +1,15 @@
 from __future__ import annotations
 
-from .transforms import build_channel_truth, build_top_campaigns, pct_change, pick_focus_month, round2
+from .transforms import (
+    build_channel_truth,
+    build_contribution_truth,
+    build_customer_fact,
+    build_order_quality,
+    build_top_campaigns,
+    pct_change,
+    pick_focus_month,
+    round2,
+)
 
 
 def build_data_layer(raw: dict) -> dict:
@@ -24,6 +33,9 @@ def build_data_layer(raw: dict) -> dict:
     previous_day_summary = prev_day['summary']
     finance_prev = finance['previousMonth']
     finance_current = finance['currentMonth']
+    customer_fact = build_customer_fact(top_customers, ytd)
+    order_quality = build_order_quality(previous_day_summary)
+    contribution_truth = build_contribution_truth(finance_prev, focus_spend, order_quality)
 
     meta_section = {
         'generatedAt': ga4.get('generatedAt'),
@@ -68,8 +80,8 @@ def build_data_layer(raw: dict) -> dict:
             'reason': 'Meta vs GA4 gap, high unattributed traffic, mixed acquisition logic, and incomplete customer classification.',
         },
         'newVsReturning': {
-            'status': 'foundation_ready',
-            'label': 'Backend customer classification still needs a full historical customer fact table.',
+            'status': customer_fact['estimatedNewVsReturning']['status'],
+            'label': customer_fact['estimatedNewVsReturning']['label'],
         },
     }
 
@@ -87,6 +99,8 @@ def build_data_layer(raw: dict) -> dict:
             'czOrders': previous_day_summary['byView']['cz']['orders'],
             'skOrders': previous_day_summary['byView']['sk']['orders'],
         },
+        'orderQuality': order_quality,
+        'contributionTruth': contribution_truth,
         'topCustomersSample': top_customers['top50'][:10],
     }
 
@@ -97,6 +111,8 @@ def build_data_layer(raw: dict) -> dict:
         'directSources': marketing['directSources'],
         'topCampaigns': top_campaigns,
     }
+
+    customer_truth = customer_fact
 
     measurement = {
         'ga4Channels': focus_channels,
@@ -122,17 +138,18 @@ def build_data_layer(raw: dict) -> dict:
     }
 
     product_stage = {
-        'name': 'Stage 1, live prototype with data layer foundation',
+        'name': 'Stage 2, business truth and customer layer foundation',
         'done': [
             'Separate repo and product architecture',
             'Static-first live app scaffold',
             'Multi-file data layer fed from real reporting sources',
             'Backend truth blocks from finance and order pulse',
+            'Customer fact proxy layer with repeat-customer concentration signals',
             'Campaign audit workspace foundation',
         ],
         'next': [
-            'Full customer fact model for new vs returning',
-            'Refund / cancellation adjusted contribution logic',
+            'Full-customer order history for real new vs returning revenue',
+            'Refund / return / cancellation adjusted contribution logic per order',
             'Creative-level drilldown and operator workflows',
             'Anomaly detection and alert system',
         ],
@@ -143,6 +160,7 @@ def build_data_layer(raw: dict) -> dict:
         'executive': executive,
         'business-truth': business_truth,
         'marketing-truth': marketing_truth,
+        'customer-truth': customer_truth,
         'measurement': measurement,
         'audit-workspace': audit_workspace,
         'product-stage': product_stage,
