@@ -1,0 +1,20 @@
+{
+  "status": "partial_but_operational",
+  "headline": "Final truth engine is operational at finance and channel-confidence level, but still partial at full customer-history level.",
+  "whatIsTrulyKnown": [
+    "Finance after marketing: 3452893.29 Kč.",
+    "Net cash position: 5810240.85 Kč.",
+    "Latest cancelled rate: 0.57 %.",
+    "Retention revenue proxy from Klaviyo previous month: 4577747.3 Kč."
+  ],
+  "whatIsEstimated": [
+    "Repeat customer base is clearly material, but true new-vs-returning revenue still requires full-customer order history.",
+    "Order-level netto contribution after returns and refunds is still estimated only at finance aggregate level.",
+    "Channel incrementality is still confidence-led, not fully modeled."
+  ],
+  "blockingMissingSources": [
+    "Full historical order export with customer key and final lifecycle status.",
+    "Returns / refunds dataset tied to order_id.",
+    "Order-level margin enrichment or product cost join."
+  ]
+}

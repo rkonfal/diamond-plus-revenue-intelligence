@@ -19,6 +19,7 @@ class SourceStore:
             'sklik': self.read_json('sklik_overview.json'),
             'finance': self.read_json('finance_overview.json'),
             'marketing': self.read_json('marketing_overview.json'),
+            'klaviyo': self.read_json('klaviyo_overview.json'),
             'portal': self.read_json('portal_summary.json'),
             'eshopYtd': self.read_json('eshop_ytd.json'),
             'previousDayOrders': self.read_json('wpj_orders_previous_day.json'),

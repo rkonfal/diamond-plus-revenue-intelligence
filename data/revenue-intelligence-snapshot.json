@@ -381,7 +381,9 @@
         "profit": 2513428.21,
         "afterMarketingPct": 26.02,
         "operatingMarginPct": 21.96,
-        "paidMediaSpend": 356428.23
+        "paidMediaSpend": 356428.23,
+        "retentionRevenueProxy": 4577747.3,
+        "retentionOrdersProxy": 2994
       },
       "latestOrderPulse": {
         "orders": 351,
@@ -575,6 +577,18 @@
         "notes": [
           "Needs validation against backend and GA4",
           "Role in the media mix is still unclear"
+        ]
+      },
+      {
+        "channel": "Klaviyo",
+        "spend": 0,
+        "reportedRevenue": 4577747.3,
+        "roas": null,
+        "trust": "medium",
+        "notes": [
+          "Retention / owned channel proxy",
+          "Strong signal for returning customer revenue",
+          "Should be separated from paid acquisition decisioning"
         ]
       }
     ],
@@ -9064,6 +9078,23 @@
           }
         ]
       }
+    },
+    "ownedRetention": {
+      "dateFrom": "2026-04-01",
+      "dateTo": "2026-04-30",
+      "emailAttributedRevenueCzk": 4577747.3,
+      "smsAttributedRevenueCzk": 0.0,
+      "emailAttributedOrders": 2994.0,
+      "smsAttributedOrders": 0.0,
+      "emailRecipients": 832800.0,
+      "smsRecipients": 0.0,
+      "emailClicks": 36926.0,
+      "smsClicks": 0.0,
+      "totalAttributedRevenueCzk": 4577747.3,
+      "totalAttributedOrders": 2994.0,
+      "totalRecipients": 832800.0,
+      "totalClicks": 36926.0,
+      "clickRate": 0.0443
     },
     "topCampaigns": [
       {
@@ -74299,6 +74330,26 @@
       "Introduce channel confidence scoring based on platform vs GA4 vs backend deltas.",
       "Tighten audience exclusions and tracking governance before trusting platform-reported growth.",
       "Use finance after-marketing and cash views as first-class management outputs, not side panels."
+    ]
+  },
+  "finalTruthEngine": {
+    "status": "partial_but_operational",
+    "headline": "Final truth engine is operational at finance and channel-confidence level, but still partial at full customer-history level.",
+    "whatIsTrulyKnown": [
+      "Finance after marketing: 3452893.29 Kč.",
+      "Net cash position: 5810240.85 Kč.",
+      "Latest cancelled rate: 0.57 %.",
+      "Retention revenue proxy from Klaviyo previous month: 4577747.3 Kč."
+    ],
+    "whatIsEstimated": [
+      "Repeat customer base is clearly material, but true new-vs-returning revenue still requires full-customer order history.",
+      "Order-level netto contribution after returns and refunds is still estimated only at finance aggregate level.",
+      "Channel incrementality is still confidence-led, not fully modeled."
+    ],
+    "blockingMissingSources": [
+      "Full historical order export with customer key and final lifecycle status.",
+      "Returns / refunds dataset tied to order_id.",
+      "Order-level margin enrichment or product cost join."
     ]
   },
   "roleViews": {

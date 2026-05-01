@@ -69,6 +69,25 @@ function renderHome(data) {
       </div>
     </section>
 
+    <section class="card">
+      <h2>Final truth engine status</h2>
+      <p><strong>${data.finalTruthEngine.headline}</strong></p>
+      <div class="cols-3">
+        <div>
+          <h3>Co víme jistě</h3>
+          <ul class="list">${data.finalTruthEngine.whatIsTrulyKnown.map(item => `<li>${item}</li>`).join('')}</ul>
+        </div>
+        <div>
+          <h3>Co je zatím odhad</h3>
+          <ul class="list">${data.finalTruthEngine.whatIsEstimated.map(item => `<li>${item}</li>`).join('')}</ul>
+        </div>
+        <div>
+          <h3>Co ještě chybí</h3>
+          <ul class="list">${data.finalTruthEngine.blockingMissingSources.map(item => `<li>${item}</li>`).join('')}</ul>
+        </div>
+      </div>
+    </section>
+
     <div class="cols-3">
       <section class="card">
         <h2>Co ten report říká</h2>

@@ -168,11 +168,13 @@ def build_order_quality(previous_day_summary: dict) -> dict:
     }
 
 
-def build_contribution_truth(finance_prev: dict, media_spend: float, order_quality: dict) -> dict:
+def build_contribution_truth(finance_prev: dict, media_spend: float, order_quality: dict, klaviyo_prev: dict | None = None) -> dict:
     revenue = round2(finance_prev.get('revenue'))
     after_marketing = round2(finance_prev.get('afterMarketing'))
     operating = round2(finance_prev.get('operatingMargin'))
     profit = round2(finance_prev.get('profit'))
+    retention_revenue = round2((klaviyo_prev or {}).get('totalAttributedRevenueCzk'))
+    retention_orders = int((klaviyo_prev or {}).get('totalAttributedOrders') or 0)
     return {
         'previousMonth': {
             'revenue': revenue,
@@ -183,6 +185,8 @@ def build_contribution_truth(finance_prev: dict, media_spend: float, order_quali
             'afterMarketingPct': round(after_marketing / revenue * 100, 2) if revenue else None,
             'operatingMarginPct': round(operating / revenue * 100, 2) if revenue else None,
             'paidMediaSpend': round2(media_spend),
+            'retentionRevenueProxy': retention_revenue,
+            'retentionOrdersProxy': retention_orders,
         },
         'latestOrderPulse': order_quality,
         'nettoContributionReadiness': {

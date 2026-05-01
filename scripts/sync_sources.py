@@ -12,6 +12,7 @@ FILES = [
     'sklik_overview.json',
     'finance_overview.json',
     'marketing_overview.json',
+    'klaviyo_overview.json',
     'portal_summary.json',
     'eshop_ytd.json',
     'wpj_orders_previous_day.json',

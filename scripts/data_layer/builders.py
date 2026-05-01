@@ -19,6 +19,7 @@ def build_data_layer(raw: dict) -> dict:
     sklik = raw['sklik']
     finance = raw['finance']
     marketing = raw['marketing']
+    klaviyo = raw['klaviyo']
     portal = raw['portal']
     ytd = raw['eshopYtd']
     prev_day = raw['previousDayOrders']
@@ -35,7 +36,7 @@ def build_data_layer(raw: dict) -> dict:
     finance_current = finance['currentMonth']
     customer_fact = build_customer_fact(top_customers, ytd)
     order_quality = build_order_quality(previous_day_summary)
-    contribution_truth = build_contribution_truth(finance_prev, focus_spend, order_quality)
+    contribution_truth = build_contribution_truth(finance_prev, focus_spend, order_quality, klaviyo.get('previousMonth'))
 
     meta_section = {
         'generatedAt': ga4.get('generatedAt'),
@@ -119,10 +120,22 @@ def build_data_layer(raw: dict) -> dict:
     }
 
     marketing_truth = {
-        'channels': channel_truth,
+        'channels': channel_truth + [{
+            'channel': 'Klaviyo',
+            'spend': 0,
+            'reportedRevenue': round2(klaviyo['previousMonth']['totalAttributedRevenueCzk']),
+            'roas': None,
+            'trust': 'medium',
+            'notes': [
+                'Retention / owned channel proxy',
+                'Strong signal for returning customer revenue',
+                'Should be separated from paid acquisition decisioning',
+            ],
+        }],
         'ga4Channels': focus_channels,
         'marketingOverviewPreviousMonth': marketing['previousMonth'],
         'directSources': marketing['directSources'],
+        'ownedRetention': klaviyo['previousMonth'],
         'topCampaigns': top_campaigns,
     }
 
@@ -158,6 +171,27 @@ def build_data_layer(raw: dict) -> dict:
             'Introduce channel confidence scoring based on platform vs GA4 vs backend deltas.',
             'Tighten audience exclusions and tracking governance before trusting platform-reported growth.',
             'Use finance after-marketing and cash views as first-class management outputs, not side panels.',
+        ],
+    }
+
+    final_truth_engine = {
+        'status': 'partial_but_operational',
+        'headline': 'Final truth engine is operational at finance and channel-confidence level, but still partial at full customer-history level.',
+        'whatIsTrulyKnown': [
+            f"Finance after marketing: {round2(finance_prev['afterMarketing'])} Kč.",
+            f"Net cash position: {round2(finance['cash']['netCashPosition'])} Kč.",
+            f"Latest cancelled rate: {order_quality['cancelledRatePct']} %.",
+            f"Retention revenue proxy from Klaviyo previous month: {round2(klaviyo['previousMonth']['totalAttributedRevenueCzk'])} Kč.",
+        ],
+        'whatIsEstimated': [
+            customer_fact['estimatedNewVsReturning']['label'],
+            'Order-level netto contribution after returns and refunds is still estimated only at finance aggregate level.',
+            'Channel incrementality is still confidence-led, not fully modeled.',
+        ],
+        'blockingMissingSources': [
+            'Full historical order export with customer key and final lifecycle status.',
+            'Returns / refunds dataset tied to order_id.',
+            'Order-level margin enrichment or product cost join.',
         ],
     }
 
@@ -247,6 +281,7 @@ def build_data_layer(raw: dict) -> dict:
         'order-fact': order_fact,
         'measurement': measurement,
         'audit-workspace': audit_workspace,
+        'final-truth-engine': final_truth_engine,
         'role-views': role_views,
         'roivenue-comparison': roivenue_comparison,
         'product-stage': product_stage,
