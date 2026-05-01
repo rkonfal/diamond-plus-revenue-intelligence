@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Diamond Plus Revenue Intelligence</title>
+  <style>
+    :root {
+      --bg: #0a1020;
+      --panel: #101935;
+      --panel2: #162347;
+      --text: #eef3ff;
+      --muted: #9fb0d8;
+      --line: #253563;
+      --accent: #7aa2ff;
+      --good: #37c58a;
+      --warn: #ffb648;
+      --bad: #ff6d6d;
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: Inter, system-ui, sans-serif; background: linear-gradient(180deg, #09101f, #0d1730); color: var(--text); }
+    .wrap { max-width: 1240px; margin: 0 auto; padding: 40px 20px 80px; }
+    .hero, .card { background: rgba(16,25,53,.9); border: 1px solid var(--line); border-radius: 22px; box-shadow: 0 14px 40px rgba(0,0,0,.25); }
+    .hero { padding: 28px; }
+    .card { padding: 22px; margin-top: 18px; }
+    h1,h2,h3 { margin: 0 0 12px; line-height: 1.1; }
+    h1 { font-size: 42px; }
+    h2 { font-size: 26px; margin-top: 4px; }
+    p { color: var(--muted); margin: 0 0 12px; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px,1fr)); gap: 14px; margin-top: 20px; }
+    .metric { background: var(--panel2); border: 1px solid var(--line); border-radius: 18px; padding: 16px; }
+    .metric .k { font-size: 13px; color: var(--muted); }
+    .metric .v { font-size: 28px; font-weight: 700; margin-top: 8px; }
+    .pill { display:inline-block; padding:6px 10px; border-radius:999px; font-size:12px; font-weight:700; background: rgba(122,162,255,.12); color: var(--accent); }
+    .two { display:grid; grid-template-columns: 1.3fr .9fr; gap: 18px; margin-top: 18px; }
+    .list { margin: 0; padding-left: 18px; color: var(--text); }
+    .list li { margin: 8px 0; }
+    .table { width: 100%; border-collapse: collapse; }
+    .table th, .table td { text-align:left; padding: 12px 8px; border-bottom: 1px solid var(--line); }
+    .muted { color: var(--muted); }
+    .good { color: var(--good); }
+    .warn { color: var(--warn); }
+    .bad { color: var(--bad); }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <section class="hero">
+      <div class="pill">Revenue Intelligence, first scaffold</div>
+      <h1>Diamond Plus Revenue Intelligence</h1>
+      <p>A decision-first revenue operating layer inspired by tools like Roivenue, but built around our own data reality, management needs, attribution skepticism, and channel control.</p>
+      <div class="grid">
+        <div class="metric"><div class="k">What this becomes</div><div class="v">Revenue OS</div></div>
+        <div class="metric"><div class="k">Primary promise</div><div class="v">One revenue truth</div></div>
+        <div class="metric"><div class="k">Critical distinction</div><div class="v">New vs returning</div></div>
+        <div class="metric"><div class="k">Management lens</div><div class="v">Action, not vanity</div></div>
+      </div>
+    </section>
+
+    <div class="two">
+      <section class="card">
+        <h2>Core screens</h2>
+        <ul class="list">
+          <li>Executive homepage with revenue pulse, spend pulse, confidence, and immediate actions.</li>
+          <li>Channel intelligence with spend, revenue, blended efficiency, new customer share, and trust deltas.</li>
+          <li>Acquisition truth page showing brand, remarketing, and retention contamination.</li>
+          <li>Campaign and creative audit workspace for specialists and agency control.</li>
+          <li>Measurement trust center comparing platform, GA4, and backend reality.</li>
+        </ul>
+      </section>
+      <section class="card">
+        <h2>Design principles</h2>
+        <ul class="list">
+          <li>No fake certainty.</li>
+          <li>Every number should know its source.</li>
+          <li>Business metrics before ad-platform vanity.</li>
+          <li>Warnings should be first-class UI elements.</li>
+          <li>Leadership view and operator view should live in one system.</li>
+        </ul>
+      </section>
+    </div>
+
+    <section class="card">
+      <h2>Example metric layer</h2>
+      <table class="table">
+        <thead>
+          <tr><th>Metric</th><th>Meaning</th><th>Truth level</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Blended ROAS</td><td>Total backend-confirmed revenue divided by total marketing spend.</td><td>Backend-confirmed</td></tr>
+          <tr><td>Platform revenue</td><td>Revenue claimed by ad platforms.</td><td>Platform-reported</td></tr>
+          <tr><td>Observed revenue</td><td>Revenue visible in GA4 and harmonized analytics.</td><td>Analytics-observed</td></tr>
+          <tr><td>New customer revenue</td><td>Revenue from customers whose first purchase falls within the selected period.</td><td>Business-classified</td></tr>
+          <tr><td>Measurement confidence</td><td>Confidence label based on tagging quality, mapping, and source deltas.</td><td>Modeled / diagnostic</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="card">
+      <h2>Immediate next build steps</h2>
+      <ol class="list">
+        <li>Confirm frontend stack and app structure.</li>
+        <li>Define source contracts for marketing, analytics, and backend orders.</li>
+        <li>Create first high-fidelity homepage inspired by premium revenue-intelligence UX.</li>
+        <li>Connect first live source bundle and render real channel blocks.</li>
+        <li>Add measurement-confidence and contamination-warning system from day one.</li>
+      </ol>
+    </section>
+  </div>
+</body>
+</html>
