@@ -8,8 +8,8 @@ from pathlib import Path
 from data_layer import build_data_layer
 from data_layer.sources import SourceStore
 
-ROOT = Path('/Users/rudolfkonfal/.openclaw/workspace/diamond-plus-revenue-intelligence')
-DEFAULT_LOCAL_SOURCE = Path('/Users/rudolfkonfal/.openclaw/workspace/reporting-v2/data/current')
+ROOT = Path(__file__).resolve().parent.parent
+DEFAULT_LOCAL_SOURCE = ROOT.parent / 'reporting-v2' / 'data' / 'current'
 DEFAULT_SYNCED_SOURCE = ROOT / 'source' / 'current'
 OUTPUT_DIR = ROOT / 'data'
 

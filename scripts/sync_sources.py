@@ -19,7 +19,7 @@ FILES = [
 ]
 
 DEFAULT_BASE = 'https://raw.githubusercontent.com/rkonfal/diamond-plus-reporting-preview/main/data/current'
-ROOT = Path('/Users/rudolfkonfal/.openclaw/workspace/diamond-plus-revenue-intelligence')
+ROOT = Path(__file__).resolve().parent.parent
 TARGET = ROOT / 'source' / 'current'
 
 
