@@ -101,3 +101,23 @@ Example inputs:
 
 ## Output principle
 The UI should never flatten all truth levels into one fake certainty number.
+
+## Current implementation
+
+The first live implementation now uses a multi-file data layer:
+
+- `manifest.json` = routing and dataset registry
+- `meta.json` = generation metadata and focus period
+- `executive.json` = headline management KPIs
+- `business-truth.json` = finance, cash, orders, customer sample
+- `marketing-truth.json` = platform/channel truth and campaign layer
+- `measurement.json` = observed GA4 and warning layer
+- `audit-workspace.json` = campaign audit dataset
+- `product-stage.json` = delivery stage and next steps
+
+Build flow:
+1. source snapshots are read from `reporting-v2/data/current`
+2. `scripts/data_layer/sources.py` loads raw source files
+3. `scripts/data_layer/transforms.py` handles shared transformations
+4. `scripts/data_layer/builders.py` builds domain datasets
+5. `scripts/build_snapshot.py` writes the final published data layer

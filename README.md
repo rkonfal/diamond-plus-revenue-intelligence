@@ -49,10 +49,29 @@ This project should answer:
 ## Repo structure
 
 - `docs/` product, architecture, roadmap, metric definitions
-- `app/` future dashboard app
-- `data-contracts/` source mappings and schemas
-- `notes/` working notes and research
+- `assets/` frontend UI and browser-side data layer loader
+- `data/` generated datasets for the live prototype
+- `scripts/` build pipeline for the data layer
+- `app/` legacy early scaffold
+
+## Data layer
+
+The prototype now has a real multi-file data layer instead of one flat payload.
+
+Generated files:
+- `data/manifest.json`
+- `data/meta.json`
+- `data/executive.json`
+- `data/business-truth.json`
+- `data/marketing-truth.json`
+- `data/measurement.json`
+- `data/audit-workspace.json`
+- `data/product-stage.json`
+
+Build command:
+- `python3 scripts/build_snapshot.py`
 
 ## Current status
 
 Project initialized on 2026-05-01 as a separate repository to keep it isolated from existing reporting and one-off audits.
+It now includes a first production-like data layer foundation for executive, business-truth, marketing-truth, measurement, and audit views.

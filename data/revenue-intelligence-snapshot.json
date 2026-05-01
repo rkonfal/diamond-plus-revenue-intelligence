@@ -62,35 +62,282 @@
     },
     "financeCurrentMonth": {
       "label": "5/2026",
-      "revenue": 36766.05,
-      "cogsAndFees": 28859.65,
+      "revenue": 40010.61,
+      "cogsAndFees": 32330.86,
       "logistics": 0.0,
       "marketing": 0.0,
       "opex": 15436.0,
       "depreciation": 385502.0,
       "other": 0.0,
-      "grossMargin": 7906.4,
-      "afterLogistics": 7906.4,
-      "afterMarketing": 7906.4,
-      "operatingMargin": -7529.6,
-      "ebit": -393031.6,
-      "profit": -393031.6,
-      "grossMarginPct": 21.5,
+      "grossMargin": 7679.75,
+      "afterLogistics": 7679.75,
+      "afterMarketing": 7679.75,
+      "operatingMargin": -7756.25,
+      "ebit": -393258.25,
+      "profit": -393258.25,
+      "grossMarginPct": 19.2,
       "marketingPct": 0.0,
       "logisticsPct": 0.0,
-      "operatingMarginPct": -20.5,
-      "profitPct": -1069.0
+      "operatingMarginPct": -19.4,
+      "profitPct": -982.9
+    },
+    "cash": {
+      "cashOnAccounts": 6004556.02,
+      "unpaidInvoices": 194315.17,
+      "netCashPosition": 5810240.85,
+      "overdueInvoicesCount": 0,
+      "overdueInvoicesAmount": 0.0,
+      "largestPayables": [
+        {
+          "code": "PF0508/2026",
+          "vendor": "Zásilkovna s.r.o.",
+          "dueDate": "04.05.2026",
+          "amountTotal": 67383.86,
+          "amountDue": 67383.86,
+          "status": "3 dní do splatnosti"
+        },
+        {
+          "code": "PF0518/2026",
+          "vendor": "SAVI servis s.r.o.",
+          "dueDate": "06.05.2026",
+          "amountTotal": 53240.0,
+          "amountDue": 53240.0,
+          "status": "5 dní do splatnosti"
+        },
+        {
+          "code": "PF0507/2026",
+          "vendor": "AGRO CS a.s.",
+          "dueDate": "07.05.2026",
+          "amountTotal": 29532.09,
+          "amountDue": 29532.09,
+          "status": "6 dní do splatnosti"
+        },
+        {
+          "code": "PF0520/2026",
+          "vendor": "Everesta, s.r.o.",
+          "dueDate": "11.05.2026",
+          "amountTotal": 21780.0,
+          "amountDue": 21780.0,
+          "status": "10 dní do splatnosti"
+        },
+        {
+          "code": "PF0528/2026",
+          "vendor": "Alma Career Czechia s.r.o.",
+          "dueDate": "12.05.2026",
+          "amountTotal": 12087.9,
+          "amountDue": 12087.9,
+          "status": "11 dní do splatnosti"
+        },
+        {
+          "code": "PF0529/2026",
+          "vendor": "AIRWEB, spol. s r.o.",
+          "dueDate": "14.05.2026",
+          "amountTotal": 2284.0,
+          "amountDue": 2284.0,
+          "status": "13 dní do splatnosti"
+        },
+        {
+          "code": "PF0534/2026",
+          "vendor": "Finanční úřad pro Ústecký kraj",
+          "dueDate": "01.06.2026",
+          "amountTotal": 2144.0,
+          "amountDue": 2144.0,
+          "status": "31 dní do splatnosti"
+        },
+        {
+          "code": "PF0535/2026",
+          "vendor": "Finanční úřad pro Plzeňský kraj",
+          "dueDate": "01.06.2026",
+          "amountTotal": 1951.0,
+          "amountDue": 1951.0,
+          "status": "31 dní do splatnosti"
+        }
+      ],
+      "cashAccountsSource": {
+        "status": "live",
+        "message": "Cash na účtech a pokladnách je počítán živě z ABRA obratové předvahy pro účty 221 a 211, ze CZK řádků a se započtením kladných zůstatků.",
+        "accounts": [
+          {
+            "accountCode": "221006",
+            "accountLabel": "221006: 2202503115/2010 FIO CZK",
+            "currency": "CZK: Česká koruna",
+            "balance": 1815234.07,
+            "includedBalance": 1815234.07
+          },
+          {
+            "accountCode": "221115",
+            "accountLabel": "221115: 131-3675980207/0100 KB CZK",
+            "currency": "CZK: Česká koruna",
+            "balance": 1562105.34,
+            "includedBalance": 1562105.34
+          },
+          {
+            "accountCode": "221001",
+            "accountLabel": "221001: 2901338673/2010 FIO CZK",
+            "currency": "CZK: Česká koruna",
+            "balance": 1480875.06,
+            "includedBalance": 1480875.06
+          },
+          {
+            "accountCode": "221111",
+            "accountLabel": "221111: 107-164902 Czk THEPAY",
+            "currency": "CZK: Česká koruna",
+            "balance": 543070.2,
+            "includedBalance": 543070.2
+          },
+          {
+            "accountCode": "221002",
+            "accountLabel": "221002: 131-1211280297/0100 KB EUR",
+            "currency": "CZK: Česká koruna",
+            "balance": 241816.32,
+            "includedBalance": 241816.32
+          },
+          {
+            "accountCode": "221112",
+            "accountLabel": "221112: 107-164902 EUR THEPAY",
+            "currency": "CZK: Česká koruna",
+            "balance": 121299.74,
+            "includedBalance": 121299.74
+          },
+          {
+            "accountCode": "221005",
+            "accountLabel": "221005: 2501338690/2010 FIO EUR",
+            "currency": "CZK: Česká koruna",
+            "balance": 100407.02,
+            "includedBalance": 100407.02
+          },
+          {
+            "accountCode": "221117",
+            "accountLabel": "221117: Česká spořitelna",
+            "currency": "CZK: Česká koruna",
+            "balance": 99497.24,
+            "includedBalance": 99497.24
+          },
+          {
+            "accountCode": "211000",
+            "accountLabel": "211000: Pokladna - Klinika Biorezonance",
+            "currency": "CZK: Česká koruna",
+            "balance": 29908.85,
+            "includedBalance": 29908.85
+          },
+          {
+            "accountCode": "221007",
+            "accountLabel": "221007: 2002503110/2010 FIO CZK",
+            "currency": "CZK: Česká koruna",
+            "balance": 4671.91,
+            "includedBalance": 4671.91
+          },
+          {
+            "accountCode": "211001",
+            "accountLabel": "211001: Pokladna Czk",
+            "currency": "CZK: Česká koruna",
+            "balance": 2426.6,
+            "includedBalance": 2426.6
+          },
+          {
+            "accountCode": "221116",
+            "accountLabel": "221116: Bankovní účty",
+            "currency": "CZK: Česká koruna",
+            "balance": 1880.57,
+            "includedBalance": 1880.57
+          },
+          {
+            "accountCode": "221004",
+            "accountLabel": "221004: 2601338698/2010 FIO CZK výplaty",
+            "currency": "CZK: Česká koruna",
+            "balance": 863.0,
+            "includedBalance": 863.0
+          },
+          {
+            "accountCode": "221113",
+            "accountLabel": "221113: 203-164902 Czk THEPAY klinika",
+            "currency": "CZK: Česká koruna",
+            "balance": 500.0,
+            "includedBalance": 500.0
+          },
+          {
+            "accountCode": "221008",
+            "accountLabel": "221008: 2901338702/2010 FIO CZK",
+            "currency": "CZK: Česká koruna",
+            "balance": 0.1,
+            "includedBalance": 0.1
+          },
+          {
+            "accountCode": "211001",
+            "accountLabel": "211001: Pokladna Czk",
+            "currency": "EUR: Euro",
+            "balance": -230.7,
+            "includedBalance": 0.0
+          },
+          {
+            "accountCode": "211002",
+            "accountLabel": "211002: Pokladna Eur",
+            "currency": "EUR: Euro",
+            "balance": -9.3,
+            "includedBalance": 0.0
+          },
+          {
+            "accountCode": "211002",
+            "accountLabel": "211002: Pokladna Eur",
+            "currency": "CZK: Česká koruna",
+            "balance": -231.66,
+            "includedBalance": 0.0
+          },
+          {
+            "accountCode": "221000",
+            "accountLabel": "221000: Bankovní účty",
+            "currency": "EUR: Euro",
+            "balance": -1057.49,
+            "includedBalance": 0.0
+          },
+          {
+            "accountCode": "221000",
+            "accountLabel": "221000: Bankovní účty",
+            "currency": "CZK: Česká koruna",
+            "balance": 0.0,
+            "includedBalance": 0.0
+          },
+          {
+            "accountCode": "221001",
+            "accountLabel": "221001: 2901338673/2010 FIO CZK",
+            "currency": "CHF: Švýcarský frank",
+            "balance": -217.02,
+            "includedBalance": 0.0
+          },
+          {
+            "accountCode": "221001",
+            "accountLabel": "221001: 2901338673/2010 FIO CZK",
+            "currency": "PLN: Polský zlotý",
+            "balance": -664.43,
+            "includedBalance": 0.0
+          },
+          {
+            "accountCode": "221001",
+            "accountLabel": "221001: 2901338673/2010 FIO CZK",
+            "currency": "EUR: Euro",
+            "balance": 8058.14,
+            "includedBalance": 0.0
+          },
+          {
+            "accountCode": "221001",
+            "accountLabel": "221001: 2901338673/2010 FIO CZK",
+            "currency": "USD: Americký dolar",
+            "balance": -24119.95,
+            "includedBalance": 0.0
+          }
+        ]
+      }
     },
     "eshopYtdTotals": {
       "previous": {
-        "count": 51655,
-        "revenueWithVat": 77592835.67,
+        "count": 51659,
+        "revenueWithVat": 77599142.15,
         "averageOrderValue": 1502.14
       },
       "current": {
-        "count": 43077,
-        "revenueWithVat": 70849284.84,
-        "averageOrderValue": 1644.71
+        "count": 43083,
+        "revenueWithVat": 70859997.86,
+        "averageOrderValue": 1644.73
       }
     },
     "previousDayOrders": {
@@ -9460,11 +9707,11 @@
     ]
   },
   "productStage": {
-    "name": "Stage 1, live prototype with backend truth foundation",
+    "name": "Stage 1, live prototype with data layer foundation",
     "done": [
       "Separate repo and product architecture",
       "Static-first live app scaffold",
-      "Live marketing and analytics snapshot",
+      "Multi-file data layer fed from real reporting sources",
       "Backend truth blocks from finance and order pulse",
       "Campaign audit workspace foundation"
     ],

@@ -1,8 +1,4 @@
-async function loadSnapshot() {
-  const res = await fetch('./data/revenue-intelligence-snapshot.json');
-  if (!res.ok) throw new Error('Failed to load snapshot');
-  return res.json();
-}
+import { loadDataLayer } from './data-layer.js';
 
 function money(value) {
   return new Intl.NumberFormat('cs-CZ', { maximumFractionDigits: 0 }).format(value || 0) + ' Kč';
@@ -36,13 +32,12 @@ function renderHome(data) {
   const biz = data.businessTruth;
   const mt = data.marketingTruth;
   const ga4 = top(data.measurement.ga4Channels, 8);
-  const payables = top((biz.financeCurrentMonth && data.businessTruth.financePreviousMonth ? [] : []), 0);
 
   document.getElementById('app').innerHTML = `
     <section class="hero">
-      <div class="pill">Stage 1, live prototype with backend truth foundation</div>
+      <div class="pill">${data.productStage.name}</div>
       <h1>Diamond Plus Revenue Intelligence</h1>
-      <p>A decision-first revenue operating layer inspired by Roivenue, but designed around our own business truth, measurement skepticism, and management needs. This version already combines marketing, analytics, finance, and order pulse into one operating view.</p>
+      <p>A decision-first revenue operating layer inspired by Roivenue, built on top of a real multi-file data layer. This version separates executive metrics, business truth, marketing truth, measurement signals, and audit workflows into distinct datasets instead of one monolithic payload.</p>
       <div class="nav">
         <a href="./index.html">Executive Home</a>
         <a href="./channels.html">Channel Intelligence</a>
@@ -67,13 +62,14 @@ function renderHome(data) {
         </ul>
       </section>
       <section class="card">
-        <h2>What this stage solved</h2>
+        <h2>Data layer structure</h2>
         <ul class="list">
-          ${data.productStage.done.map(item => `<li>${item}</li>`).join('')}
-        </ul>
-        <h3 style="margin-top:18px">What still comes next</h3>
-        <ul class="list">
-          ${data.productStage.next.map(item => `<li>${item}</li>`).join('')}
+          <li><strong>meta.json</strong> for generation state and focus period</li>
+          <li><strong>executive.json</strong> for management KPI layer</li>
+          <li><strong>business-truth.json</strong> for finance, cash, order pulse, and customer base</li>
+          <li><strong>marketing-truth.json</strong> for platform and channel interpretation</li>
+          <li><strong>measurement.json</strong> for GA4 observations and warning layer</li>
+          <li><strong>audit-workspace.json</strong> for campaign review workflows</li>
         </ul>
       </section>
     </div>
@@ -88,7 +84,6 @@ function renderHome(data) {
             <tr><td class="muted">After logistics</td><td>${money(biz.financePreviousMonth.afterLogistics)}</td></tr>
             <tr><td class="muted">After marketing</td><td>${money(biz.financePreviousMonth.afterMarketing)}</td></tr>
             <tr><td class="muted">Operating margin</td><td>${money(biz.financePreviousMonth.operatingMargin)}</td></tr>
-            <tr><td class="muted">Profit</td><td>${money(biz.financePreviousMonth.profit)}</td></tr>
             <tr><td class="muted">Profit %</td><td>${pct(biz.financePreviousMonth.profitPct)}</td></tr>
           </tbody>
         </table>
@@ -111,9 +106,9 @@ function renderHome(data) {
         <h2>Customer truth layer</h2>
         <p>${ex.newVsReturning.label}</p>
         <ul class="list">
-          <li>We already have high-value customer samples and order pulse.</li>
-          <li>The next unlock is a full customer fact table with first confirmed purchase date.</li>
-          <li>That will power true new vs returning revenue and acquisition truth.</li>
+          <li>Customer fact model is now an explicit next data-layer entity, not hidden future work.</li>
+          <li>We already expose top-customer behavior through the business-truth dataset.</li>
+          <li>The next unlock is first confirmed purchase date and return behavior per customer.</li>
         </ul>
       </section>
     </div>
@@ -181,7 +176,7 @@ function renderHome(data) {
           </tbody>
         </table>
       </div>
-      <p class="footer-note">Snapshot generated: ${data.generatedAt}</p>
+      <p class="footer-note">Data layer build: ${data.generatedAt}</p>
     </section>
   `;
 }
@@ -193,7 +188,7 @@ function renderChannels(data) {
     <section class="hero">
       <div class="pill">Channel intelligence</div>
       <h1>Where channel performance looks strong, and where it only looks strong.</h1>
-      <p>This view is built for channel reviews, agency control, and future drilldowns. Trust stays visible by default so platform-reported revenue never hides measurement weakness.</p>
+      <p>This view is fed from the dedicated marketing-truth and measurement datasets, so platform claims and observed analytics stay intentionally separate.</p>
       <div class="nav">
         <a href="./index.html">Executive Home</a>
         <a href="./channels.html">Channel Intelligence</a>
@@ -248,7 +243,7 @@ function renderAudit(data) {
     <section class="hero">
       <div class="pill">Audit workspace</div>
       <h1>Campaign and platform audit workspace for management and specialist reviews.</h1>
-      <p>This page is the operating bridge between leadership and channel teams. It shows where spend concentrates, where reported efficiency needs skepticism, and which changes deserve action first.</p>
+      <p>This page runs from the audit-workspace dataset, which means it can grow separately from the executive layer and later support campaign-level ownership flows.</p>
       <div class="nav">
         <a href="./index.html">Executive Home</a>
         <a href="./channels.html">Channel Intelligence</a>
@@ -286,11 +281,11 @@ function renderAudit(data) {
   `;
 }
 
-loadSnapshot().then(data => {
+loadDataLayer().then(data => {
   const page = document.body.dataset.page || 'home';
   if (page === 'channels') renderChannels(data);
   else if (page === 'audit') renderAudit(data);
   else renderHome(data);
 }).catch(err => {
-  document.getElementById('app').innerHTML = `<section class="card"><h2>Failed to load snapshot</h2><p>${err.message}</p></section>`;
+  document.getElementById('app').innerHTML = `<section class="card"><h2>Failed to load data layer</h2><p>${err.message}</p></section>`;
 });
