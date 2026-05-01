@@ -15,23 +15,23 @@
     },
     "mediaSpend": {
       "value": 356428.23,
-      "label": "Paid media spend across Meta, Google and Sklik"
+      "label": "Placený spend napříč Meta, Google a Sklik"
     },
     "blendedRoas": {
       "value": 34.69,
-      "label": "Pozorované tržby / paid media spend"
+      "label": "Pozorované tržby / placený spend"
     },
     "grossMarginAfterMarketing": {
       "value": 3452893.29,
-      "label": "Finance after marketing, previous full month"
+      "label": "Finance po marketingu, poslední plný měsíc"
     },
     "netCashPosition": {
       "value": 5810813.31,
-      "label": "Current net cash position"
+      "label": "Aktuální čistá hotovostní pozice"
     },
     "measurementConfidence": {
-      "label": "Medium",
-      "reason": "Measurement layer is now strong on finance and YTD customer truth, but still weaker on channel reconciliation and netto contribution."
+      "label": "Střední",
+      "reason": "Measurement vrstva je teď silná ve finance a YTD customer truth, ale pořád slabší v channel reconciliation a netto contribution."
     },
     "newVsReturning": {
       "status": "measured_ytd",
@@ -662,7 +662,7 @@
       "observationWindow": {
         "platform": "previous_full_month",
         "analytics": "last_7_days_or_current_focus_when_available",
-        "warning": "Platform and GA4 windows are directionally useful, not perfectly comparable yet."
+        "warning": "Platformní a GA4 okna jsou smysluplná směrově, ale zatím ne dokonale porovnatelná."
       },
       "rows": [
         {
@@ -678,8 +678,8 @@
           "ga4ObservedRoas": 0.41,
           "trustScore": 30,
           "trustLabel": "low",
-          "primaryIssue": "Platform claim is much stronger than observed paid social signal.",
-          "nextQuestion": "What is true prospecting contribution after exclusions and post-view inflation are removed?"
+          "primaryIssue": "Platformní claim je výrazně silnější než pozorovaný signál placených sociálních sítí.",
+          "nextQuestion": "Jaký je skutečný prospecting contribution po odečtení exclusions a post-view inflace?"
         },
         {
           "channel": "Klaviyo",
@@ -694,8 +694,8 @@
           "ga4ObservedRoas": null,
           "trustScore": 68,
           "trustLabel": "medium_high",
-          "primaryIssue": "Retention is clearly material, but still not reconciled to backend net revenue.",
-          "nextQuestion": "How much of repeat revenue is driven by lifecycle automation versus natural reorder behavior?"
+          "primaryIssue": "Retence je zjevně materiální, ale stále není reconciled vůči backend netto revenue.",
+          "nextQuestion": "Kolik repeat revenue řídí lifecycle automatizace a kolik přirozené reorder chování?"
         },
         {
           "channel": "Google Ads",
@@ -710,8 +710,8 @@
           "ga4ObservedRoas": 13.25,
           "trustScore": 62,
           "trustLabel": "medium",
-          "primaryIssue": "Search works, but brand and remarketing are mixed into the same success story.",
-          "nextQuestion": "How much non-brand and net-new demand is left after separating brand, PMAX, and remarketing?"
+          "primaryIssue": "Search funguje, ale brand a remarketing jsou smíchané do jednoho příběhu úspěchu.",
+          "nextQuestion": "Kolik non-brand a net-new poptávky zůstane po oddělení brandu, PMAX a remarketingu?"
         },
         {
           "channel": "Sklik",
@@ -726,8 +726,8 @@
           "ga4ObservedRoas": 147.22,
           "trustScore": 25,
           "trustLabel": "low",
-          "primaryIssue": "Sklik reports extreme ROAS, but backend validation layer is still missing.",
-          "nextQuestion": "Is Sklik incremental, or mostly capturing branded and already-warm demand?"
+          "primaryIssue": "Sklik reportuje extrémní ROAS, ale backend validační vrstva stále chybí.",
+          "nextQuestion": "Je Sklik skutečně inkrementální, nebo hlavně sbírá brand a už zahřátou poptávku?"
         }
       ],
       "ga4Unassigned": {
@@ -10034,8 +10034,8 @@
   "orderFact": {
     "readiness": {
       "status": "full_ytd_window",
-      "label": "Order fact now covers the full measured YTD order window.",
-      "nextUnlock": "Add final lifecycle state, returns, refunds, and order-level margin joins."
+      "label": "Order fact teď pokrývá celé měřené YTD order okno.",
+      "nextUnlock": "Doplnit finální lifecycle state, returns, refundy a order-level margin joiny."
     },
     "latestDay": [
       {
@@ -76312,19 +76312,19 @@
         "unassignedRevenueFocusWindow": 428618.69,
         "unassignedRevenueSharePctOfFocusObserved": 17.54
       },
-      "headline": "Measurement layer is now strong on finance and YTD customer truth, but still weaker on channel reconciliation and netto contribution.",
+      "headline": "Measurement vrstva je teď silná ve finance a YTD customer truth, ale pořád slabší v channel reconciliation a netto contribution.",
       "warnings": [
-        "Platform-attributed revenue sums above finance revenue, so channel claims cannot be read as additive truth.",
-        "GA4 still carries meaningful Unassigned revenue, which weakens channel decisioning.",
-        "Paid search bundle is directionally useful, but Google and Sklik are not yet separated in backend truth.",
-        "Netto truth still needs returns, refunds, and margin joins."
+        "Platformně atribuované revenue se sčítá nad finance revenue, takže channel claims nejdou číst jako aditivní truth.",
+        "GA4 pořád nese významné nepřiřazené revenue, což oslabuje rozhodování po kanálech.",
+        "Balík placeného vyhledávání je směrově užitečný, ale Google a Sklik zatím nejsou oddělené v backend truth.",
+        "Netto truth pořád potřebuje returns, refundy a margin joiny."
       ]
     },
     "warnings": [
-      "Platform-attributed revenue sums above finance revenue, so channel claims cannot be read as additive truth.",
-      "GA4 still carries meaningful Unassigned revenue, which weakens channel decisioning.",
-      "Paid search bundle is directionally useful, but Google and Sklik are not yet separated in backend truth.",
-      "Netto truth still needs returns, refunds, and margin joins."
+      "Platformně atribuované revenue se sčítá nad finance revenue, takže channel claims nejdou číst jako aditivní truth.",
+      "GA4 pořád nese významné nepřiřazené revenue, což oslabuje rozhodování po kanálech.",
+      "Balík placeného vyhledávání je směrově užitečný, ale Google a Sklik zatím nejsou oddělené v backend truth.",
+      "Netto truth pořád potřebuje returns, refundy a margin joiny."
     ],
     "nettoContribution": {
       "readiness": {
@@ -76573,22 +76573,22 @@
   },
   "finalTruthEngine": {
     "status": "operational_with_known_gaps",
-    "headline": "Final truth engine is now operational for finance truth, measured YTD customer truth, measured YTD order truth, and first decision-grade acquisition split. The main missing layer is netto contribution and backend channel reconciliation.",
+    "headline": "Final truth engine už běží pro finance truth, měřenou YTD customer truth, měřenou YTD order truth a první decision-grade akviziční split. Hlavní chybějící vrstva je netto contribution a backend channel reconciliation.",
     "whatIsTrulyKnown": [
-      "Finance after marketing: 3452893.29 Kč.",
+      "Finance po marketingu: 3452893.29 Kč.",
       "Čistá hotovostní pozice: 5810813.31 Kč.",
       "Returning customers generated 284096050.4 Kč vs 12479827.25 Kč from new customers in the measured YTD window.",
-      "Measured YTD orders processed: 187618"
+      "Zpracované objednávky v měřeném YTD: 187618"
     ],
     "whatIsEstimated": [
-      "Channel incrementality is still confidence-led, not fully modeled.",
-      "Platform channel truth is still non-additive and partially overlapping.",
+      "Inkrementalita kanálů je zatím řízená confidence vrstvou, ne plně domodelovaná.",
+      "Platform channel truth je stále neaditivní a částečně se překrývá.",
       "Netto contribution je teď odhadnutá z měřené order/customer truth a finančních poměrů. Refundy, vratky a produktová marže ještě nejsou přímo joinnuté."
     ],
     "blockingMissingSources": [
-      "Returns / refunds dataset tied to order_id.",
-      "Order-level margin enrichment or product cost join.",
-      "Backend validated channel attribution join on comparable time windows."
+      "Dataset returns a refundů navázaný na order_id.",
+      "Order-level margin enrichment nebo produktový cost join.",
+      "Backend validovaný channel attribution join na srovnatelných časových oknech."
     ]
   },
   "roleViews": {
@@ -76608,8 +76608,8 @@
     "marketing": {
       "headline": "Marketing view už umí oddělit platform claim od observed truth a zároveň rozdělit spend na acquisition, remarketing, brand, retention a harvesting.",
       "focus": [
-        "Platform claim is much stronger than observed paid social signal.",
-        "Retention is clearly material, but still not reconciled to backend net revenue.",
+        "Platformní claim je výrazně silnější než pozorovaný signál placených sociálních sítí.",
+        "Retence je zjevně materiální, ale stále není reconciled vůči backend netto revenue.",
         "Retention a repeat revenue už nesmí být zaměňované za akviziční výkon."
       ],
       "questions": [
@@ -76633,7 +76633,7 @@
     }
   },
   "roivenueComparison": {
-    "headline": "Roivenue comparison, where this product is already strong and where it is still behind.",
+    "headline": "Srovnání s Roivenue, kde je tenhle produkt už silný a kde ještě zaostává.",
     "rows": [
       {
         "area": "Vrstva business truth",
@@ -76679,13 +76679,13 @@
       }
     ],
     "summary": [
-      "Compared with Roivenue, this product is already better aligned to Diamond Plus internal reality.",
-      "It is now materially stronger on finance truth, customer truth, and management readability than before.",
-      "The remaining gap is mainly channel reconciliation, netto contribution, and incrementality depth."
+      "Oproti Roivenue je tenhle produkt už lépe sladěný s interní realitou Diamond Plus.",
+      "Proti dřívějšku je teď výrazně silnější ve finance truth, customer truth a management čitelnosti.",
+      "Zbývající mezera je hlavně v channel reconciliation, netto contribution a hloubce inkrementality."
     ]
   },
   "productStage": {
-    "name": "Stage 3, decision-grade revenue intelligence foundation",
+    "name": "Fáze 3, základ decision-grade revenue intelligence",
     "done": [
       "Separate repo and product architecture",
       "Static-first live app scaffold",
@@ -76710,7 +76710,7 @@
     "observationWindow": {
       "platform": "previous_full_month",
       "analytics": "last_7_days_or_current_focus_when_available",
-      "warning": "Platform and GA4 windows are directionally useful, not perfectly comparable yet."
+      "warning": "Platformní a GA4 okna jsou smysluplná směrově, ale zatím ne dokonale porovnatelná."
     },
     "rows": [
       {
@@ -76726,8 +76726,8 @@
         "ga4ObservedRoas": 0.41,
         "trustScore": 30,
         "trustLabel": "low",
-        "primaryIssue": "Platform claim is much stronger than observed paid social signal.",
-        "nextQuestion": "What is true prospecting contribution after exclusions and post-view inflation are removed?"
+        "primaryIssue": "Platformní claim je výrazně silnější než pozorovaný signál placených sociálních sítí.",
+        "nextQuestion": "Jaký je skutečný prospecting contribution po odečtení exclusions a post-view inflace?"
       },
       {
         "channel": "Klaviyo",
@@ -76742,8 +76742,8 @@
         "ga4ObservedRoas": null,
         "trustScore": 68,
         "trustLabel": "medium_high",
-        "primaryIssue": "Retention is clearly material, but still not reconciled to backend net revenue.",
-        "nextQuestion": "How much of repeat revenue is driven by lifecycle automation versus natural reorder behavior?"
+        "primaryIssue": "Retence je zjevně materiální, ale stále není reconciled vůči backend netto revenue.",
+        "nextQuestion": "Kolik repeat revenue řídí lifecycle automatizace a kolik přirozené reorder chování?"
       },
       {
         "channel": "Google Ads",
@@ -76758,8 +76758,8 @@
         "ga4ObservedRoas": 13.25,
         "trustScore": 62,
         "trustLabel": "medium",
-        "primaryIssue": "Search works, but brand and remarketing are mixed into the same success story.",
-        "nextQuestion": "How much non-brand and net-new demand is left after separating brand, PMAX, and remarketing?"
+        "primaryIssue": "Search funguje, ale brand a remarketing jsou smíchané do jednoho příběhu úspěchu.",
+        "nextQuestion": "Kolik non-brand a net-new poptávky zůstane po oddělení brandu, PMAX a remarketingu?"
       },
       {
         "channel": "Sklik",
@@ -76774,8 +76774,8 @@
         "ga4ObservedRoas": 147.22,
         "trustScore": 25,
         "trustLabel": "low",
-        "primaryIssue": "Sklik reports extreme ROAS, but backend validation layer is still missing.",
-        "nextQuestion": "Is Sklik incremental, or mostly capturing branded and already-warm demand?"
+        "primaryIssue": "Sklik reportuje extrémní ROAS, ale backend validační vrstva stále chybí.",
+        "nextQuestion": "Je Sklik skutečně inkrementální, nebo hlavně sbírá brand a už zahřátou poptávku?"
       }
     ],
     "ga4Unassigned": {
@@ -76785,7 +76785,7 @@
     }
   },
   "acquisitionTruth": {
-    "headline": "Acquisition truth must be read through a repeat-heavy customer base, not through raw platform ROAS.",
+    "headline": "Acquisition truth se musí číst přes repeat-heavy zákaznickou bázi, ne přes syrové platformní ROAS.",
     "customerBase": {
       "status": "measured_ytd",
       "returningRevenueSharePctYtd": 95.79,
@@ -76904,19 +76904,19 @@
       }
     ],
     "channelQuestions": [
-      "What is true prospecting contribution after exclusions and post-view inflation are removed?",
-      "How much of repeat revenue is driven by lifecycle automation versus natural reorder behavior?",
-      "How much non-brand and net-new demand is left after separating brand, PMAX, and remarketing?",
-      "Is Sklik incremental, or mostly capturing branded and already-warm demand?"
+      "Jaký je skutečný prospecting contribution po odečtení exclusions a post-view inflace?",
+      "Kolik repeat revenue řídí lifecycle automatizace a kolik přirozené reorder chování?",
+      "Kolik non-brand a net-new poptávky zůstane po oddělení brandu, PMAX a remarketingu?",
+      "Je Sklik skutečně inkrementální, nebo hlavně sbírá brand a už zahřátou poptávku?"
     ],
     "keyInterpretation": [
-      "Paid acquisition cannot be judged without separating demand capture from true net-new creation.",
-      "Repeat and owned channels already carry a very large share of real revenue.",
-      "This means scaling paid channels should be gated by new-customer truth, not only by attributed ROAS."
+      "Placenou akvizici nejde hodnotit bez oddělení demand capture od skutečné net-new tvorby poptávky.",
+      "Repeat a owned kanály už nesou velmi velkou část reálného revenue.",
+      "To znamená, že škálování placených kanálů má být řízené new-customer truth, ne jen atribuovaným ROAS."
     ]
   },
   "actionPlan": {
-    "headline": "What to build next so the product gets close to or better than Roivenue.",
+    "headline": "Co postavit dál, aby se produkt dostal na úroveň Roivenue nebo ji překonal.",
     "now": [
       "Oddělit akvizici, remarketing, retenci a brand do explicitních bucketů a rozhodovacích pravidel.",
       "Promítnout channel intelligence na homepage a do management pohledu tak, aby byla důvěra a nejednoznačnost vidět hned na první obrazovce.",
@@ -76935,7 +76935,7 @@
     "currentState": {
       "customerTruth": "full_ytd_window",
       "orderTruth": "full_ytd_window",
-      "measurementHeadline": "Measurement layer is now strong on finance and YTD customer truth, but still weaker on channel reconciliation and netto contribution."
+      "measurementHeadline": "Measurement vrstva je teď silná ve finance a YTD customer truth, ale pořád slabší v channel reconciliation a netto contribution."
     }
   },
   "nettoContribution": {

@@ -1,20 +1,20 @@
 {
   "status": "operational_with_known_gaps",
-  "headline": "Final truth engine is now operational for finance truth, measured YTD customer truth, measured YTD order truth, and first decision-grade acquisition split. The main missing layer is netto contribution and backend channel reconciliation.",
+  "headline": "Final truth engine už běží pro finance truth, měřenou YTD customer truth, měřenou YTD order truth a první decision-grade akviziční split. Hlavní chybějící vrstva je netto contribution a backend channel reconciliation.",
   "whatIsTrulyKnown": [
-    "Finance after marketing: 3452893.29 Kč.",
+    "Finance po marketingu: 3452893.29 Kč.",
     "Čistá hotovostní pozice: 5810813.31 Kč.",
     "Returning customers generated 284096050.4 Kč vs 12479827.25 Kč from new customers in the measured YTD window.",
-    "Measured YTD orders processed: 187618"
+    "Zpracované objednávky v měřeném YTD: 187618"
   ],
   "whatIsEstimated": [
-    "Channel incrementality is still confidence-led, not fully modeled.",
-    "Platform channel truth is still non-additive and partially overlapping.",
+    "Inkrementalita kanálů je zatím řízená confidence vrstvou, ne plně domodelovaná.",
+    "Platform channel truth je stále neaditivní a částečně se překrývá.",
     "Netto contribution je teď odhadnutá z měřené order/customer truth a finančních poměrů. Refundy, vratky a produktová marže ještě nejsou přímo joinnuté."
   ],
   "blockingMissingSources": [
-    "Returns / refunds dataset tied to order_id.",
-    "Order-level margin enrichment or product cost join.",
-    "Backend validated channel attribution join on comparable time windows."
+    "Dataset returns a refundů navázaný na order_id.",
+    "Order-level margin enrichment nebo produktový cost join.",
+    "Backend validovaný channel attribution join na srovnatelných časových oknech."
   ]
 }

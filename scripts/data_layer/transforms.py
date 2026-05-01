@@ -580,8 +580,8 @@ def build_channel_intelligence(meta: dict, google: dict, sklik: dict, klaviyo: d
             'ga4ObservedRoas': round(round2(paid_social.get('purchaseRevenue')) / round2(meta['previousMonth']['spendCzk']), 2) if round2(meta['previousMonth']['spendCzk']) else None,
             'trustScore': 30,
             'trustLabel': 'low',
-            'primaryIssue': 'Platform claim is much stronger than observed paid social signal.',
-            'nextQuestion': 'What is true prospecting contribution after exclusions and post-view inflation are removed?',
+            'primaryIssue': 'Platformní claim je výrazně silnější než pozorovaný signál placených sociálních sítí.',
+            'nextQuestion': 'Jaký je skutečný prospecting contribution po odečtení exclusions a post-view inflace?',
         },
         {
             'channel': 'Google Ads',
@@ -596,8 +596,8 @@ def build_channel_intelligence(meta: dict, google: dict, sklik: dict, klaviyo: d
             'ga4ObservedRoas': round(paid_search_bundle.get('purchaseRevenue', 0) / round2(google['previousMonth']['spendCzk']), 2) if round2(google['previousMonth']['spendCzk']) else None,
             'trustScore': 62,
             'trustLabel': 'medium',
-            'primaryIssue': 'Search works, but brand and remarketing are mixed into the same success story.',
-            'nextQuestion': 'How much non-brand and net-new demand is left after separating brand, PMAX, and remarketing?',
+            'primaryIssue': 'Search funguje, ale brand a remarketing jsou smíchané do jednoho příběhu úspěchu.',
+            'nextQuestion': 'Kolik non-brand a net-new poptávky zůstane po oddělení brandu, PMAX a remarketingu?',
         },
         {
             'channel': 'Sklik',
@@ -612,8 +612,8 @@ def build_channel_intelligence(meta: dict, google: dict, sklik: dict, klaviyo: d
             'ga4ObservedRoas': round(paid_search_bundle.get('purchaseRevenue', 0) / round2(sklik['previousMonth']['total']['priceCzk']), 2) if round2(sklik['previousMonth']['total']['priceCzk']) else None,
             'trustScore': 25,
             'trustLabel': 'low',
-            'primaryIssue': 'Sklik reports extreme ROAS, but backend validation layer is still missing.',
-            'nextQuestion': 'Is Sklik incremental, or mostly capturing branded and already-warm demand?',
+            'primaryIssue': 'Sklik reportuje extrémní ROAS, ale backend validační vrstva stále chybí.',
+            'nextQuestion': 'Je Sklik skutečně inkrementální, nebo hlavně sbírá brand a už zahřátou poptávku?',
         },
         {
             'channel': 'Klaviyo',
@@ -628,8 +628,8 @@ def build_channel_intelligence(meta: dict, google: dict, sklik: dict, klaviyo: d
             'ga4ObservedRoas': None,
             'trustScore': 68,
             'trustLabel': 'medium_high',
-            'primaryIssue': 'Retention is clearly material, but still not reconciled to backend net revenue.',
-            'nextQuestion': 'How much of repeat revenue is driven by lifecycle automation versus natural reorder behavior?',
+            'primaryIssue': 'Retence je zjevně materiální, ale stále není reconciled vůči backend netto revenue.',
+            'nextQuestion': 'Kolik repeat revenue řídí lifecycle automatizace a kolik přirozené reorder chování?',
         },
     ]
 
@@ -638,7 +638,7 @@ def build_channel_intelligence(meta: dict, google: dict, sklik: dict, klaviyo: d
         'observationWindow': {
             'platform': 'previous_full_month',
             'analytics': 'last_7_days_or_current_focus_when_available',
-            'warning': 'Platform and GA4 windows are directionally useful, not perfectly comparable yet.',
+            'warning': 'Platformní a GA4 okna jsou smysluplná směrově, ale zatím ne dokonale porovnatelná.',
         },
         'rows': rows,
         'ga4Unassigned': {
@@ -676,12 +676,12 @@ def build_measurement_truth(meta: dict, google: dict, sklik: dict, klaviyo: dict
             'unassignedRevenueFocusWindow': round2(unassigned.get('purchaseRevenue')),
             'unassignedRevenueSharePctOfFocusObserved': round(round2(unassigned.get('purchaseRevenue')) / round2(ga4['last7days']['purchaseRevenue']) * 100, 2) if round2(ga4['last7days']['purchaseRevenue']) else None,
         },
-        'headline': 'Measurement layer is now strong on finance and YTD customer truth, but still weaker on channel reconciliation and netto contribution.',
+        'headline': 'Measurement vrstva je teď silná ve finance a YTD customer truth, ale pořád slabší v channel reconciliation a netto contribution.',
         'warnings': [
-            'Platform-attributed revenue sums above finance revenue, so channel claims cannot be read as additive truth.',
-            'GA4 still carries meaningful Unassigned revenue, which weakens channel decisioning.',
-            'Paid search bundle is directionally useful, but Google and Sklik are not yet separated in backend truth.',
-            'Netto truth still needs returns, refunds, and margin joins.',
+            'Platformně atribuované revenue se sčítá nad finance revenue, takže channel claims nejdou číst jako aditivní truth.',
+            'GA4 pořád nese významné nepřiřazené revenue, což oslabuje rozhodování po kanálech.',
+            'Balík placeného vyhledávání je směrově užitečný, ale Google a Sklik zatím nejsou oddělené v backend truth.',
+            'Netto truth pořád potřebuje returns, refundy a margin joiny.',
         ],
     }
 
@@ -694,7 +694,7 @@ def build_acquisition_truth(customer_fact: dict, ga4: dict, klaviyo: dict, finan
     direct = find_ga4_channel(ga4.get('channelPerformance7d', []), ['Direct'])
     returning_share = customer_fact['estimatedNewVsReturning'].get('returningRevenueSharePct')
     return {
-        'headline': 'Acquisition truth must be read through a repeat-heavy customer base, not through raw platform ROAS.',
+        'headline': 'Acquisition truth se musí číst přes repeat-heavy zákaznickou bázi, ne přes syrové platformní ROAS.',
         'customerBase': {
             'status': customer_fact['estimatedNewVsReturning']['status'],
             'returningRevenueSharePctYtd': returning_share,
@@ -717,16 +717,16 @@ def build_acquisition_truth(customer_fact: dict, ga4: dict, klaviyo: dict, finan
         'searchTaxonomyPreviousMonth': search_taxonomy['summaryPreviousMonth'],
         'channelQuestions': [row['nextQuestion'] for row in channel_intelligence['rows']],
         'keyInterpretation': [
-            'Paid acquisition cannot be judged without separating demand capture from true net-new creation.',
-            'Repeat and owned channels already carry a very large share of real revenue.',
-            'This means scaling paid channels should be gated by new-customer truth, not only by attributed ROAS.',
+            'Placenou akvizici nejde hodnotit bez oddělení demand capture od skutečné net-new tvorby poptávky.',
+            'Repeat a owned kanály už nesou velmi velkou část reálného revenue.',
+            'To znamená, že škálování placených kanálů má být řízené new-customer truth, ne jen atribuovaným ROAS.',
         ],
     }
 
 
 def build_action_plan(customer_fact: dict, order_fact_ready: bool, measurement_truth: dict) -> dict:
     return {
-        'headline': 'What to build next so the product gets close to or better than Roivenue.',
+        'headline': 'Co postavit dál, aby se produkt dostal na úroveň Roivenue nebo ji překonal.',
         'now': [
             'Oddělit akvizici, remarketing, retenci a brand do explicitních bucketů a rozhodovacích pravidel.',
             'Promítnout channel intelligence na homepage a do management pohledu tak, aby byla důvěra a nejednoznačnost vidět hned na první obrazovce.',

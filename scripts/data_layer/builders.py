@@ -78,22 +78,22 @@ def build_data_layer(raw: dict) -> dict:
         },
         'mediaSpend': {
             'value': focus_spend,
-            'label': 'Paid media spend across Meta, Google and Sklik',
+            'label': 'Placený spend napříč Meta, Google a Sklik',
         },
         'blendedRoas': {
             'value': round(round2(ga4_focus['purchaseRevenue']) / focus_spend, 2) if focus_spend else None,
-            'label': 'Pozorované tržby / paid media spend',
+            'label': 'Pozorované tržby / placený spend',
         },
         'grossMarginAfterMarketing': {
             'value': round2(finance_prev['afterMarketing']),
-            'label': 'Finance after marketing, previous full month',
+            'label': 'Finance po marketingu, poslední plný měsíc',
         },
         'netCashPosition': {
             'value': round2(finance['cash']['netCashPosition']),
-            'label': 'Current net cash position',
+            'label': 'Aktuální čistá hotovostní pozice',
         },
         'measurementConfidence': {
-            'label': 'Medium',
+            'label': 'Střední',
             'reason': measurement_truth['headline'],
         },
         'newVsReturning': {
@@ -161,8 +161,8 @@ def build_data_layer(raw: dict) -> dict:
     order_fact = {
         'readiness': {
             'status': 'full_ytd_window' if full_order_fact else 'partial',
-            'label': 'Order fact now covers the full measured YTD order window.' if full_order_fact else 'Order fact currently covers latest daily order pulse only, not the full historical order universe.',
-            'nextUnlock': 'Add final lifecycle state, returns, refunds, and order-level margin joins.' if full_order_fact else 'Daily or monthly full order export with customer key and final lifecycle state.',
+            'label': 'Order fact teď pokrývá celé měřené YTD order okno.' if full_order_fact else 'Order fact zatím pokrývá jen poslední denní order pulse, ne celý historický order vesmír.',
+            'nextUnlock': 'Doplnit finální lifecycle state, returns, refundy a order-level margin joiny.' if full_order_fact else 'Denní nebo měsíční full order export s customer key a finálním lifecycle state.',
         },
         'latestDay': prev_day.get('items', []),
         'historicalWindow': full_order_fact.get('window') if full_order_fact else None,
@@ -188,22 +188,22 @@ def build_data_layer(raw: dict) -> dict:
 
     final_truth_engine = {
         'status': 'operational_with_known_gaps',
-        'headline': 'Final truth engine is now operational for finance truth, measured YTD customer truth, measured YTD order truth, and first decision-grade acquisition split. The main missing layer is netto contribution and backend channel reconciliation.',
+        'headline': 'Final truth engine už běží pro finance truth, měřenou YTD customer truth, měřenou YTD order truth a první decision-grade akviziční split. Hlavní chybějící vrstva je netto contribution a backend channel reconciliation.',
         'whatIsTrulyKnown': [
-            f"Finance after marketing: {round2(finance_prev['afterMarketing'])} Kč.",
+            f"Finance po marketingu: {round2(finance_prev['afterMarketing'])} Kč.",
             f"Čistá hotovostní pozice: {round2(finance['cash']['netCashPosition'])} Kč.",
             customer_fact['estimatedNewVsReturning']['label'],
-            f"Measured YTD orders processed: {customer_fact['coverage']['ordersProcessed']}",
+            f"Zpracované objednávky v měřeném YTD: {customer_fact['coverage']['ordersProcessed']}",
         ],
         'whatIsEstimated': [
-            'Channel incrementality is still confidence-led, not fully modeled.',
-            'Platform channel truth is still non-additive and partially overlapping.',
+            'Inkrementalita kanálů je zatím řízená confidence vrstvou, ne plně domodelovaná.',
+            'Platform channel truth je stále neaditivní a částečně se překrývá.',
             netto_contribution['readiness']['label'],
         ],
         'blockingMissingSources': [
-            'Returns / refunds dataset tied to order_id.',
-            'Order-level margin enrichment or product cost join.',
-            'Backend validated channel attribution join on comparable time windows.',
+            'Dataset returns a refundů navázaný na order_id.',
+            'Order-level margin enrichment nebo produktový cost join.',
+            'Backend validovaný channel attribution join na srovnatelných časových oknech.',
         ],
     }
 
@@ -250,7 +250,7 @@ def build_data_layer(raw: dict) -> dict:
     }
 
     roivenue_comparison = {
-        'headline': 'Roivenue comparison, where this product is already strong and where it is still behind.',
+        'headline': 'Srovnání s Roivenue, kde je tenhle produkt už silný a kde ještě zaostává.',
         'rows': [
             {'area': 'Vrstva business truth', 'ours': 'Silné napojení na finance, cash, order pulse a YTD truth', 'roivenue': 'Obvykle slabší v hluboce custom interním kontextu', 'status': 'strong'},
             {'area': 'Atribuce a modelování kanálů', 'ours': 'Poctivé a confidence-led, ale ještě ne plně reconciled', 'roivenue': 'Standardně zralejší a hlubší', 'status': 'behind'},
@@ -261,14 +261,14 @@ def build_data_layer(raw: dict) -> dict:
             {'area': 'Fit na Diamond Plus', 'ours': 'Velmi vysoký, stavěné přímo kolem lokální business truth', 'roivenue': 'Obecný platform fit', 'status': 'strong'},
         ],
         'summary': [
-            'Compared with Roivenue, this product is already better aligned to Diamond Plus internal reality.',
-            'It is now materially stronger on finance truth, customer truth, and management readability than before.',
-            'The remaining gap is mainly channel reconciliation, netto contribution, and incrementality depth.',
+            'Oproti Roivenue je tenhle produkt už lépe sladěný s interní realitou Diamond Plus.',
+            'Proti dřívějšku je teď výrazně silnější ve finance truth, customer truth a management čitelnosti.',
+            'Zbývající mezera je hlavně v channel reconciliation, netto contribution a hloubce inkrementality.',
         ],
     }
 
     product_stage = {
-        'name': 'Stage 3, decision-grade revenue intelligence foundation',
+        'name': 'Fáze 3, základ decision-grade revenue intelligence',
         'done': [
             'Separate repo and product architecture',
             'Static-first live app scaffold',
