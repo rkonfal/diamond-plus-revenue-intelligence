@@ -283,9 +283,9 @@ function renderHome(data) {
     ${section('Customer attribution v1', `
       <div class="metric-grid four">
         ${metricCard('Spárované objednávky', num(attribution.metrics.ordersMatchedExactTransaction), 'přes transactionId')}
-        ${metricCard('Match rate', pct(attribution.metrics.matchRatePct), 'podíl všech orderů v okně')}
+        ${metricCard('Fallback match', num(attribution.metrics.ordersMatchedFallback), 'čas + hodnota objednávky')}
         ${metricCard('Vážené tržby', money(attribution.metrics.weightedRevenueMatched), 'na spárovaných objednávkách')}
-        ${metricCard('Nezápasované ordery', num(attribution.metrics.ordersUnmatched), 'další prostor pro stitching')}
+        ${metricCard('Match rate', pct(attribution.metrics.matchRatePct), 'podíl orderů v attribution okně')}
       </div>
       <p class="body-copy">${attribution.headline}</p>
       <div class="two-col top-gap-24">
@@ -387,9 +387,9 @@ function renderRole(data, key, title) {
     ${section('Customer attribution vrstva', `
       <div class="metric-grid four">
         ${metricCard('Spárované ordery', num(attribution.metrics.ordersMatchedExactTransaction), 'přes transactionId')}
-        ${metricCard('Match rate', pct(attribution.metrics.matchRatePct), 'v okně 30 dnů')}
+        ${metricCard('Fallback match', num(attribution.metrics.ordersMatchedFallback), 'čas + hodnota')}
         ${metricCard('Vážené tržby', money(attribution.metrics.weightedRevenueMatched), 'na spárovaných nákupech')}
-        ${metricCard('Status', attribution.status, 'živý stav modelu')}
+        ${metricCard('Match rate', pct(attribution.metrics.matchRatePct), 'v okně 30 dnů')}
       </div>
     `, '<span>kdo nakoupil díky čemu</span>')}
   `;
