@@ -42,8 +42,8 @@ function translateText(text) {
   if (text == null) return '';
   let out = String(text);
   const replacements = [
-    ['Stage 3, decision-grade revenue intelligence foundation', 'Fáze 3, základ rozhodovací revenue intelligence'],
-    ['Fáze 3, základ decision-grade revenue intelligence', 'Fáze 3, základ rozhodovací revenue intelligence'],
+    ['Stage 3, decision-grade revenue intelligence foundation', 'Fáze 3, základ rozhodovací vrstvy tržeb'],
+    ['Fáze 3, základ decision-grade revenue intelligence', 'Fáze 3, základ rozhodovací vrstvy tržeb'],
     ['Medium', 'Střední'],
     ['Finance after marketing:', 'Finance po marketingu:'],
     ['Returning customers generated', 'Vracející se zákazníci vytvořili'],
@@ -55,14 +55,16 @@ function translateText(text) {
     ['Sklik reports extreme ROAS, but backend validation layer is still missing.', 'Sklik reportuje extrémní ROAS, ale backend validační vrstva stále chybí.'],
     ['Measured YTD orders processed:', 'Zpracované objednávky v měřeném YTD:'],
     ['podíl returning revenue YTD', 'podíl tržeb od vracejících se zákazníků v YTD'],
+    ['podíl nepřiřazeného revenue', 'podíl nepřiřazených tržeb'],
     ['podíl unassigned', 'podíl nepřiřazených tržeb'],
     ['customer truth', 'zákaznická pravda'],
     ['business realitu', 'byznysovou realitu'],
     ['returning YTD', 'vracející se YTD'],
     ['confidence vrstvou', 'vrstvou důvěry'],
-    ['claim', 'nárokované'],
+    ['Platformní claim', 'Tvrzení platformy'],
+    ['claim', 'tvrzení'],
     ['reconciled', 'sladěná'],
-    ['netto revenue', 'netto tržby'],
+    ['netto revenue', 'netto tržbám'],
     ['brand', 'značka'],
     ['decisioning', 'rozhodování'],
     ['naming', 'pojmenování'],
@@ -73,10 +75,17 @@ function translateText(text) {
     ['gross', 'hrubá'],
     ['revenue truth', 'pravda o tržbách'],
     ['profit truth', 'pravda o zisku'],
-    ['platform claims', 'platformní nároky'],
-    ['finance', 'finance'],
+    ['platform claims', 'tvrzení platforem'],
     ['order truth', 'pravda o objednávkách'],
     ['Search', 'Vyhledávání'],
+    ['channel intelligence', 'inteligenci kanálů'],
+    ['homepage', 'hlavní přehled'],
+    ['management', 'řídicí'],
+    ['search taxonomie', 'taxonomie vyhledávání'],
+    ['order_fact', 'order factu'],
+    ['reconciliation layer', 'reconciliation vrstva'],
+    ['profit contribution', 'čistý přínos'],
+    ['paid spend', 'placený náklad'],
     ['Net revenue po stornech', 'Netto tržby po stornech'],
     ['Odhad gross margin', 'Odhad hrubé marže'],
     ['Odhad profit contribution', 'Odhad čistého přínosu'],
@@ -254,7 +263,7 @@ function renderHome(data) {
 
     <div class="strip-grid">
       <div class="strip panel"><span>Byznysová pravda</span><strong>${money(data.businessTruth.financePreviousMonth.afterMarketing)}</strong><small>po marketingu</small></div>
-      <div class="strip panel"><span>Zákaznická pravda</span><strong>${pct(customer.estimatedNewVsReturning.returningRevenueSharePct)}</strong><small>podíl returning revenue YTD</small></div>
+      <div class="strip panel"><span>Zákaznická pravda</span><strong>${pct(customer.estimatedNewVsReturning.returningRevenueSharePct)}</strong><small>podíl tržeb od vracejících se zákazníků v YTD</small></div>
       <div class="strip panel"><span>Pravda měření</span><strong>${pct(measurement.reconciliation.unassignedRevenueSharePctOfFocusObserved)}</strong><small>podíl nepřiřazeného revenue</small></div>
       <div class="strip panel"><span>Netto přínos</span><strong>${money(netto.ytdEstimated.estimatedAfterMarketing)}</strong><small>odhad po marketingu YTD</small></div>
     </div>
@@ -262,7 +271,7 @@ function renderHome(data) {
     <div class="two-col">
       ${section('Důvěra v kanály', `
         <div class="table-wrap"><table>
-          <thead><tr><th>Kanál</th><th>Platformní revenue</th><th>Pozorované tržby</th><th>Pozorovaný ROAS</th><th>Důvěra</th></tr></thead>
+          <thead><tr><th>Kanál</th><th>Tržby podle platformy</th><th>Pozorované tržby</th><th>Pozorovaný ROAS</th><th>Důvěra</th></tr></thead>
           <tbody>${ch.rows.map(row => `<tr><td><strong>${channelLabel(row.channel)}</strong><div class="muted small-row">${translateText(row.primaryIssue)}</div></td><td>${money(row.platformRevenuePreviousMonth)}</td><td>${money(row.ga4ObservedRevenue)}</td><td>${num(row.ga4ObservedRoas)}</td><td>${trustBadge(row.trustLabel)}</td></tr>`).join('')}</tbody>
         </table></div>
       `, '<span>platforma vs měření</span>')}
@@ -278,13 +287,13 @@ function renderHome(data) {
     <div class="three-col">
       ${section('Rozpad placeného mixu', `
         <div class="table-wrap compact-table"><table>
-          <thead><tr><th>Bucket</th><th>Spend</th><th>Tržby</th></tr></thead>
+          <thead><tr><th>Segment</th><th>Náklad</th><th>Tržby</th></tr></thead>
           <tbody>${top(mt.paidMix.bucketSummaryPreviousMonth, 5).map(row => `<tr><td>${bucketBadge(row.bucket)}</td><td>${money(row.spend)}</td><td>${money(row.revenue)}</td></tr>`).join('')}</tbody>
         </table></div>
       `)}
       ${section('Taxonomie vyhledávání', `
         <div class="table-wrap compact-table"><table>
-          <thead><tr><th>Typ</th><th>Spend</th><th>ROAS</th></tr></thead>
+          <thead><tr><th>Typ</th><th>Náklad</th><th>ROAS</th></tr></thead>
           <tbody>${top(mt.searchTaxonomy.summaryPreviousMonth, 5).map(row => `<tr><td>${taxTypeLabel(row.type)}</td><td>${money(row.spend)}</td><td>${num(row.roas)}</td></tr>`).join('')}</tbody>
         </table></div>
       `)}
@@ -301,7 +310,7 @@ function renderHome(data) {
         ${metricCard('Netto tržby po stornech', money(netto.ytdEstimated.netRevenueAfterCancellations), 'YTD odhad')}
         ${metricCard('Odhad hrubé marže', money(netto.ytdEstimated.estimatedGrossMargin), 'model podle poměrů')}
         ${metricCard('Odhad po marketingu', money(netto.ytdEstimated.estimatedAfterMarketing), 'model podle poměrů')}
-        ${metricCard('Odhad profit contribution', money(netto.ytdEstimated.estimatedProfitContribution), 'model podle poměrů')}
+        ${metricCard('Odhad čistého přínosu', money(netto.ytdEstimated.estimatedProfitContribution), 'model podle poměrů')}
       </div>
       <ul class="clean-list muted-list">${netto.warnings.map(item => `<li>${translateText(item)}</li>`).join('')}</ul>
     `, '<span>první vrstva založená na poměrech</span>')}
@@ -354,21 +363,21 @@ function renderChannels(data) {
 
     ${section('Platforma vs měření', `
       <div class="table-wrap"><table>
-        <thead><tr><th>Kanál</th><th>Platformní revenue</th><th>Pozorované tržby</th><th>Platformní ROAS</th><th>Pozorovaný ROAS</th><th>Důvěra</th><th>Rozhodovací role</th></tr></thead>
+        <thead><tr><th>Kanál</th><th>Tržby podle platformy</th><th>Pozorované tržby</th><th>Platformní ROAS</th><th>Pozorovaný ROAS</th><th>Důvěra</th><th>Rozhodovací role</th></tr></thead>
         <tbody>${ch.rows.map(row => `<tr><td><strong>${channelLabel(row.channel)}</strong></td><td>${money(row.platformRevenuePreviousMonth)}</td><td>${money(row.ga4ObservedRevenue)}</td><td>${num(row.platformRoasPreviousMonth)}</td><td>${num(row.ga4ObservedRoas)}</td><td>${trustBadge(row.trustLabel)}</td><td class="muted">${roleLabel(row.decisionRole)}</td></tr>`).join('')}</tbody>
       </table></div>
     `)}
 
     <div class="two-col">
-      ${section('Buckety paid mixu', `
+      ${section('Segmenty placeného mixu', `
         <div class="table-wrap"><table>
-          <thead><tr><th>Bucket</th><th>Spend</th><th>Tržby</th><th>ROAS</th><th>Kampaně</th></tr></thead>
+          <thead><tr><th>Segment</th><th>Náklad</th><th>Tržby</th><th>ROAS</th><th>Kampaně</th></tr></thead>
           <tbody>${mt.paidMix.bucketSummaryPreviousMonth.map(row => `<tr><td>${bucketBadge(row.bucket)}</td><td>${money(row.spend)}</td><td>${money(row.revenue)}</td><td>${num(row.roas)}</td><td>${num(row.campaigns)}</td></tr>`).join('')}</tbody>
         </table></div>
       `)}
-      ${section('Search taxonomie', `
+      ${section('Taxonomie vyhledávání', `
         <div class="table-wrap"><table>
-          <thead><tr><th>Typ</th><th>Spend</th><th>Tržby</th><th>ROAS</th><th>Platformy</th></tr></thead>
+          <thead><tr><th>Typ</th><th>Náklad</th><th>Tržby</th><th>ROAS</th><th>Platformy</th></tr></thead>
           <tbody>${mt.searchTaxonomy.summaryPreviousMonth.map(row => `<tr><td>${taxTypeLabel(row.type)}</td><td>${money(row.spend)}</td><td>${money(row.revenue)}</td><td>${num(row.roas)}</td><td class="muted">${row.platforms.join(', ')}</td></tr>`).join('')}</tbody>
         </table></div>
       `)}
@@ -376,7 +385,7 @@ function renderChannels(data) {
 
     ${section('Top kampaně', `
       <div class="table-wrap"><table>
-        <thead><tr><th>Platforma</th><th>Kampaň</th><th>Bucket</th><th>Spend</th><th>Tržby</th><th>ROAS</th></tr></thead>
+        <thead><tr><th>Platforma</th><th>Kampaň</th><th>Segment</th><th>Náklad</th><th>Tržby</th><th>ROAS</th></tr></thead>
         <tbody>${mt.topCampaigns.map(row => `<tr><td>${row.platform}</td><td>${row.name}</td><td>${bucketBadge(row.bucket)}</td><td>${money(row.spend)}</td><td>${money(row.revenue)}</td><td>${num(row.roas)}</td></tr>`).join('')}</tbody>
       </table></div>
     `)}
@@ -397,7 +406,7 @@ function renderAudit(data) {
 
     ${section('Top kampaně podle spendu', `
       <div class="table-wrap"><table>
-        <thead><tr><th>Platforma</th><th>Kampaň</th><th>Bucket</th><th>Spend</th><th>Tržby</th><th>ROAS</th><th>Stav</th><th>Riziko</th></tr></thead>
+        <thead><tr><th>Platforma</th><th>Kampaň</th><th>Segment</th><th>Náklad</th><th>Tržby</th><th>ROAS</th><th>Stav</th><th>Riziko</th></tr></thead>
         <tbody>${rows.map(row => `<tr><td>${row.platform}</td><td>${row.name}</td><td>${bucketBadge(row.bucket)}</td><td>${money(row.spend)}</td><td>${money(row.revenue)}</td><td>${num(row.roas)}</td><td class="muted">${row.status || 'n/a'}</td><td>${riskBadge(row.risk)}</td></tr>`).join('')}</tbody>
       </table></div>
     `)}
