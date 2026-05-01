@@ -19,6 +19,95 @@ from .transforms import (
 )
 
 
+def classify_klaviyo_flow(flow_name: str) -> dict:
+    name = (flow_name or '').lower()
+    if 'opuštěný košík' in name or 'abandoned cart' in name:
+        return {'bucket': 'recovery', 'label': 'opuštěný košík', 'credit': 'closer_only'}
+    if 'opuštěný produkt' in name or 'abandoned product' in name or 'browse abandonment' in name:
+        return {'bucket': 'recovery', 'label': 'opuštěný produkt', 'credit': 'closer_only'}
+    if 'winback' in name or 'reactiva' in name:
+        return {'bucket': 'retention', 'label': 'winback / reaktivace', 'credit': 'retention_driver'}
+    if 'post purchase' in name or 'po nákupu' in name:
+        return {'bucket': 'retention', 'label': 'post-purchase', 'credit': 'retention_followup'}
+    if 'newsletter' in name or 'promo' in name or 'slev' in name or 'akce' in name:
+        return {'bucket': 'promo', 'label': 'promo / newsletter', 'credit': 'mixed'}
+    return {'bucket': 'lifecycle', 'label': 'jiná lifecycle automatizace', 'credit': 'mixed'}
+
+
+def build_klaviyo_engine(klaviyo: dict, ga4: dict) -> dict:
+    previous = klaviyo.get('previousMonth') or {}
+    flows = (klaviyo.get('flowsPreviousMonth') or klaviyo.get('topFlowsPreviousMonth') or klaviyo.get('topFlowsCurrentMonth') or [])
+    campaigns = klaviyo.get('recentCampaignsPreviousMonth') or klaviyo.get('recentCampaigns') or []
+    email_channel = next((row for row in (ga4.get('channelPerformance7d') or []) if row.get('channel') == 'Email'), {})
+
+    taxonomy_rollup: dict[str, dict] = {}
+    for flow in flows:
+        meta = classify_klaviyo_flow(flow.get('flowName') or '')
+        bucket = taxonomy_rollup.setdefault(meta['bucket'], {
+            'bucket': meta['bucket'],
+            'label': meta['label'],
+            'credit': meta['credit'],
+            'flows': 0,
+            'revenue': 0,
+            'orders': 0,
+            'clicks': 0,
+            'recipients': 0,
+        })
+        bucket['flows'] += 1
+        bucket['revenue'] = round2(bucket['revenue'] + (flow.get('attributedRevenueCzk') or 0))
+        bucket['orders'] = round2(bucket['orders'] + (flow.get('attributedOrders') or 0))
+        bucket['clicks'] = round2(bucket['clicks'] + (flow.get('clicks') or 0))
+        bucket['recipients'] = round2(bucket['recipients'] + (flow.get('recipients') or 0))
+
+    taxonomy = []
+    for bucket in taxonomy_rollup.values():
+        recipients = bucket['recipients'] or 0
+        bucket['clickRatePct'] = round2((bucket['clicks'] / recipients) * 100) if recipients else None
+        taxonomy.append(bucket)
+    taxonomy.sort(key=lambda row: row['revenue'], reverse=True)
+
+    flow_rows = []
+    for flow in sorted(flows, key=lambda row: row.get('attributedRevenueCzk') or 0, reverse=True)[:8]:
+        meta = classify_klaviyo_flow(flow.get('flowName') or '')
+        flow_rows.append({
+            **flow,
+            'bucket': meta['bucket'],
+            'bucketLabel': meta['label'],
+            'creditMode': meta['credit'],
+        })
+
+    campaign_rows = sorted(campaigns, key=lambda row: row.get('attributedRevenueCzk') or 0, reverse=True)[:8]
+
+    previous_rev = previous.get('totalAttributedRevenueCzk') or 0
+    previous_orders = previous.get('totalAttributedOrders') or 0
+    recovery_rev = sum(row['revenue'] for row in taxonomy if row['bucket'] == 'recovery')
+    retention_rev = sum(row['revenue'] for row in taxonomy if row['bucket'] == 'retention')
+    promo_rev = sum(row['revenue'] for row in taxonomy if row['bucket'] == 'promo')
+
+    return {
+        'summary': {
+            'previousMonthRevenue': previous_rev,
+            'previousMonthOrders': previous_orders,
+            'previousMonthClicks': previous.get('totalClicks') or 0,
+            'clickRatePct': round2((previous.get('clickRate') or 0) * 100) if previous.get('clickRate') is not None else None,
+            'ga4EmailRevenue7d': email_channel.get('purchaseRevenue') or 0,
+            'ga4EmailOrders7d': email_channel.get('ecommercePurchases') or 0,
+            'recoveryRevenueSharePct': round2((recovery_rev / previous_rev) * 100) if previous_rev else 0,
+            'retentionRevenueSharePct': round2((retention_rev / previous_rev) * 100) if previous_rev else 0,
+            'promoRevenueSharePct': round2((promo_rev / previous_rev) * 100) if previous_rev else 0,
+        },
+        'taxonomy': taxonomy,
+        'topFlows': flow_rows,
+        'topCampaigns': campaign_rows,
+        'headline': 'Klaviyo už teď umíme rozdělit na recovery, retenci a promo vrstvu, takže email revenue nemusí padat do jedné hromady.',
+        'actions': [
+            'Flow typu opuštěný košík a opuštěný produkt ber jako recovery / closer, ne jako čistý akviziční driver.',
+            'Promo newslettery drž odděleně od lifecycle flow, protože mají jiný ekonomický význam.',
+            'Retenční flow porovnávej proti returning customer truth a ne proti paid acquisition výkonu.',
+        ],
+    }
+
+
 def build_customer_attribution_layer(readiness: dict | None, truth: dict | None, campaigns: dict | None, klaviyo: dict | None = None, ga4: dict | None = None) -> dict:
     readiness = readiness or {}
     truth = truth or {}
@@ -28,9 +117,7 @@ def build_customer_attribution_layer(readiness: dict | None, truth: dict | None,
     summary = truth.get('summary') or {}
     campaign_rows = campaigns.get('campaigns') or []
     order_rows = truth.get('orders') or []
-    klaviyo_prev = klaviyo.get('previousMonth') or {}
-    klaviyo_flows = (klaviyo.get('topFlowsPreviousMonth') or klaviyo.get('flowsPreviousMonth') or klaviyo.get('topFlowsCurrentMonth') or [])[:6]
-    email_channel = next((row for row in (ga4.get('channelPerformance7d') or []) if row.get('channel') == 'Email'), {})
+    klaviyo_engine = build_klaviyo_engine(klaviyo, ga4)
     return {
         'status': summary.get('status') or 'not_ready',
         'headline': 'Customer attribution vrstva ukazuje, které objednávky už umíme spárovat přes transactionId a jakou váhu dostávají kampaně v heuristice v1.',
@@ -47,15 +134,7 @@ def build_customer_attribution_layer(readiness: dict | None, truth: dict | None,
         'classification': summary.get('classification') or {},
         'topCampaigns': campaign_rows[:8],
         'recentOrders': order_rows[:6],
-        'klaviyo': {
-            'previousMonthRevenue': klaviyo_prev.get('totalAttributedRevenueCzk') or 0,
-            'previousMonthOrders': klaviyo_prev.get('totalAttributedOrders') or 0,
-            'previousMonthClicks': klaviyo_prev.get('totalClicks') or 0,
-            'clickRate': klaviyo_prev.get('clickRate'),
-            'ga4EmailRevenue7d': email_channel.get('purchaseRevenue') or 0,
-            'ga4EmailOrders7d': email_channel.get('ecommercePurchases') or 0,
-            'topFlows': klaviyo_flows,
-        },
+        'klaviyo': klaviyo_engine,
         'whyItMatters': [
             'Tady už nejde jen o platform claim, ale o konkrétní objednávky spárované přes transactionId.',
             'Každá spárovaná objednávka dostává rozdělení mezi introducer a closer podle heuristiky v1.',

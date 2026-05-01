@@ -113,6 +113,9 @@ function bucketLabel(bucket) {
     brand: 'brand',
     harvesting: 'sklízení poptávky',
     remarketing: 'remarketing',
+    recovery: 'recovery',
+    promo: 'promo',
+    lifecycle: 'lifecycle',
     other: 'ostatní',
   };
   return map[bucket] || bucket;
@@ -301,19 +304,34 @@ function renderHome(data) {
           <div class="table-wrap"><table>
             <thead><tr><th>Metrika</th><th>Hodnota</th></tr></thead>
             <tbody>
-              <tr><td>Klaviyo revenue minulý měsíc</td><td>${money(attribution.klaviyo.previousMonthRevenue)}</td></tr>
-              <tr><td>Klaviyo orders minulý měsíc</td><td>${num(attribution.klaviyo.previousMonthOrders)}</td></tr>
-              <tr><td>Kliky minulý měsíc</td><td>${num(attribution.klaviyo.previousMonthClicks)}</td></tr>
-              <tr><td>Click rate</td><td>${pct((attribution.klaviyo.clickRate || 0) * 100)}</td></tr>
-              <tr><td>GA4 Email revenue za 7 dní</td><td>${money(attribution.klaviyo.ga4EmailRevenue7d)}</td></tr>
-              <tr><td>GA4 Email objednávky za 7 dní</td><td>${num(attribution.klaviyo.ga4EmailOrders7d)}</td></tr>
+              <tr><td>Klaviyo revenue minulý měsíc</td><td>${money(attribution.klaviyo.summary.previousMonthRevenue)}</td></tr>
+              <tr><td>Klaviyo orders minulý měsíc</td><td>${num(attribution.klaviyo.summary.previousMonthOrders)}</td></tr>
+              <tr><td>Kliky minulý měsíc</td><td>${num(attribution.klaviyo.summary.previousMonthClicks)}</td></tr>
+              <tr><td>Click rate</td><td>${pct(attribution.klaviyo.summary.clickRatePct)}</td></tr>
+              <tr><td>GA4 Email revenue za 7 dní</td><td>${money(attribution.klaviyo.summary.ga4EmailRevenue7d)}</td></tr>
+              <tr><td>GA4 Email objednávky za 7 dní</td><td>${num(attribution.klaviyo.summary.ga4EmailOrders7d)}</td></tr>
+              <tr><td>Recovery share</td><td>${pct(attribution.klaviyo.summary.recoveryRevenueSharePct)}</td></tr>
+              <tr><td>Retention share</td><td>${pct(attribution.klaviyo.summary.retentionRevenueSharePct)}</td></tr>
+              <tr><td>Promo share</td><td>${pct(attribution.klaviyo.summary.promoRevenueSharePct)}</td></tr>
             </tbody>
+          </table></div>
+          <div class="divider"></div>
+          <div class="mini-caption">Klaviyo taxonomy</div>
+          <div class="table-wrap"><table>
+            <thead><tr><th>Vrstva</th><th>Tržby</th><th>Objednávky</th><th>Role</th></tr></thead>
+            <tbody>${(attribution.klaviyo.taxonomy || []).map(row => `<tr><td>${bucketLabel(row.bucket)} (${row.label})</td><td>${money(row.revenue)}</td><td>${num(row.orders)}</td><td>${row.credit}</td></tr>`).join('')}</tbody>
           </table></div>
           <div class="divider"></div>
           <div class="mini-caption">Top Klaviyo flow</div>
           <div class="table-wrap"><table>
-            <thead><tr><th>Flow</th><th>Tržby</th><th>Objednávky</th><th>Click rate</th></tr></thead>
-            <tbody>${(attribution.klaviyo.topFlows || []).map(row => `<tr><td>${row.flowName}</td><td>${money(row.attributedRevenueCzk)}</td><td>${num(row.attributedOrders)}</td><td>${pct((row.clickRate || 0) * 100)}</td></tr>`).join('')}</tbody>
+            <thead><tr><th>Flow</th><th>Typ</th><th>Tržby</th><th>Objednávky</th><th>Click rate</th></tr></thead>
+            <tbody>${(attribution.klaviyo.topFlows || []).map(row => `<tr><td>${row.flowName}</td><td>${row.bucketLabel}</td><td>${money(row.attributedRevenueCzk)}</td><td>${num(row.attributedOrders)}</td><td>${pct((row.clickRate || 0) * 100)}</td></tr>`).join('')}</tbody>
+          </table></div>
+          <div class="divider"></div>
+          <div class="mini-caption">Top Klaviyo kampaně</div>
+          <div class="table-wrap"><table>
+            <thead><tr><th>Kampaň</th><th>Tržby</th><th>Objednávky</th><th>Open rate</th></tr></thead>
+            <tbody>${(attribution.klaviyo.topCampaigns || []).map(row => `<tr><td>${row.name}</td><td>${money(row.attributedRevenueCzk)}</td><td>${num(row.attributedOrders)}</td><td>${pct((row.openRate || 0) * 100)}</td></tr>`).join('')}</tbody>
           </table></div>
           <div class="divider"></div>
           <div class="mini-caption">Rozklad podle typu vlivu</div>

@@ -77446,12 +77446,41 @@
       }
     ],
     "klaviyo": {
-      "previousMonthRevenue": 4577747.3,
-      "previousMonthOrders": 2994.0,
-      "previousMonthClicks": 36926.0,
-      "clickRate": 0.0443,
-      "ga4EmailRevenue7d": 63204.51,
-      "ga4EmailOrders7d": 41.0,
+      "summary": {
+        "previousMonthRevenue": 4577747.3,
+        "previousMonthOrders": 2994.0,
+        "previousMonthClicks": 36926.0,
+        "clickRatePct": 4.43,
+        "ga4EmailRevenue7d": 63204.51,
+        "ga4EmailOrders7d": 41.0,
+        "recoveryRevenueSharePct": 5.02,
+        "retentionRevenueSharePct": 0.0,
+        "promoRevenueSharePct": 0.0
+      },
+      "taxonomy": [
+        {
+          "bucket": "lifecycle",
+          "label": "jiná lifecycle automatizace",
+          "credit": "mixed",
+          "flows": 10,
+          "revenue": 294930.4,
+          "orders": 184.0,
+          "clicks": 2507.0,
+          "recipients": 7689.0,
+          "clickRatePct": 32.61
+        },
+        {
+          "bucket": "recovery",
+          "label": "opuštěný košík",
+          "credit": "closer_only",
+          "flows": 2,
+          "revenue": 229858.35,
+          "orders": 160.0,
+          "clicks": 367.0,
+          "recipients": 12741.0,
+          "clickRatePct": 2.88
+        }
+      ],
       "topFlows": [
         {
           "flowId": "SXtWxm",
@@ -77473,7 +77502,10 @@
           "clicks": 335.0,
           "openRate": 0.2225,
           "clickRate": 0.0281,
-          "conversionRate": 0.0132
+          "conversionRate": 0.0132,
+          "bucket": "recovery",
+          "bucketLabel": "opuštěný košík",
+          "creditMode": "closer_only"
         },
         {
           "flowId": "VTgVba",
@@ -77492,7 +77524,10 @@
           "clicks": 168.0,
           "openRate": 0.8409,
           "clickRate": 0.1317,
-          "conversionRate": 0.0368
+          "conversionRate": 0.0368,
+          "bucket": "lifecycle",
+          "bucketLabel": "jiná lifecycle automatizace",
+          "creditMode": "mixed"
         },
         {
           "flowId": "SxBynF",
@@ -77511,7 +77546,10 @@
           "clicks": 262.0,
           "openRate": 1.0777,
           "clickRate": 0.2288,
-          "conversionRate": 0.0227
+          "conversionRate": 0.0227,
+          "bucket": "lifecycle",
+          "bucketLabel": "jiná lifecycle automatizace",
+          "creditMode": "mixed"
         },
         {
           "flowId": "R5fKfn",
@@ -77530,7 +77568,10 @@
           "clicks": 1334.0,
           "openRate": 1.5062,
           "clickRate": 1.0979,
-          "conversionRate": 0.028
+          "conversionRate": 0.028,
+          "bucket": "lifecycle",
+          "bucketLabel": "jiná lifecycle automatizace",
+          "creditMode": "mixed"
         },
         {
           "flowId": "TFpngU",
@@ -77552,7 +77593,10 @@
           "clicks": 133.0,
           "openRate": 0.7354,
           "clickRate": 0.3384,
-          "conversionRate": 0.0534
+          "conversionRate": 0.0534,
+          "bucket": "lifecycle",
+          "bucketLabel": "jiná lifecycle automatizace",
+          "creditMode": "mixed"
         },
         {
           "flowId": "VqgfET",
@@ -77571,8 +77615,173 @@
           "clicks": 82.0,
           "openRate": 0.4506,
           "clickRate": 0.0503,
-          "conversionRate": 0.0233
+          "conversionRate": 0.0233,
+          "bucket": "lifecycle",
+          "bucketLabel": "jiná lifecycle automatizace",
+          "creditMode": "mixed"
+        },
+        {
+          "flowId": "UTrftt",
+          "flowName": "Přihláška Sebeláska - potvrzení",
+          "status": "live",
+          "triggerType": "Metric",
+          "channel": "email",
+          "attributedOrders": 10.0,
+          "attributedRevenueCzk": 17080.55,
+          "messageCount": 1,
+          "messageNames": [
+            "Email #1"
+          ],
+          "recipients": 907.0,
+          "opens": 907.0,
+          "clicks": 162.0,
+          "openRate": 1.0,
+          "clickRate": 0.1786,
+          "conversionRate": 0.011,
+          "bucket": "lifecycle",
+          "bucketLabel": "jiná lifecycle automatizace",
+          "creditMode": "mixed"
+        },
+        {
+          "flowId": "WRvqYR",
+          "flowName": "Opuštěný produkt",
+          "status": "live",
+          "triggerType": "Metric",
+          "channel": "email",
+          "attributedOrders": 3.0,
+          "attributedRevenueCzk": 6246.0,
+          "messageCount": 3,
+          "messageNames": [
+            "Email #1 opuštěný produkt",
+            "Email #2",
+            "Email #3"
+          ],
+          "recipients": 837.0,
+          "opens": 135.0,
+          "clicks": 32.0,
+          "openRate": 0.1613,
+          "clickRate": 0.0382,
+          "conversionRate": 0.0036,
+          "bucket": "recovery",
+          "bucketLabel": "opuštěný produkt",
+          "creditMode": "closer_only"
         }
+      ],
+      "topCampaigns": [
+        {
+          "id": "01KPWXSDKN0D5ETNENAQ509YQ5",
+          "name": "CZ - Slevové zemětřesení konec",
+          "channel": "email",
+          "status": "Sent",
+          "createdAt": "2026-04-23T10:22:22.841320+00:00",
+          "updatedAt": "2026-04-30T16:30:47.543022+00:00",
+          "scheduledAt": "2026-04-30T15:23:05.461460+00:00",
+          "sendDatetime": "2026-04-30T16:30:00+00:00",
+          "recipients": 22914.0,
+          "opens": 3320.0,
+          "clicks": 272.0,
+          "attributedOrders": 21.0,
+          "attributedRevenueCzk": 41457.0,
+          "openRate": 0.1449,
+          "clickRate": 0.0119,
+          "conversionRate": 0.0009
+        },
+        {
+          "id": "01KPN5HWSH769EKXNCKYYFJKDM",
+          "name": "KURZ HUBNUTÍ - vstupenka Margit Slimáková",
+          "channel": "email",
+          "status": "Sent",
+          "createdAt": "2026-04-20T10:04:09.395971+00:00",
+          "updatedAt": "2026-04-29T16:30:59.285769+00:00",
+          "scheduledAt": "2026-04-29T12:08:34.620972+00:00",
+          "sendDatetime": "2026-04-29T16:30:00+00:00",
+          "recipients": 22907.0,
+          "opens": 7113.0,
+          "clicks": 213.0,
+          "attributedOrders": 24.0,
+          "attributedRevenueCzk": 36911.85,
+          "openRate": 0.3105,
+          "clickRate": 0.0093,
+          "conversionRate": 0.001
+        },
+        {
+          "id": "01KQFF5FNX02JFHZ50SDKHTK8F",
+          "name": "SK - Slevové zemětřesení konec",
+          "channel": "email",
+          "status": "Sent",
+          "createdAt": "2026-04-30T15:12:23.745330+00:00",
+          "updatedAt": "2026-04-30T16:30:56.078400+00:00",
+          "scheduledAt": "2026-04-30T15:21:54.335847+00:00",
+          "sendDatetime": "2026-04-30T16:30:00+00:00",
+          "recipients": 2307.0,
+          "opens": 340.0,
+          "clicks": 17.0,
+          "attributedOrders": 2.0,
+          "attributedRevenueCzk": 186.2,
+          "openRate": 0.1474,
+          "clickRate": 0.0074,
+          "conversionRate": 0.0009
+        },
+        {
+          "id": "01KQD3HAM0JZ38E44WYGMFFHJR",
+          "name": "SK KURZ HUBNUTÍ - vstupenka Margit Slimáková",
+          "channel": "email",
+          "status": "Sent",
+          "createdAt": "2026-04-29T17:10:40.004570+00:00",
+          "updatedAt": "2026-04-29T17:45:54.966916+00:00",
+          "scheduledAt": "2026-04-29T17:15:41.976199+00:00",
+          "sendDatetime": "2026-04-29T17:45:00+00:00",
+          "recipients": 2314.0,
+          "opens": 662.0,
+          "clicks": 12.0,
+          "attributedOrders": 1.0,
+          "attributedRevenueCzk": 55.65,
+          "openRate": 0.2861,
+          "clickRate": 0.0052,
+          "conversionRate": 0.0004
+        },
+        {
+          "id": "01KQC9VHF82GMC41GBMYQR3P61",
+          "name": "CZ - Tělo jako kompas - 4. lekce záznam",
+          "channel": "email",
+          "status": "Draft",
+          "createdAt": "2026-04-29T09:41:51.723779+00:00",
+          "updatedAt": "2026-04-29T09:41:51.723798+00:00",
+          "scheduledAt": null,
+          "sendDatetime": "2026-04-29T09:41:37+00:00",
+          "recipients": 0.0,
+          "opens": 0.0,
+          "clicks": 0.0,
+          "attributedOrders": 0.0,
+          "attributedRevenueCzk": 0.0,
+          "openRate": null,
+          "clickRate": null,
+          "conversionRate": null
+        },
+        {
+          "id": "01KQC0WFA8WC6C86KTAQ0HQ4CX",
+          "name": "Ebook3 kompas 4",
+          "channel": "email",
+          "status": "Sent",
+          "createdAt": "2026-04-29T07:05:05.099580+00:00",
+          "updatedAt": "2026-04-29T09:00:56.699994+00:00",
+          "scheduledAt": "2026-04-29T07:06:08.108929+00:00",
+          "sendDatetime": "2026-04-29T09:00:00+00:00",
+          "recipients": 12.0,
+          "opens": 5.0,
+          "clicks": 7.0,
+          "attributedOrders": 0.0,
+          "attributedRevenueCzk": 0.0,
+          "openRate": 0.4167,
+          "clickRate": 0.5833,
+          "conversionRate": 0.0
+        }
+      ],
+      "headline": "Klaviyo už teď umíme rozdělit na recovery, retenci a promo vrstvu, takže email revenue nemusí padat do jedné hromady.",
+      "actions": [
+        "Flow typu opuštěný košík a opuštěný produkt ber jako recovery / closer, ne jako čistý akviziční driver.",
+        "Promo newslettery drž odděleně od lifecycle flow, protože mají jiný ekonomický význam.",
+        "Retenční flow porovnávej proti returning customer truth a ne proti paid acquisition výkonu."
       ]
     },
     "whyItMatters": [
