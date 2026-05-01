@@ -14,12 +14,12 @@ function pct(value) {
 }
 
 function trustBadge(trust) {
-  const cls = trust === 'medium' || trust === 'medium_high' ? 'warn' : trust === 'high' ? 'good' : 'bad';
+  const cls = trust === 'high' ? 'good' : trust === 'medium' || trust === 'medium_high' ? 'warn' : 'bad';
   return `<span class="badge ${cls}">${trust}</span>`;
 }
 
 function riskBadge(risk) {
-  const cls = risk === 'medium' ? 'warn' : risk === 'low' ? 'good' : 'bad';
+  const cls = risk === 'low' ? 'good' : risk === 'medium' ? 'warn' : 'bad';
   return `<span class="badge ${cls}">${risk}</span>`;
 }
 
@@ -29,261 +29,292 @@ function statusBadge(status) {
 }
 
 function bucketBadge(bucket) {
-  const cls = bucket === 'retention' ? 'good' : bucket === 'brand' || bucket === 'harvesting' ? 'warn' : bucket === 'acquisition' ? 'good' : 'bad';
-  return `<span class="badge ${cls}">${bucket}</span>`;
+  const map = {
+    acquisition: 'good',
+    retention: 'good',
+    brand: 'warn',
+    harvesting: 'warn',
+    remarketing: 'bad',
+    other: 'bad',
+  };
+  return `<span class="badge ${map[bucket] || 'bad'}">${bucket}</span>`;
 }
 
 function top(arr, n) {
   return (arr || []).slice(0, n);
 }
 
-function nav() {
+function pageTitle(page) {
+  const map = {
+    home: 'Overview',
+    management: 'Management',
+    marketing: 'Marketing',
+    finance: 'Finance',
+    channels: 'Channels',
+    audit: 'Audit',
+    roivenue: 'Vs. Roivenue',
+  };
+  return map[page] || 'Overview';
+}
+
+function nav(current) {
+  const items = [
+    ['home', './index.html', 'Overview'],
+    ['management', './management.html', 'Management'],
+    ['marketing', './marketing.html', 'Marketing'],
+    ['finance', './finance.html', 'Finance'],
+    ['channels', './channels.html', 'Channels'],
+    ['audit', './audit-workspace.html', 'Audit'],
+    ['roivenue', './compare-roivenue.html', 'Vs. Roivenue'],
+  ];
+
   return `
-    <div class="nav">
-      <a href="./index.html">Shrnutí</a>
-      <a href="./management.html">Management</a>
-      <a href="./marketing.html">Marketing</a>
-      <a href="./finance.html">Finance</a>
-      <a href="./channels.html">Kanály</a>
-      <a href="./audit-workspace.html">Audit</a>
-      <a href="./compare-roivenue.html">Vs. Roivenue</a>
+    <div class="topbar">
+      <div class="brand">
+        <div class="brand-mark">DP</div>
+        <div>
+          <div class="eyebrow">Diamond Plus Revenue Intelligence</div>
+          <div class="brand-sub">${pageTitle(current)}</div>
+        </div>
+      </div>
+      <div class="nav">${items.map(([key, href, label]) => `<a class="${key === current ? 'active' : ''}" href="${href}">${label}</a>`).join('')}</div>
     </div>
   `;
 }
 
-function metricCard(label, value, sub, tone = '') {
-  return `<div class="metric"><div class="k">${label}</div><div class="v ${tone}">${value}</div><div class="sub">${sub}</div></div>`;
+function metricCard(label, value, sub = '', tone = '') {
+  return `
+    <div class="metric-card">
+      <div class="metric-label">${label}</div>
+      <div class="metric-value ${tone}">${value}</div>
+      <div class="metric-sub">${sub}</div>
+    </div>
+  `;
+}
+
+function section(title, body, aside = '') {
+  return `
+    <section class="panel section-block">
+      <div class="section-header">
+        <h2>${title}</h2>
+        ${aside ? `<div class="section-aside">${aside}</div>` : ''}
+      </div>
+      ${body}
+    </section>
+  `;
 }
 
 function renderHome(data) {
   const ex = data.executive;
-  const biz = data.businessTruth;
-  const mt = data.marketingTruth;
   const customer = data.customerTruth;
+  const measurement = data.measurement.truth;
   const ch = data.channelIntelligence;
-  const acq = data.acquisitionTruth;
-  const plan = data.actionPlan;
+  const mt = data.marketingTruth;
   const netto = data.nettoContribution;
-  const ga4 = top(data.measurement.ga4Channels, 8);
-  const paidMix = top(mt.paidMix.bucketSummaryPreviousMonth, 5);
-  const searchTax = top(mt.searchTaxonomy.summaryPreviousMonth, 5);
+  const plan = data.actionPlan;
+  const ga4 = top(data.measurement.ga4Channels, 6);
 
   document.getElementById('app').innerHTML = `
-    <section class="hero hero-grid">
-      <div>
-        <div class="pill">${data.productStage.name}</div>
-        <h1>Revenue intelligence, který už jde řídit, ne jen proklikávat.</h1>
-        <p>Homepage teď začíná tím, co je opravdu důležité. Business truth, measured customer truth, decision-grade channel truth a jasné další kroky.</p>
-        ${nav()}
+    ${nav('home')}
+
+    <section class="hero-shell">
+      <div class="hero-main panel">
+        <div class="eyebrow">${data.productStage.name}</div>
+        <h1>Revenue operating view</h1>
+        <p class="hero-copy">Jedna obrazovka pro business reality, customer truth, channel trust a nejbližší rozhodnutí.</p>
+        <div class="metric-grid six">
+          ${metricCard('Observed revenue', money(ex.observedRevenue.value), data.focus.label)}
+          ${metricCard('After marketing', money(ex.grossMarginAfterMarketing.value), 'finance reference month')}
+          ${metricCard('Net cash', money(ex.netCashPosition.value), 'current position')}
+          ${metricCard('Returning share YTD', pct(customer.estimatedNewVsReturning.returningRevenueSharePct), 'measured customer truth', 'warn')}
+          ${metricCard('Blended ROAS', num(ex.blendedRoas.value), 'observed revenue / paid spend')}
+          ${metricCard('Measurement confidence', ex.measurementConfidence.label, 'current reporting confidence', 'warn')}
+        </div>
       </div>
-      <div class="hero-aside card inset">
-        <h3>Co si má management odnést</h3>
-        <ul class="list compact">${ex.reportNarrative.plainLanguage.map(item => `<li>${item}</li>`).join('')}</ul>
-      </div>
-      <div class="grid metrics full-span">
-        ${metricCard('Pozorované tržby', money(ex.observedRevenue.value), data.focus.label)}
-        ${metricCard('Paid media spend', money(ex.mediaSpend.value), 'Meta + Google + Sklik')}
-        ${metricCard('Blended ROAS', num(ex.blendedRoas.value), 'Pozorované tržby / spend')}
-        ${metricCard('Výsledek po marketingu', money(ex.grossMarginAfterMarketing.value), 'Finance, minulý plný měsíc')}
-        ${metricCard('Returning share YTD', pct(customer.estimatedNewVsReturning.returningRevenueSharePct), 'Measured customer truth', 'warn')}
-        ${metricCard('Jistota měření', ex.measurementConfidence.label, ex.measurementConfidence.reason, 'warn')}
+      <div class="hero-side panel">
+        <div class="eyebrow">Current read</div>
+        <ul class="clean-list emphasis-list">
+          <li>${data.finalTruthEngine.whatIsTrulyKnown[0]}</li>
+          <li>${customer.estimatedNewVsReturning.label}</li>
+          <li>${data.finalTruthEngine.whatIsEstimated[0]}</li>
+        </ul>
       </div>
     </section>
 
-    <div class="cols-3">
-      <section class="card emphasis good-border">
-        <h2>Co víme jistě</h2>
-        <ul class="list">${data.finalTruthEngine.whatIsTrulyKnown.map(item => `<li>${item}</li>`).join('')}</ul>
-      </section>
-      <section class="card emphasis warn-border">
-        <h2>Co je rozhodovací truth</h2>
-        <ul class="list compact">
-          <li>Acquisition se musí řídit přes net-new demand, ne přes platform ROAS.</li>
-          <li>Brand a harvesting jsou demand capture, ne důkaz inkrementality.</li>
-          <li>Retention je samostatný motor repeat revenue, ne součást paid acquisition story.</li>
-        </ul>
-      </section>
-      <section class="card emphasis bad-border">
-        <h2>Co ještě chybí</h2>
-        <ul class="list">${data.finalTruthEngine.blockingMissingSources.map(item => `<li>${item}</li>`).join('')}</ul>
-      </section>
+    <div class="strip-grid">
+      <div class="strip panel"><span>Business truth</span><strong>${money(data.businessTruth.financePreviousMonth.afterMarketing)}</strong><small>after marketing</small></div>
+      <div class="strip panel"><span>Customer truth</span><strong>${pct(customer.estimatedNewVsReturning.returningRevenueSharePct)}</strong><small>returning revenue share YTD</small></div>
+      <div class="strip panel"><span>Measurement truth</span><strong>${pct(measurement.reconciliation.unassignedRevenueSharePctOfFocusObserved)}</strong><small>unassigned share</small></div>
+      <div class="strip panel"><span>Netto contribution</span><strong>${money(netto.ytdEstimated.estimatedAfterMarketing)}</strong><small>estimated after marketing YTD</small></div>
     </div>
 
-    <div class="cols-2 top-gap">
-      <section class="card">
-        <div class="section-head"><h2>Channel intelligence, první obrazovka</h2><div class="muted small">platform claim vs observed truth</div></div>
+    <div class="two-col">
+      ${section('Channel trust', `
         <div class="table-wrap"><table>
-          <thead><tr><th>Kanál</th><th>Claim revenue</th><th>Observed revenue</th><th>Claim ROAS</th><th>Observed ROAS</th><th>Důvěra</th></tr></thead>
-          <tbody>${ch.rows.map(row => `<tr><td><strong>${row.channel}</strong><div class="muted tiny">${row.primaryIssue}</div></td><td>${money(row.platformRevenuePreviousMonth)}</td><td>${money(row.ga4ObservedRevenue)}</td><td>${num(row.platformRoasPreviousMonth)}</td><td>${num(row.ga4ObservedRoas)}</td><td>${trustBadge(row.trustLabel)}</td></tr>`).join('')}</tbody>
+          <thead><tr><th>Channel</th><th>Claim revenue</th><th>Observed revenue</th><th>Observed ROAS</th><th>Trust</th></tr></thead>
+          <tbody>${ch.rows.map(row => `<tr><td><strong>${row.channel}</strong><div class="muted small-row">${row.primaryIssue}</div></td><td>${money(row.platformRevenuePreviousMonth)}</td><td>${money(row.ga4ObservedRevenue)}</td><td>${num(row.ga4ObservedRoas)}</td><td>${trustBadge(row.trustLabel)}</td></tr>`).join('')}</tbody>
         </table></div>
-      </section>
-      <section class="card">
-        <div class="section-head"><h2>Bucket split, předchozí měsíc</h2><div class="muted small">acquisition vs remarketing vs brand vs retention</div></div>
-        <div class="table-wrap"><table>
-          <thead><tr><th>Bucket</th><th>Spend</th><th>Revenue</th><th>ROAS</th><th>Kampaně</th></tr></thead>
-          <tbody>${paidMix.map(row => `<tr><td>${bucketBadge(row.bucket)}</td><td>${money(row.spend)}</td><td>${money(row.revenue)}</td><td>${num(row.roas)}</td><td>${num(row.campaigns)}</td></tr>`).join('')}</tbody>
-        </table></div>
-      </section>
+      `, '<span>claim vs observed</span>')}
+
+      ${section('Next actions', `
+        <ol class="clean-list ordered-list">${plan.now.map(item => `<li>${item}</li>`).join('')}</ol>
+        <div class="divider"></div>
+        <div class="mini-caption">Next 2 to 4 weeks</div>
+        <ul class="clean-list">${plan.next_2_to_4_weeks.map(item => `<li>${item}</li>`).join('')}</ul>
+      `, '<span>priority queue</span>')}
     </div>
 
-    <div class="cols-3">
-      <section class="card">
-        <h2>Customer truth</h2>
-        <ul class="list compact">
-          <li>Returning revenue YTD: <strong>${money(customer.estimatedNewVsReturning.returningRevenueWithVat)}</strong>.</li>
-          <li>New revenue YTD: <strong>${money(customer.estimatedNewVsReturning.newRevenueWithVat)}</strong>.</li>
-          <li>Top 10 zákazníků tvoří <strong>${pct(customer.coverage.top10RevenueSharePctOfYtd)}</strong> YTD revenue.</li>
-          <li>Heavy repeat customers v top 50: <strong>${num(customer.repeatSignals.heavyRepeatCustomersInTop50)}</strong>.</li>
-        </ul>
-      </section>
-      <section class="card">
-        <h2>Measurement truth</h2>
-        <ul class="list compact">
-          <li>Finance revenue: <strong>${money(data.measurement.truth.reconciliation.financeRevenuePreviousMonth)}</strong>.</li>
-          <li>GA4 observed revenue: <strong>${money(data.measurement.truth.reconciliation.ga4ObservedRevenuePreviousMonth)}</strong>.</li>
-          <li>Platform claims: <strong>${money(data.measurement.truth.reconciliation.platformClaimedRevenuePreviousMonth)}</strong>.</li>
-          <li>Unassigned revenue share: <strong>${pct(data.measurement.truth.reconciliation.unassignedRevenueSharePctOfFocusObserved)}</strong>.</li>
-        </ul>
-      </section>
-      <section class="card">
-        <h2>Finance truth</h2>
-        <ul class="list compact">
-          <li>After marketing: <strong>${money(biz.contributionTruth.previousMonth.afterMarketing)}</strong>.</li>
-          <li>Operating margin: <strong>${money(biz.financePreviousMonth.operatingMargin)}</strong>.</li>
-          <li>Net cash: <strong>${money(ex.netCashPosition.value)}</strong>.</li>
-          <li>Estimated net after cancellations: <strong>${money(biz.orderQuality.estimatedNetRevenueAfterCancellations)}</strong>.</li>
-        </ul>
-      </section>
-    </div>
-
-    <div class="cols-2">
-      <section class="card">
-        <div class="section-head"><h2>Unified search taxonomy</h2><div class="muted small">Google + Sklik na stejné mapě</div></div>
-        <div class="table-wrap"><table>
-          <thead><tr><th>Typ</th><th>Spend</th><th>Revenue</th><th>ROAS</th><th>Platformy</th></tr></thead>
-          <tbody>${searchTax.map(row => `<tr><td><strong>${row.type}</strong></td><td>${money(row.spend)}</td><td>${money(row.revenue)}</td><td>${num(row.roas)}</td><td class="muted">${row.platforms.join(', ')}</td></tr>`).join('')}</tbody>
+    <div class="three-col">
+      ${section('Paid mix', `
+        <div class="table-wrap compact-table"><table>
+          <thead><tr><th>Bucket</th><th>Spend</th><th>Revenue</th></tr></thead>
+          <tbody>${top(mt.paidMix.bucketSummaryPreviousMonth, 5).map(row => `<tr><td>${bucketBadge(row.bucket)}</td><td>${money(row.spend)}</td><td>${money(row.revenue)}</td></tr>`).join('')}</tbody>
         </table></div>
-      </section>
-      <section class="card">
-        <div class="section-head"><h2>Co udělat teď</h2><div class="muted small">action plan dataset</div></div>
-        <ul class="list">${plan.now.map(item => `<li>${item}</li>`).join('')}</ul>
-        <h3 class="top-gap-small">Další 2 až 4 týdny</h3>
-        <ul class="list compact">${plan.next_2_to_4_weeks.map(item => `<li>${item}</li>`).join('')}</ul>
-      </section>
+      `)}
+      ${section('Search taxonomy', `
+        <div class="table-wrap compact-table"><table>
+          <thead><tr><th>Type</th><th>Spend</th><th>ROAS</th></tr></thead>
+          <tbody>${top(mt.searchTaxonomy.summaryPreviousMonth, 5).map(row => `<tr><td>${row.type}</td><td>${money(row.spend)}</td><td>${num(row.roas)}</td></tr>`).join('')}</tbody>
+        </table></div>
+      `)}
+      ${section('Observed channels', `
+        <div class="table-wrap compact-table"><table>
+          <thead><tr><th>Channel</th><th>Revenue</th><th>Sessions</th></tr></thead>
+          <tbody>${ga4.map(row => `<tr><td>${row.channel}</td><td>${money(row.purchaseRevenue)}</td><td>${num(row.sessions)}</td></tr>`).join('')}</tbody>
+        </table></div>
+      `)}
     </div>
 
-    <section class="card">
-      <div class="section-head"><h2>Netto contribution, první vrstva</h2><div class="muted small">finance ratios applied to measured YTD order truth</div></div>
-      <div class="grid metrics">
-        ${metricCard('Net revenue po stornech', money(netto.ytdEstimated.netRevenueAfterCancellations), 'measured YTD order truth')}
+    ${section('Netto contribution', `
+      <div class="metric-grid four">
+        ${metricCard('Net revenue after cancellations', money(netto.ytdEstimated.netRevenueAfterCancellations), 'YTD estimate')}
         ${metricCard('Estimated gross margin', money(netto.ytdEstimated.estimatedGrossMargin), 'ratio model')}
         ${metricCard('Estimated after marketing', money(netto.ytdEstimated.estimatedAfterMarketing), 'ratio model')}
         ${metricCard('Estimated profit contribution', money(netto.ytdEstimated.estimatedProfitContribution), 'ratio model')}
       </div>
-      <ul class="list compact top-gap-small">${netto.warnings.map(item => `<li>${item}</li>`).join('')}</ul>
-    </section>
-
-    <div class="cols-2">
-      <section class="card"><h2>GA4 observed channels</h2><div class="table-wrap"><table>
-        <thead><tr><th>Channel</th><th>Sessions</th><th>Purchases</th><th>Revenue</th></tr></thead>
-        <tbody>${ga4.map(row => `<tr><td>${row.channel}</td><td>${num(row.sessions)}</td><td>${num(row.ecommercePurchases)}</td><td>${money(row.purchaseRevenue)}</td></tr>`).join('')}</tbody>
-      </table></div></section>
-      <section class="card"><h2>Nejdůležitější omezení</h2><ul class="list">${data.measurement.warnings.map(item => `<li>${item}</li>`).join('')}</ul></section>
-    </div>
-
-    <section class="card">
-      <h2>Top customers sample</h2>
-      <div class="table-wrap"><table>
-        <thead><tr><th>Customer</th><th>Orders</th><th>Revenue</th><th>AOV</th><th>Segment</th></tr></thead>
-        <tbody>${top(customer.topCustomers, 8).map(row => `<tr><td>${row.label}</td><td>${num(row.orders)}</td><td>${money(row.revenueWithVat)}</td><td>${money(row.averageOrderValue)}</td><td>${row.segment}</td></tr>`).join('')}</tbody>
-      </table></div>
-      <p class="footer-note">Aktualizováno: ${data.generatedAt}</p>
-    </section>
+      <ul class="clean-list muted-list">${netto.warnings.map(item => `<li>${item}</li>`).join('')}</ul>
+    `, '<span>ratio-based first layer</span>')}
   `;
 }
 
 function renderRole(data, key, title) {
   const role = data.roleViews[key];
-  const plan = data.actionPlan;
   const netto = data.nettoContribution;
+  const plan = data.actionPlan;
+
   document.getElementById('app').innerHTML = `
-    <section class="hero">
-      <div class="pill">${title}</div>
-      <h1>${role.headline}</h1>
-      <p>Tahle role-based vrstva zkracuje report na to, co má konkrétní člověk opravdu řešit.</p>
-      ${nav()}
+    ${nav(key)}
+    <section class="hero-shell single">
+      <div class="hero-main panel">
+        <div class="eyebrow">${title}</div>
+        <h1>${role.headline}</h1>
+        <div class="two-col top-gap-24">
+          <div>
+            <div class="mini-caption">Focus</div>
+            <ul class="clean-list emphasis-list">${role.focus.map(item => `<li>${item}</li>`).join('')}</ul>
+          </div>
+          <div>
+            <div class="mini-caption">Questions</div>
+            <ul class="clean-list">${role.questions.map(item => `<li>${item}</li>`).join('')}</ul>
+          </div>
+        </div>
+      </div>
     </section>
-    <div class="cols-2">
-      <section class="card"><h2>Na co se dívat</h2><ul class="list">${role.focus.map(item => `<li>${item}</li>`).join('')}</ul></section>
-      <section class="card"><h2>Klíčové otázky</h2><ul class="list">${role.questions.map(item => `<li>${item}</li>`).join('')}</ul></section>
+    <div class="two-col">
+      ${section('Immediate actions', `<ol class="clean-list ordered-list">${plan.now.map(item => `<li>${item}</li>`).join('')}</ol>`)}
+      ${section('Netto contribution status', `<p class="body-copy">${netto.readiness.label}</p><ul class="clean-list muted-list">${netto.warnings.map(item => `<li>${item}</li>`).join('')}</ul>`)}
     </div>
-    <section class="card"><h2>Nejbližší akce</h2><ul class="list compact">${plan.now.map(item => `<li>${item}</li>`).join('')}</ul></section>
-    <section class="card"><h2>Netto contribution status</h2><p>${netto.readiness.label}</p><ul class="list compact">${netto.warnings.map(item => `<li>${item}</li>`).join('')}</ul></section>
   `;
 }
 
 function renderChannels(data) {
   const mt = data.marketingTruth;
   const ch = data.channelIntelligence;
+
   document.getElementById('app').innerHTML = `
-    <section class="hero">
-      <div class="pill">Channel intelligence</div>
-      <h1>Kanály, které výkon tvoří, versus kanály, které jen dobře vypadají.</h1>
-      <p>Nejdřív claim versus observed truth, pak bucket split a až potom detail kampaní.</p>
-      ${nav()}
+    ${nav('channels')}
+    <section class="hero-shell single">
+      <div class="hero-main panel">
+        <div class="eyebrow">Channel intelligence</div>
+        <h1>Channel evaluation</h1>
+        <p class="hero-copy">Nejdřív trust, potom rozpad spendu, až potom detail kampaní.</p>
+      </div>
     </section>
-    <section class="card"><h2>Claim versus observed</h2><div class="table-wrap"><table>
-      <thead><tr><th>Kanál</th><th>Claim revenue</th><th>Observed revenue</th><th>Claim ROAS</th><th>Observed ROAS</th><th>Trust</th><th>Next question</th></tr></thead>
-      <tbody>${ch.rows.map(row => `<tr><td><strong>${row.channel}</strong></td><td>${money(row.platformRevenuePreviousMonth)}</td><td>${money(row.ga4ObservedRevenue)}</td><td>${num(row.platformRoasPreviousMonth)}</td><td>${num(row.ga4ObservedRoas)}</td><td>${trustBadge(row.trustLabel)}</td><td class="muted">${row.nextQuestion}</td></tr>`).join('')}</tbody>
-    </table></div></section>
-    <div class="cols-2">
-      <section class="card"><h2>Paid mix buckets</h2><div class="table-wrap"><table>
-        <thead><tr><th>Bucket</th><th>Spend</th><th>Revenue</th><th>ROAS</th><th>Kampaně</th></tr></thead>
-        <tbody>${mt.paidMix.bucketSummaryPreviousMonth.map(row => `<tr><td>${bucketBadge(row.bucket)}</td><td>${money(row.spend)}</td><td>${money(row.revenue)}</td><td>${num(row.roas)}</td><td>${num(row.campaigns)}</td></tr>`).join('')}</tbody>
-      </table></div></section>
-      <section class="card"><h2>Search taxonomy</h2><div class="table-wrap"><table>
-        <thead><tr><th>Typ</th><th>Spend</th><th>Revenue</th><th>ROAS</th><th>Platformy</th></tr></thead>
-        <tbody>${mt.searchTaxonomy.summaryPreviousMonth.map(row => `<tr><td><strong>${row.type}</strong></td><td>${money(row.spend)}</td><td>${money(row.revenue)}</td><td>${num(row.roas)}</td><td class="muted">${row.platforms.join(', ')}</td></tr>`).join('')}</tbody>
-      </table></div></section>
+
+    ${section('Claim vs observed', `
+      <div class="table-wrap"><table>
+        <thead><tr><th>Channel</th><th>Claim revenue</th><th>Observed revenue</th><th>Claim ROAS</th><th>Observed ROAS</th><th>Trust</th><th>Decision role</th></tr></thead>
+        <tbody>${ch.rows.map(row => `<tr><td><strong>${row.channel}</strong></td><td>${money(row.platformRevenuePreviousMonth)}</td><td>${money(row.ga4ObservedRevenue)}</td><td>${num(row.platformRoasPreviousMonth)}</td><td>${num(row.ga4ObservedRoas)}</td><td>${trustBadge(row.trustLabel)}</td><td class="muted">${row.decisionRole}</td></tr>`).join('')}</tbody>
+      </table></div>
+    `)}
+
+    <div class="two-col">
+      ${section('Paid mix buckets', `
+        <div class="table-wrap"><table>
+          <thead><tr><th>Bucket</th><th>Spend</th><th>Revenue</th><th>ROAS</th><th>Campaigns</th></tr></thead>
+          <tbody>${mt.paidMix.bucketSummaryPreviousMonth.map(row => `<tr><td>${bucketBadge(row.bucket)}</td><td>${money(row.spend)}</td><td>${money(row.revenue)}</td><td>${num(row.roas)}</td><td>${num(row.campaigns)}</td></tr>`).join('')}</tbody>
+        </table></div>
+      `)}
+      ${section('Search taxonomy', `
+        <div class="table-wrap"><table>
+          <thead><tr><th>Type</th><th>Spend</th><th>Revenue</th><th>ROAS</th><th>Platforms</th></tr></thead>
+          <tbody>${mt.searchTaxonomy.summaryPreviousMonth.map(row => `<tr><td>${row.type}</td><td>${money(row.spend)}</td><td>${money(row.revenue)}</td><td>${num(row.roas)}</td><td class="muted">${row.platforms.join(', ')}</td></tr>`).join('')}</tbody>
+        </table></div>
+      `)}
     </div>
-    <section class="card"><h2>Top campaigns</h2><div class="table-wrap"><table>
-      <thead><tr><th>Platform</th><th>Campaign</th><th>Bucket</th><th>Spend</th><th>Revenue</th><th>ROAS</th></tr></thead>
-      <tbody>${mt.topCampaigns.map(row => `<tr><td>${row.platform}</td><td>${row.name}</td><td>${bucketBadge(row.bucket)}</td><td>${money(row.spend)}</td><td>${money(row.revenue)}</td><td>${num(row.roas)}</td></tr>`).join('')}</tbody>
-    </table></div></section>
+
+    ${section('Top campaigns', `
+      <div class="table-wrap"><table>
+        <thead><tr><th>Platform</th><th>Campaign</th><th>Bucket</th><th>Spend</th><th>Revenue</th><th>ROAS</th></tr></thead>
+        <tbody>${mt.topCampaigns.map(row => `<tr><td>${row.platform}</td><td>${row.name}</td><td>${bucketBadge(row.bucket)}</td><td>${money(row.spend)}</td><td>${money(row.revenue)}</td><td>${num(row.roas)}</td></tr>`).join('')}</tbody>
+      </table></div>
+    `)}
   `;
 }
 
 function renderAudit(data) {
   const rows = data.auditWorkspace.topCampaigns;
+
   document.getElementById('app').innerHTML = `
-    <section class="hero">
-      <div class="pill">Audit workspace</div>
-      <h1>Audit kampaní a platforem.</h1>
-      <p>Tady je pracovní plocha pro detailnější kontrolu, už včetně bucket klasifikace.</p>
-      ${nav()}
+    ${nav('audit')}
+    <section class="hero-shell single">
+      <div class="hero-main panel">
+        <div class="eyebrow">Audit</div>
+        <h1>Campaign audit workspace</h1>
+      </div>
     </section>
-    <section class="card"><h2>Top campaigns by spend</h2><div class="table-wrap"><table>
-      <thead><tr><th>Platform</th><th>Campaign</th><th>Bucket</th><th>Spend</th><th>Revenue</th><th>ROAS</th><th>Status</th><th>Risk</th></tr></thead>
-      <tbody>${rows.map(row => `<tr><td>${row.platform}</td><td>${row.name}</td><td>${bucketBadge(row.bucket)}</td><td>${money(row.spend)}</td><td>${money(row.revenue)}</td><td>${num(row.roas)}</td><td class="muted">${row.status || 'n/a'}</td><td>${riskBadge(row.risk)}</td></tr>`).join('')}</tbody>
-    </table></div></section>
-    <section class="card"><h2>Recommended audit actions</h2><ul class="list">${data.auditWorkspace.actions.map(item => `<li>${item}</li>`).join('')}</ul></section>
+
+    ${section('Top campaigns by spend', `
+      <div class="table-wrap"><table>
+        <thead><tr><th>Platform</th><th>Campaign</th><th>Bucket</th><th>Spend</th><th>Revenue</th><th>ROAS</th><th>Status</th><th>Risk</th></tr></thead>
+        <tbody>${rows.map(row => `<tr><td>${row.platform}</td><td>${row.name}</td><td>${bucketBadge(row.bucket)}</td><td>${money(row.spend)}</td><td>${money(row.revenue)}</td><td>${num(row.roas)}</td><td class="muted">${row.status || 'n/a'}</td><td>${riskBadge(row.risk)}</td></tr>`).join('')}</tbody>
+      </table></div>
+    `)}
+
+    ${section('Recommended audit actions', `<ul class="clean-list">${data.auditWorkspace.actions.map(item => `<li>${item}</li>`).join('')}</ul>`)}
   `;
 }
 
 function renderRoivenue(data) {
   const cmp = data.roivenueComparison;
+
   document.getElementById('app').innerHTML = `
-    <section class="hero">
-      <div class="pill">Vs. Roivenue</div>
-      <h1>${cmp.headline}</h1>
-      <p>Tohle srovnání je upřímné. Ukazuje, kde je náš produkt už teď lepší pro Diamond Plus a kde ještě zaostává.</p>
-      ${nav()}
+    ${nav('roivenue')}
+    <section class="hero-shell single">
+      <div class="hero-main panel">
+        <div class="eyebrow">Comparison</div>
+        <h1>Vs. Roivenue</h1>
+      </div>
     </section>
-    <section class="card"><h2>Srovnání</h2><div class="table-wrap"><table>
-      <thead><tr><th>Oblast</th><th>Náš produkt</th><th>Roivenue</th><th>Stav</th></tr></thead>
-      <tbody>${cmp.rows.map(row => `<tr><td><strong>${row.area}</strong></td><td>${row.ours}</td><td>${row.roivenue}</td><td>${statusBadge(row.status)}</td></tr>`).join('')}</tbody>
-    </table></div></section>
-    <section class="card"><h2>Závěr</h2><ul class="list">${cmp.summary.map(item => `<li>${item}</li>`).join('')}</ul></section>
+
+    ${section('Comparison table', `
+      <div class="table-wrap"><table>
+        <thead><tr><th>Area</th><th>Our product</th><th>Roivenue</th><th>Status</th></tr></thead>
+        <tbody>${cmp.rows.map(row => `<tr><td><strong>${row.area}</strong></td><td>${row.ours}</td><td>${row.roivenue}</td><td>${statusBadge(row.status)}</td></tr>`).join('')}</tbody>
+      </table></div>
+    `)}
+
+    ${section('Summary', `<ul class="clean-list">${cmp.summary.map(item => `<li>${item}</li>`).join('')}</ul>`)}
   `;
 }
 
@@ -291,11 +322,11 @@ loadDataLayer().then(data => {
   const page = document.body.dataset.page || 'home';
   if (page === 'channels') renderChannels(data);
   else if (page === 'audit') renderAudit(data);
-  else if (page === 'management') renderRole(data, 'management', 'Management view');
-  else if (page === 'marketing') renderRole(data, 'marketing', 'Marketing view');
-  else if (page === 'finance') renderRole(data, 'finance', 'Finance view');
+  else if (page === 'management') renderRole(data, 'management', 'Management');
+  else if (page === 'marketing') renderRole(data, 'marketing', 'Marketing');
+  else if (page === 'finance') renderRole(data, 'finance', 'Finance');
   else if (page === 'roivenue') renderRoivenue(data);
   else renderHome(data);
 }).catch(err => {
-  document.getElementById('app').innerHTML = `<section class="card"><h2>Failed to load data layer</h2><p>${err.message}</p></section>`;
+  document.getElementById('app').innerHTML = `${nav('home')}<section class="panel section-block"><h2>Failed to load data</h2><p>${err.message}</p></section>`;
 });
