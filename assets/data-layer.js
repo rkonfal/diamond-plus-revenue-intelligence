@@ -1,8 +1,8 @@
 export async function loadDataLayer() {
-  const manifestRes = await fetch('./data/manifest.json?v=live-cs-fix-2', { cache: 'no-store' });
+  const manifestRes = await fetch('./data/manifest.json?v=live-cs-fix-3', { cache: 'no-store' });
   if (!manifestRes.ok) throw new Error('Nepodařilo se načíst manifest');
   const manifest = await manifestRes.json();
-  const version = encodeURIComponent(manifest.generatedAt || 'live-cs-fix-2');
+  const version = encodeURIComponent(manifest.generatedAt || 'live-cs-fix-3');
 
   const entries = Object.entries(manifest.datasets);
   const loaded = await Promise.all(entries.map(async ([key, file]) => {
