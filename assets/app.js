@@ -37,42 +37,62 @@ function renderHome(data) {
   document.getElementById('app').innerHTML = `
     <section class="hero">
       <div class="pill">${data.productStage.name}</div>
-      <h1>Diamond Plus Revenue Intelligence</h1>
-      <p>A decision-first revenue operating layer inspired by Roivenue, built on top of a real multi-file data layer. This version separates executive metrics, business truth, marketing truth, measurement signals, and audit workflows into distinct datasets instead of one monolithic payload.</p>
+      <h1>Revenue report, který jde normálně číst.</h1>
+      <p>Tahle verze odděluje to, co je jistý business truth, od toho, co je jen marketingové tvrzení. A nahoře rovnou říká, co si z reportu má management odnést.</p>
       <div class="nav">
-        <a href="./index.html">Executive Home</a>
-        <a href="./channels.html">Channel Intelligence</a>
-        <a href="./audit-workspace.html">Audit Workspace</a>
+        <a href="./index.html">Shrnutí</a>
+        <a href="./channels.html">Kanály</a>
+        <a href="./audit-workspace.html">Audit</a>
         <a href="https://github.com/rkonfal/diamond-plus-revenue-intelligence">GitHub repo</a>
       </div>
       <div class="grid metrics">
-        <div class="metric"><div class="k">Observed revenue</div><div class="v">${money(ex.observedRevenue.value)}</div><div class="sub">${ex.observedRevenue.label}, focus period ${data.focus.label}</div></div>
-        <div class="metric"><div class="k">Paid media spend</div><div class="v">${money(ex.mediaSpend.value)}</div><div class="sub">${ex.mediaSpend.label}</div></div>
-        <div class="metric"><div class="k">Blended ROAS</div><div class="v">${num(ex.blendedRoas.value)}</div><div class="sub">Observed GA4 revenue divided by paid media spend</div></div>
-        <div class="metric"><div class="k">After-marketing result</div><div class="v">${money(ex.grossMarginAfterMarketing.value)}</div><div class="sub">Finance after marketing, previous full month</div></div>
-        <div class="metric"><div class="k">Net cash position</div><div class="v">${money(ex.netCashPosition.value)}</div><div class="sub">Current finance truth layer</div></div>
-        <div class="metric"><div class="k">Measurement confidence</div><div class="v bad">${ex.measurementConfidence.label}</div><div class="sub">${ex.measurementConfidence.reason}</div></div>
-        <div class="metric"><div class="k">Returning base signal</div><div class="v">${customer.estimatedNewVsReturning.returningBaseStrength}</div><div class="sub">${customer.estimatedNewVsReturning.label}</div></div>
+        <div class="metric"><div class="k">Pozorované tržby</div><div class="v">${money(ex.observedRevenue.value)}</div><div class="sub">${data.focus.label}</div></div>
+        <div class="metric"><div class="k">Paid media spend</div><div class="v">${money(ex.mediaSpend.value)}</div><div class="sub">Meta + Google + Sklik</div></div>
+        <div class="metric"><div class="k">Blended ROAS</div><div class="v">${num(ex.blendedRoas.value)}</div><div class="sub">Pozorované tržby / spend</div></div>
+        <div class="metric"><div class="k">Výsledek po marketingu</div><div class="v">${money(ex.grossMarginAfterMarketing.value)}</div><div class="sub">Finance, minulý plný měsíc</div></div>
+        <div class="metric"><div class="k">Net cash</div><div class="v">${money(ex.netCashPosition.value)}</div><div class="sub">Aktuální finanční realita</div></div>
+        <div class="metric"><div class="k">Jistota měření</div><div class="v bad">${ex.measurementConfidence.label}</div><div class="sub">${ex.measurementConfidence.reason}</div></div>
       </div>
     </section>
 
-    <div class="cols-2">
+    <div class="cols-3">
       <section class="card">
-        <h2>Immediate management actions</h2>
+        <h2>Co ten report říká</h2>
         <ul class="list">
-          ${data.auditWorkspace.actions.map(item => `<li>${item}</li>`).join('')}
+          ${ex.reportNarrative.plainLanguage.map(item => `<li>${item}</li>`).join('')}
         </ul>
       </section>
       <section class="card">
-        <h2>Data layer structure</h2>
+        <h2>Co je dobrá zpráva</h2>
         <ul class="list">
-          <li><strong>meta.json</strong> for generation state and focus period</li>
-          <li><strong>executive.json</strong> for management KPI layer</li>
-          <li><strong>business-truth.json</strong> for finance, cash, order pulse, and contribution base</li>
-          <li><strong>marketing-truth.json</strong> for platform and channel interpretation</li>
-          <li><strong>customer-truth.json</strong> for repeat-customer concentration and customer fact readiness</li>
-          <li><strong>measurement.json</strong> for GA4 observations and warning layer</li>
-          <li><strong>audit-workspace.json</strong> for campaign review workflows</li>
+          <li>Po marketingu vychází ve financích <strong>${money(biz.contributionTruth.previousMonth.afterMarketing)}</strong>.</li>
+          <li>Net cash je <strong>${money(ex.netCashPosition.value)}</strong>.</li>
+          <li>Repeat zákaznická báze je <strong>${customer.estimatedNewVsReturning.returningBaseStrength}</strong>.</li>
+        </ul>
+      </section>
+      <section class="card">
+        <h2>Na co si dát pozor</h2>
+        <ul class="list">
+          <li>Stále nemáme plný historical order fact pro celý customer universe.</li>
+          <li>Platform revenue je optimističtější než analytická a backend realita.</li>
+          <li>True new vs returning je zatím částečně proxy, ne finální pravda.</li>
+        </ul>
+      </section>
+    </div>
+
+    <div class="cols-2">
+      <section class="card">
+        <h2>Co udělat hned</h2>
+        <ul class="list">
+          ${ex.reportNarrative.whatToDoNow.map(item => `<li>${item}</li>`).join('')}
+        </ul>
+      </section>
+      <section class="card">
+        <h2>Automatická aktualizace</h2>
+        <ul class="list">
+          <li>Data se teď dají obnovovat automaticky z preview repa.</li>
+          <li>V repu je připravený GitHub Actions refresh pipeline.</li>
+          <li>Report už není ruční jednorázovka, ale aktualizovatelný produktový základ.</li>
         </ul>
       </section>
     </div>
@@ -80,39 +100,30 @@ function renderHome(data) {
     <div class="cols-3">
       <section class="card">
         <h2>Finance truth</h2>
-        <table>
-          <tbody>
-            <tr><td class="muted">Revenue</td><td>${money(biz.financePreviousMonth.revenue)}</td></tr>
-            <tr><td class="muted">Gross margin</td><td>${money(biz.financePreviousMonth.grossMargin)}</td></tr>
-            <tr><td class="muted">After logistics</td><td>${money(biz.financePreviousMonth.afterLogistics)}</td></tr>
-            <tr><td class="muted">After marketing</td><td>${money(biz.financePreviousMonth.afterMarketing)}</td></tr>
-            <tr><td class="muted">Operating margin</td><td>${money(biz.financePreviousMonth.operatingMargin)}</td></tr>
-            <tr><td class="muted">Profit %</td><td>${pct(biz.financePreviousMonth.profitPct)}</td></tr>
-          </tbody>
-        </table>
+        <table><tbody>
+          <tr><td class="muted">Revenue</td><td>${money(biz.financePreviousMonth.revenue)}</td></tr>
+          <tr><td class="muted">Gross margin</td><td>${money(biz.financePreviousMonth.grossMargin)}</td></tr>
+          <tr><td class="muted">After marketing</td><td>${money(biz.financePreviousMonth.afterMarketing)}</td></tr>
+          <tr><td class="muted">Operating margin</td><td>${money(biz.financePreviousMonth.operatingMargin)}</td></tr>
+          <tr><td class="muted">Profit %</td><td>${pct(biz.financePreviousMonth.profitPct)}</td></tr>
+        </tbody></table>
       </section>
       <section class="card">
-        <h2>Order pulse, previous day</h2>
-        <table>
-          <tbody>
-            <tr><td class="muted">Orders</td><td>${num(biz.previousDayOrders.orders)}</td></tr>
-            <tr><td class="muted">Revenue with VAT</td><td>${money(biz.previousDayOrders.revenueWithVat)}</td></tr>
-            <tr><td class="muted">Average order value</td><td>${money(biz.previousDayOrders.averageOrderValue)}</td></tr>
-            <tr><td class="muted">Cancelled orders</td><td>${num(biz.previousDayOrders.cancelledOrders)}</td></tr>
-            <tr><td class="muted">Problematic orders</td><td>${num(biz.previousDayOrders.problematicOrders)}</td></tr>
-            <tr><td class="muted">CZ orders</td><td>${num(biz.previousDayOrders.czOrders)}</td></tr>
-            <tr><td class="muted">SK orders</td><td>${num(biz.previousDayOrders.skOrders)}</td></tr>
-          </tbody>
-        </table>
+        <h2>Order quality</h2>
+        <table><tbody>
+          <tr><td class="muted">Orders</td><td>${num(biz.previousDayOrders.orders)}</td></tr>
+          <tr><td class="muted">Cancelled rate</td><td>${pct(biz.orderQuality.cancelledRatePct)}</td></tr>
+          <tr><td class="muted">Problematic rate</td><td>${pct(biz.orderQuality.problematicRatePct)}</td></tr>
+          <tr><td class="muted">Estimated net after cancellations</td><td>${money(biz.orderQuality.estimatedNetRevenueAfterCancellations)}</td></tr>
+        </tbody></table>
       </section>
       <section class="card">
-        <h2>Customer truth layer</h2>
-        <p>${customer.readiness.label}</p>
+        <h2>Customer truth</h2>
         <ul class="list">
-          <li>Top 10 customers represent <strong>${pct(customer.coverage.top10RevenueSharePctOfYtd)}</strong> of current YTD revenue.</li>
-          <li>Top 50 customers represent <strong>${pct(customer.coverage.top50RevenueSharePctOfYtd)}</strong> of current YTD revenue.</li>
-          <li>Heavy repeat customers in top 50: <strong>${num(customer.repeatSignals.heavyRepeatCustomersInTop50)}</strong>.</li>
-          <li>Next unlock: ${customer.readiness.nextUnlock}</li>
+          <li>Top 10 zákazníků = <strong>${pct(customer.coverage.top10RevenueSharePctOfYtd)}</strong> YTD revenue.</li>
+          <li>Top 50 zákazníků = <strong>${pct(customer.coverage.top50RevenueSharePctOfYtd)}</strong> YTD revenue.</li>
+          <li>Heavy repeat customers v top 50: <strong>${num(customer.repeatSignals.heavyRepeatCustomersInTop50)}</strong>.</li>
+          <li>${customer.readiness.nextUnlock}</li>
         </ul>
       </section>
     </div>
@@ -121,7 +132,7 @@ function renderHome(data) {
       <h2>Channel truth layer</h2>
       <div class="table-wrap">
         <table>
-          <thead><tr><th>Channel</th><th>Spend</th><th>Reported revenue</th><th>ROAS</th><th>Trust</th><th>Interpretation</th></tr></thead>
+          <thead><tr><th>Kanál</th><th>Spend</th><th>Reported revenue</th><th>ROAS</th><th>Důvěra</th><th>Výklad</th></tr></thead>
           <tbody>
             ${mt.channels.map(row => `
             <tr>
@@ -139,7 +150,7 @@ function renderHome(data) {
 
     <div class="cols-2">
       <section class="card">
-        <h2>Observed GA4 channels</h2>
+        <h2>GA4 observed channels</h2>
         <div class="table-wrap">
           <table>
             <thead><tr><th>Channel</th><th>Sessions</th><th>Purchases</th><th>Revenue</th></tr></thead>
@@ -156,12 +167,9 @@ function renderHome(data) {
         </div>
       </section>
       <section class="card">
-        <h2>Contribution and quality warnings</h2>
+        <h2>Nejdůležitější omezení</h2>
         <ul class="list">
-          <li>Previous month after-marketing contribution: <strong>${money(biz.contributionTruth.previousMonth.afterMarketing)}</strong> (${pct(biz.contributionTruth.previousMonth.afterMarketingPct)}).</li>
-          <li>Previous-day cancelled order rate: <strong>${pct(biz.orderQuality.cancelledRatePct)}</strong>.</li>
-          <li>Previous-day problematic order rate: <strong>${pct(biz.orderQuality.problematicRatePct)}</strong>.</li>
-          <li>${biz.contributionTruth.nettoContributionReadiness.label}</li>
+          ${data.measurement.warnings.map(item => `<li>${item}</li>`).join('')}
         </ul>
       </section>
     </div>
@@ -170,9 +178,9 @@ function renderHome(data) {
       <h2>Top customers sample</h2>
       <div class="table-wrap">
         <table>
-          <thead><tr><th>Customer</th><th>Orders</th><th>Revenue</th><th>Average order value</th><th>Last order</th></tr></thead>
+          <thead><tr><th>Customer</th><th>Orders</th><th>Revenue</th><th>AOV</th><th>Last order</th></tr></thead>
           <tbody>
-            ${top(biz.topCustomersSample, 8).map(row => `
+            ${top(customer.topCustomers, 8).map(row => `
             <tr>
               <td>${row.label}</td>
               <td>${num(row.orders)}</td>
@@ -183,7 +191,7 @@ function renderHome(data) {
           </tbody>
         </table>
       </div>
-      <p class="footer-note">Data layer build: ${data.generatedAt}</p>
+      <p class="footer-note">Aktualizováno: ${data.generatedAt}</p>
     </section>
   `;
 }
@@ -194,12 +202,12 @@ function renderChannels(data) {
   document.getElementById('app').innerHTML = `
     <section class="hero">
       <div class="pill">Channel intelligence</div>
-      <h1>Where channel performance looks strong, and where it only looks strong.</h1>
-      <p>This view is fed from the dedicated marketing-truth and measurement datasets, so platform claims and observed analytics stay intentionally separate.</p>
+      <h1>Kanály, které výkon tvoří, versus kanály, které jen dobře vypadají.</h1>
+      <p>Tahle stránka má být čitelná i pro člověka, který nežije v reklamních platformách. Proto je u každého kanálu rovnou i interpretace a důvěra v data.</p>
       <div class="nav">
-        <a href="./index.html">Executive Home</a>
-        <a href="./channels.html">Channel Intelligence</a>
-        <a href="./audit-workspace.html">Audit Workspace</a>
+        <a href="./index.html">Shrnutí</a>
+        <a href="./channels.html">Kanály</a>
+        <a href="./audit-workspace.html">Audit</a>
       </div>
     </section>
 
@@ -207,7 +215,7 @@ function renderChannels(data) {
       <h2>Cross-platform comparison</h2>
       <div class="table-wrap">
         <table>
-          <thead><tr><th>Channel</th><th>Spend</th><th>Reported revenue</th><th>ROAS</th><th>Trust</th><th>Interpretation</th></tr></thead>
+          <thead><tr><th>Channel</th><th>Spend</th><th>Reported revenue</th><th>ROAS</th><th>Důvěra</th><th>Interpretace</th></tr></thead>
           <tbody>
             ${mt.channels.map(row => `
               <tr>
@@ -249,12 +257,12 @@ function renderAudit(data) {
   document.getElementById('app').innerHTML = `
     <section class="hero">
       <div class="pill">Audit workspace</div>
-      <h1>Campaign and platform audit workspace for management and specialist reviews.</h1>
-      <p>This page runs from the audit-workspace dataset, which means it can grow separately from the executive layer and later support campaign-level ownership flows.</p>
+      <h1>Audit kampaní a platforem.</h1>
+      <p>Tady je pracovní plocha pro detailnější kontrolu. Má odpovědět na otázku, kde je největší spend, kde je riziko a kde se má zasáhnout jako první.</p>
       <div class="nav">
-        <a href="./index.html">Executive Home</a>
-        <a href="./channels.html">Channel Intelligence</a>
-        <a href="./audit-workspace.html">Audit Workspace</a>
+        <a href="./index.html">Shrnutí</a>
+        <a href="./channels.html">Kanály</a>
+        <a href="./audit-workspace.html">Audit</a>
       </div>
     </section>
 

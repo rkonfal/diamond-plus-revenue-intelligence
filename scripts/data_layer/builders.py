@@ -83,6 +83,20 @@ def build_data_layer(raw: dict) -> dict:
             'status': customer_fact['estimatedNewVsReturning']['status'],
             'label': customer_fact['estimatedNewVsReturning']['label'],
         },
+        'reportNarrative': {
+            'headline': 'Report ukazuje silný byznys, ale slabší jistotu v tom, které marketingové kanály růst opravdu vytváří.',
+            'plainLanguage': [
+                f"Za fokus období report vidí tržby {round2(ga4_focus['purchaseRevenue'])} Kč a spend {focus_spend} Kč.",
+                f"Po marketingu vychází ve financích {round2(finance_prev['afterMarketing'])} Kč, takže byznys jako celek funguje.",
+                f"Zákaznická báze má silný repeat signal, ale true new vs returning zatím není definitivní bez plné order historie.",
+                'Platformy hlásí výkon lépe, než ho zatím umíme s vysokou jistotou potvrdit v analytice a backendu.',
+            ],
+            'whatToDoNow': [
+                'Řídit rozpočet opatrněji podle channel trust vrstvy, ne jen podle platform ROAS.',
+                'Dodělat plný order fact a customer fact model, aby byl new vs returning finální.',
+                'Zavést order-level contribution po stornu, vratkách a marži.',
+            ],
+        },
     }
 
     business_truth = {
@@ -113,6 +127,16 @@ def build_data_layer(raw: dict) -> dict:
     }
 
     customer_truth = customer_fact
+
+    order_fact = {
+        'readiness': {
+            'status': 'partial',
+            'label': 'Order fact currently covers latest daily order pulse only, not the full historical order universe.',
+            'nextUnlock': 'Daily or monthly full order export with customer key and final lifecycle state.',
+        },
+        'latestDay': prev_day.get('items', []),
+        'summary': order_quality,
+    }
 
     measurement = {
         'ga4Channels': focus_channels,
@@ -161,6 +185,7 @@ def build_data_layer(raw: dict) -> dict:
         'business-truth': business_truth,
         'marketing-truth': marketing_truth,
         'customer-truth': customer_truth,
+        'order-fact': order_fact,
         'measurement': measurement,
         'audit-workspace': audit_workspace,
         'product-stage': product_stage,

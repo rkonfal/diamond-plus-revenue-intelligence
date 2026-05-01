@@ -112,6 +112,7 @@ The first live implementation now uses a multi-file data layer:
 - `business-truth.json` = finance, cash, orders, customer sample
 - `marketing-truth.json` = platform/channel truth and campaign layer
 - `customer-truth.json` = repeat-customer concentration and customer readiness layer
+- `order-fact.json` = latest order pulse fact dataset and order-state base
 - `measurement.json` = observed GA4 and warning layer
 - `audit-workspace.json` = campaign audit dataset
 - `product-stage.json` = delivery stage and next steps
@@ -122,3 +123,5 @@ Build flow:
 3. `scripts/data_layer/transforms.py` handles shared transformations
 4. `scripts/data_layer/builders.py` builds domain datasets
 5. `scripts/build_snapshot.py` writes the final published data layer
+6. `scripts/sync_sources.py` can sync fresh raw inputs from the reporting preview repo
+7. `.github/workflows/auto-refresh.yml` keeps the public report auto-updated

@@ -65,12 +65,19 @@ Generated files:
 - `data/business-truth.json`
 - `data/marketing-truth.json`
 - `data/customer-truth.json`
+- `data/order-fact.json`
 - `data/measurement.json`
 - `data/audit-workspace.json`
 - `data/product-stage.json`
 
-Build command:
-- `python3 scripts/build_snapshot.py`
+Build commands:
+- local source: `python3 scripts/build_snapshot.py`
+- synced source: `python3 scripts/sync_sources.py && REVENUE_SOURCE_DIR=source/current python3 scripts/build_snapshot.py`
+
+## Automatic updates
+
+The repo now includes `.github/workflows/auto-refresh.yml`.
+It downloads fresh source files from `rkonfal/diamond-plus-reporting-preview`, rebuilds the data layer, and commits updates automatically on schedule.
 
 ## Current status
 

@@ -2,13 +2,15 @@
 from __future__ import annotations
 
 import json
+import os
 from pathlib import Path
 
 from data_layer import build_data_layer
 from data_layer.sources import SourceStore
 
 ROOT = Path('/Users/rudolfkonfal/.openclaw/workspace/diamond-plus-revenue-intelligence')
-SOURCE = Path('/Users/rudolfkonfal/.openclaw/workspace/reporting-v2/data/current')
+DEFAULT_LOCAL_SOURCE = Path('/Users/rudolfkonfal/.openclaw/workspace/reporting-v2/data/current')
+DEFAULT_SYNCED_SOURCE = ROOT / 'source' / 'current'
 OUTPUT_DIR = ROOT / 'data'
 
 
@@ -18,7 +20,9 @@ def write_json(path: Path, payload: dict):
 
 def main():
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
-    raw = SourceStore(SOURCE).load_all()
+    source_override = os.environ.get('REVENUE_SOURCE_DIR')
+    source_dir = Path(source_override) if source_override else (DEFAULT_LOCAL_SOURCE if DEFAULT_LOCAL_SOURCE.exists() else DEFAULT_SYNCED_SOURCE)
+    raw = SourceStore(source_dir).load_all()
     data_layer = build_data_layer(raw)
 
     manifest = {
@@ -30,6 +34,7 @@ def main():
             'businessTruth': 'business-truth.json',
             'marketingTruth': 'marketing-truth.json',
             'customerTruth': 'customer-truth.json',
+            'orderFact': 'order-fact.json',
             'measurement': 'measurement.json',
             'auditWorkspace': 'audit-workspace.json',
             'productStage': 'product-stage.json',
@@ -41,6 +46,7 @@ def main():
     write_json(OUTPUT_DIR / 'business-truth.json', data_layer['business-truth'])
     write_json(OUTPUT_DIR / 'marketing-truth.json', data_layer['marketing-truth'])
     write_json(OUTPUT_DIR / 'customer-truth.json', data_layer['customer-truth'])
+    write_json(OUTPUT_DIR / 'order-fact.json', data_layer['order-fact'])
     write_json(OUTPUT_DIR / 'measurement.json', data_layer['measurement'])
     write_json(OUTPUT_DIR / 'audit-workspace.json', data_layer['audit-workspace'])
     write_json(OUTPUT_DIR / 'product-stage.json', data_layer['product-stage'])
@@ -53,6 +59,7 @@ def main():
         'businessTruth': data_layer['business-truth'],
         'marketingTruth': data_layer['marketing-truth'],
         'customerTruth': data_layer['customer-truth'],
+        'orderFact': data_layer['order-fact'],
         'measurement': data_layer['measurement'],
         'auditWorkspace': data_layer['audit-workspace'],
         'productStage': data_layer['product-stage'],
