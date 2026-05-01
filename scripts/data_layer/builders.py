@@ -39,6 +39,7 @@ def build_customer_attribution_layer(readiness: dict | None, truth: dict | None,
             'matchRatePct': summary.get('matchRatePct') or 0,
             'weightedRevenueMatched': summary.get('weightedRevenueMatched') or 0,
         },
+        'classification': summary.get('classification') or {},
         'topCampaigns': campaign_rows[:8],
         'recentOrders': order_rows[:6],
         'whyItMatters': [

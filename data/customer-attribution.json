@@ -15,6 +15,24 @@
     "matchRatePct": 93.96,
     "weightedRevenueMatched": 16811779.8
   },
+  "classification": {
+    "likely_incremental": {
+      "orders": 188,
+      "revenue": 227005.26
+    },
+    "likely_captured_existing_demand": {
+      "orders": 2299,
+      "revenue": 3679224.45
+    },
+    "retention_reorder": {
+      "orders": 3898,
+      "revenue": 6458064.89
+    },
+    "mixed": {
+      "orders": 3870,
+      "revenue": 6447485.33
+    }
+  },
   "topCampaigns": [
     {
       "platform": "Direct",
@@ -24,7 +42,10 @@
       "newCustomersWeighted": 89.5,
       "returningCustomersWeighted": 1779.0,
       "triggerRevenueWeighted": 1752810.48,
-      "assistRevenueWeighted": 1249700.86
+      "assistRevenueWeighted": 1249700.86,
+      "incrementalRevenueWeighted": 0.0,
+      "capturedDemandRevenueWeighted": 0.0,
+      "retentionRevenueWeighted": 2862728.44
     },
     {
       "platform": "Google Ads",
@@ -34,7 +55,10 @@
       "newCustomersWeighted": 22.8,
       "returningCustomersWeighted": 1278.0,
       "triggerRevenueWeighted": 5214.12,
-      "assistRevenueWeighted": 2101525.14
+      "assistRevenueWeighted": 2101525.14,
+      "incrementalRevenueWeighted": 0.0,
+      "capturedDemandRevenueWeighted": 1112348.58,
+      "retentionRevenueWeighted": 0.0
     },
     {
       "platform": "Klaviyo",
@@ -44,7 +68,10 @@
       "newCustomersWeighted": 16.25,
       "returningCustomersWeighted": 612.3,
       "triggerRevenueWeighted": 0.0,
-      "assistRevenueWeighted": 1105277.14
+      "assistRevenueWeighted": 1105277.14,
+      "incrementalRevenueWeighted": 0.0,
+      "capturedDemandRevenueWeighted": 0.0,
+      "retentionRevenueWeighted": 1074256.21
     },
     {
       "platform": "Google Ads",
@@ -54,7 +81,10 @@
       "newCustomersWeighted": 11.3,
       "returningCustomersWeighted": 481.25,
       "triggerRevenueWeighted": 679274.0,
-      "assistRevenueWeighted": 177122.63
+      "assistRevenueWeighted": 177122.63,
+      "incrementalRevenueWeighted": 7579.75,
+      "capturedDemandRevenueWeighted": 81218.44,
+      "retentionRevenueWeighted": 0.0
     },
     {
       "platform": "Sklik",
@@ -64,7 +94,10 @@
       "newCustomersWeighted": 10.65,
       "returningCustomersWeighted": 428.0,
       "triggerRevenueWeighted": 0.0,
-      "assistRevenueWeighted": 764305.6
+      "assistRevenueWeighted": 764305.6,
+      "incrementalRevenueWeighted": 0.0,
+      "capturedDemandRevenueWeighted": 543573.75,
+      "retentionRevenueWeighted": 0.0
     },
     {
       "platform": "Google Ads",
@@ -74,7 +107,10 @@
       "newCustomersWeighted": 34.2,
       "returningCustomersWeighted": 389.5,
       "triggerRevenueWeighted": 404442.45,
-      "assistRevenueWeighted": 295884.26
+      "assistRevenueWeighted": 295884.26,
+      "incrementalRevenueWeighted": 30835.66,
+      "capturedDemandRevenueWeighted": 141228.38,
+      "retentionRevenueWeighted": 0.0
     },
     {
       "platform": "Google Ads",
@@ -84,7 +120,10 @@
       "newCustomersWeighted": 63.15,
       "returningCustomersWeighted": 381.5,
       "triggerRevenueWeighted": 575687.25,
-      "assistRevenueWeighted": 106406.4
+      "assistRevenueWeighted": 106406.4,
+      "incrementalRevenueWeighted": 1044.9,
+      "capturedDemandRevenueWeighted": 674121.75,
+      "retentionRevenueWeighted": 0.0
     },
     {
       "platform": "Meta Ads",
@@ -94,7 +133,10 @@
       "newCustomersWeighted": 8.1,
       "returningCustomersWeighted": 225.0,
       "triggerRevenueWeighted": 0.0,
-      "assistRevenueWeighted": 379376.66
+      "assistRevenueWeighted": 379376.66,
+      "incrementalRevenueWeighted": 0.0,
+      "capturedDemandRevenueWeighted": 0.0,
+      "retentionRevenueWeighted": 0.0
     }
   ],
   "recentOrders": [
@@ -114,6 +156,7 @@
       "firstUserCampaignName": "(direct)",
       "landingPage": "/objednavka/3608535/platba",
       "incrementalityClass": "mixed",
+      "driverLabel": "smíšený vliv",
       "weightedAttribution": [
         {
           "platform": "Google Ads",
@@ -148,6 +191,7 @@
       "firstUserCampaignName": "(direct)",
       "landingPage": "/",
       "incrementalityClass": "mixed",
+      "driverLabel": "smíšený vliv",
       "weightedAttribution": [
         {
           "platform": "Other",
@@ -182,6 +226,7 @@
       "firstUserCampaignName": "(direct)",
       "landingPage": "/balicek-pro-podporu-pohyblivosti_z8104/?tw_source=google&tw_adid=&tw_campaign=23595356591&tw_kwdid=",
       "incrementalityClass": "mixed",
+      "driverLabel": "smíšený vliv",
       "weightedAttribution": [
         {
           "platform": "Google Ads",
@@ -216,6 +261,7 @@
       "firstUserCampaignName": "(direct)",
       "landingPage": "/hubnuti_k1241/",
       "incrementalityClass": "retention_reorder",
+      "driverLabel": "spíš retenční reorder",
       "weightedAttribution": [
         {
           "platform": "Klaviyo",
@@ -250,6 +296,7 @@
       "firstUserCampaignName": "CZ - Slevové zemětřesení konec",
       "landingPage": "/akce_k601/slevove-zemetreseni_k1264/?_kx=pI4gRX48wB6HihEcWT97fMht0XZTniFqZyNAQWtvMR5rWWncmRq6uCjle4P9PA4N.U9rq9t",
       "incrementalityClass": "retention_reorder",
+      "driverLabel": "spíš retenční reorder",
       "weightedAttribution": [
         {
           "platform": "Klaviyo",
@@ -284,6 +331,7 @@
       "firstUserCampaignName": "(direct)",
       "landingPage": "/kosik/",
       "incrementalityClass": "likely_captured_existing_demand",
+      "driverLabel": "spíš zachycení existující poptávky",
       "weightedAttribution": [
         {
           "platform": "Google Ads",

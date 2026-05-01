@@ -297,6 +297,17 @@ function renderHome(data) {
           </table></div>
         </div>
         <div>
+          <div class="mini-caption">Rozklad podle typu vlivu</div>
+          <div class="table-wrap"><table>
+            <thead><tr><th>Třída</th><th>Objednávky</th><th>Tržby</th></tr></thead>
+            <tbody>
+              <tr><td>Pravděpodobně inkrementální</td><td>${num(attribution.classification.likely_incremental?.orders)}</td><td>${money(attribution.classification.likely_incremental?.revenue)}</td></tr>
+              <tr><td>Spíš zachycená poptávka</td><td>${num(attribution.classification.likely_captured_existing_demand?.orders)}</td><td>${money(attribution.classification.likely_captured_existing_demand?.revenue)}</td></tr>
+              <tr><td>Retenční reorder</td><td>${num(attribution.classification.retention_reorder?.orders)}</td><td>${money(attribution.classification.retention_reorder?.revenue)}</td></tr>
+              <tr><td>Smíšené</td><td>${num(attribution.classification.mixed?.orders)}</td><td>${money(attribution.classification.mixed?.revenue)}</td></tr>
+            </tbody>
+          </table></div>
+          <div class="divider"></div>
           <div class="mini-caption">Co to znamená</div>
           <ul class="clean-list">${attribution.whyItMatters.map(item => `<li>${item}</li>`).join('')}</ul>
           <div class="divider"></div>
