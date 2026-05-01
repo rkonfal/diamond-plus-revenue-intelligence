@@ -37,6 +37,8 @@ def main():
             'orderFact': 'order-fact.json',
             'measurement': 'measurement.json',
             'auditWorkspace': 'audit-workspace.json',
+            'roleViews': 'role-views.json',
+            'roivenueComparison': 'roivenue-comparison.json',
             'productStage': 'product-stage.json',
         },
     }
@@ -49,6 +51,8 @@ def main():
     write_json(OUTPUT_DIR / 'order-fact.json', data_layer['order-fact'])
     write_json(OUTPUT_DIR / 'measurement.json', data_layer['measurement'])
     write_json(OUTPUT_DIR / 'audit-workspace.json', data_layer['audit-workspace'])
+    write_json(OUTPUT_DIR / 'role-views.json', data_layer['role-views'])
+    write_json(OUTPUT_DIR / 'roivenue-comparison.json', data_layer['roivenue-comparison'])
     write_json(OUTPUT_DIR / 'product-stage.json', data_layer['product-stage'])
     write_json(OUTPUT_DIR / 'manifest.json', manifest)
 
@@ -62,6 +66,8 @@ def main():
         'orderFact': data_layer['order-fact'],
         'measurement': data_layer['measurement'],
         'auditWorkspace': data_layer['audit-workspace'],
+        'roleViews': data_layer['role-views'],
+        'roivenueComparison': data_layer['roivenue-comparison'],
         'productStage': data_layer['product-stage'],
     }
     write_json(OUTPUT_DIR / 'revenue-intelligence-snapshot.json', snapshot)

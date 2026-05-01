@@ -161,6 +161,65 @@ def build_data_layer(raw: dict) -> dict:
         ],
     }
 
+    role_views = {
+        'management': {
+            'headline': 'Byznys je profitabilní po marketingu, ale attribution jistota zatím zaostává za business výsledkem.',
+            'focus': [
+                f"Po marketingu zůstalo {round2(finance_prev['afterMarketing'])} Kč.",
+                f"Net cash pozice je {round2(finance['cash']['netCashPosition'])} Kč.",
+                customer_fact['estimatedNewVsReturning']['label'],
+            ],
+            'questions': [
+                'Které kanály skutečně vytváří nový demand?',
+                'Kde je výkon reálný a kde je jen atribuční optimismus?',
+                'Jak moc je růst závislý na repeat zákaznících?',
+            ],
+        },
+        'marketing': {
+            'headline': 'Marketing view má sloužit k řízení spendu podle trust vrstvy, ne jen podle platform ROAS.',
+            'focus': [
+                'Meta má silný platform revenue, ale nízkou důvěru.',
+                'Google drží nejsilnější výkon, ale je brand-heavy.',
+                'Sklik potřebuje jasnější roli a validaci proti backendu.',
+            ],
+            'questions': [
+                'Co škálovat, co omezit, co rozdělit na acquisition vs remarketing?',
+                'Kde chybí tracking hygiena a naming disciplína?',
+                'Kde je potřeba zpřísnit audience exclusions?',
+            ],
+        },
+        'finance': {
+            'headline': 'Finance view spojuje marketing spend s margin realitou, ne jen s obratem.',
+            'focus': [
+                f"Revenue ve financích za minulý měsíc: {round2(finance_prev['revenue'])} Kč.",
+                f"Operating margin: {round2(finance_prev['operatingMargin'])} Kč.",
+                contribution_truth['nettoContributionReadiness']['label'],
+            ],
+            'questions': [
+                'Kolik z růstu je skutečně profitabilních po marketingu?',
+                'Jak vypadá contribution po stornech, vratkách a marži?',
+                'Jak rychle umíme odlišit růst obratu od růstu přínosu?',
+            ],
+        },
+    }
+
+    roivenue_comparison = {
+        'headline': 'Roivenue comparison, where this product is already strong and where it is still behind.',
+        'rows': [
+            {'area': 'Business truth layer', 'ours': 'Strong finance and order pulse connection', 'roivenue': 'Usually stronger attribution and channel modeling, weaker custom internal ops context', 'status': 'strong'},
+            {'area': 'Attribution / channel modeling', 'ours': 'Partial, confidence-led, explicit about uncertainty', 'roivenue': 'More mature and deeper by default', 'status': 'behind'},
+            {'area': 'Readability for local team', 'ours': 'Much more tailored, plain-language, management-readable', 'roivenue': 'More standardized and polished', 'status': 'strong'},
+            {'area': 'Customer truth', 'ours': 'Proxy layer only so far', 'roivenue': 'Typically more mature when fully integrated', 'status': 'behind'},
+            {'area': 'Automation and ownership', 'ours': 'Now auto-refreshing and GitHub-native', 'roivenue': 'More enterprise-ready workflow stack', 'status': 'close'},
+            {'area': 'Fit to Diamond Plus', 'ours': 'Very high, custom-built around local business truth', 'roivenue': 'Generic platform fit', 'status': 'strong'},
+        ],
+        'summary': [
+            'Compared with Roivenue, this product is already better aligned to Diamond Plus internal reality.',
+            'It is not yet as mature in attribution depth, customer truth, and modeled contribution logic.',
+            'If we finish the full order/customer truth engine, the product gets within sight of a genuinely competitive in-house alternative.',
+        ],
+    }
+
     product_stage = {
         'name': 'Stage 2, business truth and customer layer foundation',
         'done': [
@@ -188,5 +247,7 @@ def build_data_layer(raw: dict) -> dict:
         'order-fact': order_fact,
         'measurement': measurement,
         'audit-workspace': audit_workspace,
+        'role-views': role_views,
+        'roivenue-comparison': roivenue_comparison,
         'product-stage': product_stage,
     }
