@@ -31,7 +31,7 @@ function channelLabel(channel) {
     'Organic Search': 'Organické vyhledávání',
     'Direct': 'Přímá návštěvnost',
     'Unassigned': 'Nepřiřazeno',
-    'Cross-network': 'Cross-network',
+    'Cross-network': 'Napříč sítěmi',
     'Paid Shopping': 'Placené nákupy',
     'Paid Other': 'Ostatní placené',
   };
@@ -42,21 +42,46 @@ function translateText(text) {
   if (text == null) return '';
   let out = String(text);
   const replacements = [
-    ['Stage 3, decision-grade revenue intelligence foundation', 'Fáze 3, základ decision-grade revenue intelligence'],
+    ['Stage 3, decision-grade revenue intelligence foundation', 'Fáze 3, základ rozhodovací revenue intelligence'],
+    ['Fáze 3, základ decision-grade revenue intelligence', 'Fáze 3, základ rozhodovací revenue intelligence'],
     ['Medium', 'Střední'],
     ['Finance after marketing:', 'Finance po marketingu:'],
-    ['Returning customers generated', 'Vrací se zákazníci vytvořili'],
+    ['Returning customers generated', 'Vracející se zákazníci vytvořili'],
     [' from new customers in the measured YTD window.', ' od nových zákazníků v měřeném YTD okně.'],
     ['Channel incrementality is still confidence-led, not fully modeled.', 'Inkrementalita kanálů je zatím řízená confidence vrstvou, ne plně domodelovaná.'],
     ['Platform claim is much stronger than observed paid social signal.', 'Platformní claim je výrazně silnější než pozorovaný signál placených sociálních sítí.'],
-    ['Retention is clearly material, but still not reconciled to backend net revenue.', 'Retence je zjevně materiální, ale stále není reconciled vůči backend netto revenue.'],
-    ['Search works, but brand and remarketing are mixed into the same success story.', 'Search funguje, ale brand a remarketing jsou smíchané do jednoho příběhu úspěchu.'],
+    ['Retention is clearly material, but still not reconciled to backend net revenue.', 'Retence je zjevně materiální, ale stále není sladěná vůči backend netto tržbám.'],
+    ['Search works, but brand and remarketing are mixed into the same success story.', 'Vyhledávání funguje, ale značka a remarketing jsou smíchané do jednoho příběhu úspěchu.'],
     ['Sklik reports extreme ROAS, but backend validation layer is still missing.', 'Sklik reportuje extrémní ROAS, ale backend validační vrstva stále chybí.'],
     ['Measured YTD orders processed:', 'Zpracované objednávky v měřeném YTD:'],
-    ['podíl returning revenue YTD', 'podíl returning revenue YTD'],
-    ['podíl unassigned', 'podíl nepřiřazeného revenue'],
+    ['podíl returning revenue YTD', 'podíl tržeb od vracejících se zákazníků v YTD'],
+    ['podíl unassigned', 'podíl nepřiřazených tržeb'],
+    ['customer truth', 'zákaznická pravda'],
+    ['business realitu', 'byznysovou realitu'],
+    ['returning YTD', 'vracející se YTD'],
+    ['confidence vrstvou', 'vrstvou důvěry'],
+    ['claim', 'nárokované'],
+    ['reconciled', 'sladěná'],
+    ['netto revenue', 'netto tržby'],
+    ['brand', 'značka'],
+    ['decisioning', 'rozhodování'],
+    ['naming', 'pojmenování'],
+    ['returns', 'vratky'],
+    ['refundy', 'refundace'],
+    ['order lifecycle', 'životní cyklus objednávky'],
+    ['contribution', 'přínos'],
+    ['gross', 'hrubá'],
+    ['revenue truth', 'pravda o tržbách'],
+    ['profit truth', 'pravda o zisku'],
+    ['platform claims', 'platformní nároky'],
+    ['finance', 'finance'],
+    ['order truth', 'pravda o objednávkách'],
+    ['Search', 'Vyhledávání'],
     ['Net revenue po stornech', 'Netto tržby po stornech'],
     ['Odhad gross margin', 'Odhad hrubé marže'],
+    ['Odhad profit contribution', 'Odhad čistého přínosu'],
+    ['order-level', 'na úrovni objednávek'],
+    ['joinnuté', 'propojené'],
     ['Stav netto contribution', 'Stav netto přínosu'],
   ];
   for (const [from, to] of replacements) out = out.replaceAll(from, to);
@@ -207,13 +232,13 @@ function renderHome(data) {
       <div class="hero-main panel">
         <div class="eyebrow">${translateText(data.productStage.name)}</div>
         <h1>Řídicí pohled na tržby</h1>
-        <p class="hero-copy">Jedna obrazovka pro business realitu, customer truth, důvěru v kanály a nejbližší rozhodnutí.</p>
+        <p class="hero-copy">Jedna obrazovka pro byznysovou realitu, zákaznickou pravdu, důvěru v kanály a nejbližší rozhodnutí.</p>
         <div class="metric-grid six">
           ${metricCard('Pozorované tržby', money(ex.observedRevenue.value), data.focus.label)}
           ${metricCard('Po marketingu', money(ex.grossMarginAfterMarketing.value), 'referenční finanční měsíc')}
           ${metricCard('Čistá hotovost', money(ex.netCashPosition.value), 'aktuální pozice')}
-          ${metricCard('Podíl returning YTD', pct(customer.estimatedNewVsReturning.returningRevenueSharePct), 'měřená customer truth', 'warn')}
-          ${metricCard('Blended ROAS', num(ex.blendedRoas.value), 'pozorované tržby / placený spend')}
+          ${metricCard('Podíl vracejících se YTD', pct(customer.estimatedNewVsReturning.returningRevenueSharePct), 'měřená zákaznická pravda', 'warn')}
+          ${metricCard('Souhrnný ROAS', num(ex.blendedRoas.value), 'pozorované tržby / placený spend')}
           ${metricCard('Jistota měření', translateText(ex.measurementConfidence.label), 'aktuální jistota reportingu', 'warn')}
         </div>
       </div>
@@ -251,13 +276,13 @@ function renderHome(data) {
     </div>
 
     <div class="three-col">
-      ${section('Rozpad paid mixu', `
+      ${section('Rozpad placeného mixu', `
         <div class="table-wrap compact-table"><table>
           <thead><tr><th>Bucket</th><th>Spend</th><th>Tržby</th></tr></thead>
           <tbody>${top(mt.paidMix.bucketSummaryPreviousMonth, 5).map(row => `<tr><td>${bucketBadge(row.bucket)}</td><td>${money(row.spend)}</td><td>${money(row.revenue)}</td></tr>`).join('')}</tbody>
         </table></div>
       `)}
-      ${section('Search taxonomie', `
+      ${section('Taxonomie vyhledávání', `
         <div class="table-wrap compact-table"><table>
           <thead><tr><th>Typ</th><th>Spend</th><th>ROAS</th></tr></thead>
           <tbody>${top(mt.searchTaxonomy.summaryPreviousMonth, 5).map(row => `<tr><td>${taxTypeLabel(row.type)}</td><td>${money(row.spend)}</td><td>${num(row.roas)}</td></tr>`).join('')}</tbody>
