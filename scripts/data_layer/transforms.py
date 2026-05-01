@@ -398,8 +398,8 @@ def build_netto_contribution(finance_prev: dict, order_quality: dict, customer_f
     return {
         'readiness': {
             'status': 'estimated_from_finance_ratios',
-            'label': 'Netto contribution is now estimated from measured order/customer truth plus finance cost ratios. Returns/refunds and product margin are not joined yet.',
-            'nextUnlock': 'Join refunds/returns by order_id and product cost or margin by SKU to replace ratio-based estimates with measured contribution.',
+            'label': 'Netto contribution je teď odhadnutá z měřené order/customer truth a finančních poměrů. Refundy, vratky a produktová marže ještě nejsou přímo joinnuté.',
+            'nextUnlock': 'Napojit refundy a vratky podle order_id a produktový cost nebo marži podle SKU, aby ratio model nahradila měřená contribution.',
         },
         'financeReferenceMonth': {
             'label': finance_prev.get('label'),
@@ -437,9 +437,9 @@ def build_netto_contribution(finance_prev: dict, order_quality: dict, customer_f
             'retentionRevenueProxyPreviousMonth': retention_revenue,
         },
         'warnings': [
-            'This is still a ratio-based netto estimate, not order-level measured contribution.',
-            'Refunds and returns are not yet joined explicitly.',
-            'Product margin differences are not yet reflected, only finance-level averages.',
+            'Pořád je to netto odhad podle poměrů, ne order-level měřená contribution.',
+            'Refundy a vratky ještě nejsou explicitně joinnuté.',
+            'Rozdíly v produktové marži se zatím nepromítají, používají se jen finanční průměry.',
         ],
     }
 
@@ -728,14 +728,14 @@ def build_action_plan(customer_fact: dict, order_fact_ready: bool, measurement_t
     return {
         'headline': 'What to build next so the product gets close to or better than Roivenue.',
         'now': [
-            'Separate acquisition, remarketing, retention, and brand into explicit channel buckets and decision rules.',
-            'Add channel intelligence dataset to the UI homepage and management view so trust and ambiguity are visible on first load.',
-            'Normalize campaign naming and map Google plus Sklik into a shared search taxonomy.',
+            'Oddělit akvizici, remarketing, retenci a brand do explicitních bucketů a rozhodovacích pravidel.',
+            'Promítnout channel intelligence na homepage a do management pohledu tak, aby byla důvěra a nejednoznačnost vidět hned na první obrazovce.',
+            'Sjednotit naming kampaní a namapovat Google plus Sklik do společné search taxonomie.',
         ],
         'next_2_to_4_weeks': [
-            'Join returns, refunds, and final order lifecycle to order_fact so contribution becomes netto, not gross.',
-            'Add margin enrichment per order or per product family to move from revenue truth to profit truth.',
-            'Build backend-validated channel reconciliation so platform claims are compared against finance and order truth on the same window.',
+            'Napojit returns, refundy a finální order lifecycle do order_fact, aby contribution byla netto a ne gross.',
+            'Doplnit marži po orderech nebo po produktových rodinách, aby se revenue truth posunula na profit truth.',
+            'Postavit backend-validovaný reconciliation layer pro kanály, aby se platform claims porovnávaly s finance a order truth na stejném okně.',
         ],
         'then': [
             'Add creative and audience drilldown with acquisition versus remarketing split.',

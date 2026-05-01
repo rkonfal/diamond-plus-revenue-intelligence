@@ -11,7 +11,7 @@
       "value": 12364782.84,
       "previous": null,
       "changePct": null,
-      "label": "Observed revenue in GA4"
+      "label": "Pozorované tržby v GA4"
     },
     "mediaSpend": {
       "value": 356428.23,
@@ -19,7 +19,7 @@
     },
     "blendedRoas": {
       "value": 34.69,
-      "label": "Observed revenue / paid media spend"
+      "label": "Pozorované tržby / paid media spend"
     },
     "grossMarginAfterMarketing": {
       "value": 3452893.29,
@@ -46,9 +46,9 @@
         "Nejslabší místo už není customer truth, ale channel reconciliation a netto contribution."
       ],
       "whatToDoNow": [
-        "Separate acquisition, remarketing, retention, and brand into explicit channel buckets and decision rules.",
-        "Add channel intelligence dataset to the UI homepage and management view so trust and ambiguity are visible on first load.",
-        "Normalize campaign naming and map Google plus Sklik into a shared search taxonomy."
+        "Oddělit akvizici, remarketing, retenci a brand do explicitních bucketů a rozhodovacích pravidel.",
+        "Promítnout channel intelligence na homepage a do management pohledu tak, aby byla důvěra a nejednoznačnost vidět hned na první obrazovce.",
+        "Sjednotit naming kampaní a namapovat Google plus Sklik do společné search taxonomie."
       ]
     }
   },
@@ -421,8 +421,8 @@
     "nettoContribution": {
       "readiness": {
         "status": "estimated_from_finance_ratios",
-        "label": "Netto contribution is now estimated from measured order/customer truth plus finance cost ratios. Returns/refunds and product margin are not joined yet.",
-        "nextUnlock": "Join refunds/returns by order_id and product cost or margin by SKU to replace ratio-based estimates with measured contribution."
+        "label": "Netto contribution je teď odhadnutá z měřené order/customer truth a finančních poměrů. Refundy, vratky a produktová marže ještě nejsou přímo joinnuté.",
+        "nextUnlock": "Napojit refundy a vratky podle order_id a produktový cost nebo marži podle SKU, aby ratio model nahradila měřená contribution."
       },
       "financeReferenceMonth": {
         "label": "4/2026",
@@ -460,9 +460,9 @@
         "retentionRevenueProxyPreviousMonth": 4577747.3
       },
       "warnings": [
-        "This is still a ratio-based netto estimate, not order-level measured contribution.",
-        "Refunds and returns are not yet joined explicitly.",
-        "Product margin differences are not yet reflected, only finance-level averages."
+        "Pořád je to netto odhad podle poměrů, ne order-level měřená contribution.",
+        "Refundy a vratky ještě nejsou explicitně joinnuté.",
+        "Rozdíly v produktové marži se zatím nepromítají, používají se jen finanční průměry."
       ]
     },
     "topCustomersSample": [
@@ -76329,8 +76329,8 @@
     "nettoContribution": {
       "readiness": {
         "status": "estimated_from_finance_ratios",
-        "label": "Netto contribution is now estimated from measured order/customer truth plus finance cost ratios. Returns/refunds and product margin are not joined yet.",
-        "nextUnlock": "Join refunds/returns by order_id and product cost or margin by SKU to replace ratio-based estimates with measured contribution."
+        "label": "Netto contribution je teď odhadnutá z měřené order/customer truth a finančních poměrů. Refundy, vratky a produktová marže ještě nejsou přímo joinnuté.",
+        "nextUnlock": "Napojit refundy a vratky podle order_id a produktový cost nebo marži podle SKU, aby ratio model nahradila měřená contribution."
       },
       "financeReferenceMonth": {
         "label": "4/2026",
@@ -76368,9 +76368,9 @@
         "retentionRevenueProxyPreviousMonth": 4577747.3
       },
       "warnings": [
-        "This is still a ratio-based netto estimate, not order-level measured contribution.",
-        "Refunds and returns are not yet joined explicitly.",
-        "Product margin differences are not yet reflected, only finance-level averages."
+        "Pořád je to netto odhad podle poměrů, ne order-level měřená contribution.",
+        "Refundy a vratky ještě nejsou explicitně joinnuté.",
+        "Rozdíly v produktové marži se zatím nepromítají, používají se jen finanční průměry."
       ]
     }
   },
@@ -76558,17 +76558,17 @@
       }
     ],
     "actions": [
-      "Separate acquisition, remarketing, retention, and brand into explicit channel buckets and decision rules.",
-      "Add channel intelligence dataset to the UI homepage and management view so trust and ambiguity are visible on first load.",
-      "Normalize campaign naming and map Google plus Sklik into a shared search taxonomy.",
-      "Join returns, refunds, and final order lifecycle to order_fact so contribution becomes netto, not gross.",
-      "Add margin enrichment per order or per product family to move from revenue truth to profit truth.",
-      "Build backend-validated channel reconciliation so platform claims are compared against finance and order truth on the same window."
+      "Oddělit akvizici, remarketing, retenci a brand do explicitních bucketů a rozhodovacích pravidel.",
+      "Promítnout channel intelligence na homepage a do management pohledu tak, aby byla důvěra a nejednoznačnost vidět hned na první obrazovce.",
+      "Sjednotit naming kampaní a namapovat Google plus Sklik do společné search taxonomie.",
+      "Napojit returns, refundy a finální order lifecycle do order_fact, aby contribution byla netto a ne gross.",
+      "Doplnit marži po orderech nebo po produktových rodinách, aby se revenue truth posunula na profit truth.",
+      "Postavit backend-validovaný reconciliation layer pro kanály, aby se platform claims porovnávaly s finance a order truth na stejném okně."
     ],
     "nettoContributionWarnings": [
-      "This is still a ratio-based netto estimate, not order-level measured contribution.",
-      "Refunds and returns are not yet joined explicitly.",
-      "Product margin differences are not yet reflected, only finance-level averages."
+      "Pořád je to netto odhad podle poměrů, ne order-level měřená contribution.",
+      "Refundy a vratky ještě nejsou explicitně joinnuté.",
+      "Rozdíly v produktové marži se zatím nepromítají, používají se jen finanční průměry."
     ]
   },
   "finalTruthEngine": {
@@ -76576,14 +76576,14 @@
     "headline": "Final truth engine is now operational for finance truth, measured YTD customer truth, measured YTD order truth, and first decision-grade acquisition split. The main missing layer is netto contribution and backend channel reconciliation.",
     "whatIsTrulyKnown": [
       "Finance after marketing: 3452893.29 Kč.",
-      "Net cash position: 5810813.31 Kč.",
+      "Čistá hotovostní pozice: 5810813.31 Kč.",
       "Returning customers generated 284096050.4 Kč vs 12479827.25 Kč from new customers in the measured YTD window.",
       "Measured YTD orders processed: 187618"
     ],
     "whatIsEstimated": [
       "Channel incrementality is still confidence-led, not fully modeled.",
       "Platform channel truth is still non-additive and partially overlapping.",
-      "Netto contribution is now estimated from measured order/customer truth plus finance cost ratios. Returns/refunds and product margin are not joined yet."
+      "Netto contribution je teď odhadnutá z měřené order/customer truth a finančních poměrů. Refundy, vratky a produktová marže ještě nejsou přímo joinnuté."
     ],
     "blockingMissingSources": [
       "Returns / refunds dataset tied to order_id.",
@@ -76623,7 +76623,7 @@
       "focus": [
         "Revenue ve financích za minulý měsíc: 13272249.15 Kč.",
         "Operating margin: 2914659.28 Kč.",
-        "Netto contribution is now estimated from measured order/customer truth plus finance cost ratios. Returns/refunds and product margin are not joined yet."
+        "Netto contribution je teď odhadnutá z měřené order/customer truth a finančních poměrů. Refundy, vratky a produktová marže ještě nejsou přímo joinnuté."
       ],
       "questions": [
         "Kolik z růstu je skutečně profitabilních po marketingu?",
@@ -76636,45 +76636,45 @@
     "headline": "Roivenue comparison, where this product is already strong and where it is still behind.",
     "rows": [
       {
-        "area": "Business truth layer",
-        "ours": "Strong finance, cash, order pulse and YTD truth connection",
-        "roivenue": "Usually weaker on deeply custom internal ops context",
+        "area": "Vrstva business truth",
+        "ours": "Silné napojení na finance, cash, order pulse a YTD truth",
+        "roivenue": "Obvykle slabší v hluboce custom interním kontextu",
         "status": "strong"
       },
       {
-        "area": "Attribution / channel modeling",
-        "ours": "Confidence-led and honest, but still not fully reconciled",
-        "roivenue": "More mature and deeper by default",
+        "area": "Atribuce a modelování kanálů",
+        "ours": "Poctivé a confidence-led, ale ještě ne plně reconciled",
+        "roivenue": "Standardně zralejší a hlubší",
         "status": "behind"
       },
       {
         "area": "Customer truth",
-        "ours": "Measured YTD new vs returning truth is now live",
-        "roivenue": "Usually mature when fully integrated",
+        "ours": "Měřená YTD truth pro new vs returning už běží",
+        "roivenue": "Obvykle zralé při plné integraci",
         "status": "close"
       },
       {
-        "area": "Readability for local team",
-        "ours": "Much more tailored, plain-language, management-readable",
-        "roivenue": "More standardized and polished",
+        "area": "Čitelnost pro lokální tým",
+        "ours": "Mnohem víc přizpůsobené, srozumitelné a management-friendly",
+        "roivenue": "Více standardizované a uhlazené",
         "status": "strong"
       },
       {
-        "area": "Automation and ownership",
-        "ours": "Auto-refreshing and GitHub-native from canonical reporting pipeline",
-        "roivenue": "More enterprise-ready workflow stack",
+        "area": "Automatizace a vlastnictví",
+        "ours": "Auto-refreshing a GitHub-native nad kanonickou reporting pipeline",
+        "roivenue": "Enterprise-ready workflow stack",
         "status": "close"
       },
       {
         "area": "Netto contribution",
-        "ours": "Estimated from measured order truth and finance ratios, but not yet fully joined by returns and SKU margin",
-        "roivenue": "Often stronger once cost and attribution model is live",
+        "ours": "Odhad z měřené order truth a finančních poměrů, ale ještě bez plného joinu vratek a SKU marže",
+        "roivenue": "Často silnější po zapnutí cost a attribution modelu",
         "status": "behind"
       },
       {
-        "area": "Fit to Diamond Plus",
-        "ours": "Very high, custom-built around local business truth",
-        "roivenue": "Generic platform fit",
+        "area": "Fit na Diamond Plus",
+        "ours": "Velmi vysoký, stavěné přímo kolem lokální business truth",
+        "roivenue": "Obecný platform fit",
         "status": "strong"
       }
     ],
@@ -76693,7 +76693,7 @@
       "Backend truth blocks from finance and order pulse",
       "Customer fact YTD layer with measured first-order new vs returning classification",
       "Order fact YTD layer wired from canonical reporting pipeline",
-      "Channel intelligence and measurement truth foundation",
+      "Základ channel intelligence a measurement truth",
       "Acquisition vs remarketing vs brand vs retention bucket split",
       "Unified Google plus Sklik search taxonomy layer",
       "Campaign audit workspace foundation"
@@ -76918,14 +76918,14 @@
   "actionPlan": {
     "headline": "What to build next so the product gets close to or better than Roivenue.",
     "now": [
-      "Separate acquisition, remarketing, retention, and brand into explicit channel buckets and decision rules.",
-      "Add channel intelligence dataset to the UI homepage and management view so trust and ambiguity are visible on first load.",
-      "Normalize campaign naming and map Google plus Sklik into a shared search taxonomy."
+      "Oddělit akvizici, remarketing, retenci a brand do explicitních bucketů a rozhodovacích pravidel.",
+      "Promítnout channel intelligence na homepage a do management pohledu tak, aby byla důvěra a nejednoznačnost vidět hned na první obrazovce.",
+      "Sjednotit naming kampaní a namapovat Google plus Sklik do společné search taxonomie."
     ],
     "next_2_to_4_weeks": [
-      "Join returns, refunds, and final order lifecycle to order_fact so contribution becomes netto, not gross.",
-      "Add margin enrichment per order or per product family to move from revenue truth to profit truth.",
-      "Build backend-validated channel reconciliation so platform claims are compared against finance and order truth on the same window."
+      "Napojit returns, refundy a finální order lifecycle do order_fact, aby contribution byla netto a ne gross.",
+      "Doplnit marži po orderech nebo po produktových rodinách, aby se revenue truth posunula na profit truth.",
+      "Postavit backend-validovaný reconciliation layer pro kanály, aby se platform claims porovnávaly s finance a order truth na stejném okně."
     ],
     "then": [
       "Add creative and audience drilldown with acquisition versus remarketing split.",
@@ -76941,8 +76941,8 @@
   "nettoContribution": {
     "readiness": {
       "status": "estimated_from_finance_ratios",
-      "label": "Netto contribution is now estimated from measured order/customer truth plus finance cost ratios. Returns/refunds and product margin are not joined yet.",
-      "nextUnlock": "Join refunds/returns by order_id and product cost or margin by SKU to replace ratio-based estimates with measured contribution."
+      "label": "Netto contribution je teď odhadnutá z měřené order/customer truth a finančních poměrů. Refundy, vratky a produktová marže ještě nejsou přímo joinnuté.",
+      "nextUnlock": "Napojit refundy a vratky podle order_id a produktový cost nebo marži podle SKU, aby ratio model nahradila měřená contribution."
     },
     "financeReferenceMonth": {
       "label": "4/2026",
@@ -76980,9 +76980,9 @@
       "retentionRevenueProxyPreviousMonth": 4577747.3
     },
     "warnings": [
-      "This is still a ratio-based netto estimate, not order-level measured contribution.",
-      "Refunds and returns are not yet joined explicitly.",
-      "Product margin differences are not yet reflected, only finance-level averages."
+      "Pořád je to netto odhad podle poměrů, ne order-level měřená contribution.",
+      "Refundy a vratky ještě nejsou explicitně joinnuté.",
+      "Rozdíly v produktové marži se zatím nepromítají, používají se jen finanční průměry."
     ]
   }
 }

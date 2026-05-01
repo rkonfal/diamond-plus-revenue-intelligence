@@ -413,8 +413,8 @@
   "nettoContribution": {
     "readiness": {
       "status": "estimated_from_finance_ratios",
-      "label": "Netto contribution is now estimated from measured order/customer truth plus finance cost ratios. Returns/refunds and product margin are not joined yet.",
-      "nextUnlock": "Join refunds/returns by order_id and product cost or margin by SKU to replace ratio-based estimates with measured contribution."
+      "label": "Netto contribution je teď odhadnutá z měřené order/customer truth a finančních poměrů. Refundy, vratky a produktová marže ještě nejsou přímo joinnuté.",
+      "nextUnlock": "Napojit refundy a vratky podle order_id a produktový cost nebo marži podle SKU, aby ratio model nahradila měřená contribution."
     },
     "financeReferenceMonth": {
       "label": "4/2026",
@@ -452,9 +452,9 @@
       "retentionRevenueProxyPreviousMonth": 4577747.3
     },
     "warnings": [
-      "This is still a ratio-based netto estimate, not order-level measured contribution.",
-      "Refunds and returns are not yet joined explicitly.",
-      "Product margin differences are not yet reflected, only finance-level averages."
+      "Pořád je to netto odhad podle poměrů, ne order-level měřená contribution.",
+      "Refundy a vratky ještě nejsou explicitně joinnuté.",
+      "Rozdíly v produktové marži se zatím nepromítají, používají se jen finanční průměry."
     ]
   }
 }

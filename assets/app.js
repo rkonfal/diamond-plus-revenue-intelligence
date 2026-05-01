@@ -173,7 +173,7 @@ function renderHome(data) {
           ${metricCard('Po marketingu', money(ex.grossMarginAfterMarketing.value), 'referenční finanční měsíc')}
           ${metricCard('Čistá hotovost', money(ex.netCashPosition.value), 'aktuální pozice')}
           ${metricCard('Podíl returning YTD', pct(customer.estimatedNewVsReturning.returningRevenueSharePct), 'měřená customer truth', 'warn')}
-          ${metricCard('Blended ROAS', num(ex.blendedRoas.value), 'pozorované tržby / paid spend')}
+          ${metricCard('Blended ROAS', num(ex.blendedRoas.value), 'pozorované tržby / placený spend')}
           ${metricCard('Jistota měření', ex.measurementConfidence.label, 'aktuální jistota reportingu', 'warn')}
         </div>
       </div>
@@ -188,10 +188,10 @@ function renderHome(data) {
     </section>
 
     <div class="strip-grid">
-      <div class="strip panel"><span>Business truth</span><strong>${money(data.businessTruth.financePreviousMonth.afterMarketing)}</strong><small>po marketingu</small></div>
-      <div class="strip panel"><span>Customer truth</span><strong>${pct(customer.estimatedNewVsReturning.returningRevenueSharePct)}</strong><small>podíl returning revenue YTD</small></div>
-      <div class="strip panel"><span>Measurement truth</span><strong>${pct(measurement.reconciliation.unassignedRevenueSharePctOfFocusObserved)}</strong><small>podíl unassigned</small></div>
-      <div class="strip panel"><span>Netto contribution</span><strong>${money(netto.ytdEstimated.estimatedAfterMarketing)}</strong><small>odhad po marketingu YTD</small></div>
+      <div class="strip panel"><span>Byznysová pravda</span><strong>${money(data.businessTruth.financePreviousMonth.afterMarketing)}</strong><small>po marketingu</small></div>
+      <div class="strip panel"><span>Zákaznická pravda</span><strong>${pct(customer.estimatedNewVsReturning.returningRevenueSharePct)}</strong><small>podíl returning revenue YTD</small></div>
+      <div class="strip panel"><span>Pravda měření</span><strong>${pct(measurement.reconciliation.unassignedRevenueSharePctOfFocusObserved)}</strong><small>podíl unassigned</small></div>
+      <div class="strip panel"><span>Netto přínos</span><strong>${money(netto.ytdEstimated.estimatedAfterMarketing)}</strong><small>odhad po marketingu YTD</small></div>
     </div>
 
     <div class="two-col">
@@ -231,7 +231,7 @@ function renderHome(data) {
       `)}
     </div>
 
-    ${section('Netto contribution', `
+    ${section('Netto přínos', `
       <div class="metric-grid four">
         ${metricCard('Net revenue po stornech', money(netto.ytdEstimated.netRevenueAfterCancellations), 'YTD odhad')}
         ${metricCard('Odhad gross margin', money(netto.ytdEstimated.estimatedGrossMargin), 'model podle poměrů')}
@@ -295,7 +295,7 @@ function renderChannels(data) {
     `)}
 
     <div class="two-col">
-      ${section('Paid mix buckety', `
+      ${section('Buckety paid mixu', `
         <div class="table-wrap"><table>
           <thead><tr><th>Bucket</th><th>Spend</th><th>Revenue</th><th>ROAS</th><th>Kampaně</th></tr></thead>
           <tbody>${mt.paidMix.bucketSummaryPreviousMonth.map(row => `<tr><td>${bucketBadge(row.bucket)}</td><td>${money(row.spend)}</td><td>${money(row.revenue)}</td><td>${num(row.roas)}</td><td>${num(row.campaigns)}</td></tr>`).join('')}</tbody>

@@ -74,7 +74,7 @@ def build_data_layer(raw: dict) -> dict:
             'value': round2(ga4_focus['purchaseRevenue']),
             'previous': round2(ga4_previous['purchaseRevenue']) if focus_key != 'previous_month' else None,
             'changePct': pct_change(ga4_focus['purchaseRevenue'], ga4_previous['purchaseRevenue']) if focus_key != 'previous_month' else None,
-            'label': 'Observed revenue in GA4',
+            'label': 'Pozorované tržby v GA4',
         },
         'mediaSpend': {
             'value': focus_spend,
@@ -82,7 +82,7 @@ def build_data_layer(raw: dict) -> dict:
         },
         'blendedRoas': {
             'value': round(round2(ga4_focus['purchaseRevenue']) / focus_spend, 2) if focus_spend else None,
-            'label': 'Observed revenue / paid media spend',
+            'label': 'Pozorované tržby / paid media spend',
         },
         'grossMarginAfterMarketing': {
             'value': round2(finance_prev['afterMarketing']),
@@ -191,7 +191,7 @@ def build_data_layer(raw: dict) -> dict:
         'headline': 'Final truth engine is now operational for finance truth, measured YTD customer truth, measured YTD order truth, and first decision-grade acquisition split. The main missing layer is netto contribution and backend channel reconciliation.',
         'whatIsTrulyKnown': [
             f"Finance after marketing: {round2(finance_prev['afterMarketing'])} Kč.",
-            f"Net cash position: {round2(finance['cash']['netCashPosition'])} Kč.",
+            f"Čistá hotovostní pozice: {round2(finance['cash']['netCashPosition'])} Kč.",
             customer_fact['estimatedNewVsReturning']['label'],
             f"Measured YTD orders processed: {customer_fact['coverage']['ordersProcessed']}",
         ],
@@ -252,13 +252,13 @@ def build_data_layer(raw: dict) -> dict:
     roivenue_comparison = {
         'headline': 'Roivenue comparison, where this product is already strong and where it is still behind.',
         'rows': [
-            {'area': 'Business truth layer', 'ours': 'Strong finance, cash, order pulse and YTD truth connection', 'roivenue': 'Usually weaker on deeply custom internal ops context', 'status': 'strong'},
-            {'area': 'Attribution / channel modeling', 'ours': 'Confidence-led and honest, but still not fully reconciled', 'roivenue': 'More mature and deeper by default', 'status': 'behind'},
-            {'area': 'Customer truth', 'ours': 'Measured YTD new vs returning truth is now live', 'roivenue': 'Usually mature when fully integrated', 'status': 'close'},
-            {'area': 'Readability for local team', 'ours': 'Much more tailored, plain-language, management-readable', 'roivenue': 'More standardized and polished', 'status': 'strong'},
-            {'area': 'Automation and ownership', 'ours': 'Auto-refreshing and GitHub-native from canonical reporting pipeline', 'roivenue': 'More enterprise-ready workflow stack', 'status': 'close'},
-            {'area': 'Netto contribution', 'ours': 'Estimated from measured order truth and finance ratios, but not yet fully joined by returns and SKU margin', 'roivenue': 'Often stronger once cost and attribution model is live', 'status': 'behind'},
-            {'area': 'Fit to Diamond Plus', 'ours': 'Very high, custom-built around local business truth', 'roivenue': 'Generic platform fit', 'status': 'strong'},
+            {'area': 'Vrstva business truth', 'ours': 'Silné napojení na finance, cash, order pulse a YTD truth', 'roivenue': 'Obvykle slabší v hluboce custom interním kontextu', 'status': 'strong'},
+            {'area': 'Atribuce a modelování kanálů', 'ours': 'Poctivé a confidence-led, ale ještě ne plně reconciled', 'roivenue': 'Standardně zralejší a hlubší', 'status': 'behind'},
+            {'area': 'Customer truth', 'ours': 'Měřená YTD truth pro new vs returning už běží', 'roivenue': 'Obvykle zralé při plné integraci', 'status': 'close'},
+            {'area': 'Čitelnost pro lokální tým', 'ours': 'Mnohem víc přizpůsobené, srozumitelné a management-friendly', 'roivenue': 'Více standardizované a uhlazené', 'status': 'strong'},
+            {'area': 'Automatizace a vlastnictví', 'ours': 'Auto-refreshing a GitHub-native nad kanonickou reporting pipeline', 'roivenue': 'Enterprise-ready workflow stack', 'status': 'close'},
+            {'area': 'Netto contribution', 'ours': 'Odhad z měřené order truth a finančních poměrů, ale ještě bez plného joinu vratek a SKU marže', 'roivenue': 'Často silnější po zapnutí cost a attribution modelu', 'status': 'behind'},
+            {'area': 'Fit na Diamond Plus', 'ours': 'Velmi vysoký, stavěné přímo kolem lokální business truth', 'roivenue': 'Obecný platform fit', 'status': 'strong'},
         ],
         'summary': [
             'Compared with Roivenue, this product is already better aligned to Diamond Plus internal reality.',
@@ -276,7 +276,7 @@ def build_data_layer(raw: dict) -> dict:
             'Backend truth blocks from finance and order pulse',
             'Customer fact YTD layer with measured first-order new vs returning classification',
             'Order fact YTD layer wired from canonical reporting pipeline',
-            'Channel intelligence and measurement truth foundation',
+            'Základ channel intelligence a measurement truth',
             'Acquisition vs remarketing vs brand vs retention bucket split',
             'Unified Google plus Sklik search taxonomy layer',
             'Campaign audit workspace foundation',
