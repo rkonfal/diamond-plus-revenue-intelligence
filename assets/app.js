@@ -224,6 +224,17 @@ function section(title, body, aside = '') {
   `;
 }
 
+function enhanceTables() {
+  document.querySelectorAll('table').forEach((table) => {
+    const headers = Array.from(table.querySelectorAll('thead th')).map((th) => th.textContent.trim());
+    table.querySelectorAll('tbody tr').forEach((row) => {
+      Array.from(row.children).forEach((cell, index) => {
+        if (cell instanceof HTMLElement) cell.dataset.label = headers[index] || '';
+      });
+    });
+  });
+}
+
 function renderHome(data) {
   const ex = data.executive;
   const customer = data.customerTruth;
@@ -315,6 +326,7 @@ function renderHome(data) {
       <ul class="clean-list muted-list">${netto.warnings.map(item => `<li>${translateText(item)}</li>`).join('')}</ul>
     `, '<span>první vrstva založená na poměrech</span>')}
   `;
+  enhanceTables();
 }
 
 function renderRole(data, key, title) {
@@ -345,6 +357,7 @@ function renderRole(data, key, title) {
       ${section('Stav netto přínosu', `<p class="body-copy">${translateText(netto.readiness.label)}</p><ul class="clean-list muted-list">${netto.warnings.map(item => `<li>${translateText(item)}</li>`).join('')}</ul>`)}
     </div>
   `;
+  enhanceTables();
 }
 
 function renderChannels(data) {
@@ -390,6 +403,7 @@ function renderChannels(data) {
       </table></div>
     `)}
   `;
+  enhanceTables();
 }
 
 function renderAudit(data) {
@@ -413,6 +427,7 @@ function renderAudit(data) {
 
     ${section('Doporučené auditní kroky', `<ul class="clean-list">${data.auditWorkspace.actions.map(item => `<li>${translateText(item)}</li>`).join('')}</ul>`)}
   `;
+  enhanceTables();
 }
 
 loadDataLayer().then(data => {
