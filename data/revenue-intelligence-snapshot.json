@@ -418,6 +418,53 @@
         "label": "Finance-level contribution is live. Order-level netto contribution still needs returns, refunds, and product margin enrichment."
       }
     },
+    "nettoContribution": {
+      "readiness": {
+        "status": "estimated_from_finance_ratios",
+        "label": "Netto contribution is now estimated from measured order/customer truth plus finance cost ratios. Returns/refunds and product margin are not joined yet.",
+        "nextUnlock": "Join refunds/returns by order_id and product cost or margin by SKU to replace ratio-based estimates with measured contribution."
+      },
+      "financeReferenceMonth": {
+        "label": "4/2026",
+        "revenue": 13272249.15,
+        "grossMargin": 3781304.43,
+        "logistics": 65311.0,
+        "marketing": 263100.14,
+        "opex": 538234.01,
+        "depreciation": 385502.0,
+        "operatingMargin": 2914659.28,
+        "profit": 2513428.21
+      },
+      "ratioModel": {
+        "grossMarginPct": 28.49,
+        "logisticsPct": 0.49,
+        "marketingPct": 1.98,
+        "operatingMarginPct": 21.96,
+        "profitPct": 18.94
+      },
+      "ytdEstimated": {
+        "grossRevenueWithVat": 296575877.65,
+        "netRevenueAfterCancellations": 287737916.5,
+        "cancellationLeakage": 8837961.15,
+        "estimatedGrossMargin": 81977413.63,
+        "estimatedAfterLogistics": 80561493.02,
+        "estimatedAfterMarketing": 74857570.1,
+        "estimatedOperatingContribution": 63188837.03,
+        "estimatedProfitContribution": 54490281.81
+      },
+      "customerContributionSplitYtd": {
+        "newRevenueWithVat": 12479827.25,
+        "returningRevenueWithVat": 284096050.4,
+        "estimatedNewAfterMarketing": 3246737.71,
+        "estimatedReturningAfterMarketing": 73910106.35,
+        "retentionRevenueProxyPreviousMonth": 4577747.3
+      },
+      "warnings": [
+        "This is still a ratio-based netto estimate, not order-level measured contribution.",
+        "Refunds and returns are not yet joined explicitly.",
+        "Product margin differences are not yet reflected, only finance-level averages."
+      ]
+    },
     "topCustomersSample": [
       {
         "customerKey": "fallback:maloobchodní prodej",
@@ -76278,7 +76325,54 @@
       "GA4 still carries meaningful Unassigned revenue, which weakens channel decisioning.",
       "Paid search bundle is directionally useful, but Google and Sklik are not yet separated in backend truth.",
       "Netto truth still needs returns, refunds, and margin joins."
-    ]
+    ],
+    "nettoContribution": {
+      "readiness": {
+        "status": "estimated_from_finance_ratios",
+        "label": "Netto contribution is now estimated from measured order/customer truth plus finance cost ratios. Returns/refunds and product margin are not joined yet.",
+        "nextUnlock": "Join refunds/returns by order_id and product cost or margin by SKU to replace ratio-based estimates with measured contribution."
+      },
+      "financeReferenceMonth": {
+        "label": "4/2026",
+        "revenue": 13272249.15,
+        "grossMargin": 3781304.43,
+        "logistics": 65311.0,
+        "marketing": 263100.14,
+        "opex": 538234.01,
+        "depreciation": 385502.0,
+        "operatingMargin": 2914659.28,
+        "profit": 2513428.21
+      },
+      "ratioModel": {
+        "grossMarginPct": 28.49,
+        "logisticsPct": 0.49,
+        "marketingPct": 1.98,
+        "operatingMarginPct": 21.96,
+        "profitPct": 18.94
+      },
+      "ytdEstimated": {
+        "grossRevenueWithVat": 296575877.65,
+        "netRevenueAfterCancellations": 287737916.5,
+        "cancellationLeakage": 8837961.15,
+        "estimatedGrossMargin": 81977413.63,
+        "estimatedAfterLogistics": 80561493.02,
+        "estimatedAfterMarketing": 74857570.1,
+        "estimatedOperatingContribution": 63188837.03,
+        "estimatedProfitContribution": 54490281.81
+      },
+      "customerContributionSplitYtd": {
+        "newRevenueWithVat": 12479827.25,
+        "returningRevenueWithVat": 284096050.4,
+        "estimatedNewAfterMarketing": 3246737.71,
+        "estimatedReturningAfterMarketing": 73910106.35,
+        "retentionRevenueProxyPreviousMonth": 4577747.3
+      },
+      "warnings": [
+        "This is still a ratio-based netto estimate, not order-level measured contribution.",
+        "Refunds and returns are not yet joined explicitly.",
+        "Product margin differences are not yet reflected, only finance-level averages."
+      ]
+    }
   },
   "auditWorkspace": {
     "topCampaigns": [
@@ -76470,6 +76564,11 @@
       "Join returns, refunds, and final order lifecycle to order_fact so contribution becomes netto, not gross.",
       "Add margin enrichment per order or per product family to move from revenue truth to profit truth.",
       "Build backend-validated channel reconciliation so platform claims are compared against finance and order truth on the same window."
+    ],
+    "nettoContributionWarnings": [
+      "This is still a ratio-based netto estimate, not order-level measured contribution.",
+      "Refunds and returns are not yet joined explicitly.",
+      "Product margin differences are not yet reflected, only finance-level averages."
     ]
   },
   "finalTruthEngine": {
@@ -76484,7 +76583,7 @@
     "whatIsEstimated": [
       "Channel incrementality is still confidence-led, not fully modeled.",
       "Platform channel truth is still non-additive and partially overlapping.",
-      "Netto contribution after returns, refunds, and margin is not finished yet."
+      "Netto contribution is now estimated from measured order/customer truth plus finance cost ratios. Returns/refunds and product margin are not joined yet."
     ],
     "blockingMissingSources": [
       "Returns / refunds dataset tied to order_id.",
@@ -76524,7 +76623,7 @@
       "focus": [
         "Revenue ve financích za minulý měsíc: 13272249.15 Kč.",
         "Operating margin: 2914659.28 Kč.",
-        "Finance-level contribution is live. Order-level netto contribution still needs returns, refunds, and product margin enrichment."
+        "Netto contribution is now estimated from measured order/customer truth plus finance cost ratios. Returns/refunds and product margin are not joined yet."
       ],
       "questions": [
         "Kolik z růstu je skutečně profitabilních po marketingu?",
@@ -76568,7 +76667,7 @@
       },
       {
         "area": "Netto contribution",
-        "ours": "Not finished yet",
+        "ours": "Estimated from measured order truth and finance ratios, but not yet fully joined by returns and SKU margin",
         "roivenue": "Often stronger once cost and attribution model is live",
         "status": "behind"
       },
@@ -76838,5 +76937,52 @@
       "orderTruth": "full_ytd_window",
       "measurementHeadline": "Measurement layer is now strong on finance and YTD customer truth, but still weaker on channel reconciliation and netto contribution."
     }
+  },
+  "nettoContribution": {
+    "readiness": {
+      "status": "estimated_from_finance_ratios",
+      "label": "Netto contribution is now estimated from measured order/customer truth plus finance cost ratios. Returns/refunds and product margin are not joined yet.",
+      "nextUnlock": "Join refunds/returns by order_id and product cost or margin by SKU to replace ratio-based estimates with measured contribution."
+    },
+    "financeReferenceMonth": {
+      "label": "4/2026",
+      "revenue": 13272249.15,
+      "grossMargin": 3781304.43,
+      "logistics": 65311.0,
+      "marketing": 263100.14,
+      "opex": 538234.01,
+      "depreciation": 385502.0,
+      "operatingMargin": 2914659.28,
+      "profit": 2513428.21
+    },
+    "ratioModel": {
+      "grossMarginPct": 28.49,
+      "logisticsPct": 0.49,
+      "marketingPct": 1.98,
+      "operatingMarginPct": 21.96,
+      "profitPct": 18.94
+    },
+    "ytdEstimated": {
+      "grossRevenueWithVat": 296575877.65,
+      "netRevenueAfterCancellations": 287737916.5,
+      "cancellationLeakage": 8837961.15,
+      "estimatedGrossMargin": 81977413.63,
+      "estimatedAfterLogistics": 80561493.02,
+      "estimatedAfterMarketing": 74857570.1,
+      "estimatedOperatingContribution": 63188837.03,
+      "estimatedProfitContribution": 54490281.81
+    },
+    "customerContributionSplitYtd": {
+      "newRevenueWithVat": 12479827.25,
+      "returningRevenueWithVat": 284096050.4,
+      "estimatedNewAfterMarketing": 3246737.71,
+      "estimatedReturningAfterMarketing": 73910106.35,
+      "retentionRevenueProxyPreviousMonth": 4577747.3
+    },
+    "warnings": [
+      "This is still a ratio-based netto estimate, not order-level measured contribution.",
+      "Refunds and returns are not yet joined explicitly.",
+      "Product margin differences are not yet reflected, only finance-level averages."
+    ]
   }
 }

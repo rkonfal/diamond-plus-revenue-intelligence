@@ -409,5 +409,52 @@
     "GA4 still carries meaningful Unassigned revenue, which weakens channel decisioning.",
     "Paid search bundle is directionally useful, but Google and Sklik are not yet separated in backend truth.",
     "Netto truth still needs returns, refunds, and margin joins."
-  ]
+  ],
+  "nettoContribution": {
+    "readiness": {
+      "status": "estimated_from_finance_ratios",
+      "label": "Netto contribution is now estimated from measured order/customer truth plus finance cost ratios. Returns/refunds and product margin are not joined yet.",
+      "nextUnlock": "Join refunds/returns by order_id and product cost or margin by SKU to replace ratio-based estimates with measured contribution."
+    },
+    "financeReferenceMonth": {
+      "label": "4/2026",
+      "revenue": 13272249.15,
+      "grossMargin": 3781304.43,
+      "logistics": 65311.0,
+      "marketing": 263100.14,
+      "opex": 538234.01,
+      "depreciation": 385502.0,
+      "operatingMargin": 2914659.28,
+      "profit": 2513428.21
+    },
+    "ratioModel": {
+      "grossMarginPct": 28.49,
+      "logisticsPct": 0.49,
+      "marketingPct": 1.98,
+      "operatingMarginPct": 21.96,
+      "profitPct": 18.94
+    },
+    "ytdEstimated": {
+      "grossRevenueWithVat": 296575877.65,
+      "netRevenueAfterCancellations": 287737916.5,
+      "cancellationLeakage": 8837961.15,
+      "estimatedGrossMargin": 81977413.63,
+      "estimatedAfterLogistics": 80561493.02,
+      "estimatedAfterMarketing": 74857570.1,
+      "estimatedOperatingContribution": 63188837.03,
+      "estimatedProfitContribution": 54490281.81
+    },
+    "customerContributionSplitYtd": {
+      "newRevenueWithVat": 12479827.25,
+      "returningRevenueWithVat": 284096050.4,
+      "estimatedNewAfterMarketing": 3246737.71,
+      "estimatedReturningAfterMarketing": 73910106.35,
+      "retentionRevenueProxyPreviousMonth": 4577747.3
+    },
+    "warnings": [
+      "This is still a ratio-based netto estimate, not order-level measured contribution.",
+      "Refunds and returns are not yet joined explicitly.",
+      "Product margin differences are not yet reflected, only finance-level averages."
+    ]
+  }
 }

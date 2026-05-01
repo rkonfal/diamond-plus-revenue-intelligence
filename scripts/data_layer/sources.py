@@ -17,6 +17,13 @@ class SourceStore:
             return None
         return json.loads(path.read_text())
 
+    def read_first_optional(self, names: list[str]):
+        for name in names:
+            payload = self.read_json_optional(name)
+            if payload is not None:
+                return payload
+        return None
+
     def load_all(self) -> dict:
         return {
             'meta': self.read_json('meta_ads_overview.json'),
@@ -30,6 +37,6 @@ class SourceStore:
             'eshopYtd': self.read_json('eshop_ytd.json'),
             'previousDayOrders': self.read_json('wpj_orders_previous_day.json'),
             'topCustomers': self.read_json('top_50_customers_last_year.json'),
-            'customerFactYtdWindow': self.read_json_optional('customer_fact_ytd_window.json'),
-            'orderFactYtdWindow': self.read_json_optional('order_fact_ytd_window.json'),
+            'customerFactYtdWindow': self.read_first_optional(['customer_fact_ytd_compact.json', 'customer_fact_ytd_window.json']),
+            'orderFactYtdWindow': self.read_first_optional(['order_fact_ytd_compact.json', 'order_fact_ytd_window.json']),
         }

@@ -44,6 +44,7 @@ def main():
             'channelIntelligence': 'channel-intelligence.json',
             'acquisitionTruth': 'acquisition-truth.json',
             'actionPlan': 'action-plan.json',
+            'nettoContribution': 'netto-contribution.json',
         },
     }
 
@@ -62,6 +63,7 @@ def main():
     write_json(OUTPUT_DIR / 'channel-intelligence.json', data_layer['channel-intelligence'])
     write_json(OUTPUT_DIR / 'acquisition-truth.json', data_layer['acquisition-truth'])
     write_json(OUTPUT_DIR / 'action-plan.json', data_layer['action-plan'])
+    write_json(OUTPUT_DIR / 'netto-contribution.json', data_layer['netto-contribution'])
     write_json(OUTPUT_DIR / 'manifest.json', manifest)
 
     snapshot = {
@@ -81,6 +83,7 @@ def main():
         'channelIntelligence': data_layer['channel-intelligence'],
         'acquisitionTruth': data_layer['acquisition-truth'],
         'actionPlan': data_layer['action-plan'],
+        'nettoContribution': data_layer['netto-contribution'],
     }
     write_json(OUTPUT_DIR / 'revenue-intelligence-snapshot.json', snapshot)
     print(f'Wrote data layer to {OUTPUT_DIR}')

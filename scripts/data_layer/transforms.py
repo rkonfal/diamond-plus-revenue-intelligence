@@ -366,6 +366,84 @@ def build_contribution_truth(finance_prev: dict, media_spend: float, order_quali
     }
 
 
+def build_netto_contribution(finance_prev: dict, order_quality: dict, customer_fact: dict, klaviyo_prev: dict | None = None) -> dict:
+    revenue = round2(finance_prev.get('revenue'))
+    gross_margin = round2(finance_prev.get('grossMargin'))
+    logistics = round2(finance_prev.get('logistics'))
+    marketing = round2(finance_prev.get('marketing'))
+    operating = round2(finance_prev.get('operatingMargin'))
+    profit = round2(finance_prev.get('profit'))
+    opex = round2(finance_prev.get('opex'))
+    depreciation = round2(finance_prev.get('depreciation'))
+    gross_margin_pct = gross_margin / revenue if revenue else 0
+    logistics_pct = logistics / revenue if revenue else 0
+    marketing_pct = marketing / revenue if revenue else 0
+    operating_pct = operating / revenue if revenue else 0
+    profit_pct = profit / revenue if revenue else 0
+
+    measured_gross = round2(order_quality.get('grossRevenueWithVat') or 0)
+    measured_net_after_cancellations = round2(order_quality.get('estimatedNetRevenueAfterCancellations') or 0)
+    cancellation_leakage = round2(measured_gross - measured_net_after_cancellations)
+
+    est_gross_margin = round2(measured_net_after_cancellations * gross_margin_pct)
+    est_after_logistics = round2(measured_net_after_cancellations * max(0, gross_margin_pct - logistics_pct))
+    est_after_marketing = round2(measured_net_after_cancellations * max(0, gross_margin_pct - logistics_pct - marketing_pct))
+    est_operating = round2(measured_net_after_cancellations * operating_pct)
+    est_profit = round2(measured_net_after_cancellations * profit_pct)
+
+    new_revenue = round2(customer_fact.get('estimatedNewVsReturning', {}).get('newRevenueWithVat'))
+    returning_revenue = round2(customer_fact.get('estimatedNewVsReturning', {}).get('returningRevenueWithVat'))
+    retention_revenue = round2((klaviyo_prev or {}).get('totalAttributedRevenueCzk'))
+
+    return {
+        'readiness': {
+            'status': 'estimated_from_finance_ratios',
+            'label': 'Netto contribution is now estimated from measured order/customer truth plus finance cost ratios. Returns/refunds and product margin are not joined yet.',
+            'nextUnlock': 'Join refunds/returns by order_id and product cost or margin by SKU to replace ratio-based estimates with measured contribution.',
+        },
+        'financeReferenceMonth': {
+            'label': finance_prev.get('label'),
+            'revenue': revenue,
+            'grossMargin': gross_margin,
+            'logistics': logistics,
+            'marketing': marketing,
+            'opex': opex,
+            'depreciation': depreciation,
+            'operatingMargin': operating,
+            'profit': profit,
+        },
+        'ratioModel': {
+            'grossMarginPct': round(gross_margin_pct * 100, 2) if revenue else None,
+            'logisticsPct': round(logistics_pct * 100, 2) if revenue else None,
+            'marketingPct': round(marketing_pct * 100, 2) if revenue else None,
+            'operatingMarginPct': round(operating_pct * 100, 2) if revenue else None,
+            'profitPct': round(profit_pct * 100, 2) if revenue else None,
+        },
+        'ytdEstimated': {
+            'grossRevenueWithVat': measured_gross,
+            'netRevenueAfterCancellations': measured_net_after_cancellations,
+            'cancellationLeakage': cancellation_leakage,
+            'estimatedGrossMargin': est_gross_margin,
+            'estimatedAfterLogistics': est_after_logistics,
+            'estimatedAfterMarketing': est_after_marketing,
+            'estimatedOperatingContribution': est_operating,
+            'estimatedProfitContribution': est_profit,
+        },
+        'customerContributionSplitYtd': {
+            'newRevenueWithVat': new_revenue,
+            'returningRevenueWithVat': returning_revenue,
+            'estimatedNewAfterMarketing': round2(new_revenue * max(0, gross_margin_pct - logistics_pct - marketing_pct)),
+            'estimatedReturningAfterMarketing': round2(returning_revenue * max(0, gross_margin_pct - logistics_pct - marketing_pct)),
+            'retentionRevenueProxyPreviousMonth': retention_revenue,
+        },
+        'warnings': [
+            'This is still a ratio-based netto estimate, not order-level measured contribution.',
+            'Refunds and returns are not yet joined explicitly.',
+            'Product margin differences are not yet reflected, only finance-level averages.',
+        ],
+    }
+
+
 def build_paid_mix(meta: dict, google: dict, sklik: dict, klaviyo: dict) -> dict:
     campaign_rows = []
 

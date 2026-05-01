@@ -8,6 +8,7 @@ from .transforms import (
     build_contribution_truth,
     build_customer_fact,
     build_measurement_truth,
+    build_netto_contribution,
     build_order_quality,
     build_paid_mix,
     build_search_taxonomy,
@@ -45,6 +46,7 @@ def build_data_layer(raw: dict) -> dict:
     customer_fact = build_customer_fact(top_customers, ytd, full_customer_fact)
     order_quality = build_order_quality(previous_day_summary, full_order_fact)
     contribution_truth = build_contribution_truth(finance_prev, focus_spend, order_quality, klaviyo.get('previousMonth'))
+    netto_contribution = build_netto_contribution(finance_prev, order_quality, customer_fact, klaviyo.get('previousMonth'))
     channel_intelligence = build_channel_intelligence(meta, google, sklik, klaviyo, focus_channels)
     measurement_truth = build_measurement_truth(meta, google, sklik, klaviyo, ga4, finance_prev, focus_channels)
     paid_mix = build_paid_mix(meta, google, sklik, klaviyo)
@@ -127,6 +129,7 @@ def build_data_layer(raw: dict) -> dict:
         'historicalOrderWindow': full_order_fact.get('summary') if full_order_fact else None,
         'orderQuality': order_quality,
         'contributionTruth': contribution_truth,
+        'nettoContribution': netto_contribution,
         'topCustomersSample': top_customers['top50'][:10],
     }
 
@@ -174,11 +177,13 @@ def build_data_layer(raw: dict) -> dict:
         'countries': ga4['countries7d'],
         'truth': measurement_truth,
         'warnings': measurement_truth['warnings'],
+        'nettoContribution': netto_contribution,
     }
 
     audit_workspace = {
         'topCampaigns': top_campaigns,
         'actions': action_plan['now'] + action_plan['next_2_to_4_weeks'],
+        'nettoContributionWarnings': netto_contribution['warnings'],
     }
 
     final_truth_engine = {
@@ -193,7 +198,7 @@ def build_data_layer(raw: dict) -> dict:
         'whatIsEstimated': [
             'Channel incrementality is still confidence-led, not fully modeled.',
             'Platform channel truth is still non-additive and partially overlapping.',
-            'Netto contribution after returns, refunds, and margin is not finished yet.',
+            netto_contribution['readiness']['label'],
         ],
         'blockingMissingSources': [
             'Returns / refunds dataset tied to order_id.',
@@ -234,7 +239,7 @@ def build_data_layer(raw: dict) -> dict:
             'focus': [
                 f"Revenue ve financích za minulý měsíc: {round2(finance_prev['revenue'])} Kč.",
                 f"Operating margin: {round2(finance_prev['operatingMargin'])} Kč.",
-                contribution_truth['nettoContributionReadiness']['label'],
+                netto_contribution['readiness']['label'],
             ],
             'questions': [
                 'Kolik z růstu je skutečně profitabilních po marketingu?',
@@ -252,7 +257,7 @@ def build_data_layer(raw: dict) -> dict:
             {'area': 'Customer truth', 'ours': 'Measured YTD new vs returning truth is now live', 'roivenue': 'Usually mature when fully integrated', 'status': 'close'},
             {'area': 'Readability for local team', 'ours': 'Much more tailored, plain-language, management-readable', 'roivenue': 'More standardized and polished', 'status': 'strong'},
             {'area': 'Automation and ownership', 'ours': 'Auto-refreshing and GitHub-native from canonical reporting pipeline', 'roivenue': 'More enterprise-ready workflow stack', 'status': 'close'},
-            {'area': 'Netto contribution', 'ours': 'Not finished yet', 'roivenue': 'Often stronger once cost and attribution model is live', 'status': 'behind'},
+            {'area': 'Netto contribution', 'ours': 'Estimated from measured order truth and finance ratios, but not yet fully joined by returns and SKU margin', 'roivenue': 'Often stronger once cost and attribution model is live', 'status': 'behind'},
             {'area': 'Fit to Diamond Plus', 'ours': 'Very high, custom-built around local business truth', 'roivenue': 'Generic platform fit', 'status': 'strong'},
         ],
         'summary': [
@@ -301,4 +306,5 @@ def build_data_layer(raw: dict) -> dict:
         'channel-intelligence': channel_intelligence,
         'acquisition-truth': acquisition_truth,
         'action-plan': action_plan,
+        'netto-contribution': netto_contribution,
     }

@@ -63,6 +63,7 @@ function renderHome(data) {
   const ch = data.channelIntelligence;
   const acq = data.acquisitionTruth;
   const plan = data.actionPlan;
+  const netto = data.nettoContribution;
   const ga4 = top(data.measurement.ga4Channels, 8);
   const paidMix = top(mt.paidMix.bucketSummaryPreviousMonth, 5);
   const searchTax = top(mt.searchTaxonomy.summaryPreviousMonth, 5);
@@ -171,6 +172,17 @@ function renderHome(data) {
       </section>
     </div>
 
+    <section class="card">
+      <div class="section-head"><h2>Netto contribution, první vrstva</h2><div class="muted small">finance ratios applied to measured YTD order truth</div></div>
+      <div class="grid metrics">
+        ${metricCard('Net revenue po stornech', money(netto.ytdEstimated.netRevenueAfterCancellations), 'measured YTD order truth')}
+        ${metricCard('Estimated gross margin', money(netto.ytdEstimated.estimatedGrossMargin), 'ratio model')}
+        ${metricCard('Estimated after marketing', money(netto.ytdEstimated.estimatedAfterMarketing), 'ratio model')}
+        ${metricCard('Estimated profit contribution', money(netto.ytdEstimated.estimatedProfitContribution), 'ratio model')}
+      </div>
+      <ul class="list compact top-gap-small">${netto.warnings.map(item => `<li>${item}</li>`).join('')}</ul>
+    </section>
+
     <div class="cols-2">
       <section class="card"><h2>GA4 observed channels</h2><div class="table-wrap"><table>
         <thead><tr><th>Channel</th><th>Sessions</th><th>Purchases</th><th>Revenue</th></tr></thead>
@@ -193,6 +205,7 @@ function renderHome(data) {
 function renderRole(data, key, title) {
   const role = data.roleViews[key];
   const plan = data.actionPlan;
+  const netto = data.nettoContribution;
   document.getElementById('app').innerHTML = `
     <section class="hero">
       <div class="pill">${title}</div>
@@ -205,6 +218,7 @@ function renderRole(data, key, title) {
       <section class="card"><h2>Klíčové otázky</h2><ul class="list">${role.questions.map(item => `<li>${item}</li>`).join('')}</ul></section>
     </div>
     <section class="card"><h2>Nejbližší akce</h2><ul class="list compact">${plan.now.map(item => `<li>${item}</li>`).join('')}</ul></section>
+    <section class="card"><h2>Netto contribution status</h2><p>${netto.readiness.label}</p><ul class="list compact">${netto.warnings.map(item => `<li>${item}</li>`).join('')}</ul></section>
   `;
 }
 

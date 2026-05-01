@@ -188,5 +188,10 @@
     "Join returns, refunds, and final order lifecycle to order_fact so contribution becomes netto, not gross.",
     "Add margin enrichment per order or per product family to move from revenue truth to profit truth.",
     "Build backend-validated channel reconciliation so platform claims are compared against finance and order truth on the same window."
+  ],
+  "nettoContributionWarnings": [
+    "This is still a ratio-based netto estimate, not order-level measured contribution.",
+    "Refunds and returns are not yet joined explicitly.",
+    "Product margin differences are not yet reflected, only finance-level averages."
   ]
 }

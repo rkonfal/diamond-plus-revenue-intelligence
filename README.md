@@ -74,12 +74,19 @@ Build commands:
 - local source: `python3 scripts/build_snapshot.py`
 - synced source: `python3 scripts/sync_sources.py && REVENUE_SOURCE_DIR=source/current python3 scripts/build_snapshot.py`
 
+Synced source strategy:
+- `scripts/sync_sources.py` now compacts large optional fact datasets into lightweight local files:
+  - `source/current/customer_fact_ytd_compact.json`
+  - `source/current/order_fact_ytd_compact.json`
+- the full heavy source files are not meant to live in this repo anymore
+- `build_snapshot.py` can read compact versions first, then fall back to full files when available
+
 ## Automatic updates
 
 The repo now includes `.github/workflows/auto-refresh.yml`.
-It downloads fresh source files from `rkonfal/diamond-plus-reporting-preview`, rebuilds the data layer, and commits updates automatically on schedule.
+It downloads fresh source files from `rkonfal/diamond-plus-reporting-preview`, compacts the heavy optional fact exports, rebuilds the data layer, and commits updates automatically on schedule.
 
 ## Current status
 
 Project initialized on 2026-05-01 as a separate repository to keep it isolated from existing reporting and one-off audits.
-It now includes a first production-like data layer foundation for executive, business-truth, marketing-truth, customer-truth, measurement, and audit views.
+It now includes a decision-grade data layer foundation for executive, business-truth, marketing-truth, customer-truth, acquisition-truth, channel-intelligence, netto-contribution, measurement, and audit views.
