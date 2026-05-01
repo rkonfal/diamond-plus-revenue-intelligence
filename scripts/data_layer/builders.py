@@ -19,13 +19,18 @@ from .transforms import (
 )
 
 
-def build_customer_attribution_layer(readiness: dict | None, truth: dict | None, campaigns: dict | None) -> dict:
+def build_customer_attribution_layer(readiness: dict | None, truth: dict | None, campaigns: dict | None, klaviyo: dict | None = None, ga4: dict | None = None) -> dict:
     readiness = readiness or {}
     truth = truth or {}
     campaigns = campaigns or {}
+    klaviyo = klaviyo or {}
+    ga4 = ga4 or {}
     summary = truth.get('summary') or {}
     campaign_rows = campaigns.get('campaigns') or []
     order_rows = truth.get('orders') or []
+    klaviyo_prev = klaviyo.get('previousMonth') or {}
+    klaviyo_flows = (klaviyo.get('topFlowsPreviousMonth') or klaviyo.get('flowsPreviousMonth') or klaviyo.get('topFlowsCurrentMonth') or [])[:6]
+    email_channel = next((row for row in (ga4.get('channelPerformance7d') or []) if row.get('channel') == 'Email'), {})
     return {
         'status': summary.get('status') or 'not_ready',
         'headline': 'Customer attribution vrstva ukazuje, které objednávky už umíme spárovat přes transactionId a jakou váhu dostávají kampaně v heuristice v1.',
@@ -42,6 +47,15 @@ def build_customer_attribution_layer(readiness: dict | None, truth: dict | None,
         'classification': summary.get('classification') or {},
         'topCampaigns': campaign_rows[:8],
         'recentOrders': order_rows[:6],
+        'klaviyo': {
+            'previousMonthRevenue': klaviyo_prev.get('totalAttributedRevenueCzk') or 0,
+            'previousMonthOrders': klaviyo_prev.get('totalAttributedOrders') or 0,
+            'previousMonthClicks': klaviyo_prev.get('totalClicks') or 0,
+            'clickRate': klaviyo_prev.get('clickRate'),
+            'ga4EmailRevenue7d': email_channel.get('purchaseRevenue') or 0,
+            'ga4EmailOrders7d': email_channel.get('ecommercePurchases') or 0,
+            'topFlows': klaviyo_flows,
+        },
         'whyItMatters': [
             'Tady už nejde jen o platform claim, ale o konkrétní objednávky spárované přes transactionId.',
             'Každá spárovaná objednávka dostává rozdělení mezi introducer a closer podle heuristiky v1.',
@@ -93,7 +107,7 @@ def build_data_layer(raw: dict) -> dict:
     search_taxonomy = build_search_taxonomy(google, sklik)
     acquisition_truth = build_acquisition_truth(customer_fact, ga4, klaviyo, finance_prev, channel_intelligence, paid_mix, search_taxonomy)
     action_plan = build_action_plan(customer_fact, bool(full_order_fact), measurement_truth)
-    customer_attribution = build_customer_attribution_layer(customer_attribution_readiness, customer_attribution_truth, campaign_customer_truth)
+    customer_attribution = build_customer_attribution_layer(customer_attribution_readiness, customer_attribution_truth, campaign_customer_truth, klaviyo, ga4)
 
     meta_section = {
         'generatedAt': ga4.get('generatedAt'),

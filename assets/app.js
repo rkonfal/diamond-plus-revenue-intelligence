@@ -297,6 +297,25 @@ function renderHome(data) {
           </table></div>
         </div>
         <div>
+          <div class="mini-caption">Klaviyo a retence</div>
+          <div class="table-wrap"><table>
+            <thead><tr><th>Metrika</th><th>Hodnota</th></tr></thead>
+            <tbody>
+              <tr><td>Klaviyo revenue minulý měsíc</td><td>${money(attribution.klaviyo.previousMonthRevenue)}</td></tr>
+              <tr><td>Klaviyo orders minulý měsíc</td><td>${num(attribution.klaviyo.previousMonthOrders)}</td></tr>
+              <tr><td>Kliky minulý měsíc</td><td>${num(attribution.klaviyo.previousMonthClicks)}</td></tr>
+              <tr><td>Click rate</td><td>${pct((attribution.klaviyo.clickRate || 0) * 100)}</td></tr>
+              <tr><td>GA4 Email revenue za 7 dní</td><td>${money(attribution.klaviyo.ga4EmailRevenue7d)}</td></tr>
+              <tr><td>GA4 Email objednávky za 7 dní</td><td>${num(attribution.klaviyo.ga4EmailOrders7d)}</td></tr>
+            </tbody>
+          </table></div>
+          <div class="divider"></div>
+          <div class="mini-caption">Top Klaviyo flow</div>
+          <div class="table-wrap"><table>
+            <thead><tr><th>Flow</th><th>Tržby</th><th>Objednávky</th><th>Click rate</th></tr></thead>
+            <tbody>${(attribution.klaviyo.topFlows || []).map(row => `<tr><td>${row.flowName}</td><td>${money(row.attributedRevenueCzk)}</td><td>${num(row.attributedOrders)}</td><td>${pct((row.clickRate || 0) * 100)}</td></tr>`).join('')}</tbody>
+          </table></div>
+          <div class="divider"></div>
           <div class="mini-caption">Rozklad podle typu vlivu</div>
           <div class="table-wrap"><table>
             <thead><tr><th>Třída</th><th>Objednávky</th><th>Tržby</th></tr></thead>
