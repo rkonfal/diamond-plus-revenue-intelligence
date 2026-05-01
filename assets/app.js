@@ -244,6 +244,7 @@ function renderHome(data) {
   const netto = data.nettoContribution;
   const plan = data.actionPlan;
   const ga4 = top(data.measurement.ga4Channels, 6);
+  const attribution = data.customerAttribution;
 
   document.getElementById('app').innerHTML = `
     ${nav('home')}
@@ -278,6 +279,32 @@ function renderHome(data) {
       <div class="strip panel"><span>Pravda měření</span><strong>${pct(measurement.reconciliation.unassignedRevenueSharePctOfFocusObserved)}</strong><small>podíl nepřiřazeného revenue</small></div>
       <div class="strip panel"><span>Netto přínos</span><strong>${money(netto.ytdEstimated.estimatedAfterMarketing)}</strong><small>odhad po marketingu YTD</small></div>
     </div>
+
+    ${section('Customer attribution v1', `
+      <div class="metric-grid four">
+        ${metricCard('Spárované objednávky', num(attribution.metrics.ordersMatchedExactTransaction), 'přes transactionId')}
+        ${metricCard('Match rate', pct(attribution.metrics.matchRatePct), 'podíl všech orderů v okně')}
+        ${metricCard('Vážené tržby', money(attribution.metrics.weightedRevenueMatched), 'na spárovaných objednávkách')}
+        ${metricCard('Nezápasované ordery', num(attribution.metrics.ordersUnmatched), 'další prostor pro stitching')}
+      </div>
+      <p class="body-copy">${attribution.headline}</p>
+      <div class="two-col top-gap-24">
+        <div>
+          <div class="mini-caption">Top kampaně podle vážených tržeb</div>
+          <div class="table-wrap"><table>
+            <thead><tr><th>Platforma</th><th>Kampaň</th><th>Vážené tržby</th><th>Vážené ordery</th></tr></thead>
+            <tbody>${attribution.topCampaigns.map(row => `<tr><td>${row.platform}</td><td>${row.campaignName}</td><td>${money(row.revenueWeighted)}</td><td>${num(row.ordersWeighted)}</td></tr>`).join('')}</tbody>
+          </table></div>
+        </div>
+        <div>
+          <div class="mini-caption">Co to znamená</div>
+          <ul class="clean-list">${attribution.whyItMatters.map(item => `<li>${item}</li>`).join('')}</ul>
+          <div class="divider"></div>
+          <div class="mini-caption">Další build kroky</div>
+          <ul class="clean-list">${attribution.nextSteps.map(item => `<li>${item}</li>`).join('')}</ul>
+        </div>
+      </div>
+    `, '<span>objednávka → reklama → váha</span>')}
 
     <div class="two-col">
       ${section('Důvěra v kanály', `
@@ -333,6 +360,7 @@ function renderRole(data, key, title) {
   const role = data.roleViews[key];
   const netto = data.nettoContribution;
   const plan = data.actionPlan;
+  const attribution = data.customerAttribution;
 
   document.getElementById('app').innerHTML = `
     ${nav(key)}
@@ -356,6 +384,14 @@ function renderRole(data, key, title) {
       ${section('Okamžité kroky', `<ol class="clean-list ordered-list">${plan.now.map(item => `<li>${translateText(item)}</li>`).join('')}</ol>`)}
       ${section('Stav netto přínosu', `<p class="body-copy">${translateText(netto.readiness.label)}</p><ul class="clean-list muted-list">${netto.warnings.map(item => `<li>${translateText(item)}</li>`).join('')}</ul>`)}
     </div>
+    ${section('Customer attribution vrstva', `
+      <div class="metric-grid four">
+        ${metricCard('Spárované ordery', num(attribution.metrics.ordersMatchedExactTransaction), 'přes transactionId')}
+        ${metricCard('Match rate', pct(attribution.metrics.matchRatePct), 'v okně 30 dnů')}
+        ${metricCard('Vážené tržby', money(attribution.metrics.weightedRevenueMatched), 'na spárovaných nákupech')}
+        ${metricCard('Status', attribution.status, 'živý stav modelu')}
+      </div>
+    `, '<span>kdo nakoupil díky čemu</span>')}
   `;
   enhanceTables();
 }

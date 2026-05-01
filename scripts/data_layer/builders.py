@@ -19,6 +19,40 @@ from .transforms import (
 )
 
 
+def build_customer_attribution_layer(readiness: dict | None, truth: dict | None, campaigns: dict | None) -> dict:
+    readiness = readiness or {}
+    truth = truth or {}
+    campaigns = campaigns or {}
+    summary = truth.get('summary') or {}
+    campaign_rows = campaigns.get('campaigns') or []
+    order_rows = truth.get('orders') or []
+    return {
+        'status': summary.get('status') or 'not_ready',
+        'headline': 'Customer attribution vrstva ukazuje, které objednávky už umíme spárovat přes transactionId a jakou váhu dostávají kampaně v heuristice v1.',
+        'window': truth.get('window') or readiness.get('window') or {},
+        'metrics': {
+            'ordersProcessed': summary.get('ordersProcessed') or 0,
+            'ordersMatchedExactTransaction': summary.get('ordersMatchedExactTransaction') or 0,
+            'ordersUnmatched': summary.get('ordersUnmatched') or 0,
+            'matchRatePct': summary.get('matchRatePct') or 0,
+            'weightedRevenueMatched': summary.get('weightedRevenueMatched') or 0,
+        },
+        'topCampaigns': campaign_rows[:8],
+        'recentOrders': order_rows[:6],
+        'whyItMatters': [
+            'Tady už nejde jen o platform claim, ale o konkrétní objednávky spárované přes transactionId.',
+            'Každá spárovaná objednávka dostává rozdělení mezi introducer a closer podle heuristiky v1.',
+            'Výstup je zatím částečný, ale už ukazuje, které kampaně mají vážený vliv na reálné nákupy.',
+        ],
+        'nextSteps': [
+            'Rozšířit GA4 journey export z 30 dní na delší okno a doplnit další attribution pole.',
+            'Doplnit identity stitching mimo transactionId, hlavně přes email hash nebo čas a hodnotu objednávky.',
+            'Zpřesnit váhy pro brand, remarketing, retenci a direct do vlastního Diamond Plus modelu.',
+        ],
+        'readiness': readiness,
+    }
+
+
 def build_data_layer(raw: dict) -> dict:
     meta = raw['meta']
     google = raw['google']
@@ -33,6 +67,9 @@ def build_data_layer(raw: dict) -> dict:
     top_customers = raw['topCustomers']
     full_customer_fact = raw.get('customerFactYtdWindow')
     full_order_fact = raw.get('orderFactYtdWindow')
+    customer_attribution_truth = raw.get('customerAttributionTruth')
+    campaign_customer_truth = raw.get('campaignCustomerTruth')
+    customer_attribution_readiness = raw.get('customerAttributionReadiness')
 
     ga4_focus, focus_key = pick_focus_month(ga4)
     ga4_previous = ga4['previousMonth']
@@ -53,6 +90,7 @@ def build_data_layer(raw: dict) -> dict:
     search_taxonomy = build_search_taxonomy(google, sklik)
     acquisition_truth = build_acquisition_truth(customer_fact, ga4, klaviyo, finance_prev, channel_intelligence, paid_mix, search_taxonomy)
     action_plan = build_action_plan(customer_fact, bool(full_order_fact), measurement_truth)
+    customer_attribution = build_customer_attribution_layer(customer_attribution_readiness, customer_attribution_truth, campaign_customer_truth)
 
     meta_section = {
         'generatedAt': ga4.get('generatedAt'),
@@ -184,6 +222,7 @@ def build_data_layer(raw: dict) -> dict:
         'topCampaigns': top_campaigns,
         'actions': action_plan['now'] + action_plan['next_2_to_4_weeks'],
         'nettoContributionWarnings': netto_contribution['warnings'],
+        'customerAttributionTopCampaigns': customer_attribution['topCampaigns'],
     }
 
     final_truth_engine = {
@@ -205,6 +244,7 @@ def build_data_layer(raw: dict) -> dict:
             'Order-level margin enrichment nebo produktový cost join.',
             'Backend validovaný channel attribution join na srovnatelných časových oknech.',
         ],
+        'customerAttributionStatus': customer_attribution['status'],
     }
 
     role_views = {
@@ -307,4 +347,5 @@ def build_data_layer(raw: dict) -> dict:
         'acquisition-truth': acquisition_truth,
         'action-plan': action_plan,
         'netto-contribution': netto_contribution,
+        'customer-attribution': customer_attribution,
     }

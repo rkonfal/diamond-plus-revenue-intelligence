@@ -23,6 +23,10 @@ FILES = [
 OPTIONAL_FILES = [
     'customer_fact_ytd_window.json',
     'order_fact_ytd_window.json',
+    'ga4_purchase_journey_window.json',
+    'customer_attribution_truth.json',
+    'campaign_customer_truth.json',
+    'customer_attribution_readiness.json',
 ]
 
 DEFAULT_BASE = 'https://raw.githubusercontent.com/rkonfal/diamond-plus-reporting-preview/main/data/current'

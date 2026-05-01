@@ -39,4 +39,8 @@ class SourceStore:
             'topCustomers': self.read_json('top_50_customers_last_year.json'),
             'customerFactYtdWindow': self.read_first_optional(['customer_fact_ytd_compact.json', 'customer_fact_ytd_window.json']),
             'orderFactYtdWindow': self.read_first_optional(['order_fact_ytd_compact.json', 'order_fact_ytd_window.json']),
+            'ga4PurchaseJourneyWindow': self.read_json_optional('ga4_purchase_journey_window.json'),
+            'customerAttributionTruth': self.read_json_optional('customer_attribution_truth.json'),
+            'campaignCustomerTruth': self.read_json_optional('campaign_customer_truth.json'),
+            'customerAttributionReadiness': self.read_json_optional('customer_attribution_readiness.json'),
         }
