@@ -41,6 +41,9 @@ def main():
             'roleViews': 'role-views.json',
             'roivenueComparison': 'roivenue-comparison.json',
             'productStage': 'product-stage.json',
+            'channelIntelligence': 'channel-intelligence.json',
+            'acquisitionTruth': 'acquisition-truth.json',
+            'actionPlan': 'action-plan.json',
         },
     }
 
@@ -56,6 +59,9 @@ def main():
     write_json(OUTPUT_DIR / 'role-views.json', data_layer['role-views'])
     write_json(OUTPUT_DIR / 'roivenue-comparison.json', data_layer['roivenue-comparison'])
     write_json(OUTPUT_DIR / 'product-stage.json', data_layer['product-stage'])
+    write_json(OUTPUT_DIR / 'channel-intelligence.json', data_layer['channel-intelligence'])
+    write_json(OUTPUT_DIR / 'acquisition-truth.json', data_layer['acquisition-truth'])
+    write_json(OUTPUT_DIR / 'action-plan.json', data_layer['action-plan'])
     write_json(OUTPUT_DIR / 'manifest.json', manifest)
 
     snapshot = {
@@ -72,6 +78,9 @@ def main():
         'roleViews': data_layer['role-views'],
         'roivenueComparison': data_layer['roivenue-comparison'],
         'productStage': data_layer['product-stage'],
+        'channelIntelligence': data_layer['channel-intelligence'],
+        'acquisitionTruth': data_layer['acquisition-truth'],
+        'actionPlan': data_layer['action-plan'],
     }
     write_json(OUTPUT_DIR / 'revenue-intelligence-snapshot.json', snapshot)
     print(f'Wrote data layer to {OUTPUT_DIR}')

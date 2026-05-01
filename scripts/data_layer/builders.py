@@ -1,10 +1,16 @@
 from __future__ import annotations
 
 from .transforms import (
+    build_acquisition_truth,
+    build_action_plan,
+    build_channel_intelligence,
     build_channel_truth,
     build_contribution_truth,
     build_customer_fact,
+    build_measurement_truth,
     build_order_quality,
+    build_paid_mix,
+    build_search_taxonomy,
     build_top_campaigns,
     pct_change,
     pick_focus_month,
@@ -24,6 +30,8 @@ def build_data_layer(raw: dict) -> dict:
     ytd = raw['eshopYtd']
     prev_day = raw['previousDayOrders']
     top_customers = raw['topCustomers']
+    full_customer_fact = raw.get('customerFactYtdWindow')
+    full_order_fact = raw.get('orderFactYtdWindow')
 
     ga4_focus, focus_key = pick_focus_month(ga4)
     ga4_previous = ga4['previousMonth']
@@ -34,9 +42,15 @@ def build_data_layer(raw: dict) -> dict:
     previous_day_summary = prev_day['summary']
     finance_prev = finance['previousMonth']
     finance_current = finance['currentMonth']
-    customer_fact = build_customer_fact(top_customers, ytd)
-    order_quality = build_order_quality(previous_day_summary)
+    customer_fact = build_customer_fact(top_customers, ytd, full_customer_fact)
+    order_quality = build_order_quality(previous_day_summary, full_order_fact)
     contribution_truth = build_contribution_truth(finance_prev, focus_spend, order_quality, klaviyo.get('previousMonth'))
+    channel_intelligence = build_channel_intelligence(meta, google, sklik, klaviyo, focus_channels)
+    measurement_truth = build_measurement_truth(meta, google, sklik, klaviyo, ga4, finance_prev, focus_channels)
+    paid_mix = build_paid_mix(meta, google, sklik, klaviyo)
+    search_taxonomy = build_search_taxonomy(google, sklik)
+    acquisition_truth = build_acquisition_truth(customer_fact, ga4, klaviyo, finance_prev, channel_intelligence, paid_mix, search_taxonomy)
+    action_plan = build_action_plan(customer_fact, bool(full_order_fact), measurement_truth)
 
     meta_section = {
         'generatedAt': ga4.get('generatedAt'),
@@ -77,26 +91,22 @@ def build_data_layer(raw: dict) -> dict:
             'label': 'Current net cash position',
         },
         'measurementConfidence': {
-            'label': 'Medium to low',
-            'reason': 'Meta vs GA4 gap, high unattributed traffic, mixed acquisition logic, and incomplete customer classification.',
+            'label': 'Medium',
+            'reason': measurement_truth['headline'],
         },
         'newVsReturning': {
             'status': customer_fact['estimatedNewVsReturning']['status'],
             'label': customer_fact['estimatedNewVsReturning']['label'],
         },
         'reportNarrative': {
-            'headline': 'Report ukazuje silný byznys, ale slabší jistotu v tom, které marketingové kanály růst opravdu vytváří.',
+            'headline': 'Report už umí oddělit business truth, customer truth, acquisition truth a measurement truth, takže se dá řídit jako systém a ne jen číst jako dashboard.',
             'plainLanguage': [
                 f"Za fokus období report vidí tržby {round2(ga4_focus['purchaseRevenue'])} Kč a spend {focus_spend} Kč.",
                 f"Po marketingu vychází ve financích {round2(finance_prev['afterMarketing'])} Kč, takže byznys jako celek funguje.",
-                f"Zákaznická báze má silný repeat signal, ale true new vs returning zatím není definitivní bez plné order historie.",
-                'Platformy hlásí výkon lépe, než ho zatím umíme s vysokou jistotou potvrdit v analytice a backendu.',
+                customer_fact['estimatedNewVsReturning']['label'],
+                'Nejslabší místo už není customer truth, ale channel reconciliation a netto contribution.',
             ],
-            'whatToDoNow': [
-                'Řídit rozpočet opatrněji podle channel trust vrstvy, ne jen podle platform ROAS.',
-                'Dodělat plný order fact a customer fact model, aby byl new vs returning finální.',
-                'Zavést order-level contribution po stornu, vratkách a marži.',
-            ],
+            'whatToDoNow': action_plan['now'],
         },
     }
 
@@ -114,6 +124,7 @@ def build_data_layer(raw: dict) -> dict:
             'czOrders': previous_day_summary['byView']['cz']['orders'],
             'skOrders': previous_day_summary['byView']['sk']['orders'],
         },
+        'historicalOrderWindow': full_order_fact.get('summary') if full_order_fact else None,
         'orderQuality': order_quality,
         'contributionTruth': contribution_truth,
         'topCustomersSample': top_customers['top50'][:10],
@@ -132,6 +143,9 @@ def build_data_layer(raw: dict) -> dict:
                 'Should be separated from paid acquisition decisioning',
             ],
         }],
+        'channelIntelligence': channel_intelligence,
+        'paidMix': paid_mix,
+        'searchTaxonomy': search_taxonomy,
         'ga4Channels': focus_channels,
         'marketingOverviewPreviousMonth': marketing['previousMonth'],
         'directSources': marketing['directSources'],
@@ -143,11 +157,13 @@ def build_data_layer(raw: dict) -> dict:
 
     order_fact = {
         'readiness': {
-            'status': 'partial',
-            'label': 'Order fact currently covers latest daily order pulse only, not the full historical order universe.',
-            'nextUnlock': 'Daily or monthly full order export with customer key and final lifecycle state.',
+            'status': 'full_ytd_window' if full_order_fact else 'partial',
+            'label': 'Order fact now covers the full measured YTD order window.' if full_order_fact else 'Order fact currently covers latest daily order pulse only, not the full historical order universe.',
+            'nextUnlock': 'Add final lifecycle state, returns, refunds, and order-level margin joins.' if full_order_fact else 'Daily or monthly full order export with customer key and final lifecycle state.',
         },
         'latestDay': prev_day.get('items', []),
+        'historicalWindow': full_order_fact.get('window') if full_order_fact else None,
+        'historicalOrdersSample': (full_order_fact.get('orders') or [])[:100] if full_order_fact else [],
         'summary': order_quality,
     }
 
@@ -156,48 +172,39 @@ def build_data_layer(raw: dict) -> dict:
         'landingPages': ga4['landingPages7d'],
         'topPages': ga4['topPages7d'],
         'countries': ga4['countries7d'],
-        'warnings': [
-            'High Unassigned share requires taxonomy and channel grouping cleanup.',
-            'Paid Social in GA4 is materially weaker than Meta platform-reported revenue.',
-            'Current model still needs backend customer fact logic for true new vs returning measurement.',
-        ],
+        'truth': measurement_truth,
+        'warnings': measurement_truth['warnings'],
     }
 
     audit_workspace = {
         'topCampaigns': top_campaigns,
-        'actions': [
-            'Separate acquisition, remarketing, retention, and brand into explicit reporting layers.',
-            'Build customer fact table with first confirmed purchase date to unlock true new-vs-returning classification.',
-            'Introduce channel confidence scoring based on platform vs GA4 vs backend deltas.',
-            'Tighten audience exclusions and tracking governance before trusting platform-reported growth.',
-            'Use finance after-marketing and cash views as first-class management outputs, not side panels.',
-        ],
+        'actions': action_plan['now'] + action_plan['next_2_to_4_weeks'],
     }
 
     final_truth_engine = {
-        'status': 'partial_but_operational',
-        'headline': 'Final truth engine is operational at finance and channel-confidence level, but still partial at full customer-history level.',
+        'status': 'operational_with_known_gaps',
+        'headline': 'Final truth engine is now operational for finance truth, measured YTD customer truth, measured YTD order truth, and first decision-grade acquisition split. The main missing layer is netto contribution and backend channel reconciliation.',
         'whatIsTrulyKnown': [
             f"Finance after marketing: {round2(finance_prev['afterMarketing'])} Kč.",
             f"Net cash position: {round2(finance['cash']['netCashPosition'])} Kč.",
-            f"Latest cancelled rate: {order_quality['cancelledRatePct']} %.",
-            f"Retention revenue proxy from Klaviyo previous month: {round2(klaviyo['previousMonth']['totalAttributedRevenueCzk'])} Kč.",
+            customer_fact['estimatedNewVsReturning']['label'],
+            f"Measured YTD orders processed: {customer_fact['coverage']['ordersProcessed']}",
         ],
         'whatIsEstimated': [
-            customer_fact['estimatedNewVsReturning']['label'],
-            'Order-level netto contribution after returns and refunds is still estimated only at finance aggregate level.',
             'Channel incrementality is still confidence-led, not fully modeled.',
+            'Platform channel truth is still non-additive and partially overlapping.',
+            'Netto contribution after returns, refunds, and margin is not finished yet.',
         ],
         'blockingMissingSources': [
-            'Full historical order export with customer key and final lifecycle status.',
             'Returns / refunds dataset tied to order_id.',
             'Order-level margin enrichment or product cost join.',
+            'Backend validated channel attribution join on comparable time windows.',
         ],
     }
 
     role_views = {
         'management': {
-            'headline': 'Byznys je profitabilní po marketingu, ale attribution jistota zatím zaostává za business výsledkem.',
+            'headline': 'Byznys je silný, customer truth je měřený, ale marketing decisioning musí pořád procházet trust vrstvou a bucket split logikou.',
             'focus': [
                 f"Po marketingu zůstalo {round2(finance_prev['afterMarketing'])} Kč.",
                 f"Net cash pozice je {round2(finance['cash']['netCashPosition'])} Kč.",
@@ -206,15 +213,15 @@ def build_data_layer(raw: dict) -> dict:
             'questions': [
                 'Které kanály skutečně vytváří nový demand?',
                 'Kde je výkon reálný a kde je jen atribuční optimismus?',
-                'Jak moc je růst závislý na repeat zákaznících?',
+                'Jak rychle dostaneme z gross truth netto truth?',
             ],
         },
         'marketing': {
-            'headline': 'Marketing view má sloužit k řízení spendu podle trust vrstvy, ne jen podle platform ROAS.',
+            'headline': 'Marketing view už umí oddělit platform claim od observed truth a zároveň rozdělit spend na acquisition, remarketing, brand, retention a harvesting.',
             'focus': [
-                'Meta má silný platform revenue, ale nízkou důvěru.',
-                'Google drží nejsilnější výkon, ale je brand-heavy.',
-                'Sklik potřebuje jasnější roli a validaci proti backendu.',
+                channel_intelligence['rows'][0]['primaryIssue'],
+                channel_intelligence['rows'][1]['primaryIssue'],
+                'Retention a repeat revenue už nesmí být zaměňované za akviziční výkon.',
             ],
             'questions': [
                 'Co škálovat, co omezit, co rozdělit na acquisition vs remarketing?',
@@ -223,7 +230,7 @@ def build_data_layer(raw: dict) -> dict:
             ],
         },
         'finance': {
-            'headline': 'Finance view spojuje marketing spend s margin realitou, ne jen s obratem.',
+            'headline': 'Finance view už stojí na byznys realitě, další krok je netto contribution po vratkách a marži.',
             'focus': [
                 f"Revenue ve financích za minulý měsíc: {round2(finance_prev['revenue'])} Kč.",
                 f"Operating margin: {round2(finance_prev['operatingMargin'])} Kč.",
@@ -240,33 +247,39 @@ def build_data_layer(raw: dict) -> dict:
     roivenue_comparison = {
         'headline': 'Roivenue comparison, where this product is already strong and where it is still behind.',
         'rows': [
-            {'area': 'Business truth layer', 'ours': 'Strong finance and order pulse connection', 'roivenue': 'Usually stronger attribution and channel modeling, weaker custom internal ops context', 'status': 'strong'},
-            {'area': 'Attribution / channel modeling', 'ours': 'Partial, confidence-led, explicit about uncertainty', 'roivenue': 'More mature and deeper by default', 'status': 'behind'},
+            {'area': 'Business truth layer', 'ours': 'Strong finance, cash, order pulse and YTD truth connection', 'roivenue': 'Usually weaker on deeply custom internal ops context', 'status': 'strong'},
+            {'area': 'Attribution / channel modeling', 'ours': 'Confidence-led and honest, but still not fully reconciled', 'roivenue': 'More mature and deeper by default', 'status': 'behind'},
+            {'area': 'Customer truth', 'ours': 'Measured YTD new vs returning truth is now live', 'roivenue': 'Usually mature when fully integrated', 'status': 'close'},
             {'area': 'Readability for local team', 'ours': 'Much more tailored, plain-language, management-readable', 'roivenue': 'More standardized and polished', 'status': 'strong'},
-            {'area': 'Customer truth', 'ours': 'Proxy layer only so far', 'roivenue': 'Typically more mature when fully integrated', 'status': 'behind'},
-            {'area': 'Automation and ownership', 'ours': 'Now auto-refreshing and GitHub-native', 'roivenue': 'More enterprise-ready workflow stack', 'status': 'close'},
+            {'area': 'Automation and ownership', 'ours': 'Auto-refreshing and GitHub-native from canonical reporting pipeline', 'roivenue': 'More enterprise-ready workflow stack', 'status': 'close'},
+            {'area': 'Netto contribution', 'ours': 'Not finished yet', 'roivenue': 'Often stronger once cost and attribution model is live', 'status': 'behind'},
             {'area': 'Fit to Diamond Plus', 'ours': 'Very high, custom-built around local business truth', 'roivenue': 'Generic platform fit', 'status': 'strong'},
         ],
         'summary': [
             'Compared with Roivenue, this product is already better aligned to Diamond Plus internal reality.',
-            'It is not yet as mature in attribution depth, customer truth, and modeled contribution logic.',
-            'If we finish the full order/customer truth engine, the product gets within sight of a genuinely competitive in-house alternative.',
+            'It is now materially stronger on finance truth, customer truth, and management readability than before.',
+            'The remaining gap is mainly channel reconciliation, netto contribution, and incrementality depth.',
         ],
     }
 
     product_stage = {
-        'name': 'Stage 2, business truth and customer layer foundation',
+        'name': 'Stage 3, decision-grade revenue intelligence foundation',
         'done': [
             'Separate repo and product architecture',
             'Static-first live app scaffold',
             'Multi-file data layer fed from real reporting sources',
             'Backend truth blocks from finance and order pulse',
-            'Customer fact proxy layer with repeat-customer concentration signals',
+            'Customer fact YTD layer with measured first-order new vs returning classification',
+            'Order fact YTD layer wired from canonical reporting pipeline',
+            'Channel intelligence and measurement truth foundation',
+            'Acquisition vs remarketing vs brand vs retention bucket split',
+            'Unified Google plus Sklik search taxonomy layer',
             'Campaign audit workspace foundation',
         ],
         'next': [
-            'Full-customer order history for real new vs returning revenue',
-            'Refund / return / cancellation adjusted contribution logic per order',
+            'Refund / return adjusted contribution logic per order',
+            'Margin enrichment at order or product level',
+            'Backend channel reconciliation on comparable windows',
             'Creative-level drilldown and operator workflows',
             'Anomaly detection and alert system',
         ],
@@ -285,4 +298,7 @@ def build_data_layer(raw: dict) -> dict:
         'role-views': role_views,
         'roivenue-comparison': roivenue_comparison,
         'product-stage': product_stage,
+        'channel-intelligence': channel_intelligence,
+        'acquisition-truth': acquisition_truth,
+        'action-plan': action_plan,
     }

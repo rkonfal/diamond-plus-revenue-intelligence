@@ -7,7 +7,8 @@
       "revenue": 3016884.64,
       "roas": 25.48,
       "status": "ACTIVE",
-      "risk": "medium"
+      "risk": "medium",
+      "bucket": "acquisition"
     },
     {
       "platform": "Meta Ads",
@@ -16,7 +17,8 @@
       "revenue": 1144659.12,
       "roas": 19.03,
       "status": "ACTIVE",
-      "risk": "medium"
+      "risk": "medium",
+      "bucket": "acquisition"
     },
     {
       "platform": "Meta Ads",
@@ -25,7 +27,8 @@
       "revenue": 1089010.2,
       "roas": 43.21,
       "status": "ACTIVE",
-      "risk": "medium"
+      "risk": "medium",
+      "bucket": "remarketing"
     },
     {
       "platform": "Google Ads",
@@ -34,7 +37,8 @@
       "revenue": 2010659.52,
       "roas": 80.4,
       "status": "ENABLED",
-      "risk": "medium"
+      "risk": "medium",
+      "bucket": "brand"
     },
     {
       "platform": "Google Ads",
@@ -43,7 +47,8 @@
       "revenue": 898071.33,
       "roas": 60.52,
       "status": "ENABLED",
-      "risk": "medium"
+      "risk": "medium",
+      "bucket": "harvesting"
     },
     {
       "platform": "Meta Ads",
@@ -52,7 +57,8 @@
       "revenue": 54034.72,
       "roas": 3.65,
       "status": "ACTIVE",
-      "risk": "high"
+      "risk": "high",
+      "bucket": "acquisition"
     },
     {
       "platform": "Meta Ads",
@@ -61,7 +67,8 @@
       "revenue": 144030.56,
       "roas": 9.74,
       "status": "ACTIVE",
-      "risk": "high"
+      "risk": "high",
+      "bucket": "acquisition"
     },
     {
       "platform": "Google Ads",
@@ -70,7 +77,8 @@
       "revenue": 408910.82,
       "roas": 33.22,
       "status": "ENABLED",
-      "risk": "medium"
+      "risk": "medium",
+      "bucket": "harvesting"
     },
     {
       "platform": "Meta Ads",
@@ -79,7 +87,8 @@
       "revenue": 307573.32,
       "roas": 25.98,
       "status": "ACTIVE",
-      "risk": "medium"
+      "risk": "medium",
+      "bucket": "acquisition"
     },
     {
       "platform": "Meta Ads",
@@ -88,7 +97,8 @@
       "revenue": 137067.44,
       "roas": 13.52,
       "status": "ACTIVE",
-      "risk": "medium"
+      "risk": "medium",
+      "bucket": "acquisition"
     },
     {
       "platform": "Meta Ads",
@@ -97,7 +107,8 @@
       "revenue": 199558.8,
       "roas": 26.1,
       "status": "ACTIVE",
-      "risk": "medium"
+      "risk": "medium",
+      "bucket": "remarketing"
     },
     {
       "platform": "Meta Ads",
@@ -106,7 +117,8 @@
       "revenue": 113457.88,
       "roas": 17.32,
       "status": "PAUSED",
-      "risk": "medium"
+      "risk": "medium",
+      "bucket": "acquisition"
     },
     {
       "platform": "Google Ads",
@@ -115,7 +127,8 @@
       "revenue": 128296.52,
       "roas": 20.37,
       "status": "ENABLED",
-      "risk": "medium"
+      "risk": "medium",
+      "bucket": "brand"
     },
     {
       "platform": "Meta Ads",
@@ -124,7 +137,8 @@
       "revenue": 15599.28,
       "roas": 2.61,
       "status": "ACTIVE",
-      "risk": "high"
+      "risk": "high",
+      "bucket": "acquisition"
     },
     {
       "platform": "Meta Ads",
@@ -133,7 +147,8 @@
       "revenue": 177984.72,
       "roas": 33.84,
       "status": "ACTIVE",
-      "risk": "medium"
+      "risk": "medium",
+      "bucket": "remarketing"
     },
     {
       "platform": "Google Ads",
@@ -142,7 +157,8 @@
       "revenue": 146543.4,
       "roas": 41.96,
       "status": "ENABLED",
-      "risk": "medium"
+      "risk": "medium",
+      "bucket": "acquisition"
     },
     {
       "platform": "Meta Ads",
@@ -151,7 +167,8 @@
       "revenue": 0.0,
       "roas": 0.0,
       "status": "ACTIVE",
-      "risk": "high"
+      "risk": "high",
+      "bucket": "acquisition"
     },
     {
       "platform": "Sklik",
@@ -160,14 +177,16 @@
       "revenue": 15785.34,
       "roas": 5.66,
       "status": "active",
-      "risk": "low"
+      "risk": "low",
+      "bucket": "brand"
     }
   ],
   "actions": [
-    "Separate acquisition, remarketing, retention, and brand into explicit reporting layers.",
-    "Build customer fact table with first confirmed purchase date to unlock true new-vs-returning classification.",
-    "Introduce channel confidence scoring based on platform vs GA4 vs backend deltas.",
-    "Tighten audience exclusions and tracking governance before trusting platform-reported growth.",
-    "Use finance after-marketing and cash views as first-class management outputs, not side panels."
+    "Separate acquisition, remarketing, retention, and brand into explicit channel buckets and decision rules.",
+    "Add channel intelligence dataset to the UI homepage and management view so trust and ambiguity are visible on first load.",
+    "Normalize campaign naming and map Google plus Sklik into a shared search taxonomy.",
+    "Join returns, refunds, and final order lifecycle to order_fact so contribution becomes netto, not gross.",
+    "Add margin enrichment per order or per product family to move from revenue truth to profit truth.",
+    "Build backend-validated channel reconciliation so platform claims are compared against finance and order truth on the same window."
   ]
 }

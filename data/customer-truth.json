@@ -1,25 +1,30 @@
 {
   "readiness": {
-    "status": "partial",
-    "label": "Customer fact is available as a high-value repeat-customer layer, not yet as a full customer universe.",
-    "nextUnlock": "Full order-history export with first confirmed purchase date per customer."
+    "status": "full_ytd_window",
+    "label": "Customer fact now runs on full YTD order history with first-order classification per customer.",
+    "nextUnlock": "Add final lifecycle state, returns, and refunds to move from gross customer truth to netto customer truth."
   },
   "coverage": {
-    "customersCount": 34501,
-    "ordersProcessed": 136013,
-    "top50RevenueSharePctOfYtd": 9.07,
-    "top10RevenueSharePctOfYtd": 4.81,
-    "top50OrdersSharePctOfProcessed": 2.02
+    "customersCount": 38661,
+    "ordersProcessed": 187618,
+    "top50RevenueSharePctOfYtd": 12.42,
+    "top10RevenueSharePctOfYtd": 6.2,
+    "top50OrdersSharePctOfProcessed": 1.94
   },
   "repeatSignals": {
-    "heavyRepeatCustomersInTop50": 44,
-    "top50AverageOrders": 54.84,
-    "top50AverageOrderValue": 5123.27
+    "heavyRepeatCustomersInTop50": 47,
+    "top50AverageOrders": 72.62,
+    "top50AverageOrderValue": 5133.27
   },
   "estimatedNewVsReturning": {
-    "status": "proxy_only",
+    "status": "measured_ytd",
     "returningBaseStrength": "high",
-    "label": "Repeat customer base is clearly material, but true new-vs-returning revenue still requires full-customer order history."
+    "label": "Returning customers generated 284096050.4 Kč vs 12479827.25 Kč from new customers in the measured YTD window.",
+    "newCustomers": 10443,
+    "returningCustomers": 28218,
+    "newRevenueWithVat": 12479827.25,
+    "returningRevenueWithVat": 284096050.4,
+    "returningRevenueSharePct": 95.79
   },
   "topCustomers": [
     {
@@ -30,11 +35,17 @@
       "person": "Maloobchodní prodej",
       "city": "",
       "ico": "",
-      "orders": 714,
-      "revenueWithVat": 1462299.0,
-      "lastOrderAt": "2026-04-28T18:15:51+02:00",
+      "countryCode": "CZ",
+      "orders": 717,
+      "revenueWithVat": 1473908.0,
+      "firstOrderAt": "2025-06-24T07:41:21+02:00",
+      "lastOrderAt": "2026-04-29T18:25:19+02:00",
+      "channels": [
+        "Pokladna"
+      ],
       "rank": 1,
-      "averageOrderValue": 2048.04,
+      "averageOrderValue": 2055.66,
+      "customerType": "returning",
       "segment": "whale"
     },
     {
@@ -45,11 +56,38 @@
       "person": "Iveta Farmačková",
       "city": "Brno 2",
       "ico": "05551323",
-      "orders": 175,
-      "revenueWithVat": 550786.0,
+      "countryCode": "CZ",
+      "orders": 243,
+      "revenueWithVat": 700846.0,
+      "firstOrderAt": "2025-01-02T19:37:29+01:00",
       "lastOrderAt": "2026-04-29T08:33:07+02:00",
+      "channels": [
+        "E-shop"
+      ],
       "rank": 2,
-      "averageOrderValue": 3147.35,
+      "averageOrderValue": 2884.14,
+      "customerType": "returning",
+      "segment": "whale"
+    },
+    {
+      "customerKey": "email:moniask37@gmail.com",
+      "label": "AlzaBox (CBA Potraviny) (Petra Demková)",
+      "email": "moniask37@gmail.com",
+      "firm": "AlzaBox (CBA Potraviny)",
+      "person": "Petra Demková",
+      "city": "Likavka",
+      "ico": "",
+      "countryCode": "SK",
+      "orders": 170,
+      "revenueWithVat": 622988.2,
+      "firstOrderAt": "2025-01-29T20:44:58+01:00",
+      "lastOrderAt": "2026-04-29T19:18:08+02:00",
+      "channels": [
+        "E-shop"
+      ],
+      "rank": 3,
+      "averageOrderValue": 3664.64,
+      "customerType": "returning",
       "segment": "whale"
     },
     {
@@ -60,11 +98,39 @@
       "person": "Adam Cechner PRODEJ",
       "city": "",
       "ico": "",
-      "orders": 118,
-      "revenueWithVat": 315670.0,
-      "lastOrderAt": "2026-04-28T18:37:02+02:00",
-      "rank": 3,
-      "averageOrderValue": 2675.17,
+      "countryCode": "CZ",
+      "orders": 120,
+      "revenueWithVat": 318310.0,
+      "firstOrderAt": "2025-08-29T09:52:43+02:00",
+      "lastOrderAt": "2026-04-29T18:32:54+02:00",
+      "channels": [
+        "Pokladna"
+      ],
+      "rank": 4,
+      "averageOrderValue": 2652.58,
+      "customerType": "returning",
+      "segment": "whale"
+    },
+    {
+      "customerKey": "email:gnedecka@gmail.com",
+      "label": "Z-BOX (Gabriela Nedecká)",
+      "email": "gnedecka@gmail.com",
+      "firm": "Z-BOX",
+      "person": "Gabriela Nedecká",
+      "city": "Zeleneč",
+      "ico": "",
+      "countryCode": "SK",
+      "orders": 138,
+      "revenueWithVat": 258162.5,
+      "firstOrderAt": "2025-01-06T10:06:34+01:00",
+      "lastOrderAt": "2026-04-30T20:55:04+02:00",
+      "channels": [
+        "Administrace",
+        "E-shop"
+      ],
+      "rank": 5,
+      "averageOrderValue": 1870.74,
+      "customerType": "returning",
       "segment": "whale"
     },
     {
@@ -75,26 +141,17 @@
       "person": "Vendula Scheichlová",
       "city": "Litvínovice",
       "ico": "63933357",
-      "orders": 66,
-      "revenueWithVat": 217727.0,
+      "countryCode": "CZ",
+      "orders": 74,
+      "revenueWithVat": 250039.0,
+      "firstOrderAt": "2025-01-01T13:40:05+01:00",
       "lastOrderAt": "2026-04-19T22:31:49+02:00",
-      "rank": 4,
-      "averageOrderValue": 3298.89,
-      "segment": "core_repeat"
-    },
-    {
-      "customerKey": "ico:07952759",
-      "label": "KidPro Toys s.r.o. (Eva Domorádová)",
-      "email": "domoradova@kidpro.cz",
-      "firm": "KidPro Toys s.r.o.",
-      "person": "Eva Domorádová",
-      "city": "Praha",
-      "ico": "07952759",
-      "orders": 75,
-      "revenueWithVat": 176137.0,
-      "lastOrderAt": "2026-04-27T07:34:54+02:00",
-      "rank": 5,
-      "averageOrderValue": 2348.49,
+      "channels": [
+        "E-shop"
+      ],
+      "rank": 6,
+      "averageOrderValue": 3378.91,
+      "customerType": "returning",
       "segment": "core_repeat"
     },
     {
@@ -105,26 +162,59 @@
       "person": "Ivana Kunešová",
       "city": "Horažďovice",
       "ico": "",
-      "orders": 156,
-      "revenueWithVat": 155016.55,
-      "lastOrderAt": "2026-04-28T15:05:36+02:00",
-      "rank": 6,
-      "averageOrderValue": 993.7,
+      "countryCode": "CZ",
+      "orders": 212,
+      "revenueWithVat": 211479.55,
+      "firstOrderAt": "2025-01-01T10:00:34+01:00",
+      "lastOrderAt": "2026-04-29T19:23:10+02:00",
+      "channels": [
+        "E-shop"
+      ],
+      "rank": 7,
+      "averageOrderValue": 997.55,
+      "customerType": "returning",
       "segment": "whale"
     },
     {
-      "customerKey": "email:nati.sz@email.cz",
-      "label": "Krystyna Kašubiaková",
-      "email": "nati.sz@email.cz",
+      "customerKey": "ico:07952759",
+      "label": "KidPro Toys s.r.o. (Eva Domorádová)",
+      "email": "domoradova@kidpro.cz",
+      "firm": "KidPro Toys s.r.o.",
+      "person": "Eva Domorádová",
+      "city": "Praha",
+      "ico": "07952759",
+      "countryCode": "CZ",
+      "orders": 89,
+      "revenueWithVat": 200895.0,
+      "firstOrderAt": "2025-01-04T21:32:09+01:00",
+      "lastOrderAt": "2026-04-27T07:34:54+02:00",
+      "channels": [
+        "E-shop"
+      ],
+      "rank": 8,
+      "averageOrderValue": 2257.25,
+      "customerType": "returning",
+      "segment": "core_repeat"
+    },
+    {
+      "customerKey": "email:martinadzurik@gmail.com",
+      "label": "Martina Dzuriková",
+      "email": "martinadzurik@gmail.com",
       "firm": "",
-      "person": "Krystyna Kašubiaková",
-      "city": "Třinec",
+      "person": "Martina Dzuriková",
+      "city": "Bánovce nad Bebravou",
       "ico": "",
-      "orders": 51,
-      "revenueWithVat": 144199.75,
-      "lastOrderAt": "2026-04-28T19:28:08+02:00",
-      "rank": 7,
-      "averageOrderValue": 2827.45,
+      "countryCode": "SK",
+      "orders": 76,
+      "revenueWithVat": 177473.75,
+      "firstOrderAt": "2025-01-12T21:11:23+01:00",
+      "lastOrderAt": "2026-04-28T12:27:28+02:00",
+      "channels": [
+        "E-shop"
+      ],
+      "rank": 9,
+      "averageOrderValue": 2335.18,
+      "customerType": "returning",
       "segment": "core_repeat"
     },
     {
@@ -135,41 +225,17 @@
       "person": "Jan Churan",
       "city": "Ústí nad Labem 1",
       "ico": "25026569",
-      "orders": 25,
-      "revenueWithVat": 138718.0,
+      "countryCode": "CZ",
+      "orders": 31,
+      "revenueWithVat": 177135.0,
+      "firstOrderAt": "2025-01-08T16:52:27+01:00",
       "lastOrderAt": "2026-04-28T12:13:22+02:00",
-      "rank": 8,
-      "averageOrderValue": 5548.72,
-      "segment": "vip_repeat"
-    },
-    {
-      "customerKey": "email:danka.pokorna1@seznam.cz",
-      "label": "Dana Pokorná",
-      "email": "danka.pokorna1@seznam.cz",
-      "firm": "",
-      "person": "Dana Pokorná",
-      "city": "Budětsko",
-      "ico": "",
-      "orders": 40,
-      "revenueWithVat": 127589.0,
-      "lastOrderAt": "2026-04-28T11:52:55+02:00",
-      "rank": 9,
-      "averageOrderValue": 3189.72,
-      "segment": "core_repeat"
-    },
-    {
-      "customerKey": "ico:44797320",
-      "label": "SITEL, spol. s r.o. (Magda Doudová)",
-      "email": "mdoudova@seznam.cz",
-      "firm": "SITEL, spol. s r.o.",
-      "person": "Magda Doudová",
-      "city": "Praha 10 - Michle",
-      "ico": "44797320",
-      "orders": 1,
-      "revenueWithVat": 122780.0,
-      "lastOrderAt": "2025-11-26T11:57:47+01:00",
+      "channels": [
+        "E-shop"
+      ],
       "rank": 10,
-      "averageOrderValue": 122780.0,
+      "averageOrderValue": 5714.03,
+      "customerType": "returning",
       "segment": "vip_repeat"
     }
   ]

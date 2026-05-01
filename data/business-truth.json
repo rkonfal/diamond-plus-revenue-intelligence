@@ -22,29 +22,29 @@
   },
   "financeCurrentMonth": {
     "label": "5/2026",
-    "revenue": 40010.61,
-    "cogsAndFees": 32330.86,
+    "revenue": 48424.18,
+    "cogsAndFees": 41325.16,
     "logistics": 0.0,
     "marketing": 0.0,
     "opex": 15436.0,
     "depreciation": 385502.0,
     "other": 0.0,
-    "grossMargin": 7679.75,
-    "afterLogistics": 7679.75,
-    "afterMarketing": 7679.75,
-    "operatingMargin": -7756.25,
-    "ebit": -393258.25,
-    "profit": -393258.25,
-    "grossMarginPct": 19.2,
+    "grossMargin": 7099.02,
+    "afterLogistics": 7099.02,
+    "afterMarketing": 7099.02,
+    "operatingMargin": -8336.98,
+    "ebit": -393838.98,
+    "profit": -393838.98,
+    "grossMarginPct": 14.7,
     "marketingPct": 0.0,
     "logisticsPct": 0.0,
-    "operatingMarginPct": -19.4,
-    "profitPct": -982.9
+    "operatingMarginPct": -17.2,
+    "profitPct": -813.3
   },
   "cash": {
-    "cashOnAccounts": 6004556.02,
+    "cashOnAccounts": 6005128.48,
     "unpaidInvoices": 194315.17,
-    "netCashPosition": 5810240.85,
+    "netCashPosition": 5810813.31,
     "overdueInvoicesCount": 0,
     "overdueInvoicesAmount": 0.0,
     "largestPayables": [
@@ -163,8 +163,8 @@
           "accountCode": "221005",
           "accountLabel": "221005: 2501338690/2010 FIO EUR",
           "currency": "CZK: Česká koruna",
-          "balance": 100407.02,
-          "includedBalance": 100407.02
+          "balance": 100979.48,
+          "includedBalance": 100979.48
         },
         {
           "accountCode": "221117",
@@ -290,14 +290,14 @@
   },
   "eshopYtdTotals": {
     "previous": {
-      "count": 51659,
-      "revenueWithVat": 77599142.15,
-      "averageOrderValue": 1502.14
+      "count": 51677,
+      "revenueWithVat": 77618876.15,
+      "averageOrderValue": 1502.0
     },
     "current": {
-      "count": 43083,
-      "revenueWithVat": 70859997.86,
-      "averageOrderValue": 1644.73
+      "count": 43098,
+      "revenueWithVat": 70880237.14,
+      "averageOrderValue": 1644.63
     }
   },
   "previousDayOrders": {
@@ -309,14 +309,27 @@
     "czOrders": 322,
     "skOrders": 27
   },
+  "historicalOrderWindow": {
+    "orders": 193384,
+    "nonCancelledOrders": 187618,
+    "problematicOrders": 5868,
+    "cancelledOrders": 5766,
+    "revenueWithVat": 296575877.65
+  },
   "orderQuality": {
-    "orders": 351,
-    "cancelledOrders": 2,
-    "problematicOrders": 3,
-    "cancelledRatePct": 0.57,
-    "problematicRatePct": 0.85,
-    "estimatedNetRevenueAfterCancellations": 578113.78,
-    "qualityLabel": "healthy"
+    "orders": 193384,
+    "nonCancelledOrders": 187618,
+    "cancelledOrders": 5766,
+    "problematicOrders": 5868,
+    "cancelledRatePct": 2.98,
+    "problematicRatePct": 3.03,
+    "estimatedNetRevenueAfterCancellations": 287737916.5,
+    "grossRevenueWithVat": 296575877.65,
+    "qualityLabel": "healthy",
+    "window": {
+      "from": "2025-01-01T00:00:00+01:00",
+      "to": "2026-05-01T10:30:03.528586+02:00"
+    }
   },
   "contributionTruth": {
     "previousMonth": {
@@ -332,13 +345,19 @@
       "retentionOrdersProxy": 2994
     },
     "latestOrderPulse": {
-      "orders": 351,
-      "cancelledOrders": 2,
-      "problematicOrders": 3,
-      "cancelledRatePct": 0.57,
-      "problematicRatePct": 0.85,
-      "estimatedNetRevenueAfterCancellations": 578113.78,
-      "qualityLabel": "healthy"
+      "orders": 193384,
+      "nonCancelledOrders": 187618,
+      "cancelledOrders": 5766,
+      "problematicOrders": 5868,
+      "cancelledRatePct": 2.98,
+      "problematicRatePct": 3.03,
+      "estimatedNetRevenueAfterCancellations": 287737916.5,
+      "grossRevenueWithVat": 296575877.65,
+      "qualityLabel": "healthy",
+      "window": {
+        "from": "2025-01-01T00:00:00+01:00",
+        "to": "2026-05-01T10:30:03.528586+02:00"
+      }
     },
     "nettoContributionReadiness": {
       "status": "foundation_ready",

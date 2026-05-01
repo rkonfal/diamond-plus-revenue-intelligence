@@ -11,6 +11,12 @@ class SourceStore:
     def read_json(self, name: str):
         return json.loads((self.base_dir / name).read_text())
 
+    def read_json_optional(self, name: str):
+        path = self.base_dir / name
+        if not path.exists():
+            return None
+        return json.loads(path.read_text())
+
     def load_all(self) -> dict:
         return {
             'meta': self.read_json('meta_ads_overview.json'),
@@ -24,4 +30,6 @@ class SourceStore:
             'eshopYtd': self.read_json('eshop_ytd.json'),
             'previousDayOrders': self.read_json('wpj_orders_previous_day.json'),
             'topCustomers': self.read_json('top_50_customers_last_year.json'),
+            'customerFactYtdWindow': self.read_json_optional('customer_fact_ytd_window.json'),
+            'orderFactYtdWindow': self.read_json_optional('order_fact_ytd_window.json'),
         }

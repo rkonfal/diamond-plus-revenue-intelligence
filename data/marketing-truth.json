@@ -48,6 +48,450 @@
       ]
     }
   ],
+  "channelIntelligence": {
+    "observationWindow": {
+      "platform": "previous_full_month",
+      "analytics": "last_7_days_or_current_focus_when_available",
+      "warning": "Platform and GA4 windows are directionally useful, not perfectly comparable yet."
+    },
+    "rows": [
+      {
+        "channel": "Meta Ads",
+        "bucket": "paid_social",
+        "decisionRole": "acquisition_and_remarketing_mixed",
+        "spendPreviousMonth": 283694.52,
+        "platformRevenuePreviousMonth": 6399860.64,
+        "platformRoasPreviousMonth": 22.56,
+        "ga4ObservedRevenue": 116361.1,
+        "ga4ObservedSessions": 5756.0,
+        "ga4ObservedPurchaseRatePct": 1.75,
+        "ga4ObservedRoas": 0.41,
+        "trustScore": 30,
+        "trustLabel": "low",
+        "primaryIssue": "Platform claim is much stronger than observed paid social signal.",
+        "nextQuestion": "What is true prospecting contribution after exclusions and post-view inflation are removed?"
+      },
+      {
+        "channel": "Klaviyo",
+        "bucket": "owned_retention",
+        "decisionRole": "retention",
+        "spendPreviousMonth": 0,
+        "platformRevenuePreviousMonth": 4577747.3,
+        "platformRoasPreviousMonth": null,
+        "ga4ObservedRevenue": 63204.51,
+        "ga4ObservedSessions": 513.0,
+        "ga4ObservedPurchaseRatePct": 7.99,
+        "ga4ObservedRoas": null,
+        "trustScore": 68,
+        "trustLabel": "medium_high",
+        "primaryIssue": "Retention is clearly material, but still not reconciled to backend net revenue.",
+        "nextQuestion": "How much of repeat revenue is driven by lifecycle automation versus natural reorder behavior?"
+      },
+      {
+        "channel": "Google Ads",
+        "bucket": "paid_search_bundle",
+        "decisionRole": "demand_harvesting_plus_brand",
+        "spendPreviousMonth": 66728.75,
+        "platformRevenuePreviousMonth": 3681370.07,
+        "platformRoasPreviousMonth": 55.17,
+        "ga4ObservedRevenue": 884063.7,
+        "ga4ObservedSessions": 9640.0,
+        "ga4ObservedPurchaseRatePct": 7.8,
+        "ga4ObservedRoas": 13.25,
+        "trustScore": 62,
+        "trustLabel": "medium",
+        "primaryIssue": "Search works, but brand and remarketing are mixed into the same success story.",
+        "nextQuestion": "How much non-brand and net-new demand is left after separating brand, PMAX, and remarketing?"
+      },
+      {
+        "channel": "Sklik",
+        "bucket": "paid_search_secondary",
+        "decisionRole": "harvesting_unknown",
+        "spendPreviousMonth": 6004.96,
+        "platformRevenuePreviousMonth": 2028666.0,
+        "platformRoasPreviousMonth": 337.83,
+        "ga4ObservedRevenue": 884063.7,
+        "ga4ObservedSessions": 9640.0,
+        "ga4ObservedPurchaseRatePct": 7.8,
+        "ga4ObservedRoas": 147.22,
+        "trustScore": 25,
+        "trustLabel": "low",
+        "primaryIssue": "Sklik reports extreme ROAS, but backend validation layer is still missing.",
+        "nextQuestion": "Is Sklik incremental, or mostly capturing branded and already-warm demand?"
+      }
+    ],
+    "ga4Unassigned": {
+      "revenue": 428618.69,
+      "sessions": 5514.0,
+      "purchaseRatePct": 5.95
+    }
+  },
+  "paidMix": {
+    "bucketSummaryPreviousMonth": [
+      {
+        "bucket": "acquisition",
+        "spend": 253516.28,
+        "revenue": 5151409.63,
+        "campaigns": 23,
+        "roas": 20.32
+      },
+      {
+        "bucket": "retention",
+        "spend": 0,
+        "revenue": 4577747.3,
+        "campaigns": 12,
+        "roas": null
+      },
+      {
+        "bucket": "brand",
+        "spend": 35398.73,
+        "revenue": 2154831.02,
+        "campaigns": 24,
+        "roas": 60.87
+      },
+      {
+        "bucket": "remarketing",
+        "spend": 38109.4,
+        "revenue": 1466553.72,
+        "campaigns": 13,
+        "roas": 38.48
+      },
+      {
+        "bucket": "harvesting",
+        "spend": 29403.83,
+        "revenue": 1328723.01,
+        "campaigns": 40,
+        "roas": 45.19
+      },
+      {
+        "bucket": "other",
+        "spend": 0.0,
+        "revenue": 0.0,
+        "campaigns": 33,
+        "roas": null
+      }
+    ],
+    "topCampaigns": [
+      {
+        "platform": "Meta Ads",
+        "name": "Eff_prosp_sales_static",
+        "bucket": "acquisition",
+        "spend": 118378.9,
+        "revenue": 3016884.64,
+        "status": "ACTIVE"
+      },
+      {
+        "platform": "Meta Ads",
+        "name": "Eff_prosp_sales_dynamic",
+        "bucket": "acquisition",
+        "spend": 60141.97,
+        "revenue": 1144659.12,
+        "status": "ACTIVE"
+      },
+      {
+        "platform": "Meta Ads",
+        "name": "Eff_rem_sales_dynamic",
+        "bucket": "remarketing",
+        "spend": 25204.33,
+        "revenue": 1089010.2,
+        "status": "ACTIVE"
+      },
+      {
+        "platform": "Google Ads",
+        "name": "CZ-SEA-Brand-kralovstvi-tiande",
+        "bucket": "brand",
+        "spend": 25007.3,
+        "revenue": 2010659.52,
+        "status": "ENABLED"
+      },
+      {
+        "platform": "Google Ads",
+        "name": "CZ-Pmax-Kategorie-tianDe",
+        "bucket": "harvesting",
+        "spend": 14840.25,
+        "revenue": 898071.33,
+        "status": "ENABLED"
+      },
+      {
+        "platform": "Meta Ads",
+        "name": "Eff_Prosp_Leads_Kviz",
+        "bucket": "acquisition",
+        "spend": 14820.43,
+        "revenue": 54034.72,
+        "status": "ACTIVE"
+      },
+      {
+        "platform": "Meta Ads",
+        "name": "Eff_Prosp_Leads_Kviz",
+        "bucket": "acquisition",
+        "spend": 14781.57,
+        "revenue": 144030.56,
+        "status": "ACTIVE"
+      },
+      {
+        "platform": "Google Ads",
+        "name": "SK-Pmax-Kategorie-tianDe",
+        "bucket": "harvesting",
+        "spend": 12310.53,
+        "revenue": 408910.82,
+        "status": "ENABLED"
+      },
+      {
+        "platform": "Meta Ads",
+        "name": "Eff_prosp_sales_static",
+        "bucket": "acquisition",
+        "spend": 11840.91,
+        "revenue": 307573.32,
+        "status": "ACTIVE"
+      },
+      {
+        "platform": "Meta Ads",
+        "name": "Eff_prosp_sales_dynamic",
+        "bucket": "acquisition",
+        "spend": 10138.0,
+        "revenue": 137067.44,
+        "status": "ACTIVE"
+      },
+      {
+        "platform": "Meta Ads",
+        "name": "Eff_rem_sales_dynamic",
+        "bucket": "remarketing",
+        "spend": 7645.76,
+        "revenue": 199558.8,
+        "status": "ACTIVE"
+      },
+      {
+        "platform": "Meta Ads",
+        "name": "Eff_Prosp_Leads_kurzKompas",
+        "bucket": "acquisition",
+        "spend": 6549.45,
+        "revenue": 113457.88,
+        "status": "PAUSED"
+      },
+      {
+        "platform": "Google Ads",
+        "name": "SK-Brand-kralovstvi-tiande",
+        "bucket": "brand",
+        "spend": 6298.01,
+        "revenue": 128296.52,
+        "status": "ENABLED"
+      },
+      {
+        "platform": "Meta Ads",
+        "name": "Eff_Prosp_Leads_StaženíBrožury",
+        "bucket": "acquisition",
+        "spend": 5986.19,
+        "revenue": 15599.28,
+        "status": "ACTIVE"
+      },
+      {
+        "platform": "Meta Ads",
+        "name": "Eff_rem_sales_dynamic_custom",
+        "bucket": "remarketing",
+        "spend": 5259.31,
+        "revenue": 177984.72,
+        "status": "ACTIVE"
+      },
+      {
+        "platform": "Google Ads",
+        "name": "CZ-PMax-Naked",
+        "bucket": "acquisition",
+        "spend": 3492.6,
+        "revenue": 146543.4,
+        "status": "ENABLED"
+      },
+      {
+        "platform": "Meta Ads",
+        "name": "Eff_Prosp_Leads_StaženíBrožury",
+        "bucket": "acquisition",
+        "spend": 2947.7,
+        "revenue": 0.0,
+        "status": "ACTIVE"
+      },
+      {
+        "platform": "Sklik",
+        "name": "CZ-SEA-Brand-Království-tianDe",
+        "bucket": "brand",
+        "spend": 2790.77,
+        "revenue": 15785.34,
+        "status": "active"
+      },
+      {
+        "platform": "Sklik",
+        "name": "CZ-SEA-Kategorie-tianDe",
+        "bucket": "harvesting",
+        "spend": 1862.78,
+        "revenue": 4116.34,
+        "status": "active"
+      },
+      {
+        "platform": "Google Ads",
+        "name": "CZ-SEA-Competitors",
+        "bucket": "acquisition",
+        "spend": 1598.43,
+        "revenue": 38099.44,
+        "status": "ENABLED"
+      }
+    ],
+    "decisionRules": {
+      "acquisition": "scale only when it creates measured net-new demand",
+      "remarketing": "protect efficiency, but do not count it as net-new growth",
+      "retention": "measure separately as owned repeat engine",
+      "brand": "treat as demand capture, not proof of incremental growth",
+      "harvesting": "optimize for capture efficiency, not for false acquisition claims"
+    }
+  },
+  "searchTaxonomy": {
+    "summaryPreviousMonth": [
+      {
+        "type": "brand_search",
+        "spend": 35398.73,
+        "revenue": 2154831.02,
+        "roas": 60.87,
+        "campaigns": 4,
+        "platforms": [
+          "Google Ads",
+          "Sklik"
+        ]
+      },
+      {
+        "type": "shopping_or_pmax",
+        "spend": 34184.43,
+        "revenue": 1496438.3,
+        "roas": 43.78,
+        "campaigns": 7,
+        "platforms": [
+          "Google Ads",
+          "Sklik"
+        ]
+      },
+      {
+        "type": "competitor_search",
+        "spend": 3150.56,
+        "revenue": 50387.38,
+        "roas": 15.99,
+        "campaigns": 3,
+        "platforms": [
+          "Google Ads",
+          "Sklik"
+        ]
+      }
+    ],
+    "campaigns": [
+      {
+        "platform": "Google Ads",
+        "name": "CZ-SEA-Brand-kralovstvi-tiande",
+        "type": "brand_search",
+        "bucket": "brand",
+        "spend": 25007.3,
+        "revenue": 2010659.52
+      },
+      {
+        "platform": "Google Ads",
+        "name": "CZ-Pmax-Kategorie-tianDe",
+        "type": "shopping_or_pmax",
+        "bucket": "harvesting",
+        "spend": 14840.25,
+        "revenue": 898071.33
+      },
+      {
+        "platform": "Google Ads",
+        "name": "SK-Pmax-Kategorie-tianDe",
+        "type": "shopping_or_pmax",
+        "bucket": "harvesting",
+        "spend": 12310.53,
+        "revenue": 408910.82
+      },
+      {
+        "platform": "Google Ads",
+        "name": "SK-Brand-kralovstvi-tiande",
+        "type": "brand_search",
+        "bucket": "brand",
+        "spend": 6298.01,
+        "revenue": 128296.52
+      },
+      {
+        "platform": "Google Ads",
+        "name": "CZ-PMax-Naked",
+        "type": "shopping_or_pmax",
+        "bucket": "acquisition",
+        "spend": 3492.6,
+        "revenue": 146543.4
+      },
+      {
+        "platform": "Sklik",
+        "name": "CZ-SEA-Brand-Království-tianDe",
+        "type": "brand_search",
+        "bucket": "brand",
+        "spend": 2790.77,
+        "revenue": 15785.34
+      },
+      {
+        "platform": "Sklik",
+        "name": "CZ-SEA-Kategorie-tianDe",
+        "type": "shopping_or_pmax",
+        "bucket": "harvesting",
+        "spend": 1862.78,
+        "revenue": 4116.34
+      },
+      {
+        "platform": "Google Ads",
+        "name": "CZ-SEA-Competitors",
+        "type": "competitor_search",
+        "bucket": "acquisition",
+        "spend": 1598.43,
+        "revenue": 38099.44
+      },
+      {
+        "platform": "Google Ads",
+        "name": "SK-SEA-Competitors",
+        "type": "competitor_search",
+        "bucket": "acquisition",
+        "spend": 1503.37,
+        "revenue": 11992.6
+      },
+      {
+        "platform": "Sklik",
+        "name": "Zboží.cz: Království TianDe",
+        "type": "brand_search",
+        "bucket": "brand",
+        "spend": 1302.65,
+        "revenue": 89.64
+      },
+      {
+        "platform": "Google Ads",
+        "name": "SK-PMax-Naked",
+        "type": "shopping_or_pmax",
+        "bucket": "acquisition",
+        "spend": 1288.0,
+        "revenue": 21171.89
+      },
+      {
+        "platform": "Google Ads",
+        "name": "CZ-Pmax-test-pleti",
+        "type": "shopping_or_pmax",
+        "bucket": "harvesting",
+        "spend": 209.61,
+        "revenue": 9019.5
+      },
+      {
+        "platform": "Google Ads",
+        "name": "CZ-Shopping-low-cpc",
+        "type": "shopping_or_pmax",
+        "bucket": "harvesting",
+        "spend": 180.66,
+        "revenue": 8605.02
+      },
+      {
+        "platform": "Sklik",
+        "name": "CZ-SEA-Competitors",
+        "type": "competitor_search",
+        "bucket": "acquisition",
+        "spend": 48.76,
+        "revenue": 295.34
+      }
+    ]
+  },
   "ga4Channels": [
     {
       "sessions": 7287.0,
@@ -8560,7 +9004,8 @@
       "revenue": 3016884.64,
       "roas": 25.48,
       "status": "ACTIVE",
-      "risk": "medium"
+      "risk": "medium",
+      "bucket": "acquisition"
     },
     {
       "platform": "Meta Ads",
@@ -8569,7 +9014,8 @@
       "revenue": 1144659.12,
       "roas": 19.03,
       "status": "ACTIVE",
-      "risk": "medium"
+      "risk": "medium",
+      "bucket": "acquisition"
     },
     {
       "platform": "Meta Ads",
@@ -8578,7 +9024,8 @@
       "revenue": 1089010.2,
       "roas": 43.21,
       "status": "ACTIVE",
-      "risk": "medium"
+      "risk": "medium",
+      "bucket": "remarketing"
     },
     {
       "platform": "Google Ads",
@@ -8587,7 +9034,8 @@
       "revenue": 2010659.52,
       "roas": 80.4,
       "status": "ENABLED",
-      "risk": "medium"
+      "risk": "medium",
+      "bucket": "brand"
     },
     {
       "platform": "Google Ads",
@@ -8596,7 +9044,8 @@
       "revenue": 898071.33,
       "roas": 60.52,
       "status": "ENABLED",
-      "risk": "medium"
+      "risk": "medium",
+      "bucket": "harvesting"
     },
     {
       "platform": "Meta Ads",
@@ -8605,7 +9054,8 @@
       "revenue": 54034.72,
       "roas": 3.65,
       "status": "ACTIVE",
-      "risk": "high"
+      "risk": "high",
+      "bucket": "acquisition"
     },
     {
       "platform": "Meta Ads",
@@ -8614,7 +9064,8 @@
       "revenue": 144030.56,
       "roas": 9.74,
       "status": "ACTIVE",
-      "risk": "high"
+      "risk": "high",
+      "bucket": "acquisition"
     },
     {
       "platform": "Google Ads",
@@ -8623,7 +9074,8 @@
       "revenue": 408910.82,
       "roas": 33.22,
       "status": "ENABLED",
-      "risk": "medium"
+      "risk": "medium",
+      "bucket": "harvesting"
     },
     {
       "platform": "Meta Ads",
@@ -8632,7 +9084,8 @@
       "revenue": 307573.32,
       "roas": 25.98,
       "status": "ACTIVE",
-      "risk": "medium"
+      "risk": "medium",
+      "bucket": "acquisition"
     },
     {
       "platform": "Meta Ads",
@@ -8641,7 +9094,8 @@
       "revenue": 137067.44,
       "roas": 13.52,
       "status": "ACTIVE",
-      "risk": "medium"
+      "risk": "medium",
+      "bucket": "acquisition"
     },
     {
       "platform": "Meta Ads",
@@ -8650,7 +9104,8 @@
       "revenue": 199558.8,
       "roas": 26.1,
       "status": "ACTIVE",
-      "risk": "medium"
+      "risk": "medium",
+      "bucket": "remarketing"
     },
     {
       "platform": "Meta Ads",
@@ -8659,7 +9114,8 @@
       "revenue": 113457.88,
       "roas": 17.32,
       "status": "PAUSED",
-      "risk": "medium"
+      "risk": "medium",
+      "bucket": "acquisition"
     },
     {
       "platform": "Google Ads",
@@ -8668,7 +9124,8 @@
       "revenue": 128296.52,
       "roas": 20.37,
       "status": "ENABLED",
-      "risk": "medium"
+      "risk": "medium",
+      "bucket": "brand"
     },
     {
       "platform": "Meta Ads",
@@ -8677,7 +9134,8 @@
       "revenue": 15599.28,
       "roas": 2.61,
       "status": "ACTIVE",
-      "risk": "high"
+      "risk": "high",
+      "bucket": "acquisition"
     },
     {
       "platform": "Meta Ads",
@@ -8686,7 +9144,8 @@
       "revenue": 177984.72,
       "roas": 33.84,
       "status": "ACTIVE",
-      "risk": "medium"
+      "risk": "medium",
+      "bucket": "remarketing"
     },
     {
       "platform": "Google Ads",
@@ -8695,7 +9154,8 @@
       "revenue": 146543.4,
       "roas": 41.96,
       "status": "ENABLED",
-      "risk": "medium"
+      "risk": "medium",
+      "bucket": "acquisition"
     },
     {
       "platform": "Meta Ads",
@@ -8704,7 +9164,8 @@
       "revenue": 0.0,
       "roas": 0.0,
       "status": "ACTIVE",
-      "risk": "high"
+      "risk": "high",
+      "bucket": "acquisition"
     },
     {
       "platform": "Sklik",
@@ -8713,7 +9174,8 @@
       "revenue": 15785.34,
       "roas": 5.66,
       "status": "active",
-      "risk": "low"
+      "risk": "low",
+      "bucket": "brand"
     }
   ]
 }

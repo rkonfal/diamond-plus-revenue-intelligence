@@ -343,9 +343,71 @@
       "purchaseRevenue": 0.0
     }
   ],
+  "truth": {
+    "sourceReadiness": [
+      {
+        "source": "Finance",
+        "status": "live",
+        "confidence": "high"
+      },
+      {
+        "source": "GA4",
+        "status": "live",
+        "confidence": "medium"
+      },
+      {
+        "source": "Meta Ads",
+        "status": "live",
+        "confidence": "low"
+      },
+      {
+        "source": "Google Ads",
+        "status": "live",
+        "confidence": "medium"
+      },
+      {
+        "source": "Sklik",
+        "status": "live",
+        "confidence": "low"
+      },
+      {
+        "source": "Klaviyo",
+        "status": "live",
+        "confidence": "medium"
+      },
+      {
+        "source": "Customer fact YTD",
+        "status": "live",
+        "confidence": "high"
+      },
+      {
+        "source": "Order fact YTD",
+        "status": "live",
+        "confidence": "medium_high"
+      }
+    ],
+    "reconciliation": {
+      "financeRevenuePreviousMonth": 13272249.15,
+      "ga4ObservedRevenuePreviousMonth": 12364782.84,
+      "platformClaimedRevenuePreviousMonth": 16687644.009999998,
+      "ga4VsFinanceGapPct": -6.84,
+      "platformClaimsVsFinanceGapPct": 25.73,
+      "paidObservedRevenueFocusWindow": 1000424.8,
+      "unassignedRevenueFocusWindow": 428618.69,
+      "unassignedRevenueSharePctOfFocusObserved": 17.54
+    },
+    "headline": "Measurement layer is now strong on finance and YTD customer truth, but still weaker on channel reconciliation and netto contribution.",
+    "warnings": [
+      "Platform-attributed revenue sums above finance revenue, so channel claims cannot be read as additive truth.",
+      "GA4 still carries meaningful Unassigned revenue, which weakens channel decisioning.",
+      "Paid search bundle is directionally useful, but Google and Sklik are not yet separated in backend truth.",
+      "Netto truth still needs returns, refunds, and margin joins."
+    ]
+  },
   "warnings": [
-    "High Unassigned share requires taxonomy and channel grouping cleanup.",
-    "Paid Social in GA4 is materially weaker than Meta platform-reported revenue.",
-    "Current model still needs backend customer fact logic for true new vs returning measurement."
+    "Platform-attributed revenue sums above finance revenue, so channel claims cannot be read as additive truth.",
+    "GA4 still carries meaningful Unassigned revenue, which weakens channel decisioning.",
+    "Paid search bundle is directionally useful, but Google and Sklik are not yet separated in backend truth.",
+    "Netto truth still needs returns, refunds, and margin joins."
   ]
 }

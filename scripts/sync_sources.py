@@ -19,6 +19,11 @@ FILES = [
     'top_50_customers_last_year.json',
 ]
 
+OPTIONAL_FILES = [
+    'customer_fact_ytd_window.json',
+    'order_fact_ytd_window.json',
+]
+
 DEFAULT_BASE = 'https://raw.githubusercontent.com/rkonfal/diamond-plus-reporting-preview/main/data/current'
 ROOT = Path(__file__).resolve().parent.parent
 TARGET = ROOT / 'source' / 'current'
@@ -33,6 +38,16 @@ def main():
         with urllib.request.urlopen(url) as response:
             dest.write_bytes(response.read())
         print(f'Downloaded {name}')
+
+    for name in OPTIONAL_FILES:
+        url = f'{base}/{name}'
+        dest = TARGET / name
+        try:
+            with urllib.request.urlopen(url) as response:
+                dest.write_bytes(response.read())
+            print(f'Downloaded optional {name}')
+        except Exception:
+            print(f'Skipped optional {name}')
 
 
 if __name__ == '__main__':

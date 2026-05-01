@@ -18,29 +18,29 @@
     "label": "Finance after marketing, previous full month"
   },
   "netCashPosition": {
-    "value": 5810240.85,
+    "value": 5810813.31,
     "label": "Current net cash position"
   },
   "measurementConfidence": {
-    "label": "Medium to low",
-    "reason": "Meta vs GA4 gap, high unattributed traffic, mixed acquisition logic, and incomplete customer classification."
+    "label": "Medium",
+    "reason": "Measurement layer is now strong on finance and YTD customer truth, but still weaker on channel reconciliation and netto contribution."
   },
   "newVsReturning": {
-    "status": "proxy_only",
-    "label": "Repeat customer base is clearly material, but true new-vs-returning revenue still requires full-customer order history."
+    "status": "measured_ytd",
+    "label": "Returning customers generated 284096050.4 Kč vs 12479827.25 Kč from new customers in the measured YTD window."
   },
   "reportNarrative": {
-    "headline": "Report ukazuje silný byznys, ale slabší jistotu v tom, které marketingové kanály růst opravdu vytváří.",
+    "headline": "Report už umí oddělit business truth, customer truth, acquisition truth a measurement truth, takže se dá řídit jako systém a ne jen číst jako dashboard.",
     "plainLanguage": [
       "Za fokus období report vidí tržby 12364782.84 Kč a spend 356428.23 Kč.",
       "Po marketingu vychází ve financích 3452893.29 Kč, takže byznys jako celek funguje.",
-      "Zákaznická báze má silný repeat signal, ale true new vs returning zatím není definitivní bez plné order historie.",
-      "Platformy hlásí výkon lépe, než ho zatím umíme s vysokou jistotou potvrdit v analytice a backendu."
+      "Returning customers generated 284096050.4 Kč vs 12479827.25 Kč from new customers in the measured YTD window.",
+      "Nejslabší místo už není customer truth, ale channel reconciliation a netto contribution."
     ],
     "whatToDoNow": [
-      "Řídit rozpočet opatrněji podle channel trust vrstvy, ne jen podle platform ROAS.",
-      "Dodělat plný order fact a customer fact model, aby byl new vs returning finální.",
-      "Zavést order-level contribution po stornu, vratkách a marži."
+      "Separate acquisition, remarketing, retention, and brand into explicit channel buckets and decision rules.",
+      "Add channel intelligence dataset to the UI homepage and management view so trust and ambiguity are visible on first load.",
+      "Normalize campaign naming and map Google plus Sklik into a shared search taxonomy."
     ]
   }
 }
