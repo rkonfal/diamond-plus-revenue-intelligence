@@ -1,26 +1,363 @@
 {
-  "status": "not_ready",
+  "status": "partial_live_match_v2",
   "headline": "Customer attribution vrstva ukazuje, které objednávky už umíme spárovat přes transactionId a jakou váhu dostávají kampaně v heuristice v1.",
-  "window": {},
-  "metrics": {
-    "ordersProcessed": 0,
-    "ordersMatchedExactTransaction": 0,
-    "ordersMatchedFallback": 0,
-    "ordersMatchedTotal": 0,
-    "ordersUnmatched": 0,
-    "matchRatePct": 0,
-    "weightedRevenueMatched": 0
+  "window": {
+    "dateFrom": "2026-04-01",
+    "dateTo": "2026-04-30",
+    "days": 30
   },
-  "classification": {},
-  "topCampaigns": [],
-  "recentOrders": [],
+  "metrics": {
+    "ordersProcessed": 10914,
+    "ordersMatchedExactTransaction": 10171,
+    "ordersMatchedFallback": 84,
+    "ordersMatchedTotal": 10255,
+    "ordersUnmatched": 659,
+    "matchRatePct": 93.96,
+    "weightedRevenueMatched": 16811779.8
+  },
+  "classification": {
+    "likely_incremental": {
+      "orders": 188,
+      "revenue": 227005.26
+    },
+    "likely_captured_existing_demand": {
+      "orders": 2299,
+      "revenue": 3679224.45
+    },
+    "retention_reorder": {
+      "orders": 3898,
+      "revenue": 6458064.89
+    },
+    "mixed": {
+      "orders": 3870,
+      "revenue": 6447485.33
+    }
+  },
+  "topCampaigns": [
+    {
+      "platform": "Direct",
+      "campaignName": "(direct)",
+      "ordersWeighted": 1872.5,
+      "revenueWeighted": 3002511.34,
+      "newCustomersWeighted": 89.5,
+      "returningCustomersWeighted": 1779.0,
+      "triggerRevenueWeighted": 1752810.48,
+      "assistRevenueWeighted": 1249700.86,
+      "incrementalRevenueWeighted": 0.0,
+      "capturedDemandRevenueWeighted": 0.0,
+      "retentionRevenueWeighted": 2862728.44
+    },
+    {
+      "platform": "Google Ads",
+      "campaignName": "(direct)",
+      "ordersWeighted": 1301.3,
+      "revenueWeighted": 2106739.26,
+      "newCustomersWeighted": 22.8,
+      "returningCustomersWeighted": 1278.0,
+      "triggerRevenueWeighted": 5214.12,
+      "assistRevenueWeighted": 2101525.14,
+      "incrementalRevenueWeighted": 0.0,
+      "capturedDemandRevenueWeighted": 1112348.58,
+      "retentionRevenueWeighted": 0.0
+    },
+    {
+      "platform": "Klaviyo",
+      "campaignName": "(direct)",
+      "ordersWeighted": 629.2,
+      "revenueWeighted": 1105277.14,
+      "newCustomersWeighted": 16.25,
+      "returningCustomersWeighted": 612.3,
+      "triggerRevenueWeighted": 0.0,
+      "assistRevenueWeighted": 1105277.14,
+      "incrementalRevenueWeighted": 0.0,
+      "capturedDemandRevenueWeighted": 0.0,
+      "retentionRevenueWeighted": 1074256.21
+    },
+    {
+      "platform": "Google Ads",
+      "campaignName": "(not set)",
+      "ordersWeighted": 492.55,
+      "revenueWeighted": 856396.63,
+      "newCustomersWeighted": 11.3,
+      "returningCustomersWeighted": 481.25,
+      "triggerRevenueWeighted": 679274.0,
+      "assistRevenueWeighted": 177122.63,
+      "incrementalRevenueWeighted": 7579.75,
+      "capturedDemandRevenueWeighted": 81218.44,
+      "retentionRevenueWeighted": 0.0
+    },
+    {
+      "platform": "Sklik",
+      "campaignName": "(direct)",
+      "ordersWeighted": 438.65,
+      "revenueWeighted": 764305.6,
+      "newCustomersWeighted": 10.65,
+      "returningCustomersWeighted": 428.0,
+      "triggerRevenueWeighted": 0.0,
+      "assistRevenueWeighted": 764305.6,
+      "incrementalRevenueWeighted": 0.0,
+      "capturedDemandRevenueWeighted": 543573.75,
+      "retentionRevenueWeighted": 0.0
+    },
+    {
+      "platform": "Google Ads",
+      "campaignName": "(organic)",
+      "ordersWeighted": 424.2,
+      "revenueWeighted": 700326.71,
+      "newCustomersWeighted": 34.2,
+      "returningCustomersWeighted": 389.5,
+      "triggerRevenueWeighted": 404442.45,
+      "assistRevenueWeighted": 295884.26,
+      "incrementalRevenueWeighted": 30835.66,
+      "capturedDemandRevenueWeighted": 141228.38,
+      "retentionRevenueWeighted": 0.0
+    },
+    {
+      "platform": "Google Ads",
+      "campaignName": "CZ-SEA-Brand-kralovstvi-tiande",
+      "ordersWeighted": 444.65,
+      "revenueWeighted": 682093.65,
+      "newCustomersWeighted": 63.15,
+      "returningCustomersWeighted": 381.5,
+      "triggerRevenueWeighted": 575687.25,
+      "assistRevenueWeighted": 106406.4,
+      "incrementalRevenueWeighted": 1044.9,
+      "capturedDemandRevenueWeighted": 674121.75,
+      "retentionRevenueWeighted": 0.0
+    },
+    {
+      "platform": "Meta Ads",
+      "campaignName": "(direct)",
+      "ordersWeighted": 233.1,
+      "revenueWeighted": 379376.66,
+      "newCustomersWeighted": 8.1,
+      "returningCustomersWeighted": 225.0,
+      "triggerRevenueWeighted": 0.0,
+      "assistRevenueWeighted": 379376.66,
+      "incrementalRevenueWeighted": 0.0,
+      "capturedDemandRevenueWeighted": 0.0,
+      "retentionRevenueWeighted": 0.0
+    }
+  ],
+  "recentOrders": [
+    {
+      "orderId": 3608535,
+      "orderCode": "261274923",
+      "customerKey": "email:marketa.plackova@gmail.com",
+      "orderAt": "2026-04-30T23:59:34+02:00",
+      "revenueWithVat": 1409.0,
+      "customerType": "returning",
+      "matchedTransactionId": "261274923",
+      "matchConfidence": "exact_transaction",
+      "sessionDefaultChannelGroup": "Paid Search",
+      "sessionSourceMedium": "google / cpc",
+      "sessionCampaignName": "(not set)",
+      "firstUserSourceMedium": "(direct) / (none)",
+      "firstUserCampaignName": "(direct)",
+      "landingPage": "/objednavka/3608535/platba",
+      "incrementalityClass": "mixed",
+      "driverLabel": "smíšený vliv",
+      "weightedAttribution": [
+        {
+          "platform": "Google Ads",
+          "campaignName": "(not set)",
+          "role": "closer",
+          "weight": 0.5,
+          "attributedRevenue": 704.5
+        },
+        {
+          "platform": "Google Ads",
+          "campaignName": "(direct)",
+          "role": "introducer",
+          "weight": 0.5,
+          "attributedRevenue": 704.5
+        }
+      ],
+      "explanation": "Objednávka byla spárovaná přes transactionId=261274923 a rozdělena mezi introducer/closer podle heuristiky v1."
+    },
+    {
+      "orderId": 3608534,
+      "orderCode": "261274922",
+      "customerKey": "email:s.konecna@seznam.cz",
+      "orderAt": "2026-04-30T23:57:08+02:00",
+      "revenueWithVat": 1619.0,
+      "customerType": "returning",
+      "matchedTransactionId": "261274922",
+      "matchConfidence": "exact_transaction",
+      "sessionDefaultChannelGroup": "Unassigned",
+      "sessionSourceMedium": "(not set)",
+      "sessionCampaignName": "(not set)",
+      "firstUserSourceMedium": "(direct) / (none)",
+      "firstUserCampaignName": "(direct)",
+      "landingPage": "/",
+      "incrementalityClass": "mixed",
+      "driverLabel": "smíšený vliv",
+      "weightedAttribution": [
+        {
+          "platform": "Other",
+          "campaignName": "(not set)",
+          "role": "closer",
+          "weight": 0.5,
+          "attributedRevenue": 809.5
+        },
+        {
+          "platform": "Other",
+          "campaignName": "(direct)",
+          "role": "introducer",
+          "weight": 0.5,
+          "attributedRevenue": 809.5
+        }
+      ],
+      "explanation": "Objednávka byla spárovaná přes transactionId=261274922 a rozdělena mezi introducer/closer podle heuristiky v1."
+    },
+    {
+      "orderId": 3608533,
+      "orderCode": "261274921",
+      "customerKey": "email:bazlerova.lenka@seznam.cz",
+      "orderAt": "2026-04-30T23:55:46+02:00",
+      "revenueWithVat": 2046.0,
+      "customerType": "returning",
+      "matchedTransactionId": "261274921",
+      "matchConfidence": "exact_transaction",
+      "sessionDefaultChannelGroup": "Cross-network",
+      "sessionSourceMedium": "google / cpc",
+      "sessionCampaignName": "CZ-PMax-Naked",
+      "firstUserSourceMedium": "(direct) / (none)",
+      "firstUserCampaignName": "(direct)",
+      "landingPage": "/balicek-pro-podporu-pohyblivosti_z8104/?tw_source=google&tw_adid=&tw_campaign=23595356591&tw_kwdid=",
+      "incrementalityClass": "mixed",
+      "driverLabel": "smíšený vliv",
+      "weightedAttribution": [
+        {
+          "platform": "Google Ads",
+          "campaignName": "CZ-PMax-Naked",
+          "role": "closer",
+          "weight": 0.5,
+          "attributedRevenue": 1023.0
+        },
+        {
+          "platform": "Google Ads",
+          "campaignName": "(direct)",
+          "role": "introducer",
+          "weight": 0.5,
+          "attributedRevenue": 1023.0
+        }
+      ],
+      "explanation": "Objednávka byla spárovaná přes transactionId=261274921 a rozdělena mezi introducer/closer podle heuristiky v1."
+    },
+    {
+      "orderId": 3608532,
+      "orderCode": "261274920",
+      "customerKey": "email:x.petulla@seznam.cz",
+      "orderAt": "2026-04-30T23:49:26+02:00",
+      "revenueWithVat": 453.0,
+      "customerType": "returning",
+      "matchedTransactionId": "261274920",
+      "matchConfidence": "exact_transaction",
+      "sessionDefaultChannelGroup": "Unassigned",
+      "sessionSourceMedium": "Klaviyo / campaign",
+      "sessionCampaignName": "CZ - Slevové zemětřesení konec",
+      "firstUserSourceMedium": "(direct) / (none)",
+      "firstUserCampaignName": "(direct)",
+      "landingPage": "/hubnuti_k1241/",
+      "incrementalityClass": "retention_reorder",
+      "driverLabel": "spíš retenční reorder",
+      "weightedAttribution": [
+        {
+          "platform": "Klaviyo",
+          "campaignName": "CZ - Slevové zemětřesení konec",
+          "role": "retention_closer",
+          "weight": 0.35,
+          "attributedRevenue": 158.55
+        },
+        {
+          "platform": "Klaviyo",
+          "campaignName": "(direct)",
+          "role": "introducer",
+          "weight": 0.65,
+          "attributedRevenue": 294.45
+        }
+      ],
+      "explanation": "Objednávka byla spárovaná přes transactionId=261274920 a rozdělena mezi introducer/closer podle heuristiky v1."
+    },
+    {
+      "orderId": 3608531,
+      "orderCode": "261274919",
+      "customerKey": "email:zdislava.havlickova@seznam.cz",
+      "orderAt": "2026-04-30T23:46:46+02:00",
+      "revenueWithVat": 2184.0,
+      "customerType": "returning",
+      "matchedTransactionId": "261274919",
+      "matchConfidence": "exact_transaction",
+      "sessionDefaultChannelGroup": "Unassigned",
+      "sessionSourceMedium": "Klaviyo / campaign",
+      "sessionCampaignName": "CZ - Slevové zemětřesení konec",
+      "firstUserSourceMedium": "Klaviyo / campaign",
+      "firstUserCampaignName": "CZ - Slevové zemětřesení konec",
+      "landingPage": "/akce_k601/slevove-zemetreseni_k1264/?_kx=pI4gRX48wB6HihEcWT97fMht0XZTniFqZyNAQWtvMR5rWWncmRq6uCjle4P9PA4N.U9rq9t",
+      "incrementalityClass": "retention_reorder",
+      "driverLabel": "spíš retenční reorder",
+      "weightedAttribution": [
+        {
+          "platform": "Klaviyo",
+          "campaignName": "CZ - Slevové zemětřesení konec",
+          "role": "retention_closer",
+          "weight": 0.35,
+          "attributedRevenue": 764.4
+        },
+        {
+          "platform": "Klaviyo",
+          "campaignName": "CZ - Slevové zemětřesení konec",
+          "role": "introducer",
+          "weight": 0.65,
+          "attributedRevenue": 1419.6
+        }
+      ],
+      "explanation": "Objednávka byla spárovaná přes transactionId=261274919 a rozdělena mezi introducer/closer podle heuristiky v1."
+    },
+    {
+      "orderId": 3608530,
+      "orderCode": "261274918",
+      "customerKey": "email:katkatippnerova@gmail.com",
+      "orderAt": "2026-04-30T23:46:00+02:00",
+      "revenueWithVat": 1639.0,
+      "customerType": "returning",
+      "matchedTransactionId": "261274918",
+      "matchConfidence": "exact_transaction",
+      "sessionDefaultChannelGroup": "Paid Search",
+      "sessionSourceMedium": "google / cpc",
+      "sessionCampaignName": "CZ-SEA-Brand-kralovstvi-tiande",
+      "firstUserSourceMedium": "(direct) / (none)",
+      "firstUserCampaignName": "(direct)",
+      "landingPage": "/kosik/",
+      "incrementalityClass": "likely_captured_existing_demand",
+      "driverLabel": "spíš zachycení existující poptávky",
+      "weightedAttribution": [
+        {
+          "platform": "Google Ads",
+          "campaignName": "CZ-SEA-Brand-kralovstvi-tiande",
+          "role": "brand_capture",
+          "weight": 0.25,
+          "attributedRevenue": 409.75
+        },
+        {
+          "platform": "Google Ads",
+          "campaignName": "(direct)",
+          "role": "introducer",
+          "weight": 0.75,
+          "attributedRevenue": 1229.25
+        }
+      ],
+      "explanation": "Objednávka byla spárovaná přes transactionId=261274918 a rozdělena mezi introducer/closer podle heuristiky v1."
+    }
+  ],
   "klaviyo": {
     "summary": {
       "previousMonthRevenue": 4577747.3,
       "previousMonthOrders": 2994.0,
       "previousMonthClicks": 36926.0,
       "clickRatePct": 4.43,
-      "ga4EmailRevenue7d": 63204.51,
+      "ga4EmailRevenue7d": 62430.25,
       "ga4EmailOrders7d": 41.0,
       "recoveryRevenueSharePct": 5.02,
       "retentionRevenueSharePct": 0.0,
@@ -238,42 +575,6 @@
     ],
     "topCampaigns": [
       {
-        "id": "01KPWXSDKN0D5ETNENAQ509YQ5",
-        "name": "CZ - Slevové zemětřesení konec",
-        "channel": "email",
-        "status": "Sent",
-        "createdAt": "2026-04-23T10:22:22.841320+00:00",
-        "updatedAt": "2026-04-30T16:30:47.543022+00:00",
-        "scheduledAt": "2026-04-30T15:23:05.461460+00:00",
-        "sendDatetime": "2026-04-30T16:30:00+00:00",
-        "recipients": 22914.0,
-        "opens": 3320.0,
-        "clicks": 272.0,
-        "attributedOrders": 21.0,
-        "attributedRevenueCzk": 41457.0,
-        "openRate": 0.1449,
-        "clickRate": 0.0119,
-        "conversionRate": 0.0009
-      },
-      {
-        "id": "01KPN5HWSH769EKXNCKYYFJKDM",
-        "name": "KURZ HUBNUTÍ - vstupenka Margit Slimáková",
-        "channel": "email",
-        "status": "Sent",
-        "createdAt": "2026-04-20T10:04:09.395971+00:00",
-        "updatedAt": "2026-04-29T16:30:59.285769+00:00",
-        "scheduledAt": "2026-04-29T12:08:34.620972+00:00",
-        "sendDatetime": "2026-04-29T16:30:00+00:00",
-        "recipients": 22907.0,
-        "opens": 7113.0,
-        "clicks": 213.0,
-        "attributedOrders": 24.0,
-        "attributedRevenueCzk": 36911.85,
-        "openRate": 0.3105,
-        "clickRate": 0.0093,
-        "conversionRate": 0.001
-      },
-      {
         "id": "01KQFF5FNX02JFHZ50SDKHTK8F",
         "name": "SK - Slevové zemětřesení konec",
         "channel": "email",
@@ -290,60 +591,6 @@
         "openRate": 0.1474,
         "clickRate": 0.0074,
         "conversionRate": 0.0009
-      },
-      {
-        "id": "01KQD3HAM0JZ38E44WYGMFFHJR",
-        "name": "SK KURZ HUBNUTÍ - vstupenka Margit Slimáková",
-        "channel": "email",
-        "status": "Sent",
-        "createdAt": "2026-04-29T17:10:40.004570+00:00",
-        "updatedAt": "2026-04-29T17:45:54.966916+00:00",
-        "scheduledAt": "2026-04-29T17:15:41.976199+00:00",
-        "sendDatetime": "2026-04-29T17:45:00+00:00",
-        "recipients": 2314.0,
-        "opens": 662.0,
-        "clicks": 12.0,
-        "attributedOrders": 1.0,
-        "attributedRevenueCzk": 55.65,
-        "openRate": 0.2861,
-        "clickRate": 0.0052,
-        "conversionRate": 0.0004
-      },
-      {
-        "id": "01KQC9VHF82GMC41GBMYQR3P61",
-        "name": "CZ - Tělo jako kompas - 4. lekce záznam",
-        "channel": "email",
-        "status": "Draft",
-        "createdAt": "2026-04-29T09:41:51.723779+00:00",
-        "updatedAt": "2026-04-29T09:41:51.723798+00:00",
-        "scheduledAt": null,
-        "sendDatetime": "2026-04-29T09:41:37+00:00",
-        "recipients": 0.0,
-        "opens": 0.0,
-        "clicks": 0.0,
-        "attributedOrders": 0.0,
-        "attributedRevenueCzk": 0.0,
-        "openRate": null,
-        "clickRate": null,
-        "conversionRate": null
-      },
-      {
-        "id": "01KQC0WFA8WC6C86KTAQ0HQ4CX",
-        "name": "Ebook3 kompas 4",
-        "channel": "email",
-        "status": "Sent",
-        "createdAt": "2026-04-29T07:05:05.099580+00:00",
-        "updatedAt": "2026-04-29T09:00:56.699994+00:00",
-        "scheduledAt": "2026-04-29T07:06:08.108929+00:00",
-        "sendDatetime": "2026-04-29T09:00:00+00:00",
-        "recipients": 12.0,
-        "opens": 5.0,
-        "clicks": 7.0,
-        "attributedOrders": 0.0,
-        "attributedRevenueCzk": 0.0,
-        "openRate": 0.4167,
-        "clickRate": 0.5833,
-        "conversionRate": 0.0
       }
     ],
     "headline": "Klaviyo už teď umíme rozdělit na recovery, retenci a promo vrstvu, takže email revenue nemusí padat do jedné hromady.",
@@ -363,5 +610,64 @@
     "Doplnit identity stitching mimo transactionId, hlavně přes email hash nebo čas a hodnotu objednávky.",
     "Zpřesnit váhy pro brand, remarketing, retenci a direct do vlastního Diamond Plus modelu."
   ],
-  "readiness": {}
+  "readiness": {
+    "generatedAt": "2026-05-01T13:26:08.957337+02:00",
+    "status": "not_ready_for_customer_level_attribution",
+    "summary": {
+      "why": "Pipeline already has order-level and customer-level truth, but still lacks purchase-level touchpoint exports and identity stitching.",
+      "nextBestStep": "Export purchase-level GA4 journeys with transaction_id and session attribution fields, then match them to order_fact."
+    },
+    "availableInputs": {
+      "orderFact": {
+        "present": true,
+        "orders": 193384,
+        "hasCustomerKey": true,
+        "hasOrderCode": true
+      },
+      "customerFact": {
+        "present": true,
+        "customersCount": 38661,
+        "hasFirstOrderAt": true
+      },
+      "ga4Overview": {
+        "present": true,
+        "hasChannelAggregates": true,
+        "hasPurchaseLevelRows": false,
+        "hasTransactionIdLink": false,
+        "hasUserLevelJourney": false
+      },
+      "platformOverviews": {
+        "meta": true,
+        "google": true,
+        "sklik": true,
+        "klaviyo": true
+      }
+    },
+    "missingCanonicalDatasets": [
+      "ga4_purchase_journey_window.json",
+      "order_attribution_candidates.json",
+      "customer_attribution_truth.json",
+      "campaign_customer_truth.json"
+    ],
+    "requiredCapabilities": [
+      "purchase-level GA4 export with transactionId",
+      "session and first-user attribution fields",
+      "identity stitching between GA4 purchase and backend order",
+      "order-level attribution weight calculation",
+      "incrementality classification per order"
+    ],
+    "proposedMatchingPriority": [
+      "transactionId -> order code exact match",
+      "identity match via email or stable customer key",
+      "time + revenue tolerance fallback",
+      "weak inference only as low-confidence fallback"
+    ],
+    "outputTargets": [
+      "which campaign truly triggered a purchase",
+      "which campaigns only assisted",
+      "weighted revenue by campaign, not just platform claim",
+      "new-customer weighted contribution",
+      "capture vs creation split"
+    ]
+  }
 }
