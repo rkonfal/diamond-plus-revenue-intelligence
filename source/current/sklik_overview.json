@@ -11,13 +11,13 @@
   },
   "foreignAccounts": [],
   "campaignSummary": {
-    "count": 51,
+    "count": 52,
     "byStatus": {
-      "active": 5,
+      "active": 6,
       "suspend": 46
     },
     "byType": {
-      "fulltext": 28,
+      "fulltext": 29,
       "context": 18,
       "product": 4,
       "zbozi": 1
@@ -26,27 +26,31 @@
   "statsStatusCurrentMonth": [
     {
       "date": "20260502T00:00:00+0000",
-      "status": "preparing"
+      "status": "complete"
     },
     {
       "date": "20260501T00:00:00+0000",
       "status": "complete"
+    },
+    {
+      "date": "20260503T00:00:00+0000",
+      "status": "preparing"
     }
   ],
   "currentMonth": {
     "dateFrom": "2026-05-01",
-    "dateTo": "2026-05-02",
+    "dateTo": "2026-05-03",
     "total": {
       "date": "20260501T00:00:00+0000",
-      "impressions": 686,
-      "clicks": 149,
-      "ctr": 21.72,
-      "cpcCzk": 1.62,
-      "priceCzk": 241.9,
-      "conversions": 22.0,
-      "conversionValueCzk": 28566.0,
-      "transactions": 22,
-      "avgPosition": 5.13
+      "impressions": 1100,
+      "clicks": 242,
+      "ctr": 22.0,
+      "cpcCzk": 1.58,
+      "priceCzk": 381.5,
+      "conversions": 50.0,
+      "conversionValueCzk": 67922.0,
+      "transactions": 50,
+      "avgPosition": 4.97
     },
     "daily": [
       {
@@ -63,15 +67,27 @@
       },
       {
         "date": "20260502T00:00:00+0000",
-        "impressions": 336,
-        "clicks": 55,
-        "ctr": 16.37,
-        "cpcCzk": 1.67,
-        "priceCzk": 91.63,
-        "conversions": 8.0,
-        "conversionValueCzk": 12808.0,
-        "transactions": 8,
-        "avgPosition": 5.13
+        "impressions": 361,
+        "clicks": 60,
+        "ctr": 16.62,
+        "cpcCzk": 1.63,
+        "priceCzk": 97.83,
+        "conversions": 10.0,
+        "conversionValueCzk": 16450.0,
+        "transactions": 10,
+        "avgPosition": 4.99
+      },
+      {
+        "date": "20260503T00:00:00+0000",
+        "impressions": 389,
+        "clicks": 88,
+        "ctr": 22.62,
+        "cpcCzk": 1.52,
+        "priceCzk": 133.4,
+        "conversions": 26.0,
+        "conversionValueCzk": 35714.0,
+        "transactions": 26,
+        "avgPosition": 4.81
       }
     ]
   },
@@ -82,13 +98,13 @@
       "status": "active",
       "type": "fulltext",
       "date": "20260501",
-      "impressions": 86,
-      "clicks": 71,
+      "impressions": 142,
+      "clicks": 112,
       "ctr": 0.0,
       "cpcCzk": 0.0,
-      "priceCzk": 80.1,
-      "conversions": 12.0,
-      "conversionValueCzk": 132.66,
+      "priceCzk": 127.9,
+      "conversions": 22.0,
+      "conversionValueCzk": 297.16,
       "transactions": 0,
       "avgPosition": 0.0
     },
@@ -98,11 +114,11 @@
       "status": "active",
       "type": "fulltext",
       "date": "20260501",
-      "impressions": 45,
-      "clicks": 17,
+      "impressions": 90,
+      "clicks": 33,
       "ctr": 0.0,
       "cpcCzk": 0.0,
-      "priceCzk": 40.3,
+      "priceCzk": 78.2,
       "conversions": 2.0,
       "conversionValueCzk": 24.92,
       "transactions": 0,
@@ -114,11 +130,11 @@
       "status": "active",
       "type": "zbozi",
       "date": "20260501",
-      "impressions": 218,
-      "clicks": 6,
+      "impressions": 475,
+      "clicks": 9,
       "ctr": 0.0,
       "cpcCzk": 0.0,
-      "priceCzk": 29.87,
+      "priceCzk": 42.0,
       "conversions": 0.0,
       "conversionValueCzk": 0.0,
       "transactions": 0,
@@ -130,7 +146,7 @@
       "status": "active",
       "type": "fulltext",
       "date": "20260501",
-      "impressions": 1,
+      "impressions": 4,
       "clicks": 0,
       "ctr": 0.0,
       "cpcCzk": 0.0,
@@ -708,6 +724,15 @@
     }
   ],
   "campaigns": [
+    {
+      "endDate": null,
+      "name": "CZ-SEA-Kategorie-AKV",
+      "id": 7778036,
+      "type": "fulltext",
+      "startDate": "20220210T00:00:00+0100",
+      "status": "active",
+      "createDate": "20260503T21:12:47+0200"
+    },
     {
       "endDate": null,
       "name": "CZ-SEA-Competitors",
