@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-04T01:24:07.933839+02:00",
+  "generatedAt": "2026-05-04T05:47:20.722192+02:00",
   "source": {
     "status": "live_report",
     "message": "Měsíční finance se tahají přímo z ABRA reportu Výkaz hospodaření za měsíc za všechna střediska. Cash a závazky jsou také live z ABRA API."
@@ -98,46 +98,46 @@
     },
     {
       "label": "5/2026",
-      "revenue": 719952.99,
-      "cogsAndFees": 530077.53,
+      "revenue": 741352.08,
+      "cogsAndFees": 544672.94,
       "logistics": 0.0,
       "marketing": 0.0,
       "opex": 15436.0,
       "depreciation": 385502.0,
       "other": 0.0,
-      "grossMargin": 189875.46,
-      "afterLogistics": 189875.46,
-      "afterMarketing": 189875.46,
-      "operatingMargin": 174439.46,
-      "ebit": -211062.54,
-      "profit": -211062.54,
-      "grossMarginPct": 26.4,
+      "grossMargin": 196679.14,
+      "afterLogistics": 196679.14,
+      "afterMarketing": 196679.14,
+      "operatingMargin": 181243.14,
+      "ebit": -204258.86,
+      "profit": -204258.86,
+      "grossMarginPct": 26.5,
       "marketingPct": 0.0,
       "logisticsPct": 0.0,
-      "operatingMarginPct": 24.2,
-      "profitPct": -29.3
+      "operatingMarginPct": 24.4,
+      "profitPct": -27.6
     }
   ],
   "currentMonth": {
     "label": "5/2026",
-    "revenue": 719952.99,
-    "cogsAndFees": 530077.53,
+    "revenue": 741352.08,
+    "cogsAndFees": 544672.94,
     "logistics": 0.0,
     "marketing": 0.0,
     "opex": 15436.0,
     "depreciation": 385502.0,
     "other": 0.0,
-    "grossMargin": 189875.46,
-    "afterLogistics": 189875.46,
-    "afterMarketing": 189875.46,
-    "operatingMargin": 174439.46,
-    "ebit": -211062.54,
-    "profit": -211062.54,
-    "grossMarginPct": 26.4,
+    "grossMargin": 196679.14,
+    "afterLogistics": 196679.14,
+    "afterMarketing": 196679.14,
+    "operatingMargin": 181243.14,
+    "ebit": -204258.86,
+    "profit": -204258.86,
+    "grossMarginPct": 26.5,
     "marketingPct": 0.0,
     "logisticsPct": 0.0,
-    "operatingMarginPct": 24.2,
-    "profitPct": -29.3
+    "operatingMarginPct": 24.4,
+    "profitPct": -27.6
   },
   "previousMonth": {
     "label": "4/2026",
@@ -161,9 +161,9 @@
     "profitPct": 18.9
   },
   "cash": {
-    "cashOnAccounts": 6300216.72,
+    "cashOnAccounts": 6433192.72,
     "unpaidInvoices": 194315.17,
-    "netCashPosition": 6105901.55,
+    "netCashPosition": 6238877.55,
     "overdueInvoicesCount": 0,
     "overdueInvoicesAmount": 0.0,
     "largestPayables": [
@@ -237,6 +237,13 @@
       "message": "Cash na účtech a pokladnách je počítán živě z ABRA obratové předvahy pro účty 221 a 211, ze CZK řádků a se započtením kladných zůstatků.",
       "accounts": [
         {
+          "accountCode": "221001",
+          "accountLabel": "221001: 2901338673/2010 FIO CZK",
+          "currency": "CZK: Česká koruna",
+          "balance": 1819462.06,
+          "includedBalance": 1819462.06
+        },
+        {
           "accountCode": "221006",
           "accountLabel": "221006: 2202503115/2010 FIO CZK",
           "currency": "CZK: Česká koruna",
@@ -244,18 +251,11 @@
           "includedBalance": 1815234.07
         },
         {
-          "accountCode": "221001",
-          "accountLabel": "221001: 2901338673/2010 FIO CZK",
-          "currency": "CZK: Česká koruna",
-          "balance": 1767503.06,
-          "includedBalance": 1767503.06
-        },
-        {
           "accountCode": "221115",
           "accountLabel": "221115: 131-3675980207/0100 KB CZK",
           "currency": "CZK: Česká koruna",
-          "balance": 1562105.34,
-          "includedBalance": 1562105.34
+          "balance": 1643122.34,
+          "includedBalance": 1643122.34
         },
         {
           "accountCode": "221111",
@@ -755,8 +755,8 @@
       },
       {
         "label": "5/2026",
-        "expenseTotal": 760193.11,
-        "revenueTotal": 515239.29,
+        "expenseTotal": 774788.52,
+        "revenueTotal": 536854.33,
         "topExpenseClass": {
           "code": "55",
           "label": "Odpisy a rezervy",
@@ -764,18 +764,18 @@
         },
         "topExpenseAccounts": [
           {
+            "code": "504001",
+            "label": "Nákup zboží 2",
+            "amount": 370200.52,
+            "classCode": "50",
+            "classLabel": "Spotřeba a zboží"
+          },
+          {
             "code": "551100",
             "label": "Odpisy majetku",
             "amount": 365295.0,
             "classCode": "55",
             "classLabel": "Odpisy a rezervy"
-          },
-          {
-            "code": "504001",
-            "label": "Nákup zboží 2",
-            "amount": 355605.11,
-            "classCode": "50",
-            "classLabel": "Spotřeba a zboží"
           },
           {
             "code": "551002",
@@ -829,7 +829,7 @@
           {
             "code": "50",
             "label": "Spotřeba a zboží",
-            "amount": 359255.11
+            "amount": 373850.52
           },
           {
             "code": "54",
@@ -884,22 +884,22 @@
             "amount": 2593.82
           },
           {
-            "name": "Stanislava Mužíková",
-            "amount": 2476.67
+            "name": "Jindřiška Novotná",
+            "amount": 2568.39
           },
           {
-            "name": "TANATECH, s.r.o.",
-            "amount": 2456.0
+            "name": "Stanislava Mužíková",
+            "amount": 2476.67
           }
         ],
-        "entryCount": 999,
+        "entryCount": 1040,
         "detailFile": "finance_journal_5-2026.json"
       }
     ],
     "currentMonth": {
       "label": "5/2026",
-      "expenseTotal": 760193.11,
-      "revenueTotal": 515239.29,
+      "expenseTotal": 774788.52,
+      "revenueTotal": 536854.33,
       "topExpenseClass": {
         "code": "55",
         "label": "Odpisy a rezervy",
@@ -907,18 +907,18 @@
       },
       "topExpenseAccounts": [
         {
+          "code": "504001",
+          "label": "Nákup zboží 2",
+          "amount": 370200.52,
+          "classCode": "50",
+          "classLabel": "Spotřeba a zboží"
+        },
+        {
           "code": "551100",
           "label": "Odpisy majetku",
           "amount": 365295.0,
           "classCode": "55",
           "classLabel": "Odpisy a rezervy"
-        },
-        {
-          "code": "504001",
-          "label": "Nákup zboží 2",
-          "amount": 355605.11,
-          "classCode": "50",
-          "classLabel": "Spotřeba a zboží"
         },
         {
           "code": "551002",
@@ -972,7 +972,7 @@
         {
           "code": "50",
           "label": "Spotřeba a zboží",
-          "amount": 359255.11
+          "amount": 373850.52
         },
         {
           "code": "54",
@@ -1027,15 +1027,15 @@
           "amount": 2593.82
         },
         {
-          "name": "Stanislava Mužíková",
-          "amount": 2476.67
+          "name": "Jindřiška Novotná",
+          "amount": 2568.39
         },
         {
-          "name": "TANATECH, s.r.o.",
-          "amount": 2456.0
+          "name": "Stanislava Mužíková",
+          "amount": 2476.67
         }
       ],
-      "entryCount": 999,
+      "entryCount": 1040,
       "detailFile": "finance_journal_5-2026.json"
     }
   }
