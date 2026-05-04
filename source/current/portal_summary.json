@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-04T11:36:23.908454+02:00",
+  "generatedAt": "2026-05-04T14:01:08.516815+02:00",
   "config": {
     "warehouseCode": "CZPRGA",
     "outboundMaxPages": 20,
@@ -14,25 +14,25 @@
       "label": "CZ",
       "inventory": {
         "items": 771,
-        "availableStockTotal": 314554,
-        "pendingStockTotal": 3545,
+        "availableStockTotal": 313771,
+        "pendingStockTotal": 3187,
         "freezeStockTotal": 0,
         "lowStockItems": 100
       },
       "outbound": {
-        "items": 500,
-        "scannedPages": 5,
+        "items": 600,
+        "scannedPages": 6,
         "topLogisticsProduct": "F1401",
-        "oldestTimestamp": "2026-05-02T19:25:05+02:00",
-        "newestTimestamp": "2026-05-04T11:30:09+02:00"
+        "oldestTimestamp": "2026-05-02T15:05:04+02:00",
+        "newestTimestamp": "2026-05-04T14:00:05+02:00"
       }
     },
     "sk": {
       "label": "SK",
       "inventory": {
         "items": 624,
-        "availableStockTotal": 68714,
-        "pendingStockTotal": 87,
+        "availableStockTotal": 68681,
+        "pendingStockTotal": 44,
         "freezeStockTotal": 0,
         "lowStockItems": 100
       },
@@ -40,8 +40,8 @@
         "items": 100,
         "scannedPages": 1,
         "topLogisticsProduct": "F1403",
-        "oldestTimestamp": "2026-04-30T21:00:15+02:00",
-        "newestTimestamp": "2026-05-04T11:25:14+02:00"
+        "oldestTimestamp": "2026-04-30T21:35:13+02:00",
+        "newestTimestamp": "2026-05-04T13:55:12+02:00"
       }
     }
   },
@@ -68,16 +68,16 @@
     ]
   },
   "expiries": {
-    "datedSkuCount": 620,
+    "datedSkuCount": 619,
     "czSkuCount": 318,
-    "skSkuCount": 302
+    "skSkuCount": 301
   },
   "pairing": {
-    "allCodes": 2930,
+    "allCodes": 2934,
     "pairedProducts": 393,
-    "onlyInWpj": 1470,
+    "onlyInWpj": 1473,
     "onlyIn4px": 1,
-    "stockMismatch": 682,
+    "stockMismatch": 686,
     "lowAfterSales": 2,
     "manualMapped4pxAliases": 0,
     "autoMapped4pxAliases": 73
@@ -88,31 +88,31 @@
     "message": "Měsíční finance se tahají přímo z ABRA reportu Výkaz hospodaření za měsíc za všechna střediska. Cash a závazky jsou také live z ABRA API.",
     "currentMonth": {
       "label": "5/2026",
-      "revenue": 928913.29,
-      "cogsAndFees": 675419.16,
+      "revenue": 1022450.62,
+      "cogsAndFees": 744115.73,
       "logistics": 0.0,
       "marketing": 0.0,
       "opex": 27847.62,
       "depreciation": 385502.0,
-      "other": 0.06,
-      "grossMargin": 253494.13,
-      "afterLogistics": 253494.13,
-      "afterMarketing": 253494.13,
-      "operatingMargin": 225646.51,
-      "ebit": -159855.49,
-      "profit": -159855.43,
-      "grossMarginPct": 27.3,
+      "other": 63.84,
+      "grossMargin": 278334.89,
+      "afterLogistics": 278334.89,
+      "afterMarketing": 278334.89,
+      "operatingMargin": 250487.27,
+      "ebit": -135014.73,
+      "profit": -134950.89,
+      "grossMarginPct": 27.2,
       "marketingPct": 0.0,
       "logisticsPct": 0.0,
-      "operatingMarginPct": 24.3,
-      "profitPct": -17.2
+      "operatingMarginPct": 24.5,
+      "profitPct": -13.2
     },
     "cash": {
-      "cashOnAccounts": 7545353.54,
-      "unpaidInvoices": 497082.3,
-      "netCashPosition": 7048271.24,
-      "overdueInvoicesCount": 3,
-      "overdueInvoicesAmount": 193918.63,
+      "cashOnAccounts": 7454711.64,
+      "unpaidInvoices": 265434.83,
+      "netCashPosition": 7189276.81,
+      "overdueInvoicesCount": 2,
+      "overdueInvoicesAmount": 182738.23,
       "largestPayables": [
         {
           "code": "PF0546/2026",
@@ -123,28 +123,12 @@
           "status": "3 dní PO SPLATNOSTI"
         },
         {
-          "code": "PF0508/2026",
-          "vendor": "Zásilkovna s.r.o.",
-          "dueDate": "04.05.2026",
-          "amountTotal": 67383.86,
-          "amountDue": 67383.86,
-          "status": "splatné dnes"
-        },
-        {
           "code": "PF0537/2026",
           "vendor": "KODAP Ltm s.r.o.",
           "dueDate": "15.05.2026",
           "amountTotal": 62920.0,
           "amountDue": 62920.0,
           "status": "11 dní do splatnosti"
-        },
-        {
-          "code": "PF0518/2026",
-          "vendor": "SAVI servis s.r.o.",
-          "dueDate": "06.05.2026",
-          "amountTotal": 53240.0,
-          "amountDue": 53240.0,
-          "status": "2 dní do splatnosti"
         },
         {
           "code": "PF0547/2026",
@@ -155,28 +139,44 @@
           "status": "3 dní PO SPLATNOSTI"
         },
         {
-          "code": "PF0507/2026",
-          "vendor": "AGRO CS a.s.",
-          "dueDate": "07.05.2026",
-          "amountTotal": 29532.09,
-          "amountDue": 29532.09,
-          "status": "3 dní do splatnosti"
+          "code": "PF0528/2026",
+          "vendor": "Alma Career Czechia s.r.o.",
+          "dueDate": "12.05.2026",
+          "amountTotal": 12087.9,
+          "amountDue": 12087.9,
+          "status": "8 dní do splatnosti"
         },
         {
-          "code": "PF0520/2026",
-          "vendor": "Everesta, s.r.o.",
-          "dueDate": "11.05.2026",
-          "amountTotal": 21780.0,
-          "amountDue": 21780.0,
-          "status": "7 dní do splatnosti"
+          "code": "PF0534/2026",
+          "vendor": "Finanční úřad pro Ústecký kraj",
+          "dueDate": "01.06.2026",
+          "amountTotal": 2144.0,
+          "amountDue": 2144.0,
+          "status": "28 dní do splatnosti"
         },
         {
-          "code": "PF0542/2026",
-          "vendor": "Pavel Minář",
-          "dueDate": "10.05.2026",
-          "amountTotal": 14672.07,
-          "amountDue": 14672.07,
-          "status": "6 dní do splatnosti"
+          "code": "PF0535/2026",
+          "vendor": "Finanční úřad pro Plzeňský kraj",
+          "dueDate": "01.06.2026",
+          "amountTotal": 1951.0,
+          "amountDue": 1951.0,
+          "status": "28 dní do splatnosti"
+        },
+        {
+          "code": "PF0532/2026",
+          "vendor": "EKO - KOM, a.s.",
+          "dueDate": "28.05.2026",
+          "amountTotal": 1926.32,
+          "amountDue": 1926.32,
+          "status": "24 dní do splatnosti"
+        },
+        {
+          "code": "PF0541/2026",
+          "vendor": "FCC BEC, s.r.o.",
+          "dueDate": "29.05.2026",
+          "amountTotal": 1667.38,
+          "amountDue": 1667.38,
+          "status": "25 dní do splatnosti"
         }
       ],
       "cashAccountsSource": {
@@ -187,8 +187,8 @@
             "accountCode": "221115",
             "accountLabel": "221115: 131-3675980207/0100 KB CZK",
             "currency": "CZK: Česká koruna",
-            "balance": 2701781.6,
-            "includedBalance": 2701781.6
+            "balance": 2470134.13,
+            "includedBalance": 2470134.13
           },
           {
             "accountCode": "221006",
@@ -201,15 +201,15 @@
             "accountCode": "221001",
             "accountLabel": "221001: 2901338673/2010 FIO CZK",
             "currency": "CZK: Česká koruna",
-            "balance": 1532894.82,
-            "includedBalance": 1532894.82
+            "balance": 1595246.82,
+            "includedBalance": 1595246.82
           },
           {
             "accountCode": "221002",
             "accountLabel": "221002: 131-1211280297/0100 KB EUR",
             "currency": "CZK: Česká koruna",
-            "balance": 383644.91,
-            "includedBalance": 383644.91
+            "balance": 459431.31,
+            "includedBalance": 459431.31
           },
           {
             "accountCode": "221111",
@@ -222,8 +222,8 @@
             "accountCode": "221005",
             "accountLabel": "221005: 2501338690/2010 FIO EUR",
             "currency": "CZK: Česká koruna",
-            "balance": 120794.82,
-            "includedBalance": 120794.82
+            "balance": 123661.99,
+            "includedBalance": 123661.99
           },
           {
             "accountCode": "221117",
@@ -368,7 +368,7 @@
       "performanceSpend": 0.0,
       "brandSpend": 0.0,
       "totalSpend": 0.0,
-      "revenue": 928913.29,
+      "revenue": 1022450.62,
       "spendShareOfRevenuePct": 0.0
     },
     "topSupplier": null
