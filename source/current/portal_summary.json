@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-04T14:01:08.516815+02:00",
+  "generatedAt": "2026-05-04T16:28:15.204438+02:00",
   "config": {
     "warehouseCode": "CZPRGA",
     "outboundMaxPages": 20,
@@ -14,8 +14,8 @@
       "label": "CZ",
       "inventory": {
         "items": 771,
-        "availableStockTotal": 313771,
-        "pendingStockTotal": 3187,
+        "availableStockTotal": 313181,
+        "pendingStockTotal": 1147,
         "freezeStockTotal": 0,
         "lowStockItems": 100
       },
@@ -23,16 +23,16 @@
         "items": 600,
         "scannedPages": 6,
         "topLogisticsProduct": "F1401",
-        "oldestTimestamp": "2026-05-02T15:05:04+02:00",
-        "newestTimestamp": "2026-05-04T14:00:05+02:00"
+        "oldestTimestamp": "2026-05-02T22:05:06+02:00",
+        "newestTimestamp": "2026-05-04T16:25:03+02:00"
       }
     },
     "sk": {
       "label": "SK",
       "inventory": {
         "items": 624,
-        "availableStockTotal": 68681,
-        "pendingStockTotal": 44,
+        "availableStockTotal": 68592,
+        "pendingStockTotal": 110,
         "freezeStockTotal": 0,
         "lowStockItems": 100
       },
@@ -40,8 +40,8 @@
         "items": 100,
         "scannedPages": 1,
         "topLogisticsProduct": "F1403",
-        "oldestTimestamp": "2026-04-30T21:35:13+02:00",
-        "newestTimestamp": "2026-05-04T13:55:12+02:00"
+        "oldestTimestamp": "2026-05-01T09:40:11+02:00",
+        "newestTimestamp": "2026-05-04T16:25:12+02:00"
       }
     }
   },
@@ -77,7 +77,7 @@
     "pairedProducts": 393,
     "onlyInWpj": 1473,
     "onlyIn4px": 1,
-    "stockMismatch": 686,
+    "stockMismatch": 681,
     "lowAfterSales": 2,
     "manualMapped4pxAliases": 0,
     "autoMapped4pxAliases": 73
@@ -88,29 +88,29 @@
     "message": "Měsíční finance se tahají přímo z ABRA reportu Výkaz hospodaření za měsíc za všechna střediska. Cash a závazky jsou také live z ABRA API.",
     "currentMonth": {
       "label": "5/2026",
-      "revenue": 1022450.62,
-      "cogsAndFees": 744115.73,
+      "revenue": 1121215.65,
+      "cogsAndFees": 815083.04,
       "logistics": 0.0,
       "marketing": 0.0,
-      "opex": 27847.62,
+      "opex": 29118.46,
       "depreciation": 385502.0,
-      "other": 63.84,
-      "grossMargin": 278334.89,
-      "afterLogistics": 278334.89,
-      "afterMarketing": 278334.89,
-      "operatingMargin": 250487.27,
-      "ebit": -135014.73,
-      "profit": -134950.89,
-      "grossMarginPct": 27.2,
+      "other": 0.02,
+      "grossMargin": 306132.61,
+      "afterLogistics": 306132.61,
+      "afterMarketing": 306132.61,
+      "operatingMargin": 277014.15,
+      "ebit": -108487.85,
+      "profit": -108487.83,
+      "grossMarginPct": 27.3,
       "marketingPct": 0.0,
       "logisticsPct": 0.0,
-      "operatingMarginPct": 24.5,
-      "profitPct": -13.2
+      "operatingMarginPct": 24.7,
+      "profitPct": -9.7
     },
     "cash": {
-      "cashOnAccounts": 7454711.64,
+      "cashOnAccounts": 8162596.92,
       "unpaidInvoices": 265434.83,
-      "netCashPosition": 7189276.81,
+      "netCashPosition": 7897162.09,
       "overdueInvoicesCount": 2,
       "overdueInvoicesAmount": 182738.23,
       "largestPayables": [
@@ -187,8 +187,8 @@
             "accountCode": "221115",
             "accountLabel": "221115: 131-3675980207/0100 KB CZK",
             "currency": "CZK: Česká koruna",
-            "balance": 2470134.13,
-            "includedBalance": 2470134.13
+            "balance": 2784887.99,
+            "includedBalance": 2784887.99
           },
           {
             "accountCode": "221006",
@@ -201,8 +201,15 @@
             "accountCode": "221001",
             "accountLabel": "221001: 2901338673/2010 FIO CZK",
             "currency": "CZK: Česká koruna",
-            "balance": 1595246.82,
-            "includedBalance": 1595246.82
+            "balance": 1556170.11,
+            "includedBalance": 1556170.11
+          },
+          {
+            "accountCode": "221111",
+            "accountLabel": "221111: 107-164902 Czk THEPAY",
+            "currency": "CZK: Česká koruna",
+            "balance": 689040.78,
+            "includedBalance": 689040.78
           },
           {
             "accountCode": "221002",
@@ -212,18 +219,18 @@
             "includedBalance": 459431.31
           },
           {
-            "accountCode": "221111",
-            "accountLabel": "221111: 107-164902 Czk THEPAY",
+            "accountCode": "221112",
+            "accountLabel": "221112: 107-164902 EUR THEPAY",
             "currency": "CZK: Česká koruna",
-            "balance": 340587.03,
-            "includedBalance": 340587.03
+            "balance": 177725.47,
+            "includedBalance": 177725.47
           },
           {
             "accountCode": "221005",
             "accountLabel": "221005: 2501338690/2010 FIO EUR",
             "currency": "CZK: Česká koruna",
-            "balance": 123661.99,
-            "includedBalance": 123661.99
+            "balance": 128493.8,
+            "includedBalance": 128493.8
           },
           {
             "accountCode": "221117",
@@ -231,13 +238,6 @@
             "currency": "CZK: Česká koruna",
             "balance": 99497.24,
             "includedBalance": 99497.24
-          },
-          {
-            "accountCode": "221112",
-            "accountLabel": "221112: 107-164902 EUR THEPAY",
-            "currency": "CZK: Česká koruna",
-            "balance": 98802.9,
-            "includedBalance": 98802.9
           },
           {
             "accountCode": "211000",
@@ -348,7 +348,7 @@
             "accountCode": "221001",
             "accountLabel": "221001: 2901338673/2010 FIO CZK",
             "currency": "USD: Americký dolar",
-            "balance": -24119.95,
+            "balance": -24181.01,
             "includedBalance": 0.0
           }
         ]
@@ -368,7 +368,7 @@
       "performanceSpend": 0.0,
       "brandSpend": 0.0,
       "totalSpend": 0.0,
-      "revenue": 1022450.62,
+      "revenue": 1121215.65,
       "spendShareOfRevenuePct": 0.0
     },
     "topSupplier": null
