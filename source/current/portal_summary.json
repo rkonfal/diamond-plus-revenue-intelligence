@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-04T08:30:30.724371+02:00",
+  "generatedAt": "2026-05-04T11:36:23.908454+02:00",
   "config": {
     "warehouseCode": "CZPRGA",
     "outboundMaxPages": 20,
@@ -14,25 +14,25 @@
       "label": "CZ",
       "inventory": {
         "items": 771,
-        "availableStockTotal": 315875,
-        "pendingStockTotal": 4937,
+        "availableStockTotal": 314554,
+        "pendingStockTotal": 3545,
         "freezeStockTotal": 0,
         "lowStockItems": 100
       },
       "outbound": {
-        "items": 400,
-        "scannedPages": 4,
+        "items": 500,
+        "scannedPages": 5,
         "topLogisticsProduct": "F1401",
-        "oldestTimestamp": "2026-05-02T19:00:07+02:00",
-        "newestTimestamp": "2026-05-04T08:30:04+02:00"
+        "oldestTimestamp": "2026-05-02T19:25:05+02:00",
+        "newestTimestamp": "2026-05-04T11:30:09+02:00"
       }
     },
     "sk": {
       "label": "SK",
       "inventory": {
         "items": 624,
-        "availableStockTotal": 68795,
-        "pendingStockTotal": 359,
+        "availableStockTotal": 68714,
+        "pendingStockTotal": 87,
         "freezeStockTotal": 0,
         "lowStockItems": 100
       },
@@ -40,8 +40,8 @@
         "items": 100,
         "scannedPages": 1,
         "topLogisticsProduct": "F1403",
-        "oldestTimestamp": "2026-04-30T15:20:21+02:00",
-        "newestTimestamp": "2026-05-04T07:00:12+02:00"
+        "oldestTimestamp": "2026-04-30T21:00:15+02:00",
+        "newestTimestamp": "2026-05-04T11:25:14+02:00"
       }
     }
   },
@@ -51,18 +51,19 @@
     "orders": 347,
     "revenueWithVat": 521403.8,
     "averageOrderValue": 1502.6,
-    "problematicOrders": 0
+    "problematicOrders": 1
   },
   "report": {
     "date": "2026-05-03",
     "shipments": 333,
     "alerts": [
+      "1 problematických nebo stornovaných objednávek.",
       "1 včera prodaných produktů je teď na nízkém skladu.",
-      "10 skladových pozic je v mínusu.",
-      "V top expiracích je aspoň jedna položka do 30 dnů."
+      "10 skladových pozic je v mínusu."
     ],
     "priorities": [
       "Dohlédnout 35412-02 (Povzbuzující krém pro dokonalá stehna), aktuálně 2 ks.",
+      "Projít 1 problematických nebo stornovaných objednávek z včerejška.",
       "Projít nejbližší expirace v 4PX a rozhodnout o doprodeji nebo přesunu zásoby."
     ]
   },
@@ -72,11 +73,11 @@
     "skSkuCount": 302
   },
   "pairing": {
-    "allCodes": 2927,
+    "allCodes": 2930,
     "pairedProducts": 393,
-    "onlyInWpj": 1467,
+    "onlyInWpj": 1470,
     "onlyIn4px": 1,
-    "stockMismatch": 684,
+    "stockMismatch": 682,
     "lowAfterSales": 2,
     "manualMapped4pxAliases": 0,
     "autoMapped4pxAliases": 73
@@ -87,32 +88,40 @@
     "message": "Měsíční finance se tahají přímo z ABRA reportu Výkaz hospodaření za měsíc za všechna střediska. Cash a závazky jsou také live z ABRA API.",
     "currentMonth": {
       "label": "5/2026",
-      "revenue": 782343.12,
-      "cogsAndFees": 570426.04,
+      "revenue": 928913.29,
+      "cogsAndFees": 675419.16,
       "logistics": 0.0,
       "marketing": 0.0,
-      "opex": 15436.0,
+      "opex": 27847.62,
       "depreciation": 385502.0,
-      "other": 0.0,
-      "grossMargin": 211917.08,
-      "afterLogistics": 211917.08,
-      "afterMarketing": 211917.08,
-      "operatingMargin": 196481.08,
-      "ebit": -189020.92,
-      "profit": -189020.92,
-      "grossMarginPct": 27.1,
+      "other": 0.06,
+      "grossMargin": 253494.13,
+      "afterLogistics": 253494.13,
+      "afterMarketing": 253494.13,
+      "operatingMargin": 225646.51,
+      "ebit": -159855.49,
+      "profit": -159855.43,
+      "grossMarginPct": 27.3,
       "marketingPct": 0.0,
       "logisticsPct": 0.0,
-      "operatingMarginPct": 25.1,
-      "profitPct": -24.2
+      "operatingMarginPct": 24.3,
+      "profitPct": -17.2
     },
     "cash": {
-      "cashOnAccounts": 6451117.98,
-      "unpaidInvoices": 194315.17,
-      "netCashPosition": 6256802.81,
-      "overdueInvoicesCount": 0,
-      "overdueInvoicesAmount": 0.0,
+      "cashOnAccounts": 7545353.54,
+      "unpaidInvoices": 497082.3,
+      "netCashPosition": 7048271.24,
+      "overdueInvoicesCount": 3,
+      "overdueInvoicesAmount": 193918.63,
       "largestPayables": [
+        {
+          "code": "PF0546/2026",
+          "vendor": "Meta Platforms Ireland Limited",
+          "dueDate": "01.05.2026",
+          "amountTotal": 147493.18,
+          "amountDue": 147493.18,
+          "status": "3 dní PO SPLATNOSTI"
+        },
         {
           "code": "PF0508/2026",
           "vendor": "Zásilkovna s.r.o.",
@@ -122,12 +131,28 @@
           "status": "splatné dnes"
         },
         {
+          "code": "PF0537/2026",
+          "vendor": "KODAP Ltm s.r.o.",
+          "dueDate": "15.05.2026",
+          "amountTotal": 62920.0,
+          "amountDue": 62920.0,
+          "status": "11 dní do splatnosti"
+        },
+        {
           "code": "PF0518/2026",
           "vendor": "SAVI servis s.r.o.",
           "dueDate": "06.05.2026",
           "amountTotal": 53240.0,
           "amountDue": 53240.0,
           "status": "2 dní do splatnosti"
+        },
+        {
+          "code": "PF0547/2026",
+          "vendor": "Meta Platforms Ireland Limited",
+          "dueDate": "01.05.2026",
+          "amountTotal": 35245.05,
+          "amountDue": 35245.05,
+          "status": "3 dní PO SPLATNOSTI"
         },
         {
           "code": "PF0507/2026",
@@ -146,36 +171,12 @@
           "status": "7 dní do splatnosti"
         },
         {
-          "code": "PF0528/2026",
-          "vendor": "Alma Career Czechia s.r.o.",
-          "dueDate": "12.05.2026",
-          "amountTotal": 12087.9,
-          "amountDue": 12087.9,
-          "status": "8 dní do splatnosti"
-        },
-        {
-          "code": "PF0529/2026",
-          "vendor": "AIRWEB, spol. s r.o.",
-          "dueDate": "14.05.2026",
-          "amountTotal": 2284.0,
-          "amountDue": 2284.0,
-          "status": "10 dní do splatnosti"
-        },
-        {
-          "code": "PF0534/2026",
-          "vendor": "Finanční úřad pro Ústecký kraj",
-          "dueDate": "01.06.2026",
-          "amountTotal": 2144.0,
-          "amountDue": 2144.0,
-          "status": "28 dní do splatnosti"
-        },
-        {
-          "code": "PF0535/2026",
-          "vendor": "Finanční úřad pro Plzeňský kraj",
-          "dueDate": "01.06.2026",
-          "amountTotal": 1951.0,
-          "amountDue": 1951.0,
-          "status": "28 dní do splatnosti"
+          "code": "PF0542/2026",
+          "vendor": "Pavel Minář",
+          "dueDate": "10.05.2026",
+          "amountTotal": 14672.07,
+          "amountDue": 14672.07,
+          "status": "6 dní do splatnosti"
         }
       ],
       "cashAccountsSource": {
@@ -183,53 +184,46 @@
         "message": "Cash na účtech a pokladnách je počítán živě z ABRA obratové předvahy pro účty 221 a 211, ze CZK řádků a se započtením kladných zůstatků.",
         "accounts": [
           {
-            "accountCode": "221001",
-            "accountLabel": "221001: 2901338673/2010 FIO CZK",
+            "accountCode": "221115",
+            "accountLabel": "221115: 131-3675980207/0100 KB CZK",
             "currency": "CZK: Česká koruna",
-            "balance": 1834704.06,
-            "includedBalance": 1834704.06
+            "balance": 2701781.6,
+            "includedBalance": 2701781.6
           },
           {
             "accountCode": "221006",
             "accountLabel": "221006: 2202503115/2010 FIO CZK",
             "currency": "CZK: Česká koruna",
-            "balance": 1815234.07,
-            "includedBalance": 1815234.07
+            "balance": 2227089.2,
+            "includedBalance": 2227089.2
           },
           {
-            "accountCode": "221115",
-            "accountLabel": "221115: 131-3675980207/0100 KB CZK",
+            "accountCode": "221001",
+            "accountLabel": "221001: 2901338673/2010 FIO CZK",
             "currency": "CZK: Česká koruna",
-            "balance": 1643122.34,
-            "includedBalance": 1643122.34
-          },
-          {
-            "accountCode": "221111",
-            "accountLabel": "221111: 107-164902 Czk THEPAY",
-            "currency": "CZK: Česká koruna",
-            "balance": 543070.2,
-            "includedBalance": 543070.2
+            "balance": 1532894.82,
+            "includedBalance": 1532894.82
           },
           {
             "accountCode": "221002",
             "accountLabel": "221002: 131-1211280297/0100 KB EUR",
             "currency": "CZK: Česká koruna",
-            "balance": 241816.32,
-            "includedBalance": 241816.32
+            "balance": 383644.91,
+            "includedBalance": 383644.91
           },
           {
-            "accountCode": "221112",
-            "accountLabel": "221112: 107-164902 EUR THEPAY",
+            "accountCode": "221111",
+            "accountLabel": "221111: 107-164902 Czk THEPAY",
             "currency": "CZK: Česká koruna",
-            "balance": 121299.74,
-            "includedBalance": 121299.74
+            "balance": 340587.03,
+            "includedBalance": 340587.03
           },
           {
             "accountCode": "221005",
             "accountLabel": "221005: 2501338690/2010 FIO EUR",
             "currency": "CZK: Česká koruna",
-            "balance": 112122.98,
-            "includedBalance": 112122.98
+            "balance": 120794.82,
+            "includedBalance": 120794.82
           },
           {
             "accountCode": "221117",
@@ -237,6 +231,13 @@
             "currency": "CZK: Česká koruna",
             "balance": 99497.24,
             "includedBalance": 99497.24
+          },
+          {
+            "accountCode": "221112",
+            "accountLabel": "221112: 107-164902 EUR THEPAY",
+            "currency": "CZK: Česká koruna",
+            "balance": 98802.9,
+            "includedBalance": 98802.9
           },
           {
             "accountCode": "211000",
@@ -249,8 +250,8 @@
             "accountCode": "221007",
             "accountLabel": "221007: 2002503110/2010 FIO CZK",
             "currency": "CZK: Česká koruna",
-            "balance": 4671.91,
-            "includedBalance": 4671.91
+            "balance": 4681.9,
+            "includedBalance": 4681.9
           },
           {
             "accountCode": "211001",
@@ -367,7 +368,7 @@
       "performanceSpend": 0.0,
       "brandSpend": 0.0,
       "totalSpend": 0.0,
-      "revenue": 782343.12,
+      "revenue": 928913.29,
       "spendShareOfRevenuePct": 0.0
     },
     "topSupplier": null
