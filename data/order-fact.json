@@ -4189,10 +4189,10 @@
       "code": "261276191",
       "dateCreated": "2026-05-04T22:13:49+02:00",
       "cancelled": false,
-      "isPaid": false,
+      "isPaid": true,
       "status": {
-        "id": 0,
-        "name": "nová"
+        "id": 1,
+        "name": "přijatá"
       },
       "totalPrice": {
         "withVat": 1027,
@@ -4231,6 +4231,30 @@
         {
           "adminId": null,
           "comment": "[FlexiBee] Objednávka byla nahrána do FlexiBee; ID: 664901"
+        },
+        {
+          "adminId": null,
+          "comment": "Modul FioBank - příchozí platba č. 27618102501. Komentář plátce: KOLAROVA ALENA."
+        },
+        {
+          "adminId": null,
+          "comment": "<p>Dobré zprávy: Úhrada vaší objednávky 261276191 právě dorazila. Než dočtete tento e-mail, pustíme se do práce na expedici vaší objednávky tak, aby vám dorazila co nejdříve.</p><p>Těšíte se? 😍</p><div></div>"
+        },
+        {
+          "adminId": null,
+          "comment": "[4PX] Objednávka byla vytvořena; ID: OC149400632605050181 tracking: 601112225906 účet: CZ"
+        },
+        {
+          "adminId": null,
+          "comment": null
+        },
+        {
+          "adminId": null,
+          "comment": "[FlexiBee] Objednávka byla ve FlexiBee zaktualizována"
+        },
+        {
+          "adminId": null,
+          "comment": "[Flexi] Objednávka byla realizována ve Flexi;"
         }
       ],
       "deliveryType": {
@@ -65769,8 +65793,8 @@
       "cancelled": false,
       "isPaid": true,
       "status": {
-        "id": 1,
-        "name": "přijatá"
+        "id": 3,
+        "name": "expedováno"
       },
       "totalPrice": {
         "withVat": 1345,
@@ -65833,6 +65857,26 @@
         {
           "adminId": null,
           "comment": "[Flexi] Objednávka byla realizována ve Flexi;"
+        },
+        {
+          "adminId": null,
+          "comment": "[4PX] Číslo balíku: DR1139145983C"
+        },
+        {
+          "adminId": null,
+          "comment": "[4PX] Změna stavu: carrier_picked_up"
+        },
+        {
+          "adminId": null,
+          "comment": "<p><p dir=\"ltr\">Vaši objednávku si dnes převzala <strong>Česká pošta</strong>, která Vás bude brzy kontaktovat ohledně <strong>přesného termínu doručení</strong>.<br />\r\nBuďte na převzetí připraven/á a <strong>sledujte</strong> svůj balíček <strong>online</strong> <a href=\"https://www.postaonline.cz/trackandtrace/-/zasilka/cislo?parcelNumbers=DR1139145983C\">zde</a> pod číslem <strong>DR1139145983C</strong>.</p>\r\n\r\n<p dir=\"ltr\">Za objednávku jste zaplatil/a 1 345 Kč bankovním převodem.</p></p><p> </p><p>Nezapomeňte, že jsme tu pro Vás, a že se na nás můžete kdykoliv obrátit. </p>"
+        },
+        {
+          "adminId": null,
+          "comment": "Autopilot: odeslána uživatelská zpráva: Odesláno"
+        },
+        {
+          "adminId": null,
+          "comment": null
         }
       ],
       "deliveryType": {
@@ -98835,9 +98879,24 @@
   ],
   "historicalWindow": {
     "from": "2025-01-01T00:00:00+01:00",
-    "to": "2026-05-05T01:27:42.741932+02:00"
+    "to": "2026-05-05T05:05:40.790957+02:00"
   },
   "historicalOrdersSample": [
+    {
+      "id": 3609901,
+      "code": "261276215",
+      "dateCreated": "2026-05-05T01:56:57+02:00",
+      "customerKey": "email:lenry@seznam.cz",
+      "customerLabel": "Lenka Vítková",
+      "email": "lenry@seznam.cz",
+      "countryCode": "CZ",
+      "sourceName": "E-shop",
+      "statusName": "přijatá",
+      "cancelled": false,
+      "problematic": false,
+      "isPaid": true,
+      "revenueWithVat": 1822.0
+    },
     {
       "id": 3609899,
       "code": "261276214",
@@ -99192,10 +99251,10 @@
       "email": "anela.sarinka@seznam.cz",
       "countryCode": "CZ",
       "sourceName": "E-shop",
-      "statusName": "nová",
+      "statusName": "přijatá",
       "cancelled": false,
       "problematic": false,
-      "isPaid": false,
+      "isPaid": true,
       "revenueWithVat": 1027.0
     },
     {
@@ -100322,36 +100381,21 @@
       "problematic": false,
       "isPaid": true,
       "revenueWithVat": 1120.0
-    },
-    {
-      "id": 3609790,
-      "code": "261276115",
-      "dateCreated": "2026-05-04T20:31:48+02:00",
-      "customerKey": "email:a-kon@seznam.cz",
-      "customerLabel": "Anna Konečná",
-      "email": "a-kon@seznam.cz",
-      "countryCode": "CZ",
-      "sourceName": "E-shop",
-      "statusName": "přijatá",
-      "cancelled": false,
-      "problematic": false,
-      "isPaid": true,
-      "revenueWithVat": 1239.0
     }
   ],
   "summary": {
-    "orders": 194617,
-    "nonCancelledOrders": 188815,
+    "orders": 194618,
+    "nonCancelledOrders": 188816,
     "cancelledOrders": 5802,
     "problematicOrders": 5904,
     "cancelledRatePct": 2.98,
     "problematicRatePct": 3.03,
-    "estimatedNetRevenueAfterCancellations": 292433238.69,
-    "grossRevenueWithVat": 301415418.15,
+    "estimatedNetRevenueAfterCancellations": 292435006.39,
+    "grossRevenueWithVat": 301417240.15,
     "qualityLabel": "healthy",
     "window": {
       "from": "2025-01-01T00:00:00+01:00",
-      "to": "2026-05-05T01:27:42.741932+02:00"
+      "to": "2026-05-05T05:05:40.790957+02:00"
     }
   }
 }
