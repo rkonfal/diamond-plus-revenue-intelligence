@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-06T12:11:44.722319+02:00",
+  "generatedAt": "2026-05-06T16:21:48.662076+02:00",
   "config": {
     "warehouseCode": "CZPRGA",
     "outboundMaxPages": 20,
@@ -14,25 +14,25 @@
       "label": "CZ",
       "inventory": {
         "items": 773,
-        "availableStockTotal": 302297,
-        "pendingStockTotal": 4526,
+        "availableStockTotal": 301249,
+        "pendingStockTotal": 2080,
         "freezeStockTotal": 0,
         "lowStockItems": 100
       },
       "outbound": {
-        "items": 900,
-        "scannedPages": 9,
+        "items": 1000,
+        "scannedPages": 10,
         "topLogisticsProduct": "F1401",
-        "oldestTimestamp": "2026-05-04T20:30:04+02:00",
-        "newestTimestamp": "2026-05-06T12:10:05+02:00"
+        "oldestTimestamp": "2026-05-04T20:20:09+02:00",
+        "newestTimestamp": "2026-05-06T16:20:04+02:00"
       }
     },
     "sk": {
       "label": "SK",
       "inventory": {
         "items": 626,
-        "availableStockTotal": 66969,
-        "pendingStockTotal": 288,
+        "availableStockTotal": 66849,
+        "pendingStockTotal": 153,
         "freezeStockTotal": 0,
         "lowStockItems": 100
       },
@@ -40,8 +40,8 @@
         "items": 200,
         "scannedPages": 2,
         "topLogisticsProduct": "F1403",
-        "oldestTimestamp": "2026-05-02T10:00:12+02:00",
-        "newestTimestamp": "2026-05-06T12:00:25+02:00"
+        "oldestTimestamp": "2026-05-02T14:40:13+02:00",
+        "newestTimestamp": "2026-05-06T16:05:12+02:00"
       }
     }
   },
@@ -68,16 +68,16 @@
     ]
   },
   "expiries": {
-    "datedSkuCount": 622,
+    "datedSkuCount": 620,
     "czSkuCount": 319,
-    "skSkuCount": 303
+    "skSkuCount": 301
   },
   "pairing": {
     "allCodes": 2935,
     "pairedProducts": 395,
     "onlyInWpj": 1474,
     "onlyIn4px": 1,
-    "stockMismatch": 679,
+    "stockMismatch": 677,
     "lowAfterSales": 2,
     "manualMapped4pxAliases": 0,
     "autoMapped4pxAliases": 73
@@ -88,29 +88,29 @@
     "message": "Měsíční finance se tahají přímo z ABRA reportu Výkaz hospodaření za měsíc za všechna střediska. Cash a závazky jsou také live z ABRA API.",
     "currentMonth": {
       "label": "5/2026",
-      "revenue": 2427601.17,
-      "cogsAndFees": 1759275.5,
+      "revenue": 2610858.27,
+      "cogsAndFees": 1892126.88,
       "logistics": 1620.5,
       "marketing": 2479.34,
       "opex": 36449.46,
       "depreciation": 385502.0,
       "other": 0.02,
-      "grossMargin": 668325.67,
-      "afterLogistics": 666705.17,
-      "afterMarketing": 664225.83,
-      "operatingMargin": 627776.37,
-      "ebit": 242274.37,
-      "profit": 242274.39,
+      "grossMargin": 718731.39,
+      "afterLogistics": 717110.89,
+      "afterMarketing": 714631.55,
+      "operatingMargin": 678182.09,
+      "ebit": 292680.09,
+      "profit": 292680.11,
       "grossMarginPct": 27.5,
       "marketingPct": 0.1,
       "logisticsPct": 0.1,
-      "operatingMarginPct": 25.9,
-      "profitPct": 10.0
+      "operatingMarginPct": 26.0,
+      "profitPct": 11.2
     },
     "cash": {
-      "cashOnAccounts": 8925229.54,
-      "unpaidInvoices": 327231.79,
-      "netCashPosition": 8597997.75,
+      "cashOnAccounts": 8995554.97,
+      "unpaidInvoices": 332456.74,
+      "netCashPosition": 8663098.23,
       "overdueInvoicesCount": 2,
       "overdueInvoicesAmount": 182738.23,
       "largestPayables": [
@@ -171,12 +171,12 @@
           "status": "19 dní do splatnosti"
         },
         {
-          "code": "PF0555/2026",
-          "vendor": "Heureka Group a.s.",
-          "dueDate": "15.05.2026",
-          "amountTotal": 2418.79,
-          "amountDue": 2418.79,
-          "status": "9 dní do splatnosti"
+          "code": "PF0565/2026",
+          "vendor": "ISTA CORPORATION s.r.o.",
+          "dueDate": "12.05.2026",
+          "amountTotal": 5018.94,
+          "amountDue": 5018.94,
+          "status": "6 dní do splatnosti"
         }
       ],
       "cashAccountsSource": {
@@ -201,8 +201,8 @@
             "accountCode": "221001",
             "accountLabel": "221001: 2901338673/2010 FIO CZK",
             "currency": "CZK: Česká koruna",
-            "balance": 1931225.11,
-            "includedBalance": 1931225.11
+            "balance": 1998293.11,
+            "includedBalance": 1998293.11
           },
           {
             "accountCode": "221111",
@@ -215,22 +215,15 @@
             "accountCode": "221002",
             "accountLabel": "221002: 131-1211280297/0100 KB EUR",
             "currency": "CZK: Česká koruna",
-            "balance": 459067.07,
-            "includedBalance": 459067.07
-          },
-          {
-            "accountCode": "221112",
-            "accountLabel": "221112: 107-164902 EUR THEPAY",
-            "currency": "CZK: Česká koruna",
-            "balance": 177725.47,
-            "includedBalance": 177725.47
+            "balance": 538946.35,
+            "includedBalance": 538946.35
           },
           {
             "accountCode": "221005",
             "accountLabel": "221005: 2501338690/2010 FIO EUR",
             "currency": "CZK: Česká koruna",
-            "balance": 158912.66,
-            "includedBalance": 158912.66
+            "balance": 162151.54,
+            "includedBalance": 162151.54
           },
           {
             "accountCode": "221117",
@@ -238,6 +231,13 @@
             "currency": "CZK: Česká koruna",
             "balance": 99497.24,
             "includedBalance": 99497.24
+          },
+          {
+            "accountCode": "221112",
+            "accountLabel": "221112: 107-164902 EUR THEPAY",
+            "currency": "CZK: Česká koruna",
+            "balance": 97864.74,
+            "includedBalance": 97864.74
           },
           {
             "accountCode": "211000",
@@ -368,7 +368,7 @@
       "performanceSpend": 2479.34,
       "brandSpend": 0.0,
       "totalSpend": 2479.34,
-      "revenue": 2427601.17,
+      "revenue": 2610858.27,
       "spendShareOfRevenuePct": 0.1
     },
     "topSupplier": null
