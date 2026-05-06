@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-06T08:28:07.388434+02:00",
+  "generatedAt": "2026-05-06T10:54:19.953970+02:00",
   "config": {
     "warehouseCode": "CZPRGA",
     "outboundMaxPages": 20,
@@ -14,34 +14,34 @@
       "label": "CZ",
       "inventory": {
         "items": 773,
-        "availableStockTotal": 303635,
-        "pendingStockTotal": 5522,
+        "availableStockTotal": 302697,
+        "pendingStockTotal": 4452,
         "freezeStockTotal": 0,
         "lowStockItems": 100
       },
       "outbound": {
-        "items": 700,
-        "scannedPages": 7,
+        "items": 800,
+        "scannedPages": 8,
         "topLogisticsProduct": "F1401",
-        "oldestTimestamp": "2026-05-04T22:25:02+02:00",
-        "newestTimestamp": "2026-05-06T08:25:02+02:00"
+        "oldestTimestamp": "2026-05-04T22:00:11+02:00",
+        "newestTimestamp": "2026-05-06T10:50:04+02:00"
       }
     },
     "sk": {
       "label": "SK",
       "inventory": {
         "items": 626,
-        "availableStockTotal": 67115,
-        "pendingStockTotal": 783,
+        "availableStockTotal": 67016,
+        "pendingStockTotal": 332,
         "freezeStockTotal": 0,
         "lowStockItems": 100
       },
       "outbound": {
-        "items": 100,
-        "scannedPages": 1,
-        "topLogisticsProduct": "F1406",
-        "oldestTimestamp": "2026-05-04T20:35:13+02:00",
-        "newestTimestamp": "2026-05-06T08:20:14+02:00"
+        "items": 200,
+        "scannedPages": 2,
+        "topLogisticsProduct": "F1403",
+        "oldestTimestamp": "2026-05-01T23:30:13+02:00",
+        "newestTimestamp": "2026-05-06T10:40:15+02:00"
       }
     }
   },
@@ -55,14 +55,14 @@
   },
   "report": {
     "date": "2026-05-05",
-    "shipments": 695,
+    "shipments": 696,
     "alerts": [
       "1 problematických nebo stornovaných objednávek.",
       "1 včera prodaných produktů je teď na nízkém skladu.",
       "10 skladových pozic je v mínusu."
     ],
     "priorities": [
-      "Dohlédnout 30132/01 (Pánské spodní prádlo s bodovou turmalínovou vrstvou. -velikost L), aktuálně 5 ks.",
+      "Dohlédnout 30132/01 (Pánské spodní prádlo s bodovou turmalínovou vrstvou. -velikost L), aktuálně 4 ks.",
       "Projít 1 problematických nebo stornovaných objednávek z včerejška.",
       "Projít nejbližší expirace v 4PX a rozhodnout o doprodeji nebo přesunu zásoby."
     ]
@@ -77,7 +77,7 @@
     "pairedProducts": 395,
     "onlyInWpj": 1474,
     "onlyIn4px": 1,
-    "stockMismatch": 682,
+    "stockMismatch": 681,
     "lowAfterSales": 2,
     "manualMapped4pxAliases": 0,
     "autoMapped4pxAliases": 73
@@ -88,29 +88,29 @@
     "message": "Měsíční finance se tahají přímo z ABRA reportu Výkaz hospodaření za měsíc za všechna střediska. Cash a závazky jsou také live z ABRA API.",
     "currentMonth": {
       "label": "5/2026",
-      "revenue": 2278380.55,
-      "cogsAndFees": 1651961.35,
+      "revenue": 2381923.02,
+      "cogsAndFees": 1723673.5,
       "logistics": 1620.5,
       "marketing": 2479.34,
-      "opex": 36352.46,
+      "opex": 36449.46,
       "depreciation": 385502.0,
       "other": 0.02,
-      "grossMargin": 626419.2,
-      "afterLogistics": 624798.7,
-      "afterMarketing": 622319.36,
-      "operatingMargin": 585966.9,
-      "ebit": 200464.9,
-      "profit": 200464.92,
-      "grossMarginPct": 27.5,
+      "grossMargin": 658249.52,
+      "afterLogistics": 656629.02,
+      "afterMarketing": 654149.68,
+      "operatingMargin": 617700.22,
+      "ebit": 232198.22,
+      "profit": 232198.24,
+      "grossMarginPct": 27.6,
       "marketingPct": 0.1,
       "logisticsPct": 0.1,
-      "operatingMarginPct": 25.7,
-      "profitPct": 8.8
+      "operatingMarginPct": 25.9,
+      "profitPct": 9.7
     },
     "cash": {
-      "cashOnAccounts": 8853780.67,
+      "cashOnAccounts": 8914688.43,
       "unpaidInvoices": 327231.79,
-      "netCashPosition": 8526548.88,
+      "netCashPosition": 8587456.64,
       "overdueInvoicesCount": 2,
       "overdueInvoicesAmount": 182738.23,
       "largestPayables": [
@@ -194,15 +194,15 @@
             "accountCode": "221006",
             "accountLabel": "221006: 2202503115/2010 FIO CZK",
             "currency": "CZK: Česká koruna",
-            "balance": 2227089.2,
-            "includedBalance": 2227089.2
+            "balance": 2432089.2,
+            "includedBalance": 2432089.2
           },
           {
             "accountCode": "221001",
             "accountLabel": "221001: 2901338673/2010 FIO CZK",
             "currency": "CZK: Česká koruna",
-            "balance": 2067928.11,
-            "includedBalance": 2067928.11
+            "balance": 1921692.11,
+            "includedBalance": 1921692.11
           },
           {
             "accountCode": "221111",
@@ -215,8 +215,8 @@
             "accountCode": "221002",
             "accountLabel": "221002: 131-1211280297/0100 KB EUR",
             "currency": "CZK: Česká koruna",
-            "balance": 459431.31,
-            "includedBalance": 459431.31
+            "balance": 459067.07,
+            "includedBalance": 459067.07
           },
           {
             "accountCode": "221112",
@@ -229,8 +229,8 @@
             "accountCode": "221005",
             "accountLabel": "221005: 2501338690/2010 FIO EUR",
             "currency": "CZK: Česká koruna",
-            "balance": 155299.55,
-            "includedBalance": 155299.55
+            "balance": 157904.55,
+            "includedBalance": 157904.55
           },
           {
             "accountCode": "221117",
@@ -257,8 +257,8 @@
             "accountCode": "211001",
             "accountLabel": "211001: Pokladna Czk",
             "currency": "CZK: Česká koruna",
-            "balance": 2426.6,
-            "includedBalance": 2426.6
+            "balance": 2329.6,
+            "includedBalance": 2329.6
           },
           {
             "accountCode": "221116",
@@ -368,7 +368,7 @@
       "performanceSpend": 2479.34,
       "brandSpend": 0.0,
       "totalSpend": 2479.34,
-      "revenue": 2278380.55,
+      "revenue": 2381923.02,
       "spendShareOfRevenuePct": 0.1
     },
     "topSupplier": null
