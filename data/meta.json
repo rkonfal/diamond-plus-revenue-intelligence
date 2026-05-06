@@ -12,116 +12,290 @@
       "mode": "live_report",
       "message": "Marketing se skládá z live ABRA reportu a aktuálních položek z účetního deníku. Přímé platformy přes API: Sklik, Meta Ads, Google Ads, Klaviyo.",
       "currentMonth": {
-        "label": "2/2026",
-        "performanceSpend": 362050.86,
-        "brandSpend": 548999.26,
-        "totalSpend": 911050.12,
-        "revenue": 13766684.32,
-        "spendShareOfRevenuePct": 6.6
+        "label": "5/2026",
+        "performanceSpend": 2479.34,
+        "brandSpend": 0.0,
+        "totalSpend": 2479.34,
+        "revenue": 2193117.38,
+        "spendShareOfRevenuePct": 0.1
       },
       "topSupplier": null
     },
     "finance": {
       "ready": true,
-      "mode": "legacy_with_live_error",
-      "message": "Zatím čerpáno z posledního dostupného ABRA Flexi výřezu v původním dashboardu, ne z živého API. Live ABRA adapter selhal: Živé ABRA API se nepodařilo načíst (Unterminated string starting at: line 1 column 584923 (char 584922)).",
+      "mode": "live_report",
+      "message": "Měsíční finance se tahají přímo z ABRA reportu Výkaz hospodaření za měsíc za všechna střediska. Cash a závazky jsou také live z ABRA API.",
       "currentMonth": {
-        "label": "2/2026",
-        "revenue": 13766684.32,
-        "cogsAndFees": 9551456.13,
-        "logistics": 1102853.08,
-        "marketing": 911050.12,
-        "opex": 1949741.77,
+        "label": "5/2026",
+        "revenue": 2193117.38,
+        "cogsAndFees": 1583985.64,
+        "logistics": 1620.5,
+        "marketing": 2479.34,
+        "opex": 36352.46,
         "depreciation": 385502.0,
-        "other": 56476.2,
-        "grossMargin": 4215228.19,
-        "afterLogistics": 3112375.11,
-        "afterMarketing": 2201324.99,
-        "operatingMargin": 251583.22,
-        "ebit": -133918.78,
-        "profit": -77442.58,
-        "grossMarginPct": 30.6,
-        "marketingPct": 6.6,
-        "logisticsPct": 8.0,
-        "operatingMarginPct": 1.8,
-        "profitPct": -0.6
+        "other": 0.02,
+        "grossMargin": 609131.74,
+        "afterLogistics": 607511.24,
+        "afterMarketing": 605031.9,
+        "operatingMargin": 568679.44,
+        "ebit": 183177.44,
+        "profit": 183177.46,
+        "grossMarginPct": 27.8,
+        "marketingPct": 0.1,
+        "logisticsPct": 0.1,
+        "operatingMarginPct": 25.9,
+        "profitPct": 8.4
       },
       "cash": {
-        "cashOnAccounts": 10255308.0,
-        "unpaidInvoices": 1579560.0,
-        "netCashPosition": 8675748.0,
-        "overdueInvoicesCount": 4,
-        "overdueInvoicesAmount": 85645.0,
+        "cashOnAccounts": 8731205.73,
+        "unpaidInvoices": 327231.79,
+        "netCashPosition": 8403973.94,
+        "overdueInvoicesCount": 2,
+        "overdueInvoicesAmount": 182738.23,
         "largestPayables": [
           {
-            "code": "PF0412/2026",
-            "vendor": "4PX Express CZ",
-            "dueDate": "30.04.2026",
-            "amountTotal": 706145.0,
-            "amountDue": 706145.0,
-            "status": "18 dní do splatnosti"
+            "code": "PF0546/2026",
+            "vendor": "Meta Platforms Ireland Limited",
+            "dueDate": "01.05.2026",
+            "amountTotal": 147493.18,
+            "amountDue": 147493.18,
+            "status": "5 dní PO SPLATNOSTI"
           },
           {
-            "code": "PF0446/2026",
-            "vendor": "Česká pošta, s.p.",
-            "dueDate": "24.04.2026",
-            "amountTotal": 558254.0,
-            "amountDue": 558254.0,
-            "status": "12 dní do splatnosti"
+            "code": "PF0537/2026",
+            "vendor": "KODAP Ltm s.r.o.",
+            "dueDate": "15.05.2026",
+            "amountTotal": 62920.0,
+            "amountDue": 62920.0,
+            "status": "9 dní do splatnosti"
           },
           {
-            "code": "PF0426/2026",
-            "vendor": "wpj s.r.o.",
-            "dueDate": "22.04.2026",
-            "amountTotal": 150393.0,
-            "amountDue": 150393.0,
+            "code": "PF0547/2026",
+            "vendor": "Meta Platforms Ireland Limited",
+            "dueDate": "01.05.2026",
+            "amountTotal": 35245.05,
+            "amountDue": 35245.05,
+            "status": "5 dní PO SPLATNOSTI"
+          },
+          {
+            "code": "Z0036/2026",
+            "vendor": "ORLEN Unipetrol RPA s.r.o.",
+            "dueDate": "16.05.2026",
+            "amountTotal": 25049.78,
+            "amountDue": 25049.78,
             "status": "10 dní do splatnosti"
           },
           {
-            "code": "PF0428/2026",
-            "vendor": "ProfiSMS s.r.o.",
-            "dueDate": "09.04.2026",
-            "amountTotal": 60000.0,
-            "amountDue": 60000.0,
-            "status": "3 dny PO SPLATNOSTI"
+            "code": "PF0558/2026",
+            "vendor": "Zásilkovna s.r.o.",
+            "dueDate": "08.05.2026",
+            "amountTotal": 18848.97,
+            "amountDue": 18848.97,
+            "status": "2 dní do splatnosti"
           },
           {
-            "code": "PF0429/2026",
-            "vendor": "coworkers.ai s.r.o.",
-            "dueDate": "30.04.2026",
-            "amountTotal": 43560.0,
-            "amountDue": 43560.0,
-            "status": "18 dní do splatnosti"
+            "code": "PF0528/2026",
+            "vendor": "Alma Career Czechia s.r.o.",
+            "dueDate": "12.05.2026",
+            "amountTotal": 12087.9,
+            "amountDue": 12087.9,
+            "status": "6 dní do splatnosti"
           },
           {
-            "code": "PF0413/2026",
-            "vendor": "4PX Express CZ",
-            "dueDate": "30.04.2026",
-            "amountTotal": 27981.0,
-            "amountDue": 27981.0,
-            "status": "18 dní do splatnosti"
-          },
-          {
-            "code": "Z0118/2025",
-            "vendor": "Quintessence Naturprodukte GmbH",
-            "dueDate": "31.12.2025",
-            "amountTotal": 20221.0,
-            "amountDue": 20221.0,
-            "status": "102 dní PO SPLATNOSTI"
-          },
-          {
-            "code": "PF0392/2026",
+            "code": "PF0561/2026",
             "vendor": "O2 Czech Republic a.s.",
-            "dueDate": "23.04.2026",
-            "amountTotal": 8332.0,
-            "amountDue": 4749.0,
-            "status": "11 dní do splatnosti (43% uhrazeno)"
+            "dueDate": "25.05.2026",
+            "amountTotal": 7741.62,
+            "amountDue": 7741.62,
+            "status": "19 dní do splatnosti"
+          },
+          {
+            "code": "PF0555/2026",
+            "vendor": "Heureka Group a.s.",
+            "dueDate": "15.05.2026",
+            "amountTotal": 2418.79,
+            "amountDue": 2418.79,
+            "status": "9 dní do splatnosti"
           }
-        ]
+        ],
+        "cashAccountsSource": {
+          "status": "live",
+          "message": "Cash na účtech a pokladnách je počítán živě z ABRA obratové předvahy pro účty 221 a 211, ze CZK řádků a se započtením kladných zůstatků.",
+          "accounts": [
+            {
+              "accountCode": "221115",
+              "accountLabel": "221115: 131-3675980207/0100 KB CZK",
+              "currency": "CZK: Česká koruna",
+              "balance": 2868918.99,
+              "includedBalance": 2868918.99
+            },
+            {
+              "accountCode": "221006",
+              "accountLabel": "221006: 2202503115/2010 FIO CZK",
+              "currency": "CZK: Česká koruna",
+              "balance": 2227089.2,
+              "includedBalance": 2227089.2
+            },
+            {
+              "accountCode": "221001",
+              "accountLabel": "221001: 2901338673/2010 FIO CZK",
+              "currency": "CZK: Česká koruna",
+              "balance": 2021664.11,
+              "includedBalance": 2021664.11
+            },
+            {
+              "accountCode": "221111",
+              "accountLabel": "221111: 107-164902 Czk THEPAY",
+              "currency": "CZK: Česká koruna",
+              "balance": 689040.78,
+              "includedBalance": 689040.78
+            },
+            {
+              "accountCode": "221002",
+              "accountLabel": "221002: 131-1211280297/0100 KB EUR",
+              "currency": "CZK: Česká koruna",
+              "balance": 459431.31,
+              "includedBalance": 459431.31
+            },
+            {
+              "accountCode": "221112",
+              "accountLabel": "221112: 107-164902 EUR THEPAY",
+              "currency": "CZK: Česká koruna",
+              "balance": 177725.47,
+              "includedBalance": 177725.47
+            },
+            {
+              "accountCode": "221005",
+              "accountLabel": "221005: 2501338690/2010 FIO EUR",
+              "currency": "CZK: Česká koruna",
+              "balance": 147577.61,
+              "includedBalance": 147577.61
+            },
+            {
+              "accountCode": "221117",
+              "accountLabel": "221117: Česká spořitelna",
+              "currency": "CZK: Česká koruna",
+              "balance": 99497.24,
+              "includedBalance": 99497.24
+            },
+            {
+              "accountCode": "211000",
+              "accountLabel": "211000: Pokladna - Klinika Biorezonance",
+              "currency": "CZK: Česká koruna",
+              "balance": 29908.85,
+              "includedBalance": 29908.85
+            },
+            {
+              "accountCode": "221007",
+              "accountLabel": "221007: 2002503110/2010 FIO CZK",
+              "currency": "CZK: Česká koruna",
+              "balance": 4681.9,
+              "includedBalance": 4681.9
+            },
+            {
+              "accountCode": "211001",
+              "accountLabel": "211001: Pokladna Czk",
+              "currency": "CZK: Česká koruna",
+              "balance": 2426.6,
+              "includedBalance": 2426.6
+            },
+            {
+              "accountCode": "221116",
+              "accountLabel": "221116: Bankovní účty",
+              "currency": "CZK: Česká koruna",
+              "balance": 1880.57,
+              "includedBalance": 1880.57
+            },
+            {
+              "accountCode": "221004",
+              "accountLabel": "221004: 2601338698/2010 FIO CZK výplaty",
+              "currency": "CZK: Česká koruna",
+              "balance": 863.0,
+              "includedBalance": 863.0
+            },
+            {
+              "accountCode": "221113",
+              "accountLabel": "221113: 203-164902 Czk THEPAY klinika",
+              "currency": "CZK: Česká koruna",
+              "balance": 500.0,
+              "includedBalance": 500.0
+            },
+            {
+              "accountCode": "221008",
+              "accountLabel": "221008: 2901338702/2010 FIO CZK",
+              "currency": "CZK: Česká koruna",
+              "balance": 0.1,
+              "includedBalance": 0.1
+            },
+            {
+              "accountCode": "211001",
+              "accountLabel": "211001: Pokladna Czk",
+              "currency": "EUR: Euro",
+              "balance": -230.7,
+              "includedBalance": 0.0
+            },
+            {
+              "accountCode": "211002",
+              "accountLabel": "211002: Pokladna Eur",
+              "currency": "EUR: Euro",
+              "balance": -9.3,
+              "includedBalance": 0.0
+            },
+            {
+              "accountCode": "211002",
+              "accountLabel": "211002: Pokladna Eur",
+              "currency": "CZK: Česká koruna",
+              "balance": -231.66,
+              "includedBalance": 0.0
+            },
+            {
+              "accountCode": "221000",
+              "accountLabel": "221000: Bankovní účty",
+              "currency": "EUR: Euro",
+              "balance": -1057.49,
+              "includedBalance": 0.0
+            },
+            {
+              "accountCode": "221000",
+              "accountLabel": "221000: Bankovní účty",
+              "currency": "CZK: Česká koruna",
+              "balance": 0.0,
+              "includedBalance": 0.0
+            },
+            {
+              "accountCode": "221001",
+              "accountLabel": "221001: 2901338673/2010 FIO CZK",
+              "currency": "CHF: Švýcarský frank",
+              "balance": -217.02,
+              "includedBalance": 0.0
+            },
+            {
+              "accountCode": "221001",
+              "accountLabel": "221001: 2901338673/2010 FIO CZK",
+              "currency": "PLN: Polský zlotý",
+              "balance": -664.43,
+              "includedBalance": 0.0
+            },
+            {
+              "accountCode": "221001",
+              "accountLabel": "221001: 2901338673/2010 FIO CZK",
+              "currency": "EUR: Euro",
+              "balance": 8058.14,
+              "includedBalance": 0.0
+            },
+            {
+              "accountCode": "221001",
+              "accountLabel": "221001: 2901338673/2010 FIO CZK",
+              "currency": "USD: Americký dolar",
+              "balance": -24181.01,
+              "includedBalance": 0.0
+            }
+          ]
+        }
       },
       "reportExport": {
-        "status": "error",
-        "message": "ABRA report Výkaz hospodaření za měsíc se nepodařilo stáhnout (<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1081)>)."
+        "status": "live",
+        "message": "Report Výkaz hospodaření za měsíc se tahá přímo z ABRA report endpointu."
       }
     },
     "wpj": {

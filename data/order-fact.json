@@ -80393,10 +80393,10 @@
       "code": "261276512",
       "dateCreated": "2026-05-05T17:09:23+02:00",
       "cancelled": false,
-      "isPaid": false,
+      "isPaid": true,
       "status": {
-        "id": 0,
-        "name": "nová"
+        "id": 1,
+        "name": "přijatá"
       },
       "totalPrice": {
         "withVat": 1230,
@@ -80435,6 +80435,30 @@
         {
           "adminId": null,
           "comment": "[FlexiBee] Objednávka byla nahrána do FlexiBee; ID: 665221"
+        },
+        {
+          "adminId": null,
+          "comment": "Modul FioBank - příchozí platba č. 27619661353. Komentář plátce: LUKASKOVA PETRA."
+        },
+        {
+          "adminId": null,
+          "comment": "<p>Dobré zprávy: Úhrada vaší objednávky 261276512 právě dorazila. Než dočtete tento e-mail, pustíme se do práce na expedici vaší objednávky tak, aby vám dorazila co nejdříve.</p><p>Těšíte se? 😍</p><div></div>"
+        },
+        {
+          "adminId": null,
+          "comment": "[4PX] Objednávka byla vytvořena; ID: OC149400632605060345 tracking: 601112264921 účet: CZ"
+        },
+        {
+          "adminId": null,
+          "comment": null
+        },
+        {
+          "adminId": null,
+          "comment": "[FlexiBee] Objednávka byla ve FlexiBee zaktualizována"
+        },
+        {
+          "adminId": null,
+          "comment": "[Flexi] Objednávka byla realizována ve Flexi;"
         }
       ],
       "deliveryType": {
@@ -141224,9 +141248,24 @@
   ],
   "historicalWindow": {
     "from": "2025-01-01T00:00:00+01:00",
-    "to": "2026-05-06T00:56:11.661671+02:00"
+    "to": "2026-05-06T01:27:21.639341+02:00"
   },
   "historicalOrdersSample": [
+    {
+      "id": 3610689,
+      "code": "261276939",
+      "dateCreated": "2026-05-06T01:11:17+02:00",
+      "customerKey": "email:jburianova@email.cz",
+      "customerLabel": "Jana Burianová",
+      "email": "jburianova@email.cz",
+      "countryCode": "CZ",
+      "sourceName": "E-shop",
+      "statusName": "přijatá",
+      "cancelled": false,
+      "problematic": false,
+      "isPaid": true,
+      "revenueWithVat": 1152.0
+    },
     {
       "id": 3610688,
       "code": "261276938",
@@ -142711,36 +142750,21 @@
       "problematic": false,
       "isPaid": true,
       "revenueWithVat": 3235.0
-    },
-    {
-      "id": 3610577,
-      "code": "261276839",
-      "dateCreated": "2026-05-05T21:39:04+02:00",
-      "customerKey": "email:senkova.luccie@gmail.com",
-      "customerLabel": "Lucie Šenková",
-      "email": "senkova.luccie@gmail.com",
-      "countryCode": "CZ",
-      "sourceName": "E-shop",
-      "statusName": "přijatá",
-      "cancelled": false,
-      "problematic": false,
-      "isPaid": true,
-      "revenueWithVat": 1009.0
     }
   ],
   "summary": {
-    "orders": 195341,
-    "nonCancelledOrders": 189526,
+    "orders": 195342,
+    "nonCancelledOrders": 189527,
     "cancelledOrders": 5815,
     "problematicOrders": 5917,
     "cancelledRatePct": 2.98,
     "problematicRatePct": 3.03,
-    "estimatedNetRevenueAfterCancellations": 293517254.41,
-    "grossRevenueWithVat": 302532729.76,
+    "estimatedNetRevenueAfterCancellations": 293518372.08,
+    "grossRevenueWithVat": 302533881.76,
     "qualityLabel": "healthy",
     "window": {
       "from": "2025-01-01T00:00:00+01:00",
-      "to": "2026-05-06T00:56:11.661671+02:00"
+      "to": "2026-05-06T01:27:21.639341+02:00"
     }
   }
 }
