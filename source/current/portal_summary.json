@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-08T07:27:21.431596+02:00",
+  "generatedAt": "2026-05-08T09:18:23.799674+02:00",
   "config": {
     "warehouseCode": "CZPRGA",
     "outboundMaxPages": 20,
@@ -14,8 +14,8 @@
       "label": "CZ",
       "inventory": {
         "items": 774,
-        "availableStockTotal": 295119,
-        "pendingStockTotal": 4449,
+        "availableStockTotal": 294767,
+        "pendingStockTotal": 4801,
         "freezeStockTotal": 0,
         "lowStockItems": 100
       },
@@ -23,16 +23,16 @@
         "items": 600,
         "scannedPages": 6,
         "topLogisticsProduct": "F1401",
-        "oldestTimestamp": "2026-05-06T21:15:06+02:00",
-        "newestTimestamp": "2026-05-08T07:10:03+02:00"
+        "oldestTimestamp": "2026-05-06T22:10:07+02:00",
+        "newestTimestamp": "2026-05-08T09:10:03+02:00"
       }
     },
     "sk": {
       "label": "SK",
       "inventory": {
         "items": 626,
-        "availableStockTotal": 66140,
-        "pendingStockTotal": 530,
+        "availableStockTotal": 66100,
+        "pendingStockTotal": 570,
         "freezeStockTotal": 0,
         "lowStockItems": 100
       },
@@ -40,8 +40,8 @@
         "items": 100,
         "scannedPages": 1,
         "topLogisticsProduct": "F1403",
-        "oldestTimestamp": "2026-05-06T15:50:15+02:00",
-        "newestTimestamp": "2026-05-08T06:50:13+02:00"
+        "oldestTimestamp": "2026-05-06T16:05:12+02:00",
+        "newestTimestamp": "2026-05-08T08:50:17+02:00"
       }
     }
   },
@@ -51,18 +51,18 @@
     "orders": 655,
     "revenueWithVat": 953682.04,
     "averageOrderValue": 1456.0,
-    "problematicOrders": 1
+    "problematicOrders": 2
   },
   "report": {
     "date": "2026-05-07",
     "shipments": 612,
     "alerts": [
-      "1 problematických nebo stornovaných objednávek.",
+      "2 problematických nebo stornovaných objednávek.",
       "10 skladových pozic je v mínusu.",
       "V top expiracích je aspoň jedna položka do 30 dnů."
     ],
     "priorities": [
-      "Projít 1 problematických nebo stornovaných objednávek z včerejška.",
+      "Projít 2 problematických nebo stornovaných objednávek z včerejška.",
       "Projít nejbližší expirace v 4PX a rozhodnout o doprodeji nebo přesunu zásoby."
     ]
   },
@@ -76,7 +76,7 @@
     "pairedProducts": 396,
     "onlyInWpj": 1473,
     "onlyIn4px": 1,
-    "stockMismatch": 665,
+    "stockMismatch": 669,
     "lowAfterSales": 4,
     "manualMapped4pxAliases": 0,
     "autoMapped4pxAliases": 73
@@ -87,29 +87,29 @@
     "message": "Měsíční finance se tahají přímo z ABRA reportu Výkaz hospodaření za měsíc za všechna střediska. Cash a závazky jsou také live z ABRA API.",
     "currentMonth": {
       "label": "5/2026",
-      "revenue": 3518517.93,
-      "cogsAndFees": 2535476.37,
+      "revenue": 3549546.49,
+      "cogsAndFees": 2559322.86,
       "logistics": 1620.5,
       "marketing": 2479.34,
       "opex": 36449.46,
       "depreciation": 385502.0,
       "other": 0.02,
-      "grossMargin": 983041.56,
-      "afterLogistics": 981421.06,
-      "afterMarketing": 978941.72,
-      "operatingMargin": 942492.26,
-      "ebit": 556990.26,
-      "profit": 556990.28,
+      "grossMargin": 990223.63,
+      "afterLogistics": 988603.13,
+      "afterMarketing": 986123.79,
+      "operatingMargin": 949674.33,
+      "ebit": 564172.33,
+      "profit": 564172.35,
       "grossMarginPct": 27.9,
       "marketingPct": 0.1,
       "logisticsPct": 0.0,
       "operatingMarginPct": 26.8,
-      "profitPct": 15.8
+      "profitPct": 15.9
     },
     "cash": {
-      "cashOnAccounts": 9112928.54,
+      "cashOnAccounts": 9122461.54,
       "unpaidInvoices": 970486.16,
-      "netCashPosition": 8142442.38,
+      "netCashPosition": 8151975.38,
       "overdueInvoicesCount": 2,
       "overdueInvoicesAmount": 182738.23,
       "largestPayables": [
@@ -200,8 +200,8 @@
             "accountCode": "221001",
             "accountLabel": "221001: 2901338673/2010 FIO CZK",
             "currency": "CZK: Česká koruna",
-            "balance": 2069945.52,
-            "includedBalance": 2069945.52
+            "balance": 2079478.52,
+            "includedBalance": 2079478.52
           },
           {
             "accountCode": "221111",
@@ -367,7 +367,7 @@
       "performanceSpend": 2479.34,
       "brandSpend": 0.0,
       "totalSpend": 2479.34,
-      "revenue": 3518517.93,
+      "revenue": 3549546.49,
       "spendShareOfRevenuePct": 0.1
     },
     "topSupplier": null
