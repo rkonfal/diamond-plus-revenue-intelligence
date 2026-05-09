@@ -11926,10 +11926,10 @@
       "code": "261278280",
       "dateCreated": "2026-05-08T19:12:50+02:00",
       "cancelled": false,
-      "isPaid": false,
+      "isPaid": true,
       "status": {
-        "id": 0,
-        "name": "nová"
+        "id": 8,
+        "name": "chyba"
       },
       "totalPrice": {
         "withVat": 161.35,
@@ -11968,6 +11968,38 @@
         {
           "adminId": null,
           "comment": "[FlexiBee] Objednávka byla nahrána do FlexiBee; ID: 666987"
+        },
+        {
+          "adminId": null,
+          "comment": "Modul FioBank - příchozí platba č. 27624553001. Komentář plátce: Katarina Mackova."
+        },
+        {
+          "adminId": null,
+          "comment": "<p>Dobré správy: Úhrada vašej objedávky 261278280 práve dorazila. Okamžite sme u nás teda vyhlásili expedičný poplach. Práve teraz si svalnatí, opálení a usmievaví kolegovia obliekajú kombinézy, nasadzujú prilby a štartujú motory. A akonáhle dočítate tento email, pustí sa do práce na expedícii vašej objednávky tak, aby vám dorazila čo najskôr. Tešíte sa? 😍</p>\n\n<div></div>"
+        },
+        {
+          "adminId": null,
+          "comment": "[4PX] Objednávka byla vytvořena; ID: OC149400622605090013 tracking: 601112395288 účet: SK"
+        },
+        {
+          "adminId": null,
+          "comment": null
+        },
+        {
+          "adminId": null,
+          "comment": "[Flexi] Objednávku se nepodařilo realizovat - \"ERROR: Z důvodu neuhrazení poplatku za používání ABRA Flexi po 01.05.2026 je služba přístupná pouze pro čtení. Na Vašem zákaznickém odkazu naleznete vše potřebné včetně přehledu všech dokladů: http://www.flexibee.eu/licence/info/premium-47000/e9ed4c8182/ Pokud nedojde k úhradě, bude od 02.06.2026 služba nedostupná. V případě nejasností kontaktujte, prosím, obchodní oddělení ABRA Flexi\""
+        },
+        {
+          "adminId": null,
+          "comment": "[FlexiBee] Došlo k opakovanému problému se synchronizací objednávky, zkontrolujte Activity log"
+        },
+        {
+          "adminId": null,
+          "comment": null
+        },
+        {
+          "adminId": null,
+          "comment": "[Flexi] Objednávku se nepodařilo realizovat z důvodu opakované chyby - \"ERROR: Z důvodu neuhrazení poplatku za používání ABRA Flexi po 01.05.2026 je služba přístupná pouze pro čtení. Na Vašem zákaznickém odkazu naleznete vše potřebné včetně přehledu všech dokladů: http://www.flexibee.eu/licence/info/premium-47000/e9ed4c8182/ Pokud nedojde k úhradě, bude od 02.06.2026 služba nedostupná. V případě nejasností kontaktujte, prosím, obchodní oddělení ABRA Flexi\""
         }
       ],
       "deliveryType": {
@@ -44031,9 +44063,144 @@
   ],
   "historicalWindow": {
     "from": "2025-01-01T00:00:00+01:00",
-    "to": "2026-05-09T10:16:57.309701+02:00"
+    "to": "2026-05-09T11:30:02.818308+02:00"
   },
   "historicalOrdersSample": [
+    {
+      "id": 3612193,
+      "code": "261278381",
+      "dateCreated": "2026-05-09T11:29:33+02:00",
+      "customerKey": "email:mutlova.ilona@seznam.cz",
+      "customerLabel": "Ilona Mutlová",
+      "email": "mutlova.ilona@seznam.cz",
+      "countryCode": "CZ",
+      "sourceName": "E-shop",
+      "statusName": "přijatá",
+      "cancelled": false,
+      "problematic": false,
+      "isPaid": true,
+      "revenueWithVat": 2256.0
+    },
+    {
+      "id": 3612192,
+      "code": "261278380",
+      "dateCreated": "2026-05-09T11:14:06+02:00",
+      "customerKey": "email:janinazajickova@email.cz",
+      "customerLabel": "Z-BOX (Jana Zajíčková)",
+      "email": "janinazajickova@email.cz",
+      "countryCode": "CZ",
+      "sourceName": "E-shop",
+      "statusName": "nová",
+      "cancelled": false,
+      "problematic": false,
+      "isPaid": false,
+      "revenueWithVat": 332.0
+    },
+    {
+      "id": 3612191,
+      "code": "261278379",
+      "dateCreated": "2026-05-09T11:10:26+02:00",
+      "customerKey": "email:eva.sykorkova@gmail.com",
+      "customerLabel": "GSM Centrum (Eva Sýkorková)",
+      "email": "eva.sykorkova@gmail.com",
+      "countryCode": "SK",
+      "sourceName": "E-shop",
+      "statusName": "přijatá",
+      "cancelled": false,
+      "problematic": false,
+      "isPaid": true,
+      "revenueWithVat": 1122.16
+    },
+    {
+      "id": 3612189,
+      "code": "261278378",
+      "dateCreated": "2026-05-09T10:58:15+02:00",
+      "customerKey": "email:ivetalaura24@seznam.cz",
+      "customerLabel": "Iveta Beránková",
+      "email": "ivetalaura24@seznam.cz",
+      "countryCode": "CZ",
+      "sourceName": "E-shop",
+      "statusName": "přijatá",
+      "cancelled": false,
+      "problematic": false,
+      "isPaid": false,
+      "revenueWithVat": 1818.0
+    },
+    {
+      "id": 3612188,
+      "code": "261278377",
+      "dateCreated": "2026-05-09T10:55:15+02:00",
+      "customerKey": "email:r.smetanova@centrum.cz",
+      "customerLabel": "Z-BOX (Renata Smetanová)",
+      "email": "r.smetanova@centrum.cz",
+      "countryCode": "CZ",
+      "sourceName": "E-shop",
+      "statusName": "přijatá",
+      "cancelled": false,
+      "problematic": false,
+      "isPaid": true,
+      "revenueWithVat": 1211.0
+    },
+    {
+      "id": 3612187,
+      "code": "261278376",
+      "dateCreated": "2026-05-09T10:34:18+02:00",
+      "customerKey": "email:stefani2612@gmail.com",
+      "customerLabel": "Topánky LIBRA (Štefánia Patašiová)",
+      "email": "stefani2612@gmail.com",
+      "countryCode": "SK",
+      "sourceName": "E-shop",
+      "statusName": "chyba",
+      "cancelled": false,
+      "problematic": true,
+      "isPaid": true,
+      "revenueWithVat": 1788.91
+    },
+    {
+      "id": 3612186,
+      "code": "261278375",
+      "dateCreated": "2026-05-09T10:31:46+02:00",
+      "customerKey": "email:gjar@seznam.cz",
+      "customerLabel": "Jarmila Gelová",
+      "email": "gjar@seznam.cz",
+      "countryCode": "CZ",
+      "sourceName": "E-shop",
+      "statusName": "chyba",
+      "cancelled": false,
+      "problematic": true,
+      "isPaid": false,
+      "revenueWithVat": 1625.0
+    },
+    {
+      "id": 3612185,
+      "code": "261278374",
+      "dateCreated": "2026-05-09T10:22:50+02:00",
+      "customerKey": "email:maki.jirova@seznam.cz",
+      "customerLabel": "Markéta Jírová",
+      "email": "maki.jirova@seznam.cz",
+      "countryCode": "CZ",
+      "sourceName": "E-shop",
+      "statusName": "chyba",
+      "cancelled": false,
+      "problematic": true,
+      "isPaid": true,
+      "revenueWithVat": 744.0
+    },
+    {
+      "id": 3612184,
+      "code": "261278373",
+      "dateCreated": "2026-05-09T10:21:16+02:00",
+      "customerKey": "email:linhartova.pet@gmail.com",
+      "customerLabel": "Petra Linhartová",
+      "email": "linhartova.pet@gmail.com",
+      "countryCode": "CZ",
+      "sourceName": "E-shop",
+      "statusName": "chyba",
+      "cancelled": false,
+      "problematic": true,
+      "isPaid": true,
+      "revenueWithVat": 1281.0
+    },
     {
       "id": 3612183,
       "code": "261278372",
@@ -44043,9 +44210,9 @@
       "email": "44.sl@seznam.cz",
       "countryCode": "CZ",
       "sourceName": "E-shop",
-      "statusName": "přijatá",
+      "statusName": "chyba",
       "cancelled": false,
-      "problematic": false,
+      "problematic": true,
       "isPaid": false,
       "revenueWithVat": 2092.0
     },
@@ -44058,9 +44225,9 @@
       "email": "zlatkapazoutova@seznam.cz",
       "countryCode": "CZ",
       "sourceName": "E-shop",
-      "statusName": "přijatá",
+      "statusName": "chyba",
       "cancelled": false,
-      "problematic": false,
+      "problematic": true,
       "isPaid": true,
       "revenueWithVat": 1621.0
     },
@@ -44073,9 +44240,9 @@
       "email": "m.mastalkova@seznam.cz",
       "countryCode": "CZ",
       "sourceName": "E-shop",
-      "statusName": "přijatá",
+      "statusName": "chyba",
       "cancelled": false,
-      "problematic": false,
+      "problematic": true,
       "isPaid": true,
       "revenueWithVat": 1601.0
     },
@@ -44088,9 +44255,9 @@
       "email": "marieconkova@seznam.cz",
       "countryCode": "CZ",
       "sourceName": "E-shop",
-      "statusName": "přijatá",
+      "statusName": "chyba",
       "cancelled": false,
-      "problematic": false,
+      "problematic": true,
       "isPaid": false,
       "revenueWithVat": 3604.0
     },
@@ -44103,9 +44270,9 @@
       "email": "jednotac@seznam.cz",
       "countryCode": "CZ",
       "sourceName": "E-shop",
-      "statusName": "přijatá",
+      "statusName": "chyba",
       "cancelled": false,
-      "problematic": false,
+      "problematic": true,
       "isPaid": false,
       "revenueWithVat": 1360.0
     },
@@ -44118,9 +44285,9 @@
       "email": "duchonova.olga@seznam.cz",
       "countryCode": "CZ",
       "sourceName": "E-shop",
-      "statusName": "nová",
+      "statusName": "chyba",
       "cancelled": false,
-      "problematic": false,
+      "problematic": true,
       "isPaid": false,
       "revenueWithVat": 690.0
     },
@@ -44133,9 +44300,9 @@
       "email": "zdenakrenkova@seznam.cz",
       "countryCode": "CZ",
       "sourceName": "E-shop",
-      "statusName": "přijatá",
+      "statusName": "chyba",
       "cancelled": false,
-      "problematic": false,
+      "problematic": true,
       "isPaid": true,
       "revenueWithVat": 1096.0
     },
@@ -44148,9 +44315,9 @@
       "email": "klarka.hanysova@gmail.com",
       "countryCode": "CZ",
       "sourceName": "E-shop",
-      "statusName": "přijatá",
+      "statusName": "chyba",
       "cancelled": false,
-      "problematic": false,
+      "problematic": true,
       "isPaid": true,
       "revenueWithVat": 1627.0
     },
@@ -44163,9 +44330,9 @@
       "email": "madga1@seznam.cz",
       "countryCode": "CZ",
       "sourceName": "E-shop",
-      "statusName": "přijatá",
+      "statusName": "chyba",
       "cancelled": false,
-      "problematic": false,
+      "problematic": true,
       "isPaid": true,
       "revenueWithVat": 1676.0
     },
@@ -44286,7 +44453,7 @@
       "statusName": "chyba",
       "cancelled": false,
       "problematic": true,
-      "isPaid": false,
+      "isPaid": true,
       "revenueWithVat": 1638.0
     },
     {
@@ -45398,156 +45565,21 @@
       "problematic": false,
       "isPaid": false,
       "revenueWithVat": 482.0
-    },
-    {
-      "id": 3612090,
-      "code": "261278281",
-      "dateCreated": "2026-05-08T19:14:20+02:00",
-      "customerKey": "email:sesedlackova@seznam.cz",
-      "customerLabel": "Eva Sedláčková",
-      "email": "sesedlackova@seznam.cz",
-      "countryCode": "CZ",
-      "sourceName": "E-shop",
-      "statusName": "přijatá",
-      "cancelled": false,
-      "problematic": false,
-      "isPaid": false,
-      "revenueWithVat": 1804.0
-    },
-    {
-      "id": 3612089,
-      "code": "261278280",
-      "dateCreated": "2026-05-08T19:12:50+02:00",
-      "customerKey": "email:katarinka.mackova@gmail.com",
-      "customerLabel": "Katarína Macková",
-      "email": "katarinka.mackova@gmail.com",
-      "countryCode": "SK",
-      "sourceName": "E-shop",
-      "statusName": "nová",
-      "cancelled": false,
-      "problematic": false,
-      "isPaid": false,
-      "revenueWithVat": 4400.01
-    },
-    {
-      "id": 3612088,
-      "code": "261278279",
-      "dateCreated": "2026-05-08T19:09:23+02:00",
-      "customerKey": "email:mtrajerova@seznam.cz",
-      "customerLabel": "Makovice - látky galanterie (Miroslava Trajerová)",
-      "email": "mtrajerova@seznam.cz",
-      "countryCode": "CZ",
-      "sourceName": "E-shop",
-      "statusName": "přijatá",
-      "cancelled": false,
-      "problematic": false,
-      "isPaid": true,
-      "revenueWithVat": 2575.0
-    },
-    {
-      "id": 3612087,
-      "code": "261278278",
-      "dateCreated": "2026-05-08T18:54:18+02:00",
-      "customerKey": "email:martin.dr1@seznam.cz",
-      "customerLabel": "Martin Drož",
-      "email": "martin.dr1@seznam.cz",
-      "countryCode": "CZ",
-      "sourceName": "E-shop",
-      "statusName": "přijatá",
-      "cancelled": false,
-      "problematic": false,
-      "isPaid": true,
-      "revenueWithVat": 1236.0
-    },
-    {
-      "id": 3612086,
-      "code": "261278277",
-      "dateCreated": "2026-05-08T18:52:00+02:00",
-      "customerKey": "email:monikabezecna@gmail.com",
-      "customerLabel": "JC Media Computers (Monika Hlúbiková)",
-      "email": "monikabezecna@gmail.com",
-      "countryCode": "SK",
-      "sourceName": "E-shop",
-      "statusName": "přijatá",
-      "cancelled": false,
-      "problematic": false,
-      "isPaid": false,
-      "revenueWithVat": 1318.5
-    },
-    {
-      "id": 3612084,
-      "code": "261278276",
-      "dateCreated": "2026-05-08T18:38:28+02:00",
-      "customerKey": "email:marie.koncelova@seznam.cz",
-      "customerLabel": "Marie Končelová",
-      "email": "marie.koncelova@seznam.cz",
-      "countryCode": "CZ",
-      "sourceName": "E-shop",
-      "statusName": "přijatá",
-      "cancelled": false,
-      "problematic": false,
-      "isPaid": true,
-      "revenueWithVat": 2505.0
-    },
-    {
-      "id": 3612083,
-      "code": "261278275",
-      "dateCreated": "2026-05-08T18:27:06+02:00",
-      "customerKey": "email:stranskaajus@seznam.cz",
-      "customerLabel": "Z-BOX (Alice Stránská)",
-      "email": "stranskaajus@seznam.cz",
-      "countryCode": "CZ",
-      "sourceName": "E-shop",
-      "statusName": "přijatá",
-      "cancelled": false,
-      "problematic": false,
-      "isPaid": true,
-      "revenueWithVat": 3625.0
-    },
-    {
-      "id": 3612082,
-      "code": "261278274",
-      "dateCreated": "2026-05-08T18:24:06+02:00",
-      "customerKey": "email:ivana.kestova@seznam.cz",
-      "customerLabel": "Ivana Kestová",
-      "email": "ivana.kestova@seznam.cz",
-      "countryCode": "CZ",
-      "sourceName": "E-shop",
-      "statusName": "nová",
-      "cancelled": false,
-      "problematic": false,
-      "isPaid": false,
-      "revenueWithVat": 3814.0
-    },
-    {
-      "id": 3612081,
-      "code": "261278273",
-      "dateCreated": "2026-05-08T18:23:36+02:00",
-      "customerKey": "email:zdenka.smrtkova@centrum.cz",
-      "customerLabel": "Zdenka Smrtková",
-      "email": "zdenka.smrtkova@centrum.cz",
-      "countryCode": "CZ",
-      "sourceName": "E-shop",
-      "statusName": "nová",
-      "cancelled": false,
-      "problematic": false,
-      "isPaid": false,
-      "revenueWithVat": 1055.0
     }
   ],
   "summary": {
-    "orders": 196775,
-    "nonCancelledOrders": 190931,
+    "orders": 196784,
+    "nonCancelledOrders": 190940,
     "cancelledOrders": 5844,
-    "problematicOrders": 5973,
+    "problematicOrders": 5989,
     "cancelledRatePct": 2.97,
     "problematicRatePct": 3.04,
-    "estimatedNetRevenueAfterCancellations": 295669200.66,
-    "grossRevenueWithVat": 304719365.83,
+    "estimatedNetRevenueAfterCancellations": 295681017.05,
+    "grossRevenueWithVat": 304731543.9,
     "qualityLabel": "healthy",
     "window": {
       "from": "2025-01-01T00:00:00+01:00",
-      "to": "2026-05-09T10:16:57.309701+02:00"
+      "to": "2026-05-09T11:30:02.818308+02:00"
     }
   }
 }
