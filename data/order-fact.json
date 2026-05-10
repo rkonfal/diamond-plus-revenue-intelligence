@@ -35578,9 +35578,39 @@
   ],
   "historicalWindow": {
     "from": "2025-01-01T00:00:00+01:00",
-    "to": "2026-05-10T01:18:45.407559+02:00"
+    "to": "2026-05-10T05:54:37.253104+02:00"
   },
   "historicalOrdersSample": [
+    {
+      "id": 3612345,
+      "code": "261278523",
+      "dateCreated": "2026-05-10T05:20:26+02:00",
+      "customerKey": "email:zychovamartina@seznam.cz",
+      "customerLabel": "Martina Zychová",
+      "email": "zychovamartina@seznam.cz",
+      "countryCode": "CZ",
+      "sourceName": "E-shop",
+      "statusName": "přijatá",
+      "cancelled": false,
+      "problematic": false,
+      "isPaid": true,
+      "revenueWithVat": 1985.0
+    },
+    {
+      "id": 3612344,
+      "code": "261278522",
+      "dateCreated": "2026-05-10T01:28:39+02:00",
+      "customerKey": "email:monzem@email.cz",
+      "customerLabel": "monika zemanová",
+      "email": "monzem@email.cz",
+      "countryCode": "CZ",
+      "sourceName": "E-shop",
+      "statusName": "chyba",
+      "cancelled": false,
+      "problematic": true,
+      "isPaid": true,
+      "revenueWithVat": 1692.0
+    },
     {
       "id": 3612343,
       "code": "261278521",
@@ -35590,9 +35620,9 @@
       "email": "morskavila91@email.cz",
       "countryCode": "CZ",
       "sourceName": "E-shop",
-      "statusName": "přijatá",
+      "statusName": "chyba",
       "cancelled": false,
-      "problematic": false,
+      "problematic": true,
       "isPaid": true,
       "revenueWithVat": 1576.0
     },
@@ -37050,51 +37080,21 @@
       "problematic": true,
       "isPaid": true,
       "revenueWithVat": 1637.0
-    },
-    {
-      "id": 3612237,
-      "code": "261278423",
-      "dateCreated": "2026-05-09T15:48:36+02:00",
-      "customerKey": "email:jana.kostalova@email.cz",
-      "customerLabel": "Jana Košťálová",
-      "email": "jana.kostalova@email.cz",
-      "countryCode": "CZ",
-      "sourceName": "E-shop",
-      "statusName": "chyba",
-      "cancelled": false,
-      "problematic": true,
-      "isPaid": true,
-      "revenueWithVat": 376.0
-    },
-    {
-      "id": 3612236,
-      "code": "261278422",
-      "dateCreated": "2026-05-09T15:39:54+02:00",
-      "customerKey": "email:gabika.andelova@gmail.com",
-      "customerLabel": "Kuchynka - Domáce potreby (Gabriela Andelová)",
-      "email": "gabika.andelova@gmail.com",
-      "countryCode": "SK",
-      "sourceName": "E-shop",
-      "statusName": "chyba",
-      "cancelled": false,
-      "problematic": true,
-      "isPaid": true,
-      "revenueWithVat": 1172.61
     }
   ],
   "summary": {
-    "orders": 196924,
-    "nonCancelledOrders": 191074,
+    "orders": 196926,
+    "nonCancelledOrders": 191076,
     "cancelledOrders": 5850,
-    "problematicOrders": 6147,
+    "problematicOrders": 6149,
     "cancelledRatePct": 2.97,
     "problematicRatePct": 3.12,
-    "estimatedNetRevenueAfterCancellations": 295907229.01,
-    "grossRevenueWithVat": 304964680.01,
+    "estimatedNetRevenueAfterCancellations": 295910796.81,
+    "grossRevenueWithVat": 304968357.01,
     "qualityLabel": "healthy",
     "window": {
       "from": "2025-01-01T00:00:00+01:00",
-      "to": "2026-05-10T01:18:45.407559+02:00"
+      "to": "2026-05-10T05:54:37.253104+02:00"
     }
   }
 }

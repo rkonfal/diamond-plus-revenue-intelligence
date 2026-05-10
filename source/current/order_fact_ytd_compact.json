@@ -1,17 +1,47 @@
 {
-  "generatedAt": "2026-05-10T01:18:45.407559+02:00",
+  "generatedAt": "2026-05-10T05:54:37.253104+02:00",
   "window": {
     "from": "2025-01-01T00:00:00+01:00",
-    "to": "2026-05-10T01:18:45.407559+02:00"
+    "to": "2026-05-10T05:54:37.253104+02:00"
   },
   "summary": {
-    "orders": 196924,
-    "nonCancelledOrders": 191074,
-    "problematicOrders": 6147,
+    "orders": 196926,
+    "nonCancelledOrders": 191076,
+    "problematicOrders": 6149,
     "cancelledOrders": 5850,
-    "revenueWithVat": 304964680.01
+    "revenueWithVat": 304968357.01
   },
   "orders": [
+    {
+      "id": 3612345,
+      "code": "261278523",
+      "dateCreated": "2026-05-10T05:20:26+02:00",
+      "customerKey": "email:zychovamartina@seznam.cz",
+      "customerLabel": "Martina Zychová",
+      "email": "zychovamartina@seznam.cz",
+      "countryCode": "CZ",
+      "sourceName": "E-shop",
+      "statusName": "přijatá",
+      "cancelled": false,
+      "problematic": false,
+      "isPaid": true,
+      "revenueWithVat": 1985.0
+    },
+    {
+      "id": 3612344,
+      "code": "261278522",
+      "dateCreated": "2026-05-10T01:28:39+02:00",
+      "customerKey": "email:monzem@email.cz",
+      "customerLabel": "monika zemanová",
+      "email": "monzem@email.cz",
+      "countryCode": "CZ",
+      "sourceName": "E-shop",
+      "statusName": "chyba",
+      "cancelled": false,
+      "problematic": true,
+      "isPaid": true,
+      "revenueWithVat": 1692.0
+    },
     {
       "id": 3612343,
       "code": "261278521",
@@ -21,9 +51,9 @@
       "email": "morskavila91@email.cz",
       "countryCode": "CZ",
       "sourceName": "E-shop",
-      "statusName": "přijatá",
+      "statusName": "chyba",
       "cancelled": false,
-      "problematic": false,
+      "problematic": true,
       "isPaid": true,
       "revenueWithVat": 1576.0
     },
@@ -3731,36 +3761,6 @@
       "problematic": false,
       "isPaid": false,
       "revenueWithVat": 3814.0
-    },
-    {
-      "id": 3612081,
-      "code": "261278273",
-      "dateCreated": "2026-05-08T18:23:36+02:00",
-      "customerKey": "email:zdenka.smrtkova@centrum.cz",
-      "customerLabel": "Zdenka Smrtková",
-      "email": "zdenka.smrtkova@centrum.cz",
-      "countryCode": "CZ",
-      "sourceName": "E-shop",
-      "statusName": "nová",
-      "cancelled": false,
-      "problematic": false,
-      "isPaid": false,
-      "revenueWithVat": 1055.0
-    },
-    {
-      "id": 3612080,
-      "code": "261278272",
-      "dateCreated": "2026-05-08T18:08:42+02:00",
-      "customerKey": "email:chudobovai@seznam.cz",
-      "customerLabel": "Ivana Chudobová",
-      "email": "chudobovai@seznam.cz",
-      "countryCode": "CZ",
-      "sourceName": "E-shop",
-      "statusName": "nová",
-      "cancelled": false,
-      "problematic": false,
-      "isPaid": false,
-      "revenueWithVat": 1670.0
     }
   ]
 }
