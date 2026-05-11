@@ -12,8 +12,8 @@
       "cancelled": false,
       "isPaid": true,
       "status": {
-        "id": 1,
-        "name": "přijatá"
+        "id": 8,
+        "name": "chyba"
       },
       "totalPrice": {
         "withVat": 1957,
@@ -60,6 +60,14 @@
         {
           "adminId": null,
           "comment": "[4PX] Objednávka byla vytvořena; ID: OC149400632605110143 tracking: 601112427275 účet: CZ"
+        },
+        {
+          "adminId": null,
+          "comment": null
+        },
+        {
+          "adminId": null,
+          "comment": "[FlexiBee] Došlo k opakovanému problému se synchronizací objednávky, zkontrolujte Activity log"
         },
         {
           "adminId": null,
@@ -271,8 +279,8 @@
       "cancelled": false,
       "isPaid": false,
       "status": {
-        "id": 1,
-        "name": "přijatá"
+        "id": 8,
+        "name": "chyba"
       },
       "totalPrice": {
         "withVat": 31.4,
@@ -311,6 +319,14 @@
         {
           "adminId": null,
           "comment": "[4PX] Objednávka byla vytvořena; ID: OC149400622605110019 tracking: 601112427293 účet: SK"
+        },
+        {
+          "adminId": null,
+          "comment": null
+        },
+        {
+          "adminId": null,
+          "comment": "[FlexiBee] Došlo k opakovanému problému se synchronizací objednávky, zkontrolujte Activity log"
         },
         {
           "adminId": null,
@@ -402,8 +418,8 @@
       "cancelled": false,
       "isPaid": true,
       "status": {
-        "id": 1,
-        "name": "přijatá"
+        "id": 8,
+        "name": "chyba"
       },
       "totalPrice": {
         "withVat": 70.55,
@@ -446,6 +462,14 @@
         {
           "adminId": null,
           "comment": "[4PX] Objednávka byla vytvořena; ID: OC149400622605110018 tracking: 601112427281 účet: SK"
+        },
+        {
+          "adminId": null,
+          "comment": null
+        },
+        {
+          "adminId": null,
+          "comment": "[FlexiBee] Došlo k opakovanému problému se synchronizací objednávky, zkontrolujte Activity log"
         },
         {
           "adminId": null,
@@ -71616,9 +71640,24 @@
   ],
   "historicalWindow": {
     "from": "2025-01-01T00:00:00+01:00",
-    "to": "2026-05-11T00:13:51.084319+02:00"
+    "to": "2026-05-11T01:29:38.106892+02:00"
   },
   "historicalOrdersSample": [
+    {
+      "id": 3612702,
+      "code": "261278864",
+      "dateCreated": "2026-05-11T00:14:01+02:00",
+      "customerKey": "email:msafkova@seznam.cz",
+      "customerLabel": "Markéta Musilová",
+      "email": "msafkova@seznam.cz",
+      "countryCode": "CZ",
+      "sourceName": "E-shop",
+      "statusName": "chyba",
+      "cancelled": false,
+      "problematic": true,
+      "isPaid": true,
+      "revenueWithVat": 1614.0
+    },
     {
       "id": 3612701,
       "code": "261278863",
@@ -71628,9 +71667,9 @@
       "email": "pavlina.projslova@centrum.cz",
       "countryCode": "CZ",
       "sourceName": "E-shop",
-      "statusName": "přijatá",
+      "statusName": "chyba",
       "cancelled": false,
-      "problematic": false,
+      "problematic": true,
       "isPaid": true,
       "revenueWithVat": 1652.0
     },
@@ -71643,9 +71682,9 @@
       "email": "hankakozlova@email.cz",
       "countryCode": "CZ",
       "sourceName": "E-shop",
-      "statusName": "přijatá",
+      "statusName": "chyba",
       "cancelled": false,
-      "problematic": false,
+      "problematic": true,
       "isPaid": true,
       "revenueWithVat": 1957.0
     },
@@ -71658,9 +71697,9 @@
       "email": "noskovag737@gmail.com",
       "countryCode": "SK",
       "sourceName": "E-shop",
-      "statusName": "přijatá",
+      "statusName": "chyba",
       "cancelled": false,
-      "problematic": false,
+      "problematic": true,
       "isPaid": false,
       "revenueWithVat": 856.28
     },
@@ -71673,9 +71712,9 @@
       "email": "bibiana.smollova@gmail.com",
       "countryCode": "SK",
       "sourceName": "E-shop",
-      "statusName": "přijatá",
+      "statusName": "chyba",
       "cancelled": false,
-      "problematic": false,
+      "problematic": true,
       "isPaid": true,
       "revenueWithVat": 1923.9
     },
@@ -71688,9 +71727,9 @@
       "email": "vikapapcunova7@gmail.com",
       "countryCode": "SK",
       "sourceName": "E-shop",
-      "statusName": "přijatá",
+      "statusName": "chyba",
       "cancelled": false,
-      "problematic": false,
+      "problematic": true,
       "isPaid": true,
       "revenueWithVat": 1756.19
     },
@@ -71703,9 +71742,9 @@
       "email": "h.sotolarova@gmail.com",
       "countryCode": "CZ",
       "sourceName": "E-shop",
-      "statusName": "přijatá",
+      "statusName": "chyba",
       "cancelled": false,
-      "problematic": false,
+      "problematic": true,
       "isPaid": true,
       "revenueWithVat": 1132.0
     },
@@ -71718,9 +71757,9 @@
       "email": "radka.prach@seznam.cz",
       "countryCode": "CZ",
       "sourceName": "E-shop",
-      "statusName": "nová",
+      "statusName": "chyba",
       "cancelled": false,
-      "problematic": false,
+      "problematic": true,
       "isPaid": false,
       "revenueWithVat": 1619.0
     },
@@ -72681,7 +72720,7 @@
       "statusName": "chyba",
       "cancelled": false,
       "problematic": true,
-      "isPaid": false,
+      "isPaid": true,
       "revenueWithVat": 1087.0
     },
     {
@@ -73103,36 +73142,21 @@
       "problematic": true,
       "isPaid": true,
       "revenueWithVat": 2126.0
-    },
-    {
-      "id": 3612601,
-      "code": "261278764",
-      "dateCreated": "2026-05-10T20:38:13+02:00",
-      "customerKey": "ico:46512241",
-      "customerLabel": "PaedDr. Eva Štěpová (Eva Štěpová)",
-      "email": "eva@stepova.cz",
-      "countryCode": "CZ",
-      "sourceName": "E-shop",
-      "statusName": "chyba",
-      "cancelled": false,
-      "problematic": true,
-      "isPaid": true,
-      "revenueWithVat": 1929.0
     }
   ],
   "summary": {
-    "orders": 197266,
-    "nonCancelledOrders": 191409,
+    "orders": 197267,
+    "nonCancelledOrders": 191410,
     "cancelledOrders": 5857,
-    "problematicOrders": 6512,
+    "problematicOrders": 6520,
     "cancelledRatePct": 2.97,
-    "problematicRatePct": 3.3,
-    "estimatedNetRevenueAfterCancellations": 296491726.23,
-    "grossRevenueWithVat": 305567068.15,
+    "problematicRatePct": 3.31,
+    "estimatedNetRevenueAfterCancellations": 296493292.29,
+    "grossRevenueWithVat": 305568682.15,
     "qualityLabel": "healthy",
     "window": {
       "from": "2025-01-01T00:00:00+01:00",
-      "to": "2026-05-11T00:13:51.084319+02:00"
+      "to": "2026-05-11T01:29:38.106892+02:00"
     }
   }
 }
