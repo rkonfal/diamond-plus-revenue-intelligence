@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-11T06:14:37.841826+02:00",
+  "generatedAt": "2026-05-11T10:13:07.035310+02:00",
   "config": {
     "warehouseCode": "CZPRGA",
     "outboundMaxPages": 20,
@@ -14,25 +14,25 @@
       "label": "CZ",
       "inventory": {
         "items": 774,
-        "availableStockTotal": 290213,
-        "pendingStockTotal": 5818,
+        "availableStockTotal": 289432,
+        "pendingStockTotal": 5071,
         "freezeStockTotal": 0,
         "lowStockItems": 100
       },
       "outbound": {
-        "items": 300,
-        "scannedPages": 3,
+        "items": 400,
+        "scannedPages": 4,
         "topLogisticsProduct": "F1401",
-        "oldestTimestamp": "2026-05-09T22:50:03+02:00",
-        "newestTimestamp": "2026-05-11T06:10:04+02:00"
+        "oldestTimestamp": "2026-05-09T20:20:02+02:00",
+        "newestTimestamp": "2026-05-11T10:10:07+02:00"
       }
     },
     "sk": {
       "label": "SK",
       "inventory": {
         "items": 626,
-        "availableStockTotal": 64970,
-        "pendingStockTotal": 493,
+        "availableStockTotal": 64798,
+        "pendingStockTotal": 431,
         "freezeStockTotal": 0,
         "lowStockItems": 100
       },
@@ -40,8 +40,8 @@
         "items": 100,
         "scannedPages": 1,
         "topLogisticsProduct": "F1403",
-        "oldestTimestamp": "2026-05-07T18:50:15+02:00",
-        "newestTimestamp": "2026-05-11T00:00:17+02:00"
+        "oldestTimestamp": "2026-05-07T21:45:13+02:00",
+        "newestTimestamp": "2026-05-11T09:45:12+02:00"
       }
     }
   },
@@ -51,32 +51,32 @@
     "orders": 344,
     "revenueWithVat": 616483.14,
     "averageOrderValue": 1792.1,
-    "problematicOrders": 343
+    "problematicOrders": 340
   },
   "report": {
     "date": "2026-05-10",
     "shipments": 313,
     "alerts": [
-      "343 problematických nebo stornovaných objednávek.",
+      "340 problematických nebo stornovaných objednávek.",
       "10 skladových pozic je v mínusu.",
       "V top expiracích je aspoň jedna položka do 30 dnů."
     ],
     "priorities": [
-      "Projít 343 problematických nebo stornovaných objednávek z včerejška.",
+      "Projít 340 problematických nebo stornovaných objednávek z včerejška.",
       "Projít nejbližší expirace v 4PX a rozhodnout o doprodeji nebo přesunu zásoby."
     ]
   },
   "expiries": {
-    "datedSkuCount": 626,
-    "czSkuCount": 324,
+    "datedSkuCount": 625,
+    "czSkuCount": 323,
     "skSkuCount": 302
   },
   "pairing": {
-    "allCodes": 2935,
+    "allCodes": 2939,
     "pairedProducts": 398,
-    "onlyInWpj": 1472,
+    "onlyInWpj": 1475,
     "onlyIn4px": 1,
-    "stockMismatch": 670,
+    "stockMismatch": 672,
     "lowAfterSales": 3,
     "manualMapped4pxAliases": 0,
     "autoMapped4pxAliases": 73
@@ -87,29 +87,29 @@
     "message": "Měsíční finance se tahají přímo z ABRA reportu Výkaz hospodaření za měsíc za všechna střediska. Cash a závazky jsou také live z ABRA API.",
     "currentMonth": {
       "label": "5/2026",
-      "revenue": 3733036.01,
-      "cogsAndFees": 2695672.38,
+      "revenue": 3796927.98,
+      "cogsAndFees": 2748873.0,
       "logistics": 1620.5,
       "marketing": 2479.34,
       "opex": 36449.46,
       "depreciation": 385502.0,
-      "other": 0.02,
-      "grossMargin": 1037363.63,
-      "afterLogistics": 1035743.13,
-      "afterMarketing": 1033263.79,
-      "operatingMargin": 996814.33,
-      "ebit": 611312.33,
-      "profit": 611312.35,
-      "grossMarginPct": 27.8,
+      "other": -33.22,
+      "grossMargin": 1048054.98,
+      "afterLogistics": 1046434.48,
+      "afterMarketing": 1043955.14,
+      "operatingMargin": 1007505.68,
+      "ebit": 622003.68,
+      "profit": 621970.46,
+      "grossMarginPct": 27.6,
       "marketingPct": 0.1,
       "logisticsPct": 0.0,
-      "operatingMarginPct": 26.7,
+      "operatingMarginPct": 26.5,
       "profitPct": 16.4
     },
     "cash": {
-      "cashOnAccounts": 9226835.85,
+      "cashOnAccounts": 9400873.23,
       "unpaidInvoices": 970486.16,
-      "netCashPosition": 8256349.69,
+      "netCashPosition": 8430387.07,
       "overdueInvoicesCount": 2,
       "overdueInvoicesAmount": 182738.23,
       "largestPayables": [
@@ -186,8 +186,8 @@
             "accountCode": "221115",
             "accountLabel": "221115: 131-3675980207/0100 KB CZK",
             "currency": "CZK: Česká koruna",
-            "balance": 2849649.38,
-            "includedBalance": 2849649.38
+            "balance": 2983103.38,
+            "includedBalance": 2983103.38
           },
           {
             "accountCode": "221006",
@@ -200,8 +200,8 @@
             "accountCode": "221001",
             "accountLabel": "221001: 2901338673/2010 FIO CZK",
             "currency": "CZK: Česká koruna",
-            "balance": 2171588.52,
-            "includedBalance": 2171588.52
+            "balance": 2200172.52,
+            "includedBalance": 2200172.52
           },
           {
             "accountCode": "221111",
@@ -214,8 +214,8 @@
             "accountCode": "221002",
             "accountLabel": "221002: 131-1211280297/0100 KB EUR",
             "currency": "CZK: Česká koruna",
-            "balance": 538946.35,
-            "includedBalance": 538946.35
+            "balance": 550945.73,
+            "includedBalance": 550945.73
           },
           {
             "accountCode": "221005",
@@ -367,7 +367,7 @@
       "performanceSpend": 2479.34,
       "brandSpend": 0.0,
       "totalSpend": 2479.34,
-      "revenue": 3733036.01,
+      "revenue": 3796927.98,
       "spendShareOfRevenuePct": 0.1
     },
     "topSupplier": null
