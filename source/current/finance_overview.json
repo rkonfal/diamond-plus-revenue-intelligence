@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-12T16:53:37.720941+02:00",
+  "generatedAt": "2026-05-12T19:08:30.647437+02:00",
   "source": {
     "status": "live_report",
     "message": "Měsíční finance se tahají přímo z ABRA reportu Výkaz hospodaření za měsíc za všechna střediska. Cash a závazky jsou také live z ABRA API."
@@ -98,46 +98,46 @@
     },
     {
       "label": "5/2026",
-      "revenue": 4581842.35,
-      "cogsAndFees": 3339196.12,
+      "revenue": 4680300.22,
+      "cogsAndFees": 3414040.94,
       "logistics": 21425.58,
       "marketing": 204958.68,
       "opex": 191443.14,
       "depreciation": 385502.0,
       "other": -639.36,
-      "grossMargin": 1242646.23,
-      "afterLogistics": 1221220.65,
-      "afterMarketing": 1016261.97,
-      "operatingMargin": 824818.83,
-      "ebit": 439316.83,
-      "profit": 438677.47,
+      "grossMargin": 1266259.28,
+      "afterLogistics": 1244833.7,
+      "afterMarketing": 1039875.02,
+      "operatingMargin": 848431.88,
+      "ebit": 462929.88,
+      "profit": 462290.52,
       "grossMarginPct": 27.1,
-      "marketingPct": 4.5,
+      "marketingPct": 4.4,
       "logisticsPct": 0.5,
-      "operatingMarginPct": 18.0,
-      "profitPct": 9.6
+      "operatingMarginPct": 18.1,
+      "profitPct": 9.9
     }
   ],
   "currentMonth": {
     "label": "5/2026",
-    "revenue": 4581842.35,
-    "cogsAndFees": 3339196.12,
+    "revenue": 4680300.22,
+    "cogsAndFees": 3414040.94,
     "logistics": 21425.58,
     "marketing": 204958.68,
     "opex": 191443.14,
     "depreciation": 385502.0,
     "other": -639.36,
-    "grossMargin": 1242646.23,
-    "afterLogistics": 1221220.65,
-    "afterMarketing": 1016261.97,
-    "operatingMargin": 824818.83,
-    "ebit": 439316.83,
-    "profit": 438677.47,
+    "grossMargin": 1266259.28,
+    "afterLogistics": 1244833.7,
+    "afterMarketing": 1039875.02,
+    "operatingMargin": 848431.88,
+    "ebit": 462929.88,
+    "profit": 462290.52,
     "grossMarginPct": 27.1,
-    "marketingPct": 4.5,
+    "marketingPct": 4.4,
     "logisticsPct": 0.5,
-    "operatingMarginPct": 18.0,
-    "profitPct": 9.6
+    "operatingMarginPct": 18.1,
+    "profitPct": 9.9
   },
   "previousMonth": {
     "label": "4/2026",
@@ -161,9 +161,9 @@
     "profitPct": 0.5
   },
   "cash": {
-    "cashOnAccounts": 12352733.0,
-    "unpaidInvoices": 1966483.67,
-    "netCashPosition": 10386249.33,
+    "cashOnAccounts": 12276610.49,
+    "unpaidInvoices": 1862138.26,
+    "netCashPosition": 10414472.23,
     "overdueInvoicesCount": 4,
     "overdueInvoicesAmount": 208861.23,
     "largestPayables": [
@@ -237,18 +237,18 @@
       "message": "Cash na účtech a pokladnách je počítán živě z ABRA obratové předvahy pro účty 221 a 211, ze CZK řádků a se započtením kladných zůstatků.",
       "accounts": [
         {
-          "accountCode": "221115",
-          "accountLabel": "221115: 131-3675980207/0100 KB CZK",
-          "currency": "CZK: Česká koruna",
-          "balance": 3095675.38,
-          "includedBalance": 3095675.38
-        },
-        {
           "accountCode": "221006",
           "accountLabel": "221006: 2202503115/2010 FIO CZK",
           "currency": "CZK: Česká koruna",
           "balance": 3047089.2,
           "includedBalance": 3047089.2
+        },
+        {
+          "accountCode": "221115",
+          "accountLabel": "221115: 131-3675980207/0100 KB CZK",
+          "currency": "CZK: Česká koruna",
+          "balance": 2991329.97,
+          "includedBalance": 2991329.97
         },
         {
           "accountCode": "221111",
@@ -261,8 +261,8 @@
           "accountCode": "221001",
           "accountLabel": "221001: 2901338673/2010 FIO CZK",
           "currency": "CZK: Česká koruna",
-          "balance": 2032026.52,
-          "includedBalance": 2032026.52
+          "balance": 2058571.52,
+          "includedBalance": 2058571.52
         },
         {
           "accountCode": "221002",
@@ -282,8 +282,8 @@
           "accountCode": "221005",
           "accountLabel": "221005: 2501338690/2010 FIO EUR",
           "currency": "CZK: Česká koruna",
-          "balance": 221522.38,
-          "includedBalance": 221522.38
+          "balance": 223200.28,
+          "includedBalance": 223200.28
         },
         {
           "accountCode": "221117",
@@ -755,18 +755,18 @@
       },
       {
         "label": "5/2026",
-        "expenseTotal": 3963862.82,
-        "revenueTotal": 4474851.35,
+        "expenseTotal": 4038707.64,
+        "revenueTotal": 4584011.4,
         "topExpenseClass": {
           "code": "50",
           "label": "Spotřeba a zboží",
-          "amount": 3139697.22
+          "amount": 3214542.04
         },
         "topExpenseAccounts": [
           {
             "code": "504001",
             "label": "Nákup zboží 2",
-            "amount": 3122600.79,
+            "amount": 3197445.61,
             "classCode": "50",
             "classLabel": "Spotřeba a zboží"
           },
@@ -852,7 +852,7 @@
           {
             "code": "50",
             "label": "Spotřeba a zboží",
-            "amount": 3139697.22
+            "amount": 3214542.04
           },
           {
             "code": "51",
@@ -885,20 +885,20 @@
             "amount": 124292.0
           },
           {
+            "name": "Adam Cechner PRODEJ",
+            "amount": 21850.25
+          },
+          {
             "name": "Zásilkovna s.r.o.",
             "amount": 21425.58
           },
           {
-            "name": "Adam Cechner PRODEJ",
-            "amount": 20924.44
+            "name": "Maloobchodní prodej",
+            "amount": 17422.94
           },
           {
             "name": "Petra Demková",
             "amount": 14272.58
-          },
-          {
-            "name": "Maloobchodní prodej",
-            "amount": 13222.94
           },
           {
             "name": "4PX Express CZ",
@@ -925,24 +925,24 @@
             "amount": 7341.93
           }
         ],
-        "entryCount": 10741,
+        "entryCount": 10937,
         "detailFile": "finance_journal_5-2026.json"
       }
     ],
     "currentMonth": {
       "label": "5/2026",
-      "expenseTotal": 3963862.82,
-      "revenueTotal": 4474851.35,
+      "expenseTotal": 4038707.64,
+      "revenueTotal": 4584011.4,
       "topExpenseClass": {
         "code": "50",
         "label": "Spotřeba a zboží",
-        "amount": 3139697.22
+        "amount": 3214542.04
       },
       "topExpenseAccounts": [
         {
           "code": "504001",
           "label": "Nákup zboží 2",
-          "amount": 3122600.79,
+          "amount": 3197445.61,
           "classCode": "50",
           "classLabel": "Spotřeba a zboží"
         },
@@ -1028,7 +1028,7 @@
         {
           "code": "50",
           "label": "Spotřeba a zboží",
-          "amount": 3139697.22
+          "amount": 3214542.04
         },
         {
           "code": "51",
@@ -1061,20 +1061,20 @@
           "amount": 124292.0
         },
         {
+          "name": "Adam Cechner PRODEJ",
+          "amount": 21850.25
+        },
+        {
           "name": "Zásilkovna s.r.o.",
           "amount": 21425.58
         },
         {
-          "name": "Adam Cechner PRODEJ",
-          "amount": 20924.44
+          "name": "Maloobchodní prodej",
+          "amount": 17422.94
         },
         {
           "name": "Petra Demková",
           "amount": 14272.58
-        },
-        {
-          "name": "Maloobchodní prodej",
-          "amount": 13222.94
         },
         {
           "name": "4PX Express CZ",
@@ -1101,7 +1101,7 @@
           "amount": 7341.93
         }
       ],
-      "entryCount": 10741,
+      "entryCount": 10937,
       "detailFile": "finance_journal_5-2026.json"
     }
   }
