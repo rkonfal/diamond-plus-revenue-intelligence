@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-14T19:22:08.213534+02:00",
+  "generatedAt": "2026-05-14T20:50:57.173081+02:00",
   "window": {
     "from": "2026-05-13T00:00:01+02:00",
     "to": "2026-05-14T00:00:00+02:00"
@@ -25545,8 +25545,8 @@
       "cancelled": false,
       "isPaid": true,
       "status": {
-        "id": 1,
-        "name": "přijatá"
+        "id": 3,
+        "name": "expedováno"
       },
       "totalPrice": {
         "withVat": 67.55,
@@ -25605,6 +25605,18 @@
         {
           "adminId": null,
           "comment": "[Flexi] Objednávka byla realizována ve Flexi;"
+        },
+        {
+          "adminId": null,
+          "comment": "[4PX] Číslo balíku: Z3729371149"
+        },
+        {
+          "adminId": null,
+          "comment": "[4PX] Změna stavu: carrier_picked_up"
+        },
+        {
+          "adminId": null,
+          "comment": null
         }
       ],
       "deliveryType": {
@@ -37487,8 +37499,8 @@
       "cancelled": false,
       "isPaid": true,
       "status": {
-        "id": 1,
-        "name": "přijatá"
+        "id": 3,
+        "name": "expedováno"
       },
       "totalPrice": {
         "withVat": 11,
@@ -37551,6 +37563,18 @@
         {
           "adminId": null,
           "comment": "[Flexi] Objednávka byla realizována ve Flexi;"
+        },
+        {
+          "adminId": null,
+          "comment": "[4PX] Číslo balíku: Z4981741400"
+        },
+        {
+          "adminId": null,
+          "comment": "[4PX] Změna stavu: carrier_picked_up"
+        },
+        {
+          "adminId": null,
+          "comment": null
         }
       ],
       "deliveryType": {
@@ -51581,8 +51605,8 @@
       "cancelled": false,
       "isPaid": true,
       "status": {
-        "id": 4,
-        "name": "připraveno k vyzvednutí"
+        "id": 5,
+        "name": "doručeno"
       },
       "totalPrice": {
         "withVat": 2191,
@@ -51669,6 +51693,14 @@
         {
           "adminId": null,
           "comment": "[4PX] Změna stavu: ready_to_pickup"
+        },
+        {
+          "adminId": null,
+          "comment": null
+        },
+        {
+          "adminId": null,
+          "comment": "[4PX] Změna stavu: delivered"
         },
         {
           "adminId": null,
@@ -61927,8 +61959,8 @@
       "cancelled": false,
       "isPaid": true,
       "status": {
-        "id": 4,
-        "name": "připraveno k vyzvednutí"
+        "id": 5,
+        "name": "doručeno"
       },
       "totalPrice": {
         "withVat": 1088,
@@ -62015,6 +62047,14 @@
         {
           "adminId": null,
           "comment": "[4PX] Změna stavu: ready_to_pickup"
+        },
+        {
+          "adminId": null,
+          "comment": null
+        },
+        {
+          "adminId": null,
+          "comment": "[4PX] Změna stavu: delivered"
         },
         {
           "adminId": null,
@@ -66639,8 +66679,8 @@
       "cancelled": false,
       "isPaid": true,
       "status": {
-        "id": 3,
-        "name": "expedováno"
+        "id": 5,
+        "name": "doručeno"
       },
       "totalPrice": {
         "withVat": 1622,
@@ -66719,6 +66759,14 @@
         {
           "adminId": null,
           "comment": "Autopilot: odeslána uživatelská zpráva: Odesláno"
+        },
+        {
+          "adminId": null,
+          "comment": null
+        },
+        {
+          "adminId": null,
+          "comment": "[4PX] Změna stavu: delivered"
         },
         {
           "adminId": null,
@@ -68055,8 +68103,8 @@
       "cancelled": false,
       "isPaid": true,
       "status": {
-        "id": 4,
-        "name": "připraveno k vyzvednutí"
+        "id": 5,
+        "name": "doručeno"
       },
       "totalPrice": {
         "withVat": 2594,
@@ -68143,6 +68191,14 @@
         {
           "adminId": null,
           "comment": "[4PX] Změna stavu: ready_to_pickup"
+        },
+        {
+          "adminId": null,
+          "comment": null
+        },
+        {
+          "adminId": null,
+          "comment": "[4PX] Změna stavu: delivered"
         },
         {
           "adminId": null,
@@ -79225,19 +79281,19 @@
     "statuses": [
       {
         "name": "expedováno",
-        "count": 183
+        "count": 184
       },
       {
         "name": "doručeno",
-        "count": 106
-      },
-      {
-        "name": "připraveno k vyzvednutí",
-        "count": 24
+        "count": 110
       },
       {
         "name": "přijatá",
-        "count": 23
+        "count": 21
+      },
+      {
+        "name": "připraveno k vyzvednutí",
+        "count": 21
       },
       {
         "name": "nová",
@@ -79684,19 +79740,19 @@
         "statuses": [
           {
             "name": "expedováno",
-            "count": 183
+            "count": 184
           },
           {
             "name": "doručeno",
-            "count": 106
-          },
-          {
-            "name": "připraveno k vyzvednutí",
-            "count": 24
+            "count": 110
           },
           {
             "name": "přijatá",
-            "count": 23
+            "count": 21
+          },
+          {
+            "name": "připraveno k vyzvednutí",
+            "count": 21
           },
           {
             "name": "nová",
@@ -80143,15 +80199,15 @@
         "statuses": [
           {
             "name": "expedováno",
-            "count": 177
+            "count": 176
           },
           {
             "name": "doručeno",
-            "count": 90
+            "count": 94
           },
           {
             "name": "připraveno k vyzvednutí",
-            "count": 22
+            "count": 19
           },
           {
             "name": "nová",
@@ -80560,15 +80616,15 @@
         "statuses": [
           {
             "name": "přijatá",
-            "count": 19
+            "count": 17
+          },
+          {
+            "name": "expedováno",
+            "count": 8
           },
           {
             "name": "doručeno",
             "count": 8
-          },
-          {
-            "name": "expedováno",
-            "count": 6
           },
           {
             "name": "nová",
