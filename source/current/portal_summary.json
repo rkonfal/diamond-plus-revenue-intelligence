@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-15T09:35:33.835804+02:00",
+  "generatedAt": "2026-05-15T12:21:07.672028+02:00",
   "config": {
     "warehouseCode": "CZPRGA",
     "outboundMaxPages": 20,
@@ -14,25 +14,25 @@
       "label": "CZ",
       "inventory": {
         "items": 774,
-        "availableStockTotal": 297830,
-        "pendingStockTotal": 4073,
+        "availableStockTotal": 296894,
+        "pendingStockTotal": 3276,
         "freezeStockTotal": 0,
         "lowStockItems": 100
       },
       "outbound": {
-        "items": 500,
-        "scannedPages": 5,
+        "items": 600,
+        "scannedPages": 6,
         "topLogisticsProduct": "F1401",
-        "oldestTimestamp": "2026-05-13T20:55:06+02:00",
-        "newestTimestamp": "2026-05-15T09:35:02+02:00"
+        "oldestTimestamp": "2026-05-13T19:50:03+02:00",
+        "newestTimestamp": "2026-05-15T12:20:03+02:00"
       }
     },
     "sk": {
       "label": "SK",
       "inventory": {
         "items": 626,
-        "availableStockTotal": 66970,
-        "pendingStockTotal": 71,
+        "availableStockTotal": 66791,
+        "pendingStockTotal": 204,
         "freezeStockTotal": 0,
         "lowStockItems": 100
       },
@@ -40,8 +40,8 @@
         "items": 100,
         "scannedPages": 1,
         "topLogisticsProduct": "F1403",
-        "oldestTimestamp": "2026-05-12T14:40:17+02:00",
-        "newestTimestamp": "2026-05-15T08:10:19+02:00"
+        "oldestTimestamp": "2026-05-12T15:25:17+02:00",
+        "newestTimestamp": "2026-05-15T11:25:15+02:00"
       }
     }
   },
@@ -78,8 +78,8 @@
     "pairedProducts": 398,
     "onlyInWpj": 1479,
     "onlyIn4px": 1,
-    "stockMismatch": 694,
-    "lowAfterSales": 5,
+    "stockMismatch": 687,
+    "lowAfterSales": 6,
     "manualMapped4pxAliases": 0,
     "autoMapped4pxAliases": 73
   },
@@ -89,29 +89,29 @@
     "message": "Měsíční finance se tahají přímo z ABRA reportu Výkaz hospodaření za měsíc za všechna střediska. Cash a závazky jsou také live z ABRA API.",
     "currentMonth": {
       "label": "5/2026",
-      "revenue": 5968527.8,
-      "cogsAndFees": 4326643.94,
+      "revenue": 6080734.41,
+      "cogsAndFees": 4412517.35,
       "logistics": 21425.58,
       "marketing": 204958.68,
-      "opex": 229073.41,
+      "opex": 285292.47,
       "depreciation": 385502.0,
-      "other": -311.4,
-      "grossMargin": 1641883.86,
-      "afterLogistics": 1620458.28,
-      "afterMarketing": 1415499.6,
-      "operatingMargin": 1186426.19,
-      "ebit": 800924.19,
-      "profit": 800612.79,
-      "grossMarginPct": 27.5,
+      "other": 31630.53,
+      "grossMargin": 1668217.06,
+      "afterLogistics": 1646791.48,
+      "afterMarketing": 1441832.8,
+      "operatingMargin": 1156540.33,
+      "ebit": 771038.33,
+      "profit": 802668.86,
+      "grossMarginPct": 27.4,
       "marketingPct": 3.4,
       "logisticsPct": 0.4,
-      "operatingMarginPct": 19.9,
-      "profitPct": 13.4
+      "operatingMarginPct": 19.0,
+      "profitPct": 13.2
     },
     "cash": {
-      "cashOnAccounts": 11161669.27,
-      "unpaidInvoices": 2011268.58,
-      "netCashPosition": 9150400.69,
+      "cashOnAccounts": 11849852.98,
+      "unpaidInvoices": 2325812.1,
+      "netCashPosition": 9524040.88,
       "overdueInvoicesCount": 3,
       "overdueInvoicesAmount": 183175.72,
       "largestPayables": [
@@ -130,6 +130,14 @@
           "amountTotal": 495558.9,
           "amountDue": 495558.9,
           "status": "11 dní do splatnosti"
+        },
+        {
+          "code": "PF0612/2026",
+          "vendor": "ISTA CORPORATION s.r.o.",
+          "dueDate": "21.05.2026",
+          "amountTotal": 199279.44,
+          "amountDue": 199279.44,
+          "status": "6 dní do splatnosti"
         },
         {
           "code": "PF0589/2026",
@@ -170,14 +178,6 @@
           "amountTotal": 71028.82,
           "amountDue": 71028.82,
           "status": "15 dní do splatnosti"
-        },
-        {
-          "code": "PF0578/2026",
-          "vendor": "coworkers.ai s.r.o.",
-          "dueDate": "30.05.2026",
-          "amountTotal": 53112.71,
-          "amountDue": 53112.71,
-          "status": "15 dní do splatnosti"
         }
       ],
       "cashAccountsSource": {
@@ -199,18 +199,18 @@
             "includedBalance": 3149589.2
           },
           {
-            "accountCode": "221001",
-            "accountLabel": "221001: 2901338673/2010 FIO CZK",
-            "currency": "CZK: Česká koruna",
-            "balance": 1129850.77,
-            "includedBalance": 1129850.77
-          },
-          {
             "accountCode": "221111",
             "accountLabel": "221111: 107-164902 Czk THEPAY",
             "currency": "CZK: Česká koruna",
-            "balance": 1030046.19,
-            "includedBalance": 1030046.19
+            "balance": 1647132.07,
+            "includedBalance": 1647132.07
+          },
+          {
+            "accountCode": "221001",
+            "accountLabel": "221001: 2901338673/2010 FIO CZK",
+            "currency": "CZK: Česká koruna",
+            "balance": 1131075.77,
+            "includedBalance": 1131075.77
           },
           {
             "accountCode": "221002",
@@ -223,8 +223,8 @@
             "accountCode": "221112",
             "accountLabel": "221112: 107-164902 EUR THEPAY",
             "currency": "CZK: Česká koruna",
-            "balance": 146861.94,
-            "includedBalance": 146861.94
+            "balance": 215158.91,
+            "includedBalance": 215158.91
           },
           {
             "accountCode": "221117",
@@ -237,8 +237,8 @@
             "accountCode": "221005",
             "accountLabel": "221005: 2501338690/2010 FIO EUR",
             "currency": "CZK: Česká koruna",
-            "balance": 94190.22,
-            "includedBalance": 94190.22
+            "balance": 95766.08,
+            "includedBalance": 95766.08
           },
           {
             "accountCode": "211000",
@@ -369,7 +369,7 @@
       "performanceSpend": 4958.68,
       "brandSpend": 200000.0,
       "totalSpend": 204958.68,
-      "revenue": 5968527.8,
+      "revenue": 6080734.41,
       "spendShareOfRevenuePct": 3.4
     },
     "topSupplier": {
