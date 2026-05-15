@@ -33051,10 +33051,10 @@
       },
       "dateCreated": "2026-05-14T19:40:35+02:00",
       "cancelled": false,
-      "isPaid": false,
+      "isPaid": true,
       "status": {
-        "id": 0,
-        "name": "nová"
+        "id": 1,
+        "name": "přijatá"
       },
       "totalPrice": {
         "withVat": 883,
@@ -33093,6 +33093,30 @@
         {
           "adminId": null,
           "comment": "[FlexiBee] Objednávka byla nahrána do FlexiBee; ID: 668493"
+        },
+        {
+          "adminId": null,
+          "comment": "Modul FioBank - příchozí platba č. 27634424846. Komentář plátce: AMBROZOVA IVANA."
+        },
+        {
+          "adminId": null,
+          "comment": "<p>Dobré zprávy: Úhrada vaší objednávky 261280300 právě dorazila. Než dočtete tento e-mail, pustíme se do práce na expedici vaší objednávky tak, aby vám dorazila co nejdříve.</p><p>Těšíte se? 😍</p><div></div>"
+        },
+        {
+          "adminId": null,
+          "comment": "[4PX] Objednávka byla vytvořena; ID: OC149400632605150195 tracking: 601112594055 účet: CZ"
+        },
+        {
+          "adminId": null,
+          "comment": null
+        },
+        {
+          "adminId": null,
+          "comment": "[FlexiBee] Objednávka byla ve FlexiBee zaktualizována"
+        },
+        {
+          "adminId": null,
+          "comment": "[Flexi] Objednávka byla realizována ve Flexi;"
         }
       ],
       "deliveryType": {
@@ -94694,9 +94718,69 @@
   ],
   "historicalWindow": {
     "from": "2025-01-01T00:00:00+01:00",
-    "to": "2026-05-15T00:20:45.178709+02:00"
+    "to": "2026-05-15T01:41:19.256461+02:00"
   },
   "historicalOrdersSample": [
+    {
+      "id": 3614394,
+      "code": "261280460",
+      "dateCreated": "2026-05-15T01:31:01+02:00",
+      "customerKey": "email:misuleckub@seznam.cz",
+      "customerLabel": "Michaela Kubátová",
+      "email": "misuleckub@seznam.cz",
+      "countryCode": "CZ",
+      "sourceName": "E-shop",
+      "statusName": "přijatá",
+      "cancelled": false,
+      "problematic": false,
+      "isPaid": false,
+      "revenueWithVat": 3153.0
+    },
+    {
+      "id": 3614393,
+      "code": "261280459",
+      "dateCreated": "2026-05-15T00:59:53+02:00",
+      "customerKey": "email:andrea.petrovicka@seznam.cz",
+      "customerLabel": "Andrea Petrovická",
+      "email": "andrea.petrovicka@seznam.cz",
+      "countryCode": "CZ",
+      "sourceName": "E-shop",
+      "statusName": "přijatá",
+      "cancelled": false,
+      "problematic": false,
+      "isPaid": true,
+      "revenueWithVat": 3520.0
+    },
+    {
+      "id": 3614392,
+      "code": "261280458",
+      "dateCreated": "2026-05-15T00:58:57+02:00",
+      "customerKey": "email:duchova.zdena@gmail.com",
+      "customerLabel": "Zdenka Duchova",
+      "email": "duchova.zdena@gmail.com",
+      "countryCode": "SK",
+      "sourceName": "E-shop",
+      "statusName": "nová",
+      "cancelled": false,
+      "problematic": false,
+      "isPaid": false,
+      "revenueWithVat": 1765.73
+    },
+    {
+      "id": 3614391,
+      "code": "261280457",
+      "dateCreated": "2026-05-15T00:27:02+02:00",
+      "customerKey": "email:evalnenickova@seznam.cz",
+      "customerLabel": "Eva Lněničková",
+      "email": "evalnenickova@seznam.cz",
+      "countryCode": "CZ",
+      "sourceName": "E-shop",
+      "statusName": "přijatá",
+      "cancelled": false,
+      "problematic": false,
+      "isPaid": true,
+      "revenueWithVat": 2394.0
+    },
     {
       "id": 3614390,
       "code": "261280456",
@@ -96136,81 +96220,21 @@
       "problematic": true,
       "isPaid": false,
       "revenueWithVat": 1093.0
-    },
-    {
-      "id": 3614288,
-      "code": "261280360",
-      "dateCreated": "2026-05-14T20:34:48+02:00",
-      "customerKey": "email:mesarosova.jitka@seznam.cz",
-      "customerLabel": "Jitka Mesárošová",
-      "email": "mesarosova.jitka@seznam.cz",
-      "countryCode": "CZ",
-      "sourceName": "E-shop",
-      "statusName": "přijatá",
-      "cancelled": false,
-      "problematic": false,
-      "isPaid": true,
-      "revenueWithVat": 1613.0
-    },
-    {
-      "id": 3614287,
-      "code": "261280359",
-      "dateCreated": "2026-05-14T20:34:27+02:00",
-      "customerKey": "email:evik-dostalova@seznam.cz",
-      "customerLabel": "Z-BOX (Eva Dostálová)",
-      "email": "evik-dostalova@seznam.cz",
-      "countryCode": "CZ",
-      "sourceName": "E-shop",
-      "statusName": "přijatá",
-      "cancelled": false,
-      "problematic": false,
-      "isPaid": false,
-      "revenueWithVat": 1408.0
-    },
-    {
-      "id": 3614286,
-      "code": "261280358",
-      "dateCreated": "2026-05-14T20:34:01+02:00",
-      "customerKey": "email:ola.uli@seznam.cz",
-      "customerLabel": "Aleksandra Sabolova",
-      "email": "ola.uli@seznam.cz",
-      "countryCode": "CZ",
-      "sourceName": "E-shop",
-      "statusName": "přijatá",
-      "cancelled": false,
-      "problematic": false,
-      "isPaid": true,
-      "revenueWithVat": 1207.0
-    },
-    {
-      "id": 3614285,
-      "code": "261280357",
-      "dateCreated": "2026-05-14T20:31:35+02:00",
-      "customerKey": "email:jirka.dockalova@gmail.com",
-      "customerLabel": "Jiřina Dočkalová",
-      "email": "jirka.dockalova@gmail.com",
-      "countryCode": "CZ",
-      "sourceName": "E-shop",
-      "statusName": "přijatá",
-      "cancelled": false,
-      "problematic": false,
-      "isPaid": false,
-      "revenueWithVat": 1671.0
     }
   ],
   "summary": {
-    "orders": 198859,
-    "nonCancelledOrders": 192961,
+    "orders": 198863,
+    "nonCancelledOrders": 192965,
     "cancelledOrders": 5898,
     "problematicOrders": 6027,
     "cancelledRatePct": 2.97,
     "problematicRatePct": 3.03,
-    "estimatedNetRevenueAfterCancellations": 301577883.78,
-    "grossRevenueWithVat": 310808908.36,
+    "estimatedNetRevenueAfterCancellations": 301588394.78,
+    "grossRevenueWithVat": 310819741.09,
     "qualityLabel": "healthy",
     "window": {
       "from": "2025-01-01T00:00:00+01:00",
-      "to": "2026-05-15T00:20:45.178709+02:00"
+      "to": "2026-05-15T01:41:19.256461+02:00"
     }
   }
 }
