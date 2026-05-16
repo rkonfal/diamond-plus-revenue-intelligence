@@ -51259,10 +51259,10 @@
       },
       "dateCreated": "2026-05-15T08:49:24+02:00",
       "cancelled": false,
-      "isPaid": false,
+      "isPaid": true,
       "status": {
-        "id": 0,
-        "name": "nová"
+        "id": 1,
+        "name": "přijatá"
       },
       "totalPrice": {
         "withVat": 568,
@@ -51309,6 +51309,30 @@
         {
           "adminId": null,
           "comment": "Autopilot: odeslána uživatelská zpráva: Upomínka nezaplacené - okamžité platby"
+        },
+        {
+          "adminId": null,
+          "comment": "Objednávka byla zaplacena."
+        },
+        {
+          "adminId": null,
+          "comment": "<p>Dobré zprávy: Úhrada vaší objednávky 261280514 právě dorazila. Než dočtete tento e-mail, pustíme se do práce na expedici vaší objednávky tak, aby vám dorazila co nejdříve.</p><p>Těšíte se? 😍</p><div></div>"
+        },
+        {
+          "adminId": null,
+          "comment": "[FlexiBee] Objednávka byla ve FlexiBee zaktualizována"
+        },
+        {
+          "adminId": null,
+          "comment": "[Flexi] Objednávka byla realizována ve Flexi;"
+        },
+        {
+          "adminId": null,
+          "comment": "[4PX] Objednávka byla vytvořena; ID: OC149400632605160157 tracking: 601112673858 účet: CZ"
+        },
+        {
+          "adminId": null,
+          "comment": null
         }
       ],
       "deliveryType": {
@@ -63925,9 +63949,174 @@
   ],
   "historicalWindow": {
     "from": "2025-01-01T00:00:00+01:00",
-    "to": "2026-05-16T15:11:28.654103+02:00"
+    "to": "2026-05-16T16:28:51.292496+02:00"
   },
   "historicalOrdersSample": [
+    {
+      "id": 3614839,
+      "code": "261280879",
+      "dateCreated": "2026-05-16T16:20:15+02:00",
+      "customerKey": "email:monculka56@gmail.com",
+      "customerLabel": "Monča Žandovská",
+      "email": "monculka56@gmail.com",
+      "countryCode": "CZ",
+      "sourceName": "E-shop",
+      "statusName": "přijatá",
+      "cancelled": false,
+      "problematic": false,
+      "isPaid": true,
+      "revenueWithVat": 1056.0
+    },
+    {
+      "id": 3614838,
+      "code": "261280878",
+      "dateCreated": "2026-05-16T16:03:51+02:00",
+      "customerKey": "email:helki.koutna@seznam.cz",
+      "customerLabel": "Helena Koutná",
+      "email": "helki.koutna@seznam.cz",
+      "countryCode": "CZ",
+      "sourceName": "E-shop",
+      "statusName": "nová",
+      "cancelled": false,
+      "problematic": false,
+      "isPaid": false,
+      "revenueWithVat": 1827.0
+    },
+    {
+      "id": 3614837,
+      "code": "261280877",
+      "dateCreated": "2026-05-16T16:03:26+02:00",
+      "customerKey": "email:kokita21@seznam.cz",
+      "customerLabel": "Šárka Pažoutová",
+      "email": "kokita21@seznam.cz",
+      "countryCode": "CZ",
+      "sourceName": "E-shop",
+      "statusName": "přijatá",
+      "cancelled": false,
+      "problematic": false,
+      "isPaid": true,
+      "revenueWithVat": 3748.0
+    },
+    {
+      "id": 3614836,
+      "code": "261280876",
+      "dateCreated": "2026-05-16T15:54:19+02:00",
+      "customerKey": "email:gabriela.rehorova@seznam.cz",
+      "customerLabel": "Gabriela Řehořová",
+      "email": "gabriela.rehorova@seznam.cz",
+      "countryCode": "CZ",
+      "sourceName": "E-shop",
+      "statusName": "přijatá",
+      "cancelled": false,
+      "problematic": false,
+      "isPaid": true,
+      "revenueWithVat": 1615.0
+    },
+    {
+      "id": 3614835,
+      "code": "261280875",
+      "dateCreated": "2026-05-16T15:50:10+02:00",
+      "customerKey": "email:kajkalu@seznam.cz",
+      "customerLabel": "Karla Šnídlová",
+      "email": "kajkalu@seznam.cz",
+      "countryCode": "CZ",
+      "sourceName": "E-shop",
+      "statusName": "přijatá",
+      "cancelled": false,
+      "problematic": false,
+      "isPaid": true,
+      "revenueWithVat": 2321.0
+    },
+    {
+      "id": 3614834,
+      "code": "261280874",
+      "dateCreated": "2026-05-16T15:43:38+02:00",
+      "customerKey": "email:dora.novakova@seznam.cz",
+      "customerLabel": "Dora Nováková",
+      "email": "dora.novakova@seznam.cz",
+      "countryCode": "CZ",
+      "sourceName": "E-shop",
+      "statusName": "přijatá",
+      "cancelled": false,
+      "problematic": false,
+      "isPaid": false,
+      "revenueWithVat": 2040.0
+    },
+    {
+      "id": 3614833,
+      "code": "261280873",
+      "dateCreated": "2026-05-16T15:41:35+02:00",
+      "customerKey": "email:marta.martinka.b@centrum.cz",
+      "customerLabel": "Martina Buďárková",
+      "email": "marta.martinka.b@centrum.cz",
+      "countryCode": "CZ",
+      "sourceName": "E-shop",
+      "statusName": "nová",
+      "cancelled": false,
+      "problematic": false,
+      "isPaid": false,
+      "revenueWithVat": 1713.0
+    },
+    {
+      "id": 3614832,
+      "code": "261280872",
+      "dateCreated": "2026-05-16T15:35:57+02:00",
+      "customerKey": "email:i.hadravova@email.cz",
+      "customerLabel": "Iva Ticháčková Hadravová",
+      "email": "i.hadravova@email.cz",
+      "countryCode": "CZ",
+      "sourceName": "E-shop",
+      "statusName": "přijatá",
+      "cancelled": false,
+      "problematic": false,
+      "isPaid": true,
+      "revenueWithVat": 2090.0
+    },
+    {
+      "id": 3614831,
+      "code": "261280871",
+      "dateCreated": "2026-05-16T15:24:57+02:00",
+      "customerKey": "email:ewullinka@gmail.com",
+      "customerLabel": "Z-BOX (Eva Jedonová)",
+      "email": "ewullinka@gmail.com",
+      "countryCode": "CZ",
+      "sourceName": "E-shop",
+      "statusName": "přijatá",
+      "cancelled": false,
+      "problematic": false,
+      "isPaid": true,
+      "revenueWithVat": 926.0
+    },
+    {
+      "id": 3614830,
+      "code": "261280870",
+      "dateCreated": "2026-05-16T15:19:05+02:00",
+      "customerKey": "email:hana.rosickova@seznam.cz",
+      "customerLabel": "Z-BOX (Hana Rosičková)",
+      "email": "hana.rosickova@seznam.cz",
+      "countryCode": "CZ",
+      "sourceName": "E-shop",
+      "statusName": "přijatá",
+      "cancelled": false,
+      "problematic": false,
+      "isPaid": true,
+      "revenueWithVat": 1107.0
+    },
+    {
+      "id": 3614829,
+      "code": "261280869",
+      "dateCreated": "2026-05-16T15:11:30+02:00",
+      "customerKey": "email:hotelgradl@email.cz",
+      "customerLabel": "František Strnad",
+      "email": "hotelgradl@email.cz",
+      "countryCode": "CZ",
+      "sourceName": "E-shop",
+      "statusName": "přijatá",
+      "cancelled": false,
+      "problematic": false,
+      "isPaid": true,
+      "revenueWithVat": 1604.0
+    },
     {
       "id": 3614828,
       "code": "261280868",
@@ -63952,10 +64141,10 @@
       "email": "verka222@email.cz",
       "countryCode": "CZ",
       "sourceName": "E-shop",
-      "statusName": "nová",
+      "statusName": "přijatá",
       "cancelled": false,
       "problematic": false,
-      "isPaid": false,
+      "isPaid": true,
       "revenueWithVat": 1090.0
     },
     {
@@ -63967,10 +64156,10 @@
       "email": "maruskaama@seznam.cz",
       "countryCode": "CZ",
       "sourceName": "E-shop",
-      "statusName": "nová",
+      "statusName": "přijatá",
       "cancelled": false,
       "problematic": false,
-      "isPaid": false,
+      "isPaid": true,
       "revenueWithVat": 1736.0
     },
     {
@@ -65262,186 +65451,21 @@
       "problematic": false,
       "isPaid": false,
       "revenueWithVat": 1553.0
-    },
-    {
-      "id": 3614734,
-      "code": "261280779",
-      "dateCreated": "2026-05-16T06:52:49+02:00",
-      "customerKey": "email:lenusinka2@seznam.cz",
-      "customerLabel": "Lenka Zapletalová",
-      "email": "lenusinka2@seznam.cz",
-      "countryCode": "CZ",
-      "sourceName": "E-shop",
-      "statusName": "přijatá",
-      "cancelled": false,
-      "problematic": false,
-      "isPaid": true,
-      "revenueWithVat": 2596.0
-    },
-    {
-      "id": 3614733,
-      "code": "261280778",
-      "dateCreated": "2026-05-16T06:01:36+02:00",
-      "customerKey": "email:alexis.korinkova@gmail.com",
-      "customerLabel": "Z-BOX (Alexandra Kořínková)",
-      "email": "alexis.korinkova@gmail.com",
-      "countryCode": "CZ",
-      "sourceName": "E-shop",
-      "statusName": "nová",
-      "cancelled": false,
-      "problematic": false,
-      "isPaid": true,
-      "revenueWithVat": 4369.0
-    },
-    {
-      "id": 3614732,
-      "code": "261280777",
-      "dateCreated": "2026-05-16T06:00:03+02:00",
-      "customerKey": "email:market.coufalova@seznam.cz",
-      "customerLabel": "Markéta Coufalová",
-      "email": "market.coufalova@seznam.cz",
-      "countryCode": "CZ",
-      "sourceName": "E-shop",
-      "statusName": "přijatá",
-      "cancelled": false,
-      "problematic": false,
-      "isPaid": true,
-      "revenueWithVat": 945.0
-    },
-    {
-      "id": 3614731,
-      "code": "261280776",
-      "dateCreated": "2026-05-16T05:16:36+02:00",
-      "customerKey": "email:petrahornova23@seznam.cz",
-      "customerLabel": "Petra Hornová",
-      "email": "petrahornova23@seznam.cz",
-      "countryCode": "CZ",
-      "sourceName": "E-shop",
-      "statusName": "přijatá",
-      "cancelled": false,
-      "problematic": false,
-      "isPaid": true,
-      "revenueWithVat": 1792.0
-    },
-    {
-      "id": 3614730,
-      "code": "261280775",
-      "dateCreated": "2026-05-16T05:07:33+02:00",
-      "customerKey": "email:zaneta78@seznam.cz",
-      "customerLabel": "Žaneta Černá",
-      "email": "zaneta78@seznam.cz",
-      "countryCode": "CZ",
-      "sourceName": "E-shop",
-      "statusName": "přijatá",
-      "cancelled": false,
-      "problematic": false,
-      "isPaid": true,
-      "revenueWithVat": 2491.0
-    },
-    {
-      "id": 3614729,
-      "code": "261280774",
-      "dateCreated": "2026-05-16T00:47:02+02:00",
-      "customerKey": "email:magdavokrojova@seznam.cz",
-      "customerLabel": "Magdalena Kopecká",
-      "email": "magdavokrojova@seznam.cz",
-      "countryCode": "CZ",
-      "sourceName": "E-shop",
-      "statusName": "přijatá",
-      "cancelled": false,
-      "problematic": false,
-      "isPaid": false,
-      "revenueWithVat": 1178.0
-    },
-    {
-      "id": 3614728,
-      "code": "261280773",
-      "dateCreated": "2026-05-16T00:22:07+02:00",
-      "customerKey": "email:karelk2004@seznam.cz",
-      "customerLabel": "Karel Krejčí",
-      "email": "karelk2004@seznam.cz",
-      "countryCode": "CZ",
-      "sourceName": "E-shop",
-      "statusName": "přijatá",
-      "cancelled": false,
-      "problematic": false,
-      "isPaid": true,
-      "revenueWithVat": 1841.0
-    },
-    {
-      "id": 3614727,
-      "code": "261280772",
-      "dateCreated": "2026-05-16T00:12:01+02:00",
-      "customerKey": "email:veronika.nez@seznam.cz",
-      "customerLabel": "Veronika Matoušková",
-      "email": "veronika.nez@seznam.cz",
-      "countryCode": "CZ",
-      "sourceName": "E-shop",
-      "statusName": "přijatá",
-      "cancelled": false,
-      "problematic": false,
-      "isPaid": true,
-      "revenueWithVat": 3352.0
-    },
-    {
-      "id": 3614726,
-      "code": "261280771",
-      "dateCreated": "2026-05-16T00:07:36+02:00",
-      "customerKey": "email:libuse.zamprova@gmail.com",
-      "customerLabel": "Libuše Zamprová",
-      "email": "libuse.zamprova@gmail.com",
-      "countryCode": "CZ",
-      "sourceName": "E-shop",
-      "statusName": "přijatá",
-      "cancelled": false,
-      "problematic": false,
-      "isPaid": true,
-      "revenueWithVat": 1647.0
-    },
-    {
-      "id": 3614725,
-      "code": "261280770",
-      "dateCreated": "2026-05-16T00:06:08+02:00",
-      "customerKey": "email:eva.skvrnova@seznam.cz",
-      "customerLabel": "Eva Škvrnová",
-      "email": "eva.skvrnova@seznam.cz",
-      "countryCode": "CZ",
-      "sourceName": "E-shop",
-      "statusName": "přijatá",
-      "cancelled": false,
-      "problematic": false,
-      "isPaid": true,
-      "revenueWithVat": 1804.0
-    },
-    {
-      "id": 3614724,
-      "code": "261280769",
-      "dateCreated": "2026-05-16T00:03:14+02:00",
-      "customerKey": "email:x.petulla@seznam.cz",
-      "customerLabel": "Petra Kosková",
-      "email": "x.petulla@seznam.cz",
-      "countryCode": "CZ",
-      "sourceName": "E-shop",
-      "statusName": "přijatá",
-      "cancelled": false,
-      "problematic": false,
-      "isPaid": true,
-      "revenueWithVat": 4393.0
     }
   ],
   "summary": {
-    "orders": 199271,
-    "nonCancelledOrders": 193365,
-    "cancelledOrders": 5906,
-    "problematicOrders": 6028,
+    "orders": 199282,
+    "nonCancelledOrders": 193375,
+    "cancelledOrders": 5907,
+    "problematicOrders": 6029,
     "cancelledRatePct": 2.96,
     "problematicRatePct": 3.03,
-    "estimatedNetRevenueAfterCancellations": 302268787.14,
-    "grossRevenueWithVat": 311488857.32,
+    "estimatedNetRevenueAfterCancellations": 302286701.7,
+    "grossRevenueWithVat": 311507318.32,
     "qualityLabel": "healthy",
     "window": {
       "from": "2025-01-01T00:00:00+01:00",
-      "to": "2026-05-16T15:11:28.654103+02:00"
+      "to": "2026-05-16T16:28:51.292496+02:00"
     }
   }
 }
