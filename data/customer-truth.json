@@ -5,25 +5,25 @@
     "nextUnlock": "Add final lifecycle state, returns, and refunds to move from gross customer truth to netto customer truth."
   },
   "coverage": {
-    "customersCount": 38977,
-    "ordersProcessed": 194912,
+    "customersCount": 38979,
+    "ordersProcessed": 195002,
     "top50RevenueSharePctOfYtd": 11.7,
-    "top10RevenueSharePctOfYtd": 5.72,
+    "top10RevenueSharePctOfYtd": 5.74,
     "top50OrdersSharePctOfProcessed": 2.05
   },
   "repeatSignals": {
     "heavyRepeatCustomersInTop50": 47,
-    "top50AverageOrders": 80.0,
-    "top50AverageOrderValue": 5213.67
+    "top50AverageOrders": 80.14,
+    "top50AverageOrderValue": 5214.0
   },
   "estimatedNewVsReturning": {
     "status": "measured_ytd",
     "returningBaseStrength": "high",
-    "label": "Returning customers generated 301418529.11 Kč vs 12725466.59 Kč from new customers in the measured YTD window.",
-    "newCustomers": 10550,
-    "returningCustomers": 28427,
-    "newRevenueWithVat": 12725466.59,
-    "returningRevenueWithVat": 301418529.11,
+    "label": "Returning customers generated 301586528.27 Kč vs 12723488.59 Kč from new customers in the measured YTD window.",
+    "newCustomers": 10549,
+    "returningCustomers": 28430,
+    "newRevenueWithVat": 12723488.59,
+    "returningRevenueWithVat": 301586528.27,
     "returningRevenueSharePct": 95.95
   },
   "topCustomers": [
@@ -36,15 +36,15 @@
       "city": "",
       "ico": "",
       "countryCode": "CZ",
-      "orders": 753,
-      "revenueWithVat": 1541751.0,
+      "orders": 754,
+      "revenueWithVat": 1543851.0,
       "firstOrderAt": "2025-06-24T07:41:21+02:00",
-      "lastOrderAt": "2026-05-19T18:05:05+02:00",
+      "lastOrderAt": "2026-05-21T09:42:14+02:00",
       "channels": [
         "Pokladna"
       ],
       "rank": 1,
-      "averageOrderValue": 2047.48,
+      "averageOrderValue": 2047.55,
       "customerType": "returning",
       "segment": "whale"
     },
@@ -184,17 +184,38 @@
       "city": "Praha",
       "ico": "07952759",
       "countryCode": "CZ",
-      "orders": 92,
-      "revenueWithVat": 207713.0,
+      "orders": 94,
+      "revenueWithVat": 213765.0,
       "firstOrderAt": "2025-01-04T21:32:09+01:00",
-      "lastOrderAt": "2026-05-15T14:13:29+02:00",
+      "lastOrderAt": "2026-05-21T07:05:12+02:00",
       "channels": [
         "E-shop"
       ],
       "rank": 8,
-      "averageOrderValue": 2257.75,
+      "averageOrderValue": 2274.1,
       "customerType": "returning",
       "segment": "core_repeat"
+    },
+    {
+      "customerKey": "ico:25026569",
+      "label": "Merry Lynch (Jan Churan)",
+      "email": "rivox@volny.cz",
+      "firm": "Merry Lynch",
+      "person": "Jan Churan",
+      "city": "Ústí nad Labem 1",
+      "ico": "25026569",
+      "countryCode": "CZ",
+      "orders": 36,
+      "revenueWithVat": 204941.0,
+      "firstOrderAt": "2025-01-08T16:52:27+01:00",
+      "lastOrderAt": "2026-05-21T10:10:45+02:00",
+      "channels": [
+        "E-shop"
+      ],
+      "rank": 9,
+      "averageOrderValue": 5692.81,
+      "customerType": "returning",
+      "segment": "vip_repeat"
     },
     {
       "customerKey": "email:martinadzurik@gmail.com",
@@ -212,31 +233,10 @@
       "channels": [
         "E-shop"
       ],
-      "rank": 9,
+      "rank": 10,
       "averageOrderValue": 2539.06,
       "customerType": "returning",
       "segment": "core_repeat"
-    },
-    {
-      "customerKey": "ico:25026569",
-      "label": "Merry Lynch (Jan Churan)",
-      "email": "rivox@volny.cz",
-      "firm": "Merry Lynch",
-      "person": "Jan Churan",
-      "city": "Ústí nad Labem 1",
-      "ico": "25026569",
-      "countryCode": "CZ",
-      "orders": 34,
-      "revenueWithVat": 194105.0,
-      "firstOrderAt": "2025-01-08T16:52:27+01:00",
-      "lastOrderAt": "2026-05-13T11:22:35+02:00",
-      "channels": [
-        "E-shop"
-      ],
-      "rank": 10,
-      "averageOrderValue": 5708.97,
-      "customerType": "returning",
-      "segment": "vip_repeat"
     }
   ]
 }
