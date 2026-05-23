@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-23T15:42:52.829114+02:00",
+  "generatedAt": "2026-05-23T20:46:19.988656+02:00",
   "window": {
     "from": "2026-05-22T00:00:01+02:00",
     "to": "2026-05-23T00:00:00+02:00"
@@ -6951,11 +6951,11 @@
         "code": "CZK"
       },
       "dateCreated": "2026-05-22T19:52:22+02:00",
-      "cancelled": false,
+      "cancelled": true,
       "isPaid": false,
       "status": {
-        "id": 0,
-        "name": "nová"
+        "id": 8,
+        "name": "chyba"
       },
       "totalPrice": {
         "withVat": 1649,
@@ -7003,6 +7003,18 @@
         {
           "adminId": null,
           "comment": "Autopilot: odeslána uživatelská zpráva: Upomínka nezaplacené - okamžité platby"
+        },
+        {
+          "adminId": null,
+          "comment": "Objednávka stornována."
+        },
+        {
+          "adminId": null,
+          "comment": "<p>zákazník stornoval objednávku <strong>261282944</strong>.</p><p> </p>"
+        },
+        {
+          "adminId": null,
+          "comment": "<p>mrzí nás to, ale potvrzujeme, že vaše objednávku 261282944 byla stornována 😢.</p><p></p>"
         }
       ],
       "deliveryType": {
@@ -44347,8 +44359,8 @@
     "orders": 233,
     "revenueWithVat": 429591.9,
     "averageOrderValue": 1843.74,
-    "cancelledOrders": 0,
-    "problematicOrders": 0,
+    "cancelledOrders": 1,
+    "problematicOrders": 1,
     "statuses": [
       {
         "name": "přijatá",
@@ -44360,7 +44372,11 @@
       },
       {
         "name": "nová",
-        "count": 17
+        "count": 16
+      },
+      {
+        "name": "chyba",
+        "count": 1
       },
       {
         "name": "doručeno",
@@ -44773,8 +44789,8 @@
         "orders": 233,
         "revenueWithVat": 429591.9,
         "averageOrderValue": 1843.74,
-        "cancelledOrders": 0,
-        "problematicOrders": 0,
+        "cancelledOrders": 1,
+        "problematicOrders": 1,
         "statuses": [
           {
             "name": "přijatá",
@@ -44786,7 +44802,11 @@
           },
           {
             "name": "nová",
-            "count": 17
+            "count": 16
+          },
+          {
+            "name": "chyba",
+            "count": 1
           },
           {
             "name": "doručeno",
@@ -45199,8 +45219,8 @@
         "orders": 206,
         "revenueWithVat": 373913.41,
         "averageOrderValue": 1815.11,
-        "cancelledOrders": 0,
-        "problematicOrders": 0,
+        "cancelledOrders": 1,
+        "problematicOrders": 1,
         "statuses": [
           {
             "name": "přijatá",
@@ -45212,7 +45232,11 @@
           },
           {
             "name": "nová",
-            "count": 14
+            "count": 13
+          },
+          {
+            "name": "chyba",
+            "count": 1
           },
           {
             "name": "připraveno k vyzvednutí",
