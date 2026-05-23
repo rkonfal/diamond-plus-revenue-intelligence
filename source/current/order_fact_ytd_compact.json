@@ -1,17 +1,32 @@
 {
-  "generatedAt": "2026-05-23T01:10:56.799944+02:00",
+  "generatedAt": "2026-05-23T05:20:52.111601+02:00",
   "window": {
     "from": "2025-01-01T00:00:00+01:00",
-    "to": "2026-05-23T01:10:56.799944+02:00"
+    "to": "2026-05-23T05:20:52.111601+02:00"
   },
   "summary": {
-    "orders": 201387,
-    "nonCancelledOrders": 195424,
+    "orders": 201388,
+    "nonCancelledOrders": 195425,
     "problematicOrders": 6084,
     "cancelledOrders": 5963,
-    "revenueWithVat": 315071905.39
+    "revenueWithVat": 315072682.39
   },
   "orders": [
+    {
+      "id": 3617060,
+      "code": "261282985",
+      "dateCreated": "2026-05-23T04:15:18+02:00",
+      "customerKey": "email:michaela.papezova@seznam.cz",
+      "customerLabel": "Michaela Papežová",
+      "email": "michaela.papezova@seznam.cz",
+      "countryCode": "CZ",
+      "sourceName": "E-shop",
+      "statusName": "přijatá",
+      "cancelled": false,
+      "problematic": false,
+      "isPaid": false,
+      "revenueWithVat": 777.0
+    },
     {
       "id": 3617059,
       "code": "261282984",
@@ -1116,10 +1131,10 @@
       "email": "annastonisova@seznam.cz",
       "countryCode": "CZ",
       "sourceName": "E-shop",
-      "statusName": "nová",
+      "statusName": "přijatá",
       "cancelled": false,
       "problematic": false,
-      "isPaid": false,
+      "isPaid": true,
       "revenueWithVat": 431.0
     },
     {
@@ -3746,21 +3761,6 @@
       "problematic": false,
       "isPaid": true,
       "revenueWithVat": 1707.0
-    },
-    {
-      "id": 3616796,
-      "code": "261282735",
-      "dateCreated": "2026-05-21T22:32:28+02:00",
-      "customerKey": "email:diviskova.marcela@seznam.cz",
-      "customerLabel": "Marcela Divíšková",
-      "email": "diviskova.marcela@seznam.cz",
-      "countryCode": "CZ",
-      "sourceName": "E-shop",
-      "statusName": "expedováno",
-      "cancelled": false,
-      "problematic": false,
-      "isPaid": false,
-      "revenueWithVat": 3502.0
     }
   ]
 }
