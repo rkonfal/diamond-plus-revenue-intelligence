@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-05-24T23:51:11.304177+02:00",
+  "generatedAt": "2026-05-25T00:26:08.630939+02:00",
   "config": {
     "warehouseCode": "CZPRGA",
     "outboundMaxPages": 20,
     "reportWindow": {
-      "from": "2026-05-23T00:00:01+02:00",
-      "to": "2026-05-24T00:00:00+02:00"
+      "from": "2026-05-24T00:00:01+02:00",
+      "to": "2026-05-25T00:00:00+02:00"
     }
   },
   "warnings": [],
@@ -14,17 +14,17 @@
       "label": "CZ",
       "inventory": {
         "items": 777,
-        "availableStockTotal": 276879,
-        "pendingStockTotal": 2519,
+        "availableStockTotal": 276815,
+        "pendingStockTotal": 2583,
         "freezeStockTotal": 0,
         "lowStockItems": 100
       },
       "outbound": {
-        "items": 400,
-        "scannedPages": 4,
+        "items": 300,
+        "scannedPages": 3,
         "topLogisticsProduct": "F1401",
-        "oldestTimestamp": "2026-05-22T17:30:04+02:00",
-        "newestTimestamp": "2026-05-24T23:35:03+02:00"
+        "oldestTimestamp": "2026-05-23T12:35:02+02:00",
+        "newestTimestamp": "2026-05-25T00:20:03+02:00"
       }
     },
     "sk": {
@@ -48,21 +48,23 @@
   "wpJ": {
     "ready": true,
     "message": "WPJ připojeno a ranní report je vygenerovaný.",
-    "orders": 134,
-    "revenueWithVat": 219380.64,
-    "averageOrderValue": 1637.17,
-    "problematicOrders": 4
+    "orders": 278,
+    "revenueWithVat": 486964.88,
+    "averageOrderValue": 1751.67,
+    "problematicOrders": 2
   },
   "report": {
-    "date": "2026-05-23",
-    "shipments": 122,
+    "date": "2026-05-24",
+    "shipments": 254,
     "alerts": [
-      "4 problematických nebo stornovaných objednávek.",
-      "10 skladových pozic je v mínusu.",
-      "V top expiracích je aspoň jedna položka do 30 dnů."
+      "2 problematických nebo stornovaných objednávek.",
+      "2 včera prodaných produktů je teď na nízkém skladu.",
+      "10 skladových pozic je v mínusu."
     ],
     "priorities": [
-      "Projít 4 problematických nebo stornovaných objednávek z včerejška.",
+      "Dohlédnout 30127 (Krční pás s bodovou turmalínovou vrstvou), aktuálně 1 ks.",
+      "Dohlédnout 000083 (Propiska Království tianDe), aktuálně 1 ks.",
+      "Projít 2 problematických nebo stornovaných objednávek z včerejška.",
       "Projít nejbližší expirace v 4PX a rozhodnout o doprodeji nebo přesunu zásoby."
     ]
   },
@@ -76,8 +78,8 @@
     "pairedProducts": 395,
     "onlyInWpj": 1488,
     "onlyIn4px": 1,
-    "stockMismatch": 700,
-    "lowAfterSales": 1,
+    "stockMismatch": 701,
+    "lowAfterSales": 2,
     "manualMapped4pxAliases": 0,
     "autoMapped4pxAliases": 73
   },
@@ -87,19 +89,19 @@
     "message": "Měsíční finance se tahají přímo z ABRA reportu Výkaz hospodaření za měsíc za všechna střediska. Cash a závazky jsou také live z ABRA API.",
     "currentMonth": {
       "label": "5/2026",
-      "revenue": 9542936.27,
-      "cogsAndFees": 7128943.21,
+      "revenue": 9543262.71,
+      "cogsAndFees": 7129098.83,
       "logistics": 44640.56,
       "marketing": 239438.02,
       "opex": 366907.26,
       "depreciation": 385502.0,
       "other": 111368.23,
-      "grossMargin": 2413993.06,
-      "afterLogistics": 2369352.5,
-      "afterMarketing": 2129914.48,
-      "operatingMargin": 1763007.22,
-      "ebit": 1377505.22,
-      "profit": 1488873.45,
+      "grossMargin": 2414163.88,
+      "afterLogistics": 2369523.32,
+      "afterMarketing": 2130085.3,
+      "operatingMargin": 1763178.04,
+      "ebit": 1377676.04,
+      "profit": 1489044.27,
       "grossMarginPct": 25.3,
       "marketingPct": 2.5,
       "logisticsPct": 0.5,
@@ -119,7 +121,7 @@
           "dueDate": "30.05.2026",
           "amountTotal": 636473.07,
           "amountDue": 636473.07,
-          "status": "6 dní do splatnosti"
+          "status": "5 dní do splatnosti"
         },
         {
           "code": "PF0546/2026",
@@ -127,7 +129,7 @@
           "dueDate": "01.05.2026",
           "amountTotal": 147493.18,
           "amountDue": 147493.18,
-          "status": "23 dní PO SPLATNOSTI"
+          "status": "24 dní PO SPLATNOSTI"
         },
         {
           "code": "PF0567/2026",
@@ -135,7 +137,7 @@
           "dueDate": "30.05.2026",
           "amountTotal": 71028.82,
           "amountDue": 71028.82,
-          "status": "6 dní do splatnosti"
+          "status": "5 dní do splatnosti"
         },
         {
           "code": "PF0578/2026",
@@ -143,7 +145,7 @@
           "dueDate": "30.05.2026",
           "amountTotal": 53112.71,
           "amountDue": 53112.71,
-          "status": "6 dní do splatnosti"
+          "status": "5 dní do splatnosti"
         },
         {
           "code": "PF0636/2026",
@@ -151,7 +153,7 @@
           "dueDate": "16.06.2026",
           "amountTotal": 45314.5,
           "amountDue": 45314.5,
-          "status": "23 dní do splatnosti"
+          "status": "22 dní do splatnosti"
         },
         {
           "code": "PF0640/2026",
@@ -159,7 +161,7 @@
           "dueDate": "30.05.2026",
           "amountTotal": 41140.0,
           "amountDue": 41140.0,
-          "status": "6 dní do splatnosti"
+          "status": "5 dní do splatnosti"
         },
         {
           "code": "PF0642/2026",
@@ -167,7 +169,7 @@
           "dueDate": "26.05.2026",
           "amountTotal": 39343.5,
           "amountDue": 39343.5,
-          "status": "2 dní do splatnosti"
+          "status": "1 dní do splatnosti"
         },
         {
           "code": "PF0634/2026",
@@ -175,7 +177,7 @@
           "dueDate": "08.06.2026",
           "amountTotal": 38720.0,
           "amountDue": 38720.0,
-          "status": "15 dní do splatnosti"
+          "status": "14 dní do splatnosti"
         }
       ],
       "cashAccountsSource": {
@@ -367,7 +369,7 @@
       "performanceSpend": 39438.02,
       "brandSpend": 200000.0,
       "totalSpend": 239438.02,
-      "revenue": 9542936.27,
+      "revenue": 9543262.71,
       "spendShareOfRevenuePct": 2.5
     },
     "topSupplier": {
@@ -381,16 +383,16 @@
     "message": "Affiliate přehled se skládá přímo z živých API endpointů affiliate portálu, bez závislosti na HTML exportech.",
     "period": {
       "dateFrom": "2025-10-01",
-      "dateTo": "2026-05-24",
-      "label": "2025-10-01 až 2026-05-24"
+      "dateTo": "2026-05-25",
+      "label": "2025-10-01 až 2026-05-25"
     },
     "summary": {
-      "noviceRevenueCzkEquiv": 10849203.0,
-      "networkRevenueCzkEquiv": 16020545.0,
+      "noviceRevenueCzkEquiv": 10860061.0,
+      "networkRevenueCzkEquiv": 16031403.0,
       "novicePartners": 50,
       "networkPartners": 50,
-      "noviceOrders": 6593.0,
-      "networkOrders": 9867.0,
+      "noviceOrders": 6596.0,
+      "networkOrders": 9870.0,
       "noviceOrderingContacts": 1412.0,
       "networkOrderingCustomers": 3322.0,
       "topNovicePartner": {
@@ -420,73 +422,73 @@
     "currentMonth": {
       "label": "5/2026",
       "dateFrom": "2026-05-01",
-      "dateTo": "2026-05-23",
-      "activeUsers": 34920,
-      "sessions": 105070,
-      "engagedSessions": 70675,
-      "screenPageViews": 618829,
-      "ecommercePurchases": 7605.0,
-      "purchaseRevenue": 9309609.18,
-      "averageSessionDuration": 317.08,
+      "dateTo": "2026-05-24",
+      "activeUsers": 35613,
+      "sessions": 107677,
+      "engagedSessions": 73001,
+      "screenPageViews": 633609,
+      "ecommercePurchases": 7802.0,
+      "purchaseRevenue": 9552128.98,
+      "averageSessionDuration": 315.85,
       "bounceRatePct": 0.32,
-      "engagementRatePct": 67.26,
-      "purchaseRatePct": 7.24,
-      "revenuePerSession": 88.6
+      "engagementRatePct": 67.8,
+      "purchaseRatePct": 7.25,
+      "revenuePerSession": 88.71
     },
     "last7days": {
       "label": "last7days",
-      "dateFrom": "2026-05-17",
-      "dateTo": "2026-05-23",
-      "activeUsers": 12798,
-      "sessions": 28340,
-      "engagedSessions": 19970,
-      "screenPageViews": 155365,
-      "ecommercePurchases": 1928.0,
-      "purchaseRevenue": 2452956.55,
-      "averageSessionDuration": 291.63,
-      "bounceRatePct": 0.3,
-      "engagementRatePct": 70.47,
-      "purchaseRatePct": 6.8,
-      "revenuePerSession": 86.55
+      "dateFrom": "2026-05-18",
+      "dateTo": "2026-05-24",
+      "activeUsers": 12184,
+      "sessions": 27327,
+      "engagedSessions": 19337,
+      "screenPageViews": 144224,
+      "ecommercePurchases": 1778.0,
+      "purchaseRevenue": 2274776.54,
+      "averageSessionDuration": 277.37,
+      "bounceRatePct": 0.29,
+      "engagementRatePct": 70.76,
+      "purchaseRatePct": 6.51,
+      "revenuePerSession": 83.24
     },
     "topChannel7d": {
-      "sessions": 6722.0,
-      "activeUsers": 3060.0,
-      "engagedSessions": 5051.0,
-      "ecommercePurchases": 591.0,
-      "purchaseRevenue": 777283.18,
+      "sessions": 6770.0,
+      "activeUsers": 3022.0,
+      "engagedSessions": 5087.0,
+      "ecommercePurchases": 542.0,
+      "purchaseRevenue": 701113.06,
       "channel": "Paid Search",
-      "purchaseRatePct": 8.79,
-      "revenuePerSession": 115.63
+      "purchaseRatePct": 8.01,
+      "revenuePerSession": 103.56
     },
     "countries7d": [
       {
         "country": "Czechia",
-        "activeUsers": 10857.0,
-        "ecommercePurchases": 1771.0,
-        "purchaseRevenue": 2416900.19
+        "activeUsers": 10339.0,
+        "ecommercePurchases": 1634.0,
+        "purchaseRevenue": 2238133.08
       },
       {
         "country": "Slovakia",
-        "activeUsers": 1394.0,
-        "ecommercePurchases": 137.0,
-        "purchaseRevenue": 8513.53
+        "activeUsers": 1295.0,
+        "ecommercePurchases": 127.0,
+        "purchaseRevenue": 8104.76
       },
       {
         "country": "United States",
-        "activeUsers": 262.0,
+        "activeUsers": 170.0,
         "ecommercePurchases": 1.0,
         "purchaseRevenue": 1512.0
       },
       {
         "country": "Germany",
-        "activeUsers": 74.0,
+        "activeUsers": 73.0,
         "ecommercePurchases": 4.0,
         "purchaseRevenue": 6327.7
       },
       {
         "country": "Austria",
-        "activeUsers": 60.0,
+        "activeUsers": 57.0,
         "ecommercePurchases": 6.0,
         "purchaseRevenue": 9518.74
       }
