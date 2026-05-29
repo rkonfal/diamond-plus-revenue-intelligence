@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-29T13:39:35.004469+02:00",
+  "generatedAt": "2026-05-29T18:02:34.244120+02:00",
   "config": {
     "warehouseCode": "CZPRGA",
     "outboundMaxPages": 20,
@@ -14,8 +14,8 @@
       "label": "CZ",
       "inventory": {
         "items": 779,
-        "availableStockTotal": 347188,
-        "pendingStockTotal": 2245,
+        "availableStockTotal": 346819,
+        "pendingStockTotal": 907,
         "freezeStockTotal": 0,
         "lowStockItems": 100
       },
@@ -23,16 +23,16 @@
         "items": 500,
         "scannedPages": 5,
         "topLogisticsProduct": "F1401",
-        "oldestTimestamp": "2026-05-27T16:45:14+02:00",
-        "newestTimestamp": "2026-05-29T13:35:02+02:00"
+        "oldestTimestamp": "2026-05-27T20:30:29+02:00",
+        "newestTimestamp": "2026-05-29T17:50:03+02:00"
       }
     },
     "sk": {
       "label": "SK",
       "inventory": {
         "items": 631,
-        "availableStockTotal": 68122,
-        "pendingStockTotal": 7,
+        "availableStockTotal": 68084,
+        "pendingStockTotal": 46,
         "freezeStockTotal": 0,
         "lowStockItems": 100
       },
@@ -40,8 +40,8 @@
         "items": 100,
         "scannedPages": 1,
         "topLogisticsProduct": "F1403",
-        "oldestTimestamp": "2026-05-26T14:20:28+02:00",
-        "newestTimestamp": "2026-05-29T13:40:05+02:00"
+        "oldestTimestamp": "2026-05-26T15:35:25+02:00",
+        "newestTimestamp": "2026-05-29T15:10:07+02:00"
       }
     }
   },
@@ -55,10 +55,11 @@
   },
   "report": {
     "date": "2026-05-28",
-    "shipments": 317,
+    "shipments": 316,
     "alerts": [
       "1 včera prodaných produktů je teď na nízkém skladu.",
-      "10 skladových pozic je v mínusu."
+      "10 skladových pozic je v mínusu.",
+      "V top expiracích je aspoň jedna položka do 30 dnů."
     ],
     "priorities": [
       "Dohlédnout 90149/4 (Přístroj s komplexními fotochromatickými a ultrazvukovými účinky), aktuálně 4 ks.",
@@ -69,9 +70,9 @@
     "datedSkuCount": 335,
     "czSkuCount": 324,
     "skSkuCount": 305,
-    "datedRowCount": 717,
-    "czRowCount": 369,
-    "skRowCount": 348
+    "datedRowCount": 722,
+    "czRowCount": 373,
+    "skRowCount": 349
   },
   "pairing": {
     "allCodes": 2950,
@@ -89,29 +90,29 @@
     "message": "Měsíční finance se tahají přímo z ABRA reportu Výkaz hospodaření za měsíc za všechna střediska. Cash a závazky jsou také live z ABRA API.",
     "currentMonth": {
       "label": "5/2026",
-      "revenue": 11576656.68,
-      "cogsAndFees": 8431660.26,
+      "revenue": 11653999.52,
+      "cogsAndFees": 8482270.27,
       "logistics": 60573.58,
       "marketing": 285035.61,
       "opex": 444835.79,
       "depreciation": 385502.0,
       "other": 111243.91,
-      "grossMargin": 3144996.42,
-      "afterLogistics": 3084422.84,
-      "afterMarketing": 2799387.23,
-      "operatingMargin": 2354551.44,
-      "ebit": 1969049.44,
-      "profit": 2080293.35,
+      "grossMargin": 3171729.25,
+      "afterLogistics": 3111155.67,
+      "afterMarketing": 2826120.06,
+      "operatingMargin": 2381284.27,
+      "ebit": 1995782.27,
+      "profit": 2107026.18,
       "grossMarginPct": 27.2,
-      "marketingPct": 2.5,
+      "marketingPct": 2.4,
       "logisticsPct": 0.5,
-      "operatingMarginPct": 20.3,
-      "profitPct": 18.0
+      "operatingMarginPct": 20.4,
+      "profitPct": 18.1
     },
     "cash": {
-      "cashOnAccounts": 12083456.53,
+      "cashOnAccounts": 12117589.11,
       "unpaidInvoices": 478489.96,
-      "netCashPosition": 11604966.57,
+      "netCashPosition": 11639099.15,
       "overdueInvoicesCount": 1,
       "overdueInvoicesAmount": 209.3,
       "largestPayables": [
@@ -202,8 +203,8 @@
             "accountCode": "221001",
             "accountLabel": "221001: 2901338673/2010 FIO CZK",
             "currency": "CZK: Česká koruna",
-            "balance": 1761394.08,
-            "includedBalance": 1761394.08
+            "balance": 1793634.08,
+            "includedBalance": 1793634.08
           },
           {
             "accountCode": "221002",
@@ -230,8 +231,8 @@
             "accountCode": "221005",
             "accountLabel": "221005: 2501338690/2010 FIO EUR",
             "currency": "CZK: Česká koruna",
-            "balance": 83178.52,
-            "includedBalance": 83178.52
+            "balance": 85071.1,
+            "includedBalance": 85071.1
           },
           {
             "accountCode": "211000",
@@ -369,8 +370,8 @@
       "performanceSpend": 85035.61,
       "brandSpend": 200000.0,
       "totalSpend": 285035.61,
-      "revenue": 11576656.68,
-      "spendShareOfRevenuePct": 2.5
+      "revenue": 11653999.52,
+      "spendShareOfRevenuePct": 2.4
     },
     "topSupplier": {
       "name": "Selfcareacademy s.r.o.",
@@ -387,23 +388,23 @@
       "label": "2025-10-01 až 2026-05-29"
     },
     "summary": {
-      "noviceRevenueCzkEquiv": 11290917.0,
-      "networkRevenueCzkEquiv": 16597203.0,
+      "noviceRevenueCzkEquiv": 11310441.0,
+      "networkRevenueCzkEquiv": 16622475.0,
       "novicePartners": 50,
       "networkPartners": 50,
-      "noviceOrders": 6816.0,
-      "networkOrders": 10181.0,
-      "noviceOrderingContacts": 1438.0,
-      "networkOrderingCustomers": 3392.0,
+      "noviceOrders": 6826.0,
+      "networkOrders": 10192.0,
+      "noviceOrderingContacts": 1440.0,
+      "networkOrderingCustomers": 3395.0,
       "topNovicePartner": {
         "partnerCode": "ESHOP",
         "partnerName": "E-shop (interní)",
-        "revenueCzkEquiv": 3174511.0
+        "revenueCzkEquiv": 3181509.0
       },
       "topNetworkPartner": {
         "partnerCode": "ESHOP",
         "partnerName": "E-shop (interní)",
-        "revenueCzkEquiv": 3174511.0
+        "revenueCzkEquiv": 3181509.0
       }
     }
   },
