@@ -16,7 +16,7 @@
         "performanceSpend": 0.0,
         "brandSpend": 0.0,
         "totalSpend": 0.0,
-        "revenue": 230207.29,
+        "revenue": 407409.64,
         "spendShareOfRevenuePct": 0.0
       },
       "topSupplier": null
@@ -27,55 +27,95 @@
       "message": "Měsíční finance se tahají přímo z ABRA reportu Výkaz hospodaření za měsíc za všechna střediska. Cash a závazky jsou také live z ABRA API.",
       "currentMonth": {
         "label": "6/2026",
-        "revenue": 230207.29,
-        "cogsAndFees": 166224.37,
+        "revenue": 407409.64,
+        "cogsAndFees": 293799.72,
         "logistics": 0.0,
         "marketing": 0.0,
-        "opex": 54764.0,
+        "opex": 57048.94,
         "depreciation": 385502.0,
         "other": -308.18,
-        "grossMargin": 63982.92,
-        "afterLogistics": 63982.92,
-        "afterMarketing": 63982.92,
-        "operatingMargin": 9218.92,
-        "ebit": -376283.08,
-        "profit": -376591.26,
-        "grossMarginPct": 27.8,
+        "grossMargin": 113609.92,
+        "afterLogistics": 113609.92,
+        "afterMarketing": 113609.92,
+        "operatingMargin": 56560.98,
+        "ebit": -328941.02,
+        "profit": -329249.2,
+        "grossMarginPct": 27.9,
         "marketingPct": 0.0,
         "logisticsPct": 0.0,
-        "operatingMarginPct": 4.0,
-        "profitPct": -163.6
+        "operatingMarginPct": 13.9,
+        "profitPct": -80.8
       },
       "cash": {
-        "cashOnAccounts": 12168213.82,
-        "unpaidInvoices": 20109.3,
-        "netCashPosition": 12148104.52,
-        "overdueInvoicesCount": 1,
-        "overdueInvoicesAmount": 209.3,
+        "cashOnAccounts": 12170872.76,
+        "unpaidInvoices": 8440405.08,
+        "netCashPosition": 3730467.68,
+        "overdueInvoicesCount": 5,
+        "overdueInvoicesAmount": 7952604.66,
         "largestPayables": [
           {
-            "code": "Z0039/2026",
-            "vendor": "Le-Investment, spol. s r.o.",
-            "dueDate": "19.08.2026",
-            "amountTotal": 18850.0,
-            "amountDue": 18850.0,
-            "status": "79 dní do splatnosti"
+            "code": "PF0684/2026",
+            "vendor": "\"ASTI GROUP\" SIA",
+            "dueDate": "29.05.2026",
+            "amountTotal": 3839113.87,
+            "amountDue": 3839113.87,
+            "status": "3 dní PO SPLATNOSTI"
           },
           {
-            "code": "PF0635/2026",
-            "vendor": "arachis s.r.o.",
-            "dueDate": "01.06.2026",
-            "amountTotal": 1050.0,
-            "amountDue": 1050.0,
-            "status": "splatné dnes"
+            "code": "PF0683/2026",
+            "vendor": "\"ASTI GROUP\" SIA",
+            "dueDate": "29.05.2026",
+            "amountTotal": 3676618.71,
+            "amountDue": 3676618.71,
+            "status": "3 dní PO SPLATNOSTI"
           },
           {
-            "code": "PF0632/2026",
-            "vendor": "BUNNYWAY, informacijske storitved.o.o.",
-            "dueDate": "16.05.2026",
-            "amountTotal": 209.3,
-            "amountDue": 209.3,
-            "status": "16 dní PO SPLATNOSTI"
+            "code": "PF0686/2026",
+            "vendor": "\"ASTI GROUP\" SIA",
+            "dueDate": "29.05.2026",
+            "amountTotal": 342166.41,
+            "amountDue": 342166.41,
+            "status": "3 dní PO SPLATNOSTI"
+          },
+          {
+            "code": "PF0668/2026",
+            "vendor": "ISTA CORPORATION s.r.o.",
+            "dueDate": "08.06.2026",
+            "amountTotal": 175923.24,
+            "amountDue": 175923.24,
+            "status": "7 dní do splatnosti"
+          },
+          {
+            "code": "PF0685/2026",
+            "vendor": "\"ASTI GROUP\" SIA",
+            "dueDate": "29.05.2026",
+            "amountTotal": 94496.37,
+            "amountDue": 94496.37,
+            "status": "3 dní PO SPLATNOSTI"
+          },
+          {
+            "code": "PF0669/2026",
+            "vendor": "ISTA CORPORATION s.r.o.",
+            "dueDate": "08.06.2026",
+            "amountTotal": 73504.45,
+            "amountDue": 73504.45,
+            "status": "7 dní do splatnosti"
+          },
+          {
+            "code": "PF0673/2026",
+            "vendor": "KODAP Ltm s.r.o.",
+            "dueDate": "15.06.2026",
+            "amountTotal": 62920.0,
+            "amountDue": 62920.0,
+            "status": "14 dní do splatnosti"
+          },
+          {
+            "code": "PF0676/2026",
+            "vendor": "4PX Express CZ",
+            "dueDate": "27.06.2026",
+            "amountTotal": 51788.0,
+            "amountDue": 51788.0,
+            "status": "26 dní do splatnosti"
           }
         ],
         "cashAccountsSource": {
@@ -83,25 +123,32 @@
           "message": "Cash na účtech a pokladnách je počítán živě z ABRA obratové předvahy pro účty 221 a 211, ze CZK řádků a se započtením kladných zůstatků.",
           "accounts": [
             {
-              "accountCode": "221115",
-              "accountLabel": "221115: 131-3675980207/0100 KB CZK",
-              "currency": "CZK: Česká koruna",
-              "balance": 4926132.38,
-              "includedBalance": 4926132.38
-            },
-            {
               "accountCode": "221006",
               "accountLabel": "221006: 2202503115/2010 FIO CZK",
               "currency": "CZK: Česká koruna",
-              "balance": 4687089.2,
-              "includedBalance": 4687089.2
+              "balance": 5097089.2,
+              "includedBalance": 5097089.2
+            },
+            {
+              "accountCode": "221115",
+              "accountLabel": "221115: 131-3675980207/0100 KB CZK",
+              "currency": "CZK: Česká koruna",
+              "balance": 4926294.97,
+              "includedBalance": 4926294.97
             },
             {
               "accountCode": "221001",
               "accountLabel": "221001: 2901338673/2010 FIO CZK",
               "currency": "CZK: Česká koruna",
-              "balance": 2203738.08,
-              "includedBalance": 2203738.08
+              "balance": 1790837.08,
+              "includedBalance": 1790837.08
+            },
+            {
+              "accountCode": "221005",
+              "accountLabel": "221005: 2501338690/2010 FIO EUR",
+              "currency": "CZK: Česká koruna",
+              "balance": 102120.4,
+              "includedBalance": 102120.4
             },
             {
               "accountCode": "221112",
@@ -116,13 +163,6 @@
               "currency": "CZK: Česká koruna",
               "balance": 99497.24,
               "includedBalance": 99497.24
-            },
-            {
-              "accountCode": "221005",
-              "accountLabel": "221005: 2501338690/2010 FIO EUR",
-              "currency": "CZK: Česká koruna",
-              "balance": 96723.05,
-              "includedBalance": 96723.05
             },
             {
               "accountCode": "211000",
