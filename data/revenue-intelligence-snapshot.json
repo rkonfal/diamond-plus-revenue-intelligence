@@ -26,7 +26,7 @@
       "label": "Finance po marketingu, poslední plný měsíc"
     },
     "netCashPosition": {
-      "value": 4305140.38,
+      "value": 4314303.38,
       "label": "Aktuální čistá hotovostní pozice"
     },
     "measurementConfidence": {
@@ -35,14 +35,14 @@
     },
     "newVsReturning": {
       "status": "measured_ytd",
-      "label": "Returning customers generated 308112416.17 Kč vs 12780229.85 Kč from new customers in the measured YTD window."
+      "label": "Returning customers generated 308138666.58 Kč vs 12780405.85 Kč from new customers in the measured YTD window."
     },
     "reportNarrative": {
       "headline": "Report už umí oddělit business truth, customer truth, acquisition truth a measurement truth, takže se dá řídit jako systém a ne jen číst jako dashboard.",
       "plainLanguage": [
         "Za fokus období report vidí tržby 664037.87 Kč a spend 201348.71 Kč.",
         "Po marketingu vychází ve financích 2896506.65 Kč, takže byznys jako celek funguje.",
-        "Returning customers generated 308112416.17 Kč vs 12780229.85 Kč from new customers in the measured YTD window.",
+        "Returning customers generated 308138666.58 Kč vs 12780405.85 Kč from new customers in the measured YTD window.",
         "Nejslabší místo už není customer truth, ale channel reconciliation a netto contribution."
       ],
       "whatToDoNow": [
@@ -96,9 +96,9 @@
       "profitPct": -45.1
     },
     "cash": {
-      "cashOnAccounts": 4576527.81,
+      "cashOnAccounts": 4585690.81,
       "unpaidInvoices": 271387.43,
-      "netCashPosition": 4305140.38,
+      "netCashPosition": 4314303.38,
       "overdueInvoicesCount": 2,
       "overdueInvoicesAmount": 1259.3,
       "largestPayables": [
@@ -186,18 +186,18 @@
             "includedBalance": 881652.97
           },
           {
+            "accountCode": "221001",
+            "accountLabel": "221001: 2901338673/2010 FIO CZK",
+            "currency": "CZK: Česká koruna",
+            "balance": 122756.08,
+            "includedBalance": 122756.08
+          },
+          {
             "accountCode": "221005",
             "accountLabel": "221005: 2501338690/2010 FIO EUR",
             "currency": "CZK: Česká koruna",
             "balance": 119223.09,
             "includedBalance": 119223.09
-          },
-          {
-            "accountCode": "221001",
-            "accountLabel": "221001: 2901338673/2010 FIO CZK",
-            "currency": "CZK: Česká koruna",
-            "balance": 113593.08,
-            "includedBalance": 113593.08
           },
           {
             "accountCode": "221006",
@@ -344,14 +344,14 @@
     },
     "eshopYtdTotals": {
       "previous": {
-        "count": 64076,
-        "revenueWithVat": 97660283.41,
-        "averageOrderValue": 1524.13
+        "count": 64088,
+        "revenueWithVat": 97674843.78,
+        "averageOrderValue": 1524.07
       },
       "current": {
-        "count": 54317,
-        "revenueWithVat": 90237943.09,
-        "averageOrderValue": 1661.32
+        "count": 54335,
+        "revenueWithVat": 90264369.5,
+        "averageOrderValue": 1661.26
       }
     },
     "previousDayOrders": {
@@ -364,25 +364,25 @@
       "skOrders": 43
     },
     "historicalOrderWindow": {
-      "orders": 204884,
-      "nonCancelledOrders": 198832,
+      "orders": 204902,
+      "nonCancelledOrders": 198850,
       "problematicOrders": 6173,
       "cancelledOrders": 6052,
-      "revenueWithVat": 320892646.02
+      "revenueWithVat": 320919072.43
     },
     "orderQuality": {
-      "orders": 204884,
-      "nonCancelledOrders": 198832,
+      "orders": 204902,
+      "nonCancelledOrders": 198850,
       "cancelledOrders": 6052,
       "problematicOrders": 6173,
       "cancelledRatePct": 2.95,
       "problematicRatePct": 3.01,
-      "estimatedNetRevenueAfterCancellations": 311426312.96,
-      "grossRevenueWithVat": 320892646.02,
+      "estimatedNetRevenueAfterCancellations": 311451959.79,
+      "grossRevenueWithVat": 320919072.43,
       "qualityLabel": "healthy",
       "window": {
         "from": "2025-01-01T00:00:00+01:00",
-        "to": "2026-06-03T01:14:42.486489+02:00"
+        "to": "2026-06-03T06:45:01.868962+02:00"
       }
     },
     "contributionTruth": {
@@ -399,18 +399,18 @@
         "retentionOrdersProxy": 3291
       },
       "latestOrderPulse": {
-        "orders": 204884,
-        "nonCancelledOrders": 198832,
+        "orders": 204902,
+        "nonCancelledOrders": 198850,
         "cancelledOrders": 6052,
         "problematicOrders": 6173,
         "cancelledRatePct": 2.95,
         "problematicRatePct": 3.01,
-        "estimatedNetRevenueAfterCancellations": 311426312.96,
-        "grossRevenueWithVat": 320892646.02,
+        "estimatedNetRevenueAfterCancellations": 311451959.79,
+        "grossRevenueWithVat": 320919072.43,
         "qualityLabel": "healthy",
         "window": {
           "from": "2025-01-01T00:00:00+01:00",
-          "to": "2026-06-03T01:14:42.486489+02:00"
+          "to": "2026-06-03T06:45:01.868962+02:00"
         }
       },
       "nettoContributionReadiness": {
@@ -443,20 +443,20 @@
         "profitPct": 16.02
       },
       "ytdEstimated": {
-        "grossRevenueWithVat": 320892646.02,
-        "netRevenueAfterCancellations": 311426312.96,
-        "cancellationLeakage": 9466333.06,
-        "estimatedGrossMargin": 83946246.69,
-        "estimatedAfterLogistics": 82124588.28,
-        "estimatedAfterMarketing": 73372248.99,
-        "estimatedOperatingContribution": 57649572.7,
-        "estimatedProfitContribution": 49888213.47
+        "grossRevenueWithVat": 320919072.43,
+        "netRevenueAfterCancellations": 311451959.79,
+        "cancellationLeakage": 9467112.64,
+        "estimatedGrossMargin": 83953159.89,
+        "estimatedAfterLogistics": 82131351.47,
+        "estimatedAfterMarketing": 73378291.4,
+        "estimatedOperatingContribution": 57654320.3,
+        "estimatedProfitContribution": 49892321.91
       },
       "customerContributionSplitYtd": {
-        "newRevenueWithVat": 12780229.85,
-        "returningRevenueWithVat": 308112416.17,
-        "estimatedNewAfterMarketing": 3011030.76,
-        "estimatedReturningAfterMarketing": 72591492.68,
+        "newRevenueWithVat": 12780405.85,
+        "returningRevenueWithVat": 308138666.58,
+        "estimatedNewAfterMarketing": 3011072.22,
+        "estimatedReturningAfterMarketing": 72597677.29,
         "retentionRevenueProxyPreviousMonth": 4881589.35
       },
       "warnings": [
@@ -9992,23 +9992,23 @@
           "label": "2025-10-01 až 2026-06-03"
         },
         "summary": {
-          "noviceRevenueCzkEquiv": 11673970.0,
-          "networkRevenueCzkEquiv": 17048340.0,
+          "noviceRevenueCzkEquiv": 11674053.0,
+          "networkRevenueCzkEquiv": 17048423.0,
           "novicePartners": 50,
           "networkPartners": 50,
-          "noviceOrders": 7056.0,
-          "networkOrders": 10468.0,
-          "noviceOrderingContacts": 1471.0,
-          "networkOrderingCustomers": 3457.0,
+          "noviceOrders": 7057.0,
+          "networkOrders": 10469.0,
+          "noviceOrderingContacts": 1472.0,
+          "networkOrderingCustomers": 3458.0,
           "topNovicePartner": {
             "partnerCode": "ESHOP",
             "partnerName": "E-shop (interní)",
-            "revenueCzkEquiv": 3301681.0
+            "revenueCzkEquiv": 3301764.0
           },
           "topNetworkPartner": {
             "partnerCode": "ESHOP",
             "partnerName": "E-shop (interní)",
-            "revenueCzkEquiv": 3301681.0
+            "revenueCzkEquiv": 3301764.0
           }
         },
         "reports": {
@@ -10019,10 +10019,10 @@
             "error": null,
             "partners": 50,
             "totals": {
-              "contacts": 4421.0,
-              "orderingContacts": 1471.0,
-              "orders": 7056.0,
-              "revenueCzkEquiv": 11673970.0
+              "contacts": 4422.0,
+              "orderingContacts": 1472.0,
+              "orders": 7057.0,
+              "revenueCzkEquiv": 11674053.0
             },
             "monthly": [
               {
@@ -10118,22 +10118,22 @@
               {
                 "key": "cerven_2026",
                 "label": "Cerven 2026",
-                "contacts": 13.0,
-                "orderingContacts": 11.0,
+                "contacts": 14.0,
+                "orderingContacts": 12.0,
                 "networkCustomers": 0.0,
                 "orderingCustomers": 0.0,
-                "orders": 112.0,
-                "revenueCzkEquiv": 155469.0
+                "orders": 113.0,
+                "revenueCzkEquiv": 155552.0
               }
             ],
             "topPartners": [
               {
                 "partnerCode": "ESHOP",
                 "partnerName": "E-shop (interní)",
-                "contacts": 786.0,
-                "orderingContacts": 786.0,
-                "orders": 1949.0,
-                "revenueCzkEquiv": 3301681.0
+                "contacts": 787.0,
+                "orderingContacts": 787.0,
+                "orders": 1950.0,
+                "revenueCzkEquiv": 3301764.0
               },
               {
                 "partnerCode": "g73ps2",
@@ -10296,10 +10296,10 @@
             "error": null,
             "partners": 50,
             "totals": {
-              "networkCustomers": 9743.0,
-              "orderingCustomers": 3457.0,
-              "orders": 10468.0,
-              "revenueCzkEquiv": 17048340.0
+              "networkCustomers": 9744.0,
+              "orderingCustomers": 3458.0,
+              "orders": 10469.0,
+              "revenueCzkEquiv": 17048423.0
             },
             "monthly": [
               {
@@ -10399,8 +10399,8 @@
                 "orderingContacts": 0.0,
                 "networkCustomers": 0.0,
                 "orderingCustomers": 0.0,
-                "orders": 130.0,
-                "revenueCzkEquiv": 178222.0
+                "orders": 131.0,
+                "revenueCzkEquiv": 178305.0
               }
             ],
             "topPartners": [
@@ -10408,10 +10408,10 @@
                 "partnerCode": "ESHOP",
                 "partnerName": "E-shop (interní)",
                 "partnerTiandeId": null,
-                "networkCustomers": 1877.0,
-                "orderingCustomers": 786.0,
-                "orders": 1949.0,
-                "revenueCzkEquiv": 3301681.0
+                "networkCustomers": 1878.0,
+                "orderingCustomers": 787.0,
+                "orders": 1950.0,
+                "revenueCzkEquiv": 3301764.0
               },
               {
                 "partnerCode": "g73ps2",
@@ -10796,9 +10796,9 @@
       "nextUnlock": "Add final lifecycle state, returns, and refunds to move from gross customer truth to netto customer truth."
     },
     "coverage": {
-      "customersCount": 39142,
-      "ordersProcessed": 198832,
-      "top50RevenueSharePctOfYtd": 11.15,
+      "customersCount": 39143,
+      "ordersProcessed": 198850,
+      "top50RevenueSharePctOfYtd": 11.14,
       "top10RevenueSharePctOfYtd": 5.47,
       "top50OrdersSharePctOfProcessed": 2.07
     },
@@ -10810,11 +10810,11 @@
     "estimatedNewVsReturning": {
       "status": "measured_ytd",
       "returningBaseStrength": "high",
-      "label": "Returning customers generated 308112416.17 Kč vs 12780229.85 Kč from new customers in the measured YTD window.",
+      "label": "Returning customers generated 308138666.58 Kč vs 12780405.85 Kč from new customers in the measured YTD window.",
       "newCustomers": 10584,
-      "returningCustomers": 28558,
-      "newRevenueWithVat": 12780229.85,
-      "returningRevenueWithVat": 308112416.17,
+      "returningCustomers": 28559,
+      "newRevenueWithVat": 12780405.85,
+      "returningRevenueWithVat": 308138666.58,
       "returningRevenueSharePct": 96.02
     },
     "topCustomers": [
@@ -25469,10 +25469,10 @@
         },
         "dateCreated": "2026-06-02T20:55:59+02:00",
         "cancelled": false,
-        "isPaid": false,
+        "isPaid": true,
         "status": {
-          "id": 0,
-          "name": "nová"
+          "id": 1,
+          "name": "přijatá"
         },
         "totalPrice": {
           "withVat": 1044,
@@ -25508,6 +25508,22 @@
           {
             "adminId": null,
             "comment": "<p>Děkujeme vám za vaši objednávku č. 261286395, na jejím vyřízení již pilně pracujeme.</p><p>Aby k vám balíček dorazil v pořádku a co nejdříve, pečlivě vše připravujeme, balíme a dvakrát kontrolujeme. Jakmile bude objednávka uhrazena, nic nebude bránit tomu, abychom balíček s radostí odeslali na vaši adresu.👏</p><p></p><p> </p><p>V příloze naleznete rekapitulaci Vašeho objednaného zboží, abyste si mohli připomenout, na co se můžete těšit. 😍</p><p> </p><p>Velice nás těší, že jste se rozhodli pro naše produkty Království tianDe, které představují tu nejlepší kvalitu péče o sebe. Naše výrobky jsou založeny na tisíciletých recepturách tradiční čínské medicíny, kombinované s moderními technologiemi a unikátními složkami. Díky tomu vám můžeme nabídnout to pravé pro vaše zdraví i krásu. </p><p> </p><p>Děkujeme vám za vaši důvěru a přejeme mnoho radosti z královského nákupu.</p><p> </p><p>Tip: Až bude váš balíček na cestě, dáme vám vědět. Celý průběh expedice a doručení můžete přitom <a href=\"https://www.kralovstvi-tiande.cz/objednavka/3620643/?cf=0709ed19e934f19cff49a5312196a2f8\">sledovat zde</a>.</p>"
+          },
+          {
+            "adminId": null,
+            "comment": "Modul FioBank - příchozí platba č. 27668937051. Komentář plátce: KHUNOVA RENATA."
+          },
+          {
+            "adminId": null,
+            "comment": "<p>Dobré zprávy: Úhrada vaší objednávky 261286395 právě dorazila. Než dočtete tento e-mail, pustíme se do práce na expedici vaší objednávky tak, aby vám dorazila co nejdříve.</p><p>Těšíte se? 😍</p><div></div>"
+          },
+          {
+            "adminId": null,
+            "comment": "[4PX] Objednávka byla vytvořena; ID: OC149400632606030180 tracking: 601113672816 účet: CZ"
+          },
+          {
+            "adminId": null,
+            "comment": null
           }
         ],
         "deliveryType": {
@@ -29982,10 +29998,10 @@
         },
         "dateCreated": "2026-06-02T20:00:26+02:00",
         "cancelled": false,
-        "isPaid": false,
+        "isPaid": true,
         "status": {
-          "id": 0,
-          "name": "nová"
+          "id": 1,
+          "name": "přijatá"
         },
         "totalPrice": {
           "withVat": 1528,
@@ -30021,6 +30037,22 @@
           {
             "adminId": null,
             "comment": "<p>Děkujeme vám za vaši objednávku č. 261286368, na jejím vyřízení již pilně pracujeme.</p><p>Aby k vám balíček dorazil v pořádku a co nejdříve, pečlivě vše připravujeme, balíme a dvakrát kontrolujeme. Jakmile bude objednávka uhrazena, nic nebude bránit tomu, abychom balíček s radostí odeslali na vaši adresu.👏</p><p></p><p> </p><p>V příloze naleznete rekapitulaci Vašeho objednaného zboží, abyste si mohli připomenout, na co se můžete těšit. 😍</p><p> </p><p>Velice nás těší, že jste se rozhodli pro naše produkty Království tianDe, které představují tu nejlepší kvalitu péče o sebe. Naše výrobky jsou založeny na tisíciletých recepturách tradiční čínské medicíny, kombinované s moderními technologiemi a unikátními složkami. Díky tomu vám můžeme nabídnout to pravé pro vaše zdraví i krásu. </p><p> </p><p>Děkujeme vám za vaši důvěru a přejeme mnoho radosti z královského nákupu.</p><p> </p><p>Tip: Až bude váš balíček na cestě, dáme vám vědět. Celý průběh expedice a doručení můžete přitom <a href=\"https://www.kralovstvi-tiande.cz/objednavka/3620616/?cf=9bbbe994790b2e381b2008eb954f1206\">sledovat zde</a>.</p>"
+          },
+          {
+            "adminId": null,
+            "comment": "Modul FioBank - příchozí platba č. 27668584136. Komentář plátce: Švehlová Zdeňka."
+          },
+          {
+            "adminId": null,
+            "comment": "<p>Dobré zprávy: Úhrada vaší objednávky 261286368 právě dorazila. Než dočtete tento e-mail, pustíme se do práce na expedici vaší objednávky tak, aby vám dorazila co nejdříve.</p><p>Těšíte se? 😍</p><div></div>"
+          },
+          {
+            "adminId": null,
+            "comment": "[4PX] Objednávka byla vytvořena; ID: OC149400632606030168 tracking: 601113667409 účet: CZ"
+          },
+          {
+            "adminId": null,
+            "comment": null
           }
         ],
         "deliveryType": {
@@ -32074,10 +32106,10 @@
         },
         "dateCreated": "2026-06-02T19:46:31+02:00",
         "cancelled": false,
-        "isPaid": false,
+        "isPaid": true,
         "status": {
-          "id": 0,
-          "name": "nová"
+          "id": 1,
+          "name": "přijatá"
         },
         "totalPrice": {
           "withVat": 1266,
@@ -32113,6 +32145,22 @@
           {
             "adminId": null,
             "comment": "<p>Děkujeme vám za vaši objednávku č. 261286356, na jejím vyřízení již pilně pracujeme.</p><p>Aby k vám balíček dorazil v pořádku a co nejdříve, pečlivě vše připravujeme, balíme a dvakrát kontrolujeme. Jakmile bude objednávka uhrazena, nic nebude bránit tomu, abychom balíček s radostí odeslali na vaši adresu.👏</p><p></p><p> </p><p>V příloze naleznete rekapitulaci Vašeho objednaného zboží, abyste si mohli připomenout, na co se můžete těšit. 😍</p><p> </p><p>Velice nás těší, že jste se rozhodli pro naše produkty Království tianDe, které představují tu nejlepší kvalitu péče o sebe. Naše výrobky jsou založeny na tisíciletých recepturách tradiční čínské medicíny, kombinované s moderními technologiemi a unikátními složkami. Díky tomu vám můžeme nabídnout to pravé pro vaše zdraví i krásu. </p><p> </p><p>Děkujeme vám za vaši důvěru a přejeme mnoho radosti z královského nákupu.</p><p> </p><p>Tip: Až bude váš balíček na cestě, dáme vám vědět. Celý průběh expedice a doručení můžete přitom <a href=\"https://www.kralovstvi-tiande.cz/objednavka/3620604/?cf=41d738d73a9b006e377c0d876aeb0438\">sledovat zde</a>.</p>"
+          },
+          {
+            "adminId": null,
+            "comment": "Modul FioBank - příchozí platba č. 27668936166. Komentář plátce: Kašna Vlastimil."
+          },
+          {
+            "adminId": null,
+            "comment": "<p>Dobré zprávy: Úhrada vaší objednávky 261286356 právě dorazila. Než dočtete tento e-mail, pustíme se do práce na expedici vaší objednávky tak, aby vám dorazila co nejdříve.</p><p>Těšíte se? 😍</p><div></div>"
+          },
+          {
+            "adminId": null,
+            "comment": "[4PX] Objednávka byla vytvořena; ID: OC149400632606030179 tracking: 601113672804 účet: CZ"
+          },
+          {
+            "adminId": null,
+            "comment": null
           }
         ],
         "deliveryType": {
@@ -40487,10 +40535,10 @@
         },
         "dateCreated": "2026-06-02T18:57:03+02:00",
         "cancelled": false,
-        "isPaid": false,
+        "isPaid": true,
         "status": {
-          "id": 0,
-          "name": "nová"
+          "id": 1,
+          "name": "přijatá"
         },
         "totalPrice": {
           "withVat": 1536,
@@ -40526,6 +40574,22 @@
           {
             "adminId": null,
             "comment": "<p>Děkujeme vám za vaši objednávku č. 261286305, na jejím vyřízení již pilně pracujeme.</p><p>Aby k vám balíček dorazil v pořádku a co nejdříve, pečlivě vše připravujeme, balíme a dvakrát kontrolujeme. Jakmile bude objednávka uhrazena, nic nebude bránit tomu, abychom balíček s radostí odeslali na vaši adresu.👏</p><p></p><p> </p><p>V příloze naleznete rekapitulaci Vašeho objednaného zboží, abyste si mohli připomenout, na co se můžete těšit. 😍</p><p> </p><p>Velice nás těší, že jste se rozhodli pro naše produkty Království tianDe, které představují tu nejlepší kvalitu péče o sebe. Naše výrobky jsou založeny na tisíciletých recepturách tradiční čínské medicíny, kombinované s moderními technologiemi a unikátními složkami. Díky tomu vám můžeme nabídnout to pravé pro vaše zdraví i krásu. </p><p> </p><p>Děkujeme vám za vaši důvěru a přejeme mnoho radosti z královského nákupu.</p><p> </p><p>Tip: Až bude váš balíček na cestě, dáme vám vědět. Celý průběh expedice a doručení můžete přitom <a href=\"https://www.kralovstvi-tiande.cz/objednavka/3620551/?cf=d9601687b43d5f0833cea442ca30abc0\">sledovat zde</a>.</p>"
+          },
+          {
+            "adminId": null,
+            "comment": "Modul FioBank - příchozí platba č. 27668584986. Komentář plátce: SLOBODOVA KATERINA."
+          },
+          {
+            "adminId": null,
+            "comment": "<p>Dobré zprávy: Úhrada vaší objednávky 261286305 právě dorazila. Než dočtete tento e-mail, pustíme se do práce na expedici vaší objednávky tak, aby vám dorazila co nejdříve.</p><p>Těšíte se? 😍</p><div></div>"
+          },
+          {
+            "adminId": null,
+            "comment": "[4PX] Objednávka byla vytvořena; ID: OC149400632606030167 tracking: 601113667397 účet: CZ"
+          },
+          {
+            "adminId": null,
+            "comment": null
           }
         ],
         "deliveryType": {
@@ -56684,10 +56748,10 @@
         },
         "dateCreated": "2026-06-02T13:10:46+02:00",
         "cancelled": false,
-        "isPaid": false,
+        "isPaid": true,
         "status": {
-          "id": 0,
-          "name": "nová"
+          "id": 1,
+          "name": "přijatá"
         },
         "totalPrice": {
           "withVat": 74,
@@ -56723,6 +56787,22 @@
           {
             "adminId": 40,
             "comment": "<p>Děkujeme vám za vaši objednávku č. 261286216, na jejím vyřízení již pilně pracujeme.</p><p>Aby k vám balíček dorazil v pořádku a co nejdříve, pečlivě vše připravujeme, balíme a dvakrát kontrolujeme. Jakmile bude objednávka uhrazena, nic nebude bránit tomu, abychom balíček s radostí odeslali na vaši adresu.👏</p><p></p><p> </p><p>V příloze naleznete rekapitulaci Vašeho objednaného zboží, abyste si mohli připomenout, na co se můžete těšit. 😍</p><p> </p><p>Velice nás těší, že jste se rozhodli pro naše produkty Království tianDe, které představují tu nejlepší kvalitu péče o sebe. Naše výrobky jsou založeny na tisíciletých recepturách tradiční čínské medicíny, kombinované s moderními technologiemi a unikátními složkami. Díky tomu vám můžeme nabídnout to pravé pro vaše zdraví i krásu. </p><p> </p><p>Děkujeme vám za vaši důvěru a přejeme mnoho radosti z královského nákupu.</p><p> </p><p>Tip: Až bude váš balíček na cestě, dáme vám vědět. Celý průběh expedice a doručení můžete přitom <a href=\"https://www.kralovstvi-tiande.cz/objednavka/3620460/?cf=493206a4f0c4acba52e9d808fdf067b7\">sledovat zde</a>.</p>"
+          },
+          {
+            "adminId": null,
+            "comment": "Modul FioBank - příchozí platba č. 27668959467. Komentář plátce: Szurmanová Zdeňka."
+          },
+          {
+            "adminId": null,
+            "comment": "<p>Dobré zprávy: Úhrada vaší objednávky 261286216 právě dorazila. Než dočtete tento e-mail, pustíme se do práce na expedici vaší objednávky tak, aby vám dorazila co nejdříve.</p><p>Těšíte se? 😍</p><div></div>"
+          },
+          {
+            "adminId": null,
+            "comment": "[4PX] Objednávka byla vytvořena; ID: OC149400632606030178 tracking: 601113672792 účet: CZ"
+          },
+          {
+            "adminId": null,
+            "comment": null
           }
         ],
         "deliveryType": {
@@ -84821,9 +84901,279 @@
     ],
     "historicalWindow": {
       "from": "2025-01-01T00:00:00+01:00",
-      "to": "2026-06-03T01:14:42.486489+02:00"
+      "to": "2026-06-03T06:45:01.868962+02:00"
     },
     "historicalOrdersSample": [
+      {
+        "id": 3620747,
+        "code": "261286499",
+        "dateCreated": "2026-06-03T06:44:30+02:00",
+        "customerKey": "email:svetlana.honsova@gmail.com",
+        "customerLabel": "Světlana Honsová",
+        "email": "svetlana.honsova@gmail.com",
+        "countryCode": "CZ",
+        "sourceName": "E-shop",
+        "statusName": "nová",
+        "cancelled": false,
+        "problematic": false,
+        "isPaid": true,
+        "revenueWithVat": 2048.0
+      },
+      {
+        "id": 3620746,
+        "code": "261286498",
+        "dateCreated": "2026-06-03T06:43:08+02:00",
+        "customerKey": "email:jana77654@seznam.cz",
+        "customerLabel": "Jana Horáková",
+        "email": "jana77654@seznam.cz",
+        "countryCode": "CZ",
+        "sourceName": "E-shop",
+        "statusName": "nová",
+        "cancelled": false,
+        "problematic": false,
+        "isPaid": true,
+        "revenueWithVat": 1509.0
+      },
+      {
+        "id": 3620745,
+        "code": "261286497",
+        "dateCreated": "2026-06-03T06:41:21+02:00",
+        "customerKey": "email:albertova.petra@email.cz",
+        "customerLabel": "Petra Albertová",
+        "email": "albertova.petra@email.cz",
+        "countryCode": "CZ",
+        "sourceName": "E-shop",
+        "statusName": "nová",
+        "cancelled": false,
+        "problematic": false,
+        "isPaid": false,
+        "revenueWithVat": 1139.0
+      },
+      {
+        "id": 3620744,
+        "code": "261286496",
+        "dateCreated": "2026-06-03T06:38:49+02:00",
+        "customerKey": "email:zuzkaju@seznam.cz",
+        "customerLabel": "Zuzana Juránová",
+        "email": "zuzkaju@seznam.cz",
+        "countryCode": "CZ",
+        "sourceName": "E-shop",
+        "statusName": "nová",
+        "cancelled": false,
+        "problematic": false,
+        "isPaid": true,
+        "revenueWithVat": 934.0
+      },
+      {
+        "id": 3620743,
+        "code": "261286495",
+        "dateCreated": "2026-06-03T06:36:43+02:00",
+        "customerKey": "email:michaelakasardova@seznam.cz",
+        "customerLabel": "Michaela Kasardová",
+        "email": "michaelakasardova@seznam.cz",
+        "countryCode": "CZ",
+        "sourceName": "E-shop",
+        "statusName": "nová",
+        "cancelled": false,
+        "problematic": false,
+        "isPaid": false,
+        "revenueWithVat": 1073.0
+      },
+      {
+        "id": 3620742,
+        "code": "261286494",
+        "dateCreated": "2026-06-03T06:36:15+02:00",
+        "customerKey": "email:natusinka@seznam.cz",
+        "customerLabel": "Natálie Szubová",
+        "email": "natusinka@seznam.cz",
+        "countryCode": "CZ",
+        "sourceName": "E-shop",
+        "statusName": "nová",
+        "cancelled": false,
+        "problematic": false,
+        "isPaid": false,
+        "revenueWithVat": 994.0
+      },
+      {
+        "id": 3620741,
+        "code": "261286493",
+        "dateCreated": "2026-06-03T06:34:06+02:00",
+        "customerKey": "email:karolina.vackova@seznam.cz",
+        "customerLabel": "Karolína Vacková",
+        "email": "karolina.vackova@seznam.cz",
+        "countryCode": "CZ",
+        "sourceName": "E-shop",
+        "statusName": "nová",
+        "cancelled": false,
+        "problematic": false,
+        "isPaid": true,
+        "revenueWithVat": 1502.0
+      },
+      {
+        "id": 3620740,
+        "code": "261286492",
+        "dateCreated": "2026-06-03T06:26:14+02:00",
+        "customerKey": "email:moravcovaeva68@gmail.com",
+        "customerLabel": "Eva Moravcová",
+        "email": "moravcovaeva68@gmail.com",
+        "countryCode": "CZ",
+        "sourceName": "E-shop",
+        "statusName": "nová",
+        "cancelled": false,
+        "problematic": false,
+        "isPaid": false,
+        "revenueWithVat": 513.0
+      },
+      {
+        "id": 3620739,
+        "code": "261286491",
+        "dateCreated": "2026-06-03T06:21:25+02:00",
+        "customerKey": "email:libca.m@seznam.cz",
+        "customerLabel": "Liběna Smítková",
+        "email": "libca.m@seznam.cz",
+        "countryCode": "CZ",
+        "sourceName": "E-shop",
+        "statusName": "nová",
+        "cancelled": false,
+        "problematic": false,
+        "isPaid": true,
+        "revenueWithVat": 906.0
+      },
+      {
+        "id": 3620738,
+        "code": "261286490",
+        "dateCreated": "2026-06-03T06:16:39+02:00",
+        "customerKey": "email:v.benesovska@email.cz",
+        "customerLabel": "Vladimíra Benešovská",
+        "email": "v.benesovska@email.cz",
+        "countryCode": "CZ",
+        "sourceName": "E-shop",
+        "statusName": "přijatá",
+        "cancelled": false,
+        "problematic": false,
+        "isPaid": true,
+        "revenueWithVat": 2093.0
+      },
+      {
+        "id": 3620737,
+        "code": "261286489",
+        "dateCreated": "2026-06-03T06:04:19+02:00",
+        "customerKey": "email:suchankova@medima.cz",
+        "customerLabel": "Soňa Suchánková",
+        "email": "suchankova@medima.cz",
+        "countryCode": "CZ",
+        "sourceName": "E-shop",
+        "statusName": "přijatá",
+        "cancelled": false,
+        "problematic": false,
+        "isPaid": true,
+        "revenueWithVat": 1137.0
+      },
+      {
+        "id": 3620736,
+        "code": "261286488",
+        "dateCreated": "2026-06-03T05:46:12+02:00",
+        "customerKey": "email:katka.sumavska@seznam.cz",
+        "customerLabel": "Kateřina Kubienová",
+        "email": "katka.sumavska@seznam.cz",
+        "countryCode": "CZ",
+        "sourceName": "E-shop",
+        "statusName": "přijatá",
+        "cancelled": false,
+        "problematic": false,
+        "isPaid": true,
+        "revenueWithVat": 988.0
+      },
+      {
+        "id": 3620735,
+        "code": "261286487",
+        "dateCreated": "2026-06-03T05:28:19+02:00",
+        "customerKey": "email:kritkova@seznam.cz",
+        "customerLabel": "Lucie Kolářová",
+        "email": "kritkova@seznam.cz",
+        "countryCode": "CZ",
+        "sourceName": "E-shop",
+        "statusName": "přijatá",
+        "cancelled": false,
+        "problematic": false,
+        "isPaid": true,
+        "revenueWithVat": 3083.0
+      },
+      {
+        "id": 3620734,
+        "code": "261286486",
+        "dateCreated": "2026-06-03T04:44:37+02:00",
+        "customerKey": "email:kanovalivia@gmail.com",
+        "customerLabel": "Lívia Kaňová",
+        "email": "kanovalivia@gmail.com",
+        "countryCode": "SK",
+        "sourceName": "E-shop",
+        "statusName": "přijatá",
+        "cancelled": false,
+        "problematic": false,
+        "isPaid": true,
+        "revenueWithVat": 2263.41
+      },
+      {
+        "id": 3620733,
+        "code": "261286485",
+        "dateCreated": "2026-06-03T04:37:40+02:00",
+        "customerKey": "email:ilona.chladkova@seznam.cz",
+        "customerLabel": "Ilona Chládková",
+        "email": "ilona.chladkova@seznam.cz",
+        "countryCode": "CZ",
+        "sourceName": "E-shop",
+        "statusName": "přijatá",
+        "cancelled": false,
+        "problematic": false,
+        "isPaid": true,
+        "revenueWithVat": 1173.0
+      },
+      {
+        "id": 3620732,
+        "code": "261286484",
+        "dateCreated": "2026-06-03T03:11:56+02:00",
+        "customerKey": "email:annettehunnyb@seznam.cz",
+        "customerLabel": "Aneta Pernicová",
+        "email": "annettehunnyb@seznam.cz",
+        "countryCode": "CZ",
+        "sourceName": "E-shop",
+        "statusName": "přijatá",
+        "cancelled": false,
+        "problematic": false,
+        "isPaid": true,
+        "revenueWithVat": 1999.0
+      },
+      {
+        "id": 3620731,
+        "code": "261286483",
+        "dateCreated": "2026-06-03T02:28:10+02:00",
+        "customerKey": "email:krizova87@gmail.com",
+        "customerLabel": "Andrea Křížová",
+        "email": "krizova87@gmail.com",
+        "countryCode": "CZ",
+        "sourceName": "E-shop",
+        "statusName": "přijatá",
+        "cancelled": false,
+        "problematic": false,
+        "isPaid": true,
+        "revenueWithVat": 1815.0
+      },
+      {
+        "id": 3620730,
+        "code": "261286482",
+        "dateCreated": "2026-06-03T01:56:41+02:00",
+        "customerKey": "email:adelaroskova@seznam.cz",
+        "customerLabel": "Adéla Sloupenská",
+        "email": "adelaroskova@seznam.cz",
+        "countryCode": "CZ",
+        "sourceName": "E-shop",
+        "statusName": "nová",
+        "cancelled": false,
+        "problematic": false,
+        "isPaid": false,
+        "revenueWithVat": 1257.0
+      },
       {
         "id": 3620729,
         "code": "261286481",
@@ -86053,291 +86403,21 @@
         "problematic": false,
         "isPaid": true,
         "revenueWithVat": 977.0
-      },
-      {
-        "id": 3620647,
-        "code": "261286399",
-        "dateCreated": "2026-06-02T20:59:44+02:00",
-        "customerKey": "email:marketavlkova@email.cz",
-        "customerLabel": "MP Autodíly s.r.o. (Markéta Vlková)",
-        "email": "marketavlkova@email.cz",
-        "countryCode": "CZ",
-        "sourceName": "E-shop",
-        "statusName": "přijatá",
-        "cancelled": false,
-        "problematic": false,
-        "isPaid": false,
-        "revenueWithVat": 1286.0
-      },
-      {
-        "id": 3620646,
-        "code": "261286398",
-        "dateCreated": "2026-06-02T20:58:39+02:00",
-        "customerKey": "email:janakazarova@seznam.cz",
-        "customerLabel": "Jana Hradcová",
-        "email": "janakazarova@seznam.cz",
-        "countryCode": "CZ",
-        "sourceName": "E-shop",
-        "statusName": "přijatá",
-        "cancelled": false,
-        "problematic": false,
-        "isPaid": true,
-        "revenueWithVat": 1557.0
-      },
-      {
-        "id": 3620645,
-        "code": "261286397",
-        "dateCreated": "2026-06-02T20:57:56+02:00",
-        "customerKey": "email:trneckova.k@seznam.cz",
-        "customerLabel": "Pematex (D-Holz) (Kamila Trnečková)",
-        "email": "trneckova.k@seznam.cz",
-        "countryCode": "CZ",
-        "sourceName": "E-shop",
-        "statusName": "přijatá",
-        "cancelled": false,
-        "problematic": false,
-        "isPaid": false,
-        "revenueWithVat": 1276.0
-      },
-      {
-        "id": 3620644,
-        "code": "261286396",
-        "dateCreated": "2026-06-02T20:57:18+02:00",
-        "customerKey": "email:zuzana.peniakova7@gmail.com",
-        "customerLabel": "www.tirala.sk (Zuzana Peniaková)",
-        "email": "zuzana.peniakova7@gmail.com",
-        "countryCode": "SK",
-        "sourceName": "E-shop",
-        "statusName": "přijatá",
-        "cancelled": false,
-        "problematic": false,
-        "isPaid": false,
-        "revenueWithVat": 1784.82
-      },
-      {
-        "id": 3620643,
-        "code": "261286395",
-        "dateCreated": "2026-06-02T20:55:59+02:00",
-        "customerKey": "email:rencakhun@gmail.com",
-        "customerLabel": "Renata Khunová",
-        "email": "rencakhun@gmail.com",
-        "countryCode": "CZ",
-        "sourceName": "E-shop",
-        "statusName": "nová",
-        "cancelled": false,
-        "problematic": false,
-        "isPaid": false,
-        "revenueWithVat": 1044.0
-      },
-      {
-        "id": 3620642,
-        "code": "261286394",
-        "dateCreated": "2026-06-02T20:50:41+02:00",
-        "customerKey": "email:schenkova.jirina@seznam.cz",
-        "customerLabel": "Jiřina Schenková",
-        "email": "schenkova.jirina@seznam.cz",
-        "countryCode": "CZ",
-        "sourceName": "E-shop",
-        "statusName": "přijatá",
-        "cancelled": false,
-        "problematic": false,
-        "isPaid": true,
-        "revenueWithVat": 1430.0
-      },
-      {
-        "id": 3620641,
-        "code": "261286393",
-        "dateCreated": "2026-06-02T20:49:30+02:00",
-        "customerKey": "email:anett.m@email.cz",
-        "customerLabel": "Aneta Marunová",
-        "email": "anett.m@email.cz",
-        "countryCode": "CZ",
-        "sourceName": "E-shop",
-        "statusName": "přijatá",
-        "cancelled": false,
-        "problematic": false,
-        "isPaid": true,
-        "revenueWithVat": 824.0
-      },
-      {
-        "id": 3620640,
-        "code": "261286392",
-        "dateCreated": "2026-06-02T20:49:13+02:00",
-        "customerKey": "email:barinkova.jana@seznam.cz",
-        "customerLabel": "Jana Bařinková",
-        "email": "barinkova.jana@seznam.cz",
-        "countryCode": "CZ",
-        "sourceName": "E-shop",
-        "statusName": "přijatá",
-        "cancelled": false,
-        "problematic": false,
-        "isPaid": true,
-        "revenueWithVat": 1001.0
-      },
-      {
-        "id": 3620639,
-        "code": "261286391",
-        "dateCreated": "2026-06-02T20:43:56+02:00",
-        "customerKey": "email:romana.kentaur@seznam.cz",
-        "customerLabel": "Romana Špottová",
-        "email": "romana.kentaur@seznam.cz",
-        "countryCode": "CZ",
-        "sourceName": "E-shop",
-        "statusName": "přijatá",
-        "cancelled": false,
-        "problematic": false,
-        "isPaid": true,
-        "revenueWithVat": 978.0
-      },
-      {
-        "id": 3620638,
-        "code": "261286390",
-        "dateCreated": "2026-06-02T20:43:23+02:00",
-        "customerKey": "email:hana.cerna5@seznam.cz",
-        "customerLabel": "Hana Černá",
-        "email": "hana.cerna5@seznam.cz",
-        "countryCode": "CZ",
-        "sourceName": "E-shop",
-        "statusName": "přijatá",
-        "cancelled": false,
-        "problematic": false,
-        "isPaid": true,
-        "revenueWithVat": 2188.0
-      },
-      {
-        "id": 3620637,
-        "code": "261286389",
-        "dateCreated": "2026-06-02T20:43:10+02:00",
-        "customerKey": "email:r.ondriskova@seznam.cz",
-        "customerLabel": "Renata Ondrisková",
-        "email": "r.ondriskova@seznam.cz",
-        "countryCode": "CZ",
-        "sourceName": "E-shop",
-        "statusName": "přijatá",
-        "cancelled": false,
-        "problematic": false,
-        "isPaid": true,
-        "revenueWithVat": 4394.0
-      },
-      {
-        "id": 3620636,
-        "code": "261286388",
-        "dateCreated": "2026-06-02T20:41:20+02:00",
-        "customerKey": "email:slaninovaanna@seznam.cz",
-        "customerLabel": "Anna Slaninová",
-        "email": "slaninovaanna@seznam.cz",
-        "countryCode": "CZ",
-        "sourceName": "E-shop",
-        "statusName": "přijatá",
-        "cancelled": false,
-        "problematic": false,
-        "isPaid": true,
-        "revenueWithVat": 1602.0
-      },
-      {
-        "id": 3620635,
-        "code": "261286387",
-        "dateCreated": "2026-06-02T20:40:42+02:00",
-        "customerKey": "email:strumfova1@seznam.cz",
-        "customerLabel": "Lenka Štrumfová",
-        "email": "strumfova1@seznam.cz",
-        "countryCode": "CZ",
-        "sourceName": "E-shop",
-        "statusName": "nová",
-        "cancelled": false,
-        "problematic": false,
-        "isPaid": false,
-        "revenueWithVat": 1001.0
-      },
-      {
-        "id": 3620634,
-        "code": "261286386",
-        "dateCreated": "2026-06-02T20:40:19+02:00",
-        "customerKey": "email:doubkova.romana@seznam.cz",
-        "customerLabel": "Romana Doubková",
-        "email": "doubkova.romana@seznam.cz",
-        "countryCode": "CZ",
-        "sourceName": "E-shop",
-        "statusName": "přijatá",
-        "cancelled": false,
-        "problematic": false,
-        "isPaid": true,
-        "revenueWithVat": 927.0
-      },
-      {
-        "id": 3620633,
-        "code": "261286385",
-        "dateCreated": "2026-06-02T20:38:03+02:00",
-        "customerKey": "email:katymanakova@seznam.cz",
-        "customerLabel": "Kateřina Maňáková",
-        "email": "katymanakova@seznam.cz",
-        "countryCode": "CZ",
-        "sourceName": "E-shop",
-        "statusName": "přijatá",
-        "cancelled": false,
-        "problematic": false,
-        "isPaid": false,
-        "revenueWithVat": 928.0
-      },
-      {
-        "id": 3620632,
-        "code": "261286384",
-        "dateCreated": "2026-06-02T20:35:03+02:00",
-        "customerKey": "email:petka.bartosova@centrum.cz",
-        "customerLabel": "Petra Řehořová",
-        "email": "petka.bartosova@centrum.cz",
-        "countryCode": "CZ",
-        "sourceName": "E-shop",
-        "statusName": "přijatá",
-        "cancelled": false,
-        "problematic": false,
-        "isPaid": true,
-        "revenueWithVat": 255.0
-      },
-      {
-        "id": 3620631,
-        "code": "261286383",
-        "dateCreated": "2026-06-02T20:32:03+02:00",
-        "customerKey": "email:s.skalakova@volny.cz",
-        "customerLabel": "Šárka Skaláková",
-        "email": "s.skalakova@volny.cz",
-        "countryCode": "CZ",
-        "sourceName": "E-shop",
-        "statusName": "přijatá",
-        "cancelled": false,
-        "problematic": false,
-        "isPaid": true,
-        "revenueWithVat": 1986.0
-      },
-      {
-        "id": 3620630,
-        "code": "261286382",
-        "dateCreated": "2026-06-02T20:30:04+02:00",
-        "customerKey": "email:andreon@centrum.cz",
-        "customerLabel": "Andrea Žvaková",
-        "email": "andreon@centrum.cz",
-        "countryCode": "CZ",
-        "sourceName": "E-shop",
-        "statusName": "přijatá",
-        "cancelled": false,
-        "problematic": false,
-        "isPaid": false,
-        "revenueWithVat": 1898.0
       }
     ],
     "summary": {
-      "orders": 204884,
-      "nonCancelledOrders": 198832,
+      "orders": 204902,
+      "nonCancelledOrders": 198850,
       "cancelledOrders": 6052,
       "problematicOrders": 6173,
       "cancelledRatePct": 2.95,
       "problematicRatePct": 3.01,
-      "estimatedNetRevenueAfterCancellations": 311426312.96,
-      "grossRevenueWithVat": 320892646.02,
+      "estimatedNetRevenueAfterCancellations": 311451959.79,
+      "grossRevenueWithVat": 320919072.43,
       "qualityLabel": "healthy",
       "window": {
         "from": "2025-01-01T00:00:00+01:00",
-        "to": "2026-06-03T01:14:42.486489+02:00"
+        "to": "2026-06-03T06:45:01.868962+02:00"
       }
     }
   },
@@ -86778,20 +86858,20 @@
         "profitPct": 16.02
       },
       "ytdEstimated": {
-        "grossRevenueWithVat": 320892646.02,
-        "netRevenueAfterCancellations": 311426312.96,
-        "cancellationLeakage": 9466333.06,
-        "estimatedGrossMargin": 83946246.69,
-        "estimatedAfterLogistics": 82124588.28,
-        "estimatedAfterMarketing": 73372248.99,
-        "estimatedOperatingContribution": 57649572.7,
-        "estimatedProfitContribution": 49888213.47
+        "grossRevenueWithVat": 320919072.43,
+        "netRevenueAfterCancellations": 311451959.79,
+        "cancellationLeakage": 9467112.64,
+        "estimatedGrossMargin": 83953159.89,
+        "estimatedAfterLogistics": 82131351.47,
+        "estimatedAfterMarketing": 73378291.4,
+        "estimatedOperatingContribution": 57654320.3,
+        "estimatedProfitContribution": 49892321.91
       },
       "customerContributionSplitYtd": {
-        "newRevenueWithVat": 12780229.85,
-        "returningRevenueWithVat": 308112416.17,
-        "estimatedNewAfterMarketing": 3011030.76,
-        "estimatedReturningAfterMarketing": 72591492.68,
+        "newRevenueWithVat": 12780405.85,
+        "returningRevenueWithVat": 308138666.58,
+        "estimatedNewAfterMarketing": 3011072.22,
+        "estimatedReturningAfterMarketing": 72597677.29,
         "retentionRevenueProxyPreviousMonth": 4881589.35
       },
       "warnings": [
@@ -87109,9 +87189,9 @@
     "headline": "Final truth engine už běží pro finance truth, měřenou YTD customer truth, měřenou YTD order truth a první decision-grade akviziční split. Hlavní chybějící vrstva je netto contribution a backend channel reconciliation.",
     "whatIsTrulyKnown": [
       "Finance po marketingu: 2896506.65 Kč.",
-      "Čistá hotovostní pozice: 4305140.38 Kč.",
-      "Returning customers generated 308112416.17 Kč vs 12780229.85 Kč from new customers in the measured YTD window.",
-      "Zpracované objednávky v měřeném YTD: 198832"
+      "Čistá hotovostní pozice: 4314303.38 Kč.",
+      "Returning customers generated 308138666.58 Kč vs 12780405.85 Kč from new customers in the measured YTD window.",
+      "Zpracované objednávky v měřeném YTD: 198850"
     ],
     "whatIsEstimated": [
       "Inkrementalita kanálů je zatím řízená confidence vrstvou, ne plně domodelovaná.",
@@ -87130,8 +87210,8 @@
       "headline": "Byznys je silný, customer truth je měřený, ale marketing decisioning musí pořád procházet trust vrstvou a bucket split logikou.",
       "focus": [
         "Po marketingu zůstalo 2896506.65 Kč.",
-        "Net cash pozice je 4305140.38 Kč.",
-        "Returning customers generated 308112416.17 Kč vs 12780229.85 Kč from new customers in the measured YTD window."
+        "Net cash pozice je 4314303.38 Kč.",
+        "Returning customers generated 308138666.58 Kč vs 12780405.85 Kč from new customers in the measured YTD window."
       ],
       "questions": [
         "Které kanály skutečně vytváří nový demand?",
@@ -87323,8 +87403,8 @@
     "customerBase": {
       "status": "measured_ytd",
       "returningRevenueSharePctYtd": 96.02,
-      "newRevenueWithVatYtd": 12780229.85,
-      "returningRevenueWithVatYtd": 308112416.17
+      "newRevenueWithVatYtd": 12780405.85,
+      "returningRevenueWithVatYtd": 308138666.58
     },
     "observedDemandMixLast7d": [
       {
@@ -87497,20 +87577,20 @@
       "profitPct": 16.02
     },
     "ytdEstimated": {
-      "grossRevenueWithVat": 320892646.02,
-      "netRevenueAfterCancellations": 311426312.96,
-      "cancellationLeakage": 9466333.06,
-      "estimatedGrossMargin": 83946246.69,
-      "estimatedAfterLogistics": 82124588.28,
-      "estimatedAfterMarketing": 73372248.99,
-      "estimatedOperatingContribution": 57649572.7,
-      "estimatedProfitContribution": 49888213.47
+      "grossRevenueWithVat": 320919072.43,
+      "netRevenueAfterCancellations": 311451959.79,
+      "cancellationLeakage": 9467112.64,
+      "estimatedGrossMargin": 83953159.89,
+      "estimatedAfterLogistics": 82131351.47,
+      "estimatedAfterMarketing": 73378291.4,
+      "estimatedOperatingContribution": 57654320.3,
+      "estimatedProfitContribution": 49892321.91
     },
     "customerContributionSplitYtd": {
-      "newRevenueWithVat": 12780229.85,
-      "returningRevenueWithVat": 308112416.17,
-      "estimatedNewAfterMarketing": 3011030.76,
-      "estimatedReturningAfterMarketing": 72591492.68,
+      "newRevenueWithVat": 12780405.85,
+      "returningRevenueWithVat": 308138666.58,
+      "estimatedNewAfterMarketing": 3011072.22,
+      "estimatedReturningAfterMarketing": 72597677.29,
       "retentionRevenueProxyPreviousMonth": 4881589.35
     },
     "warnings": [
