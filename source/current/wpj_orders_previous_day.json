@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-06T16:06:41.326492+02:00",
+  "generatedAt": "2026-06-06T17:50:49.960206+02:00",
   "window": {
     "from": "2026-06-05T00:00:01+02:00",
     "to": "2026-06-06T00:00:00+02:00"
@@ -42413,8 +42413,8 @@
       "cancelled": false,
       "isPaid": true,
       "status": {
-        "id": 4,
-        "name": "připraveno k vyzvednutí"
+        "id": 5,
+        "name": "doručeno"
       },
       "totalPrice": {
         "withVat": 2350,
@@ -42498,6 +42498,14 @@
         {
           "adminId": null,
           "comment": "[4PX] Změna stavu: ready_to_pickup"
+        },
+        {
+          "adminId": null,
+          "comment": null
+        },
+        {
+          "adminId": null,
+          "comment": "[4PX] Změna stavu: delivered"
         },
         {
           "adminId": null,
@@ -55152,14 +55160,10 @@
       },
       {
         "name": "doručeno",
-        "count": 3
+        "count": 4
       },
       {
         "name": "chyba",
-        "count": 1
-      },
-      {
-        "name": "připraveno k vyzvednutí",
         "count": 1
       }
     ],
@@ -55583,14 +55587,10 @@
           },
           {
             "name": "doručeno",
-            "count": 3
+            "count": 4
           },
           {
             "name": "chyba",
-            "count": 1
-          },
-          {
-            "name": "připraveno k vyzvednutí",
             "count": 1
           }
         ],
@@ -56013,15 +56013,11 @@
             "count": 16
           },
           {
-            "name": "chyba",
-            "count": 1
-          },
-          {
             "name": "doručeno",
-            "count": 1
+            "count": 2
           },
           {
-            "name": "připraveno k vyzvednutí",
+            "name": "chyba",
             "count": 1
           }
         ],
