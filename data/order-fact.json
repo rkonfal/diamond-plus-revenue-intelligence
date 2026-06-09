@@ -30533,8 +30533,8 @@
       "cancelled": false,
       "isPaid": true,
       "status": {
-        "id": 1,
-        "name": "přijatá"
+        "id": 3,
+        "name": "expedováno"
       },
       "totalPrice": {
         "withVat": 2367,
@@ -30590,6 +30590,26 @@
         {
           "adminId": null,
           "comment": "[4PX] Objednávka byla vytvořena; ID: OC149400632606080331 tracking: 601113860814 účet: CZ"
+        },
+        {
+          "adminId": null,
+          "comment": null
+        },
+        {
+          "adminId": null,
+          "comment": "[4PX] Číslo balíku: NB1139116783C"
+        },
+        {
+          "adminId": null,
+          "comment": "[4PX] Změna stavu: carrier_picked_up"
+        },
+        {
+          "adminId": null,
+          "comment": "<p><p dir=\"ltr\">Vaši objednávku si dnes převzala <strong>Česká pošta</strong>, která Vás bude brzy kontaktovat <strong>ohledně přesného termínu vyzvednutí na pobočce Balíkovny</strong>.<br />\r\nBuďte na převzetí připraven/á a <strong>sledujte</strong> svůj balíček <strong>online</strong> <a href=\"https://www.postaonline.cz/trackandtrace/-/zasilka/cislo?parcelNumbers=NB1139116783C\">zde</a> pod číslem <strong>NB1139116783C</strong>.</p>\r\n\r\n<p dir=\"ltr\">Objednávku jste <strong>uhradil/a bezpečnou platbou online.</strong></p></p><p> </p><p>Nezapomeňte, že jsme tu pro Vás, a že se na nás můžete kdykoliv obrátit. </p>"
+        },
+        {
+          "adminId": null,
+          "comment": "Autopilot: odeslána uživatelská zpráva: Odesláno"
         },
         {
           "adminId": null,
@@ -36175,10 +36195,10 @@
       },
       "dateCreated": "2026-06-08T10:26:53+02:00",
       "cancelled": false,
-      "isPaid": false,
+      "isPaid": true,
       "status": {
-        "id": 0,
-        "name": "nová"
+        "id": 1,
+        "name": "přijatá"
       },
       "totalPrice": {
         "withVat": 64.4,
@@ -36226,6 +36246,30 @@
         {
           "adminId": null,
           "comment": "Autopilot: odeslána uživatelská zpráva: Upomínka nezaplacené - okamžité platby"
+        },
+        {
+          "adminId": null,
+          "comment": "Objednávka bola zaplatená."
+        },
+        {
+          "adminId": null,
+          "comment": "<p>Dobré správy: Úhrada vašej objedávky 261288272 práve dorazila. Okamžite sme u nás teda vyhlásili expedičný poplach. Práve teraz si svalnatí, opálení a usmievaví kolegovia obliekajú kombinézy, nasadzujú prilby a štartujú motory. A akonáhle dočítate tento email, pustí sa do práce na expedícii vašej objednávky tak, aby vám dorazila čo najskôr. Tešíte sa? 😍</p>\n\n<div></div>"
+        },
+        {
+          "adminId": null,
+          "comment": "[FlexiBee] Objednávka byla ve FlexiBee zaktualizována"
+        },
+        {
+          "adminId": null,
+          "comment": "[Flexi] Objednávka byla realizována ve Flexi;"
+        },
+        {
+          "adminId": null,
+          "comment": "[4PX] Objednávka byla vytvořena; ID: OC149400622606090009 tracking: 601113891447 účet: SK"
+        },
+        {
+          "adminId": null,
+          "comment": null
         }
       ],
       "deliveryType": {
@@ -47714,9 +47758,69 @@
   ],
   "historicalWindow": {
     "from": "2025-01-01T00:00:00+01:00",
-    "to": "2026-06-09T00:55:57.060698+02:00"
+    "to": "2026-06-09T05:42:02.365984+02:00"
   },
   "historicalOrdersSample": [
+    {
+      "id": 3622797,
+      "code": "261288462",
+      "dateCreated": "2026-06-09T05:41:00+02:00",
+      "customerKey": "email:janasudice@centrum.cz",
+      "customerLabel": "Jana Nemčeková",
+      "email": "janasudice@centrum.cz",
+      "countryCode": "CZ",
+      "sourceName": "E-shop",
+      "statusName": "nová",
+      "cancelled": false,
+      "problematic": false,
+      "isPaid": false,
+      "revenueWithVat": 1644.0
+    },
+    {
+      "id": 3622796,
+      "code": "261288461",
+      "dateCreated": "2026-06-09T05:01:37+02:00",
+      "customerKey": "email:michalkovaola@gmail.com",
+      "customerLabel": "Farby-Laky Skalica (Olga Michalková)",
+      "email": "michalkovaola@gmail.com",
+      "countryCode": "SK",
+      "sourceName": "E-shop",
+      "statusName": "přijatá",
+      "cancelled": false,
+      "problematic": false,
+      "isPaid": true,
+      "revenueWithVat": 1768.46
+    },
+    {
+      "id": 3622795,
+      "code": "261288460",
+      "dateCreated": "2026-06-09T04:51:16+02:00",
+      "customerKey": "email:b.monika1@seznam.cz",
+      "customerLabel": "Monika Dolečková",
+      "email": "b.monika1@seznam.cz",
+      "countryCode": "CZ",
+      "sourceName": "E-shop",
+      "statusName": "přijatá",
+      "cancelled": false,
+      "problematic": false,
+      "isPaid": true,
+      "revenueWithVat": 6007.0
+    },
+    {
+      "id": 3622794,
+      "code": "261288459",
+      "dateCreated": "2026-06-09T01:51:43+02:00",
+      "customerKey": "email:kremenova3@seznam.cz",
+      "customerLabel": "Křemenová Jana",
+      "email": "kremenova3@seznam.cz",
+      "countryCode": "CZ",
+      "sourceName": "E-shop",
+      "statusName": "přijatá",
+      "cancelled": false,
+      "problematic": false,
+      "isPaid": true,
+      "revenueWithVat": 2986.0
+    },
     {
       "id": 3622792,
       "code": "261288458",
@@ -49156,81 +49260,21 @@
       "problematic": false,
       "isPaid": true,
       "revenueWithVat": 744.0
-    },
-    {
-      "id": 3622694,
-      "code": "261288362",
-      "dateCreated": "2026-06-08T16:04:34+02:00",
-      "customerKey": "email:koralkaklarka@seznam.cz",
-      "customerLabel": "Z-BOX (Klára Šimková)",
-      "email": "koralkaklarka@seznam.cz",
-      "countryCode": "CZ",
-      "sourceName": "E-shop",
-      "statusName": "přijatá",
-      "cancelled": false,
-      "problematic": false,
-      "isPaid": true,
-      "revenueWithVat": 2079.0
-    },
-    {
-      "id": 3622693,
-      "code": "261288361",
-      "dateCreated": "2026-06-08T15:58:38+02:00",
-      "customerKey": "email:celebi.down@seznam.cz",
-      "customerLabel": "Z-BOX (Julie Dudová)",
-      "email": "celebi.down@seznam.cz",
-      "countryCode": "CZ",
-      "sourceName": "E-shop",
-      "statusName": "přijatá",
-      "cancelled": false,
-      "problematic": false,
-      "isPaid": true,
-      "revenueWithVat": 3944.0
-    },
-    {
-      "id": 3622692,
-      "code": "261288360",
-      "dateCreated": "2026-06-08T15:57:11+02:00",
-      "customerKey": "email:zuzana93535@gmail.com",
-      "customerLabel": "Zuzana Bombiczová",
-      "email": "zuzana93535@gmail.com",
-      "countryCode": "SK",
-      "sourceName": "E-shop",
-      "statusName": "přijatá",
-      "cancelled": false,
-      "problematic": false,
-      "isPaid": false,
-      "revenueWithVat": 983.08
-    },
-    {
-      "id": 3622691,
-      "code": "261288359",
-      "dateCreated": "2026-06-08T15:56:28+02:00",
-      "customerKey": "email:evita28@zoznam.sk",
-      "customerLabel": "Zahraničná drogéria Lienka (Eva Gvistova)",
-      "email": "evita28@zoznam.sk",
-      "countryCode": "SK",
-      "sourceName": "E-shop",
-      "statusName": "přijatá",
-      "cancelled": false,
-      "problematic": false,
-      "isPaid": false,
-      "revenueWithVat": 1458.94
     }
   ],
   "summary": {
-    "orders": 206861,
-    "nonCancelledOrders": 200751,
+    "orders": 206865,
+    "nonCancelledOrders": 200755,
     "cancelledOrders": 6110,
     "problematicOrders": 6232,
     "cancelledRatePct": 2.95,
     "problematicRatePct": 3.01,
-    "estimatedNetRevenueAfterCancellations": 314322026.58,
-    "grossRevenueWithVat": 323876379.78,
+    "estimatedNetRevenueAfterCancellations": 314334066.08,
+    "grossRevenueWithVat": 323888785.24,
     "qualityLabel": "healthy",
     "window": {
       "from": "2025-01-01T00:00:00+01:00",
-      "to": "2026-06-09T00:55:57.060698+02:00"
+      "to": "2026-06-09T05:42:02.365984+02:00"
     }
   }
 }
