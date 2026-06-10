@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-10T11:58:41.128458+02:00",
+  "generatedAt": "2026-06-10T15:45:20.885523+02:00",
   "config": {
     "warehouseCode": "CZPRGA",
     "outboundMaxPages": 20,
@@ -14,25 +14,25 @@
       "label": "CZ",
       "inventory": {
         "items": 779,
-        "availableStockTotal": 312862,
-        "pendingStockTotal": 2017,
+        "availableStockTotal": 312247,
+        "pendingStockTotal": 859,
         "freezeStockTotal": 0,
         "lowStockItems": 100
       },
       "outbound": {
-        "items": 400,
-        "scannedPages": 4,
+        "items": 500,
+        "scannedPages": 5,
         "topLogisticsProduct": "F1401",
-        "oldestTimestamp": "2026-06-08T20:25:03+02:00",
-        "newestTimestamp": "2026-06-10T11:55:08+02:00"
+        "oldestTimestamp": "2026-06-08T15:55:02+02:00",
+        "newestTimestamp": "2026-06-10T15:40:03+02:00"
       }
     },
     "sk": {
       "label": "SK",
       "inventory": {
         "items": 631,
-        "availableStockTotal": 63692,
-        "pendingStockTotal": 50,
+        "availableStockTotal": 63609,
+        "pendingStockTotal": 75,
         "freezeStockTotal": 0,
         "lowStockItems": 100
       },
@@ -40,8 +40,8 @@
         "items": 100,
         "scannedPages": 1,
         "topLogisticsProduct": "F1406",
-        "oldestTimestamp": "2026-06-07T15:10:13+02:00",
-        "newestTimestamp": "2026-06-10T10:55:14+02:00"
+        "oldestTimestamp": "2026-06-07T16:25:11+02:00",
+        "newestTimestamp": "2026-06-10T15:35:13+02:00"
       }
     }
   },
@@ -71,16 +71,16 @@
     "datedSkuCount": 332,
     "czSkuCount": 322,
     "skSkuCount": 299,
-    "datedRowCount": 701,
-    "czRowCount": 365,
+    "datedRowCount": 700,
+    "czRowCount": 364,
     "skRowCount": 336
   },
   "pairing": {
     "allCodes": 2971,
-    "pairedProducts": 388,
-    "onlyInWpj": 1519,
+    "pairedProducts": 387,
+    "onlyInWpj": 1520,
     "onlyIn4px": 1,
-    "stockMismatch": 707,
+    "stockMismatch": 705,
     "lowAfterSales": 5,
     "manualMapped4pxAliases": 0,
     "autoMapped4pxAliases": 73
@@ -91,29 +91,29 @@
     "message": "Měsíční finance se tahají přímo z ABRA reportu Výkaz hospodaření za měsíc za všechna střediska. Cash a závazky jsou také live z ABRA API.",
     "currentMonth": {
       "label": "6/2026",
-      "revenue": 4436421.54,
-      "cogsAndFees": 3342933.55,
+      "revenue": 4541847.73,
+      "cogsAndFees": 3420389.0,
       "logistics": 14294.75,
       "marketing": 2479.34,
       "opex": 227835.97,
       "depreciation": 385502.0,
       "other": 1069.1,
-      "grossMargin": 1093487.99,
-      "afterLogistics": 1079193.24,
-      "afterMarketing": 1076713.9,
-      "operatingMargin": 848877.93,
-      "ebit": 463375.93,
-      "profit": 464445.03,
-      "grossMarginPct": 24.6,
+      "grossMargin": 1121458.73,
+      "afterLogistics": 1107163.98,
+      "afterMarketing": 1104684.64,
+      "operatingMargin": 876848.67,
+      "ebit": 491346.67,
+      "profit": 492415.77,
+      "grossMarginPct": 24.7,
       "marketingPct": 0.1,
       "logisticsPct": 0.3,
-      "operatingMarginPct": 19.1,
-      "profitPct": 10.5
+      "operatingMarginPct": 19.3,
+      "profitPct": 10.8
     },
     "cash": {
-      "cashOnAccounts": 8026654.96,
+      "cashOnAccounts": 8040030.97,
       "unpaidInvoices": 2313916.24,
-      "netCashPosition": 5712738.72,
+      "netCashPosition": 5726114.73,
       "overdueInvoicesCount": 2,
       "overdueInvoicesAmount": 1259.3,
       "largestPayables": [
@@ -194,32 +194,39 @@
             "includedBalance": 3103449.0
           },
           {
-            "accountCode": "221111",
-            "accountLabel": "221111: 107-164902 Czk THEPAY",
+            "accountCode": "221115",
+            "accountLabel": "221115: 131-3675980207/0100 KB CZK",
             "currency": "CZK: Česká koruna",
-            "balance": 2362779.3,
-            "includedBalance": 2362779.3
+            "balance": 1633303.73,
+            "includedBalance": 1633303.73
           },
           {
             "accountCode": "221001",
             "accountLabel": "221001: 2901338673/2010 FIO CZK",
             "currency": "CZK: Česká koruna",
-            "balance": 1559508.01,
-            "includedBalance": 1559508.01
+            "balance": 1614221.01,
+            "includedBalance": 1614221.01
+          },
+          {
+            "accountCode": "221111",
+            "accountLabel": "221111: 107-164902 Czk THEPAY",
+            "currency": "CZK: Česká koruna",
+            "balance": 687040.01,
+            "includedBalance": 687040.01
           },
           {
             "accountCode": "221002",
             "accountLabel": "221002: 131-1211280297/0100 KB EUR",
             "currency": "CZK: Česká koruna",
-            "balance": 359854.03,
-            "includedBalance": 359854.03
+            "balance": 617164.21,
+            "includedBalance": 617164.21
           },
           {
             "accountCode": "221112",
             "accountLabel": "221112: 107-164902 EUR THEPAY",
             "currency": "CZK: Česká koruna",
-            "balance": 298827.35,
-            "includedBalance": 298827.35
+            "balance": 123753.14,
+            "includedBalance": 123753.14
           },
           {
             "accountCode": "221006",
@@ -236,18 +243,18 @@
             "includedBalance": 99497.24
           },
           {
-            "accountCode": "221005",
-            "accountLabel": "221005: 2501338690/2010 FIO EUR",
-            "currency": "CZK: Česká koruna",
-            "balance": 98241.05,
-            "includedBalance": 98241.05
-          },
-          {
             "accountCode": "211000",
             "accountLabel": "211000: Pokladna - Klinika Biorezonance",
             "currency": "CZK: Česká koruna",
             "balance": 29908.85,
             "includedBalance": 29908.85
+          },
+          {
+            "accountCode": "221005",
+            "accountLabel": "221005: 2501338690/2010 FIO EUR",
+            "currency": "CZK: Česká koruna",
+            "balance": 17103.65,
+            "includedBalance": 17103.65
           },
           {
             "accountCode": "221007",
@@ -346,13 +353,6 @@
             "currency": "EUR: Euro",
             "balance": 7855.02,
             "includedBalance": 0.0
-          },
-          {
-            "accountCode": "221002",
-            "accountLabel": "221002: 131-1211280297/0100 KB EUR",
-            "currency": "EUR: Euro",
-            "balance": 14272.04,
-            "includedBalance": 0.0
           }
         ]
       }
@@ -371,7 +371,7 @@
       "performanceSpend": 2479.34,
       "brandSpend": 0.0,
       "totalSpend": 2479.34,
-      "revenue": 4436421.54,
+      "revenue": 4541847.73,
       "spendShareOfRevenuePct": 0.1
     },
     "topSupplier": {
@@ -389,23 +389,23 @@
       "label": "2025-10-01 až 2026-06-10"
     },
     "summary": {
-      "noviceRevenueCzkEquiv": 12157321.0,
-      "networkRevenueCzkEquiv": 17744127.0,
+      "noviceRevenueCzkEquiv": 12170357.0,
+      "networkRevenueCzkEquiv": 17756865.0,
       "novicePartners": 50,
       "networkPartners": 50,
-      "noviceOrders": 7373.0,
-      "networkOrders": 10908.0,
+      "noviceOrders": 7381.0,
+      "networkOrders": 10919.0,
       "noviceOrderingContacts": 1510.0,
-      "networkOrderingCustomers": 3527.0,
+      "networkOrderingCustomers": 3528.0,
       "topNovicePartner": {
         "partnerCode": "ESHOP",
         "partnerName": "E-shop (interní)",
-        "revenueCzkEquiv": 3510125.0
+        "revenueCzkEquiv": 3512761.0
       },
       "topNetworkPartner": {
         "partnerCode": "ESHOP",
         "partnerName": "E-shop (interní)",
-        "revenueCzkEquiv": 3510125.0
+        "revenueCzkEquiv": 3512761.0
       }
     }
   },
