@@ -18412,10 +18412,10 @@
       },
       "dateCreated": "2026-06-10T18:41:05+02:00",
       "cancelled": false,
-      "isPaid": false,
+      "isPaid": true,
       "status": {
-        "id": 0,
-        "name": "nová"
+        "id": 1,
+        "name": "přijatá"
       },
       "totalPrice": {
         "withVat": 3751,
@@ -18455,6 +18455,30 @@
         {
           "adminId": null,
           "comment": "[FlexiBee] Objednávka byla nahrána do FlexiBee; ID: 677605"
+        },
+        {
+          "adminId": null,
+          "comment": "Modul FioBank - příchozí platba č. 27680940252. Komentář plátce: NEMCOVA IVANA."
+        },
+        {
+          "adminId": null,
+          "comment": "<p>Dobré zprávy: Úhrada vaší objednávky 261288978 právě dorazila. Než dočtete tento e-mail, pustíme se do práce na expedici vaší objednávky tak, aby vám dorazila co nejdříve.</p><p>Těšíte se? 😍</p><div></div>"
+        },
+        {
+          "adminId": null,
+          "comment": "[4PX] Objednávka byla vytvořena; ID: OC149400632606110103 tracking: 601113970688 účet: CZ"
+        },
+        {
+          "adminId": null,
+          "comment": null
+        },
+        {
+          "adminId": null,
+          "comment": "[FlexiBee] Objednávka byla ve FlexiBee zaktualizována"
+        },
+        {
+          "adminId": null,
+          "comment": "[Flexi] Objednávka byla realizována ve Flexi;"
         }
       ],
       "deliveryType": {
@@ -63833,8 +63857,8 @@
       "cancelled": false,
       "isPaid": true,
       "status": {
-        "id": 1,
-        "name": "přijatá"
+        "id": 3,
+        "name": "expedováno"
       },
       "totalPrice": {
         "withVat": 2087,
@@ -63898,6 +63922,26 @@
         {
           "adminId": null,
           "comment": "[Flexi] Objednávka byla realizována ve Flexi;"
+        },
+        {
+          "adminId": null,
+          "comment": "[4PX] Číslo balíku: DR1139192833C"
+        },
+        {
+          "adminId": null,
+          "comment": "[4PX] Změna stavu: carrier_picked_up"
+        },
+        {
+          "adminId": null,
+          "comment": "<p><p dir=\"ltr\">Vaši objednávku si dnes převzala <strong>Česká pošta</strong>, která Vás bude brzy kontaktovat ohledně <strong>přesného termínu doručení</strong>.<br />\r\nBuďte na převzetí připraven/á a <strong>sledujte</strong> svůj balíček <strong>online</strong> <a href=\"https://www.postaonline.cz/trackandtrace/-/zasilka/cislo?parcelNumbers=DR1139192833C\">zde</a> pod číslem <strong>DR1139192833C</strong>.</p>\r\n\r\n<p dir=\"ltr\">Za objednávku jste zaplatil/a 2 087 Kč bankovním převodem.</p></p><p> </p><p>Nezapomeňte, že jsme tu pro Vás, a že se na nás můžete kdykoliv obrátit. </p>"
+        },
+        {
+          "adminId": null,
+          "comment": "Autopilot: odeslána uživatelská zpráva: Odesláno"
+        },
+        {
+          "adminId": null,
+          "comment": null
         }
       ],
       "deliveryType": {
@@ -66024,9 +66068,84 @@
   ],
   "historicalWindow": {
     "from": "2025-01-01T00:00:00+01:00",
-    "to": "2026-06-11T00:31:23.813551+02:00"
+    "to": "2026-06-11T02:58:09.215425+02:00"
   },
   "historicalOrdersSample": [
+    {
+      "id": 3623452,
+      "code": "261289079",
+      "dateCreated": "2026-06-11T02:00:18+02:00",
+      "customerKey": "email:irenakotlorzova@seznam.cz",
+      "customerLabel": "Irena Kotlorzová",
+      "email": "irenakotlorzova@seznam.cz",
+      "countryCode": "CZ",
+      "sourceName": "E-shop",
+      "statusName": "přijatá",
+      "cancelled": false,
+      "problematic": false,
+      "isPaid": true,
+      "revenueWithVat": 1158.0
+    },
+    {
+      "id": 3623451,
+      "code": "261289078",
+      "dateCreated": "2026-06-11T01:44:04+02:00",
+      "customerKey": "email:brigitapolanska@seznam.cz",
+      "customerLabel": "Brigita Polanská",
+      "email": "brigitapolanska@seznam.cz",
+      "countryCode": "CZ",
+      "sourceName": "E-shop",
+      "statusName": "nová",
+      "cancelled": false,
+      "problematic": false,
+      "isPaid": false,
+      "revenueWithVat": 1612.0
+    },
+    {
+      "id": 3623450,
+      "code": "261289077",
+      "dateCreated": "2026-06-11T01:34:29+02:00",
+      "customerKey": "email:zdena.smid@seznam.cz",
+      "customerLabel": "Zdeňka Šmídová",
+      "email": "zdena.smid@seznam.cz",
+      "countryCode": "CZ",
+      "sourceName": "E-shop",
+      "statusName": "přijatá",
+      "cancelled": false,
+      "problematic": false,
+      "isPaid": true,
+      "revenueWithVat": 80.0
+    },
+    {
+      "id": 3623449,
+      "code": "261289076",
+      "dateCreated": "2026-06-11T01:01:11+02:00",
+      "customerKey": "email:iveta.ambrusova@gmail.com",
+      "customerLabel": "Iveta Ambrúsová",
+      "email": "iveta.ambrusova@gmail.com",
+      "countryCode": "SK",
+      "sourceName": "E-shop",
+      "statusName": "přijatá",
+      "cancelled": false,
+      "problematic": false,
+      "isPaid": false,
+      "revenueWithVat": 3401.93
+    },
+    {
+      "id": 3623448,
+      "code": "261289075",
+      "dateCreated": "2026-06-11T00:52:03+02:00",
+      "customerKey": "email:pkrbcova@seznam.cz",
+      "customerLabel": "Petra Krbcová",
+      "email": "pkrbcova@seznam.cz",
+      "countryCode": "CZ",
+      "sourceName": "E-shop",
+      "statusName": "přijatá",
+      "cancelled": false,
+      "problematic": false,
+      "isPaid": true,
+      "revenueWithVat": 1025.0
+    },
     {
       "id": 3623447,
       "code": "261289074",
@@ -67451,96 +67570,21 @@
       "problematic": false,
       "isPaid": true,
       "revenueWithVat": 3564.19
-    },
-    {
-      "id": 3623346,
-      "code": "261288979",
-      "dateCreated": "2026-06-10T18:46:36+02:00",
-      "customerKey": "email:jitkahulkova@seznam.cz",
-      "customerLabel": "Jitka Soukupová",
-      "email": "jitkahulkova@seznam.cz",
-      "countryCode": "CZ",
-      "sourceName": "E-shop",
-      "statusName": "přijatá",
-      "cancelled": false,
-      "problematic": false,
-      "isPaid": true,
-      "revenueWithVat": 1627.0
-    },
-    {
-      "id": 3623345,
-      "code": "261288978",
-      "dateCreated": "2026-06-10T18:41:05+02:00",
-      "customerKey": "email:i.nemcova72@seznam.cz",
-      "customerLabel": "Ivana Němcová",
-      "email": "i.nemcova72@seznam.cz",
-      "countryCode": "CZ",
-      "sourceName": "E-shop",
-      "statusName": "nová",
-      "cancelled": false,
-      "problematic": false,
-      "isPaid": false,
-      "revenueWithVat": 3751.0
-    },
-    {
-      "id": 3623344,
-      "code": "261288977",
-      "dateCreated": "2026-06-10T18:40:20+02:00",
-      "customerKey": "email:fido4@centrum.cz",
-      "customerLabel": "Kateřina Labuťová",
-      "email": "fido4@centrum.cz",
-      "countryCode": "CZ",
-      "sourceName": "E-shop",
-      "statusName": "přijatá",
-      "cancelled": false,
-      "problematic": false,
-      "isPaid": true,
-      "revenueWithVat": 6376.0
-    },
-    {
-      "id": 3623343,
-      "code": "261288976",
-      "dateCreated": "2026-06-10T18:36:29+02:00",
-      "customerKey": "email:andylkaa@gmail.com",
-      "customerLabel": "AlzaBox (Milk Agro) (Andrea Kapustová)",
-      "email": "andylkaa@gmail.com",
-      "countryCode": "SK",
-      "sourceName": "E-shop",
-      "statusName": "přijatá",
-      "cancelled": false,
-      "problematic": false,
-      "isPaid": true,
-      "revenueWithVat": 811.28
-    },
-    {
-      "id": 3623342,
-      "code": "261288975",
-      "dateCreated": "2026-06-10T18:33:06+02:00",
-      "customerKey": "email:pavlagreplova96@gmail.com",
-      "customerLabel": "Pavlína Greplová",
-      "email": "pavlagreplova96@gmail.com",
-      "countryCode": "CZ",
-      "sourceName": "E-shop",
-      "statusName": "přijatá",
-      "cancelled": false,
-      "problematic": false,
-      "isPaid": false,
-      "revenueWithVat": 1160.0
     }
   ],
   "summary": {
-    "orders": 207477,
-    "nonCancelledOrders": 201352,
+    "orders": 207482,
+    "nonCancelledOrders": 201357,
     "cancelledOrders": 6125,
     "problematicOrders": 6247,
     "cancelledRatePct": 2.95,
     "problematicRatePct": 3.01,
-    "estimatedNetRevenueAfterCancellations": 315418167.96,
-    "grossRevenueWithVat": 325005840.25,
+    "estimatedNetRevenueAfterCancellations": 315425230.22,
+    "grossRevenueWithVat": 325013117.18,
     "qualityLabel": "healthy",
     "window": {
       "from": "2025-01-01T00:00:00+01:00",
-      "to": "2026-06-11T00:31:23.813551+02:00"
+      "to": "2026-06-11T02:58:09.215425+02:00"
     }
   }
 }
