@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-11T02:58:09.215425+02:00",
+  "generatedAt": "2026-06-11T08:25:19.591580+02:00",
   "window": {
     "from": "2026-06-10T00:00:01+02:00",
     "to": "2026-06-11T00:00:00+02:00"
@@ -2921,10 +2921,10 @@
       },
       "dateCreated": "2026-06-10T22:26:25+02:00",
       "cancelled": false,
-      "isPaid": false,
+      "isPaid": true,
       "status": {
-        "id": 0,
-        "name": "nová"
+        "id": 1,
+        "name": "přijatá"
       },
       "totalPrice": {
         "withVat": 1632,
@@ -2964,6 +2964,26 @@
         {
           "adminId": null,
           "comment": "[FlexiBee] Objednávka byla nahrána do FlexiBee; ID: 677682"
+        },
+        {
+          "adminId": 40,
+          "comment": "Za tento nákup přičteno na účet uživatele 67.5 bodů."
+        },
+        {
+          "adminId": null,
+          "comment": "[4PX] Objednávka byla vytvořena; ID: OC149400632606110131 tracking: 601113978396 účet: CZ"
+        },
+        {
+          "adminId": null,
+          "comment": null
+        },
+        {
+          "adminId": null,
+          "comment": "[FlexiBee] Objednávka byla ve FlexiBee zaktualizována"
+        },
+        {
+          "adminId": null,
+          "comment": "[Flexi] Objednávka byla realizována ve Flexi;"
         }
       ],
       "deliveryType": {
@@ -4692,10 +4712,10 @@
       },
       "dateCreated": "2026-06-10T21:50:32+02:00",
       "cancelled": false,
-      "isPaid": false,
+      "isPaid": true,
       "status": {
-        "id": 0,
-        "name": "nová"
+        "id": 1,
+        "name": "přijatá"
       },
       "totalPrice": {
         "withVat": 3118,
@@ -4735,6 +4755,30 @@
         {
           "adminId": null,
           "comment": "[FlexiBee] Objednávka byla nahrána do FlexiBee; ID: 677673"
+        },
+        {
+          "adminId": null,
+          "comment": "Modul FioBank - příchozí platba č. 27681440122. Komentář plátce: Silvie Hartigová."
+        },
+        {
+          "adminId": null,
+          "comment": "<p>Dobré zprávy: Úhrada vaší objednávky 261289046 právě dorazila. Než dočtete tento e-mail, pustíme se do práce na expedici vaší objednávky tak, aby vám dorazila co nejdříve.</p><p>Těšíte se? 😍</p><div></div>"
+        },
+        {
+          "adminId": null,
+          "comment": "[4PX] Objednávka byla vytvořena; ID: OC149400632606110142 tracking: 601113979013 účet: CZ"
+        },
+        {
+          "adminId": null,
+          "comment": null
+        },
+        {
+          "adminId": null,
+          "comment": "[FlexiBee] Objednávka byla ve FlexiBee zaktualizována"
+        },
+        {
+          "adminId": null,
+          "comment": "[Flexi] Objednávka byla realizována ve Flexi;"
         }
       ],
       "deliveryType": {
@@ -33863,8 +33907,8 @@
       "cancelled": false,
       "isPaid": true,
       "status": {
-        "id": 3,
-        "name": "expedováno"
+        "id": 4,
+        "name": "připraveno k vyzvednutí"
       },
       "totalPrice": {
         "withVat": 1504,
@@ -33944,6 +33988,14 @@
         {
           "adminId": null,
           "comment": "Autopilot: odeslána uživatelská zpráva: Odesláno"
+        },
+        {
+          "adminId": null,
+          "comment": null
+        },
+        {
+          "adminId": null,
+          "comment": "[4PX] Změna stavu: ready_to_pickup"
         },
         {
           "adminId": null,
@@ -66075,19 +66127,23 @@
     "statuses": [
       {
         "name": "přijatá",
-        "count": 184
+        "count": 186
       },
       {
         "name": "expedováno",
-        "count": 113
+        "count": 112
       },
       {
         "name": "nová",
-        "count": 15
+        "count": 13
       },
       {
         "name": "doručeno",
         "count": 6
+      },
+      {
+        "name": "připraveno k vyzvednutí",
+        "count": 1
       }
     ],
     "paymentMethods": [
@@ -66518,19 +66574,23 @@
         "statuses": [
           {
             "name": "přijatá",
-            "count": 184
+            "count": 186
           },
           {
             "name": "expedováno",
-            "count": 113
+            "count": 112
           },
           {
             "name": "nová",
-            "count": 15
+            "count": 13
           },
           {
             "name": "doručeno",
             "count": 6
+          },
+          {
+            "name": "připraveno k vyzvednutí",
+            "count": 1
           }
         ],
         "paymentMethods": [
@@ -66961,15 +67021,19 @@
         "statuses": [
           {
             "name": "přijatá",
-            "count": 171
+            "count": 173
           },
           {
             "name": "expedováno",
-            "count": 104
+            "count": 103
           },
           {
             "name": "nová",
-            "count": 12
+            "count": 10
+          },
+          {
+            "name": "připraveno k vyzvednutí",
+            "count": 1
           }
         ],
         "paymentMethods": [
