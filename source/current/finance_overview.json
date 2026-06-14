@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-14T08:12:26.693939+02:00",
+  "generatedAt": "2026-06-14T11:52:19.865457+02:00",
   "source": {
     "status": "live_report",
     "message": "Měsíční finance se tahají přímo z ABRA reportu Výkaz hospodaření za měsíc za všechna střediska. Cash a závazky jsou také live z ABRA API."
@@ -120,46 +120,46 @@
     },
     {
       "label": "6/2026",
-      "revenue": 5765612.09,
-      "cogsAndFees": 4366865.45,
+      "revenue": 5827184.85,
+      "cogsAndFees": 4415512.94,
       "logistics": 14294.75,
       "marketing": 221146.34,
       "opex": 288903.08,
       "depreciation": 385502.0,
       "other": 1055.43,
-      "grossMargin": 1398746.64,
-      "afterLogistics": 1384451.89,
-      "afterMarketing": 1163305.55,
-      "operatingMargin": 874402.47,
-      "ebit": 488900.47,
-      "profit": 489955.9,
-      "grossMarginPct": 24.3,
+      "grossMargin": 1411671.91,
+      "afterLogistics": 1397377.16,
+      "afterMarketing": 1176230.82,
+      "operatingMargin": 887327.74,
+      "ebit": 501825.74,
+      "profit": 502881.17,
+      "grossMarginPct": 24.2,
       "marketingPct": 3.8,
       "logisticsPct": 0.2,
       "operatingMarginPct": 15.2,
-      "profitPct": 8.5
+      "profitPct": 8.6
     }
   ],
   "currentMonth": {
     "label": "6/2026",
-    "revenue": 5765612.09,
-    "cogsAndFees": 4366865.45,
+    "revenue": 5827184.85,
+    "cogsAndFees": 4415512.94,
     "logistics": 14294.75,
     "marketing": 221146.34,
     "opex": 288903.08,
     "depreciation": 385502.0,
     "other": 1055.43,
-    "grossMargin": 1398746.64,
-    "afterLogistics": 1384451.89,
-    "afterMarketing": 1163305.55,
-    "operatingMargin": 874402.47,
-    "ebit": 488900.47,
-    "profit": 489955.9,
-    "grossMarginPct": 24.3,
+    "grossMargin": 1411671.91,
+    "afterLogistics": 1397377.16,
+    "afterMarketing": 1176230.82,
+    "operatingMargin": 887327.74,
+    "ebit": 501825.74,
+    "profit": 502881.17,
+    "grossMarginPct": 24.2,
     "marketingPct": 3.8,
     "logisticsPct": 0.2,
     "operatingMarginPct": 15.2,
-    "profitPct": 8.5
+    "profitPct": 8.6
   },
   "previousMonth": {
     "label": "5/2026",
@@ -183,11 +183,11 @@
     "profitPct": -0.9
   },
   "cash": {
-    "cashOnAccounts": 7370715.02,
-    "unpaidInvoices": 2673485.25,
-    "netCashPosition": 4697229.77,
-    "overdueInvoicesCount": 4,
-    "overdueInvoicesAmount": 6970.3,
+    "cashOnAccounts": 7392294.02,
+    "unpaidInvoices": 2668120.25,
+    "netCashPosition": 4724173.77,
+    "overdueInvoicesCount": 3,
+    "overdueInvoicesAmount": 1605.3,
     "largestPayables": [
       {
         "code": "PF0704/2026",
@@ -262,8 +262,8 @@
           "accountCode": "221001",
           "accountLabel": "221001: 2901338673/2010 FIO CZK",
           "currency": "CZK: Česká koruna",
-          "balance": 2115202.01,
-          "includedBalance": 2115202.01
+          "balance": 2136781.01,
+          "includedBalance": 2136781.01
         },
         {
           "accountCode": "221115",
@@ -777,27 +777,20 @@
       },
       {
         "label": "6/2026",
-        "expenseTotal": 4923752.79,
-        "revenueTotal": 5494262.39,
+        "expenseTotal": 4478445.31,
+        "revenueTotal": 5556963.63,
         "topExpenseClass": {
           "code": "50",
           "label": "Spotřeba a zboží",
-          "amount": 3999200.58
+          "amount": 3987858.1
         },
         "topExpenseAccounts": [
           {
             "code": "504001",
             "label": "Nákup zboží 2",
-            "amount": 3963995.39,
+            "amount": 3956302.91,
             "classCode": "50",
             "classLabel": "Spotřeba a zboží"
-          },
-          {
-            "code": "551100",
-            "label": "Odpisy majetku",
-            "amount": 365295.0,
-            "classCode": "55",
-            "classLabel": "Odpisy a rezervy"
           },
           {
             "code": "518901",
@@ -810,13 +803,6 @@
             "code": "518700",
             "label": "Software a IT",
             "amount": 124292.0,
-            "classCode": "51",
-            "classLabel": "Služby"
-          },
-          {
-            "code": "518100",
-            "label": "Režie - služby",
-            "amount": 45218.43,
             "classCode": "51",
             "classLabel": "Služby"
           },
@@ -849,13 +835,6 @@
             "classLabel": "Služby"
           },
           {
-            "code": "551002",
-            "label": "Odpisy stavby",
-            "amount": 17751.0,
-            "classCode": "55",
-            "classLabel": "Odpisy a rezervy"
-          },
-          {
             "code": "568100",
             "label": "Bankovní poplatky",
             "amount": 16287.37,
@@ -868,23 +847,39 @@
             "amount": 16018.06,
             "classCode": "50",
             "classLabel": "Spotřeba a zboží"
+          },
+          {
+            "code": "518201",
+            "label": "Přepravní služby",
+            "amount": 14294.75,
+            "classCode": "51",
+            "classLabel": "Služby"
+          },
+          {
+            "code": "501300",
+            "label": "Drobný majetek",
+            "amount": 14206.77,
+            "classCode": "50",
+            "classLabel": "Spotřeba a zboží"
+          },
+          {
+            "code": "518401",
+            "label": "Licenční poplatky",
+            "amount": 11977.86,
+            "classCode": "51",
+            "classLabel": "Služby"
           }
         ],
         "topExpenseClasses": [
           {
             "code": "50",
             "label": "Spotřeba a zboží",
-            "amount": 3999200.58
+            "amount": 3987858.1
           },
           {
             "code": "51",
             "label": "Služby",
-            "amount": 509889.49
-          },
-          {
-            "code": "55",
-            "label": "Odpisy a rezervy",
-            "amount": 385502.0
+            "amount": 467289.49
           },
           {
             "code": "56",
@@ -894,7 +889,7 @@
           {
             "code": "54",
             "label": "Jiné provozní náklady",
-            "amount": 12170.06
+            "amount": 6307.06
           }
         ],
         "topVendors": [
@@ -909,10 +904,6 @@
           {
             "name": "Maloobchodní prodej",
             "amount": 49238.38
-          },
-          {
-            "name": "Radynacestu, s.r.o.",
-            "amount": 40000.0
           },
           {
             "name": "Petra Demková",
@@ -945,35 +936,32 @@
           {
             "name": "Adam Cechner PRODEJ",
             "amount": 12829.64
+          },
+          {
+            "name": "Iveta Kuchyňová",
+            "amount": 12706.73
           }
         ],
-        "entryCount": 11797,
+        "entryCount": 11831,
         "detailFile": "finance_journal_6-2026.json"
       }
     ],
     "currentMonth": {
       "label": "6/2026",
-      "expenseTotal": 4923752.79,
-      "revenueTotal": 5494262.39,
+      "expenseTotal": 4478445.31,
+      "revenueTotal": 5556963.63,
       "topExpenseClass": {
         "code": "50",
         "label": "Spotřeba a zboží",
-        "amount": 3999200.58
+        "amount": 3987858.1
       },
       "topExpenseAccounts": [
         {
           "code": "504001",
           "label": "Nákup zboží 2",
-          "amount": 3963995.39,
+          "amount": 3956302.91,
           "classCode": "50",
           "classLabel": "Spotřeba a zboží"
-        },
-        {
-          "code": "551100",
-          "label": "Odpisy majetku",
-          "amount": 365295.0,
-          "classCode": "55",
-          "classLabel": "Odpisy a rezervy"
         },
         {
           "code": "518901",
@@ -986,13 +974,6 @@
           "code": "518700",
           "label": "Software a IT",
           "amount": 124292.0,
-          "classCode": "51",
-          "classLabel": "Služby"
-        },
-        {
-          "code": "518100",
-          "label": "Režie - služby",
-          "amount": 45218.43,
           "classCode": "51",
           "classLabel": "Služby"
         },
@@ -1025,13 +1006,6 @@
           "classLabel": "Služby"
         },
         {
-          "code": "551002",
-          "label": "Odpisy stavby",
-          "amount": 17751.0,
-          "classCode": "55",
-          "classLabel": "Odpisy a rezervy"
-        },
-        {
           "code": "568100",
           "label": "Bankovní poplatky",
           "amount": 16287.37,
@@ -1044,23 +1018,39 @@
           "amount": 16018.06,
           "classCode": "50",
           "classLabel": "Spotřeba a zboží"
+        },
+        {
+          "code": "518201",
+          "label": "Přepravní služby",
+          "amount": 14294.75,
+          "classCode": "51",
+          "classLabel": "Služby"
+        },
+        {
+          "code": "501300",
+          "label": "Drobný majetek",
+          "amount": 14206.77,
+          "classCode": "50",
+          "classLabel": "Spotřeba a zboží"
+        },
+        {
+          "code": "518401",
+          "label": "Licenční poplatky",
+          "amount": 11977.86,
+          "classCode": "51",
+          "classLabel": "Služby"
         }
       ],
       "topExpenseClasses": [
         {
           "code": "50",
           "label": "Spotřeba a zboží",
-          "amount": 3999200.58
+          "amount": 3987858.1
         },
         {
           "code": "51",
           "label": "Služby",
-          "amount": 509889.49
-        },
-        {
-          "code": "55",
-          "label": "Odpisy a rezervy",
-          "amount": 385502.0
+          "amount": 467289.49
         },
         {
           "code": "56",
@@ -1070,7 +1060,7 @@
         {
           "code": "54",
           "label": "Jiné provozní náklady",
-          "amount": 12170.06
+          "amount": 6307.06
         }
       ],
       "topVendors": [
@@ -1085,10 +1075,6 @@
         {
           "name": "Maloobchodní prodej",
           "amount": 49238.38
-        },
-        {
-          "name": "Radynacestu, s.r.o.",
-          "amount": 40000.0
         },
         {
           "name": "Petra Demková",
@@ -1121,9 +1107,13 @@
         {
           "name": "Adam Cechner PRODEJ",
           "amount": 12829.64
+        },
+        {
+          "name": "Iveta Kuchyňová",
+          "amount": 12706.73
         }
       ],
-      "entryCount": 11797,
+      "entryCount": 11831,
       "detailFile": "finance_journal_6-2026.json"
     }
   }
