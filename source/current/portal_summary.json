@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-15T13:37:01.036017+02:00",
+  "generatedAt": "2026-06-15T19:31:02.833313+02:00",
   "config": {
     "warehouseCode": "CZPRGA",
     "outboundMaxPages": 20,
@@ -14,25 +14,25 @@
       "label": "CZ",
       "inventory": {
         "items": 780,
-        "availableStockTotal": 299548,
-        "pendingStockTotal": 2697,
+        "availableStockTotal": 299148,
+        "pendingStockTotal": 1679,
         "freezeStockTotal": 0,
         "lowStockItems": 100
       },
       "outbound": {
-        "items": 500,
-        "scannedPages": 5,
+        "items": 600,
+        "scannedPages": 6,
         "topLogisticsProduct": "F1401",
-        "oldestTimestamp": "2026-06-13T19:30:03+02:00",
-        "newestTimestamp": "2026-06-15T13:35:22+02:00"
+        "oldestTimestamp": "2026-06-13T19:45:23+02:00",
+        "newestTimestamp": "2026-06-15T19:30:06+02:00"
       }
     },
     "sk": {
       "label": "SK",
       "inventory": {
         "items": 631,
-        "availableStockTotal": 62133,
-        "pendingStockTotal": 50,
+        "availableStockTotal": 62231,
+        "pendingStockTotal": 189,
         "freezeStockTotal": 0,
         "lowStockItems": 100
       },
@@ -40,8 +40,8 @@
         "items": 100,
         "scannedPages": 1,
         "topLogisticsProduct": "F1403",
-        "oldestTimestamp": "2026-06-11T10:35:15+02:00",
-        "newestTimestamp": "2026-06-15T13:20:34+02:00"
+        "oldestTimestamp": "2026-06-11T18:20:15+02:00",
+        "newestTimestamp": "2026-06-15T18:46:38+02:00"
       }
     }
   },
@@ -62,25 +62,25 @@
       "10 skladových pozic je v mínusu."
     ],
     "priorities": [
-      "Dohlédnout 30132/02 (Pánské spodní prádlo s bodovou turmalínovou vrstvou - velikost XXL), aktuálně 8 ks.",
+      "Dohlédnout 30132/02 (Pánské spodní prádlo s bodovou turmalínovou vrstvou - velikost XXL), aktuálně 5 ks.",
       "Projít 4 problematických nebo stornovaných objednávek z včerejška.",
       "Projít nejbližší expirace v 4PX a rozhodnout o doprodeji nebo přesunu zásoby."
     ]
   },
   "expiries": {
     "datedSkuCount": 332,
-    "czSkuCount": 319,
-    "skSkuCount": 299,
-    "datedRowCount": 700,
+    "czSkuCount": 320,
+    "skSkuCount": 300,
+    "datedRowCount": 701,
     "czRowCount": 364,
-    "skRowCount": 336
+    "skRowCount": 337
   },
   "pairing": {
     "allCodes": 2978,
-    "pairedProducts": 387,
-    "onlyInWpj": 1527,
+    "pairedProducts": 386,
+    "onlyInWpj": 1528,
     "onlyIn4px": 1,
-    "stockMismatch": 712,
+    "stockMismatch": 705,
     "lowAfterSales": 3,
     "manualMapped4pxAliases": 0,
     "autoMapped4pxAliases": 73
@@ -91,29 +91,29 @@
     "message": "Měsíční finance se tahají přímo z ABRA reportu Výkaz hospodaření za měsíc za všechna střediska. Cash a závazky jsou také live z ABRA API.",
     "currentMonth": {
       "label": "6/2026",
-      "revenue": 6391600.94,
-      "cogsAndFees": 4832949.82,
+      "revenue": 6544323.09,
+      "cogsAndFees": 4932528.55,
       "logistics": 14294.75,
       "marketing": 221146.34,
       "opex": 288903.08,
       "depreciation": 385502.0,
       "other": 991.51,
-      "grossMargin": 1558651.12,
-      "afterLogistics": 1544356.37,
-      "afterMarketing": 1323210.03,
-      "operatingMargin": 1034306.95,
-      "ebit": 648804.95,
-      "profit": 649796.46,
-      "grossMarginPct": 24.4,
-      "marketingPct": 3.5,
+      "grossMargin": 1611794.54,
+      "afterLogistics": 1597499.79,
+      "afterMarketing": 1376353.45,
+      "operatingMargin": 1087450.37,
+      "ebit": 701948.37,
+      "profit": 702939.88,
+      "grossMarginPct": 24.6,
+      "marketingPct": 3.4,
       "logisticsPct": 0.2,
-      "operatingMarginPct": 16.2,
-      "profitPct": 10.2
+      "operatingMarginPct": 16.6,
+      "profitPct": 10.7
     },
     "cash": {
-      "cashOnAccounts": 7783474.66,
-      "unpaidInvoices": 2731377.64,
-      "netCashPosition": 5052097.02,
+      "cashOnAccounts": 7843991.1,
+      "unpaidInvoices": 2842124.22,
+      "netCashPosition": 5001866.88,
       "overdueInvoicesCount": 4,
       "overdueInvoicesAmount": 62105.3,
       "largestPayables": [
@@ -166,20 +166,20 @@
           "status": "17 dní do splatnosti"
         },
         {
+          "code": "PF0739/2026",
+          "vendor": "ISTA CORPORATION s.r.o.",
+          "dueDate": "18.06.2026",
+          "amountTotal": 99477.74,
+          "amountDue": 99477.74,
+          "status": "3 dní do splatnosti"
+        },
+        {
           "code": "PF0702/2026",
           "vendor": "General Logistics Systems Czech Republic s.r.o.",
           "dueDate": "18.06.2026",
           "amountTotal": 74144.31,
           "amountDue": 74144.31,
           "status": "3 dní do splatnosti"
-        },
-        {
-          "code": "PF0713/2026",
-          "vendor": "CS HANDBALL, spol. s r.o.",
-          "dueDate": "14.06.2026",
-          "amountTotal": 60500.0,
-          "amountDue": 60500.0,
-          "status": "1 dní PO SPLATNOSTI"
         }
       ],
       "cashAccountsSource": {
@@ -190,8 +190,8 @@
             "accountCode": "221001",
             "accountLabel": "221001: 2901338673/2010 FIO CZK",
             "currency": "CZK: Česká koruna",
-            "balance": 2390736.01,
-            "includedBalance": 2390736.01
+            "balance": 2449598.01,
+            "includedBalance": 2449598.01
           },
           {
             "accountCode": "221115",
@@ -246,8 +246,8 @@
             "accountCode": "221005",
             "accountLabel": "221005: 2501338690/2010 FIO EUR",
             "currency": "CZK: Česká koruna",
-            "balance": 71678.22,
-            "includedBalance": 71678.22
+            "balance": 73332.66,
+            "includedBalance": 73332.66
           },
           {
             "accountCode": "211000",
@@ -371,8 +371,8 @@
       "performanceSpend": 21146.34,
       "brandSpend": 200000.0,
       "totalSpend": 221146.34,
-      "revenue": 6391600.94,
-      "spendShareOfRevenuePct": 3.5
+      "revenue": 6544323.09,
+      "spendShareOfRevenuePct": 3.4
     },
     "topSupplier": {
       "name": "Selfcareacademy s.r.o.",
@@ -389,23 +389,23 @@
       "label": "2025-10-01 až 2026-06-15"
     },
     "summary": {
-      "noviceRevenueCzkEquiv": 12488311.0,
-      "networkRevenueCzkEquiv": 18152151.0,
+      "noviceRevenueCzkEquiv": 12500607.0,
+      "networkRevenueCzkEquiv": 18181579.0,
       "novicePartners": 50,
       "networkPartners": 50,
-      "noviceOrders": 7560.0,
-      "networkOrders": 11157.0,
-      "noviceOrderingContacts": 1526.0,
-      "networkOrderingCustomers": 3558.0,
+      "noviceOrders": 7570.0,
+      "networkOrders": 11176.0,
+      "noviceOrderingContacts": 1528.0,
+      "networkOrderingCustomers": 3561.0,
       "topNovicePartner": {
         "partnerCode": "ESHOP",
         "partnerName": "E-shop (interní)",
-        "revenueCzkEquiv": 3671167.0
+        "revenueCzkEquiv": 3676609.0
       },
       "topNetworkPartner": {
         "partnerCode": "ESHOP",
         "partnerName": "E-shop (interní)",
-        "revenueCzkEquiv": 3671167.0
+        "revenueCzkEquiv": 3676609.0
       }
     }
   },
