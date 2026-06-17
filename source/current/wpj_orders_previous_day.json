@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-17T20:11:08.492410+02:00",
+  "generatedAt": "2026-06-17T22:40:19.137067+02:00",
   "window": {
     "from": "2026-06-16T00:00:01+02:00",
     "to": "2026-06-17T00:00:00+02:00"
@@ -8846,8 +8846,8 @@
       "cancelled": false,
       "isPaid": false,
       "status": {
-        "id": 1,
-        "name": "přijatá"
+        "id": 3,
+        "name": "expedováno"
       },
       "totalPrice": {
         "withVat": 939,
@@ -8887,6 +8887,26 @@
         {
           "adminId": null,
           "comment": "[4PX] Objednávka byla vytvořena; ID: OC149400632606170058 tracking: 601114267460 účet: CZ"
+        },
+        {
+          "adminId": null,
+          "comment": null
+        },
+        {
+          "adminId": null,
+          "comment": "[4PX] Číslo balíku: DR1139200565C"
+        },
+        {
+          "adminId": null,
+          "comment": "[4PX] Změna stavu: carrier_picked_up"
+        },
+        {
+          "adminId": null,
+          "comment": "<p><p dir=\"ltr\">Vaši objednávku si dnes převzala <strong>Česká pošta</strong>, která Vás bude brzy kontaktovat ohledně <strong>přesného termínu doručení</strong>.<br />\r\nBuďte na převzetí připraven/á a <strong>sledujte</strong> svůj balíček <strong>online</strong> <a href=\"https://www.postaonline.cz/trackandtrace/-/zasilka/cislo?parcelNumbers=DR1139200565C\">zde</a> pod číslem <strong>DR1139200565C</strong>.</p>\r\n\r\n<p dir=\"ltr\">Při převzetí objednávku zaplatíte hotově, nebo kartou <strong>939 Kč</strong>.</p></p><p> </p><p>Nezapomeňte, že jsme tu pro Vás, a že se na nás můžete kdykoliv obrátit. </p>"
+        },
+        {
+          "adminId": null,
+          "comment": "Autopilot: odeslána uživatelská zpráva: Odesláno"
         },
         {
           "adminId": null,
@@ -35839,10 +35859,10 @@
       },
       "dateCreated": "2026-06-16T14:09:39+02:00",
       "cancelled": false,
-      "isPaid": false,
+      "isPaid": true,
       "status": {
-        "id": 0,
-        "name": "nová"
+        "id": 1,
+        "name": "přijatá"
       },
       "totalPrice": {
         "withVat": 2441,
@@ -35882,6 +35902,30 @@
         {
           "adminId": null,
           "comment": "[FlexiBee] Objednávka byla nahrána do FlexiBee; ID: 679440"
+        },
+        {
+          "adminId": null,
+          "comment": "Modul FioBank - příchozí platba č. 27693175913. Komentář plátce: MICHAELA FLORIANOVÁ."
+        },
+        {
+          "adminId": null,
+          "comment": "<p>Dobré zprávy: Úhrada vaší objednávky 261290816 právě dorazila. Než dočtete tento e-mail, pustíme se do práce na expedici vaší objednávky tak, aby vám dorazila co nejdříve.</p><p>Těšíte se? 😍</p><div></div>"
+        },
+        {
+          "adminId": null,
+          "comment": "[4PX] Objednávka byla vytvořena; ID: OC149400632606180038 tracking: 601114325010 účet: CZ"
+        },
+        {
+          "adminId": null,
+          "comment": null
+        },
+        {
+          "adminId": null,
+          "comment": "[FlexiBee] Objednávka byla ve FlexiBee zaktualizována"
+        },
+        {
+          "adminId": null,
+          "comment": "[Flexi] Objednávka byla realizována ve Flexi;"
         }
       ],
       "deliveryType": {
@@ -57323,8 +57367,8 @@
       "cancelled": false,
       "isPaid": true,
       "status": {
-        "id": 4,
-        "name": "připraveno k vyzvednutí"
+        "id": 5,
+        "name": "doručeno"
       },
       "totalPrice": {
         "withVat": 1018,
@@ -57408,6 +57452,14 @@
         {
           "adminId": null,
           "comment": "[4PX] Změna stavu: ready_to_pickup"
+        },
+        {
+          "adminId": null,
+          "comment": null
+        },
+        {
+          "adminId": null,
+          "comment": "[4PX] Změna stavu: delivered"
         },
         {
           "adminId": null,
@@ -74597,8 +74649,8 @@
       "cancelled": false,
       "isPaid": true,
       "status": {
-        "id": 4,
-        "name": "připraveno k vyzvednutí"
+        "id": 5,
+        "name": "doručeno"
       },
       "totalPrice": {
         "withVat": 241,
@@ -74678,6 +74730,14 @@
         {
           "adminId": null,
           "comment": "[4PX] Změna stavu: ready_to_pickup"
+        },
+        {
+          "adminId": null,
+          "comment": null
+        },
+        {
+          "adminId": null,
+          "comment": "[4PX] Změna stavu: delivered"
         },
         {
           "adminId": null,
@@ -77798,19 +77858,19 @@
     "statuses": [
       {
         "name": "expedováno",
-        "count": 220
+        "count": 221
       },
       {
         "name": "doručeno",
-        "count": 116
+        "count": 118
       },
       {
         "name": "připraveno k vyzvednutí",
-        "count": 32
+        "count": 30
       },
       {
         "name": "nová",
-        "count": 10
+        "count": 9
       },
       {
         "name": "chyba",
@@ -78261,19 +78321,19 @@
         "statuses": [
           {
             "name": "expedováno",
-            "count": 220
+            "count": 221
           },
           {
             "name": "doručeno",
-            "count": 116
+            "count": 118
           },
           {
             "name": "připraveno k vyzvednutí",
-            "count": 32
+            "count": 30
           },
           {
             "name": "nová",
-            "count": 10
+            "count": 9
           },
           {
             "name": "chyba",
@@ -78724,19 +78784,19 @@
         "statuses": [
           {
             "name": "expedováno",
-            "count": 197
+            "count": 198
           },
           {
             "name": "doručeno",
-            "count": 81
+            "count": 83
           },
           {
             "name": "připraveno k vyzvednutí",
-            "count": 30
+            "count": 28
           },
           {
             "name": "nová",
-            "count": 9
+            "count": 8
           },
           {
             "name": "přijatá",
