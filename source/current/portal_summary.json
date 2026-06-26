@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-26T02:56:27.896843+02:00",
+  "generatedAt": "2026-06-26T08:04:09.325474+02:00",
   "config": {
     "warehouseCode": "CZPRGA",
     "outboundMaxPages": 20,
@@ -9,16 +9,15 @@
     }
   },
   "warnings": [
-    "Meta Ads denní refresh selhal, marketing používá poslední dostupný snapshot.",
-    "Klaviyo denní refresh selhal, marketing používá poslední dostupný snapshot."
+    "Meta Ads denní refresh selhal, marketing používá poslední dostupný snapshot."
   ],
   "accounts": {
     "cz": {
       "label": "CZ",
       "inventory": {
         "items": 782,
-        "availableStockTotal": 323460,
-        "pendingStockTotal": 1054,
+        "availableStockTotal": 323354,
+        "pendingStockTotal": 1160,
         "freezeStockTotal": 0,
         "lowStockItems": 100
       },
@@ -26,8 +25,8 @@
         "items": 200,
         "scannedPages": 2,
         "topLogisticsProduct": "F1401",
-        "oldestTimestamp": "2026-06-24T21:40:02+02:00",
-        "newestTimestamp": "2026-06-26T00:20:06+02:00"
+        "oldestTimestamp": "2026-06-24T22:25:04+02:00",
+        "newestTimestamp": "2026-06-26T07:55:03+02:00"
       }
     },
     "sk": {
@@ -54,20 +53,20 @@
     "orders": 196,
     "revenueWithVat": 310351.37,
     "averageOrderValue": 1583.43,
-    "problematicOrders": 1
+    "problematicOrders": 3
   },
   "report": {
     "date": "2026-06-25",
     "shipments": 190,
     "alerts": [
-      "1 problematických nebo stornovaných objednávek.",
+      "3 problematických nebo stornovaných objednávek.",
       "10 skladových pozic je v mínusu.",
       "2 A produktů je v kritickém riziku výpadku.",
       "V top expiracích je aspoň jedna položka do 30 dnů."
     ],
     "priorities": [
       "Prověřit A produkty v riziku výpadku (2 SKU): 135467, 195464.",
-      "Projít 1 problematických nebo stornovaných objednávek z včerejška.",
+      "Projít 3 problematických nebo stornovaných objednávek z včerejška.",
       "Projít nejbližší expirace v 4PX a rozhodnout o doprodeji nebo přesunu zásoby."
     ]
   },
@@ -95,29 +94,29 @@
     "message": "Měsíční finance se tahají přímo z ABRA reportu Výkaz hospodaření za měsíc za všechna střediska. Cash a závazky jsou také live z ABRA API.",
     "currentMonth": {
       "label": "6/2026",
-      "revenue": 10526311.22,
-      "cogsAndFees": 8016902.68,
+      "revenue": 10541227.39,
+      "cogsAndFees": 8031307.82,
       "logistics": 39268.21,
       "marketing": 226105.02,
       "opex": 637875.98,
       "depreciation": 401319.0,
       "other": 49.16,
-      "grossMargin": 2509408.54,
-      "afterLogistics": 2470140.33,
-      "afterMarketing": 2244035.31,
-      "operatingMargin": 1606159.33,
-      "ebit": 1204840.33,
-      "profit": 1204889.49,
+      "grossMargin": 2509919.57,
+      "afterLogistics": 2470651.36,
+      "afterMarketing": 2244546.34,
+      "operatingMargin": 1606670.36,
+      "ebit": 1205351.36,
+      "profit": 1205400.52,
       "grossMarginPct": 23.8,
       "marketingPct": 2.1,
       "logisticsPct": 0.4,
-      "operatingMarginPct": 15.3,
+      "operatingMarginPct": 15.2,
       "profitPct": 11.4
     },
     "cash": {
-      "cashOnAccounts": 12182157.03,
+      "cashOnAccounts": 12279249.03,
       "unpaidInvoices": 6275596.46,
-      "netCashPosition": 5906560.57,
+      "netCashPosition": 6003652.57,
       "overdueInvoicesCount": 1,
       "overdueInvoicesAmount": 1050.0,
       "largestPayables": [
@@ -194,8 +193,8 @@
             "accountCode": "221115",
             "accountLabel": "221115: 131-3675980207/0100 KB CZK",
             "currency": "CZK: Česká koruna",
-            "balance": 5315303.97,
-            "includedBalance": 5315303.97
+            "balance": 5386155.97,
+            "includedBalance": 5386155.97
           },
           {
             "accountCode": "221118",
@@ -222,8 +221,8 @@
             "accountCode": "221001",
             "accountLabel": "221001: 2901338673/2010 FIO CZK",
             "currency": "CZK: Česká koruna",
-            "balance": 783882.04,
-            "includedBalance": 783882.04
+            "balance": 810122.04,
+            "includedBalance": 810122.04
           },
           {
             "accountCode": "221111",
@@ -375,7 +374,7 @@
       "performanceSpend": 26105.02,
       "brandSpend": 200000.0,
       "totalSpend": 226105.02,
-      "revenue": 10526311.22,
+      "revenue": 10541227.39,
       "spendShareOfRevenuePct": 2.1
     },
     "topSupplier": {
@@ -393,12 +392,12 @@
       "label": "2025-10-01 až 2026-06-26"
     },
     "summary": {
-      "noviceRevenueCzkEquiv": 13382305.0,
-      "networkRevenueCzkEquiv": 19229600.0,
+      "noviceRevenueCzkEquiv": 13386436.0,
+      "networkRevenueCzkEquiv": 19233732.0,
       "novicePartners": 50,
       "networkPartners": 50,
-      "noviceOrders": 8072.0,
-      "networkOrders": 11805.0,
+      "noviceOrders": 8075.0,
+      "networkOrders": 11809.0,
       "noviceOrderingContacts": 1603.0,
       "networkOrderingCustomers": 3664.0,
       "topNovicePartner": {
@@ -505,22 +504,22 @@
     "status": "warn",
     "summary": {
       "windowDays": 90,
-      "twistoBatchCount": 45,
+      "twistoBatchCount": 46,
       "twistoPaidBatchCount": 44,
       "bankTwistoTransactionCount": 12,
       "matchedBatchCount": 12,
-      "unmatchedBatchCount": 1,
+      "unmatchedBatchCount": 2,
       "unmatchedBankTransactions": 0,
       "twistoPaidAmount": 206552.0,
       "twistoMatchedAmount": 236840.0,
       "bankReceivedAmount": 236840.0,
-      "openBatchAmount": 5104.0,
+      "openBatchAmount": 8238.0,
       "bankVsTwistoDelta": 0.0,
       "wpjTwistoOrderCount": 6,
       "wpjTwistoOrderAmount": 9986.0,
-      "twistoOrderAmount": 608738.0,
+      "twistoOrderAmount": 611872.0,
       "historicalMatchedBatchAmount": 236840.0,
-      "wpjVsTwistoOrderDelta": -598752.0,
+      "wpjVsTwistoOrderDelta": -601886.0,
       "oldestOpenBatchDays": 2
     },
     "source": {
@@ -541,6 +540,6 @@
         "message": "WPJ twisto objednávky z historie objednávek."
       }
     },
-    "message": "Twisto batch bez bankovního matchnutí: 5104.00 Kč"
+    "message": "Twisto batch bez bankovního matchnutí: 8238.00 Kč"
   }
 }
