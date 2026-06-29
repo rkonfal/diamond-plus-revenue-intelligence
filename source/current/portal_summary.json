@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-29T11:14:28.581879+02:00",
+  "generatedAt": "2026-06-29T15:39:25.479194+02:00",
   "config": {
     "warehouseCode": "CZPRGA",
     "outboundMaxPages": 20,
@@ -13,26 +13,26 @@
     "cz": {
       "label": "CZ",
       "inventory": {
-        "items": 782,
-        "availableStockTotal": 319053,
-        "pendingStockTotal": 1363,
+        "items": 784,
+        "availableStockTotal": 318474,
+        "pendingStockTotal": 513,
         "freezeStockTotal": 0,
         "lowStockItems": 100
       },
       "outbound": {
-        "items": 300,
-        "scannedPages": 3,
+        "items": 400,
+        "scannedPages": 4,
         "topLogisticsProduct": "F1401",
-        "oldestTimestamp": "2026-06-27T13:20:08+02:00",
-        "newestTimestamp": "2026-06-29T11:10:03+02:00"
+        "oldestTimestamp": "2026-06-26T23:40:03+02:00",
+        "newestTimestamp": "2026-06-29T15:30:07+02:00"
       }
     },
     "sk": {
       "label": "SK",
       "inventory": {
         "items": 633,
-        "availableStockTotal": 59795,
-        "pendingStockTotal": 229,
+        "availableStockTotal": 59721,
+        "pendingStockTotal": 74,
         "freezeStockTotal": 0,
         "lowStockItems": 100
       },
@@ -40,8 +40,8 @@
         "items": 100,
         "scannedPages": 1,
         "topLogisticsProduct": "F1403",
-        "oldestTimestamp": "2026-06-24T12:05:25+02:00",
-        "newestTimestamp": "2026-06-29T11:10:40+02:00"
+        "oldestTimestamp": "2026-06-24T20:00:17+02:00",
+        "newestTimestamp": "2026-06-29T15:35:15+02:00"
       }
     }
   },
@@ -55,7 +55,7 @@
   },
   "report": {
     "date": "2026-06-28",
-    "shipments": 184,
+    "shipments": 185,
     "alerts": [
       "1 včera prodaných produktů je teď na nízkém skladu.",
       "10 skladových pozic je v mínusu.",
@@ -64,24 +64,29 @@
     ],
     "priorities": [
       "Prověřit A produkty v riziku výpadku (29 SKU): 000017, 000088, 10111.",
-      "Dohlédnout 30132/02 (Pánské spodní prádlo s bodovou turmalínovou vrstvou - velikost XXL), aktuálně 9 ks.",
+      "Dohlédnout 30132/02 (Pánské spodní prádlo s bodovou turmalínovou vrstvou - velikost XXL), aktuálně 8 ks.",
       "Projít nejbližší expirace v 4PX a rozhodnout o doprodeji nebo přesunu zásoby."
     ]
   },
   "expiries": {
-    "datedSkuCount": 332,
-    "czSkuCount": 316,
-    "skSkuCount": 301,
-    "datedRowCount": 701,
-    "czRowCount": 361,
-    "skRowCount": 340
+    "datedSkuCount": 326,
+    "czSkuCount": 310,
+    "skSkuCount": 295,
+    "datedRowCount": 689,
+    "czRowCount": 354,
+    "skRowCount": 335,
+    "halfYearDays": 183,
+    "halfYearSkuCount": 30,
+    "halfYearRowCount": 49,
+    "halfYearCzRowCount": 21,
+    "halfYearSkRowCount": 28
   },
   "pairing": {
     "allCodes": 2983,
     "pairedProducts": 373,
     "onlyInWpj": 1544,
     "onlyIn4px": 1,
-    "stockMismatch": 712,
+    "stockMismatch": 715,
     "lowAfterSales": 1,
     "manualMapped4pxAliases": 0,
     "autoMapped4pxAliases": 73
@@ -92,29 +97,29 @@
     "message": "Měsíční finance se tahají přímo z ABRA reportu Výkaz hospodaření za měsíc za všechna střediska. Cash a závazky jsou také live z ABRA API.",
     "currentMonth": {
       "label": "6/2026",
-      "revenue": 11097176.08,
-      "cogsAndFees": 8457904.23,
+      "revenue": 11187733.64,
+      "cogsAndFees": 8589287.26,
       "logistics": 39268.21,
       "marketing": 226105.02,
       "opex": 637875.98,
       "depreciation": 401319.0,
       "other": 310.6,
-      "grossMargin": 2639271.85,
-      "afterLogistics": 2600003.64,
-      "afterMarketing": 2373898.62,
-      "operatingMargin": 1736022.64,
-      "ebit": 1334703.64,
-      "profit": 1335014.24,
-      "grossMarginPct": 23.8,
+      "grossMargin": 2598446.38,
+      "afterLogistics": 2559178.17,
+      "afterMarketing": 2333073.15,
+      "operatingMargin": 1695197.17,
+      "ebit": 1293878.17,
+      "profit": 1294188.77,
+      "grossMarginPct": 23.2,
       "marketingPct": 2.0,
       "logisticsPct": 0.4,
-      "operatingMarginPct": 15.6,
-      "profitPct": 12.0
+      "operatingMarginPct": 15.2,
+      "profitPct": 11.6
     },
     "cash": {
-      "cashOnAccounts": 13943179.17,
-      "unpaidInvoices": 6275596.46,
-      "netCashPosition": 7667582.71,
+      "cashOnAccounts": 12653310.71,
+      "unpaidInvoices": 4956780.91,
+      "netCashPosition": 7696529.8,
       "overdueInvoicesCount": 1,
       "overdueInvoicesAmount": 1050.0,
       "largestPayables": [
@@ -132,22 +137,6 @@
           "dueDate": "30.06.2026",
           "amountTotal": 1052927.05,
           "amountDue": 1052927.05,
-          "status": "1 dní do splatnosti"
-        },
-        {
-          "code": "PF0704/2026",
-          "vendor": "4PX Express CZ",
-          "dueDate": "30.06.2026",
-          "amountTotal": 636457.59,
-          "amountDue": 636457.59,
-          "status": "1 dní do splatnosti"
-        },
-        {
-          "code": "PF0705/2026",
-          "vendor": "4PX Express CZ",
-          "dueDate": "30.06.2026",
-          "amountTotal": 577286.77,
-          "amountDue": 577286.77,
           "status": "1 dní do splatnosti"
         },
         {
@@ -181,6 +170,22 @@
           "amountTotal": 158164.28,
           "amountDue": 158164.28,
           "status": "1 dní do splatnosti"
+        },
+        {
+          "code": "PF0697/2026",
+          "vendor": "Meta Platforms Ireland Limited",
+          "dueDate": "02.07.2026",
+          "amountTotal": 106355.46,
+          "amountDue": 106355.46,
+          "status": "3 dní do splatnosti"
+        },
+        {
+          "code": "PF0779/2026",
+          "vendor": "\"ASTI GROUP\" SIA",
+          "dueDate": "30.06.2026",
+          "amountTotal": 67896.64,
+          "amountDue": 67751.65,
+          "status": "1 dní do splatnosti (0% uhrazeno)"
         }
       ],
       "cashAccountsSource": {
@@ -195,18 +200,18 @@
             "includedBalance": 5056439.62
           },
           {
-            "accountCode": "221115",
-            "accountLabel": "221115: 131-3675980207/0100 KB CZK",
-            "currency": "CZK: Česká koruna",
-            "balance": 2807161.55,
-            "includedBalance": 2807161.55
-          },
-          {
             "accountCode": "221118",
             "accountLabel": "221118: JT banka",
             "currency": "CZK: Česká koruna",
             "balance": 2500000.0,
             "includedBalance": 2500000.0
+          },
+          {
+            "accountCode": "221115",
+            "accountLabel": "221115: 131-3675980207/0100 KB CZK",
+            "currency": "CZK: Česká koruna",
+            "balance": 1488709.0,
+            "includedBalance": 1488709.0
           },
           {
             "accountCode": "221006",
@@ -226,8 +231,8 @@
             "accountCode": "221001",
             "accountLabel": "221001: 2901338673/2010 FIO CZK",
             "currency": "CZK: Česká koruna",
-            "balance": 745820.04,
-            "includedBalance": 745820.04
+            "balance": 772839.04,
+            "includedBalance": 772839.04
           },
           {
             "accountCode": "221111",
@@ -254,8 +259,8 @@
             "accountCode": "221005",
             "accountLabel": "221005: 2501338690/2010 FIO EUR",
             "currency": "CZK: Česká koruna",
-            "balance": 52762.58,
-            "includedBalance": 52762.58
+            "balance": 54327.67,
+            "includedBalance": 54327.67
           },
           {
             "accountCode": "221112",
@@ -372,7 +377,7 @@
       "performanceSpend": 26105.02,
       "brandSpend": 200000.0,
       "totalSpend": 226105.02,
-      "revenue": 11097176.08,
+      "revenue": 11187733.64,
       "spendShareOfRevenuePct": 2.0
     },
     "topSupplier": {
@@ -390,23 +395,23 @@
       "label": "2025-10-01 až 2026-06-29"
     },
     "summary": {
-      "noviceRevenueCzkEquiv": 13490077.0,
-      "networkRevenueCzkEquiv": 19382449.0,
+      "noviceRevenueCzkEquiv": 13513495.0,
+      "networkRevenueCzkEquiv": 19412907.0,
       "novicePartners": 50,
       "networkPartners": 50,
-      "noviceOrders": 8150.0,
-      "networkOrders": 11911.0,
-      "noviceOrderingContacts": 1615.0,
-      "networkOrderingCustomers": 3690.0,
+      "noviceOrders": 8166.0,
+      "networkOrders": 11931.0,
+      "noviceOrderingContacts": 1616.0,
+      "networkOrderingCustomers": 3691.0,
       "topNovicePartner": {
         "partnerCode": "ESHOP",
         "partnerName": "E-shop (interní)",
-        "revenueCzkEquiv": 4161745.0
+        "revenueCzkEquiv": 4168651.0
       },
       "topNetworkPartner": {
         "partnerCode": "ESHOP",
         "partnerName": "E-shop (interní)",
-        "revenueCzkEquiv": 4161745.0
+        "revenueCzkEquiv": 4168651.0
       }
     }
   },
@@ -499,26 +504,26 @@
   },
   "twistoWatchdog": {
     "ready": true,
-    "status": "warn",
+    "status": "ok",
     "summary": {
       "windowDays": 90,
       "twistoBatchCount": 44,
-      "twistoPaidBatchCount": 43,
-      "bankTwistoTransactionCount": 13,
-      "matchedBatchCount": 13,
-      "unmatchedBatchCount": 1,
+      "twistoPaidBatchCount": 44,
+      "bankTwistoTransactionCount": 14,
+      "matchedBatchCount": 14,
+      "unmatchedBatchCount": 0,
       "unmatchedBankTransactions": 0,
-      "twistoPaidAmount": 202285.0,
-      "twistoMatchedAmount": 241944.0,
-      "bankReceivedAmount": 241944.0,
-      "openBatchAmount": 3134.0,
+      "twistoPaidAmount": 205419.0,
+      "twistoMatchedAmount": 245078.0,
+      "bankReceivedAmount": 245078.0,
+      "openBatchAmount": 0,
       "bankVsTwistoDelta": 0.0,
       "wpjTwistoOrderCount": 5,
       "wpjTwistoOrderAmount": 8293.0,
       "twistoOrderAmount": 611872.0,
-      "historicalMatchedBatchAmount": 241944.0,
+      "historicalMatchedBatchAmount": 245078.0,
       "wpjVsTwistoOrderDelta": -603579.0,
-      "oldestOpenBatchDays": 4
+      "oldestOpenBatchDays": null
     },
     "source": {
       "twisto": {
@@ -538,6 +543,6 @@
         "message": "WPJ twisto objednávky z historie objednávek."
       }
     },
-    "message": "Twisto batch bez bankovního matchnutí: 3134.00 Kč"
+    "message": null
   }
 }
