@@ -2,9 +2,9 @@
   "channels": [
     {
       "channel": "Meta Ads",
-      "spend": 126043.48,
-      "reportedRevenue": 5645441.36,
-      "roas": 44.79,
+      "spend": 114906.6,
+      "reportedRevenue": 3895155.2,
+      "roas": 33.9,
       "trust": "low",
       "notes": [
         "Prospecting contamination risk",
@@ -14,9 +14,9 @@
     },
     {
       "channel": "Google Ads",
-      "spend": 71013.7,
-      "reportedRevenue": 3816593.41,
-      "roas": 53.74,
+      "spend": 69642.75,
+      "reportedRevenue": 3361363.62,
+      "roas": 48.27,
       "trust": "medium",
       "notes": [
         "Performance is strongest, but heavily brand-led",
@@ -26,9 +26,9 @@
     },
     {
       "channel": "Sklik",
-      "spend": 4452.29,
-      "reportedRevenue": 1505241.0,
-      "roas": 338.08,
+      "spend": 4825.53,
+      "reportedRevenue": 1418491.0,
+      "roas": 293.96,
       "trust": "low",
       "notes": [
         "Needs validation against backend and GA4",
@@ -56,31 +56,15 @@
     },
     "rows": [
       {
-        "channel": "Meta Ads",
-        "bucket": "paid_social",
-        "decisionRole": "acquisition_and_remarketing_mixed",
-        "spendPreviousMonth": 126043.48,
-        "platformRevenuePreviousMonth": 5645441.36,
-        "platformRoasPreviousMonth": 44.79,
-        "ga4ObservedRevenue": 433850.85,
-        "ga4ObservedSessions": 10572.0,
-        "ga4ObservedPurchaseRatePct": 3.31,
-        "ga4ObservedRoas": 3.44,
-        "trustScore": 30,
-        "trustLabel": "low",
-        "primaryIssue": "Platformní claim je výrazně silnější než pozorovaný signál placených sociálních sítí.",
-        "nextQuestion": "Jaký je skutečný prospecting contribution po odečtení exclusions a post-view inflace?"
-      },
-      {
         "channel": "Klaviyo",
         "bucket": "owned_retention",
         "decisionRole": "retention",
         "spendPreviousMonth": 0,
         "platformRevenuePreviousMonth": 4881589.35,
         "platformRoasPreviousMonth": null,
-        "ga4ObservedRevenue": 143020.27,
-        "ga4ObservedSessions": 1495.0,
-        "ga4ObservedPurchaseRatePct": 7.76,
+        "ga4ObservedRevenue": 12352.31,
+        "ga4ObservedSessions": 300.0,
+        "ga4ObservedPurchaseRatePct": 4.67,
         "ga4ObservedRoas": null,
         "trustScore": 68,
         "trustLabel": "medium_high",
@@ -88,16 +72,32 @@
         "nextQuestion": "Kolik repeat revenue řídí lifecycle automatizace a kolik přirozené reorder chování?"
       },
       {
+        "channel": "Meta Ads",
+        "bucket": "paid_social",
+        "decisionRole": "acquisition_and_remarketing_mixed",
+        "spendPreviousMonth": 114906.6,
+        "platformRevenuePreviousMonth": 3895155.2,
+        "platformRoasPreviousMonth": 33.9,
+        "ga4ObservedRevenue": 75461.22,
+        "ga4ObservedSessions": 2548.0,
+        "ga4ObservedPurchaseRatePct": 2.79,
+        "ga4ObservedRoas": 0.66,
+        "trustScore": 30,
+        "trustLabel": "low",
+        "primaryIssue": "Platformní claim je výrazně silnější než pozorovaný signál placených sociálních sítí.",
+        "nextQuestion": "Jaký je skutečný prospecting contribution po odečtení exclusions a post-view inflace?"
+      },
+      {
         "channel": "Google Ads",
         "bucket": "paid_search_bundle",
         "decisionRole": "demand_harvesting_plus_brand",
-        "spendPreviousMonth": 71013.7,
-        "platformRevenuePreviousMonth": 3816593.41,
-        "platformRoasPreviousMonth": 53.74,
-        "ga4ObservedRevenue": 4079518.6599999997,
-        "ga4ObservedSessions": 34069.0,
-        "ga4ObservedPurchaseRatePct": 10.15,
-        "ga4ObservedRoas": 57.45,
+        "spendPreviousMonth": 69642.75,
+        "platformRevenuePreviousMonth": 3361363.62,
+        "platformRoasPreviousMonth": 48.27,
+        "ga4ObservedRevenue": 711939.5,
+        "ga4ObservedSessions": 8162.0,
+        "ga4ObservedPurchaseRatePct": 7.41,
+        "ga4ObservedRoas": 10.22,
         "trustScore": 62,
         "trustLabel": "medium",
         "primaryIssue": "Search funguje, ale brand a remarketing jsou smíchané do jednoho příběhu úspěchu.",
@@ -107,13 +107,13 @@
         "channel": "Sklik",
         "bucket": "paid_search_secondary",
         "decisionRole": "harvesting_unknown",
-        "spendPreviousMonth": 4452.29,
-        "platformRevenuePreviousMonth": 1505241.0,
-        "platformRoasPreviousMonth": 338.08,
-        "ga4ObservedRevenue": 4079518.6599999997,
-        "ga4ObservedSessions": 34069.0,
-        "ga4ObservedPurchaseRatePct": 10.15,
-        "ga4ObservedRoas": 916.27,
+        "spendPreviousMonth": 4825.53,
+        "platformRevenuePreviousMonth": 1418491.0,
+        "platformRoasPreviousMonth": 293.96,
+        "ga4ObservedRevenue": 711939.5,
+        "ga4ObservedSessions": 8162.0,
+        "ga4ObservedPurchaseRatePct": 7.41,
+        "ga4ObservedRoas": 147.54,
         "trustScore": 25,
         "trustLabel": "low",
         "primaryIssue": "Sklik reportuje extrémní ROAS, ale backend validační vrstva stále chybí.",
@@ -121,9 +121,9 @@
       }
     ],
     "ga4Unassigned": {
-      "revenue": 1627564.58,
-      "sessions": 15668.0,
-      "purchaseRatePct": 8.16
+      "revenue": 297398.79,
+      "sessions": 3408.0,
+      "purchaseRatePct": 6.63
     }
   },
   "paidMix": {
@@ -136,201 +136,201 @@
         "roas": null
       },
       {
-        "bucket": "acquisition",
-        "spend": 115105.35,
-        "revenue": 4681431.46,
-        "campaigns": 25,
-        "roas": 40.67
-      },
-      {
         "bucket": "remarketing",
-        "spend": 49686.97,
-        "revenue": 2316010.97,
-        "campaigns": 17,
-        "roas": 46.61
+        "spend": 66961.52,
+        "revenue": 3212306.62,
+        "campaigns": 19,
+        "roas": 47.97
       },
       {
         "bucket": "brand",
-        "spend": 23639.35,
-        "revenue": 2217166.76,
+        "spend": 30366.6,
+        "revenue": 2081215.72,
         "campaigns": 25,
-        "roas": 93.79
+        "roas": 68.54
+      },
+      {
+        "bucket": "acquisition",
+        "spend": 75930.71,
+        "revenue": 1694200.67,
+        "campaigns": 22,
+        "roas": 22.31
       },
       {
         "bucket": "harvesting",
-        "spend": 6767.22,
-        "revenue": 230466.02,
+        "spend": 3810.15,
+        "revenue": 165205.49,
         "campaigns": 40,
-        "roas": 34.06
+        "roas": 43.36
       },
       {
         "bucket": "other",
-        "spend": 6310.59,
-        "revenue": 32012.04,
-        "campaigns": 34,
-        "roas": 5.07
+        "spend": 12107.29,
+        "revenue": 116942.68,
+        "campaigns": 35,
+        "roas": 9.66
       }
     ],
     "topCampaigns": [
       {
         "platform": "Meta Ads",
-        "name": "Eff_prosp_sales_static_Narozeniny",
-        "bucket": "acquisition",
-        "spend": 30154.22,
-        "revenue": 1939771.64,
-        "status": "PAUSED"
-      },
-      {
-        "platform": "Meta Ads",
         "name": "FM-CS-AKVIZICE-dProspALL (EX:ff_mixed_sales_dynamic)",
         "bucket": "acquisition",
-        "spend": 23202.27,
-        "revenue": 1200716.04,
+        "spend": 24104.45,
+        "revenue": 794605.04,
         "status": "ACTIVE"
       },
       {
-        "platform": "Google Ads",
-        "name": "FM-PMAX-AKVIZICE-PI+OBSH-kralovstvi-tiande.cz",
+        "platform": "Meta Ads",
+        "name": "FM-CON-AKVIZICE+dRmkt-Stream",
         "bucket": "remarketing",
-        "spend": 16829.98,
-        "revenue": 289923.69,
-        "status": "ENABLED"
+        "spend": 21349.37,
+        "revenue": 1445166.36,
+        "status": "ACTIVE"
       },
       {
         "platform": "Google Ads",
         "name": "FM-VYH-AKVIZICE-Brand-kralovstvi-tiande.cz",
         "bucket": "brand",
-        "spend": 12166.68,
-        "revenue": 1936819.95,
+        "spend": 17787.89,
+        "revenue": 1774601.57,
         "status": "ENABLED"
       },
       {
-        "platform": "Meta Ads",
-        "name": "FM-CON-AKVIZICE-STREAM_mix (EX:Eff_mixed_sales_static)",
-        "bucket": "acquisition",
-        "spend": 12087.77,
-        "revenue": 410909.08,
-        "status": "ACTIVE"
+        "platform": "Google Ads",
+        "name": "FM-PMAX-AKVIZICE-PI+OBSH-kralovstvi-tiande.cz",
+        "bucket": "remarketing",
+        "spend": 12119.34,
+        "revenue": 176820.65,
+        "status": "ENABLED"
       },
       {
         "platform": "Meta Ads",
         "name": "FM-DRMKT-AKVIZICE-katalogCSV (EX:Eff_rem_sales_dynamic)",
         "bucket": "remarketing",
-        "spend": 10774.03,
-        "revenue": 746763.16,
+        "spend": 10431.3,
+        "revenue": 527461.24,
         "status": "ACTIVE"
       },
       {
         "platform": "Meta Ads",
-        "name": "Eff_prosp_sales_static_PoštovnéZdarma",
+        "name": "FM-CS-AKVIZICE-dProsp s FIE",
         "bucket": "acquisition",
-        "spend": 9016.51,
-        "revenue": 459957.56,
-        "status": "PAUSED"
+        "spend": 9532.53,
+        "revenue": 199052.96,
+        "status": "ACTIVE"
+      },
+      {
+        "platform": "Meta Ads",
+        "name": "FM-CON-AKVIZICE-STREAM_mix (EX:Eff_mixed_sales_static)",
+        "bucket": "acquisition",
+        "spend": 9023.86,
+        "revenue": 271016.88,
+        "status": "ACTIVE"
+      },
+      {
+        "platform": "Meta Ads",
+        "name": "FM-CON-Stream-SK",
+        "bucket": "other",
+        "spend": 7919.43,
+        "revenue": 92230.12,
+        "status": "ACTIVE"
       },
       {
         "platform": "Google Ads",
-        "name": "FM-PMax-AKVIZICE-kralovstviTiande.sk",
-        "bucket": "acquisition",
-        "spend": 8797.23,
-        "revenue": 45662.1,
+        "name": "FM-Pmax-AKVIZICE-remarketing bez ID-kralovstvi-tiande.cz",
+        "bucket": "remarketing",
+        "spend": 7688.26,
+        "revenue": 306095.39,
         "status": "ENABLED"
       },
       {
         "platform": "Google Ads",
         "name": "FM-PMAX-RETENCE-PI+OBSH-kralovstvi-tiande.cz",
         "bucket": "remarketing",
-        "spend": 7878.53,
-        "revenue": 468256.77,
+        "spend": 6851.56,
+        "revenue": 413622.48,
         "status": "ENABLED"
       },
       {
         "platform": "Meta Ads",
         "name": "FM-CON-Akvizice-Static (ex._mixed_sales_static)",
         "bucket": "acquisition",
-        "spend": 6765.39,
-        "revenue": 311693.56,
+        "spend": 6713.52,
+        "revenue": 191627.48,
+        "status": "ACTIVE"
+      },
+      {
+        "platform": "Meta Ads",
+        "name": "FM-LEAD-AKVIZICE_StaženíBrožury(eX:Eff_akvizice_Leads_StaženíBrožury)",
+        "bucket": "acquisition",
+        "spend": 5985.36,
+        "revenue": 3043.32,
+        "status": "ACTIVE"
+      },
+      {
+        "platform": "Google Ads",
+        "name": "FM-PMax-AKVIZICE-kralovstviTiande.sk",
+        "bucket": "acquisition",
+        "spend": 5862.98,
+        "revenue": 31872.11,
+        "status": "ENABLED"
+      },
+      {
+        "platform": "Meta Ads",
+        "name": "FM-LEAD-AKVIZICE_kviz (EX:Eff_mixed_Leads_Kviz)",
+        "bucket": "acquisition",
+        "spend": 5561.84,
+        "revenue": 32329.84,
+        "status": "ACTIVE"
+      },
+      {
+        "platform": "Google Ads",
+        "name": "FM-VYH-Competitors-AKVIZICE-kralovstvi-tiande.cz",
+        "bucket": "brand",
+        "spend": 5324.41,
+        "revenue": 122085.76,
+        "status": "ENABLED"
+      },
+      {
+        "platform": "Meta Ads",
+        "name": "FM-CS-Akvizice (ex. mixed_sales_dynamic)",
+        "bucket": "acquisition",
+        "spend": 4260.27,
+        "revenue": 117731.32,
         "status": "ACTIVE"
       },
       {
         "platform": "Meta Ads",
         "name": "Propagace online kurz hubnutí",
         "bucket": "other",
-        "spend": 6310.59,
-        "revenue": 32012.04,
+        "spend": 4187.86,
+        "revenue": 24712.56,
         "status": "PAUSED"
-      },
-      {
-        "platform": "Meta Ads",
-        "name": "FM-LEAD-AKVIZICE_StaženíBrožury(eX:Eff_akvizice_Leads_StaženíBrožury)",
-        "bucket": "acquisition",
-        "spend": 6251.53,
-        "revenue": 30079.52,
-        "status": "ACTIVE"
-      },
-      {
-        "platform": "Meta Ads",
-        "name": "FM-LEAD-AKVIZICE_kviz (EX:Eff_mixed_Leads_Kviz)",
-        "bucket": "acquisition",
-        "spend": 5908.91,
-        "revenue": 17077.36,
-        "status": "ACTIVE"
-      },
-      {
-        "platform": "Meta Ads",
-        "name": "FM-CS-Akvizice (ex. mixed_sales_dynamic)",
-        "bucket": "acquisition",
-        "spend": 4305.35,
-        "revenue": 106592.92,
-        "status": "ACTIVE"
-      },
-      {
-        "platform": "Google Ads",
-        "name": "FM-Pmax-RETENCE-kralovstviTiande.sk",
-        "bucket": "harvesting",
-        "spend": 4182.3,
-        "revenue": 187171.73,
-        "status": "ENABLED"
-      },
-      {
-        "platform": "Google Ads",
-        "name": "FM-Pmax-AKVIZICE-remarketing bez ID-kralovstviTiande.sk",
-        "bucket": "remarketing",
-        "spend": 3901.41,
-        "revenue": 132244.04,
-        "status": "ENABLED"
       },
       {
         "platform": "Google Ads",
         "name": "FM-VYH-Brand-AKVIZICE-kralovstviTiande.sk",
         "bucket": "brand",
-        "spend": 3736.93,
-        "revenue": 181960.91,
+        "spend": 4151.4,
+        "revenue": 171462.26,
         "status": "ENABLED"
       },
       {
         "platform": "Google Ads",
-        "name": "FM-VYH-Competitors-AKVIZICE-kralovstvi-tiande.cz",
-        "bucket": "brand",
-        "spend": 3560.47,
-        "revenue": 83911.69,
+        "name": "FM-Pmax-RETENCE-kralovstviTiande.sk",
+        "bucket": "harvesting",
+        "spend": 3032.33,
+        "revenue": 163209.64,
         "status": "ENABLED"
       },
       {
-        "platform": "Sklik",
-        "name": "FM-VYHL-RETENCE-kralovstvi-tiande (EX:CZ-SEA-Brand-Království-tianDe)",
-        "bucket": "brand",
-        "spend": 3155.15,
-        "revenue": 14432.17,
-        "status": "active"
-      },
-      {
         "platform": "Google Ads",
-        "name": "FM-PMax-Naked-RTG (mají i ID)",
-        "bucket": "remarketing",
-        "spend": 3064.03,
-        "revenue": 164960.98,
-        "status": "PAUSED"
+        "name": "FM-VYH-Competitors-AKVIZICE-kralovstviTiande.sk",
+        "bucket": "acquisition",
+        "spend": 2684.58,
+        "revenue": 46175.38,
+        "status": "ENABLED"
       }
     ],
     "decisionRules": {
@@ -345,10 +345,10 @@
     "summaryPreviousMonth": [
       {
         "type": "brand_search",
-        "spend": 69745.76,
-        "revenue": 3623254.06,
-        "roas": 51.95,
-        "campaigns": 12,
+        "spend": 71432.08,
+        "revenue": 3286867.54,
+        "roas": 46.01,
+        "campaigns": 13,
         "platforms": [
           "Google Ads",
           "Sklik"
@@ -356,9 +356,9 @@
       },
       {
         "type": "shopping_or_pmax",
-        "spend": 5702.39,
-        "revenue": 208255.27,
-        "roas": 36.52,
+        "spend": 2799.53,
+        "revenue": 87720.12,
+        "roas": 31.33,
         "campaigns": 6,
         "platforms": [
           "Google Ads",
@@ -367,9 +367,9 @@
       },
       {
         "type": "competitor_search",
-        "spend": 17.85,
-        "revenue": 136.48,
-        "roas": 7.65,
+        "spend": 38.06,
+        "revenue": 128.32,
+        "roas": 3.37,
         "campaigns": 1,
         "platforms": [
           "Sklik"
@@ -379,278 +379,286 @@
     "campaigns": [
       {
         "platform": "Google Ads",
-        "name": "FM-PMAX-AKVIZICE-PI+OBSH-kralovstvi-tiande.cz",
-        "type": "brand_search",
-        "bucket": "remarketing",
-        "spend": 16829.98,
-        "revenue": 289923.69
-      },
-      {
-        "platform": "Google Ads",
         "name": "FM-VYH-AKVIZICE-Brand-kralovstvi-tiande.cz",
         "type": "brand_search",
         "bucket": "brand",
-        "spend": 12166.68,
-        "revenue": 1936819.95
+        "spend": 17787.89,
+        "revenue": 1774601.57
       },
       {
         "platform": "Google Ads",
-        "name": "FM-PMax-AKVIZICE-kralovstviTiande.sk",
-        "type": "brand_search",
-        "bucket": "acquisition",
-        "spend": 8797.23,
-        "revenue": 45662.1
-      },
-      {
-        "platform": "Google Ads",
-        "name": "FM-PMAX-RETENCE-PI+OBSH-kralovstvi-tiande.cz",
+        "name": "FM-PMAX-AKVIZICE-PI+OBSH-kralovstvi-tiande.cz",
         "type": "brand_search",
         "bucket": "remarketing",
-        "spend": 7878.53,
-        "revenue": 468256.77
-      },
-      {
-        "platform": "Google Ads",
-        "name": "FM-Pmax-RETENCE-kralovstviTiande.sk",
-        "type": "brand_search",
-        "bucket": "harvesting",
-        "spend": 4182.3,
-        "revenue": 187171.73
-      },
-      {
-        "platform": "Google Ads",
-        "name": "FM-Pmax-AKVIZICE-remarketing bez ID-kralovstviTiande.sk",
-        "type": "brand_search",
-        "bucket": "remarketing",
-        "spend": 3901.41,
-        "revenue": 132244.04
-      },
-      {
-        "platform": "Google Ads",
-        "name": "FM-VYH-Brand-AKVIZICE-kralovstviTiande.sk",
-        "type": "brand_search",
-        "bucket": "brand",
-        "spend": 3736.93,
-        "revenue": 181960.91
-      },
-      {
-        "platform": "Google Ads",
-        "name": "FM-VYH-Competitors-AKVIZICE-kralovstvi-tiande.cz",
-        "type": "brand_search",
-        "bucket": "brand",
-        "spend": 3560.47,
-        "revenue": 83911.69
-      },
-      {
-        "platform": "Sklik",
-        "name": "FM-VYHL-RETENCE-kralovstvi-tiande (EX:CZ-SEA-Brand-Království-tianDe)",
-        "type": "brand_search",
-        "bucket": "brand",
-        "spend": 3155.15,
-        "revenue": 14432.17
-      },
-      {
-        "platform": "Google Ads",
-        "name": "FM-PMax-Naked-RTG (mají i ID)",
-        "type": "shopping_or_pmax",
-        "bucket": "remarketing",
-        "spend": 3064.03,
-        "revenue": 164960.98
+        "spend": 12119.34,
+        "revenue": 176820.65
       },
       {
         "platform": "Google Ads",
         "name": "FM-Pmax-AKVIZICE-remarketing bez ID-kralovstvi-tiande.cz",
         "type": "brand_search",
         "bucket": "remarketing",
-        "spend": 3040.71,
-        "revenue": 264514.57
+        "spend": 7688.26,
+        "revenue": 306095.39
+      },
+      {
+        "platform": "Google Ads",
+        "name": "FM-PMAX-RETENCE-PI+OBSH-kralovstvi-tiande.cz",
+        "type": "brand_search",
+        "bucket": "remarketing",
+        "spend": 6851.56,
+        "revenue": 413622.48
+      },
+      {
+        "platform": "Google Ads",
+        "name": "FM-PMax-AKVIZICE-kralovstviTiande.sk",
+        "type": "brand_search",
+        "bucket": "acquisition",
+        "spend": 5862.98,
+        "revenue": 31872.11
+      },
+      {
+        "platform": "Google Ads",
+        "name": "FM-VYH-Competitors-AKVIZICE-kralovstvi-tiande.cz",
+        "type": "brand_search",
+        "bucket": "brand",
+        "spend": 5324.41,
+        "revenue": 122085.76
+      },
+      {
+        "platform": "Google Ads",
+        "name": "FM-VYH-Brand-AKVIZICE-kralovstviTiande.sk",
+        "type": "brand_search",
+        "bucket": "brand",
+        "spend": 4151.4,
+        "revenue": 171462.26
+      },
+      {
+        "platform": "Google Ads",
+        "name": "FM-Pmax-RETENCE-kralovstviTiande.sk",
+        "type": "brand_search",
+        "bucket": "harvesting",
+        "spend": 3032.33,
+        "revenue": 163209.64
       },
       {
         "platform": "Google Ads",
         "name": "FM-VYH-Competitors-AKVIZICE-kralovstviTiande.sk",
         "type": "brand_search",
         "bucket": "acquisition",
-        "spend": 1476.25,
-        "revenue": 18314.4
+        "spend": 2684.58,
+        "revenue": 46175.38
+      },
+      {
+        "platform": "Sklik",
+        "name": "FM-VYHL-RETENCE-kralovstvi-tiande (EX:CZ-SEA-Brand-Království-tianDe)",
+        "type": "brand_search",
+        "bucket": "brand",
+        "spend": 2592.13,
+        "revenue": 13051.11
       },
       {
         "platform": "Google Ads",
-        "name": "CZ-Pmax-test-pleti-Mix",
+        "name": "FM-PMax-Naked-RTG (mají i ID)",
         "type": "shopping_or_pmax",
-        "bucket": "harvesting",
-        "spend": 1472.32,
-        "revenue": 30919.96
+        "bucket": "remarketing",
+        "spend": 1907.08,
+        "revenue": 85713.01
+      },
+      {
+        "platform": "Google Ads",
+        "name": "FM-Pmax-AKVIZICE-remarketing bez ID-kralovstviTiande.sk",
+        "type": "brand_search",
+        "bucket": "remarketing",
+        "spend": 1477.71,
+        "revenue": 67762.19
+      },
+      {
+        "platform": "Sklik",
+        "name": "FM-DRTG-produkty-AKVIZICE-kralovstviTiande.cz",
+        "type": "brand_search",
+        "bucket": "remarketing",
+        "spend": 1348.72,
+        "revenue": 93.98
       },
       {
         "platform": "Sklik",
         "name": "FM-AKVIZICE-Zboží.cz: Království TianDe",
         "type": "brand_search",
         "bucket": "brand",
-        "spend": 1020.12,
-        "revenue": 42.04
+        "spend": 510.77,
+        "revenue": 15.02
+      },
+      {
+        "platform": "Google Ads",
+        "name": "CZ-Pmax-test-pleti-Mix",
+        "type": "shopping_or_pmax",
+        "bucket": "harvesting",
+        "spend": 394.31,
+        "revenue": 0.0
       },
       {
         "platform": "Google Ads",
         "name": "FM-PMaxPI-AKV",
         "type": "shopping_or_pmax",
         "bucket": "harvesting",
-        "spend": 812.11,
-        "revenue": 9452.85
-      },
-      {
-        "platform": "Sklik",
-        "name": "CZ-SEA-Kategorie-tianDe",
-        "type": "shopping_or_pmax",
-        "bucket": "harvesting",
-        "spend": 205.73,
-        "revenue": 441.72
-      },
-      {
-        "platform": "Google Ads",
-        "name": "CZ-Shopping-low-cpc-Mix",
-        "type": "shopping_or_pmax",
-        "bucket": "harvesting",
-        "spend": 94.76,
-        "revenue": 2479.76
+        "spend": 335.04,
+        "revenue": 1943.19
       },
       {
         "platform": "Sklik",
         "name": "FM-AKVIZICE-VYHL-Kategorie-AKV",
         "type": "shopping_or_pmax",
         "bucket": "acquisition",
-        "spend": 53.44,
-        "revenue": 0.0
+        "spend": 114.63,
+        "revenue": 11.26
       },
       {
         "platform": "Sklik",
         "name": "FM-AKVIZICE-VYHLE-Competitors",
         "type": "competitor_search",
         "bucket": "acquisition",
-        "spend": 17.85,
-        "revenue": 136.48
+        "spend": 38.06,
+        "revenue": 128.32
+      },
+      {
+        "platform": "Google Ads",
+        "name": "CZ-Shopping-low-cpc-Mix",
+        "type": "shopping_or_pmax",
+        "bucket": "harvesting",
+        "spend": 25.89,
+        "revenue": 0.0
+      },
+      {
+        "platform": "Sklik",
+        "name": "CZ-SEA-Kategorie-tianDe",
+        "type": "shopping_or_pmax",
+        "bucket": "harvesting",
+        "spend": 22.58,
+        "revenue": 52.66
       }
     ]
   },
   "ga4Channels": [
     {
-      "sessions": 25701.0,
-      "activeUsers": 9384.0,
-      "engagedSessions": 18923.0,
-      "ecommercePurchases": 2750.0,
-      "purchaseRevenue": 3373059.82,
+      "sessions": 6427.0,
+      "activeUsers": 2919.0,
+      "engagedSessions": 4471.0,
+      "ecommercePurchases": 504.0,
+      "purchaseRevenue": 625802.21,
       "channel": "Paid Search",
-      "purchaseRatePct": 10.7,
-      "revenuePerSession": 131.24
+      "purchaseRatePct": 7.84,
+      "revenuePerSession": 97.37
     },
     {
-      "sessions": 19477.0,
-      "activeUsers": 7978.0,
-      "engagedSessions": 12929.0,
-      "ecommercePurchases": 1657.0,
-      "purchaseRevenue": 2093475.32,
+      "sessions": 4859.0,
+      "activeUsers": 2086.0,
+      "engagedSessions": 3019.0,
+      "ecommercePurchases": 310.0,
+      "purchaseRevenue": 394278.37,
       "channel": "Direct",
-      "purchaseRatePct": 8.51,
-      "revenuePerSession": 107.48
+      "purchaseRatePct": 6.38,
+      "revenuePerSession": 81.14
     },
     {
-      "sessions": 15668.0,
-      "activeUsers": 5789.0,
-      "engagedSessions": 10588.0,
-      "ecommercePurchases": 1278.0,
-      "purchaseRevenue": 1627564.58,
+      "sessions": 3408.0,
+      "activeUsers": 1560.0,
+      "engagedSessions": 2174.0,
+      "ecommercePurchases": 226.0,
+      "purchaseRevenue": 297398.79,
       "channel": "Unassigned",
-      "purchaseRatePct": 8.16,
-      "revenuePerSession": 103.88
+      "purchaseRatePct": 6.63,
+      "revenuePerSession": 87.26
     },
     {
-      "sessions": 9729.0,
-      "activeUsers": 5298.0,
-      "engagedSessions": 7293.0,
-      "ecommercePurchases": 818.0,
-      "purchaseRevenue": 1007811.04,
+      "sessions": 1928.0,
+      "activeUsers": 1159.0,
+      "engagedSessions": 1370.0,
+      "ecommercePurchases": 136.0,
+      "purchaseRevenue": 160675.37,
       "channel": "Organic Search",
-      "purchaseRatePct": 8.41,
-      "revenuePerSession": 103.59
+      "purchaseRatePct": 7.05,
+      "revenuePerSession": 83.34
     },
     {
-      "sessions": 8200.0,
-      "activeUsers": 4296.0,
-      "engagedSessions": 6090.0,
-      "ecommercePurchases": 694.0,
-      "purchaseRevenue": 691675.29,
+      "sessions": 1491.0,
+      "activeUsers": 897.0,
+      "engagedSessions": 1062.0,
+      "ecommercePurchases": 99.0,
+      "purchaseRevenue": 82582.29,
       "channel": "Cross-network",
-      "purchaseRatePct": 8.46,
-      "revenuePerSession": 84.35
+      "purchaseRatePct": 6.64,
+      "revenuePerSession": 55.39
     },
     {
-      "sessions": 10572.0,
-      "activeUsers": 4861.0,
-      "engagedSessions": 6148.0,
-      "ecommercePurchases": 350.0,
-      "purchaseRevenue": 433850.85,
+      "sessions": 2548.0,
+      "activeUsers": 1434.0,
+      "engagedSessions": 1388.0,
+      "ecommercePurchases": 71.0,
+      "purchaseRevenue": 75461.22,
       "channel": "Paid Social",
-      "purchaseRatePct": 3.31,
-      "revenuePerSession": 41.04
+      "purchaseRatePct": 2.79,
+      "revenuePerSession": 29.62
     },
     {
-      "sessions": 3215.0,
-      "activeUsers": 1595.0,
-      "engagedSessions": 2188.0,
-      "ecommercePurchases": 142.0,
-      "purchaseRevenue": 166514.84,
+      "sessions": 786.0,
+      "activeUsers": 498.0,
+      "engagedSessions": 515.0,
+      "ecommercePurchases": 19.0,
+      "purchaseRevenue": 20970.05,
       "channel": "Organic Social",
-      "purchaseRatePct": 4.42,
-      "revenuePerSession": 51.79
+      "purchaseRatePct": 2.42,
+      "revenuePerSession": 26.68
     },
     {
-      "sessions": 2730.0,
-      "activeUsers": 927.0,
-      "engagedSessions": 2005.0,
-      "ecommercePurchases": 192.0,
-      "purchaseRevenue": 156649.82,
+      "sessions": 466.0,
+      "activeUsers": 204.0,
+      "engagedSessions": 361.0,
+      "ecommercePurchases": 19.0,
+      "purchaseRevenue": 13524.96,
       "channel": "Referral",
-      "purchaseRatePct": 7.03,
-      "revenuePerSession": 57.38
+      "purchaseRatePct": 4.08,
+      "revenuePerSession": 29.02
     },
     {
-      "sessions": 1495.0,
-      "activeUsers": 671.0,
-      "engagedSessions": 1069.0,
-      "ecommercePurchases": 116.0,
-      "purchaseRevenue": 143020.27,
-      "channel": "Email",
-      "purchaseRatePct": 7.76,
-      "revenuePerSession": 95.67
-    },
-    {
-      "sessions": 189.0,
-      "activeUsers": 72.0,
-      "engagedSessions": 137.0,
-      "ecommercePurchases": 18.0,
-      "purchaseRevenue": 24969.05,
-      "channel": "Organic Shopping",
-      "purchaseRatePct": 9.52,
-      "revenuePerSession": 132.11
-    },
-    {
-      "sessions": 56.0,
-      "activeUsers": 12.0,
-      "engagedSessions": 30.0,
-      "ecommercePurchases": 11.0,
-      "purchaseRevenue": 15494.22,
-      "channel": "SMS",
-      "purchaseRatePct": 19.64,
-      "revenuePerSession": 276.68
-    },
-    {
-      "sessions": 168.0,
-      "activeUsers": 91.0,
-      "engagedSessions": 132.0,
+      "sessions": 300.0,
+      "activeUsers": 181.0,
+      "engagedSessions": 179.0,
       "ecommercePurchases": 14.0,
-      "purchaseRevenue": 14783.55,
+      "purchaseRevenue": 12352.31,
+      "channel": "Email",
+      "purchaseRatePct": 4.67,
+      "revenuePerSession": 41.17
+    },
+    {
+      "sessions": 41.0,
+      "activeUsers": 9.0,
+      "engagedSessions": 26.0,
+      "ecommercePurchases": 1.0,
+      "purchaseRevenue": 3809.0,
+      "channel": "Organic Shopping",
+      "purchaseRatePct": 2.44,
+      "revenuePerSession": 92.9
+    },
+    {
+      "sessions": 22.0,
+      "activeUsers": 8.0,
+      "engagedSessions": 16.0,
+      "ecommercePurchases": 1.0,
+      "purchaseRevenue": 2121.0,
       "channel": "Paid Shopping",
-      "purchaseRatePct": 8.33,
-      "revenuePerSession": 88.0
+      "purchaseRatePct": 4.55,
+      "revenuePerSession": 96.41
+    },
+    {
+      "sessions": 222.0,
+      "activeUsers": 100.0,
+      "engagedSessions": 68.0,
+      "ecommercePurchases": 1.0,
+      "purchaseRevenue": 1434.0,
+      "channel": "Paid Other",
+      "purchaseRatePct": 0.45,
+      "revenuePerSession": 6.46
     }
   ],
   "marketingOverviewPreviousMonth": {
@@ -12453,23 +12461,23 @@
         "label": "2025-10-01 až 2026-06-30"
       },
       "summary": {
-        "noviceRevenueCzkEquiv": 13640668.0,
-        "networkRevenueCzkEquiv": 19577804.0,
+        "noviceRevenueCzkEquiv": 13698260.0,
+        "networkRevenueCzkEquiv": 19646511.0,
         "novicePartners": 50,
         "networkPartners": 50,
-        "noviceOrders": 8247.0,
-        "networkOrders": 12032.0,
-        "noviceOrderingContacts": 1626.0,
-        "networkOrderingCustomers": 3706.0,
+        "noviceOrders": 8275.0,
+        "networkOrders": 12064.0,
+        "noviceOrderingContacts": 1631.0,
+        "networkOrderingCustomers": 3714.0,
         "topNovicePartner": {
           "partnerCode": "ESHOP",
           "partnerName": "E-shop (interní)",
-          "revenueCzkEquiv": 4237769.0
+          "revenueCzkEquiv": 4279572.0
         },
         "topNetworkPartner": {
           "partnerCode": "ESHOP",
           "partnerName": "E-shop (interní)",
-          "revenueCzkEquiv": 4237769.0
+          "revenueCzkEquiv": 4279572.0
         }
       },
       "reports": {
@@ -12480,10 +12488,10 @@
           "error": null,
           "partners": 50,
           "totals": {
-            "contacts": 4546.0,
-            "orderingContacts": 1626.0,
-            "orders": 8247.0,
-            "revenueCzkEquiv": 13640668.0
+            "contacts": 4551.0,
+            "orderingContacts": 1631.0,
+            "orders": 8275.0,
+            "revenueCzkEquiv": 13698260.0
           },
           "monthly": [
             {
@@ -12579,30 +12587,30 @@
             {
               "key": "cerven_2026",
               "label": "Cerven 2026",
-              "contacts": 134.0,
-              "orderingContacts": 129.0,
+              "contacts": 139.0,
+              "orderingContacts": 134.0,
               "networkCustomers": 0.0,
               "orderingCustomers": 0.0,
-              "orders": 1302.0,
-              "revenueCzkEquiv": 2124360.0
+              "orders": 1330.0,
+              "revenueCzkEquiv": 2181952.0
             }
           ],
           "topPartners": [
             {
               "partnerCode": "ESHOP",
               "partnerName": "E-shop (interní)",
-              "contacts": 898.0,
-              "orderingContacts": 898.0,
-              "orders": 2514.0,
-              "revenueCzkEquiv": 4237769.0
+              "contacts": 903.0,
+              "orderingContacts": 903.0,
+              "orders": 2530.0,
+              "revenueCzkEquiv": 4279572.0
             },
             {
               "partnerCode": "g73ps2",
               "partnerName": "Jiřina Radová",
               "contacts": 609.0,
               "orderingContacts": 49.0,
-              "orders": 632.0,
-              "revenueCzkEquiv": 1233187.0
+              "orders": 634.0,
+              "revenueCzkEquiv": 1235059.0
             },
             {
               "partnerCode": "ihcwc1",
@@ -12625,8 +12633,8 @@
               "partnerName": "Věra Hauerová",
               "contacts": 40.0,
               "orderingContacts": 21.0,
-              "orders": 255.0,
-              "revenueCzkEquiv": 438635.0
+              "orders": 256.0,
+              "revenueCzkEquiv": 440343.0
             },
             {
               "partnerCode": "y9qnc3",
@@ -12649,16 +12657,16 @@
               "partnerName": "Věra Václavíková",
               "contacts": 172.0,
               "orderingContacts": 47.0,
-              "orders": 312.0,
-              "revenueCzkEquiv": 423295.0
+              "orders": 313.0,
+              "revenueCzkEquiv": 425160.0
             },
             {
               "partnerCode": "xd9b8y",
               "partnerName": "Hana Lafatová",
               "contacts": 148.0,
               "orderingContacts": 28.0,
-              "orders": 192.0,
-              "revenueCzkEquiv": 334927.0
+              "orders": 194.0,
+              "revenueCzkEquiv": 336586.0
             },
             {
               "partnerCode": "db8csr",
@@ -12757,10 +12765,10 @@
           "error": null,
           "partners": 50,
           "totals": {
-            "networkCustomers": 11218.0,
-            "orderingCustomers": 3706.0,
-            "orders": 12032.0,
-            "revenueCzkEquiv": 19577804.0
+            "networkCustomers": 11249.0,
+            "orderingCustomers": 3714.0,
+            "orders": 12064.0,
+            "revenueCzkEquiv": 19646511.0
           },
           "monthly": [
             {
@@ -12860,8 +12868,8 @@
               "orderingContacts": 0.0,
               "networkCustomers": 0.0,
               "orderingCustomers": 0.0,
-              "orders": 1691.0,
-              "revenueCzkEquiv": 2707448.0
+              "orders": 1723.0,
+              "revenueCzkEquiv": 2776155.0
             }
           ],
           "topPartners": [
@@ -12869,19 +12877,19 @@
               "partnerCode": "ESHOP",
               "partnerName": "E-shop (interní)",
               "partnerTiandeId": null,
-              "networkCustomers": 2413.0,
-              "orderingCustomers": 898.0,
-              "orders": 2514.0,
-              "revenueCzkEquiv": 4237769.0
+              "networkCustomers": 2429.0,
+              "orderingCustomers": 903.0,
+              "orders": 2530.0,
+              "revenueCzkEquiv": 4279572.0
             },
             {
               "partnerCode": "g73ps2",
               "partnerName": "Jiřina Radová",
               "partnerTiandeId": null,
-              "networkCustomers": 577.0,
+              "networkCustomers": 578.0,
               "orderingCustomers": 204.0,
-              "orders": 632.0,
-              "revenueCzkEquiv": 1233187.0
+              "orders": 634.0,
+              "revenueCzkEquiv": 1235059.0
             },
             {
               "partnerCode": "ffhdir",
@@ -12896,10 +12904,10 @@
               "partnerCode": "5uzst8",
               "partnerName": "Iveta Houšťová",
               "partnerTiandeId": null,
-              "networkCustomers": 715.0,
+              "networkCustomers": 716.0,
               "orderingCustomers": 222.0,
-              "orders": 735.0,
-              "revenueCzkEquiv": 1074554.0
+              "orders": 736.0,
+              "revenueCzkEquiv": 1076800.0
             },
             {
               "partnerCode": "b0to1x",
@@ -12932,10 +12940,10 @@
               "partnerCode": "r88ri8",
               "partnerName": "Andrea Svitáková",
               "partnerTiandeId": null,
-              "networkCustomers": 271.0,
-              "orderingCustomers": 85.0,
-              "orders": 287.0,
-              "revenueCzkEquiv": 549718.0
+              "networkCustomers": 273.0,
+              "orderingCustomers": 86.0,
+              "orders": 289.0,
+              "revenueCzkEquiv": 552229.0
             },
             {
               "partnerCode": "oj1slw",
@@ -12950,10 +12958,10 @@
               "partnerCode": "3xkqnt",
               "partnerName": "Věra Hauerová",
               "partnerTiandeId": null,
-              "networkCustomers": 246.0,
-              "orderingCustomers": 58.0,
-              "orders": 255.0,
-              "revenueCzkEquiv": 438635.0
+              "networkCustomers": 247.0,
+              "orderingCustomers": 59.0,
+              "orders": 256.0,
+              "revenueCzkEquiv": 440343.0
             },
             {
               "partnerCode": "y9qnc3",
@@ -12977,19 +12985,19 @@
               "partnerCode": "098luz",
               "partnerName": "Věra Václavíková",
               "partnerTiandeId": null,
-              "networkCustomers": 296.0,
+              "networkCustomers": 297.0,
               "orderingCustomers": 83.0,
-              "orders": 312.0,
-              "revenueCzkEquiv": 423295.0
+              "orders": 313.0,
+              "revenueCzkEquiv": 425160.0
             },
             {
               "partnerCode": "t37qey",
               "partnerName": "Pavlína Macháčková",
               "partnerTiandeId": null,
-              "networkCustomers": 245.0,
-              "orderingCustomers": 96.0,
-              "orders": 268.0,
-              "revenueCzkEquiv": 411295.0
+              "networkCustomers": 246.0,
+              "orderingCustomers": 97.0,
+              "orders": 269.0,
+              "revenueCzkEquiv": 412704.0
             },
             {
               "partnerCode": "kliz70",
@@ -13013,10 +13021,10 @@
               "partnerCode": "xd9b8y",
               "partnerName": "Hana Lafatová",
               "partnerTiandeId": null,
-              "networkCustomers": 184.0,
+              "networkCustomers": 186.0,
               "orderingCustomers": 64.0,
-              "orders": 192.0,
-              "revenueCzkEquiv": 334927.0
+              "orders": 194.0,
+              "revenueCzkEquiv": 341806.0
             },
             {
               "partnerCode": "db8csr",
@@ -13040,10 +13048,10 @@
               "partnerCode": "v4c4j4",
               "partnerName": "Monika Nevečeřalová",
               "partnerTiandeId": null,
-              "networkCustomers": 168.0,
+              "networkCustomers": 169.0,
               "orderingCustomers": 68.0,
-              "orders": 204.0,
-              "revenueCzkEquiv": 311261.0
+              "orders": 205.0,
+              "revenueCzkEquiv": 312980.0
             }
           ]
         }
@@ -13070,90 +13078,100 @@
   "topCampaigns": [
     {
       "platform": "Meta Ads",
-      "name": "Eff_prosp_sales_static_Narozeniny",
-      "spend": 30154.22,
-      "revenue": 1939771.64,
-      "roas": 64.33,
-      "status": "PAUSED",
-      "risk": "medium",
-      "bucket": "acquisition"
-    },
-    {
-      "platform": "Meta Ads",
       "name": "FM-CS-AKVIZICE-dProspALL (EX:ff_mixed_sales_dynamic)",
-      "spend": 23202.27,
-      "revenue": 1200716.04,
-      "roas": 51.75,
+      "spend": 24104.45,
+      "revenue": 794605.04,
+      "roas": 32.97,
       "status": "ACTIVE",
       "risk": "medium",
       "bucket": "acquisition"
     },
     {
-      "platform": "Google Ads",
-      "name": "FM-PMAX-AKVIZICE-PI+OBSH-kralovstvi-tiande.cz",
-      "spend": 16829.98,
-      "revenue": 289923.69,
-      "roas": 17.23,
-      "status": "ENABLED",
+      "platform": "Meta Ads",
+      "name": "FM-CON-AKVIZICE+dRmkt-Stream",
+      "spend": 21349.37,
+      "revenue": 1445166.36,
+      "roas": 67.69,
+      "status": "ACTIVE",
       "risk": "medium",
       "bucket": "remarketing"
     },
     {
       "platform": "Google Ads",
       "name": "FM-VYH-AKVIZICE-Brand-kralovstvi-tiande.cz",
-      "spend": 12166.68,
-      "revenue": 1936819.95,
-      "roas": 159.19,
+      "spend": 17787.89,
+      "revenue": 1774601.57,
+      "roas": 99.76,
       "status": "ENABLED",
       "risk": "medium",
       "bucket": "brand"
     },
     {
-      "platform": "Meta Ads",
-      "name": "FM-CON-AKVIZICE-STREAM_mix (EX:Eff_mixed_sales_static)",
-      "spend": 12087.77,
-      "revenue": 410909.08,
-      "roas": 33.99,
-      "status": "ACTIVE",
-      "risk": "medium",
-      "bucket": "acquisition"
+      "platform": "Google Ads",
+      "name": "FM-PMAX-AKVIZICE-PI+OBSH-kralovstvi-tiande.cz",
+      "spend": 12119.34,
+      "revenue": 176820.65,
+      "roas": 14.59,
+      "status": "ENABLED",
+      "risk": "high",
+      "bucket": "remarketing"
     },
     {
       "platform": "Meta Ads",
       "name": "FM-DRMKT-AKVIZICE-katalogCSV (EX:Eff_rem_sales_dynamic)",
-      "spend": 10774.03,
-      "revenue": 746763.16,
-      "roas": 69.31,
+      "spend": 10431.3,
+      "revenue": 527461.24,
+      "roas": 50.57,
       "status": "ACTIVE",
       "risk": "medium",
       "bucket": "remarketing"
     },
     {
       "platform": "Meta Ads",
-      "name": "Eff_prosp_sales_static_PoštovnéZdarma",
-      "spend": 9016.51,
-      "revenue": 459957.56,
-      "roas": 51.01,
-      "status": "PAUSED",
+      "name": "FM-CS-AKVIZICE-dProsp s FIE",
+      "spend": 9532.53,
+      "revenue": 199052.96,
+      "roas": 20.88,
+      "status": "ACTIVE",
       "risk": "medium",
       "bucket": "acquisition"
     },
     {
-      "platform": "Google Ads",
-      "name": "FM-PMax-AKVIZICE-kralovstviTiande.sk",
-      "spend": 8797.23,
-      "revenue": 45662.1,
-      "roas": 5.19,
-      "status": "ENABLED",
-      "risk": "high",
+      "platform": "Meta Ads",
+      "name": "FM-CON-AKVIZICE-STREAM_mix (EX:Eff_mixed_sales_static)",
+      "spend": 9023.86,
+      "revenue": 271016.88,
+      "roas": 30.03,
+      "status": "ACTIVE",
+      "risk": "medium",
       "bucket": "acquisition"
+    },
+    {
+      "platform": "Meta Ads",
+      "name": "FM-CON-Stream-SK",
+      "spend": 7919.43,
+      "revenue": 92230.12,
+      "roas": 11.65,
+      "status": "ACTIVE",
+      "risk": "medium",
+      "bucket": "other"
+    },
+    {
+      "platform": "Google Ads",
+      "name": "FM-Pmax-AKVIZICE-remarketing bez ID-kralovstvi-tiande.cz",
+      "spend": 7688.26,
+      "revenue": 306095.39,
+      "roas": 39.81,
+      "status": "ENABLED",
+      "risk": "medium",
+      "bucket": "remarketing"
     },
     {
       "platform": "Google Ads",
       "name": "FM-PMAX-RETENCE-PI+OBSH-kralovstvi-tiande.cz",
-      "spend": 7878.53,
-      "revenue": 468256.77,
-      "roas": 59.43,
+      "spend": 6851.56,
+      "revenue": 413622.48,
+      "roas": 60.37,
       "status": "ENABLED",
       "risk": "medium",
       "bucket": "remarketing"
@@ -13161,9 +13179,59 @@
     {
       "platform": "Meta Ads",
       "name": "FM-CON-Akvizice-Static (ex._mixed_sales_static)",
-      "spend": 6765.39,
-      "revenue": 311693.56,
-      "roas": 46.07,
+      "spend": 6713.52,
+      "revenue": 191627.48,
+      "roas": 28.54,
+      "status": "ACTIVE",
+      "risk": "medium",
+      "bucket": "acquisition"
+    },
+    {
+      "platform": "Meta Ads",
+      "name": "FM-LEAD-AKVIZICE_StaženíBrožury(eX:Eff_akvizice_Leads_StaženíBrožury)",
+      "spend": 5985.36,
+      "revenue": 3043.32,
+      "roas": 0.51,
+      "status": "ACTIVE",
+      "risk": "high",
+      "bucket": "acquisition"
+    },
+    {
+      "platform": "Google Ads",
+      "name": "FM-PMax-AKVIZICE-kralovstviTiande.sk",
+      "spend": 5862.98,
+      "revenue": 31872.11,
+      "roas": 5.44,
+      "status": "ENABLED",
+      "risk": "high",
+      "bucket": "acquisition"
+    },
+    {
+      "platform": "Meta Ads",
+      "name": "FM-LEAD-AKVIZICE_kviz (EX:Eff_mixed_Leads_Kviz)",
+      "spend": 5561.84,
+      "revenue": 32329.84,
+      "roas": 5.81,
+      "status": "ACTIVE",
+      "risk": "high",
+      "bucket": "acquisition"
+    },
+    {
+      "platform": "Google Ads",
+      "name": "FM-VYH-Competitors-AKVIZICE-kralovstvi-tiande.cz",
+      "spend": 5324.41,
+      "revenue": 122085.76,
+      "roas": 22.93,
+      "status": "ENABLED",
+      "risk": "medium",
+      "bucket": "brand"
+    },
+    {
+      "platform": "Meta Ads",
+      "name": "FM-CS-Akvizice (ex. mixed_sales_dynamic)",
+      "spend": 4260.27,
+      "revenue": 117731.32,
+      "roas": 27.63,
       "status": "ACTIVE",
       "risk": "medium",
       "bucket": "acquisition"
@@ -13171,79 +13239,19 @@
     {
       "platform": "Meta Ads",
       "name": "Propagace online kurz hubnutí",
-      "spend": 6310.59,
-      "revenue": 32012.04,
-      "roas": 5.07,
+      "spend": 4187.86,
+      "revenue": 24712.56,
+      "roas": 5.9,
       "status": "PAUSED",
       "risk": "high",
       "bucket": "other"
     },
     {
-      "platform": "Meta Ads",
-      "name": "FM-LEAD-AKVIZICE_StaženíBrožury(eX:Eff_akvizice_Leads_StaženíBrožury)",
-      "spend": 6251.53,
-      "revenue": 30079.52,
-      "roas": 4.81,
-      "status": "ACTIVE",
-      "risk": "high",
-      "bucket": "acquisition"
-    },
-    {
-      "platform": "Meta Ads",
-      "name": "FM-LEAD-AKVIZICE_kviz (EX:Eff_mixed_Leads_Kviz)",
-      "spend": 5908.91,
-      "revenue": 17077.36,
-      "roas": 2.89,
-      "status": "ACTIVE",
-      "risk": "high",
-      "bucket": "acquisition"
-    },
-    {
-      "platform": "Meta Ads",
-      "name": "FM-CS-Akvizice (ex. mixed_sales_dynamic)",
-      "spend": 4305.35,
-      "revenue": 106592.92,
-      "roas": 24.76,
-      "status": "ACTIVE",
-      "risk": "medium",
-      "bucket": "acquisition"
-    },
-    {
-      "platform": "Google Ads",
-      "name": "FM-Pmax-RETENCE-kralovstviTiande.sk",
-      "spend": 4182.3,
-      "revenue": 187171.73,
-      "roas": 44.75,
-      "status": "ENABLED",
-      "risk": "medium",
-      "bucket": "harvesting"
-    },
-    {
-      "platform": "Google Ads",
-      "name": "FM-Pmax-AKVIZICE-remarketing bez ID-kralovstviTiande.sk",
-      "spend": 3901.41,
-      "revenue": 132244.04,
-      "roas": 33.9,
-      "status": "ENABLED",
-      "risk": "medium",
-      "bucket": "remarketing"
-    },
-    {
       "platform": "Google Ads",
       "name": "FM-VYH-Brand-AKVIZICE-kralovstviTiande.sk",
-      "spend": 3736.93,
-      "revenue": 181960.91,
-      "roas": 48.69,
-      "status": "ENABLED",
-      "risk": "medium",
-      "bucket": "brand"
-    },
-    {
-      "platform": "Google Ads",
-      "name": "FM-VYH-Competitors-AKVIZICE-kralovstvi-tiande.cz",
-      "spend": 3560.47,
-      "revenue": 83911.69,
-      "roas": 23.57,
+      "spend": 4151.4,
+      "revenue": 171462.26,
+      "roas": 41.3,
       "status": "ENABLED",
       "risk": "medium",
       "bucket": "brand"
