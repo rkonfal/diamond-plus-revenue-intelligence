@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-30T10:44:59.019914+02:00",
+  "generatedAt": "2026-06-30T13:57:57.667643+02:00",
   "config": {
     "warehouseCode": "CZPRGA",
     "outboundMaxPages": 20,
@@ -14,8 +14,8 @@
       "label": "CZ",
       "inventory": {
         "items": 784,
-        "availableStockTotal": 320369,
-        "pendingStockTotal": 2746,
+        "availableStockTotal": 319795,
+        "pendingStockTotal": 1395,
         "freezeStockTotal": 0,
         "lowStockItems": 100
       },
@@ -23,16 +23,16 @@
         "items": 500,
         "scannedPages": 5,
         "topLogisticsProduct": "F1401",
-        "oldestTimestamp": "2026-06-28T14:05:09+02:00",
-        "newestTimestamp": "2026-06-30T10:45:05+02:00"
+        "oldestTimestamp": "2026-06-28T19:45:11+02:00",
+        "newestTimestamp": "2026-06-30T13:55:04+02:00"
       }
     },
     "sk": {
       "label": "SK",
       "inventory": {
         "items": 635,
-        "availableStockTotal": 59759,
-        "pendingStockTotal": 238,
+        "availableStockTotal": 59704,
+        "pendingStockTotal": 34,
         "freezeStockTotal": 0,
         "lowStockItems": 100
       },
@@ -40,8 +40,8 @@
         "items": 100,
         "scannedPages": 1,
         "topLogisticsProduct": "F1403",
-        "oldestTimestamp": "2026-06-25T15:50:16+02:00",
-        "newestTimestamp": "2026-06-30T09:55:18+02:00"
+        "oldestTimestamp": "2026-06-25T18:10:15+02:00",
+        "newestTimestamp": "2026-06-30T13:05:11+02:00"
       }
     }
   },
@@ -60,10 +60,10 @@
       "5 problematických nebo stornovaných objednávek.",
       "4 včera prodaných produktů je teď na nízkém skladu.",
       "10 skladových pozic je v mínusu.",
-      "14 A produktů je v kritickém riziku výpadku."
+      "12 A produktů je v kritickém riziku výpadku."
     ],
     "priorities": [
-      "Prověřit A produkty v riziku výpadku (14 SKU): 135467, 35412-02, 113013.",
+      "Prověřit A produkty v riziku výpadku (12 SKU): 35412-02, 61912, 21310.",
       "Dohlédnout BI0100 (Vitamin C ), aktuálně 0 ks.",
       "Projít 5 problematických nebo stornovaných objednávek z včerejška.",
       "Projít nejbližší expirace v 4PX a rozhodnout o doprodeji nebo přesunu zásoby."
@@ -73,16 +73,16 @@
     "datedSkuCount": 328,
     "czSkuCount": 314,
     "skSkuCount": 297,
-    "datedRowCount": 697,
-    "czRowCount": 360,
-    "skRowCount": 337
+    "datedRowCount": 694,
+    "czRowCount": 358,
+    "skRowCount": 336
   },
   "pairing": {
-    "allCodes": 2985,
+    "allCodes": 2987,
     "pairedProducts": 374,
-    "onlyInWpj": 1547,
+    "onlyInWpj": 1549,
     "onlyIn4px": 1,
-    "stockMismatch": 728,
+    "stockMismatch": 720,
     "lowAfterSales": 23,
     "manualMapped4pxAliases": 0,
     "autoMapped4pxAliases": 73
@@ -93,32 +93,40 @@
     "message": "Měsíční finance se tahají přímo z ABRA reportu Výkaz hospodaření za měsíc za všechna střediska. Cash a závazky jsou také live z ABRA API.",
     "currentMonth": {
       "label": "6/2026",
-      "revenue": 11475641.12,
-      "cogsAndFees": 8776441.26,
-      "logistics": 39268.21,
-      "marketing": 226105.02,
-      "opex": 637875.98,
+      "revenue": 11562336.83,
+      "cogsAndFees": 8841854.87,
+      "logistics": 68894.53,
+      "marketing": 228584.36,
+      "opex": 675345.88,
       "depreciation": 401319.0,
-      "other": -18366.76,
-      "grossMargin": 2699199.86,
-      "afterLogistics": 2659931.65,
-      "afterMarketing": 2433826.63,
-      "operatingMargin": 1795950.65,
-      "ebit": 1394631.65,
-      "profit": 1376264.89,
+      "other": -18378.54,
+      "grossMargin": 2720481.96,
+      "afterLogistics": 2651587.43,
+      "afterMarketing": 2423003.07,
+      "operatingMargin": 1747657.19,
+      "ebit": 1346338.19,
+      "profit": 1327959.65,
       "grossMarginPct": 23.5,
       "marketingPct": 2.0,
-      "logisticsPct": 0.3,
-      "operatingMarginPct": 15.7,
-      "profitPct": 12.0
+      "logisticsPct": 0.6,
+      "operatingMarginPct": 15.1,
+      "profitPct": 11.5
     },
     "cash": {
-      "cashOnAccounts": 8123610.71,
-      "unpaidInvoices": 289626.17,
-      "netCashPosition": 7833984.54,
-      "overdueInvoicesCount": 1,
-      "overdueInvoicesAmount": 1050.0,
+      "cashOnAccounts": 8122277.18,
+      "unpaidInvoices": 494075.24,
+      "netCashPosition": 7628201.94,
+      "overdueInvoicesCount": 3,
+      "overdueInvoicesAmount": 21215.55,
       "largestPayables": [
+        {
+          "code": "PF0804/2026",
+          "vendor": "ISTA CORPORATION s.r.o.",
+          "dueDate": "02.07.2026",
+          "amountTotal": 132628.69,
+          "amountDue": 132628.69,
+          "status": "2 dní do splatnosti"
+        },
         {
           "code": "PF0697/2026",
           "vendor": "Meta Platforms Ireland Limited",
@@ -144,6 +152,14 @@
           "status": "17 dní do splatnosti"
         },
         {
+          "code": "PF0795/2026",
+          "vendor": "JUDr. Monika Bakešová",
+          "dueDate": "06.07.2026",
+          "amountTotal": 30782.0,
+          "amountDue": 30782.0,
+          "status": "6 dní do splatnosti"
+        },
+        {
           "code": "PF0696/2026",
           "vendor": "Meta Platforms Ireland Limited",
           "dueDate": "02.07.2026",
@@ -152,36 +168,20 @@
           "status": "2 dní do splatnosti"
         },
         {
+          "code": "PF0802/2026",
+          "vendor": "Zásilkovna s.r.o.",
+          "dueDate": "29.06.2026",
+          "amountTotal": 19277.55,
+          "amountDue": 19277.55,
+          "status": "1 dní PO SPLATNOSTI"
+        },
+        {
           "code": "Z0039/2026",
           "vendor": "Le-Investment, spol. s r.o.",
           "dueDate": "19.08.2026",
           "amountTotal": 18850.0,
           "amountDue": 18850.0,
           "status": "50 dní do splatnosti"
-        },
-        {
-          "code": "PF0770/2026",
-          "vendor": "ALLIANZ POJIŠŤOVNA, A. S.",
-          "dueDate": "06.09.2026",
-          "amountTotal": 9463.0,
-          "amountDue": 9463.0,
-          "status": "68 dní do splatnosti"
-        },
-        {
-          "code": "PF0744/2026",
-          "vendor": "4PX Express CZ",
-          "dueDate": "15.07.2026",
-          "amountTotal": 6957.5,
-          "amountDue": 6957.5,
-          "status": "15 dní do splatnosti"
-        },
-        {
-          "code": "PF0635/2026",
-          "vendor": "arachis s.r.o.",
-          "dueDate": "01.06.2026",
-          "amountTotal": 1050.0,
-          "amountDue": 1050.0,
-          "status": "29 dní PO SPLATNOSTI"
         }
       ],
       "cashAccountsSource": {
@@ -199,8 +199,8 @@
             "accountCode": "221115",
             "accountLabel": "221115: 131-3675980207/0100 KB CZK",
             "currency": "CZK: Česká koruna",
-            "balance": 1523438.0,
-            "includedBalance": 1523438.0
+            "balance": 1523075.0,
+            "includedBalance": 1523075.0
           },
           {
             "accountCode": "221006",
@@ -220,8 +220,8 @@
             "accountCode": "221001",
             "accountLabel": "221001: 2901338673/2010 FIO CZK",
             "currency": "CZK: Česká koruna",
-            "balance": 889165.04,
-            "includedBalance": 889165.04
+            "balance": 888194.51,
+            "includedBalance": 888194.51
           },
           {
             "accountCode": "221002",
@@ -332,7 +332,7 @@
             "accountCode": "221001",
             "accountLabel": "221001: 2901338673/2010 FIO CZK",
             "currency": "USD: Americký dolar",
-            "balance": -35587.67,
+            "balance": -35611.81,
             "includedBalance": 0.0
           },
           {
@@ -370,10 +370,10 @@
     "message": "Marketing se skládá z live ABRA reportu a aktuálních položek z účetního deníku. Přímé platformy přes API: Sklik, Meta Ads, Google Ads, Klaviyo, Affiliate.",
     "currentMonth": {
       "label": "6/2026",
-      "performanceSpend": 26105.02,
+      "performanceSpend": 28584.36,
       "brandSpend": 200000.0,
-      "totalSpend": 226105.02,
-      "revenue": 11475641.12,
+      "totalSpend": 228584.36,
+      "revenue": 11562336.83,
       "spendShareOfRevenuePct": 2.0
     },
     "topSupplier": {
@@ -391,23 +391,23 @@
       "label": "2025-10-01 až 2026-06-30"
     },
     "summary": {
-      "noviceRevenueCzkEquiv": 13586008.0,
-      "networkRevenueCzkEquiv": 19503953.0,
+      "noviceRevenueCzkEquiv": 13607805.0,
+      "networkRevenueCzkEquiv": 19529323.0,
       "novicePartners": 50,
       "networkPartners": 50,
-      "noviceOrders": 8217.0,
-      "networkOrders": 11990.0,
-      "noviceOrderingContacts": 1622.0,
-      "networkOrderingCustomers": 3701.0,
+      "noviceOrders": 8227.0,
+      "networkOrders": 12004.0,
+      "noviceOrderingContacts": 1623.0,
+      "networkOrderingCustomers": 3702.0,
       "topNovicePartner": {
         "partnerCode": "ESHOP",
         "partnerName": "E-shop (interní)",
-        "revenueCzkEquiv": 4210567.0
+        "revenueCzkEquiv": 4227978.0
       },
       "topNetworkPartner": {
         "partnerCode": "ESHOP",
         "partnerName": "E-shop (interní)",
-        "revenueCzkEquiv": 4210567.0
+        "revenueCzkEquiv": 4227978.0
       }
     }
   },
@@ -539,6 +539,6 @@
         "message": "WPJ twisto objednávky z historie objednávek."
       }
     },
-    "message": "Twisto batch bez bankovního matchnutí: 6205.00 Kč"
+    "message": "Twisto watchdog selhal: Traceback (most recent call last):\n  File \"/Users/rudolfkonfal/.openclaw/workspace/reporting-v2/scripts/build_twisto_watchdog.py\", line 554, in <module>\n    main()\n    ~~~~^^\n  File \"/Users/rudolfkonfal/.openclaw/workspace/reporting-v2/scripts/build_twisto_watchdog.py\", line 536, in main\n    payload"
   }
 }
