@@ -38,7 +38,7 @@
     {
       "channel": "Klaviyo",
       "spend": 0,
-      "reportedRevenue": 4881589.35,
+      "reportedRevenue": 3858229.2,
       "roas": null,
       "trust": "medium",
       "notes": [
@@ -56,22 +56,6 @@
     },
     "rows": [
       {
-        "channel": "Klaviyo",
-        "bucket": "owned_retention",
-        "decisionRole": "retention",
-        "spendPreviousMonth": 0,
-        "platformRevenuePreviousMonth": 4881589.35,
-        "platformRoasPreviousMonth": null,
-        "ga4ObservedRevenue": 12352.31,
-        "ga4ObservedSessions": 300.0,
-        "ga4ObservedPurchaseRatePct": 4.67,
-        "ga4ObservedRoas": null,
-        "trustScore": 68,
-        "trustLabel": "medium_high",
-        "primaryIssue": "Retence je zjevně materiální, ale stále není reconciled vůči backend netto revenue.",
-        "nextQuestion": "Kolik repeat revenue řídí lifecycle automatizace a kolik přirozené reorder chování?"
-      },
-      {
         "channel": "Meta Ads",
         "bucket": "paid_social",
         "decisionRole": "acquisition_and_remarketing_mixed",
@@ -86,6 +70,22 @@
         "trustLabel": "low",
         "primaryIssue": "Platformní claim je výrazně silnější než pozorovaný signál placených sociálních sítí.",
         "nextQuestion": "Jaký je skutečný prospecting contribution po odečtení exclusions a post-view inflace?"
+      },
+      {
+        "channel": "Klaviyo",
+        "bucket": "owned_retention",
+        "decisionRole": "retention",
+        "spendPreviousMonth": 0,
+        "platformRevenuePreviousMonth": 3858229.2,
+        "platformRoasPreviousMonth": null,
+        "ga4ObservedRevenue": 12352.31,
+        "ga4ObservedSessions": 300.0,
+        "ga4ObservedPurchaseRatePct": 4.67,
+        "ga4ObservedRoas": null,
+        "trustScore": 68,
+        "trustLabel": "medium_high",
+        "primaryIssue": "Retence je zjevně materiální, ale stále není reconciled vůči backend netto revenue.",
+        "nextQuestion": "Kolik repeat revenue řídí lifecycle automatizace a kolik přirozené reorder chování?"
       },
       {
         "channel": "Google Ads",
@@ -131,8 +131,8 @@
       {
         "bucket": "retention",
         "spend": 0,
-        "revenue": 4881589.35,
-        "campaigns": 17,
+        "revenue": 3858229.2,
+        "campaigns": 12,
         "roas": null
       },
       {
@@ -6983,40 +6983,74 @@
         "publicApiKey": "U9rq9t"
       },
       "currentMonth": {
-        "dateFrom": "2026-06-01",
-        "dateTo": "2026-06-29",
-        "emailAttributedRevenueCzk": 3626783.15,
+        "dateFrom": "2026-07-01",
+        "dateTo": "2026-07-01",
+        "emailAttributedRevenueCzk": 23680.4,
         "smsAttributedRevenueCzk": 0.0,
-        "emailAttributedOrders": 2446.0,
+        "emailAttributedOrders": 19.0,
         "smsAttributedOrders": 0.0,
-        "emailRecipients": 907038.0,
+        "emailRecipients": 75.0,
         "smsRecipients": 0.0,
-        "emailClicks": 20318.0,
+        "emailClicks": 94.0,
         "smsClicks": 0.0,
-        "totalAttributedRevenueCzk": 3626783.15,
-        "totalAttributedOrders": 2446.0,
-        "totalRecipients": 907038.0,
-        "totalClicks": 20318.0,
-        "clickRate": 0.0224
+        "totalAttributedRevenueCzk": 23680.4,
+        "totalAttributedOrders": 19.0,
+        "totalRecipients": 75.0,
+        "totalClicks": 94.0,
+        "clickRate": 1.2533
       },
       "previousMonth": {
-        "dateFrom": "2026-05-01",
-        "dateTo": "2026-05-31",
-        "emailAttributedRevenueCzk": 4881589.35,
+        "dateFrom": "2026-06-01",
+        "dateTo": "2026-06-30",
+        "emailAttributedRevenueCzk": 3858229.2,
         "smsAttributedRevenueCzk": 0.0,
-        "emailAttributedOrders": 3291.0,
+        "emailAttributedOrders": 2594.0,
         "smsAttributedOrders": 0.0,
-        "emailRecipients": 904332.0,
+        "emailRecipients": 931308.0,
         "smsRecipients": 0.0,
-        "emailClicks": 37175.0,
+        "emailClicks": 20895.0,
         "smsClicks": 0.0,
-        "totalAttributedRevenueCzk": 4881589.35,
-        "totalAttributedOrders": 3291.0,
-        "totalRecipients": 904332.0,
-        "totalClicks": 37175.0,
-        "clickRate": 0.0411
+        "totalAttributedRevenueCzk": 3858229.2,
+        "totalAttributedOrders": 2594.0,
+        "totalRecipients": 931308.0,
+        "totalClicks": 20895.0,
+        "clickRate": 0.0224
       },
       "dailySummary": [
+        {
+          "date": "2026-07-01",
+          "emailAttributedRevenueCzk": 23680.4,
+          "smsAttributedRevenueCzk": 0.0,
+          "totalAttributedRevenueCzk": 23680.4,
+          "emailAttributedOrders": 19.0,
+          "smsAttributedOrders": 0.0,
+          "totalAttributedOrders": 19.0,
+          "emailRecipients": 75.0,
+          "smsRecipients": 0.0,
+          "totalRecipients": 75.0,
+          "emailClicks": 94.0,
+          "smsClicks": 0.0,
+          "totalClicks": 94.0,
+          "clickRate": 1.2533
+        },
+        {
+          "date": "2026-07-02",
+          "emailAttributedRevenueCzk": 0.0,
+          "smsAttributedRevenueCzk": 0.0,
+          "totalAttributedRevenueCzk": 0.0,
+          "emailAttributedOrders": 0.0,
+          "smsAttributedOrders": 0.0,
+          "totalAttributedOrders": 0.0,
+          "emailRecipients": 0.0,
+          "smsRecipients": 0.0,
+          "totalRecipients": 0.0,
+          "emailClicks": 0.0,
+          "smsClicks": 0.0,
+          "totalClicks": 0.0,
+          "clickRate": null
+        }
+      ],
+      "dailySummaryPreviousMonth": [
         {
           "date": "2026-06-01",
           "emailAttributedRevenueCzk": 147879.85,
@@ -7483,536 +7517,78 @@
         },
         {
           "date": "2026-06-30",
-          "emailAttributedRevenueCzk": 2229.0,
+          "emailAttributedRevenueCzk": 231735.05,
           "smsAttributedRevenueCzk": 0.0,
-          "totalAttributedRevenueCzk": 2229.0,
-          "emailAttributedOrders": 2.0,
+          "totalAttributedRevenueCzk": 231735.05,
+          "emailAttributedOrders": 149.0,
           "smsAttributedOrders": 0.0,
-          "totalAttributedOrders": 2.0,
-          "emailRecipients": 1.0,
+          "totalAttributedOrders": 149.0,
+          "emailRecipients": 24269.0,
           "smsRecipients": 0.0,
-          "totalRecipients": 1.0,
-          "emailClicks": 15.0,
+          "totalRecipients": 24269.0,
+          "emailClicks": 586.0,
           "smsClicks": 0.0,
-          "totalClicks": 15.0,
-          "clickRate": 15.0
-        }
-      ],
-      "dailySummaryPreviousMonth": [
-        {
-          "date": "2026-05-01",
-          "emailAttributedRevenueCzk": 155420.65,
-          "smsAttributedRevenueCzk": 0.0,
-          "totalAttributedRevenueCzk": 155420.65,
-          "emailAttributedOrders": 113.0,
-          "smsAttributedOrders": 0.0,
-          "totalAttributedOrders": 113.0,
-          "emailRecipients": 53230.0,
-          "smsRecipients": 0.0,
-          "totalRecipients": 53230.0,
-          "emailClicks": 2088.0,
-          "smsClicks": 0.0,
-          "totalClicks": 2088.0,
-          "clickRate": 0.0392
+          "totalClicks": 586.0,
+          "clickRate": 0.0241
         },
         {
-          "date": "2026-05-02",
-          "emailAttributedRevenueCzk": 107584.25,
+          "date": "2026-07-01",
+          "emailAttributedRevenueCzk": 1940.0,
           "smsAttributedRevenueCzk": 0.0,
-          "totalAttributedRevenueCzk": 107584.25,
-          "emailAttributedOrders": 83.0,
-          "smsAttributedOrders": 0.0,
-          "totalAttributedOrders": 83.0,
-          "emailRecipients": 2612.0,
-          "smsRecipients": 0.0,
-          "totalRecipients": 2612.0,
-          "emailClicks": 1014.0,
-          "smsClicks": 0.0,
-          "totalClicks": 1014.0,
-          "clickRate": 0.3882
-        },
-        {
-          "date": "2026-05-03",
-          "emailAttributedRevenueCzk": 153311.0,
-          "smsAttributedRevenueCzk": 0.0,
-          "totalAttributedRevenueCzk": 153311.0,
-          "emailAttributedOrders": 119.0,
-          "smsAttributedOrders": 0.0,
-          "totalAttributedOrders": 119.0,
-          "emailRecipients": 54525.0,
-          "smsRecipients": 0.0,
-          "totalRecipients": 54525.0,
-          "emailClicks": 1392.0,
-          "smsClicks": 0.0,
-          "totalClicks": 1392.0,
-          "clickRate": 0.0255
-        },
-        {
-          "date": "2026-05-04",
-          "emailAttributedRevenueCzk": 256926.8,
-          "smsAttributedRevenueCzk": 0.0,
-          "totalAttributedRevenueCzk": 256926.8,
-          "emailAttributedOrders": 179.0,
-          "smsAttributedOrders": 0.0,
-          "totalAttributedOrders": 179.0,
-          "emailRecipients": 32003.0,
-          "smsRecipients": 0.0,
-          "totalRecipients": 32003.0,
-          "emailClicks": 2786.0,
-          "smsClicks": 0.0,
-          "totalClicks": 2786.0,
-          "clickRate": 0.0871
-        },
-        {
-          "date": "2026-05-05",
-          "emailAttributedRevenueCzk": 310062.95,
-          "smsAttributedRevenueCzk": 0.0,
-          "totalAttributedRevenueCzk": 310062.95,
-          "emailAttributedOrders": 233.0,
-          "smsAttributedOrders": 0.0,
-          "totalAttributedOrders": 233.0,
-          "emailRecipients": 34313.0,
-          "smsRecipients": 0.0,
-          "totalRecipients": 34313.0,
-          "emailClicks": 2350.0,
-          "smsClicks": 0.0,
-          "totalClicks": 2350.0,
-          "clickRate": 0.0685
-        },
-        {
-          "date": "2026-05-06",
-          "emailAttributedRevenueCzk": 268362.2,
-          "smsAttributedRevenueCzk": 0.0,
-          "totalAttributedRevenueCzk": 268362.2,
-          "emailAttributedOrders": 199.0,
-          "smsAttributedOrders": 0.0,
-          "totalAttributedOrders": 199.0,
-          "emailRecipients": 32373.0,
-          "smsRecipients": 0.0,
-          "totalRecipients": 32373.0,
-          "emailClicks": 1437.0,
-          "smsClicks": 0.0,
-          "totalClicks": 1437.0,
-          "clickRate": 0.0444
-        },
-        {
-          "date": "2026-05-07",
-          "emailAttributedRevenueCzk": 358372.75,
-          "smsAttributedRevenueCzk": 0.0,
-          "totalAttributedRevenueCzk": 358372.75,
-          "emailAttributedOrders": 280.0,
-          "smsAttributedOrders": 0.0,
-          "totalAttributedOrders": 280.0,
-          "emailRecipients": 31951.0,
-          "smsRecipients": 0.0,
-          "totalRecipients": 31951.0,
-          "emailClicks": 1305.0,
-          "smsClicks": 0.0,
-          "totalClicks": 1305.0,
-          "clickRate": 0.0408
-        },
-        {
-          "date": "2026-05-08",
-          "emailAttributedRevenueCzk": 121869.0,
-          "smsAttributedRevenueCzk": 0.0,
-          "totalAttributedRevenueCzk": 121869.0,
-          "emailAttributedOrders": 78.0,
-          "smsAttributedOrders": 0.0,
-          "totalAttributedOrders": 78.0,
-          "emailRecipients": 27769.0,
-          "smsRecipients": 0.0,
-          "totalRecipients": 27769.0,
-          "emailClicks": 590.0,
-          "smsClicks": 0.0,
-          "totalClicks": 590.0,
-          "clickRate": 0.0212
-        },
-        {
-          "date": "2026-05-09",
-          "emailAttributedRevenueCzk": 87135.95,
-          "smsAttributedRevenueCzk": 0.0,
-          "totalAttributedRevenueCzk": 87135.95,
-          "emailAttributedOrders": 55.0,
-          "smsAttributedOrders": 0.0,
-          "totalAttributedOrders": 55.0,
-          "emailRecipients": 4764.0,
-          "smsRecipients": 0.0,
-          "totalRecipients": 4764.0,
-          "emailClicks": 391.0,
-          "smsClicks": 0.0,
-          "totalClicks": 391.0,
-          "clickRate": 0.0821
-        },
-        {
-          "date": "2026-05-10",
-          "emailAttributedRevenueCzk": 208950.3,
-          "smsAttributedRevenueCzk": 0.0,
-          "totalAttributedRevenueCzk": 208950.3,
-          "emailAttributedOrders": 129.0,
-          "smsAttributedOrders": 0.0,
-          "totalAttributedOrders": 129.0,
-          "emailRecipients": 30704.0,
-          "smsRecipients": 0.0,
-          "totalRecipients": 30704.0,
-          "emailClicks": 773.0,
-          "smsClicks": 0.0,
-          "totalClicks": 773.0,
-          "clickRate": 0.0252
-        },
-        {
-          "date": "2026-05-11",
-          "emailAttributedRevenueCzk": 118136.25,
-          "smsAttributedRevenueCzk": 0.0,
-          "totalAttributedRevenueCzk": 118136.25,
-          "emailAttributedOrders": 78.0,
-          "smsAttributedOrders": 0.0,
-          "totalAttributedOrders": 78.0,
-          "emailRecipients": 30411.0,
-          "smsRecipients": 0.0,
-          "totalRecipients": 30411.0,
-          "emailClicks": 1214.0,
-          "smsClicks": 0.0,
-          "totalClicks": 1214.0,
-          "clickRate": 0.0399
-        },
-        {
-          "date": "2026-05-12",
-          "emailAttributedRevenueCzk": 164853.3,
-          "smsAttributedRevenueCzk": 0.0,
-          "totalAttributedRevenueCzk": 164853.3,
-          "emailAttributedOrders": 124.0,
-          "smsAttributedOrders": 0.0,
-          "totalAttributedOrders": 124.0,
-          "emailRecipients": 34201.0,
-          "smsRecipients": 0.0,
-          "totalRecipients": 34201.0,
-          "emailClicks": 2021.0,
-          "smsClicks": 0.0,
-          "totalClicks": 2021.0,
-          "clickRate": 0.0591
-        },
-        {
-          "date": "2026-05-13",
-          "emailAttributedRevenueCzk": 160627.45,
-          "smsAttributedRevenueCzk": 0.0,
-          "totalAttributedRevenueCzk": 160627.45,
-          "emailAttributedOrders": 114.0,
-          "smsAttributedOrders": 0.0,
-          "totalAttributedOrders": 114.0,
-          "emailRecipients": 7383.0,
-          "smsRecipients": 0.0,
-          "totalRecipients": 7383.0,
-          "emailClicks": 1104.0,
-          "smsClicks": 0.0,
-          "totalClicks": 1104.0,
-          "clickRate": 0.1495
-        },
-        {
-          "date": "2026-05-14",
-          "emailAttributedRevenueCzk": 195488.95,
-          "smsAttributedRevenueCzk": 0.0,
-          "totalAttributedRevenueCzk": 195488.95,
-          "emailAttributedOrders": 124.0,
-          "smsAttributedOrders": 0.0,
-          "totalAttributedOrders": 124.0,
-          "emailRecipients": 53386.0,
-          "smsRecipients": 0.0,
-          "totalRecipients": 53386.0,
-          "emailClicks": 1064.0,
-          "smsClicks": 0.0,
-          "totalClicks": 1064.0,
-          "clickRate": 0.0199
-        },
-        {
-          "date": "2026-05-15",
-          "emailAttributedRevenueCzk": 120959.8,
-          "smsAttributedRevenueCzk": 0.0,
-          "totalAttributedRevenueCzk": 120959.8,
-          "emailAttributedOrders": 78.0,
-          "smsAttributedOrders": 0.0,
-          "totalAttributedOrders": 78.0,
-          "emailRecipients": 29436.0,
-          "smsRecipients": 0.0,
-          "totalRecipients": 29436.0,
-          "emailClicks": 519.0,
-          "smsClicks": 0.0,
-          "totalClicks": 519.0,
-          "clickRate": 0.0176
-        },
-        {
-          "date": "2026-05-16",
-          "emailAttributedRevenueCzk": 106736.35,
-          "smsAttributedRevenueCzk": 0.0,
-          "totalAttributedRevenueCzk": 106736.35,
-          "emailAttributedOrders": 70.0,
-          "smsAttributedOrders": 0.0,
-          "totalAttributedOrders": 70.0,
-          "emailRecipients": 27697.0,
-          "smsRecipients": 0.0,
-          "totalRecipients": 27697.0,
-          "emailClicks": 642.0,
-          "smsClicks": 0.0,
-          "totalClicks": 642.0,
-          "clickRate": 0.0232
-        },
-        {
-          "date": "2026-05-17",
-          "emailAttributedRevenueCzk": 151651.95,
-          "smsAttributedRevenueCzk": 0.0,
-          "totalAttributedRevenueCzk": 151651.95,
-          "emailAttributedOrders": 108.0,
-          "smsAttributedOrders": 0.0,
-          "totalAttributedOrders": 108.0,
-          "emailRecipients": 52325.0,
-          "smsRecipients": 0.0,
-          "totalRecipients": 52325.0,
-          "emailClicks": 1799.0,
-          "smsClicks": 0.0,
-          "totalClicks": 1799.0,
-          "clickRate": 0.0344
-        },
-        {
-          "date": "2026-05-18",
-          "emailAttributedRevenueCzk": 134978.65,
-          "smsAttributedRevenueCzk": 0.0,
-          "totalAttributedRevenueCzk": 134978.65,
-          "emailAttributedOrders": 96.0,
-          "smsAttributedOrders": 0.0,
-          "totalAttributedOrders": 96.0,
-          "emailRecipients": 54807.0,
-          "smsRecipients": 0.0,
-          "totalRecipients": 54807.0,
-          "emailClicks": 2271.0,
-          "smsClicks": 0.0,
-          "totalClicks": 2271.0,
-          "clickRate": 0.0414
-        },
-        {
-          "date": "2026-05-19",
-          "emailAttributedRevenueCzk": 188488.9,
-          "smsAttributedRevenueCzk": 0.0,
-          "totalAttributedRevenueCzk": 188488.9,
-          "emailAttributedOrders": 107.0,
-          "smsAttributedOrders": 0.0,
-          "totalAttributedOrders": 107.0,
-          "emailRecipients": 30762.0,
-          "smsRecipients": 0.0,
-          "totalRecipients": 30762.0,
-          "emailClicks": 1594.0,
-          "smsClicks": 0.0,
-          "totalClicks": 1594.0,
-          "clickRate": 0.0518
-        },
-        {
-          "date": "2026-05-20",
-          "emailAttributedRevenueCzk": 184526.3,
-          "smsAttributedRevenueCzk": 0.0,
-          "totalAttributedRevenueCzk": 184526.3,
-          "emailAttributedOrders": 110.0,
-          "smsAttributedOrders": 0.0,
-          "totalAttributedOrders": 110.0,
-          "emailRecipients": 29291.0,
-          "smsRecipients": 0.0,
-          "totalRecipients": 29291.0,
-          "emailClicks": 1540.0,
-          "smsClicks": 0.0,
-          "totalClicks": 1540.0,
-          "clickRate": 0.0526
-        },
-        {
-          "date": "2026-05-21",
-          "emailAttributedRevenueCzk": 144269.7,
-          "smsAttributedRevenueCzk": 0.0,
-          "totalAttributedRevenueCzk": 144269.7,
-          "emailAttributedOrders": 85.0,
-          "smsAttributedOrders": 0.0,
-          "totalAttributedOrders": 85.0,
-          "emailRecipients": 24794.0,
-          "smsRecipients": 0.0,
-          "totalRecipients": 24794.0,
-          "emailClicks": 840.0,
-          "smsClicks": 0.0,
-          "totalClicks": 840.0,
-          "clickRate": 0.0339
-        },
-        {
-          "date": "2026-05-22",
-          "emailAttributedRevenueCzk": 67247.3,
-          "smsAttributedRevenueCzk": 0.0,
-          "totalAttributedRevenueCzk": 67247.3,
-          "emailAttributedOrders": 54.0,
-          "smsAttributedOrders": 0.0,
-          "totalAttributedOrders": 54.0,
-          "emailRecipients": 1213.0,
-          "smsRecipients": 0.0,
-          "totalRecipients": 1213.0,
-          "emailClicks": 314.0,
-          "smsClicks": 0.0,
-          "totalClicks": 314.0,
-          "clickRate": 0.2589
-        },
-        {
-          "date": "2026-05-23",
-          "emailAttributedRevenueCzk": 54111.4,
-          "smsAttributedRevenueCzk": 0.0,
-          "totalAttributedRevenueCzk": 54111.4,
-          "emailAttributedOrders": 42.0,
-          "smsAttributedOrders": 0.0,
-          "totalAttributedOrders": 42.0,
-          "emailRecipients": 23967.0,
-          "smsRecipients": 0.0,
-          "totalRecipients": 23967.0,
-          "emailClicks": 284.0,
-          "smsClicks": 0.0,
-          "totalClicks": 284.0,
-          "clickRate": 0.0118
-        },
-        {
-          "date": "2026-05-24",
-          "emailAttributedRevenueCzk": 126815.05,
-          "smsAttributedRevenueCzk": 0.0,
-          "totalAttributedRevenueCzk": 126815.05,
-          "emailAttributedOrders": 88.0,
-          "smsAttributedOrders": 0.0,
-          "totalAttributedOrders": 88.0,
-          "emailRecipients": 27223.0,
-          "smsRecipients": 0.0,
-          "totalRecipients": 27223.0,
-          "emailClicks": 773.0,
-          "smsClicks": 0.0,
-          "totalClicks": 773.0,
-          "clickRate": 0.0284
-        },
-        {
-          "date": "2026-05-25",
-          "emailAttributedRevenueCzk": 126281.95,
-          "smsAttributedRevenueCzk": 0.0,
-          "totalAttributedRevenueCzk": 126281.95,
-          "emailAttributedOrders": 70.0,
-          "smsAttributedOrders": 0.0,
-          "totalAttributedOrders": 70.0,
-          "emailRecipients": 28861.0,
-          "smsRecipients": 0.0,
-          "totalRecipients": 28861.0,
-          "emailClicks": 1112.0,
-          "smsClicks": 0.0,
-          "totalClicks": 1112.0,
-          "clickRate": 0.0385
-        },
-        {
-          "date": "2026-05-26",
-          "emailAttributedRevenueCzk": 132788.1,
-          "smsAttributedRevenueCzk": 0.0,
-          "totalAttributedRevenueCzk": 132788.1,
-          "emailAttributedOrders": 81.0,
-          "smsAttributedOrders": 0.0,
-          "totalAttributedOrders": 81.0,
-          "emailRecipients": 29146.0,
-          "smsRecipients": 0.0,
-          "totalRecipients": 29146.0,
-          "emailClicks": 1229.0,
-          "smsClicks": 0.0,
-          "totalClicks": 1229.0,
-          "clickRate": 0.0422
-        },
-        {
-          "date": "2026-05-27",
-          "emailAttributedRevenueCzk": 137833.65,
-          "smsAttributedRevenueCzk": 0.0,
-          "totalAttributedRevenueCzk": 137833.65,
-          "emailAttributedOrders": 64.0,
-          "smsAttributedOrders": 0.0,
-          "totalAttributedOrders": 64.0,
-          "emailRecipients": 29266.0,
-          "smsRecipients": 0.0,
-          "totalRecipients": 29266.0,
-          "emailClicks": 1139.0,
-          "smsClicks": 0.0,
-          "totalClicks": 1139.0,
-          "clickRate": 0.0389
-        },
-        {
-          "date": "2026-05-28",
-          "emailAttributedRevenueCzk": 158661.35,
-          "smsAttributedRevenueCzk": 0.0,
-          "totalAttributedRevenueCzk": 158661.35,
-          "emailAttributedOrders": 90.0,
-          "smsAttributedOrders": 0.0,
-          "totalAttributedOrders": 90.0,
-          "emailRecipients": 28968.0,
-          "smsRecipients": 0.0,
-          "totalRecipients": 28968.0,
-          "emailClicks": 1427.0,
-          "smsClicks": 0.0,
-          "totalClicks": 1427.0,
-          "clickRate": 0.0493
-        },
-        {
-          "date": "2026-05-29",
-          "emailAttributedRevenueCzk": 169922.1,
-          "smsAttributedRevenueCzk": 0.0,
-          "totalAttributedRevenueCzk": 169922.1,
-          "emailAttributedOrders": 87.0,
-          "smsAttributedOrders": 0.0,
-          "totalAttributedOrders": 87.0,
-          "emailRecipients": 27941.0,
-          "smsRecipients": 0.0,
-          "totalRecipients": 27941.0,
-          "emailClicks": 959.0,
-          "smsClicks": 0.0,
-          "totalClicks": 959.0,
-          "clickRate": 0.0343
-        },
-        {
-          "date": "2026-05-30",
-          "emailAttributedRevenueCzk": 43681.55,
-          "smsAttributedRevenueCzk": 0.0,
-          "totalAttributedRevenueCzk": 43681.55,
-          "emailAttributedOrders": 41.0,
-          "smsAttributedOrders": 0.0,
-          "totalAttributedOrders": 41.0,
-          "emailRecipients": 1004.0,
-          "smsRecipients": 0.0,
-          "totalRecipients": 1004.0,
-          "emailClicks": 309.0,
-          "smsClicks": 0.0,
-          "totalClicks": 309.0,
-          "clickRate": 0.3078
-        },
-        {
-          "date": "2026-05-31",
-          "emailAttributedRevenueCzk": 162958.45,
-          "smsAttributedRevenueCzk": 0.0,
-          "totalAttributedRevenueCzk": 162958.45,
-          "emailAttributedOrders": 111.0,
-          "smsAttributedOrders": 0.0,
-          "totalAttributedOrders": 111.0,
-          "emailRecipients": 27919.0,
-          "smsRecipients": 0.0,
-          "totalRecipients": 27919.0,
-          "emailClicks": 883.0,
-          "smsClicks": 0.0,
-          "totalClicks": 883.0,
-          "clickRate": 0.0316
-        },
-        {
-          "date": "2026-06-01",
-          "emailAttributedRevenueCzk": 2575.0,
-          "smsAttributedRevenueCzk": 0.0,
-          "totalAttributedRevenueCzk": 2575.0,
+          "totalAttributedRevenueCzk": 1940.0,
           "emailAttributedOrders": 1.0,
           "smsAttributedOrders": 0.0,
           "totalAttributedOrders": 1.0,
-          "emailRecipients": 87.0,
+          "emailRecipients": 2.0,
           "smsRecipients": 0.0,
-          "totalRecipients": 87.0,
-          "emailClicks": 12.0,
+          "totalRecipients": 2.0,
+          "emailClicks": 6.0,
           "smsClicks": 0.0,
-          "totalClicks": 12.0,
-          "clickRate": 0.1379
+          "totalClicks": 6.0,
+          "clickRate": 3.0
         }
       ],
       "flowsCurrentMonth": [
+        {
+          "flowId": "SxBynF",
+          "flowName": "Webinář - potvrzení registrace",
+          "status": "live",
+          "triggerType": "Metric",
+          "channel": "email",
+          "attributedOrders": 1.0,
+          "attributedRevenueCzk": 3581.0,
+          "messageCount": 1,
+          "messageNames": [
+            "Potvrzení registrace na webinář"
+          ],
+          "recipients": 0.0,
+          "opens": 1.0,
+          "clicks": 18.0,
+          "openRate": null,
+          "clickRate": null,
+          "conversionRate": null
+        },
+        {
+          "flowId": "SLW4ei",
+          "flowName": "tianDe - upozornění na dárky",
+          "status": "live",
+          "triggerType": "Metric",
+          "channel": "email",
+          "attributedOrders": 1.0,
+          "attributedRevenueCzk": 1196.0,
+          "messageCount": 1,
+          "messageNames": [
+            "Info o připravených dárcích"
+          ],
+          "recipients": 10.0,
+          "opens": 2.0,
+          "clicks": 0.0,
+          "openRate": 0.2,
+          "clickRate": 0.0,
+          "conversionRate": 0.1
+        }
+      ],
+      "flowsPreviousMonth": [
         {
           "flowId": "SXtWxm",
           "flowName": "Opuštěný košík - Standard",
@@ -8029,9 +7605,9 @@
             "Abandoned Cart: Email 4"
           ],
           "recipients": 4604.0,
-          "opens": 1091.0,
+          "opens": 1092.0,
           "clicks": 127.0,
-          "openRate": 0.237,
+          "openRate": 0.2372,
           "clickRate": 0.0276,
           "conversionRate": 0.0159
         },
@@ -8041,18 +7617,18 @@
           "status": "live",
           "triggerType": "Date Based",
           "channel": "email",
-          "attributedOrders": 54.0,
-          "attributedRevenueCzk": 79541.05,
+          "attributedOrders": 56.0,
+          "attributedRevenueCzk": 82346.05,
           "messageCount": 1,
           "messageNames": [
             "Dárek k narozeninám"
           ],
-          "recipients": 1229.0,
-          "opens": 1037.0,
-          "clicks": 158.0,
-          "openRate": 0.8438,
-          "clickRate": 0.1286,
-          "conversionRate": 0.0439
+          "recipients": 1270.0,
+          "opens": 1069.0,
+          "clicks": 164.0,
+          "openRate": 0.8417,
+          "clickRate": 0.1291,
+          "conversionRate": 0.0441
         },
         {
           "flowId": "SxBynF",
@@ -8060,18 +7636,18 @@
           "status": "live",
           "triggerType": "Metric",
           "channel": "email",
-          "attributedOrders": 28.0,
-          "attributedRevenueCzk": 63613.0,
+          "attributedOrders": 33.0,
+          "attributedRevenueCzk": 74187.3,
           "messageCount": 1,
           "messageNames": [
             "Potvrzení registrace na webinář"
           ],
-          "recipients": 1867.0,
-          "opens": 1835.0,
-          "clicks": 390.0,
-          "openRate": 0.9829,
-          "clickRate": 0.2089,
-          "conversionRate": 0.015
+          "recipients": 1872.0,
+          "opens": 1858.0,
+          "clicks": 395.0,
+          "openRate": 0.9925,
+          "clickRate": 0.211,
+          "conversionRate": 0.0176
         },
         {
           "flowId": "VqgfET",
@@ -8086,10 +7662,10 @@
             "Email #1"
           ],
           "recipients": 1559.0,
-          "opens": 625.0,
-          "clicks": 35.0,
-          "openRate": 0.4009,
-          "clickRate": 0.0225,
+          "opens": 628.0,
+          "clicks": 37.0,
+          "openRate": 0.4028,
+          "clickRate": 0.0237,
           "conversionRate": 0.0083
         },
         {
@@ -8125,12 +7701,12 @@
           "messageNames": [
             "Info o připravených dárcích"
           ],
-          "recipients": 160.0,
-          "opens": 110.0,
-          "clicks": 13.0,
-          "openRate": 0.6875,
-          "clickRate": 0.0813,
-          "conversionRate": 0.0875
+          "recipients": 168.0,
+          "opens": 112.0,
+          "clicks": 15.0,
+          "openRate": 0.6667,
+          "clickRate": 0.0893,
+          "conversionRate": 0.0833
         },
         {
           "flowId": "WpCtpF",
@@ -8148,12 +7724,12 @@
             "Email #5",
             "Email #6"
           ],
-          "recipients": 168.0,
-          "opens": 196.0,
+          "recipients": 171.0,
+          "opens": 201.0,
           "clicks": 78.0,
-          "openRate": 1.1667,
-          "clickRate": 0.4643,
-          "conversionRate": 0.006
+          "openRate": 1.1754,
+          "clickRate": 0.4561,
+          "conversionRate": 0.0058
         },
         {
           "flowId": "UTrftt",
@@ -8212,10 +7788,10 @@
             "EMAIL 4 - \"Dnes kupon propadne\""
           ],
           "recipients": 367.0,
-          "opens": 356.0,
-          "clicks": 28.0,
-          "openRate": 0.97,
-          "clickRate": 0.0763,
+          "opens": 359.0,
+          "clicks": 29.0,
+          "openRate": 0.9782,
+          "clickRate": 0.079,
           "conversionRate": 0.0027
         },
         {
@@ -8250,154 +7826,32 @@
             "Email #1"
           ],
           "recipients": 12.0,
-          "opens": 17.0,
+          "opens": 18.0,
           "clicks": 0.0,
-          "openRate": 1.4167,
+          "openRate": 1.5,
           "clickRate": 0.0,
           "conversionRate": 0.0833
         }
       ],
-      "flowsPreviousMonth": [
-        {
-          "flowId": "TZPMUW",
-          "flowName": "Kolo štěstí - připomenutí výhry",
-          "status": "live",
-          "triggerType": "Metric",
-          "channel": "email",
-          "attributedOrders": 931.0,
-          "attributedRevenueCzk": 1392282.6,
-          "messageCount": 4,
-          "messageNames": [
-            "Congratulations Email",
-            "EMAIL 2 \"Které produkty k dárkům letí nejvíc?\"",
-            "EMAIL 3 - \"Kupon vyprší za 2 dny\"",
-            "EMAIL 4 - \"Dnes kupon propadne\""
-          ],
-          "recipients": 64788.0,
-          "opens": 21743.0,
-          "clicks": 4143.0,
-          "openRate": 0.3356,
-          "clickRate": 0.0639,
-          "conversionRate": 0.0144
-        },
-        {
-          "flowId": "SXtWxm",
-          "flowName": "Opuštěný košík - Standard",
-          "status": "live",
-          "triggerType": "Metric",
-          "channel": "email",
-          "attributedOrders": 141.0,
-          "attributedRevenueCzk": 201413.75,
-          "messageCount": 4,
-          "messageNames": [
-            "Abandoned Cart: Email 1",
-            "Abandoned Cart: Email 2",
-            "Abandoned Cart: Email 3",
-            "Abandoned Cart: Email 4"
-          ],
-          "recipients": 12558.0,
-          "opens": 2931.0,
-          "clicks": 383.0,
-          "openRate": 0.2334,
-          "clickRate": 0.0305,
-          "conversionRate": 0.0112
-        },
-        {
-          "flowId": "WRvqYR",
-          "flowName": "Opuštěný produkt",
-          "status": "live",
-          "triggerType": "Metric",
-          "channel": "email",
-          "attributedOrders": 61.0,
-          "attributedRevenueCzk": 89616.5,
-          "messageCount": 3,
-          "messageNames": [
-            "Email #1 opuštěný produkt",
-            "Email #2",
-            "Email #3"
-          ],
-          "recipients": 16391.0,
-          "opens": 4622.0,
-          "clicks": 724.0,
-          "openRate": 0.282,
-          "clickRate": 0.0442,
-          "conversionRate": 0.0037
-        },
-        {
-          "flowId": "VTgVba",
-          "flowName": "Happy Birthday - Standard",
-          "status": "live",
-          "triggerType": "Date Based",
-          "channel": "email",
-          "attributedOrders": 32.0,
-          "attributedRevenueCzk": 55312.6,
-          "messageCount": 1,
-          "messageNames": [
-            "Dárek k narozeninám"
-          ],
-          "recipients": 1383.0,
-          "opens": 1101.0,
-          "clicks": 224.0,
-          "openRate": 0.7961,
-          "clickRate": 0.162,
-          "conversionRate": 0.0231
-        },
+      "topFlowsCurrentMonth": [
         {
           "flowId": "SxBynF",
           "flowName": "Webinář - potvrzení registrace",
           "status": "live",
           "triggerType": "Metric",
           "channel": "email",
-          "attributedOrders": 15.0,
-          "attributedRevenueCzk": 38284.9,
+          "attributedOrders": 1.0,
+          "attributedRevenueCzk": 3581.0,
           "messageCount": 1,
           "messageNames": [
             "Potvrzení registrace na webinář"
           ],
-          "recipients": 1508.0,
-          "opens": 1447.0,
-          "clicks": 364.0,
-          "openRate": 0.9595,
-          "clickRate": 0.2414,
-          "conversionRate": 0.0099
-        },
-        {
-          "flowId": "UTrftt",
-          "flowName": "Přihláška Sebeláska - potvrzení",
-          "status": "live",
-          "triggerType": "Metric",
-          "channel": "email",
-          "attributedOrders": 15.0,
-          "attributedRevenueCzk": 35190.0,
-          "messageCount": 1,
-          "messageNames": [
-            "Email #1"
-          ],
-          "recipients": 387.0,
-          "opens": 546.0,
-          "clicks": 115.0,
-          "openRate": 1.4109,
-          "clickRate": 0.2972,
-          "conversionRate": 0.0388
-        },
-        {
-          "flowId": "VqgfET",
-          "flowName": "Bonusové body - připsání",
-          "status": "live",
-          "triggerType": "Metric",
-          "channel": "email",
-          "attributedOrders": 20.0,
-          "attributedRevenueCzk": 28373.65,
-          "messageCount": 1,
-          "messageNames": [
-            "Email #1"
-          ],
-          "recipients": 1520.0,
-          "opens": 724.0,
-          "clicks": 56.0,
-          "openRate": 0.4763,
-          "clickRate": 0.0368,
-          "conversionRate": 0.0132
+          "recipients": 0.0,
+          "opens": 1.0,
+          "clicks": 18.0,
+          "openRate": null,
+          "clickRate": null,
+          "conversionRate": null
         },
         {
           "flowId": "SLW4ei",
@@ -8405,203 +7859,21 @@
           "status": "live",
           "triggerType": "Metric",
           "channel": "email",
-          "attributedOrders": 10.0,
-          "attributedRevenueCzk": 15253.65,
+          "attributedOrders": 1.0,
+          "attributedRevenueCzk": 1196.0,
           "messageCount": 1,
           "messageNames": [
             "Info o připravených dárcích"
           ],
-          "recipients": 172.0,
-          "opens": 84.0,
-          "clicks": 10.0,
-          "openRate": 0.4884,
-          "clickRate": 0.0581,
-          "conversionRate": 0.0581
-        },
-        {
-          "flowId": "RSepTC",
-          "flowName": "Kurz hubnutí online - uvítání",
-          "status": "live",
-          "triggerType": "Metric",
-          "channel": "email",
-          "attributedOrders": 8.0,
-          "attributedRevenueCzk": 6840.0,
-          "messageCount": 1,
-          "messageNames": [
-            "Email #1"
-          ],
-          "recipients": 21.0,
-          "opens": 52.0,
-          "clicks": 61.0,
-          "openRate": 2.4762,
-          "clickRate": 2.9048,
-          "conversionRate": 0.381
-        },
-        {
-          "flowId": "R5fKfn",
-          "flowName": "Přihláška - potvrzení , kurs tělo jako kompas",
-          "status": "live",
-          "triggerType": "Metric",
-          "channel": "email",
-          "attributedOrders": 2.0,
-          "attributedRevenueCzk": 3541.0,
-          "messageCount": 1,
-          "messageNames": [
-            "potvrzení přihlášy"
-          ],
-          "recipients": 49.0,
-          "opens": 120.0,
-          "clicks": 66.0,
-          "openRate": 2.449,
-          "clickRate": 1.3469,
-          "conversionRate": 0.0408
-        },
-        {
-          "flowId": "TFpngU",
-          "flowName": "Kvíz Detox",
-          "status": "live",
-          "triggerType": "Metric",
-          "channel": "email",
-          "attributedOrders": 2.0,
-          "attributedRevenueCzk": 2301.0,
-          "messageCount": 4,
-          "messageNames": [
-            "Email #1 - prevence",
-            "Email #1 - střední zátěž",
-            "vysoká zátěž",
-            "Email #4"
-          ],
-          "recipients": 20.0,
-          "opens": 16.0,
-          "clicks": 12.0,
-          "openRate": 0.8,
-          "clickRate": 0.6,
-          "conversionRate": 0.1
-        },
-        {
-          "flowId": "XXhjck",
-          "flowName": "Registrae Kurz hubnutí 2",
-          "status": "live",
-          "triggerType": "Metric",
-          "channel": "email",
-          "attributedOrders": 1.0,
-          "attributedRevenueCzk": 1556.0,
-          "messageCount": 1,
-          "messageNames": [
-            "Email #1"
-          ],
-          "recipients": 19.0,
-          "opens": 72.0,
-          "clicks": 88.0,
-          "openRate": 3.7895,
-          "clickRate": 4.6316,
-          "conversionRate": 0.0526
-        },
-        {
-          "flowId": "RsXZp7",
-          "flowName": "Affiliate - Password reset",
-          "status": "live",
-          "triggerType": "Metric",
-          "channel": "email",
-          "attributedOrders": 1.0,
-          "attributedRevenueCzk": 1216.0,
-          "messageCount": 1,
-          "messageNames": [
-            "Obnova hesla"
-          ],
-          "recipients": 4.0,
-          "opens": 3.0,
-          "clicks": 5.0,
-          "openRate": 0.75,
-          "clickRate": 1.25,
-          "conversionRate": 0.25
-        },
-        {
-          "flowId": "X4qgBq",
-          "flowName": "Affiliate - partner registered",
-          "status": "live",
-          "triggerType": "Metric",
-          "channel": "email",
-          "attributedOrders": 1.0,
-          "attributedRevenueCzk": 1057.0,
-          "messageCount": 10,
-          "messageNames": [
-            "Affiliate - vítejte",
-            "Email #2 A",
-            "Email #2 B",
-            "Email #2 C",
-            "Email 3 -  A, B, C"
-          ],
-          "recipients": 21.0,
-          "opens": 17.0,
-          "clicks": 11.0,
-          "openRate": 0.8095,
-          "clickRate": 0.5238,
-          "conversionRate": 0.0476
-        },
-        {
-          "flowId": "Ud3Jc5",
-          "flowName": "Kvíz Vlasy",
-          "status": "live",
-          "triggerType": "Metric",
-          "channel": "email",
-          "attributedOrders": 1.0,
-          "attributedRevenueCzk": 1037.0,
-          "messageCount": 6,
-          "messageNames": [
-            "Email #1 - suché",
-            "Email #1 - lupy",
-            "Email #3",
-            "Email #1 Zdravé",
-            "Email #5"
-          ],
-          "recipients": 28.0,
-          "opens": 19.0,
-          "clicks": 11.0,
-          "openRate": 0.6786,
-          "clickRate": 0.3929,
-          "conversionRate": 0.0357
-        },
-        {
-          "flowId": "SyDhmD",
-          "flowName": "Horoskop Valentýn",
-          "status": "live",
-          "triggerType": "Metric",
-          "channel": "email",
-          "attributedOrders": 1.0,
-          "attributedRevenueCzk": 747.0,
-          "messageCount": 1,
-          "messageNames": [
-            "Email #1"
-          ],
-          "recipients": 1.0,
+          "recipients": 10.0,
           "opens": 2.0,
           "clicks": 0.0,
-          "openRate": 2.0,
+          "openRate": 0.2,
           "clickRate": 0.0,
-          "conversionRate": 1.0
-        },
-        {
-          "flowId": "R7vYcG",
-          "flowName": "Registrace tianDe ID",
-          "status": "live",
-          "triggerType": "Metric",
-          "channel": "email",
-          "attributedOrders": 1.0,
-          "attributedRevenueCzk": 110.75,
-          "messageCount": 1,
-          "messageNames": [
-            "Email #1"
-          ],
-          "recipients": 4.0,
-          "opens": 14.0,
-          "clicks": 0.0,
-          "openRate": 3.5,
-          "clickRate": 0.0,
-          "conversionRate": 0.25
+          "conversionRate": 0.1
         }
       ],
-      "topFlowsCurrentMonth": [
+      "topFlowsPreviousMonth": [
         {
           "flowId": "SXtWxm",
           "flowName": "Opuštěný košík - Standard",
@@ -8618,9 +7890,9 @@
             "Abandoned Cart: Email 4"
           ],
           "recipients": 4604.0,
-          "opens": 1091.0,
+          "opens": 1092.0,
           "clicks": 127.0,
-          "openRate": 0.237,
+          "openRate": 0.2372,
           "clickRate": 0.0276,
           "conversionRate": 0.0159
         },
@@ -8630,18 +7902,18 @@
           "status": "live",
           "triggerType": "Date Based",
           "channel": "email",
-          "attributedOrders": 54.0,
-          "attributedRevenueCzk": 79541.05,
+          "attributedOrders": 56.0,
+          "attributedRevenueCzk": 82346.05,
           "messageCount": 1,
           "messageNames": [
             "Dárek k narozeninám"
           ],
-          "recipients": 1229.0,
-          "opens": 1037.0,
-          "clicks": 158.0,
-          "openRate": 0.8438,
-          "clickRate": 0.1286,
-          "conversionRate": 0.0439
+          "recipients": 1270.0,
+          "opens": 1069.0,
+          "clicks": 164.0,
+          "openRate": 0.8417,
+          "clickRate": 0.1291,
+          "conversionRate": 0.0441
         },
         {
           "flowId": "SxBynF",
@@ -8649,18 +7921,18 @@
           "status": "live",
           "triggerType": "Metric",
           "channel": "email",
-          "attributedOrders": 28.0,
-          "attributedRevenueCzk": 63613.0,
+          "attributedOrders": 33.0,
+          "attributedRevenueCzk": 74187.3,
           "messageCount": 1,
           "messageNames": [
             "Potvrzení registrace na webinář"
           ],
-          "recipients": 1867.0,
-          "opens": 1835.0,
-          "clicks": 390.0,
-          "openRate": 0.9829,
-          "clickRate": 0.2089,
-          "conversionRate": 0.015
+          "recipients": 1872.0,
+          "opens": 1858.0,
+          "clicks": 395.0,
+          "openRate": 0.9925,
+          "clickRate": 0.211,
+          "conversionRate": 0.0176
         },
         {
           "flowId": "VqgfET",
@@ -8675,10 +7947,10 @@
             "Email #1"
           ],
           "recipients": 1559.0,
-          "opens": 625.0,
-          "clicks": 35.0,
-          "openRate": 0.4009,
-          "clickRate": 0.0225,
+          "opens": 628.0,
+          "clicks": 37.0,
+          "openRate": 0.4028,
+          "clickRate": 0.0237,
           "conversionRate": 0.0083
         },
         {
@@ -8714,12 +7986,12 @@
           "messageNames": [
             "Info o připravených dárcích"
           ],
-          "recipients": 160.0,
-          "opens": 110.0,
-          "clicks": 13.0,
-          "openRate": 0.6875,
-          "clickRate": 0.0813,
-          "conversionRate": 0.0875
+          "recipients": 168.0,
+          "opens": 112.0,
+          "clicks": 15.0,
+          "openRate": 0.6667,
+          "clickRate": 0.0893,
+          "conversionRate": 0.0833
         },
         {
           "flowId": "WpCtpF",
@@ -8737,12 +8009,12 @@
             "Email #5",
             "Email #6"
           ],
-          "recipients": 168.0,
-          "opens": 196.0,
+          "recipients": 171.0,
+          "opens": 201.0,
           "clicks": 78.0,
-          "openRate": 1.1667,
-          "clickRate": 0.4643,
-          "conversionRate": 0.006
+          "openRate": 1.1754,
+          "clickRate": 0.4561,
+          "conversionRate": 0.0058
         },
         {
           "flowId": "UTrftt",
@@ -8801,214 +8073,70 @@
             "EMAIL 4 - \"Dnes kupon propadne\""
           ],
           "recipients": 367.0,
-          "opens": 356.0,
-          "clicks": 28.0,
-          "openRate": 0.97,
-          "clickRate": 0.0763,
+          "opens": 359.0,
+          "clicks": 29.0,
+          "openRate": 0.9782,
+          "clickRate": 0.079,
           "conversionRate": 0.0027
         }
       ],
-      "topFlowsPreviousMonth": [
+      "recentCampaigns": [
         {
-          "flowId": "TZPMUW",
-          "flowName": "Kolo štěstí - připomenutí výhry",
-          "status": "live",
-          "triggerType": "Metric",
+          "id": "01KWEA49KEG89W178EGKYEG2EE",
+          "name": "SK Doprava zdarma červenec - začíná",
           "channel": "email",
-          "attributedOrders": 931.0,
-          "attributedRevenueCzk": 1392282.6,
-          "messageCount": 4,
-          "messageNames": [
-            "Congratulations Email",
-            "EMAIL 2 \"Které produkty k dárkům letí nejvíc?\"",
-            "EMAIL 3 - \"Kupon vyprší za 2 dny\"",
-            "EMAIL 4 - \"Dnes kupon propadne\""
-          ],
-          "recipients": 64788.0,
-          "opens": 21743.0,
-          "clicks": 4143.0,
-          "openRate": 0.3356,
-          "clickRate": 0.0639,
-          "conversionRate": 0.0144
-        },
-        {
-          "flowId": "SXtWxm",
-          "flowName": "Opuštěný košík - Standard",
-          "status": "live",
-          "triggerType": "Metric",
-          "channel": "email",
-          "attributedOrders": 141.0,
-          "attributedRevenueCzk": 201413.75,
-          "messageCount": 4,
-          "messageNames": [
-            "Abandoned Cart: Email 1",
-            "Abandoned Cart: Email 2",
-            "Abandoned Cart: Email 3",
-            "Abandoned Cart: Email 4"
-          ],
-          "recipients": 12558.0,
-          "opens": 2931.0,
-          "clicks": 383.0,
-          "openRate": 0.2334,
-          "clickRate": 0.0305,
-          "conversionRate": 0.0112
-        },
-        {
-          "flowId": "WRvqYR",
-          "flowName": "Opuštěný produkt",
-          "status": "live",
-          "triggerType": "Metric",
-          "channel": "email",
-          "attributedOrders": 61.0,
-          "attributedRevenueCzk": 89616.5,
-          "messageCount": 3,
-          "messageNames": [
-            "Email #1 opuštěný produkt",
-            "Email #2",
-            "Email #3"
-          ],
-          "recipients": 16391.0,
-          "opens": 4622.0,
-          "clicks": 724.0,
-          "openRate": 0.282,
-          "clickRate": 0.0442,
-          "conversionRate": 0.0037
-        },
-        {
-          "flowId": "VTgVba",
-          "flowName": "Happy Birthday - Standard",
-          "status": "live",
-          "triggerType": "Date Based",
-          "channel": "email",
-          "attributedOrders": 32.0,
-          "attributedRevenueCzk": 55312.6,
-          "messageCount": 1,
-          "messageNames": [
-            "Dárek k narozeninám"
-          ],
-          "recipients": 1383.0,
-          "opens": 1101.0,
-          "clicks": 224.0,
-          "openRate": 0.7961,
-          "clickRate": 0.162,
-          "conversionRate": 0.0231
-        },
-        {
-          "flowId": "SxBynF",
-          "flowName": "Webinář - potvrzení registrace",
-          "status": "live",
-          "triggerType": "Metric",
-          "channel": "email",
-          "attributedOrders": 15.0,
-          "attributedRevenueCzk": 38284.9,
-          "messageCount": 1,
-          "messageNames": [
-            "Potvrzení registrace na webinář"
-          ],
-          "recipients": 1508.0,
-          "opens": 1447.0,
-          "clicks": 364.0,
-          "openRate": 0.9595,
-          "clickRate": 0.2414,
-          "conversionRate": 0.0099
-        },
-        {
-          "flowId": "UTrftt",
-          "flowName": "Přihláška Sebeláska - potvrzení",
-          "status": "live",
-          "triggerType": "Metric",
-          "channel": "email",
-          "attributedOrders": 15.0,
-          "attributedRevenueCzk": 35190.0,
-          "messageCount": 1,
-          "messageNames": [
-            "Email #1"
-          ],
-          "recipients": 387.0,
-          "opens": 546.0,
-          "clicks": 115.0,
-          "openRate": 1.4109,
-          "clickRate": 0.2972,
-          "conversionRate": 0.0388
-        },
-        {
-          "flowId": "VqgfET",
-          "flowName": "Bonusové body - připsání",
-          "status": "live",
-          "triggerType": "Metric",
-          "channel": "email",
-          "attributedOrders": 20.0,
-          "attributedRevenueCzk": 28373.65,
-          "messageCount": 1,
-          "messageNames": [
-            "Email #1"
-          ],
-          "recipients": 1520.0,
-          "opens": 724.0,
-          "clicks": 56.0,
-          "openRate": 0.4763,
-          "clickRate": 0.0368,
-          "conversionRate": 0.0132
-        },
-        {
-          "flowId": "SLW4ei",
-          "flowName": "tianDe - upozornění na dárky",
-          "status": "live",
-          "triggerType": "Metric",
-          "channel": "email",
-          "attributedOrders": 10.0,
-          "attributedRevenueCzk": 15253.65,
-          "messageCount": 1,
-          "messageNames": [
-            "Info o připravených dárcích"
-          ],
-          "recipients": 172.0,
-          "opens": 84.0,
-          "clicks": 10.0,
-          "openRate": 0.4884,
-          "clickRate": 0.0581,
-          "conversionRate": 0.0581
-        },
-        {
-          "flowId": "RSepTC",
-          "flowName": "Kurz hubnutí online - uvítání",
-          "status": "live",
-          "triggerType": "Metric",
-          "channel": "email",
-          "attributedOrders": 8.0,
-          "attributedRevenueCzk": 6840.0,
-          "messageCount": 1,
-          "messageNames": [
-            "Email #1"
-          ],
-          "recipients": 21.0,
-          "opens": 52.0,
-          "clicks": 61.0,
-          "openRate": 2.4762,
-          "clickRate": 2.9048,
-          "conversionRate": 0.381
-        },
-        {
-          "flowId": "R5fKfn",
-          "flowName": "Přihláška - potvrzení , kurs tělo jako kompas",
-          "status": "live",
-          "triggerType": "Metric",
-          "channel": "email",
-          "attributedOrders": 2.0,
-          "attributedRevenueCzk": 3541.0,
-          "messageCount": 1,
-          "messageNames": [
-            "potvrzení přihlášy"
-          ],
-          "recipients": 49.0,
-          "opens": 120.0,
-          "clicks": 66.0,
-          "openRate": 2.449,
-          "clickRate": 1.3469,
-          "conversionRate": 0.0408
+          "status": "Draft",
+          "createdAt": "2026-07-01T07:43:36.560983+00:00",
+          "updatedAt": "2026-07-01T07:43:48.598036+00:00",
+          "scheduledAt": null,
+          "sendDatetime": "2026-07-01T07:43:30+00:00",
+          "recipients": 0.0,
+          "opens": 0.0,
+          "clicks": 0.0,
+          "attributedOrders": 0.0,
+          "attributedRevenueCzk": 0.0,
+          "openRate": null,
+          "clickRate": null,
+          "conversionRate": null
         }
       ],
-      "recentCampaigns": [
+      "recentCampaignsPreviousMonth": [
+        {
+          "id": "01KWBQG1MMSVV0PP21MC8RTMQ3",
+          "name": "SK - Dvouměsíční akce - konec",
+          "channel": "email",
+          "status": "Sent",
+          "createdAt": "2026-06-30T07:39:29.816506+00:00",
+          "updatedAt": "2026-06-30T16:01:29.084510+00:00",
+          "scheduledAt": "2026-06-30T07:44:19.603526+00:00",
+          "sendDatetime": "2026-06-30T16:00:00+00:00",
+          "recipients": 2309.0,
+          "opens": 343.0,
+          "clicks": 10.0,
+          "attributedOrders": 5.0,
+          "attributedRevenueCzk": 395.15,
+          "openRate": 0.1485,
+          "clickRate": 0.0043,
+          "conversionRate": 0.0022
+        },
+        {
+          "id": "01KW1KF6VDYZW7JVF465KGVVSC",
+          "name": "CZ - Dvouměsíční akce - konec",
+          "channel": "email",
+          "status": "Sent",
+          "createdAt": "2026-06-26T09:16:43.761491+00:00",
+          "updatedAt": "2026-06-30T16:01:08.470186+00:00",
+          "scheduledAt": "2026-06-30T07:45:01.760503+00:00",
+          "sendDatetime": "2026-06-30T16:00:00+00:00",
+          "recipients": 21878.0,
+          "opens": 3758.0,
+          "clicks": 248.0,
+          "attributedOrders": 37.0,
+          "attributedRevenueCzk": 70469.9,
+          "openRate": 0.1718,
+          "clickRate": 0.0113,
+          "conversionRate": 0.0017
+        },
         {
           "id": "01KW1DBK9G6AJVTDAM0RXFNKA2",
           "name": "CZ - Dvouměsíční akce -Odpočítávání začalo",
@@ -9018,14 +8146,14 @@
           "updatedAt": "2026-06-29T17:43:53.461393+00:00",
           "scheduledAt": "2026-06-29T07:10:54.559984+00:00",
           "sendDatetime": "2026-06-29T17:43:00+00:00",
-          "recipients": 21915.0,
-          "opens": 3789.0,
-          "clicks": 256.0,
-          "attributedOrders": 25.0,
-          "attributedRevenueCzk": 48991.0,
-          "openRate": 0.1729,
-          "clickRate": 0.0117,
-          "conversionRate": 0.0011
+          "recipients": 21917.0,
+          "opens": 6383.0,
+          "clicks": 456.0,
+          "attributedOrders": 71.0,
+          "attributedRevenueCzk": 120517.0,
+          "openRate": 0.2912,
+          "clickRate": 0.0208,
+          "conversionRate": 0.0032
         },
         {
           "id": "01KW9202N9RST1WGB0APT0QNG7",
@@ -9037,31 +8165,13 @@
           "scheduledAt": "2026-06-29T07:09:21.835130+00:00",
           "sendDatetime": "2026-06-29T17:42:00+00:00",
           "recipients": 2315.0,
-          "opens": 371.0,
-          "clicks": 21.0,
-          "attributedOrders": 3.0,
-          "attributedRevenueCzk": 224.05,
-          "openRate": 0.1603,
-          "clickRate": 0.0091,
-          "conversionRate": 0.0013
-        },
-        {
-          "id": "01KWA72VN6CDF77702EQYXEHXQ",
-          "name": "test",
-          "channel": "email",
-          "status": "Draft",
-          "createdAt": "2026-06-29T17:33:26.058772+00:00",
-          "updatedAt": "2026-06-29T17:33:26.058792+00:00",
-          "scheduledAt": null,
-          "sendDatetime": "2026-06-29T17:43:00+00:00",
-          "recipients": 0.0,
-          "opens": 0.0,
-          "clicks": 0.0,
-          "attributedOrders": 0.0,
-          "attributedRevenueCzk": 0.0,
-          "openRate": null,
-          "clickRate": null,
-          "conversionRate": null
+          "opens": 639.0,
+          "clicks": 33.0,
+          "attributedOrders": 6.0,
+          "attributedRevenueCzk": 489.35,
+          "openRate": 0.276,
+          "clickRate": 0.0143,
+          "conversionRate": 0.0026
         },
         {
           "id": "01KW9EQPGKVZS91N7QDMMMC1FE",
@@ -9073,52 +8183,15 @@
           "scheduledAt": "2026-06-29T11:35:30.552171+00:00",
           "sendDatetime": "2026-06-29T17:30:00+00:00",
           "recipients": 232.0,
-          "opens": 138.0,
-          "clicks": 186.0,
-          "attributedOrders": 1.0,
-          "attributedRevenueCzk": 1809.0,
-          "openRate": 0.5948,
-          "clickRate": 0.8017,
-          "conversionRate": 0.0043
-        },
-        {
-          "id": "01KW19FCPPZDC84XHSRTJJDY0V",
-          "name": "CZ - Dvouměsíční akce Teď nebo nikdy",
-          "channel": "email",
-          "status": "Sent",
-          "createdAt": "2026-06-26T06:22:03.993112+00:00",
-          "updatedAt": "2026-06-29T08:00:48.412863+00:00",
-          "scheduledAt": "2026-06-28T08:20:26.213982+00:00",
-          "sendDatetime": "2026-06-26T00:00:00+00:00",
-          "recipients": 21990.0,
-          "opens": 6405.0,
-          "clicks": 406.0,
-          "attributedOrders": 31.0,
-          "attributedRevenueCzk": 40228.95,
-          "openRate": 0.2913,
-          "clickRate": 0.0185,
-          "conversionRate": 0.0014
-        },
-        {
-          "id": "01KW6M1YZRSK6YYEABRYZNJ88N",
-          "name": "SK - Dvouměsíční akce Teď nebo nikdy",
-          "channel": "email",
-          "status": "Sent",
-          "createdAt": "2026-06-28T08:03:10.460610+00:00",
-          "updatedAt": "2026-06-28T17:38:47.968464+00:00",
-          "scheduledAt": "2026-06-28T08:14:26.990498+00:00",
-          "sendDatetime": "2026-06-28T17:38:00+00:00",
-          "recipients": 2320.0,
-          "opens": 625.0,
-          "clicks": 48.0,
-          "attributedOrders": 5.0,
-          "attributedRevenueCzk": 389.1,
-          "openRate": 0.2694,
-          "clickRate": 0.0207,
-          "conversionRate": 0.0022
+          "opens": 180.0,
+          "clicks": 202.0,
+          "attributedOrders": 9.0,
+          "attributedRevenueCzk": 17325.0,
+          "openRate": 0.7759,
+          "clickRate": 0.8707,
+          "conversionRate": 0.0388
         }
-      ],
-      "recentCampaignsPreviousMonth": []
+      ]
     },
     "affiliate": {
       "ready": true,
@@ -9130,23 +8203,23 @@
         "label": "2025-10-01 až 2026-07-01"
       },
       "summary": {
-        "noviceRevenueCzkEquiv": 13717159.0,
-        "networkRevenueCzkEquiv": 19665455.0,
+        "noviceRevenueCzkEquiv": 13738451.0,
+        "networkRevenueCzkEquiv": 19695605.0,
         "novicePartners": 50,
         "networkPartners": 50,
-        "noviceOrders": 8282.0,
-        "networkOrders": 12075.0,
+        "noviceOrders": 8296.0,
+        "networkOrders": 12094.0,
         "noviceOrderingContacts": 1631.0,
-        "networkOrderingCustomers": 3714.0,
+        "networkOrderingCustomers": 3716.0,
         "topNovicePartner": {
           "partnerCode": "ESHOP",
           "partnerName": "E-shop (interní)",
-          "revenueCzkEquiv": 4291527.0
+          "revenueCzkEquiv": 4298551.0
         },
         "topNetworkPartner": {
           "partnerCode": "ESHOP",
           "partnerName": "E-shop (interní)",
-          "revenueCzkEquiv": 4291527.0
+          "revenueCzkEquiv": 4298551.0
         }
       },
       "reports": {
@@ -9159,8 +8232,8 @@
           "totals": {
             "contacts": 4551.0,
             "orderingContacts": 1631.0,
-            "orders": 8282.0,
-            "revenueCzkEquiv": 13717159.0
+            "orders": 8296.0,
+            "revenueCzkEquiv": 13738451.0
           },
           "monthly": [
             {
@@ -9262,6 +8335,16 @@
               "orderingCustomers": 0.0,
               "orders": 1337.0,
               "revenueCzkEquiv": 2200851.0
+            },
+            {
+              "key": "cervenec_2026",
+              "label": "Cervenec 2026",
+              "contacts": 0.0,
+              "orderingContacts": 0.0,
+              "networkCustomers": 0.0,
+              "orderingCustomers": 0.0,
+              "orders": 14.0,
+              "revenueCzkEquiv": 21292.0
             }
           ],
           "topPartners": [
@@ -9270,32 +8353,32 @@
               "partnerName": "E-shop (interní)",
               "contacts": 903.0,
               "orderingContacts": 903.0,
-              "orders": 2536.0,
-              "revenueCzkEquiv": 4291527.0
+              "orders": 2540.0,
+              "revenueCzkEquiv": 4298551.0
             },
             {
               "partnerCode": "g73ps2",
               "partnerName": "Jiřina Radová",
               "contacts": 609.0,
               "orderingContacts": 49.0,
-              "orders": 635.0,
-              "revenueCzkEquiv": 1236783.0
+              "orders": 637.0,
+              "revenueCzkEquiv": 1237016.0
             },
             {
               "partnerCode": "ihcwc1",
               "partnerName": "Natalie Szmeková",
               "contacts": 456.0,
               "orderingContacts": 95.0,
-              "orders": 562.0,
-              "revenueCzkEquiv": 949583.0
+              "orders": 563.0,
+              "revenueCzkEquiv": 951168.0
             },
             {
               "partnerCode": "oj1slw",
               "partnerName": "Eva Štěpová",
               "contacts": 99.0,
               "orderingContacts": 19.0,
-              "orders": 246.0,
-              "revenueCzkEquiv": 466052.0
+              "orders": 247.0,
+              "revenueCzkEquiv": 466959.0
             },
             {
               "partnerCode": "3xkqnt",
@@ -9350,16 +8433,16 @@
               "partnerName": "Petra Darebniková",
               "contacts": 155.0,
               "orderingContacts": 24.0,
-              "orders": 177.0,
-              "revenueCzkEquiv": 321675.0
+              "orders": 178.0,
+              "revenueCzkEquiv": 323209.0
             },
             {
               "partnerCode": "yoj4id",
               "partnerName": "Ivana Rajsiglová",
               "contacts": 31.0,
               "orderingContacts": 13.0,
-              "orders": 188.0,
-              "revenueCzkEquiv": 303305.0
+              "orders": 189.0,
+              "revenueCzkEquiv": 305938.0
             },
             {
               "partnerCode": "gf58gk",
@@ -9382,8 +8465,8 @@
               "partnerName": "Helena Mášlová",
               "contacts": 61.0,
               "orderingContacts": 25.0,
-              "orders": 129.0,
-              "revenueCzkEquiv": 192285.0
+              "orders": 130.0,
+              "revenueCzkEquiv": 193481.0
             },
             {
               "partnerCode": "c8rrdv",
@@ -9414,8 +8497,8 @@
               "partnerName": "Michaela Vokálová",
               "contacts": 54.0,
               "orderingContacts": 9.0,
-              "orders": 96.0,
-              "revenueCzkEquiv": 151447.0
+              "orders": 97.0,
+              "revenueCzkEquiv": 153905.0
             },
             {
               "partnerCode": "zoeqy6",
@@ -9434,10 +8517,10 @@
           "error": null,
           "partners": 50,
           "totals": {
-            "networkCustomers": 11261.0,
-            "orderingCustomers": 3714.0,
-            "orders": 12075.0,
-            "revenueCzkEquiv": 19665455.0
+            "networkCustomers": 11280.0,
+            "orderingCustomers": 3716.0,
+            "orders": 12094.0,
+            "revenueCzkEquiv": 19695605.0
           },
           "monthly": [
             {
@@ -9547,8 +8630,8 @@
               "orderingContacts": 0.0,
               "networkCustomers": 0.0,
               "orderingCustomers": 0.0,
-              "orders": 2.0,
-              "revenueCzkEquiv": 2276.0
+              "orders": 21.0,
+              "revenueCzkEquiv": 32426.0
             }
           ],
           "topPartners": [
@@ -9556,19 +8639,19 @@
               "partnerCode": "ESHOP",
               "partnerName": "E-shop (interní)",
               "partnerTiandeId": null,
-              "networkCustomers": 2435.0,
+              "networkCustomers": 2439.0,
               "orderingCustomers": 903.0,
-              "orders": 2536.0,
-              "revenueCzkEquiv": 4291527.0
+              "orders": 2540.0,
+              "revenueCzkEquiv": 4298551.0
             },
             {
               "partnerCode": "g73ps2",
               "partnerName": "Jiřina Radová",
               "partnerTiandeId": null,
-              "networkCustomers": 580.0,
-              "orderingCustomers": 204.0,
-              "orders": 635.0,
-              "revenueCzkEquiv": 1236783.0
+              "networkCustomers": 582.0,
+              "orderingCustomers": 205.0,
+              "orders": 637.0,
+              "revenueCzkEquiv": 1237016.0
             },
             {
               "partnerCode": "ffhdir",
@@ -9592,46 +8675,46 @@
               "partnerCode": "b0to1x",
               "partnerName": "Renata",
               "partnerTiandeId": null,
-              "networkCustomers": 559.0,
+              "networkCustomers": 561.0,
               "orderingCustomers": 92.0,
-              "orders": 573.0,
-              "revenueCzkEquiv": 996640.0
+              "orders": 575.0,
+              "revenueCzkEquiv": 998465.0
             },
             {
               "partnerCode": "ihcwc1",
               "partnerName": "Natalie Szmeková",
               "partnerTiandeId": null,
-              "networkCustomers": 509.0,
+              "networkCustomers": 510.0,
               "orderingCustomers": 154.0,
-              "orders": 562.0,
-              "revenueCzkEquiv": 949583.0
+              "orders": 563.0,
+              "revenueCzkEquiv": 951168.0
             },
             {
               "partnerCode": "mjd0x9",
               "partnerName": "Jana Bařinková",
               "partnerTiandeId": null,
-              "networkCustomers": 344.0,
+              "networkCustomers": 345.0,
               "orderingCustomers": 102.0,
-              "orders": 353.0,
-              "revenueCzkEquiv": 588729.0
+              "orders": 354.0,
+              "revenueCzkEquiv": 593652.0
             },
             {
               "partnerCode": "r88ri8",
               "partnerName": "Andrea Svitáková",
               "partnerTiandeId": null,
-              "networkCustomers": 274.0,
+              "networkCustomers": 275.0,
               "orderingCustomers": 86.0,
-              "orders": 290.0,
-              "revenueCzkEquiv": 553926.0
+              "orders": 291.0,
+              "revenueCzkEquiv": 557507.0
             },
             {
               "partnerCode": "oj1slw",
               "partnerName": "Eva Štěpová",
               "partnerTiandeId": null,
-              "networkCustomers": 240.0,
+              "networkCustomers": 241.0,
               "orderingCustomers": 63.0,
-              "orders": 246.0,
-              "revenueCzkEquiv": 466052.0
+              "orders": 247.0,
+              "revenueCzkEquiv": 466959.0
             },
             {
               "partnerCode": "3xkqnt",
@@ -9691,10 +8774,10 @@
               "partnerCode": "7kevst",
               "partnerName": "Marie Krupková",
               "partnerTiandeId": null,
-              "networkCustomers": 194.0,
+              "networkCustomers": 195.0,
               "orderingCustomers": 58.0,
-              "orders": 208.0,
-              "revenueCzkEquiv": 343852.0
+              "orders": 209.0,
+              "revenueCzkEquiv": 344954.0
             },
             {
               "partnerCode": "xd9b8y",
@@ -9718,10 +8801,10 @@
               "partnerCode": "zfh4az",
               "partnerName": "Petra Darebniková",
               "partnerTiandeId": null,
-              "networkCustomers": 170.0,
+              "networkCustomers": 171.0,
               "orderingCustomers": 44.0,
-              "orders": 177.0,
-              "revenueCzkEquiv": 321675.0
+              "orders": 178.0,
+              "revenueCzkEquiv": 323209.0
             },
             {
               "partnerCode": "v4c4j4",
@@ -9738,21 +8821,21 @@
     }
   },
   "ownedRetention": {
-    "dateFrom": "2026-05-01",
-    "dateTo": "2026-05-31",
-    "emailAttributedRevenueCzk": 4881589.35,
+    "dateFrom": "2026-06-01",
+    "dateTo": "2026-06-30",
+    "emailAttributedRevenueCzk": 3858229.2,
     "smsAttributedRevenueCzk": 0.0,
-    "emailAttributedOrders": 3291.0,
+    "emailAttributedOrders": 2594.0,
     "smsAttributedOrders": 0.0,
-    "emailRecipients": 904332.0,
+    "emailRecipients": 931308.0,
     "smsRecipients": 0.0,
-    "emailClicks": 37175.0,
+    "emailClicks": 20895.0,
     "smsClicks": 0.0,
-    "totalAttributedRevenueCzk": 4881589.35,
-    "totalAttributedOrders": 3291.0,
-    "totalRecipients": 904332.0,
-    "totalClicks": 37175.0,
-    "clickRate": 0.0411
+    "totalAttributedRevenueCzk": 3858229.2,
+    "totalAttributedOrders": 2594.0,
+    "totalRecipients": 931308.0,
+    "totalClicks": 20895.0,
+    "clickRate": 0.0224
   },
   "topCampaigns": [
     {
