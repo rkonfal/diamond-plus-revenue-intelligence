@@ -34,49 +34,41 @@
     "clicked_email": {
       "id": "Xf6T8r",
       "name": "Clicked Email"
-    },
-    "received_sms": {
-      "id": "SWAP9s",
-      "name": "Received SMS"
-    },
-    "clicked_sms": {
-      "id": "UK2GDV",
-      "name": "Clicked SMS"
     }
   },
   "currentMonth": {
     "dateFrom": "2026-07-01",
     "dateTo": "2026-07-01",
-    "emailAttributedRevenueCzk": 23680.4,
+    "emailAttributedRevenueCzk": 106459.45,
     "smsAttributedRevenueCzk": 0.0,
-    "emailAttributedOrders": 19.0,
+    "emailAttributedOrders": 89.0,
     "smsAttributedOrders": 0.0,
-    "emailRecipients": 75.0,
+    "emailRecipients": 24285.0,
     "smsRecipients": 0.0,
-    "emailClicks": 94.0,
+    "emailClicks": 594.0,
     "smsClicks": 0.0,
-    "totalAttributedRevenueCzk": 23680.4,
-    "totalAttributedOrders": 19.0,
-    "totalRecipients": 75.0,
-    "totalClicks": 94.0,
-    "clickRate": 1.2533
+    "totalAttributedRevenueCzk": 106459.45,
+    "totalAttributedOrders": 89.0,
+    "totalRecipients": 24285.0,
+    "totalClicks": 594.0,
+    "clickRate": 0.0245
   },
   "dailySummary": [
     {
       "date": "2026-07-01",
-      "emailAttributedRevenueCzk": 23680.4,
+      "emailAttributedRevenueCzk": 106459.45,
       "smsAttributedRevenueCzk": 0.0,
-      "totalAttributedRevenueCzk": 23680.4,
-      "emailAttributedOrders": 19.0,
+      "totalAttributedRevenueCzk": 106459.45,
+      "emailAttributedOrders": 89.0,
       "smsAttributedOrders": 0.0,
-      "totalAttributedOrders": 19.0,
-      "emailRecipients": 75.0,
+      "totalAttributedOrders": 89.0,
+      "emailRecipients": 24285.0,
       "smsRecipients": 0.0,
-      "totalRecipients": 75.0,
-      "emailClicks": 94.0,
+      "totalRecipients": 24285.0,
+      "emailClicks": 594.0,
       "smsClicks": 0.0,
-      "totalClicks": 94.0,
-      "clickRate": 1.2533
+      "totalClicks": 594.0,
+      "clickRate": 0.0245
     },
     {
       "date": "2026-07-02",
@@ -97,6 +89,25 @@
   ],
   "flowsCurrentMonth": [
     {
+      "flowId": "VTgVba",
+      "flowName": "Happy Birthday - Standard",
+      "status": "live",
+      "triggerType": "Date Based",
+      "channel": "email",
+      "attributedOrders": 3.0,
+      "attributedRevenueCzk": 3672.0,
+      "messageCount": 1,
+      "messageNames": [
+        "Dárek k narozeninám"
+      ],
+      "recipients": 52.0,
+      "opens": 46.0,
+      "clicks": 6.0,
+      "openRate": 0.8846,
+      "clickRate": 0.1154,
+      "conversionRate": 0.0577
+    },
+    {
       "flowId": "SxBynF",
       "flowName": "Webinář - potvrzení registrace",
       "status": "live",
@@ -108,12 +119,12 @@
       "messageNames": [
         "Potvrzení registrace na webinář"
       ],
-      "recipients": 0.0,
-      "opens": 1.0,
-      "clicks": 18.0,
-      "openRate": null,
-      "clickRate": null,
-      "conversionRate": null
+      "recipients": 5.0,
+      "opens": 19.0,
+      "clicks": 26.0,
+      "openRate": 3.8,
+      "clickRate": 5.2,
+      "conversionRate": 0.2
     },
     {
       "flowId": "SLW4ei",
@@ -128,15 +139,34 @@
         "Info o připravených dárcích"
       ],
       "recipients": 10.0,
-      "opens": 2.0,
-      "clicks": 0.0,
-      "openRate": 0.2,
-      "clickRate": 0.0,
+      "opens": 7.0,
+      "clicks": 3.0,
+      "openRate": 0.7,
+      "clickRate": 0.3,
       "conversionRate": 0.1
     }
   ],
   "topFlowsCurrentMonth": [
     {
+      "flowId": "VTgVba",
+      "flowName": "Happy Birthday - Standard",
+      "status": "live",
+      "triggerType": "Date Based",
+      "channel": "email",
+      "attributedOrders": 3.0,
+      "attributedRevenueCzk": 3672.0,
+      "messageCount": 1,
+      "messageNames": [
+        "Dárek k narozeninám"
+      ],
+      "recipients": 52.0,
+      "opens": 46.0,
+      "clicks": 6.0,
+      "openRate": 0.8846,
+      "clickRate": 0.1154,
+      "conversionRate": 0.0577
+    },
+    {
       "flowId": "SxBynF",
       "flowName": "Webinář - potvrzení registrace",
       "status": "live",
@@ -148,12 +178,12 @@
       "messageNames": [
         "Potvrzení registrace na webinář"
       ],
-      "recipients": 0.0,
-      "opens": 1.0,
-      "clicks": 18.0,
-      "openRate": null,
-      "clickRate": null,
-      "conversionRate": null
+      "recipients": 5.0,
+      "opens": 19.0,
+      "clicks": 26.0,
+      "openRate": 3.8,
+      "clickRate": 5.2,
+      "conversionRate": 0.2
     },
     {
       "flowId": "SLW4ei",
@@ -168,23 +198,59 @@
         "Info o připravených dárcích"
       ],
       "recipients": 10.0,
-      "opens": 2.0,
-      "clicks": 0.0,
-      "openRate": 0.2,
-      "clickRate": 0.0,
+      "opens": 7.0,
+      "clicks": 3.0,
+      "openRate": 0.7,
+      "clickRate": 0.3,
       "conversionRate": 0.1
     }
   ],
   "recentCampaigns": [
     {
+      "id": "01KW1T7QR8Z9BPM011PT6J666J",
+      "name": "CZ Doprava zdarma červenec - začíná",
+      "channel": "email",
+      "status": "Sent",
+      "createdAt": "2026-06-26T11:14:58.954563+00:00",
+      "updatedAt": "2026-07-01T16:49:46.731024+00:00",
+      "scheduledAt": "2026-07-01T10:33:23.475602+00:00",
+      "sendDatetime": "2026-07-01T16:49:00+00:00",
+      "recipients": 21880.0,
+      "opens": 3824.0,
+      "clicks": 348.0,
+      "attributedOrders": 10.0,
+      "attributedRevenueCzk": 14473.0,
+      "openRate": 0.1748,
+      "clickRate": 0.0159,
+      "conversionRate": 0.0005
+    },
+    {
       "id": "01KWEA49KEG89W178EGKYEG2EE",
       "name": "SK Doprava zdarma červenec - začíná",
       "channel": "email",
-      "status": "Draft",
+      "status": "Sent",
       "createdAt": "2026-07-01T07:43:36.560983+00:00",
-      "updatedAt": "2026-07-01T07:43:48.598036+00:00",
+      "updatedAt": "2026-07-01T16:48:47.114936+00:00",
+      "scheduledAt": "2026-07-01T10:31:38.284641+00:00",
+      "sendDatetime": "2026-07-01T16:48:00+00:00",
+      "recipients": 2306.0,
+      "opens": 382.0,
+      "clicks": 19.0,
+      "attributedOrders": 1.0,
+      "attributedRevenueCzk": 96.85,
+      "openRate": 0.1657,
+      "clickRate": 0.0082,
+      "conversionRate": 0.0004
+    },
+    {
+      "id": "01KWESZ5WGHG0ZWM8E964195FF",
+      "name": "CZ - Kosmetická taštička s produkty.",
+      "channel": "email",
+      "status": "Draft",
+      "createdAt": "2026-07-01T12:20:26.132706+00:00",
+      "updatedAt": "2026-07-01T12:20:26.132729+00:00",
       "scheduledAt": null,
-      "sendDatetime": "2026-07-01T07:43:30+00:00",
+      "sendDatetime": "2026-07-01T12:20:07+00:00",
       "recipients": 0.0,
       "opens": 0.0,
       "clicks": 0.0,
@@ -1216,42 +1282,6 @@
       "openRate": 0.2912,
       "clickRate": 0.0208,
       "conversionRate": 0.0032
-    },
-    {
-      "id": "01KW9202N9RST1WGB0APT0QNG7",
-      "name": "SK - Dvouměsíční akce -Odpočítávání začalo",
-      "channel": "email",
-      "status": "Sent",
-      "createdAt": "2026-06-29T06:45:17.612922+00:00",
-      "updatedAt": "2026-06-29T17:42:58.925413+00:00",
-      "scheduledAt": "2026-06-29T07:09:21.835130+00:00",
-      "sendDatetime": "2026-06-29T17:42:00+00:00",
-      "recipients": 2315.0,
-      "opens": 639.0,
-      "clicks": 33.0,
-      "attributedOrders": 6.0,
-      "attributedRevenueCzk": 489.35,
-      "openRate": 0.276,
-      "clickRate": 0.0143,
-      "conversionRate": 0.0026
-    },
-    {
-      "id": "01KW9EQPGKVZS91N7QDMMMC1FE",
-      "name": "Webinář - Od vlasů po úklid: Co si koupit, abyste maximálně ušetřili 29.6. odkaz",
-      "channel": "email",
-      "status": "Sent",
-      "createdAt": "2026-06-29T10:27:54.519930+00:00",
-      "updatedAt": "2026-06-29T17:30:48.169255+00:00",
-      "scheduledAt": "2026-06-29T11:35:30.552171+00:00",
-      "sendDatetime": "2026-06-29T17:30:00+00:00",
-      "recipients": 232.0,
-      "opens": 180.0,
-      "clicks": 202.0,
-      "attributedOrders": 9.0,
-      "attributedRevenueCzk": 17325.0,
-      "openRate": 0.7759,
-      "clickRate": 0.8707,
-      "conversionRate": 0.0388
     }
   ]
 }
