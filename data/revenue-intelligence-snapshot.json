@@ -26,7 +26,7 @@
       "label": "Finance po marketingu, poslední plný měsíc"
     },
     "netCashPosition": {
-      "value": 7696644.08,
+      "value": 7733184.08,
       "label": "Aktuální čistá hotovostní pozice"
     },
     "measurementConfidence": {
@@ -76,29 +76,29 @@
     },
     "financeCurrentMonth": {
       "label": "7/2026",
-      "revenue": 9165.64,
-      "cogsAndFees": 21577.91,
+      "revenue": 37544.72,
+      "cogsAndFees": 38608.78,
       "logistics": 0.0,
       "marketing": 0.0,
       "opex": 18846.0,
       "depreciation": 401319.0,
       "other": -3551.16,
-      "grossMargin": -12412.27,
-      "afterLogistics": -12412.27,
-      "afterMarketing": -12412.27,
-      "operatingMargin": -31258.27,
-      "ebit": -432577.27,
-      "profit": -436128.43,
-      "grossMarginPct": -135.4,
+      "grossMargin": -1064.06,
+      "afterLogistics": -1064.06,
+      "afterMarketing": -1064.06,
+      "operatingMargin": -19910.06,
+      "ebit": -421229.06,
+      "profit": -424780.22,
+      "grossMarginPct": -2.8,
       "marketingPct": 0.0,
       "logisticsPct": 0.0,
-      "operatingMarginPct": -341.0,
-      "profitPct": -4758.3
+      "operatingMarginPct": -53.0,
+      "profitPct": -1131.4
     },
     "cash": {
-      "cashOnAccounts": 8231081.17,
+      "cashOnAccounts": 8267621.17,
       "unpaidInvoices": 534437.09,
-      "netCashPosition": 7696644.08,
+      "netCashPosition": 7733184.08,
       "overdueInvoicesCount": 4,
       "overdueInvoicesAmount": 88967.2,
       "largestPayables": [
@@ -193,18 +193,18 @@
             "includedBalance": 1337686.23
           },
           {
+            "accountCode": "221001",
+            "accountLabel": "221001: 2901338673/2010 FIO CZK",
+            "currency": "CZK: Česká koruna",
+            "balance": 1028948.51,
+            "includedBalance": 1028948.51
+          },
+          {
             "accountCode": "221004",
             "accountLabel": "221004: 2601338698/2010 FIO CZK výplaty",
             "currency": "CZK: Česká koruna",
             "balance": 1000000.0,
             "includedBalance": 1000000.0
-          },
-          {
-            "accountCode": "221001",
-            "accountLabel": "221001: 2901338673/2010 FIO CZK",
-            "currency": "CZK: Česká koruna",
-            "balance": 992408.51,
-            "includedBalance": 992408.51
           },
           {
             "accountCode": "221002",
@@ -344,14 +344,14 @@
     },
     "eshopYtdTotals": {
       "previous": {
-        "count": 73987,
-        "revenueWithVat": 113460865.37,
-        "averageOrderValue": 1533.52
+        "count": 74017,
+        "revenueWithVat": 113503206.58,
+        "averageOrderValue": 1533.47
       },
       "current": {
-        "count": 62581,
-        "revenueWithVat": 104169070.2,
-        "averageOrderValue": 1664.55
+        "count": 62599,
+        "revenueWithVat": 104201598.2,
+        "averageOrderValue": 1664.59
       }
     },
     "previousDayOrders": {
@@ -9741,11 +9741,11 @@
         },
         "summary": {
           "noviceRevenueCzkEquiv": 13717159.0,
-          "networkRevenueCzkEquiv": 19663755.0,
+          "networkRevenueCzkEquiv": 19665455.0,
           "novicePartners": 50,
           "networkPartners": 50,
           "noviceOrders": 8282.0,
-          "networkOrders": 12074.0,
+          "networkOrders": 12075.0,
           "noviceOrderingContacts": 1631.0,
           "networkOrderingCustomers": 3714.0,
           "topNovicePartner": {
@@ -10044,10 +10044,10 @@
             "error": null,
             "partners": 50,
             "totals": {
-              "networkCustomers": 11260.0,
+              "networkCustomers": 11261.0,
               "orderingCustomers": 3714.0,
-              "orders": 12074.0,
-              "revenueCzkEquiv": 19663755.0
+              "orders": 12075.0,
+              "revenueCzkEquiv": 19665455.0
             },
             "monthly": [
               {
@@ -10157,8 +10157,8 @@
                 "orderingContacts": 0.0,
                 "networkCustomers": 0.0,
                 "orderingCustomers": 0.0,
-                "orders": 1.0,
-                "revenueCzkEquiv": 576.0
+                "orders": 2.0,
+                "revenueCzkEquiv": 2276.0
               }
             ],
             "topPartners": [
@@ -10184,10 +10184,10 @@
                 "partnerCode": "ffhdir",
                 "partnerName": "Michaela Krásová",
                 "partnerTiandeId": null,
-                "networkCustomers": 572.0,
+                "networkCustomers": 573.0,
                 "orderingCustomers": 155.0,
-                "orders": 601.0,
-                "revenueCzkEquiv": 1137346.0
+                "orders": 602.0,
+                "revenueCzkEquiv": 1139046.0
               },
               {
                 "partnerCode": "5uzst8",
@@ -27500,10 +27500,10 @@
         },
         "dateCreated": "2026-06-30T21:44:04+02:00",
         "cancelled": false,
-        "isPaid": false,
+        "isPaid": true,
         "status": {
-          "id": 0,
-          "name": "nová"
+          "id": 1,
+          "name": "přijatá"
         },
         "totalPrice": {
           "withVat": 68.3,
@@ -27543,6 +27543,22 @@
           {
             "adminId": null,
             "comment": "[FlexiBee] Objednávka byla nahrána do FlexiBee; ID: 683500"
+          },
+          {
+            "adminId": null,
+            "comment": "[4PX] Objednávka byla vytvořena; ID: OC149400622607010015 tracking: 601114997658 účet: SK"
+          },
+          {
+            "adminId": null,
+            "comment": null
+          },
+          {
+            "adminId": null,
+            "comment": "[FlexiBee] Objednávka byla ve FlexiBee zaktualizována"
+          },
+          {
+            "adminId": null,
+            "comment": "[Flexi] Objednávka byla realizována ve Flexi;"
           }
         ],
         "deliveryType": {
@@ -91751,10 +91767,10 @@
         },
         "dateCreated": "2026-06-30T07:24:54+02:00",
         "cancelled": false,
-        "isPaid": false,
+        "isPaid": true,
         "status": {
-          "id": 0,
-          "name": "nová"
+          "id": 1,
+          "name": "přijatá"
         },
         "totalPrice": {
           "withVat": 4162,
@@ -91802,6 +91818,30 @@
           {
             "adminId": null,
             "comment": "Autopilot: odeslána uživatelská zpráva: Upomínka nezaplacené - okamžité platby"
+          },
+          {
+            "adminId": null,
+            "comment": "Objednávka byla zaplacena."
+          },
+          {
+            "adminId": null,
+            "comment": "<p>Dobré zprávy: Úhrada vaší objednávky 261294536 právě dorazila. Než dočtete tento e-mail, pustíme se do práce na expedici vaší objednávky tak, aby vám dorazila co nejdříve.</p><p>Těšíte se? 😍</p><div></div>"
+          },
+          {
+            "adminId": null,
+            "comment": "[4PX] Objednávka byla vytvořena; ID: OC149400632607010198 tracking: 601114995557 účet: CZ"
+          },
+          {
+            "adminId": null,
+            "comment": null
+          },
+          {
+            "adminId": null,
+            "comment": "[FlexiBee] Objednávka byla ve FlexiBee zaktualizována"
+          },
+          {
+            "adminId": null,
+            "comment": "[Flexi] Objednávka byla realizována ve Flexi;"
           }
         ],
         "deliveryType": {
@@ -94338,10 +94378,10 @@
         },
         "dateCreated": "2026-06-30T06:25:30+02:00",
         "cancelled": false,
-        "isPaid": false,
+        "isPaid": true,
         "status": {
-          "id": 0,
-          "name": "nová"
+          "id": 1,
+          "name": "přijatá"
         },
         "totalPrice": {
           "withVat": 2708,
@@ -94381,6 +94421,30 @@
           {
             "adminId": null,
             "comment": "[FlexiBee] Objednávka byla nahrána do FlexiBee; ID: 683133"
+          },
+          {
+            "adminId": null,
+            "comment": "Modul FioBank - příchozí platba č. 27714397889. Komentář plátce: Převor Jaroslav."
+          },
+          {
+            "adminId": null,
+            "comment": "<p>Dobré zprávy: Úhrada vaší objednávky 261294523 právě dorazila. Než dočtete tento e-mail, pustíme se do práce na expedici vaší objednávky tak, aby vám dorazila co nejdříve.</p><p>Těšíte se? 😍</p><div></div>"
+          },
+          {
+            "adminId": null,
+            "comment": "[4PX] Objednávka byla vytvořena; ID: OC149400632607010199 tracking: 601114995643 účet: CZ"
+          },
+          {
+            "adminId": null,
+            "comment": null
+          },
+          {
+            "adminId": null,
+            "comment": "[FlexiBee] Objednávka byla ve FlexiBee zaktualizována"
+          },
+          {
+            "adminId": null,
+            "comment": "[Flexi] Objednávka byla realizována ve Flexi;"
           }
         ],
         "deliveryType": {
@@ -99432,7 +99496,7 @@
     "headline": "Final truth engine už běží pro finance truth, měřenou YTD customer truth, měřenou YTD order truth a první decision-grade akviziční split. Hlavní chybějící vrstva je netto contribution a backend channel reconciliation.",
     "whatIsTrulyKnown": [
       "Finance po marketingu: 2530856.24 Kč.",
-      "Čistá hotovostní pozice: 7696644.08 Kč.",
+      "Čistá hotovostní pozice: 7733184.08 Kč.",
       "Returning customers generated 315329090.87 Kč vs 12813539.29 Kč from new customers in the measured YTD window.",
       "Zpracované objednávky v měřeném YTD: 203194"
     ],
@@ -99453,7 +99517,7 @@
       "headline": "Byznys je silný, customer truth je měřený, ale marketing decisioning musí pořád procházet trust vrstvou a bucket split logikou.",
       "focus": [
         "Po marketingu zůstalo 2530856.24 Kč.",
-        "Net cash pozice je 7696644.08 Kč.",
+        "Net cash pozice je 7733184.08 Kč.",
         "Returning customers generated 315329090.87 Kč vs 12813539.29 Kč from new customers in the measured YTD window."
       ],
       "questions": [
