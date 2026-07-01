@@ -12,49 +12,46 @@
       "mode": "live_report",
       "message": "Marketing se skládá z live ABRA reportu a aktuálních položek z účetního deníku. Přímé platformy přes API: Sklik, Meta Ads, Google Ads, Klaviyo, Affiliate.",
       "currentMonth": {
-        "label": "6/2026",
-        "performanceSpend": 28584.36,
-        "brandSpend": 200000.0,
-        "totalSpend": 228584.36,
-        "revenue": 11898102.7,
-        "spendShareOfRevenuePct": 1.9
+        "label": "7/2026",
+        "performanceSpend": 0.0,
+        "brandSpend": 0.0,
+        "totalSpend": 0.0,
+        "revenue": 9165.64,
+        "spendShareOfRevenuePct": 0.0
       },
-      "topSupplier": {
-        "name": "Selfcareacademy s.r.o.",
-        "amount": 200000.0
-      }
+      "topSupplier": null
     },
     "finance": {
       "ready": true,
       "mode": "live_report",
       "message": "Měsíční finance se tahají přímo z ABRA reportu Výkaz hospodaření za měsíc za všechna střediska. Cash a závazky jsou také live z ABRA API.",
       "currentMonth": {
-        "label": "6/2026",
-        "revenue": 11898102.7,
-        "cogsAndFees": 9072081.31,
-        "logistics": 68894.53,
-        "marketing": 228584.36,
-        "opex": 675345.88,
+        "label": "7/2026",
+        "revenue": 9165.64,
+        "cogsAndFees": 21577.91,
+        "logistics": 0.0,
+        "marketing": 0.0,
+        "opex": 18846.0,
         "depreciation": 401319.0,
-        "other": -18378.54,
-        "grossMargin": 2826021.39,
-        "afterLogistics": 2757126.86,
-        "afterMarketing": 2528542.5,
-        "operatingMargin": 1853196.62,
-        "ebit": 1451877.62,
-        "profit": 1433499.08,
-        "grossMarginPct": 23.8,
-        "marketingPct": 1.9,
-        "logisticsPct": 0.6,
-        "operatingMarginPct": 15.6,
-        "profitPct": 12.0
+        "other": -3551.16,
+        "grossMargin": -12412.27,
+        "afterLogistics": -12412.27,
+        "afterMarketing": -12412.27,
+        "operatingMargin": -31258.27,
+        "ebit": -432577.27,
+        "profit": -436128.43,
+        "grossMarginPct": -135.4,
+        "marketingPct": 0.0,
+        "logisticsPct": 0.0,
+        "operatingMarginPct": -341.0,
+        "profitPct": -4758.3
       },
       "cash": {
         "cashOnAccounts": 8231081.17,
         "unpaidInvoices": 534437.09,
         "netCashPosition": 7696644.08,
-        "overdueInvoicesCount": 3,
-        "overdueInvoicesAmount": 21215.55,
+        "overdueInvoicesCount": 4,
+        "overdueInvoicesAmount": 88967.2,
         "largestPayables": [
           {
             "code": "PF0804/2026",
@@ -62,7 +59,7 @@
             "dueDate": "02.07.2026",
             "amountTotal": 132628.69,
             "amountDue": 132628.69,
-            "status": "2 dní do splatnosti"
+            "status": "1 dní do splatnosti"
           },
           {
             "code": "PF0697/2026",
@@ -70,7 +67,7 @@
             "dueDate": "02.07.2026",
             "amountTotal": 106355.46,
             "amountDue": 106355.46,
-            "status": "2 dní do splatnosti"
+            "status": "1 dní do splatnosti"
           },
           {
             "code": "PF0779/2026",
@@ -78,7 +75,7 @@
             "dueDate": "30.06.2026",
             "amountTotal": 67896.64,
             "amountDue": 67751.65,
-            "status": "splatné dnes (0% uhrazeno)"
+            "status": "1 dní PO SPLATNOSTI (0% uhrazeno)"
           },
           {
             "code": "PF0771/2026",
@@ -86,7 +83,7 @@
             "dueDate": "17.07.2026",
             "amountTotal": 59532.0,
             "amountDue": 59532.0,
-            "status": "17 dní do splatnosti"
+            "status": "16 dní do splatnosti"
           },
           {
             "code": "PF0807/2026",
@@ -94,7 +91,7 @@
             "dueDate": "09.07.2026",
             "amountTotal": 32028.94,
             "amountDue": 32028.94,
-            "status": "9 dní do splatnosti"
+            "status": "8 dní do splatnosti"
           },
           {
             "code": "PF0795/2026",
@@ -102,7 +99,7 @@
             "dueDate": "06.07.2026",
             "amountTotal": 30782.0,
             "amountDue": 30782.0,
-            "status": "6 dní do splatnosti"
+            "status": "5 dní do splatnosti"
           },
           {
             "code": "PF0696/2026",
@@ -110,7 +107,7 @@
             "dueDate": "02.07.2026",
             "amountTotal": 19666.56,
             "amountDue": 19666.56,
-            "status": "2 dní do splatnosti"
+            "status": "1 dní do splatnosti"
           },
           {
             "code": "PF0802/2026",
@@ -118,7 +115,7 @@
             "dueDate": "29.06.2026",
             "amountTotal": 19277.55,
             "amountDue": 19277.55,
-            "status": "1 dní PO SPLATNOSTI"
+            "status": "2 dní PO SPLATNOSTI"
           }
         ],
         "cashAccountsSource": {
@@ -304,10 +301,10 @@
     "wpj": {
       "ready": true,
       "message": "WPJ připojeno a ranní report je vygenerovaný.",
-      "orders": 364,
-      "revenueWithVat": 593857.42,
-      "averageOrderValue": 1631.48,
-      "problematicOrders": 5
+      "orders": 469,
+      "revenueWithVat": 780121.57,
+      "averageOrderValue": 1663.37,
+      "problematicOrders": 2
     }
   }
 }
