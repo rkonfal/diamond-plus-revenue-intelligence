@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-04T08:30:27.432779+02:00",
+  "generatedAt": "2026-07-04T10:40:36.350116+02:00",
   "window": {
     "from": "2026-07-03T00:00:01+02:00",
     "to": "2026-07-04T00:00:00+02:00"
@@ -9843,10 +9843,10 @@
       },
       "dateCreated": "2026-07-03T18:13:28+02:00",
       "cancelled": false,
-      "isPaid": false,
+      "isPaid": true,
       "status": {
-        "id": 0,
-        "name": "nová"
+        "id": 1,
+        "name": "přijatá"
       },
       "totalPrice": {
         "withVat": 1526,
@@ -9899,6 +9899,60 @@
           "orderStatus": "nová",
           "date": "2026-07-03T18:17:02+02:00",
           "comment": "[FlexiBee] Objednávka byla nahrána do FlexiBee; ID: 684519",
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7201822,
+          "adminId": null,
+          "orderStatus": "nová",
+          "date": "2026-07-04T09:17:02+02:00",
+          "comment": "Modul FioBank - příchozí platba č. 27722234084. Komentář plátce: Levá Michaela.",
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7201823,
+          "adminId": null,
+          "orderStatus": "nová",
+          "date": "2026-07-04T09:17:02+02:00",
+          "comment": "<p>Dobré zprávy: Úhrada vaší objednávky 261295911 právě dorazila. Než dočtete tento e-mail, pustíme se do práce na expedici vaší objednávky tak, aby vám dorazila co nejdříve.</p><p>Těšíte se? 😍</p><div></div>",
+          "notifyStatus": "YES",
+          "data": "\"{\\\"email_type\\\": \\\"PAYMENT_SUCCESS\\\", \\\"subject\\\": \\\"\\\\ud83c\\\\udf89 Va\\\\u0161e \\\\u00fahrada objedn\\\\u00e1vky 261295911 dorazila, startujeme\\\", \\\"isAdminEmail\\\": false, \\\"attachments\\\": [\\\"order_invoice\\\"], \\\"email_id\\\": \\\"6a48b36ea956d\\\"}\""
+        },
+        {
+          "id": 7201826,
+          "adminId": null,
+          "orderStatus": "nová",
+          "date": "2026-07-04T09:20:03+02:00",
+          "comment": "[4PX] Objednávka byla vytvořena; ID: OC149400632607040059 tracking: 601115135561 účet: CZ",
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7201827,
+          "adminId": null,
+          "orderStatus": "přijatá",
+          "date": "2026-07-04T09:20:03+02:00",
+          "comment": null,
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7201832,
+          "adminId": null,
+          "orderStatus": "přijatá",
+          "date": "2026-07-04T09:21:58+02:00",
+          "comment": "[FlexiBee] Objednávka byla ve FlexiBee zaktualizována",
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7201835,
+          "adminId": null,
+          "orderStatus": "přijatá",
+          "date": "2026-07-04T09:22:08+02:00",
+          "comment": "[Flexi] Objednávka byla realizována ve Flexi;",
           "notifyStatus": "NO",
           "data": "null"
         }
@@ -56587,7 +56641,7 @@
     "statuses": [
       {
         "name": "přijatá",
-        "count": 120
+        "count": 121
       },
       {
         "name": "expedováno",
@@ -56595,7 +56649,7 @@
       },
       {
         "name": "nová",
-        "count": 13
+        "count": 12
       },
       {
         "name": "doručeno",
@@ -56989,7 +57043,7 @@
         "statuses": [
           {
             "name": "přijatá",
-            "count": 120
+            "count": 121
           },
           {
             "name": "expedováno",
@@ -56997,7 +57051,7 @@
           },
           {
             "name": "nová",
-            "count": 13
+            "count": 12
           },
           {
             "name": "doručeno",
@@ -57391,7 +57445,7 @@
         "statuses": [
           {
             "name": "přijatá",
-            "count": 107
+            "count": 108
           },
           {
             "name": "expedováno",
@@ -57399,7 +57453,7 @@
           },
           {
             "name": "nová",
-            "count": 11
+            "count": 10
           }
         ],
         "paymentMethods": [
