@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-07T13:20:44.348158+02:00",
+  "generatedAt": "2026-07-07T16:26:06.799529+02:00",
   "config": {
     "warehouseCode": "CZPRGA",
     "outboundMaxPages": 20,
@@ -14,25 +14,25 @@
       "label": "CZ",
       "inventory": {
         "items": 784,
-        "availableStockTotal": 302371,
-        "pendingStockTotal": 3951,
-        "freezeStockTotal": 1,
+        "availableStockTotal": 301336,
+        "pendingStockTotal": 2816,
+        "freezeStockTotal": 0,
         "lowStockItems": 100
       },
       "outbound": {
         "items": 600,
         "scannedPages": 6,
         "topLogisticsProduct": "F1401",
-        "oldestTimestamp": "2026-07-05T17:25:03+02:00",
-        "newestTimestamp": "2026-07-07T13:20:05+02:00"
+        "oldestTimestamp": "2026-07-05T22:30:08+02:00",
+        "newestTimestamp": "2026-07-07T16:25:02+02:00"
       }
     },
     "sk": {
       "label": "SK",
       "inventory": {
         "items": 635,
-        "availableStockTotal": 57361,
-        "pendingStockTotal": 175,
+        "availableStockTotal": 56954,
+        "pendingStockTotal": 424,
         "freezeStockTotal": 0,
         "lowStockItems": 100
       },
@@ -40,8 +40,8 @@
         "items": 100,
         "scannedPages": 1,
         "topLogisticsProduct": "F1406",
-        "oldestTimestamp": "2026-07-05T12:55:06+02:00",
-        "newestTimestamp": "2026-07-07T12:05:15+02:00"
+        "oldestTimestamp": "2026-07-05T21:00:13+02:00",
+        "newestTimestamp": "2026-07-07T16:20:12+02:00"
       }
     }
   },
@@ -64,7 +64,7 @@
     ],
     "priorities": [
       "Prověřit A produkty v riziku výpadku (23 SKU): 21310, 61912, 35412-02.",
-      "Dohlédnout 21310 (Šampon na padající vlasy), aktuálně 7 ks.",
+      "Dohlédnout 21310 (Šampon na padající vlasy), aktuálně 5 ks.",
       "Projít 2 problematických nebo stornovaných objednávek z včerejška.",
       "Projít nejbližší expirace v 4PX a rozhodnout o doprodeji nebo přesunu zásoby."
     ]
@@ -92,11 +92,11 @@
     "sourceWarnings": 2
   },
   "pairing": {
-    "allCodes": 2993,
+    "allCodes": 2996,
     "pairedProducts": 375,
-    "onlyInWpj": 1554,
+    "onlyInWpj": 1557,
     "onlyIn4px": 1,
-    "stockMismatch": 712,
+    "stockMismatch": 707,
     "lowAfterSales": 1,
     "manualMapped4pxAliases": 0,
     "autoMapped4pxAliases": 73
@@ -107,29 +107,29 @@
     "message": "Měsíční finance se tahají přímo z ABRA reportu Výkaz hospodaření za měsíc za všechna střediska. Cash a závazky jsou také live z ABRA API.",
     "currentMonth": {
       "label": "7/2026",
-      "revenue": 2090722.58,
-      "cogsAndFees": 1531909.58,
+      "revenue": 2210572.1,
+      "cogsAndFees": 1645818.66,
       "logistics": 0.0,
       "marketing": 2479.34,
       "opex": 37817.27,
       "depreciation": 401319.0,
       "other": -2469.84,
-      "grossMargin": 558813.0,
-      "afterLogistics": 558813.0,
-      "afterMarketing": 556333.66,
-      "operatingMargin": 518516.39,
-      "ebit": 117197.39,
-      "profit": 114727.55,
-      "grossMarginPct": 26.7,
+      "grossMargin": 564753.44,
+      "afterLogistics": 564753.44,
+      "afterMarketing": 562274.1,
+      "operatingMargin": 524456.83,
+      "ebit": 123137.83,
+      "profit": 120667.99,
+      "grossMarginPct": 25.5,
       "marketingPct": 0.1,
       "logisticsPct": 0.0,
-      "operatingMarginPct": 24.8,
+      "operatingMarginPct": 23.7,
       "profitPct": 5.5
     },
     "cash": {
-      "cashOnAccounts": 8667364.47,
+      "cashOnAccounts": 8713122.49,
       "unpaidInvoices": 1007059.38,
-      "netCashPosition": 7660305.09,
+      "netCashPosition": 7706063.11,
       "overdueInvoicesCount": 2,
       "overdueInvoicesAmount": 2423.0,
       "largestPayables": [
@@ -213,8 +213,8 @@
             "accountCode": "221001",
             "accountLabel": "221001: 2901338673/2010 FIO CZK",
             "currency": "CZK: Česká koruna",
-            "balance": 1932966.51,
-            "includedBalance": 1932966.51
+            "balance": 1977853.51,
+            "includedBalance": 1977853.51
           },
           {
             "accountCode": "221006",
@@ -248,8 +248,8 @@
             "accountCode": "221005",
             "accountLabel": "221005: 2501338690/2010 FIO EUR",
             "currency": "CZK: Česká koruna",
-            "balance": 138741.49,
-            "includedBalance": 138741.49
+            "balance": 139612.51,
+            "includedBalance": 139612.51
           },
           {
             "accountCode": "221117",
@@ -387,7 +387,7 @@
       "performanceSpend": 2479.34,
       "brandSpend": 0.0,
       "totalSpend": 2479.34,
-      "revenue": 2090722.58,
+      "revenue": 2210572.1,
       "spendShareOfRevenuePct": 0.1
     },
     "topSupplier": {
@@ -405,23 +405,23 @@
       "label": "2025-10-01 až 2026-07-07"
     },
     "summary": {
-      "noviceRevenueCzkEquiv": 14078644.0,
-      "networkRevenueCzkEquiv": 20144823.0,
+      "noviceRevenueCzkEquiv": 14094021.0,
+      "networkRevenueCzkEquiv": 20168448.0,
       "novicePartners": 50,
       "networkPartners": 50,
-      "noviceOrders": 8536.0,
-      "networkOrders": 12427.0,
-      "noviceOrderingContacts": 1655.0,
-      "networkOrderingCustomers": 3759.0,
+      "noviceOrders": 8549.0,
+      "networkOrders": 12446.0,
+      "noviceOrderingContacts": 1658.0,
+      "networkOrderingCustomers": 3763.0,
       "topNovicePartner": {
         "partnerCode": "ESHOP",
         "partnerName": "E-shop (interní)",
-        "revenueCzkEquiv": 4426036.0
+        "revenueCzkEquiv": 4432852.0
       },
       "topNetworkPartner": {
         "partnerCode": "ESHOP",
         "partnerName": "E-shop (interní)",
-        "revenueCzkEquiv": 4426036.0
+        "revenueCzkEquiv": 4432852.0
       }
     }
   },
@@ -553,6 +553,6 @@
         "message": "WPJ twisto objednávky z historie objednávek."
       }
     },
-    "message": "Twisto watchdog se nepodařilo spustit: Command '['python3', '/Users/rudolfkonfal/.openclaw/workspace/reporting-v2/scripts/build_twisto_watchdog.py', '--snapshot-path', '/Users/rudolfkonfal/.openclaw/workspace/reporting-v2/data/snapshots/20260707-132044', '--generated-at', '2026-07-07T13:20:44.348158+02:00']' timed out after 300 seconds"
+    "message": "Twisto watchdog se nepodařilo spustit: Command '['python3', '/Users/rudolfkonfal/.openclaw/workspace/reporting-v2/scripts/build_twisto_watchdog.py', '--snapshot-path', '/Users/rudolfkonfal/.openclaw/workspace/reporting-v2/data/snapshots/20260707-162606', '--generated-at', '2026-07-07T16:26:06.799529+02:00']' timed out after 300 seconds"
   }
 }
