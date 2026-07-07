@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-07T16:26:06.799529+02:00",
+  "generatedAt": "2026-07-07T18:19:30.539142+02:00",
   "config": {
     "warehouseCode": "CZPRGA",
     "outboundMaxPages": 20,
@@ -14,25 +14,25 @@
       "label": "CZ",
       "inventory": {
         "items": 784,
-        "availableStockTotal": 301336,
-        "pendingStockTotal": 2816,
+        "availableStockTotal": 301408,
+        "pendingStockTotal": 1836,
         "freezeStockTotal": 0,
         "lowStockItems": 100
       },
       "outbound": {
-        "items": 600,
-        "scannedPages": 6,
+        "items": 700,
+        "scannedPages": 7,
         "topLogisticsProduct": "F1401",
-        "oldestTimestamp": "2026-07-05T22:30:08+02:00",
-        "newestTimestamp": "2026-07-07T16:25:02+02:00"
+        "oldestTimestamp": "2026-07-05T18:00:05+02:00",
+        "newestTimestamp": "2026-07-07T18:15:03+02:00"
       }
     },
     "sk": {
       "label": "SK",
       "inventory": {
         "items": 635,
-        "availableStockTotal": 56954,
-        "pendingStockTotal": 424,
+        "availableStockTotal": 57195,
+        "pendingStockTotal": 493,
         "freezeStockTotal": 0,
         "lowStockItems": 100
       },
@@ -40,8 +40,8 @@
         "items": 100,
         "scannedPages": 1,
         "topLogisticsProduct": "F1406",
-        "oldestTimestamp": "2026-07-05T21:00:13+02:00",
-        "newestTimestamp": "2026-07-07T16:20:12+02:00"
+        "oldestTimestamp": "2026-07-05T22:05:14+02:00",
+        "newestTimestamp": "2026-07-07T18:10:14+02:00"
       }
     }
   },
@@ -55,7 +55,7 @@
   },
   "report": {
     "date": "2026-07-06",
-    "shipments": 372,
+    "shipments": 374,
     "alerts": [
       "2 problematických nebo stornovaných objednávek.",
       "1 včera prodaných produktů je teď na nízkém skladu.",
@@ -64,18 +64,18 @@
     ],
     "priorities": [
       "Prověřit A produkty v riziku výpadku (23 SKU): 21310, 61912, 35412-02.",
-      "Dohlédnout 21310 (Šampon na padající vlasy), aktuálně 5 ks.",
+      "Dohlédnout 21310 (Šampon na padající vlasy), aktuálně 3 ks.",
       "Projít 2 problematických nebo stornovaných objednávek z včerejška.",
       "Projít nejbližší expirace v 4PX a rozhodnout o doprodeji nebo přesunu zásoby."
     ]
   },
   "expiries": {
     "datedSkuCount": 328,
-    "czSkuCount": 315,
+    "czSkuCount": 316,
     "skSkuCount": 297,
-    "datedRowCount": 691,
-    "czRowCount": 356,
-    "skRowCount": 335
+    "datedRowCount": 698,
+    "czRowCount": 361,
+    "skRowCount": 337
   },
   "storeExpiry": {
     "inputRows": 0,
@@ -96,7 +96,7 @@
     "pairedProducts": 375,
     "onlyInWpj": 1557,
     "onlyIn4px": 1,
-    "stockMismatch": 707,
+    "stockMismatch": 713,
     "lowAfterSales": 1,
     "manualMapped4pxAliases": 0,
     "autoMapped4pxAliases": 73
@@ -107,29 +107,29 @@
     "message": "Měsíční finance se tahají přímo z ABRA reportu Výkaz hospodaření za měsíc za všechna střediska. Cash a závazky jsou také live z ABRA API.",
     "currentMonth": {
       "label": "7/2026",
-      "revenue": 2210572.1,
-      "cogsAndFees": 1645818.66,
+      "revenue": 2252904.07,
+      "cogsAndFees": 1675055.61,
       "logistics": 0.0,
       "marketing": 2479.34,
       "opex": 37817.27,
       "depreciation": 401319.0,
       "other": -2469.84,
-      "grossMargin": 564753.44,
-      "afterLogistics": 564753.44,
-      "afterMarketing": 562274.1,
-      "operatingMargin": 524456.83,
-      "ebit": 123137.83,
-      "profit": 120667.99,
-      "grossMarginPct": 25.5,
+      "grossMargin": 577848.46,
+      "afterLogistics": 577848.46,
+      "afterMarketing": 575369.12,
+      "operatingMargin": 537551.85,
+      "ebit": 136232.85,
+      "profit": 133763.01,
+      "grossMarginPct": 25.6,
       "marketingPct": 0.1,
       "logisticsPct": 0.0,
-      "operatingMarginPct": 23.7,
-      "profitPct": 5.5
+      "operatingMarginPct": 23.9,
+      "profitPct": 5.9
     },
     "cash": {
-      "cashOnAccounts": 8713122.49,
+      "cashOnAccounts": 8735144.13,
       "unpaidInvoices": 1007059.38,
-      "netCashPosition": 7706063.11,
+      "netCashPosition": 7728084.75,
       "overdueInvoicesCount": 2,
       "overdueInvoicesAmount": 2423.0,
       "largestPayables": [
@@ -213,8 +213,8 @@
             "accountCode": "221001",
             "accountLabel": "221001: 2901338673/2010 FIO CZK",
             "currency": "CZK: Česká koruna",
-            "balance": 1977853.51,
-            "includedBalance": 1977853.51
+            "balance": 1994807.51,
+            "includedBalance": 1994807.51
           },
           {
             "accountCode": "221006",
@@ -248,8 +248,8 @@
             "accountCode": "221005",
             "accountLabel": "221005: 2501338690/2010 FIO EUR",
             "currency": "CZK: Česká koruna",
-            "balance": 139612.51,
-            "includedBalance": 139612.51
+            "balance": 144680.15,
+            "includedBalance": 144680.15
           },
           {
             "accountCode": "221117",
@@ -387,7 +387,7 @@
       "performanceSpend": 2479.34,
       "brandSpend": 0.0,
       "totalSpend": 2479.34,
-      "revenue": 2210572.1,
+      "revenue": 2252904.07,
       "spendShareOfRevenuePct": 0.1
     },
     "topSupplier": {
@@ -405,23 +405,23 @@
       "label": "2025-10-01 až 2026-07-07"
     },
     "summary": {
-      "noviceRevenueCzkEquiv": 14094021.0,
-      "networkRevenueCzkEquiv": 20168448.0,
+      "noviceRevenueCzkEquiv": 14099049.0,
+      "networkRevenueCzkEquiv": 20173351.0,
       "novicePartners": 50,
       "networkPartners": 50,
-      "noviceOrders": 8549.0,
-      "networkOrders": 12446.0,
+      "noviceOrders": 8552.0,
+      "networkOrders": 12449.0,
       "noviceOrderingContacts": 1658.0,
       "networkOrderingCustomers": 3763.0,
       "topNovicePartner": {
         "partnerCode": "ESHOP",
         "partnerName": "E-shop (interní)",
-        "revenueCzkEquiv": 4432852.0
+        "revenueCzkEquiv": 4432936.0
       },
       "topNetworkPartner": {
         "partnerCode": "ESHOP",
         "partnerName": "E-shop (interní)",
-        "revenueCzkEquiv": 4432852.0
+        "revenueCzkEquiv": 4432936.0
       }
     }
   },
@@ -514,7 +514,7 @@
   },
   "twistoWatchdog": {
     "ready": true,
-    "status": "warn",
+    "status": "ok",
     "summary": {
       "windowDays": 90,
       "twistoBatchCount": 43,
@@ -553,6 +553,6 @@
         "message": "WPJ twisto objednávky z historie objednávek."
       }
     },
-    "message": "Twisto watchdog se nepodařilo spustit: Command '['python3', '/Users/rudolfkonfal/.openclaw/workspace/reporting-v2/scripts/build_twisto_watchdog.py', '--snapshot-path', '/Users/rudolfkonfal/.openclaw/workspace/reporting-v2/data/snapshots/20260707-162606', '--generated-at', '2026-07-07T16:26:06.799529+02:00']' timed out after 300 seconds"
+    "message": null
   }
 }
