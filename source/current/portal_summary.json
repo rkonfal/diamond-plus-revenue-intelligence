@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-08T08:36:11.373598+02:00",
+  "generatedAt": "2026-07-08T12:01:23.183142+02:00",
   "config": {
     "warehouseCode": "CZPRGA",
     "outboundMaxPages": 20,
@@ -14,8 +14,8 @@
       "label": "CZ",
       "inventory": {
         "items": 784,
-        "availableStockTotal": 299308,
-        "pendingStockTotal": 3746,
+        "availableStockTotal": 298700,
+        "pendingStockTotal": 3613,
         "freezeStockTotal": 0,
         "lowStockItems": 100
       },
@@ -23,16 +23,16 @@
         "items": 600,
         "scannedPages": 6,
         "topLogisticsProduct": "F1401",
-        "oldestTimestamp": "2026-07-06T20:40:12+02:00",
-        "newestTimestamp": "2026-07-08T08:35:04+02:00"
+        "oldestTimestamp": "2026-07-06T23:20:03+02:00",
+        "newestTimestamp": "2026-07-08T12:00:09+02:00"
       }
     },
     "sk": {
       "label": "SK",
       "inventory": {
         "items": 635,
-        "availableStockTotal": 56816,
-        "pendingStockTotal": 872,
+        "availableStockTotal": 56678,
+        "pendingStockTotal": 408,
         "freezeStockTotal": 0,
         "lowStockItems": 100
       },
@@ -40,8 +40,8 @@
         "items": 100,
         "scannedPages": 1,
         "topLogisticsProduct": "F1406",
-        "oldestTimestamp": "2026-07-06T16:20:08+02:00",
-        "newestTimestamp": "2026-07-08T06:00:44+02:00"
+        "oldestTimestamp": "2026-07-06T19:55:14+02:00",
+        "newestTimestamp": "2026-07-08T11:55:24+02:00"
       }
     }
   },
@@ -59,11 +59,11 @@
     "alerts": [
       "3 včera prodaných produktů je teď na nízkém skladu.",
       "10 skladových pozic je v mínusu.",
-      "23 A produktů je v kritickém riziku výpadku.",
+      "27 A produktů je v kritickém riziku výpadku.",
       "V top expiracích je aspoň jedna položka do 30 dnů."
     ],
     "priorities": [
-      "Prověřit A produkty v riziku výpadku (23 SKU): 21310, 61912, 35412-02.",
+      "Prověřit A produkty v riziku výpadku (27 SKU): 21310, 61912, 35412-02.",
       "Dohlédnout 21310 (Šampon na padající vlasy), aktuálně 2 ks.",
       "Projít nejbližší expirace v 4PX a rozhodnout o doprodeji nebo přesunu zásoby."
     ]
@@ -95,7 +95,7 @@
     "pairedProducts": 375,
     "onlyInWpj": 1557,
     "onlyIn4px": 1,
-    "stockMismatch": 717,
+    "stockMismatch": 713,
     "lowAfterSales": 3,
     "manualMapped4pxAliases": 0,
     "autoMapped4pxAliases": 73
@@ -106,29 +106,29 @@
     "message": "Měsíční finance se tahají přímo z ABRA reportu Výkaz hospodaření za měsíc za všechna střediska. Cash a závazky jsou také live z ABRA API.",
     "currentMonth": {
       "label": "7/2026",
-      "revenue": 2470694.97,
-      "cogsAndFees": 1833401.02,
-      "logistics": 0.0,
-      "marketing": 2479.34,
-      "opex": 37817.27,
+      "revenue": 2547973.25,
+      "cogsAndFees": 1899860.06,
+      "logistics": 8336.3,
+      "marketing": 4132.23,
+      "opex": 162108.95,
       "depreciation": 401319.0,
-      "other": -2469.84,
-      "grossMargin": 637293.95,
-      "afterLogistics": 637293.95,
-      "afterMarketing": 634814.61,
-      "operatingMargin": 596997.34,
-      "ebit": 195678.34,
-      "profit": 193208.5,
-      "grossMarginPct": 25.8,
-      "marketingPct": 0.1,
-      "logisticsPct": 0.0,
-      "operatingMarginPct": 24.2,
-      "profitPct": 7.8
+      "other": -2476.01,
+      "grossMargin": 648113.19,
+      "afterLogistics": 639776.89,
+      "afterMarketing": 635644.66,
+      "operatingMargin": 473535.71,
+      "ebit": 72216.71,
+      "profit": 69740.7,
+      "grossMarginPct": 25.4,
+      "marketingPct": 0.2,
+      "logisticsPct": 0.3,
+      "operatingMarginPct": 18.6,
+      "profitPct": 2.7
     },
     "cash": {
-      "cashOnAccounts": 8927805.67,
-      "unpaidInvoices": 1005686.38,
-      "netCashPosition": 7922119.29,
+      "cashOnAccounts": 8959420.15,
+      "unpaidInvoices": 1166547.3,
+      "netCashPosition": 7792872.85,
       "overdueInvoicesCount": 1,
       "overdueInvoicesAmount": 1050.0,
       "largestPayables": [
@@ -139,6 +139,14 @@
           "amountTotal": 562165.18,
           "amountDue": 562165.18,
           "status": "22 dní do splatnosti"
+        },
+        {
+          "code": "PF0833/2026",
+          "vendor": "wpj s.r.o.",
+          "dueDate": "22.07.2026",
+          "amountTotal": 150393.0,
+          "amountDue": 150393.0,
+          "status": "14 dní do splatnosti"
         },
         {
           "code": "PF0832/2026",
@@ -187,14 +195,6 @@
           "amountTotal": 26161.05,
           "amountDue": 26161.05,
           "status": "8 dní do splatnosti"
-        },
-        {
-          "code": "PF0827/2026",
-          "vendor": "Direct Parcel Distribution CZ s.r.o.",
-          "dueDate": "16.07.2026",
-          "amountTotal": 25162.56,
-          "amountDue": 25162.56,
-          "status": "8 dní do splatnosti"
         }
       ],
       "cashAccountsSource": {
@@ -212,8 +212,8 @@
             "accountCode": "221001",
             "accountLabel": "221001: 2901338673/2010 FIO CZK",
             "currency": "CZK: Česká koruna",
-            "balance": 2101373.51,
-            "includedBalance": 2101373.51
+            "balance": 2129903.51,
+            "includedBalance": 2129903.51
           },
           {
             "accountCode": "221115",
@@ -247,8 +247,8 @@
             "accountCode": "221005",
             "accountLabel": "221005: 2501338690/2010 FIO EUR",
             "currency": "CZK: Česká koruna",
-            "balance": 155816.69,
-            "includedBalance": 155816.69
+            "balance": 158901.17,
+            "includedBalance": 158901.17
           },
           {
             "accountCode": "221117",
@@ -359,14 +359,14 @@
             "accountCode": "221002",
             "accountLabel": "221002: 131-1211280297/0100 KB EUR",
             "currency": "CZK: Česká koruna",
-            "balance": -138000.9,
+            "balance": -133732.79,
             "includedBalance": 0.0
           },
           {
             "accountCode": "221002",
             "accountLabel": "221002: 131-1211280297/0100 KB EUR",
             "currency": "EUR: Euro",
-            "balance": -5300.87,
+            "balance": -5124.72,
             "includedBalance": 0.0
           }
         ]
@@ -383,15 +383,15 @@
     "message": "Marketing se skládá z live ABRA reportu a aktuálních položek z účetního deníku. Přímé platformy přes API: Sklik, Meta Ads, Google Ads, Klaviyo, Affiliate.",
     "currentMonth": {
       "label": "7/2026",
-      "performanceSpend": 2479.34,
+      "performanceSpend": 4132.23,
       "brandSpend": 0.0,
-      "totalSpend": 2479.34,
-      "revenue": 2470694.97,
-      "spendShareOfRevenuePct": 0.1
+      "totalSpend": 4132.23,
+      "revenue": 2547973.25,
+      "spendShareOfRevenuePct": 0.2
     },
     "topSupplier": {
       "name": "Seznam.cz, a.s.",
-      "amount": 2479.34
+      "amount": 4132.23
     }
   },
   "affiliate": {
@@ -404,12 +404,12 @@
       "label": "2025-10-01 až 2026-07-08"
     },
     "summary": {
-      "noviceRevenueCzkEquiv": 14158833.0,
-      "networkRevenueCzkEquiv": 20249779.0,
+      "noviceRevenueCzkEquiv": 14166780.0,
+      "networkRevenueCzkEquiv": 20257726.0,
       "novicePartners": 50,
       "networkPartners": 50,
-      "noviceOrders": 8597.0,
-      "networkOrders": 12510.0,
+      "noviceOrders": 8600.0,
+      "networkOrders": 12513.0,
       "noviceOrderingContacts": 1663.0,
       "networkOrderingCustomers": 3770.0,
       "topNovicePartner": {
@@ -552,6 +552,6 @@
         "message": "WPJ twisto objednávky z historie objednávek."
       }
     },
-    "message": "Twisto watchdog se nepodařilo spustit: Command '['python3', '/Users/rudolfkonfal/.openclaw/workspace/reporting-v2/scripts/build_twisto_watchdog.py', '--snapshot-path', '/Users/rudolfkonfal/.openclaw/workspace/reporting-v2/data/snapshots/20260708-083611', '--generated-at', '2026-07-08T08:36:11.373598+02:00']' timed out after 300 seconds"
+    "message": "Twisto watchdog se nepodařilo spustit: Command '['python3', '/Users/rudolfkonfal/.openclaw/workspace/reporting-v2/scripts/build_twisto_watchdog.py', '--snapshot-path', '/Users/rudolfkonfal/.openclaw/workspace/reporting-v2/data/snapshots/20260708-120123', '--generated-at', '2026-07-08T12:01:23.183142+02:00']' timed out after 300 seconds"
   }
 }
