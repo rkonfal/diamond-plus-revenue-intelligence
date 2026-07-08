@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-08T07:42:00.731997+02:00",
+  "generatedAt": "2026-07-08T08:36:11.373598+02:00",
   "config": {
     "warehouseCode": "CZPRGA",
     "outboundMaxPages": 20,
@@ -15,7 +15,7 @@
       "inventory": {
         "items": 784,
         "availableStockTotal": 299308,
-        "pendingStockTotal": 3626,
+        "pendingStockTotal": 3746,
         "freezeStockTotal": 0,
         "lowStockItems": 100
       },
@@ -23,8 +23,8 @@
         "items": 600,
         "scannedPages": 6,
         "topLogisticsProduct": "F1401",
-        "oldestTimestamp": "2026-07-06T20:10:14+02:00",
-        "newestTimestamp": "2026-07-08T07:40:08+02:00"
+        "oldestTimestamp": "2026-07-06T20:40:12+02:00",
+        "newestTimestamp": "2026-07-08T08:35:04+02:00"
       }
     },
     "sk": {
@@ -64,7 +64,7 @@
     ],
     "priorities": [
       "Prověřit A produkty v riziku výpadku (23 SKU): 21310, 61912, 35412-02.",
-      "Dohlédnout 50104 (Noční krémová maska na obličej s hroznovým vínem), aktuálně 3 ks.",
+      "Dohlédnout 21310 (Šampon na padající vlasy), aktuálně 2 ks.",
       "Projít nejbližší expirace v 4PX a rozhodnout o doprodeji nebo přesunu zásoby."
     ]
   },
@@ -72,8 +72,8 @@
     "datedSkuCount": 328,
     "czSkuCount": 316,
     "skSkuCount": 297,
-    "datedRowCount": 698,
-    "czRowCount": 361,
+    "datedRowCount": 700,
+    "czRowCount": 363,
     "skRowCount": 337
   },
   "storeExpiry": {
@@ -95,7 +95,7 @@
     "pairedProducts": 375,
     "onlyInWpj": 1557,
     "onlyIn4px": 1,
-    "stockMismatch": 710,
+    "stockMismatch": 717,
     "lowAfterSales": 3,
     "manualMapped4pxAliases": 0,
     "autoMapped4pxAliases": 73
@@ -106,29 +106,29 @@
     "message": "Měsíční finance se tahají přímo z ABRA reportu Výkaz hospodaření za měsíc za všechna střediska. Cash a závazky jsou také live z ABRA API.",
     "currentMonth": {
       "label": "7/2026",
-      "revenue": 2458757.06,
-      "cogsAndFees": 1824168.52,
+      "revenue": 2470694.97,
+      "cogsAndFees": 1833401.02,
       "logistics": 0.0,
       "marketing": 2479.34,
       "opex": 37817.27,
       "depreciation": 401319.0,
       "other": -2469.84,
-      "grossMargin": 634588.54,
-      "afterLogistics": 634588.54,
-      "afterMarketing": 632109.2,
-      "operatingMargin": 594291.93,
-      "ebit": 192972.93,
-      "profit": 190503.09,
+      "grossMargin": 637293.95,
+      "afterLogistics": 637293.95,
+      "afterMarketing": 634814.61,
+      "operatingMargin": 596997.34,
+      "ebit": 195678.34,
+      "profit": 193208.5,
       "grossMarginPct": 25.8,
       "marketingPct": 0.1,
       "logisticsPct": 0.0,
       "operatingMarginPct": 24.2,
-      "profitPct": 7.7
+      "profitPct": 7.8
     },
     "cash": {
-      "cashOnAccounts": 8921481.67,
+      "cashOnAccounts": 8927805.67,
       "unpaidInvoices": 1005686.38,
-      "netCashPosition": 7915795.29,
+      "netCashPosition": 7922119.29,
       "overdueInvoicesCount": 1,
       "overdueInvoicesAmount": 1050.0,
       "largestPayables": [
@@ -212,8 +212,8 @@
             "accountCode": "221001",
             "accountLabel": "221001: 2901338673/2010 FIO CZK",
             "currency": "CZK: Česká koruna",
-            "balance": 2095049.51,
-            "includedBalance": 2095049.51
+            "balance": 2101373.51,
+            "includedBalance": 2101373.51
           },
           {
             "accountCode": "221115",
@@ -386,7 +386,7 @@
       "performanceSpend": 2479.34,
       "brandSpend": 0.0,
       "totalSpend": 2479.34,
-      "revenue": 2458757.06,
+      "revenue": 2470694.97,
       "spendShareOfRevenuePct": 0.1
     },
     "topSupplier": {
@@ -404,12 +404,12 @@
       "label": "2025-10-01 až 2026-07-08"
     },
     "summary": {
-      "noviceRevenueCzkEquiv": 14155544.0,
-      "networkRevenueCzkEquiv": 20246490.0,
+      "noviceRevenueCzkEquiv": 14158833.0,
+      "networkRevenueCzkEquiv": 20249779.0,
       "novicePartners": 50,
       "networkPartners": 50,
-      "noviceOrders": 8595.0,
-      "networkOrders": 12508.0,
+      "noviceOrders": 8597.0,
+      "networkOrders": 12510.0,
       "noviceOrderingContacts": 1663.0,
       "networkOrderingCustomers": 3770.0,
       "topNovicePartner": {
@@ -513,7 +513,7 @@
   },
   "twistoWatchdog": {
     "ready": true,
-    "status": "ok",
+    "status": "warn",
     "summary": {
       "windowDays": 90,
       "twistoBatchCount": 43,
@@ -552,6 +552,6 @@
         "message": "WPJ twisto objednávky z historie objednávek."
       }
     },
-    "message": null
+    "message": "Twisto watchdog se nepodařilo spustit: Command '['python3', '/Users/rudolfkonfal/.openclaw/workspace/reporting-v2/scripts/build_twisto_watchdog.py', '--snapshot-path', '/Users/rudolfkonfal/.openclaw/workspace/reporting-v2/data/snapshots/20260708-083611', '--generated-at', '2026-07-08T08:36:11.373598+02:00']' timed out after 300 seconds"
   }
 }
