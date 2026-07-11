@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-11T11:56:59.225071+02:00",
+  "generatedAt": "2026-07-11T13:30:05.622320+02:00",
   "window": {
     "from": "2026-07-10T00:00:01+02:00",
     "to": "2026-07-11T00:00:00+02:00"
@@ -58603,8 +58603,8 @@
       "cancelled": false,
       "isPaid": false,
       "status": {
-        "id": 3,
-        "name": "expedováno"
+        "id": 4,
+        "name": "připraveno k vyzvednutí"
       },
       "totalPrice": {
         "withVat": 4294,
@@ -58719,6 +58719,24 @@
           "adminId": null,
           "orderStatus": "expedováno",
           "date": "2026-07-10T21:25:05+02:00",
+          "comment": null,
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7233827,
+          "adminId": null,
+          "orderStatus": "expedováno",
+          "date": "2026-07-11T13:30:01+02:00",
+          "comment": "[4PX] Změna stavu: ready_to_pickup",
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7233828,
+          "adminId": null,
+          "orderStatus": "připraveno k vyzvednutí",
+          "date": "2026-07-11T13:30:02+02:00",
           "comment": null,
           "notifyStatus": "NO",
           "data": "null"
@@ -61098,7 +61116,7 @@
       },
       {
         "name": "expedováno",
-        "count": 100
+        "count": 99
       },
       {
         "name": "nová",
@@ -61107,6 +61125,10 @@
       {
         "name": "doručeno",
         "count": 6
+      },
+      {
+        "name": "připraveno k vyzvednutí",
+        "count": 1
       }
     ],
     "paymentMethods": [
@@ -61516,7 +61538,7 @@
           },
           {
             "name": "expedováno",
-            "count": 100
+            "count": 99
           },
           {
             "name": "nová",
@@ -61525,6 +61547,10 @@
           {
             "name": "doručeno",
             "count": 6
+          },
+          {
+            "name": "připraveno k vyzvednutí",
+            "count": 1
           }
         ],
         "paymentMethods": [
@@ -61934,7 +61960,7 @@
           },
           {
             "name": "expedováno",
-            "count": 91
+            "count": 90
           },
           {
             "name": "nová",
@@ -61942,6 +61968,10 @@
           },
           {
             "name": "doručeno",
+            "count": 1
+          },
+          {
+            "name": "připraveno k vyzvednutí",
             "count": 1
           }
         ],
