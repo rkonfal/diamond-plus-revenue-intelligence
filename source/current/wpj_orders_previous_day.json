@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-12T18:32:56.143808+02:00",
+  "generatedAt": "2026-07-12T20:52:29.345934+02:00",
   "window": {
     "from": "2026-07-11T00:00:01+02:00",
     "to": "2026-07-12T00:00:00+02:00"
@@ -7218,10 +7218,10 @@
       },
       "dateCreated": "2026-07-11T20:24:11+02:00",
       "cancelled": false,
-      "isPaid": false,
+      "isPaid": true,
       "status": {
-        "id": 0,
-        "name": "nová"
+        "id": 1,
+        "name": "přijatá"
       },
       "totalPrice": {
         "withVat": 1104,
@@ -7294,6 +7294,60 @@
           "comment": "Autopilot: odeslána uživatelská zpráva: Upomínka nezaplacené - okamžité platby",
           "notifyStatus": "NO",
           "data": "\"{\\\"initiator\\\":\\\"autopilot\\\"}\""
+        },
+        {
+          "id": 7235853,
+          "adminId": null,
+          "orderStatus": "nová",
+          "date": "2026-07-12T20:22:29+02:00",
+          "comment": "Objednávka byla zaplacena.",
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7235854,
+          "adminId": null,
+          "orderStatus": "nová",
+          "date": "2026-07-12T20:22:29+02:00",
+          "comment": "<p>Dobré zprávy: Úhrada vaší objednávky 261298121 právě dorazila. Než dočtete tento e-mail, pustíme se do práce na expedici vaší objednávky tak, aby vám dorazila co nejdříve.</p><p>Těšíte se? 😍</p><div></div>",
+          "notifyStatus": "YES",
+          "data": "\"{\\\"email_type\\\": \\\"PAYMENT_SUCCESS\\\", \\\"subject\\\": \\\"\\\\ud83c\\\\udf89 Va\\\\u0161e \\\\u00fahrada objedn\\\\u00e1vky 261298121 dorazila, startujeme\\\", \\\"isAdminEmail\\\": false, \\\"attachments\\\": [\\\"order_invoice\\\"], \\\"email_id\\\": \\\"6a53db65cf3b1\\\"}\""
+        },
+        {
+          "id": 7235858,
+          "adminId": null,
+          "orderStatus": "nová",
+          "date": "2026-07-12T20:22:54+02:00",
+          "comment": "[FlexiBee] Objednávka byla ve FlexiBee zaktualizována",
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7235873,
+          "adminId": null,
+          "orderStatus": "nová",
+          "date": "2026-07-12T20:23:20+02:00",
+          "comment": "[Flexi] Objednávka byla realizována ve Flexi;",
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7235886,
+          "adminId": null,
+          "orderStatus": "nová",
+          "date": "2026-07-12T20:25:03+02:00",
+          "comment": "[4PX] Objednávka byla vytvořena; ID: OC149400632607130048 tracking: 601115469337 účet: CZ",
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7235887,
+          "adminId": null,
+          "orderStatus": "přijatá",
+          "date": "2026-07-12T20:25:03+02:00",
+          "comment": null,
+          "notifyStatus": "NO",
+          "data": "null"
         }
       ],
       "deliveryType": {
@@ -29260,11 +29314,11 @@
     "statuses": [
       {
         "name": "přijatá",
-        "count": 110
+        "count": 111
       },
       {
         "name": "nová",
-        "count": 16
+        "count": 15
       },
       {
         "name": "chyba",
@@ -29600,11 +29654,11 @@
         "statuses": [
           {
             "name": "přijatá",
-            "count": 110
+            "count": 111
           },
           {
             "name": "nová",
-            "count": 16
+            "count": 15
           },
           {
             "name": "chyba",
@@ -29940,11 +29994,11 @@
         "statuses": [
           {
             "name": "přijatá",
-            "count": 102
+            "count": 103
           },
           {
             "name": "nová",
-            "count": 16
+            "count": 15
           },
           {
             "name": "chyba",
