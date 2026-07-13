@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-13T00:00:06.934154+02:00",
+  "generatedAt": "2026-07-13T01:34:39.228294+02:00",
   "config": {
     "warehouseCode": "CZPRGA",
     "outboundMaxPages": 20,
@@ -8,16 +8,14 @@
       "to": "2026-07-13T00:00:00+02:00"
     }
   },
-  "warnings": [
-    "Klaviyo denní refresh selhal, marketing používá poslední dostupný snapshot."
-  ],
+  "warnings": [],
   "accounts": {
     "cz": {
       "label": "CZ",
       "inventory": {
         "items": 784,
-        "availableStockTotal": 322573,
-        "pendingStockTotal": 2155,
+        "availableStockTotal": 322416,
+        "pendingStockTotal": 2312,
         "freezeStockTotal": 0,
         "lowStockItems": 100
       },
@@ -25,8 +23,8 @@
         "items": 300,
         "scannedPages": 3,
         "topLogisticsProduct": "F1401",
-        "oldestTimestamp": "2026-07-11T10:30:04+02:00",
-        "newestTimestamp": "2026-07-12T23:20:04+02:00"
+        "oldestTimestamp": "2026-07-11T11:20:03+02:00",
+        "newestTimestamp": "2026-07-13T01:25:06+02:00"
       }
     },
     "sk": {
@@ -61,8 +59,7 @@
     "alerts": [
       "10 skladových pozic je v mínusu.",
       "4 A produktů je v kritickém riziku výpadku.",
-      "V top expiracích je aspoň jedna položka do 30 dnů.",
-      "Klaviyo denní refresh selhal, marketing používá poslední dostupný snapshot."
+      "V top expiracích je aspoň jedna položka do 30 dnů."
     ],
     "priorities": [
       "Prověřit A produkty v riziku výpadku (4 SKU): 52911, 10263, 30115.",
@@ -96,7 +93,7 @@
     "pairedProducts": 375,
     "onlyInWpj": 1557,
     "onlyIn4px": 1,
-    "stockMismatch": 725,
+    "stockMismatch": 728,
     "lowAfterSales": 1,
     "manualMapped4pxAliases": 0,
     "autoMapped4pxAliases": 73
@@ -107,24 +104,24 @@
     "message": "Měsíční finance se tahají přímo z ABRA reportu Výkaz hospodaření za měsíc za všechna střediska. Cash a závazky jsou také live z ABRA API.",
     "currentMonth": {
       "label": "7/2026",
-      "revenue": 3940529.39,
-      "cogsAndFees": 2862234.87,
+      "revenue": 3949027.72,
+      "cogsAndFees": 2865923.94,
       "logistics": 8336.3,
       "marketing": 4132.23,
       "opex": 169347.79,
       "depreciation": 401319.0,
       "other": -2516.48,
-      "grossMargin": 1078294.52,
-      "afterLogistics": 1069958.22,
-      "afterMarketing": 1065825.99,
-      "operatingMargin": 896478.2,
-      "ebit": 495159.2,
-      "profit": 492642.72,
+      "grossMargin": 1083103.78,
+      "afterLogistics": 1074767.48,
+      "afterMarketing": 1070635.25,
+      "operatingMargin": 901287.46,
+      "ebit": 499968.46,
+      "profit": 497451.98,
       "grossMarginPct": 27.4,
       "marketingPct": 0.1,
       "logisticsPct": 0.2,
       "operatingMarginPct": 22.8,
-      "profitPct": 12.5
+      "profitPct": 12.6
     },
     "cash": {
       "cashOnAccounts": 11312793.08,
@@ -387,7 +384,7 @@
       "performanceSpend": 4132.23,
       "brandSpend": 0.0,
       "totalSpend": 4132.23,
-      "revenue": 3940529.39,
+      "revenue": 3949027.72,
       "spendShareOfRevenuePct": 0.1
     },
     "topSupplier": {
@@ -405,23 +402,23 @@
       "label": "2025-10-01 až 2026-07-13"
     },
     "summary": {
-      "noviceRevenueCzkEquiv": 14405271.0,
-      "networkRevenueCzkEquiv": 20564441.0,
+      "noviceRevenueCzkEquiv": 14426167.0,
+      "networkRevenueCzkEquiv": 20580788.0,
       "novicePartners": 50,
       "networkPartners": 50,
-      "noviceOrders": 8736.0,
-      "networkOrders": 12669.0,
+      "noviceOrders": 8741.0,
+      "networkOrders": 12674.0,
       "noviceOrderingContacts": 1672.0,
       "networkOrderingCustomers": 3774.0,
       "topNovicePartner": {
         "partnerCode": "ESHOP",
         "partnerName": "E-shop (interní)",
-        "revenueCzkEquiv": 4589418.0
+        "revenueCzkEquiv": 4597124.0
       },
       "topNetworkPartner": {
         "partnerCode": "ESHOP",
         "partnerName": "E-shop (interní)",
-        "revenueCzkEquiv": 4593967.0
+        "revenueCzkEquiv": 4597124.0
       }
     }
   },
