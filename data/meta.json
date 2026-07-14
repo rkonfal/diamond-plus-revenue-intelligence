@@ -16,7 +16,7 @@
         "performanceSpend": 6611.57,
         "brandSpend": 0.0,
         "totalSpend": 6611.57,
-        "revenue": 4707500.14,
+        "revenue": 4860076.88,
         "spendShareOfRevenuePct": 0.1
       },
       "topSupplier": {
@@ -30,31 +30,31 @@
       "message": "Měsíční finance se tahají přímo z ABRA reportu Výkaz hospodaření za měsíc za všechna střediska. Cash a závazky jsou také live z ABRA API.",
       "currentMonth": {
         "label": "7/2026",
-        "revenue": 4707500.14,
-        "cogsAndFees": 3498826.2,
+        "revenue": 4860076.88,
+        "cogsAndFees": 3603181.12,
         "logistics": 8336.3,
         "marketing": 6611.57,
         "opex": 251573.28,
         "depreciation": 401319.0,
         "other": -6473.81,
-        "grossMargin": 1208673.94,
-        "afterLogistics": 1200337.64,
-        "afterMarketing": 1193726.07,
-        "operatingMargin": 942152.79,
-        "ebit": 540833.79,
-        "profit": 534359.98,
-        "grossMarginPct": 25.7,
+        "grossMargin": 1256895.76,
+        "afterLogistics": 1248559.46,
+        "afterMarketing": 1241947.89,
+        "operatingMargin": 990374.61,
+        "ebit": 589055.61,
+        "profit": 582581.8,
+        "grossMarginPct": 25.9,
         "marketingPct": 0.1,
         "logisticsPct": 0.2,
-        "operatingMarginPct": 20.0,
-        "profitPct": 11.4
+        "operatingMarginPct": 20.4,
+        "profitPct": 12.0
       },
       "cash": {
-        "cashOnAccounts": 11456831.22,
-        "unpaidInvoices": 2210527.05,
-        "netCashPosition": 9246304.17,
-        "overdueInvoicesCount": 4,
-        "overdueInvoicesAmount": 594212.89,
+        "cashOnAccounts": 9122925.58,
+        "unpaidInvoices": 2267364.41,
+        "netCashPosition": 6855561.17,
+        "overdueInvoicesCount": 3,
+        "overdueInvoicesAmount": 591212.89,
         "largestPayables": [
           {
             "code": "PF0822/2026",
@@ -126,18 +126,11 @@
           "message": "Cash na účtech a pokladnách je počítán živě z ABRA obratové předvahy pro účty 221 a 211, ze CZK řádků a se započtením kladných zůstatků.",
           "accounts": [
             {
-              "accountCode": "221115",
-              "accountLabel": "221115: 131-3675980207/0100 KB CZK",
-              "currency": "CZK: Česká koruna",
-              "balance": 3952422.74,
-              "includedBalance": 3952422.74
-            },
-            {
               "accountCode": "221006",
               "accountLabel": "221006: 2202503115/2010 FIO CZK",
               "currency": "CZK: Česká koruna",
-              "balance": 3081448.8,
-              "includedBalance": 3081448.8
+              "balance": 3183948.8,
+              "includedBalance": 3183948.8
             },
             {
               "accountCode": "221118",
@@ -147,11 +140,18 @@
               "includedBalance": 2500000.0
             },
             {
+              "accountCode": "221004",
+              "accountLabel": "221004: 2601338698/2010 FIO CZK výplaty",
+              "currency": "CZK: Česká koruna",
+              "balance": 1310000.0,
+              "includedBalance": 1310000.0
+            },
+            {
               "accountCode": "221001",
               "accountLabel": "221001: 2901338673/2010 FIO CZK",
               "currency": "CZK: Česká koruna",
-              "balance": 1144133.08,
-              "includedBalance": 1144133.08
+              "balance": 1101803.09,
+              "includedBalance": 1101803.09
             },
             {
               "accountCode": "221111",
@@ -161,11 +161,18 @@
               "includedBalance": 315470.31
             },
             {
+              "accountCode": "221115",
+              "accountLabel": "221115: 131-3675980207/0100 KB CZK",
+              "currency": "CZK: Česká koruna",
+              "balance": 292572.74,
+              "includedBalance": 292572.74
+            },
+            {
               "accountCode": "221005",
               "accountLabel": "221005: 2501338690/2010 FIO EUR",
               "currency": "CZK: Česká koruna",
-              "balance": 197700.32,
-              "includedBalance": 197700.32
+              "balance": 202162.37,
+              "includedBalance": 202162.37
             },
             {
               "accountCode": "221117",
@@ -175,18 +182,18 @@
               "includedBalance": 99497.24
             },
             {
-              "accountCode": "221112",
-              "accountLabel": "221112: 107-164902 EUR THEPAY",
-              "currency": "CZK: Česká koruna",
-              "balance": 87274.12,
-              "includedBalance": 87274.12
-            },
-            {
               "accountCode": "211001",
               "accountLabel": "211001: Pokladna Czk",
               "currency": "CZK: Česká koruna",
               "balance": 71970.67,
               "includedBalance": 71970.67
+            },
+            {
+              "accountCode": "221112",
+              "accountLabel": "221112: 107-164902 EUR THEPAY",
+              "currency": "CZK: Česká koruna",
+              "balance": 38586.42,
+              "includedBalance": 38586.42
             },
             {
               "accountCode": "221007",
@@ -276,21 +283,14 @@
               "accountCode": "221002",
               "accountLabel": "221002: 131-1211280297/0100 KB EUR",
               "currency": "CZK: Česká koruna",
-              "balance": -3721112.72,
+              "balance": -33699.01,
               "includedBalance": 0.0
             },
             {
               "accountCode": "221002",
               "accountLabel": "221002: 131-1211280297/0100 KB EUR",
               "currency": "EUR: Euro",
-              "balance": -152949.19,
-              "includedBalance": 0.0
-            },
-            {
-              "accountCode": "221003",
-              "accountLabel": "221003: 131-7690227/0100 KB CZk",
-              "currency": "CZK: Česká koruna",
-              "balance": -9988069.71,
+              "balance": -984.09,
               "includedBalance": 0.0
             }
           ]
