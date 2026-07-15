@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-15T16:48:45.699520+02:00",
+  "generatedAt": "2026-07-15T18:00:06.680473+02:00",
   "config": {
     "warehouseCode": "CZPRGA",
     "outboundMaxPages": 20,
@@ -14,8 +14,8 @@
       "label": "CZ",
       "inventory": {
         "items": 785,
-        "availableStockTotal": 323285,
-        "pendingStockTotal": 1262,
+        "availableStockTotal": 323089,
+        "pendingStockTotal": 949,
         "freezeStockTotal": 0,
         "lowStockItems": 100
       },
@@ -23,16 +23,16 @@
         "items": 800,
         "scannedPages": 8,
         "topLogisticsProduct": "F1401",
-        "oldestTimestamp": "2026-07-13T22:10:05+02:00",
-        "newestTimestamp": "2026-07-15T16:45:03+02:00"
+        "oldestTimestamp": "2026-07-13T23:20:06+02:00",
+        "newestTimestamp": "2026-07-15T18:00:10+02:00"
       }
     },
     "sk": {
       "label": "SK",
       "inventory": {
         "items": 635,
-        "availableStockTotal": 48527,
-        "pendingStockTotal": 1954,
+        "availableStockTotal": 48499,
+        "pendingStockTotal": 1982,
         "freezeStockTotal": 0,
         "lowStockItems": 100
       },
@@ -40,8 +40,8 @@
         "items": 100,
         "scannedPages": 1,
         "topLogisticsProduct": "F1403",
-        "oldestTimestamp": "2026-07-13T10:01:30+02:00",
-        "newestTimestamp": "2026-07-15T15:05:25+02:00"
+        "oldestTimestamp": "2026-07-13T11:46:22+02:00",
+        "newestTimestamp": "2026-07-15T18:00:25+02:00"
       }
     }
   },
@@ -60,10 +60,10 @@
       "4 problematických nebo stornovaných objednávek.",
       "3 včera prodaných produktů je teď na nízkém skladu.",
       "10 skladových pozic je v mínusu.",
-      "5 A produktů je v kritickém riziku výpadku."
+      "6 A produktů je v kritickém riziku výpadku."
     ],
     "priorities": [
-      "Prověřit A produkty v riziku výpadku (5 SKU): 52911, 30115, 10263.",
+      "Prověřit A produkty v riziku výpadku (6 SKU): 135415-1, 52911, 30126.",
       "Dohlédnout 44402-1 (Fytogel na nohy Slaviton), aktuálně 0 ks.",
       "Projít 4 problematických nebo stornovaných objednávek z včerejška.",
       "Projít nejbližší expirace v 4PX a rozhodnout o doprodeji nebo přesunu zásoby."
@@ -107,29 +107,29 @@
     "message": "Měsíční finance se tahají přímo z ABRA reportu Výkaz hospodaření za měsíc za všechna střediska. Cash a závazky jsou také live z ABRA API.",
     "currentMonth": {
       "label": "7/2026",
-      "revenue": 6121310.51,
-      "cogsAndFees": 4300313.04,
+      "revenue": 6152437.63,
+      "cogsAndFees": 4324746.74,
       "logistics": 26495.24,
       "marketing": 6611.57,
       "opex": 253581.47,
       "depreciation": 401319.0,
       "other": -7247.55,
-      "grossMargin": 1820997.47,
-      "afterLogistics": 1794502.23,
-      "afterMarketing": 1787890.66,
-      "operatingMargin": 1534309.19,
-      "ebit": 1132990.19,
-      "profit": 1125742.64,
+      "grossMargin": 1827690.89,
+      "afterLogistics": 1801195.65,
+      "afterMarketing": 1794584.08,
+      "operatingMargin": 1541002.61,
+      "ebit": 1139683.61,
+      "profit": 1132436.06,
       "grossMarginPct": 29.7,
       "marketingPct": 0.1,
       "logisticsPct": 0.4,
-      "operatingMarginPct": 25.1,
+      "operatingMarginPct": 25.0,
       "profitPct": 18.4
     },
     "cash": {
-      "cashOnAccounts": 7921768.01,
+      "cashOnAccounts": 7940588.83,
       "unpaidInvoices": 1429237.25,
-      "netCashPosition": 6492530.76,
+      "netCashPosition": 6511351.58,
       "overdueInvoicesCount": 2,
       "overdueInvoicesAmount": 114953.56,
       "largestPayables": [
@@ -220,8 +220,8 @@
             "accountCode": "221001",
             "accountLabel": "221001: 2901338673/2010 FIO CZK",
             "currency": "CZK: Česká koruna",
-            "balance": 1393581.09,
-            "includedBalance": 1393581.09
+            "balance": 1411088.09,
+            "includedBalance": 1411088.09
           },
           {
             "accountCode": "221111",
@@ -234,8 +234,8 @@
             "accountCode": "221005",
             "accountLabel": "221005: 2501338690/2010 FIO EUR",
             "currency": "CZK: Česká koruna",
-            "balance": 214008.86,
-            "includedBalance": 214008.86
+            "balance": 215322.68,
+            "includedBalance": 215322.68
           },
           {
             "accountCode": "221117",
@@ -387,7 +387,7 @@
       "performanceSpend": 6611.57,
       "brandSpend": 0.0,
       "totalSpend": 6611.57,
-      "revenue": 6121310.51,
+      "revenue": 6152437.63,
       "spendShareOfRevenuePct": 0.1
     },
     "topSupplier": {
@@ -405,12 +405,12 @@
       "label": "2025-10-01 až 2026-07-15"
     },
     "summary": {
-      "noviceRevenueCzkEquiv": 14680584.0,
-      "networkRevenueCzkEquiv": 20938302.0,
+      "noviceRevenueCzkEquiv": 14683630.0,
+      "networkRevenueCzkEquiv": 20943361.0,
       "novicePartners": 50,
       "networkPartners": 50,
-      "noviceOrders": 8888.0,
-      "networkOrders": 12910.0,
+      "noviceOrders": 8890.0,
+      "networkOrders": 12913.0,
       "noviceOrderingContacts": 1684.0,
       "networkOrderingCustomers": 3800.0,
       "topNovicePartner": {
