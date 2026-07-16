@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-16T04:23:03.792913+02:00",
+  "generatedAt": "2026-07-16T07:00:13.292665+02:00",
   "config": {
     "warehouseCode": "CZPRGA",
     "outboundMaxPages": 20,
@@ -14,17 +14,17 @@
       "label": "CZ",
       "inventory": {
         "items": 785,
-        "availableStockTotal": 321858,
-        "pendingStockTotal": 2180,
+        "availableStockTotal": 321732,
+        "pendingStockTotal": 2306,
         "freezeStockTotal": 0,
         "lowStockItems": 100
       },
       "outbound": {
-        "items": 400,
-        "scannedPages": 4,
+        "items": 500,
+        "scannedPages": 5,
         "topLogisticsProduct": "F1401",
-        "oldestTimestamp": "2026-07-14T23:30:04+02:00",
-        "newestTimestamp": "2026-07-16T04:20:04+02:00"
+        "oldestTimestamp": "2026-07-14T20:30:08+02:00",
+        "newestTimestamp": "2026-07-16T07:00:03+02:00"
       }
     },
     "sk": {
@@ -55,7 +55,7 @@
   },
   "report": {
     "date": "2026-07-15",
-    "shipments": 430,
+    "shipments": 434,
     "alerts": [
       "7 problematických nebo stornovaných objednávek.",
       "1 včera prodaných produktů je teď na nízkém skladu.",
@@ -96,7 +96,7 @@
     "pairedProducts": 375,
     "onlyInWpj": 1558,
     "onlyIn4px": 1,
-    "stockMismatch": 720,
+    "stockMismatch": 721,
     "lowAfterSales": 2,
     "manualMapped4pxAliases": 0,
     "autoMapped4pxAliases": 73
@@ -107,29 +107,29 @@
     "message": "Měsíční finance se tahají přímo z ABRA reportu Výkaz hospodaření za měsíc za všechna střediska. Cash a závazky jsou také live z ABRA API.",
     "currentMonth": {
       "label": "7/2026",
-      "revenue": 6316413.3,
-      "cogsAndFees": 4451702.15,
+      "revenue": 6329990.16,
+      "cogsAndFees": 4460157.3,
       "logistics": 26495.24,
       "marketing": 6611.57,
       "opex": 253581.47,
       "depreciation": 401319.0,
       "other": -7247.55,
-      "grossMargin": 1864711.15,
-      "afterLogistics": 1838215.91,
-      "afterMarketing": 1831604.34,
-      "operatingMargin": 1578022.87,
-      "ebit": 1176703.87,
-      "profit": 1169456.32,
+      "grossMargin": 1869832.86,
+      "afterLogistics": 1843337.62,
+      "afterMarketing": 1836726.05,
+      "operatingMargin": 1583144.58,
+      "ebit": 1181825.58,
+      "profit": 1174578.03,
       "grossMarginPct": 29.5,
       "marketingPct": 0.1,
       "logisticsPct": 0.4,
       "operatingMarginPct": 25.0,
-      "profitPct": 18.5
+      "profitPct": 18.6
     },
     "cash": {
-      "cashOnAccounts": 8012414.47,
+      "cashOnAccounts": 8113095.47,
       "unpaidInvoices": 1429237.25,
-      "netCashPosition": 6583177.22,
+      "netCashPosition": 6683858.22,
       "overdueInvoicesCount": 2,
       "overdueInvoicesAmount": 114953.56,
       "largestPayables": [
@@ -220,8 +220,8 @@
             "accountCode": "221001",
             "accountLabel": "221001: 2901338673/2010 FIO CZK",
             "currency": "CZK: Česká koruna",
-            "balance": 1477713.09,
-            "includedBalance": 1477713.09
+            "balance": 1481982.09,
+            "includedBalance": 1481982.09
           },
           {
             "accountCode": "221111",
@@ -236,6 +236,13 @@
             "currency": "CZK: Česká koruna",
             "balance": 220523.32,
             "includedBalance": 220523.32
+          },
+          {
+            "accountCode": "221115",
+            "accountLabel": "221115: 131-3675980207/0100 KB CZK",
+            "currency": "CZK: Česká koruna",
+            "balance": 132379.6,
+            "includedBalance": 132379.6
           },
           {
             "accountCode": "221117",
@@ -257,13 +264,6 @@
             "currency": "CZK: Česká koruna",
             "balance": 46057.5,
             "includedBalance": 46057.5
-          },
-          {
-            "accountCode": "221115",
-            "accountLabel": "221115: 131-3675980207/0100 KB CZK",
-            "currency": "CZK: Česká koruna",
-            "balance": 35967.6,
-            "includedBalance": 35967.6
           },
           {
             "accountCode": "221004",
@@ -387,7 +387,7 @@
       "performanceSpend": 6611.57,
       "brandSpend": 0.0,
       "totalSpend": 6611.57,
-      "revenue": 6316413.3,
+      "revenue": 6329990.16,
       "spendShareOfRevenuePct": 0.1
     },
     "topSupplier": {
@@ -405,12 +405,12 @@
       "label": "2025-10-01 až 2026-07-16"
     },
     "summary": {
-      "noviceRevenueCzkEquiv": 14728017.0,
-      "networkRevenueCzkEquiv": 20987593.0,
+      "noviceRevenueCzkEquiv": 14730112.0,
+      "networkRevenueCzkEquiv": 20990173.0,
       "novicePartners": 50,
       "networkPartners": 50,
-      "noviceOrders": 8914.0,
-      "networkOrders": 12934.0,
+      "noviceOrders": 8915.0,
+      "networkOrders": 12936.0,
       "noviceOrderingContacts": 1685.0,
       "networkOrderingCustomers": 3806.0,
       "topNovicePartner": {

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-16T04:23:03.792913+02:00",
+  "generatedAt": "2026-07-16T07:00:13.292665+02:00",
   "window": {
     "from": "2026-07-15T00:00:01+02:00",
     "to": "2026-07-16T00:00:00+02:00"
@@ -46004,10 +46004,10 @@
       },
       "dateCreated": "2026-07-15T15:04:42+02:00",
       "cancelled": false,
-      "isPaid": false,
+      "isPaid": true,
       "status": {
-        "id": 0,
-        "name": "nová"
+        "id": 1,
+        "name": "přijatá"
       },
       "totalPrice": {
         "withVat": 1759,
@@ -46080,6 +46080,60 @@
           "comment": "Autopilot: odeslána uživatelská zpráva: Upomínka nezaplacené - okamžité platby",
           "notifyStatus": "NO",
           "data": "\"{\\\"initiator\\\":\\\"autopilot\\\"}\""
+        },
+        {
+          "id": 7260012,
+          "adminId": null,
+          "orderStatus": "nová",
+          "date": "2026-07-16T07:01:11+02:00",
+          "comment": "Objednávka byla zaplacena.",
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7260013,
+          "adminId": null,
+          "orderStatus": "nová",
+          "date": "2026-07-16T07:01:11+02:00",
+          "comment": "<p>Dobré zprávy: Úhrada vaší objednávky 261299665 právě dorazila. Než dočtete tento e-mail, pustíme se do práce na expedici vaší objednávky tak, aby vám dorazila co nejdříve.</p><p>Těšíte se? 😍</p><div></div>",
+          "notifyStatus": "YES",
+          "data": "\"{\\\"email_type\\\": \\\"PAYMENT_SUCCESS\\\", \\\"subject\\\": \\\"\\\\ud83c\\\\udf89 Va\\\\u0161e \\\\u00fahrada objedn\\\\u00e1vky 261299665 dorazila, startujeme\\\", \\\"isAdminEmail\\\": false, \\\"attachments\\\": [\\\"order_invoice\\\"], \\\"email_id\\\": \\\"6a58659742f3a\\\"}\""
+        },
+        {
+          "id": 7260016,
+          "adminId": null,
+          "orderStatus": "nová",
+          "date": "2026-07-16T07:02:07+02:00",
+          "comment": "[FlexiBee] Objednávka byla ve FlexiBee zaktualizována",
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7260018,
+          "adminId": null,
+          "orderStatus": "nová",
+          "date": "2026-07-16T07:02:16+02:00",
+          "comment": "[Flexi] Objednávka byla realizována ve Flexi;",
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7260019,
+          "adminId": null,
+          "orderStatus": "nová",
+          "date": "2026-07-16T07:05:02+02:00",
+          "comment": "[4PX] Objednávka byla vytvořena; ID: OC149400632607160145 tracking: 601115621088 účet: CZ",
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7260020,
+          "adminId": null,
+          "orderStatus": "přijatá",
+          "date": "2026-07-16T07:05:02+02:00",
+          "comment": null,
+          "notifyStatus": "NO",
+          "data": "null"
         }
       ],
       "deliveryType": {
@@ -107260,7 +107314,7 @@
     "statuses": [
       {
         "name": "přijatá",
-        "count": 250
+        "count": 251
       },
       {
         "name": "expedováno",
@@ -107268,7 +107322,7 @@
       },
       {
         "name": "nová",
-        "count": 20
+        "count": 19
       },
       {
         "name": "doručeno",
@@ -108066,7 +108120,7 @@
         "statuses": [
           {
             "name": "přijatá",
-            "count": 250
+            "count": 251
           },
           {
             "name": "expedováno",
@@ -108074,7 +108128,7 @@
           },
           {
             "name": "nová",
-            "count": 20
+            "count": 19
           },
           {
             "name": "doručeno",
@@ -108872,7 +108926,7 @@
         "statuses": [
           {
             "name": "přijatá",
-            "count": 222
+            "count": 223
           },
           {
             "name": "expedováno",
@@ -108880,7 +108934,7 @@
           },
           {
             "name": "nová",
-            "count": 17
+            "count": 16
           },
           {
             "name": "chyba",
