@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-20T05:18:03.952510+02:00",
+  "generatedAt": "2026-07-20T08:29:05.713498+02:00",
   "window": {
     "from": "2026-07-19T00:00:01+02:00",
     "to": "2026-07-20T00:00:00+02:00"
@@ -21974,10 +21974,10 @@
       },
       "dateCreated": "2026-07-19T18:33:00+02:00",
       "cancelled": false,
-      "isPaid": false,
+      "isPaid": true,
       "status": {
-        "id": 0,
-        "name": "nová"
+        "id": 1,
+        "name": "přijatá"
       },
       "totalPrice": {
         "withVat": 674,
@@ -22050,6 +22050,60 @@
           "comment": "Autopilot: odeslána uživatelská zpráva: Upomínka nezaplacené - okamžité platby",
           "notifyStatus": "NO",
           "data": "\"{\\\"initiator\\\":\\\"autopilot\\\"}\""
+        },
+        {
+          "id": 7274286,
+          "adminId": null,
+          "orderStatus": "nová",
+          "date": "2026-07-20T08:29:02+02:00",
+          "comment": "Modul FioBank - příchozí platba č. 27747022649. Komentář plátce: Jana Brejžková.",
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7274287,
+          "adminId": null,
+          "orderStatus": "nová",
+          "date": "2026-07-20T08:29:02+02:00",
+          "comment": "<p>Dobré zprávy: Úhrada vaší objednávky 261300760 právě dorazila. Než dočtete tento e-mail, pustíme se do práce na expedici vaší objednávky tak, aby vám dorazila co nejdříve.</p><p>Těšíte se? 😍</p><div></div>",
+          "notifyStatus": "YES",
+          "data": "\"{\\\"email_type\\\": \\\"PAYMENT_SUCCESS\\\", \\\"subject\\\": \\\"\\\\ud83c\\\\udf89 Va\\\\u0161e \\\\u00fahrada objedn\\\\u00e1vky 261300760 dorazila, startujeme\\\", \\\"isAdminEmail\\\": false, \\\"attachments\\\": [\\\"order_invoice\\\"], \\\"email_id\\\": \\\"6a5dc02ee02a9\\\"}\""
+        },
+        {
+          "id": 7274296,
+          "adminId": null,
+          "orderStatus": "nová",
+          "date": "2026-07-20T08:30:04+02:00",
+          "comment": "[4PX] Objednávka byla vytvořena; ID: OC149400632607200141 tracking: 601115815218 účet: CZ",
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7274297,
+          "adminId": null,
+          "orderStatus": "přijatá",
+          "date": "2026-07-20T08:30:04+02:00",
+          "comment": null,
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7274315,
+          "adminId": null,
+          "orderStatus": "přijatá",
+          "date": "2026-07-20T08:31:35+02:00",
+          "comment": "[FlexiBee] Objednávka byla ve FlexiBee zaktualizována",
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7274323,
+          "adminId": null,
+          "orderStatus": "přijatá",
+          "date": "2026-07-20T08:31:49+02:00",
+          "comment": "[Flexi] Objednávka byla realizována ve Flexi;",
+          "notifyStatus": "NO",
+          "data": "null"
         }
       ],
       "deliveryType": {
@@ -31131,10 +31185,10 @@
       },
       "dateCreated": "2026-07-19T15:59:16+02:00",
       "cancelled": false,
-      "isPaid": false,
+      "isPaid": true,
       "status": {
-        "id": 0,
-        "name": "nová"
+        "id": 1,
+        "name": "přijatá"
       },
       "totalPrice": {
         "withVat": 1113,
@@ -31187,6 +31241,42 @@
           "orderStatus": "nová",
           "date": "2026-07-19T16:02:00+02:00",
           "comment": "[FlexiBee] Objednávka byla nahrána do FlexiBee; ID: 689349",
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7274094,
+          "adminId": null,
+          "orderStatus": "nová",
+          "date": "2026-07-20T07:15:05+02:00",
+          "comment": "[4PX] Objednávka byla vytvořena; ID: OC149400632607200121 tracking: 601115811970 účet: CZ",
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7274095,
+          "adminId": null,
+          "orderStatus": "přijatá",
+          "date": "2026-07-20T07:15:05+02:00",
+          "comment": null,
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7274097,
+          "adminId": null,
+          "orderStatus": "přijatá",
+          "date": "2026-07-20T07:16:40+02:00",
+          "comment": "[FlexiBee] Objednávka byla ve FlexiBee zaktualizována",
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7274099,
+          "adminId": null,
+          "orderStatus": "přijatá",
+          "date": "2026-07-20T07:16:47+02:00",
+          "comment": "[Flexi] Objednávka byla realizována ve Flexi;",
           "notifyStatus": "NO",
           "data": "null"
         }
@@ -55535,11 +55625,11 @@
     "statuses": [
       {
         "name": "přijatá",
-        "count": 244
+        "count": 246
       },
       {
         "name": "nová",
-        "count": 12
+        "count": 10
       }
     ],
     "paymentMethods": [
@@ -56273,11 +56363,11 @@
         "statuses": [
           {
             "name": "přijatá",
-            "count": 244
+            "count": 246
           },
           {
             "name": "nová",
-            "count": 12
+            "count": 10
           }
         ],
         "paymentMethods": [
@@ -57011,11 +57101,11 @@
         "statuses": [
           {
             "name": "přijatá",
-            "count": 223
+            "count": 225
           },
           {
             "name": "nová",
-            "count": 11
+            "count": 9
           }
         ],
         "paymentMethods": [
