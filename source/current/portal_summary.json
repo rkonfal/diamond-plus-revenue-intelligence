@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-07-23T23:46:13.978653+02:00",
+  "generatedAt": "2026-07-24T00:37:05.732097+02:00",
   "config": {
     "warehouseCode": "CZPRGA",
     "outboundMaxPages": 20,
     "reportWindow": {
-      "from": "2026-07-22T00:00:01+02:00",
-      "to": "2026-07-23T00:00:00+02:00"
+      "from": "2026-07-23T00:00:01+02:00",
+      "to": "2026-07-24T00:00:00+02:00"
     }
   },
   "warnings": [],
@@ -14,17 +14,17 @@
       "label": "CZ",
       "inventory": {
         "items": 786,
-        "availableStockTotal": 347994,
-        "pendingStockTotal": 1394,
+        "availableStockTotal": 347980,
+        "pendingStockTotal": 1408,
         "freezeStockTotal": 0,
         "lowStockItems": 100
       },
       "outbound": {
-        "items": 600,
-        "scannedPages": 6,
+        "items": 300,
+        "scannedPages": 3,
         "topLogisticsProduct": "F1401",
-        "oldestTimestamp": "2026-07-21T21:15:07+02:00",
-        "newestTimestamp": "2026-07-23T23:45:04+02:00"
+        "oldestTimestamp": "2026-07-22T19:15:06+02:00",
+        "newestTimestamp": "2026-07-24T00:20:07+02:00"
       }
     },
     "sk": {
@@ -48,23 +48,23 @@
   "wpJ": {
     "ready": true,
     "message": "WPJ připojeno a ranní report je vygenerovaný.",
-    "orders": 418,
-    "revenueWithVat": 721651.97,
-    "averageOrderValue": 1726.44,
+    "orders": 262,
+    "revenueWithVat": 481087.84,
+    "averageOrderValue": 1836.21,
     "problematicOrders": 2
   },
   "report": {
-    "date": "2026-07-22",
-    "shipments": 365,
+    "date": "2026-07-23",
+    "shipments": 244,
     "alerts": [
       "2 problematických nebo stornovaných objednávek.",
-      "1 včera prodaných produktů je teď na nízkém skladu.",
+      "2 včera prodaných produktů je teď na nízkém skladu.",
       "10 skladových pozic je v mínusu.",
       "2 A produktů je v kritickém riziku výpadku."
     ],
     "priorities": [
       "Prověřit A produkty v riziku výpadku (2 SKU): 135415-1, 52911.",
-      "Dohlédnout 44402-1 (Fytogel na nohy Slaviton), aktuálně 0 ks.",
+      "Dohlédnout POP00090 (Lymfa – detox, originální bylinné kapky, 100 ml), aktuálně 3 ks.",
       "Projít 2 problematických nebo stornovaných objednávek z včerejška.",
       "Projít nejbližší expirace v 4PX a rozhodnout o doprodeji nebo přesunu zásoby."
     ]
@@ -97,7 +97,7 @@
     "onlyInWpj": 1566,
     "onlyIn4px": 1,
     "stockMismatch": 719,
-    "lowAfterSales": 9,
+    "lowAfterSales": 4,
     "manualMapped4pxAliases": 0,
     "autoMapped4pxAliases": 73
   },
@@ -107,19 +107,19 @@
     "message": "Měsíční finance se tahají přímo z ABRA reportu Výkaz hospodaření za měsíc za všechna střediska. Cash a závazky jsou také live z ABRA API.",
     "currentMonth": {
       "label": "7/2026",
-      "revenue": 8834841.77,
-      "cogsAndFees": 6613563.38,
+      "revenue": 8836669.02,
+      "cogsAndFees": 6614792.84,
       "logistics": 42604.63,
       "marketing": 14090.91,
       "opex": 411446.68,
       "depreciation": 401319.0,
       "other": -6812.64,
-      "grossMargin": 2221278.39,
-      "afterLogistics": 2178673.76,
-      "afterMarketing": 2164582.85,
-      "operatingMargin": 1753136.17,
-      "ebit": 1351817.17,
-      "profit": 1345004.53,
+      "grossMargin": 2221876.18,
+      "afterLogistics": 2179271.55,
+      "afterMarketing": 2165180.64,
+      "operatingMargin": 1753733.96,
+      "ebit": 1352414.96,
+      "profit": 1345602.32,
       "grossMarginPct": 25.1,
       "marketingPct": 0.2,
       "logisticsPct": 0.5,
@@ -139,7 +139,7 @@
           "dueDate": "30.07.2026",
           "amountTotal": 562165.18,
           "amountDue": 562165.18,
-          "status": "7 dní do splatnosti"
+          "status": "6 dní do splatnosti"
         },
         {
           "code": "PF0935/2026",
@@ -147,7 +147,7 @@
           "dueDate": "28.07.2026",
           "amountTotal": 166163.52,
           "amountDue": 166163.52,
-          "status": "5 dní do splatnosti"
+          "status": "4 dní do splatnosti"
         },
         {
           "code": "PF0832/2026",
@@ -155,7 +155,7 @@
           "dueDate": "10.07.2026",
           "amountTotal": 92485.23,
           "amountDue": 92485.23,
-          "status": "13 dní PO SPLATNOSTI"
+          "status": "14 dní PO SPLATNOSTI"
         },
         {
           "code": "PF0824/2026",
@@ -163,7 +163,7 @@
           "dueDate": "30.07.2026",
           "amountTotal": 43560.0,
           "amountDue": 43560.0,
-          "status": "7 dní do splatnosti"
+          "status": "6 dní do splatnosti"
         },
         {
           "code": "PF0936/2026",
@@ -171,7 +171,7 @@
           "dueDate": "31.07.2026",
           "amountTotal": 33880.0,
           "amountDue": 33880.0,
-          "status": "8 dní do splatnosti"
+          "status": "7 dní do splatnosti"
         },
         {
           "code": "PF0831/2026",
@@ -179,7 +179,7 @@
           "dueDate": "10.07.2026",
           "amountTotal": 22468.33,
           "amountDue": 22468.33,
-          "status": "13 dní PO SPLATNOSTI"
+          "status": "14 dní PO SPLATNOSTI"
         },
         {
           "code": "Z0057/2026",
@@ -187,7 +187,7 @@
           "dueDate": "29.07.2026",
           "amountTotal": 20870.9,
           "amountDue": 20870.9,
-          "status": "6 dní do splatnosti"
+          "status": "5 dní do splatnosti"
         },
         {
           "code": "PF0921/2026",
@@ -195,7 +195,7 @@
           "dueDate": "27.07.2026",
           "amountTotal": 19492.37,
           "amountDue": 19492.37,
-          "status": "4 dní do splatnosti"
+          "status": "3 dní do splatnosti"
         }
       ],
       "cashAccountsSource": {
@@ -387,7 +387,7 @@
       "performanceSpend": 9090.91,
       "brandSpend": 5000.0,
       "totalSpend": 14090.91,
-      "revenue": 8834841.77,
+      "revenue": 8836669.02,
       "spendShareOfRevenuePct": 0.2
     },
     "topSupplier": {
@@ -401,8 +401,8 @@
     "message": "Affiliate přehled se skládá přímo z živých API endpointů affiliate portálu, bez závislosti na HTML exportech.",
     "period": {
       "dateFrom": "2025-10-01",
-      "dateTo": "2026-07-23",
-      "label": "2025-10-01 až 2026-07-23"
+      "dateTo": "2026-07-24",
+      "label": "2025-10-01 až 2026-07-24"
     },
     "summary": {
       "noviceRevenueCzkEquiv": 15299796.0,
@@ -440,75 +440,75 @@
     "currentMonth": {
       "label": "7/2026",
       "dateFrom": "2026-07-01",
-      "dateTo": "2026-07-22",
-      "activeUsers": 26448,
-      "sessions": 74240,
-      "engagedSessions": 52378,
-      "screenPageViews": 462541,
-      "ecommercePurchases": 6378.0,
-      "purchaseRevenue": 7680191.95,
-      "averageSessionDuration": 323.34,
+      "dateTo": "2026-07-23",
+      "activeUsers": 27390,
+      "sessions": 78411,
+      "engagedSessions": 55325,
+      "screenPageViews": 483685,
+      "ecommercePurchases": 6648.0,
+      "purchaseRevenue": 8035441.94,
+      "averageSessionDuration": 319.36,
       "bounceRatePct": 0.29,
-      "engagementRatePct": 70.55,
-      "purchaseRatePct": 8.59,
-      "revenuePerSession": 103.45
+      "engagementRatePct": 70.56,
+      "purchaseRatePct": 8.48,
+      "revenuePerSession": 102.48
     },
     "last7days": {
       "label": "last7days",
-      "dateFrom": "2026-07-16",
-      "dateTo": "2026-07-22",
-      "activeUsers": 11392,
-      "sessions": 25192,
-      "engagedSessions": 17059,
-      "screenPageViews": 131858,
-      "ecommercePurchases": 1832.0,
-      "purchaseRevenue": 2260469.84,
-      "averageSessionDuration": 255.67,
-      "bounceRatePct": 0.32,
-      "engagementRatePct": 67.72,
-      "purchaseRatePct": 7.27,
-      "revenuePerSession": 89.73
+      "dateFrom": "2026-07-17",
+      "dateTo": "2026-07-23",
+      "activeUsers": 11524,
+      "sessions": 24948,
+      "engagedSessions": 17117,
+      "screenPageViews": 134640,
+      "ecommercePurchases": 1811.0,
+      "purchaseRevenue": 2288900.15,
+      "averageSessionDuration": 263.47,
+      "bounceRatePct": 0.31,
+      "engagementRatePct": 68.61,
+      "purchaseRatePct": 7.26,
+      "revenuePerSession": 91.75
     },
     "topChannel7d": {
-      "sessions": 6901.0,
-      "activeUsers": 3243.0,
-      "engagedSessions": 4938.0,
-      "ecommercePurchases": 702.0,
-      "purchaseRevenue": 857937.41,
+      "sessions": 7329.0,
+      "activeUsers": 3282.0,
+      "engagedSessions": 5199.0,
+      "ecommercePurchases": 718.0,
+      "purchaseRevenue": 910966.26,
       "channel": "Paid Search",
-      "purchaseRatePct": 10.17,
-      "revenuePerSession": 124.32
+      "purchaseRatePct": 9.8,
+      "revenuePerSession": 124.3
     },
     "countries7d": [
       {
         "country": "Czechia",
-        "activeUsers": 9773.0,
-        "ecommercePurchases": 1661.0,
-        "purchaseRevenue": 2204624.29
+        "activeUsers": 9834.0,
+        "ecommercePurchases": 1647.0,
+        "purchaseRevenue": 2238091.82
       },
       {
         "country": "Slovakia",
-        "activeUsers": 972.0,
-        "ecommercePurchases": 128.0,
-        "purchaseRevenue": 11030.9
+        "activeUsers": 993.0,
+        "ecommercePurchases": 122.0,
+        "purchaseRevenue": 8436.86
       },
       {
         "country": "United States",
-        "activeUsers": 404.0,
-        "ecommercePurchases": 3.0,
-        "purchaseRevenue": 4175.41
+        "activeUsers": 445.0,
+        "ecommercePurchases": 4.0,
+        "purchaseRevenue": 6717.41
       },
       {
         "country": "Austria",
-        "activeUsers": 61.0,
-        "ecommercePurchases": 8.0,
-        "purchaseRevenue": 7237.21
+        "activeUsers": 66.0,
+        "ecommercePurchases": 7.0,
+        "purchaseRevenue": 6694.63
       },
       {
-        "country": "Netherlands",
-        "activeUsers": 40.0,
+        "country": "Italy",
+        "activeUsers": 36.0,
         "ecommercePurchases": 2.0,
-        "purchaseRevenue": 1990.99
+        "purchaseRevenue": 2690.41
       }
     ]
   },
