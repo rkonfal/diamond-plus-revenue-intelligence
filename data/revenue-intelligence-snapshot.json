@@ -26,7 +26,7 @@
       "label": "Finance po marketingu, poslední plný měsíc"
     },
     "netCashPosition": {
-      "value": 10435819.36,
+      "value": 10450459.36,
       "label": "Aktuální čistá hotovostní pozice"
     },
     "measurementConfidence": {
@@ -76,29 +76,29 @@
     },
     "financeCurrentMonth": {
       "label": "7/2026",
-      "revenue": 9243114.82,
-      "cogsAndFees": 6884314.52,
+      "revenue": 9269257.87,
+      "cogsAndFees": 6903288.07,
       "logistics": 42604.63,
       "marketing": 14090.91,
       "opex": 411446.68,
       "depreciation": 401319.0,
       "other": -6833.0,
-      "grossMargin": 2358800.3,
-      "afterLogistics": 2316195.67,
-      "afterMarketing": 2302104.76,
-      "operatingMargin": 1890658.08,
-      "ebit": 1489339.08,
-      "profit": 1482506.08,
+      "grossMargin": 2365969.8,
+      "afterLogistics": 2323365.17,
+      "afterMarketing": 2309274.26,
+      "operatingMargin": 1897827.58,
+      "ebit": 1496508.58,
+      "profit": 1489675.58,
       "grossMarginPct": 25.5,
       "marketingPct": 0.2,
       "logisticsPct": 0.5,
       "operatingMarginPct": 20.5,
-      "profitPct": 16.0
+      "profitPct": 16.1
     },
     "cash": {
-      "cashOnAccounts": 11521496.29,
+      "cashOnAccounts": 11536136.29,
       "unpaidInvoices": 1085676.93,
-      "netCashPosition": 10435819.36,
+      "netCashPosition": 10450459.36,
       "overdueInvoicesCount": 2,
       "overdueInvoicesAmount": 114953.56,
       "largestPayables": [
@@ -196,8 +196,8 @@
             "accountCode": "221001",
             "accountLabel": "221001: 2901338673/2010 FIO CZK",
             "currency": "CZK: Česká koruna",
-            "balance": 2008413.01,
-            "includedBalance": 2008413.01
+            "balance": 2023053.01,
+            "includedBalance": 2023053.01
           },
           {
             "accountCode": "221111",
@@ -344,14 +344,14 @@
     },
     "eshopYtdTotals": {
       "previous": {
-        "count": 83764,
-        "revenueWithVat": 128874042.54,
-        "averageOrderValue": 1538.54
+        "count": 83790,
+        "revenueWithVat": 128916034.9,
+        "averageOrderValue": 1538.56
       },
       "current": {
-        "count": 69964,
-        "revenueWithVat": 116320594.81,
-        "averageOrderValue": 1662.58
+        "count": 69988,
+        "revenueWithVat": 116353631.54,
+        "averageOrderValue": 1662.48
       }
     },
     "previousDayOrders": {
@@ -33263,10 +33263,10 @@
         },
         "dateCreated": "2026-07-25T09:14:39+02:00",
         "cancelled": false,
-        "isPaid": false,
+        "isPaid": true,
         "status": {
-          "id": 0,
-          "name": "nová"
+          "id": 1,
+          "name": "přijatá"
         },
         "totalPrice": {
           "withVat": 1637,
@@ -33339,6 +33339,60 @@
             "comment": "Autopilot: odeslána uživatelská zpráva: Upomínka nezaplacené - okamžité platby",
             "notifyStatus": "NO",
             "data": "\"{\\\"initiator\\\":\\\"autopilot\\\"}\""
+          },
+          {
+            "id": 7302242,
+            "adminId": null,
+            "orderStatus": "nová",
+            "date": "2026-07-26T10:50:12+02:00",
+            "comment": "Objednávka byla zaplacena.",
+            "notifyStatus": "NO",
+            "data": "null"
+          },
+          {
+            "id": 7302243,
+            "adminId": null,
+            "orderStatus": "nová",
+            "date": "2026-07-26T10:50:12+02:00",
+            "comment": "<p>Dobré zprávy: Úhrada vaší objednávky 261302438 právě dorazila. Než dočtete tento e-mail, pustíme se do práce na expedici vaší objednávky tak, aby vám dorazila co nejdříve.</p><p>Těšíte se? 😍</p><div></div>",
+            "notifyStatus": "YES",
+            "data": "\"{\\\"email_type\\\": \\\"PAYMENT_SUCCESS\\\", \\\"subject\\\": \\\"\\\\ud83c\\\\udf89 Va\\\\u0161e \\\\u00fahrada objedn\\\\u00e1vky 261302438 dorazila, startujeme\\\", \\\"isAdminEmail\\\": false, \\\"attachments\\\": [\\\"order_invoice\\\"], \\\"email_id\\\": \\\"6a65ca44bc24b\\\"}\""
+          },
+          {
+            "id": 7302245,
+            "adminId": null,
+            "orderStatus": "nová",
+            "date": "2026-07-26T10:51:48+02:00",
+            "comment": "[FlexiBee] Objednávka byla ve FlexiBee zaktualizována",
+            "notifyStatus": "NO",
+            "data": "null"
+          },
+          {
+            "id": 7302251,
+            "adminId": null,
+            "orderStatus": "nová",
+            "date": "2026-07-26T10:52:10+02:00",
+            "comment": "[Flexi] Objednávka byla realizována ve Flexi;",
+            "notifyStatus": "NO",
+            "data": "null"
+          },
+          {
+            "id": 7302255,
+            "adminId": null,
+            "orderStatus": "nová",
+            "date": "2026-07-26T10:55:02+02:00",
+            "comment": "[4PX] Objednávka byla vytvořena; ID: OC149400632607260075 tracking: 601116051430 účet: CZ",
+            "notifyStatus": "NO",
+            "data": "null"
+          },
+          {
+            "id": 7302256,
+            "adminId": null,
+            "orderStatus": "přijatá",
+            "date": "2026-07-26T10:55:02+02:00",
+            "comment": null,
+            "notifyStatus": "NO",
+            "data": "null"
           }
         ],
         "deliveryType": {
@@ -37552,7 +37606,7 @@
     "headline": "Final truth engine už běží pro finance truth, měřenou YTD customer truth, měřenou YTD order truth a první decision-grade akviziční split. Hlavní chybějící vrstva je netto contribution a backend channel reconciliation.",
     "whatIsTrulyKnown": [
       "Finance po marketingu: 2589047.73 Kč.",
-      "Čistá hotovostní pozice: 10435819.36 Kč.",
+      "Čistá hotovostní pozice: 10450459.36 Kč.",
       "Returning customers generated 315329090.87 Kč vs 12813539.29 Kč from new customers in the measured YTD window.",
       "Zpracované objednávky v měřeném YTD: 203194"
     ],
@@ -37573,7 +37627,7 @@
       "headline": "Byznys je silný, customer truth je měřený, ale marketing decisioning musí pořád procházet trust vrstvou a bucket split logikou.",
       "focus": [
         "Po marketingu zůstalo 2589047.73 Kč.",
-        "Net cash pozice je 10435819.36 Kč.",
+        "Net cash pozice je 10450459.36 Kč.",
         "Returning customers generated 315329090.87 Kč vs 12813539.29 Kč from new customers in the measured YTD window."
       ],
       "questions": [
