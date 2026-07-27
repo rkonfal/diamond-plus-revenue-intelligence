@@ -26,7 +26,7 @@
       "label": "Finance po marketingu, poslední plný měsíc"
     },
     "netCashPosition": {
-      "value": 6803336.1,
+      "value": 6389368.49,
       "label": "Aktuální čistá hotovostní pozice"
     },
     "measurementConfidence": {
@@ -76,56 +76,32 @@
     },
     "financeCurrentMonth": {
       "label": "7/2026",
-      "revenue": 9505607.4,
-      "cogsAndFees": 7078141.79,
+      "revenue": 9632665.45,
+      "cogsAndFees": 7186590.94,
       "logistics": 42604.63,
       "marketing": 16570.25,
-      "opex": 415358.52,
+      "opex": 415784.6,
       "depreciation": 401319.0,
-      "other": -6860.62,
-      "grossMargin": 2427465.61,
-      "afterLogistics": 2384860.98,
-      "afterMarketing": 2368290.73,
-      "operatingMargin": 1952932.21,
-      "ebit": 1551613.21,
-      "profit": 1544752.59,
-      "grossMarginPct": 25.5,
+      "other": 14841.41,
+      "grossMargin": 2446074.51,
+      "afterLogistics": 2403469.88,
+      "afterMarketing": 2386899.63,
+      "operatingMargin": 1971115.03,
+      "ebit": 1569796.03,
+      "profit": 1584637.44,
+      "grossMarginPct": 25.4,
       "marketingPct": 0.2,
       "logisticsPct": 0.4,
       "operatingMarginPct": 20.5,
-      "profitPct": 16.3
+      "profitPct": 16.5
     },
     "cash": {
-      "cashOnAccounts": 11663136.16,
-      "unpaidInvoices": 4859800.06,
-      "netCashPosition": 6803336.1,
-      "overdueInvoicesCount": 3,
-      "overdueInvoicesAmount": 3883292.69,
+      "cashOnAccounts": 7200091.23,
+      "unpaidInvoices": 810722.74,
+      "netCashPosition": 6389368.49,
+      "overdueInvoicesCount": 0,
+      "overdueInvoicesAmount": 0.0,
       "largestPayables": [
-        {
-          "code": "PF0947/2026",
-          "vendor": "\"ASTI GROUP\" SIA",
-          "dueDate": "24.07.2026",
-          "amountTotal": 2392153.62,
-          "amountDue": 2392153.62,
-          "status": "3 dní PO SPLATNOSTI"
-        },
-        {
-          "code": "PF0948/2026",
-          "vendor": "\"ASTI GROUP\" SIA",
-          "dueDate": "24.07.2026",
-          "amountTotal": 830012.49,
-          "amountDue": 830012.49,
-          "status": "3 dní PO SPLATNOSTI"
-        },
-        {
-          "code": "PF0946/2026",
-          "vendor": "\"ASTI GROUP\" SIA",
-          "dueDate": "24.07.2026",
-          "amountTotal": 661126.58,
-          "amountDue": 661126.58,
-          "status": "3 dní PO SPLATNOSTI"
-        },
         {
           "code": "PF0822/2026",
           "vendor": "4PX Express CZ",
@@ -133,14 +109,6 @@
           "amountTotal": 562165.18,
           "amountDue": 562165.18,
           "status": "3 dní do splatnosti"
-        },
-        {
-          "code": "PF0935/2026",
-          "vendor": "ISTA CORPORATION s.r.o.",
-          "dueDate": "28.07.2026",
-          "amountTotal": 166163.52,
-          "amountDue": 166163.52,
-          "status": "1 dní do splatnosti"
         },
         {
           "code": "PF0824/2026",
@@ -165,26 +133,44 @@
           "amountTotal": 20870.9,
           "amountDue": 20870.9,
           "status": "2 dní do splatnosti"
+        },
+        {
+          "code": "PF0921/2026",
+          "vendor": "Zásilkovna s.r.o.",
+          "dueDate": "27.07.2026",
+          "amountTotal": 19492.37,
+          "amountDue": 19492.37,
+          "status": "splatné dnes"
+        },
+        {
+          "code": "Z0039/2026",
+          "vendor": "Le-Investment, spol. s r.o.",
+          "dueDate": "19.08.2026",
+          "amountTotal": 18850.0,
+          "amountDue": 18850.0,
+          "status": "23 dní do splatnosti"
+        },
+        {
+          "code": "PF0930/2026",
+          "vendor": "Mgr. Michaela Puchalková",
+          "dueDate": "05.08.2026",
+          "amountTotal": 17800.0,
+          "amountDue": 17800.0,
+          "status": "9 dní do splatnosti"
+        },
+        {
+          "code": "PF0889/2026",
+          "vendor": "4PX Express CZ",
+          "dueDate": "12.08.2026",
+          "amountTotal": 15730.0,
+          "amountDue": 15730.0,
+          "status": "16 dní do splatnosti"
         }
       ],
       "cashAccountsSource": {
         "status": "live",
         "message": "Cash na účtech a pokladnách je počítán živě z ABRA obratové předvahy pro účty 221 a 211, ze CZK řádků a se započtením kladných zůstatků.",
         "accounts": [
-          {
-            "accountCode": "221006",
-            "accountLabel": "221006: 2202503115/2010 FIO CZK",
-            "currency": "CZK: Česká koruna",
-            "balance": 4516448.8,
-            "includedBalance": 4516448.8
-          },
-          {
-            "accountCode": "221115",
-            "accountLabel": "221115: 131-3675980207/0100 KB CZK",
-            "currency": "CZK: Česká koruna",
-            "balance": 3676579.03,
-            "includedBalance": 3676579.03
-          },
           {
             "accountCode": "221118",
             "accountLabel": "221118: JT banka",
@@ -193,25 +179,39 @@
             "includedBalance": 2500000.0
           },
           {
-            "accountCode": "221001",
-            "accountLabel": "221001: 2901338673/2010 FIO CZK",
+            "accountCode": "221115",
+            "accountLabel": "221115: 131-3675980207/0100 KB CZK",
             "currency": "CZK: Česká koruna",
-            "balance": 268766.83,
-            "includedBalance": 268766.83
-          },
-          {
-            "accountCode": "221111",
-            "accountLabel": "221111: 107-164902 Czk THEPAY",
-            "currency": "CZK: Česká koruna",
-            "balance": 238216.63,
-            "includedBalance": 238216.63
+            "balance": 1287019.55,
+            "includedBalance": 1287019.55
           },
           {
             "accountCode": "221002",
             "accountLabel": "221002: 131-1211280297/0100 KB EUR",
             "currency": "CZK: Česká koruna",
-            "balance": 161384.02,
-            "includedBalance": 161384.02
+            "balance": 1091757.82,
+            "includedBalance": 1091757.82
+          },
+          {
+            "accountCode": "221006",
+            "accountLabel": "221006: 2202503115/2010 FIO CZK",
+            "currency": "CZK: Česká koruna",
+            "balance": 1016448.8,
+            "includedBalance": 1016448.8
+          },
+          {
+            "accountCode": "221111",
+            "accountLabel": "221111: 107-164902 Czk THEPAY",
+            "currency": "CZK: Česká koruna",
+            "balance": 571163.52,
+            "includedBalance": 571163.52
+          },
+          {
+            "accountCode": "221001",
+            "accountLabel": "221001: 2901338673/2010 FIO CZK",
+            "currency": "CZK: Česká koruna",
+            "balance": 343910.57,
+            "includedBalance": 343910.57
           },
           {
             "accountCode": "211001",
@@ -228,18 +228,18 @@
             "includedBalance": 99497.24
           },
           {
-            "accountCode": "221005",
-            "accountLabel": "221005: 2501338690/2010 FIO EUR",
-            "currency": "CZK: Česká koruna",
-            "balance": 70381.61,
-            "includedBalance": 70381.61
-          },
-          {
             "accountCode": "221112",
             "accountLabel": "221112: 107-164902 EUR THEPAY",
             "currency": "CZK: Česká koruna",
-            "balance": 13139.99,
-            "includedBalance": 13139.99
+            "balance": 93480.22,
+            "includedBalance": 93480.22
+          },
+          {
+            "accountCode": "221005",
+            "accountLabel": "221005: 2501338690/2010 FIO EUR",
+            "currency": "CZK: Česká koruna",
+            "balance": 78091.5,
+            "includedBalance": 78091.5
           },
           {
             "accountCode": "221004",
@@ -322,7 +322,7 @@
             "accountCode": "221001",
             "accountLabel": "221001: 2901338673/2010 FIO CZK",
             "currency": "USD: Americký dolar",
-            "balance": -36305.32,
+            "balance": -36325.58,
             "includedBalance": 0.0
           },
           {
@@ -336,7 +336,7 @@
             "accountCode": "221002",
             "accountLabel": "221002: 131-1211280297/0100 KB EUR",
             "currency": "EUR: Euro",
-            "balance": 7041.65,
+            "balance": 45564.16,
             "includedBalance": 0.0
           }
         ]
@@ -344,14 +344,14 @@
     },
     "eshopYtdTotals": {
       "previous": {
-        "count": 83937,
-        "revenueWithVat": 129142242.23,
-        "averageOrderValue": 1538.56
+        "count": 84008,
+        "revenueWithVat": 129260537.24,
+        "averageOrderValue": 1538.67
       },
       "current": {
-        "count": 70214,
-        "revenueWithVat": 116733296.43,
-        "averageOrderValue": 1662.54
+        "count": 70319,
+        "revenueWithVat": 116907129.71,
+        "averageOrderValue": 1662.53
       }
     },
     "previousDayOrders": {
@@ -12437,23 +12437,23 @@
           "label": "2025-10-01 až 2026-07-27"
         },
         "summary": {
-          "noviceRevenueCzkEquiv": 15390960.0,
-          "networkRevenueCzkEquiv": 21866937.0,
+          "noviceRevenueCzkEquiv": 15410583.0,
+          "networkRevenueCzkEquiv": 21891093.0,
           "novicePartners": 50,
           "networkPartners": 50,
-          "noviceOrders": 9321.0,
-          "networkOrders": 13487.0,
+          "noviceOrders": 9332.0,
+          "networkOrders": 13500.0,
           "noviceOrderingContacts": 1701.0,
           "networkOrderingCustomers": 3843.0,
           "topNovicePartner": {
             "partnerCode": "ESHOP",
             "partnerName": "E-shop (interní)",
-            "revenueCzkEquiv": 4984378.0
+            "revenueCzkEquiv": 4988836.0
           },
           "topNetworkPartner": {
             "partnerCode": "ESHOP",
             "partnerName": "E-shop (interní)",
-            "revenueCzkEquiv": 4984378.0
+            "revenueCzkEquiv": 4988836.0
           }
         },
         "reports": {
@@ -12466,8 +12466,8 @@
             "totals": {
               "contacts": 4610.0,
               "orderingContacts": 1701.0,
-              "orders": 9321.0,
-              "revenueCzkEquiv": 15390960.0
+              "orders": 9332.0,
+              "revenueCzkEquiv": 15410583.0
             },
             "monthly": [
               {
@@ -12577,8 +12577,8 @@
                 "orderingContacts": 53.0,
                 "networkCustomers": 0.0,
                 "orderingCustomers": 0.0,
-                "orders": 1047.0,
-                "revenueCzkEquiv": 1674518.0
+                "orders": 1058.0,
+                "revenueCzkEquiv": 1694141.0
               }
             ],
             "topPartners": [
@@ -12587,16 +12587,16 @@
                 "partnerName": "E-shop (interní)",
                 "contacts": 954.0,
                 "orderingContacts": 954.0,
-                "orders": 2992.0,
-                "revenueCzkEquiv": 4984378.0
+                "orders": 2994.0,
+                "revenueCzkEquiv": 4988836.0
               },
               {
                 "partnerCode": "g73ps2",
                 "partnerName": "Jiřina Radová",
                 "contacts": 610.0,
                 "orderingContacts": 50.0,
-                "orders": 701.0,
-                "revenueCzkEquiv": 1342797.0
+                "orders": 705.0,
+                "revenueCzkEquiv": 1348220.0
               },
               {
                 "partnerCode": "ihcwc1",
@@ -12619,8 +12619,8 @@
                 "partnerName": "Hanka Netoličková",
                 "contacts": 199.0,
                 "orderingContacts": 40.0,
-                "orders": 326.0,
-                "revenueCzkEquiv": 490705.0
+                "orders": 327.0,
+                "revenueCzkEquiv": 491923.0
               },
               {
                 "partnerCode": "3xkqnt",
@@ -12667,8 +12667,8 @@
                 "partnerName": "Petra Darebniková",
                 "contacts": 155.0,
                 "orderingContacts": 25.0,
-                "orders": 194.0,
-                "revenueCzkEquiv": 356964.0
+                "orders": 195.0,
+                "revenueCzkEquiv": 359516.0
               },
               {
                 "partnerCode": "yoj4id",
@@ -12751,10 +12751,10 @@
             "error": null,
             "partners": 50,
             "totals": {
-              "networkCustomers": 12629.0,
+              "networkCustomers": 12642.0,
               "orderingCustomers": 3843.0,
-              "orders": 13487.0,
-              "revenueCzkEquiv": 21866937.0
+              "orders": 13500.0,
+              "revenueCzkEquiv": 21891093.0
             },
             "monthly": [
               {
@@ -12864,8 +12864,8 @@
                 "orderingContacts": 0.0,
                 "networkCustomers": 0.0,
                 "orderingCustomers": 0.0,
-                "orders": 1390.0,
-                "revenueCzkEquiv": 2204085.0
+                "orders": 1403.0,
+                "revenueCzkEquiv": 2228241.0
               }
             ],
             "topPartners": [
@@ -12873,28 +12873,28 @@
                 "partnerCode": "ESHOP",
                 "partnerName": "E-shop (interní)",
                 "partnerTiandeId": null,
-                "networkCustomers": 2864.0,
+                "networkCustomers": 2866.0,
                 "orderingCustomers": 954.0,
-                "orders": 2992.0,
-                "revenueCzkEquiv": 4984378.0
+                "orders": 2994.0,
+                "revenueCzkEquiv": 4988836.0
               },
               {
                 "partnerCode": "g73ps2",
                 "partnerName": "Jiřina Radová",
                 "partnerTiandeId": null,
-                "networkCustomers": 646.0,
+                "networkCustomers": 650.0,
                 "orderingCustomers": 210.0,
-                "orders": 701.0,
-                "revenueCzkEquiv": 1342797.0
+                "orders": 705.0,
+                "revenueCzkEquiv": 1348220.0
               },
               {
                 "partnerCode": "ffhdir",
                 "partnerName": "Michaela Krásová",
                 "partnerTiandeId": null,
-                "networkCustomers": 636.0,
+                "networkCustomers": 639.0,
                 "orderingCustomers": 159.0,
-                "orders": 666.0,
-                "revenueCzkEquiv": 1235928.0
+                "orders": 669.0,
+                "revenueCzkEquiv": 1240874.0
               },
               {
                 "partnerCode": "5uzst8",
@@ -12909,10 +12909,10 @@
                 "partnerCode": "b0to1x",
                 "partnerName": "Renata",
                 "partnerTiandeId": null,
-                "networkCustomers": 601.0,
+                "networkCustomers": 602.0,
                 "orderingCustomers": 92.0,
-                "orders": 615.0,
-                "revenueCzkEquiv": 1079179.0
+                "orders": 616.0,
+                "revenueCzkEquiv": 1082498.0
               },
               {
                 "partnerCode": "ihcwc1",
@@ -12954,10 +12954,10 @@
                 "partnerCode": "y9qnc3",
                 "partnerName": "Hanka Netoličková",
                 "partnerTiandeId": null,
-                "networkCustomers": 309.0,
+                "networkCustomers": 310.0,
                 "orderingCustomers": 90.0,
-                "orders": 326.0,
-                "revenueCzkEquiv": 490705.0
+                "orders": 327.0,
+                "revenueCzkEquiv": 491923.0
               },
               {
                 "partnerCode": "3xkqnt",
@@ -13035,10 +13035,10 @@
                 "partnerCode": "zfh4az",
                 "partnerName": "Petra Darebniková",
                 "partnerTiandeId": null,
-                "networkCustomers": 186.0,
+                "networkCustomers": 187.0,
                 "orderingCustomers": 46.0,
-                "orders": 194.0,
-                "revenueCzkEquiv": 356964.0
+                "orders": 195.0,
+                "revenueCzkEquiv": 359516.0
               },
               {
                 "partnerCode": "yoj4id",
@@ -13263,7 +13263,7 @@
     "coverage": {
       "customersCount": 39328,
       "ordersProcessed": 203194,
-      "top50RevenueSharePctOfYtd": 8.9,
+      "top50RevenueSharePctOfYtd": 8.88,
       "top10RevenueSharePctOfYtd": 4.4,
       "top50OrdersSharePctOfProcessed": 2.09
     },
@@ -30626,10 +30626,10 @@
         },
         "dateCreated": "2026-07-26T19:43:10+02:00",
         "cancelled": false,
-        "isPaid": false,
+        "isPaid": true,
         "status": {
-          "id": 0,
-          "name": "nová"
+          "id": 1,
+          "name": "přijatá"
         },
         "totalPrice": {
           "withVat": 2628,
@@ -30702,6 +30702,60 @@
             "comment": "Autopilot: odeslána uživatelská zpráva: Upomínka nezaplacené - okamžité platby",
             "notifyStatus": "NO",
             "data": "\"{\\\"initiator\\\":\\\"autopilot\\\"}\""
+          },
+          {
+            "id": 7304907,
+            "adminId": null,
+            "orderStatus": "nová",
+            "date": "2026-07-27T10:39:02+02:00",
+            "comment": "Modul FioBank - příchozí platba č. 27757002143. Komentář plátce: HORÁKOVÁ ALENA.",
+            "notifyStatus": "NO",
+            "data": "null"
+          },
+          {
+            "id": 7304908,
+            "adminId": null,
+            "orderStatus": "nová",
+            "date": "2026-07-27T10:39:02+02:00",
+            "comment": "<p>Dobré zprávy: Úhrada vaší objednávky 261302696 právě dorazila. Než dočtete tento e-mail, pustíme se do práce na expedici vaší objednávky tak, aby vám dorazila co nejdříve.</p><p>Těšíte se? 😍</p><div></div>",
+            "notifyStatus": "YES",
+            "data": "\"{\\\"email_type\\\": \\\"PAYMENT_SUCCESS\\\", \\\"subject\\\": \\\"\\\\ud83c\\\\udf89 Va\\\\u0161e \\\\u00fahrada objedn\\\\u00e1vky 261302696 dorazila, startujeme\\\", \\\"isAdminEmail\\\": false, \\\"attachments\\\": [\\\"order_invoice\\\"], \\\"email_id\\\": \\\"6a671926c58bb\\\"}\""
+          },
+          {
+            "id": 7304911,
+            "adminId": null,
+            "orderStatus": "nová",
+            "date": "2026-07-27T10:40:04+02:00",
+            "comment": "[4PX] Objednávka byla vytvořena; ID: OC149400632607270179 tracking: 601116086180 účet: CZ",
+            "notifyStatus": "NO",
+            "data": "null"
+          },
+          {
+            "id": 7304912,
+            "adminId": null,
+            "orderStatus": "přijatá",
+            "date": "2026-07-27T10:40:04+02:00",
+            "comment": null,
+            "notifyStatus": "NO",
+            "data": "null"
+          },
+          {
+            "id": 7304924,
+            "adminId": null,
+            "orderStatus": "přijatá",
+            "date": "2026-07-27T10:41:29+02:00",
+            "comment": "[FlexiBee] Objednávka byla ve FlexiBee zaktualizována",
+            "notifyStatus": "NO",
+            "data": "null"
+          },
+          {
+            "id": 7304932,
+            "adminId": null,
+            "orderStatus": "přijatá",
+            "date": "2026-07-27T10:41:43+02:00",
+            "comment": "[Flexi] Objednávka byla realizována ve Flexi;",
+            "notifyStatus": "NO",
+            "data": "null"
           }
         ],
         "deliveryType": {
@@ -66303,7 +66357,7 @@
     "headline": "Final truth engine už běží pro finance truth, měřenou YTD customer truth, měřenou YTD order truth a první decision-grade akviziční split. Hlavní chybějící vrstva je netto contribution a backend channel reconciliation.",
     "whatIsTrulyKnown": [
       "Finance po marketingu: 2589047.73 Kč.",
-      "Čistá hotovostní pozice: 6803336.1 Kč.",
+      "Čistá hotovostní pozice: 6389368.49 Kč.",
       "Returning customers generated 315329090.87 Kč vs 12813539.29 Kč from new customers in the measured YTD window.",
       "Zpracované objednávky v měřeném YTD: 203194"
     ],
@@ -66324,7 +66378,7 @@
       "headline": "Byznys je silný, customer truth je měřený, ale marketing decisioning musí pořád procházet trust vrstvou a bucket split logikou.",
       "focus": [
         "Po marketingu zůstalo 2589047.73 Kč.",
-        "Net cash pozice je 6803336.1 Kč.",
+        "Net cash pozice je 6389368.49 Kč.",
         "Returning customers generated 315329090.87 Kč vs 12813539.29 Kč from new customers in the measured YTD window."
       ],
       "questions": [
