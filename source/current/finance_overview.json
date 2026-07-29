@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-29T09:10:53.070234+02:00",
+  "generatedAt": "2026-07-29T13:27:15.842235+02:00",
   "source": {
     "status": "live_report",
     "message": "Měsíční finance se tahají přímo z ABRA reportu Výkaz hospodaření za měsíc za všechna střediska. Cash a závazky jsou také live z ABRA API."
@@ -142,46 +142,46 @@
     },
     {
       "label": "7/2026",
-      "revenue": 10526075.74,
-      "cogsAndFees": 7878149.38,
+      "revenue": 10658106.14,
+      "cogsAndFees": 7970803.07,
       "logistics": 55869.3,
       "marketing": 16570.25,
       "opex": 458340.22,
       "depreciation": 401319.0,
       "other": 14949.41,
-      "grossMargin": 2647926.36,
-      "afterLogistics": 2592057.06,
-      "afterMarketing": 2575486.81,
-      "operatingMargin": 2117146.59,
-      "ebit": 1715827.59,
-      "profit": 1730777.0,
+      "grossMargin": 2687303.07,
+      "afterLogistics": 2631433.77,
+      "afterMarketing": 2614863.52,
+      "operatingMargin": 2156523.3,
+      "ebit": 1755204.3,
+      "profit": 1770153.71,
       "grossMarginPct": 25.2,
       "marketingPct": 0.2,
       "logisticsPct": 0.5,
-      "operatingMarginPct": 20.1,
-      "profitPct": 16.4
+      "operatingMarginPct": 20.2,
+      "profitPct": 16.6
     }
   ],
   "currentMonth": {
     "label": "7/2026",
-    "revenue": 10526075.74,
-    "cogsAndFees": 7878149.38,
+    "revenue": 10658106.14,
+    "cogsAndFees": 7970803.07,
     "logistics": 55869.3,
     "marketing": 16570.25,
     "opex": 458340.22,
     "depreciation": 401319.0,
     "other": 14949.41,
-    "grossMargin": 2647926.36,
-    "afterLogistics": 2592057.06,
-    "afterMarketing": 2575486.81,
-    "operatingMargin": 2117146.59,
-    "ebit": 1715827.59,
-    "profit": 1730777.0,
+    "grossMargin": 2687303.07,
+    "afterLogistics": 2631433.77,
+    "afterMarketing": 2614863.52,
+    "operatingMargin": 2156523.3,
+    "ebit": 1755204.3,
+    "profit": 1770153.71,
     "grossMarginPct": 25.2,
     "marketingPct": 0.2,
     "logisticsPct": 0.5,
-    "operatingMarginPct": 20.1,
-    "profitPct": 16.4
+    "operatingMarginPct": 20.2,
+    "profitPct": 16.6
   },
   "previousMonth": {
     "label": "6/2026",
@@ -205,20 +205,12 @@
     "profitPct": 1.3
   },
   "cash": {
-    "cashOnAccounts": 7027254.47,
-    "unpaidInvoices": 179229.15,
-    "netCashPosition": 6848025.32,
+    "cashOnAccounts": 7044258.89,
+    "unpaidInvoices": 139229.15,
+    "netCashPosition": 6905029.74,
     "overdueInvoicesCount": 0,
     "overdueInvoicesAmount": 0.0,
     "largestPayables": [
-      {
-        "code": "PF0954/2026",
-        "vendor": "Jindřiška Koutecká",
-        "dueDate": "03.08.2026",
-        "amountTotal": 40000.0,
-        "amountDue": 40000.0,
-        "status": "5 dní do splatnosti"
-      },
       {
         "code": "PF0952/2026",
         "vendor": "ISTA CORPORATION s.r.o.",
@@ -274,6 +266,14 @@
         "amountTotal": 9463.0,
         "amountDue": 9463.0,
         "status": "39 dní do splatnosti"
+      },
+      {
+        "code": "PF0920/2026",
+        "vendor": "Rocketas s.r.o.",
+        "dueDate": "01.08.2026",
+        "amountTotal": 8621.0,
+        "amountDue": 8621.0,
+        "status": "3 dní do splatnosti"
       }
     ],
     "cashAccountsSource": {
@@ -305,8 +305,15 @@
           "accountCode": "221115",
           "accountLabel": "221115: 131-3675980207/0100 KB CZK",
           "currency": "CZK: Česká koruna",
-          "balance": 704285.25,
-          "includedBalance": 704285.25
+          "balance": 664285.25,
+          "includedBalance": 664285.25
+        },
+        {
+          "accountCode": "221001",
+          "accountLabel": "221001: 2901338673/2010 FIO CZK",
+          "currency": "CZK: Česká koruna",
+          "balance": 583328.41,
+          "includedBalance": 583328.41
         },
         {
           "accountCode": "221111",
@@ -316,13 +323,6 @@
           "includedBalance": 571163.52
         },
         {
-          "accountCode": "221001",
-          "accountLabel": "221001: 2901338673/2010 FIO CZK",
-          "currency": "CZK: Česká koruna",
-          "balance": 533456.41,
-          "includedBalance": 533456.41
-        },
-        {
           "accountCode": "211001",
           "accountLabel": "211001: Pokladna Czk",
           "currency": "CZK: Česká koruna",
@@ -330,18 +330,18 @@
           "includedBalance": 105038.07
         },
         {
+          "accountCode": "221005",
+          "accountLabel": "221005: 2501338690/2010 FIO EUR",
+          "currency": "CZK: Česká koruna",
+          "balance": 100628.52,
+          "includedBalance": 100628.52
+        },
+        {
           "accountCode": "221117",
           "accountLabel": "221117: Česká spořitelna",
           "currency": "CZK: Česká koruna",
           "balance": 99497.24,
           "includedBalance": 99497.24
-        },
-        {
-          "accountCode": "221005",
-          "accountLabel": "221005: 2501338690/2010 FIO EUR",
-          "currency": "CZK: Česká koruna",
-          "balance": 93496.1,
-          "includedBalance": 93496.1
         },
         {
           "accountCode": "221112",
