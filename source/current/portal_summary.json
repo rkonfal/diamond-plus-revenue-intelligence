@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-29T07:13:49.639138+02:00",
+  "generatedAt": "2026-07-29T09:10:53.070234+02:00",
   "config": {
     "warehouseCode": "CZPRGA",
     "outboundMaxPages": 20,
@@ -14,25 +14,25 @@
       "label": "CZ",
       "inventory": {
         "items": 788,
-        "availableStockTotal": 338821,
-        "pendingStockTotal": 2981,
+        "availableStockTotal": 338250,
+        "pendingStockTotal": 2467,
         "freezeStockTotal": 0,
         "lowStockItems": 100
       },
       "outbound": {
-        "items": 300,
-        "scannedPages": 3,
+        "items": 400,
+        "scannedPages": 4,
         "topLogisticsProduct": "F1401",
-        "oldestTimestamp": "2026-07-27T23:20:07+02:00",
-        "newestTimestamp": "2026-07-29T07:10:05+02:00"
+        "oldestTimestamp": "2026-07-27T21:40:05+02:00",
+        "newestTimestamp": "2026-07-29T09:10:09+02:00"
       }
     },
     "sk": {
       "label": "SK",
       "inventory": {
-        "items": 637,
-        "availableStockTotal": 45168,
-        "pendingStockTotal": 196,
+        "items": 638,
+        "availableStockTotal": 46240,
+        "pendingStockTotal": 188,
         "freezeStockTotal": 0,
         "lowStockItems": 100
       },
@@ -40,8 +40,8 @@
         "items": 100,
         "scannedPages": 1,
         "topLogisticsProduct": "F1403",
-        "oldestTimestamp": "2026-07-26T09:30:20+02:00",
-        "newestTimestamp": "2026-07-29T07:00:20+02:00"
+        "oldestTimestamp": "2026-07-26T11:40:17+02:00",
+        "newestTimestamp": "2026-07-29T08:30:16+02:00"
       }
     }
   },
@@ -69,12 +69,12 @@
     ]
   },
   "expiries": {
-    "datedSkuCount": 325,
+    "datedSkuCount": 324,
     "czSkuCount": 313,
-    "skSkuCount": 296,
-    "datedRowCount": 712,
+    "skSkuCount": 294,
+    "datedRowCount": 713,
     "czRowCount": 381,
-    "skRowCount": 331
+    "skRowCount": 332
   },
   "storeExpiry": {
     "inputRows": 0,
@@ -91,11 +91,11 @@
     "sourceWarnings": 2
   },
   "pairing": {
-    "allCodes": 3015,
+    "allCodes": 3018,
     "pairedProducts": 372,
-    "onlyInWpj": 1575,
+    "onlyInWpj": 1578,
     "onlyIn4px": 1,
-    "stockMismatch": 713,
+    "stockMismatch": 724,
     "lowAfterSales": 4,
     "manualMapped4pxAliases": 0,
     "autoMapped4pxAliases": 74
@@ -106,29 +106,29 @@
     "message": "Měsíční finance se tahají přímo z ABRA reportu Výkaz hospodaření za měsíc za všechna střediska. Cash a závazky jsou také live z ABRA API.",
     "currentMonth": {
       "label": "7/2026",
-      "revenue": 10472590.35,
-      "cogsAndFees": 7841370.6,
+      "revenue": 10526075.74,
+      "cogsAndFees": 7878149.38,
       "logistics": 55869.3,
       "marketing": 16570.25,
       "opex": 458340.22,
       "depreciation": 401319.0,
       "other": 14949.41,
-      "grossMargin": 2631219.75,
-      "afterLogistics": 2575350.45,
-      "afterMarketing": 2558780.2,
-      "operatingMargin": 2100439.98,
-      "ebit": 1699120.98,
-      "profit": 1714070.39,
-      "grossMarginPct": 25.1,
+      "grossMargin": 2647926.36,
+      "afterLogistics": 2592057.06,
+      "afterMarketing": 2575486.81,
+      "operatingMargin": 2117146.59,
+      "ebit": 1715827.59,
+      "profit": 1730777.0,
+      "grossMarginPct": 25.2,
       "marketingPct": 0.2,
       "logisticsPct": 0.5,
       "operatingMarginPct": 20.1,
       "profitPct": 16.4
     },
     "cash": {
-      "cashOnAccounts": 7010664.57,
+      "cashOnAccounts": 7027254.47,
       "unpaidInvoices": 179229.15,
-      "netCashPosition": 6831435.42,
+      "netCashPosition": 6848025.32,
       "overdueInvoicesCount": 0,
       "overdueInvoicesAmount": 0.0,
       "largestPayables": [
@@ -209,18 +209,18 @@
             "includedBalance": 2500000.0
           },
           {
+            "accountCode": "221006",
+            "accountLabel": "221006: 2202503115/2010 FIO CZK",
+            "currency": "CZK: Česká koruna",
+            "balance": 1221448.8,
+            "includedBalance": 1221448.8
+          },
+          {
             "accountCode": "221002",
             "accountLabel": "221002: 131-1211280297/0100 KB EUR",
             "currency": "CZK: Česká koruna",
             "balance": 1128260.06,
             "includedBalance": 1128260.06
-          },
-          {
-            "accountCode": "221006",
-            "accountLabel": "221006: 2202503115/2010 FIO CZK",
-            "currency": "CZK: Česká koruna",
-            "balance": 1118948.8,
-            "includedBalance": 1118948.8
           },
           {
             "accountCode": "221115",
@@ -230,18 +230,18 @@
             "includedBalance": 704285.25
           },
           {
-            "accountCode": "221001",
-            "accountLabel": "221001: 2901338673/2010 FIO CZK",
-            "currency": "CZK: Česká koruna",
-            "balance": 620474.41,
-            "includedBalance": 620474.41
-          },
-          {
             "accountCode": "221111",
             "accountLabel": "221111: 107-164902 Czk THEPAY",
             "currency": "CZK: Česká koruna",
             "balance": 571163.52,
             "includedBalance": 571163.52
+          },
+          {
+            "accountCode": "221001",
+            "accountLabel": "221001: 2901338673/2010 FIO CZK",
+            "currency": "CZK: Česká koruna",
+            "balance": 533456.41,
+            "includedBalance": 533456.41
           },
           {
             "accountCode": "211001",
@@ -261,8 +261,8 @@
             "accountCode": "221005",
             "accountLabel": "221005: 2501338690/2010 FIO EUR",
             "currency": "CZK: Česká koruna",
-            "balance": 92388.2,
-            "includedBalance": 92388.2
+            "balance": 93496.1,
+            "includedBalance": 93496.1
           },
           {
             "accountCode": "221112",
@@ -386,7 +386,7 @@
       "performanceSpend": 11570.25,
       "brandSpend": 5000.0,
       "totalSpend": 16570.25,
-      "revenue": 10472590.35,
+      "revenue": 10526075.74,
       "spendShareOfRevenuePct": 0.2
     },
     "topSupplier": {
@@ -404,23 +404,23 @@
       "label": "2025-10-01 až 2026-07-29"
     },
     "summary": {
-      "noviceRevenueCzkEquiv": 15560523.0,
-      "networkRevenueCzkEquiv": 22071615.0,
+      "noviceRevenueCzkEquiv": 15569385.0,
+      "networkRevenueCzkEquiv": 22083425.0,
       "novicePartners": 50,
       "networkPartners": 50,
-      "noviceOrders": 9427.0,
-      "networkOrders": 13615.0,
-      "noviceOrderingContacts": 1712.0,
-      "networkOrderingCustomers": 3864.0,
+      "noviceOrders": 9434.0,
+      "networkOrders": 13624.0,
+      "noviceOrderingContacts": 1714.0,
+      "networkOrderingCustomers": 3866.0,
       "topNovicePartner": {
         "partnerCode": "ESHOP",
         "partnerName": "E-shop (interní)",
-        "revenueCzkEquiv": 5052184.0
+        "revenueCzkEquiv": 5055745.0
       },
       "topNetworkPartner": {
         "partnerCode": "ESHOP",
         "partnerName": "E-shop (interní)",
-        "revenueCzkEquiv": 5052184.0
+        "revenueCzkEquiv": 5055745.0
       }
     }
   },
@@ -513,26 +513,26 @@
   },
   "twistoWatchdog": {
     "ready": true,
-    "status": "ok",
+    "status": "warn",
     "summary": {
       "windowDays": 90,
-      "twistoBatchCount": 36,
+      "twistoBatchCount": 37,
       "twistoPaidBatchCount": 36,
       "bankTwistoTransactionCount": 22,
       "matchedBatchCount": 22,
-      "unmatchedBatchCount": 0,
+      "unmatchedBatchCount": 1,
       "unmatchedBankTransactions": 0,
       "twistoPaidAmount": 175358.0,
       "twistoMatchedAmount": 289357.0,
       "bankReceivedAmount": 289357.0,
-      "openBatchAmount": 0,
+      "openBatchAmount": 5529.0,
       "bankVsTwistoDelta": 0.0,
       "wpjTwistoOrderCount": 5,
       "wpjTwistoOrderAmount": 8076.0,
-      "twistoOrderAmount": 656151.0,
+      "twistoOrderAmount": 661680.0,
       "historicalMatchedBatchAmount": 289357.0,
-      "wpjVsTwistoOrderDelta": -648075.0,
-      "oldestOpenBatchDays": null
+      "wpjVsTwistoOrderDelta": -653604.0,
+      "oldestOpenBatchDays": 1
     },
     "source": {
       "twisto": {
@@ -552,6 +552,6 @@
         "message": "WPJ twisto objednávky z historie objednávek."
       }
     },
-    "message": null
+    "message": "Twisto batch bez bankovního matchnutí: 5529.00 Kč"
   }
 }
