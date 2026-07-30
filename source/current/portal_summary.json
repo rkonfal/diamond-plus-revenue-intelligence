@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-30T15:26:29.747458+02:00",
+  "generatedAt": "2026-07-30T17:02:38.926173+02:00",
   "config": {
     "warehouseCode": "CZPRGA",
     "outboundMaxPages": 20,
@@ -14,8 +14,8 @@
       "label": "CZ",
       "inventory": {
         "items": 789,
-        "availableStockTotal": 334503,
-        "pendingStockTotal": 750,
+        "availableStockTotal": 338186,
+        "pendingStockTotal": 904,
         "freezeStockTotal": 0,
         "lowStockItems": 100
       },
@@ -23,16 +23,16 @@
         "items": 500,
         "scannedPages": 5,
         "topLogisticsProduct": "F1401",
-        "oldestTimestamp": "2026-07-28T21:50:05+02:00",
-        "newestTimestamp": "2026-07-30T15:25:02+02:00"
+        "oldestTimestamp": "2026-07-28T22:35:06+02:00",
+        "newestTimestamp": "2026-07-30T16:55:05+02:00"
       }
     },
     "sk": {
       "label": "SK",
       "inventory": {
         "items": 639,
-        "availableStockTotal": 45923,
-        "pendingStockTotal": 14,
+        "availableStockTotal": 46201,
+        "pendingStockTotal": 36,
         "freezeStockTotal": 0,
         "lowStockItems": 100
       },
@@ -40,8 +40,8 @@
         "items": 100,
         "scannedPages": 1,
         "topLogisticsProduct": "F1403",
-        "oldestTimestamp": "2026-07-27T16:30:12+02:00",
-        "newestTimestamp": "2026-07-30T14:45:16+02:00"
+        "oldestTimestamp": "2026-07-27T17:20:09+02:00",
+        "newestTimestamp": "2026-07-30T16:50:11+02:00"
       }
     }
   },
@@ -70,12 +70,12 @@
     ]
   },
   "expiries": {
-    "datedSkuCount": 324,
-    "czSkuCount": 313,
-    "skSkuCount": 295,
-    "datedRowCount": 717,
-    "czRowCount": 384,
-    "skRowCount": 333
+    "datedSkuCount": 325,
+    "czSkuCount": 314,
+    "skSkuCount": 296,
+    "datedRowCount": 720,
+    "czRowCount": 386,
+    "skRowCount": 334
   },
   "storeExpiry": {
     "inputRows": 0,
@@ -93,10 +93,10 @@
   },
   "pairing": {
     "allCodes": 3023,
-    "pairedProducts": 367,
+    "pairedProducts": 368,
     "onlyInWpj": 1588,
     "onlyIn4px": 1,
-    "stockMismatch": 715,
+    "stockMismatch": 719,
     "lowAfterSales": 9,
     "manualMapped4pxAliases": 0,
     "autoMapped4pxAliases": 74
@@ -107,29 +107,29 @@
     "message": "Měsíční finance se tahají přímo z ABRA reportu Výkaz hospodaření za měsíc za všechna střediska. Cash a závazky jsou také live z ABRA API.",
     "currentMonth": {
       "label": "7/2026",
-      "revenue": 11102200.67,
-      "cogsAndFees": 8290907.36,
+      "revenue": 11128772.83,
+      "cogsAndFees": 8308137.48,
       "logistics": 55869.3,
       "marketing": 16570.25,
       "opex": 458340.22,
       "depreciation": 401319.0,
       "other": 14949.41,
-      "grossMargin": 2811293.31,
-      "afterLogistics": 2755424.01,
-      "afterMarketing": 2738853.76,
-      "operatingMargin": 2280513.54,
-      "ebit": 1879194.54,
-      "profit": 1894143.95,
+      "grossMargin": 2820635.35,
+      "afterLogistics": 2764766.05,
+      "afterMarketing": 2748195.8,
+      "operatingMargin": 2289855.58,
+      "ebit": 1888536.58,
+      "profit": 1903485.99,
       "grossMarginPct": 25.3,
       "marketingPct": 0.1,
       "logisticsPct": 0.5,
-      "operatingMarginPct": 20.5,
+      "operatingMarginPct": 20.6,
       "profitPct": 17.1
     },
     "cash": {
-      "cashOnAccounts": 7262276.8,
+      "cashOnAccounts": 7268292.8,
       "unpaidInvoices": 139229.15,
-      "netCashPosition": 7123047.65,
+      "netCashPosition": 7129063.65,
       "overdueInvoicesCount": 0,
       "overdueInvoicesAmount": 0.0,
       "largestPayables": [
@@ -234,8 +234,8 @@
             "accountCode": "221001",
             "accountLabel": "221001: 2901338673/2010 FIO CZK",
             "currency": "CZK: Česká koruna",
-            "balance": 619216.41,
-            "includedBalance": 619216.41
+            "balance": 625232.41,
+            "includedBalance": 625232.41
           },
           {
             "accountCode": "221111",
@@ -387,7 +387,7 @@
       "performanceSpend": 11570.25,
       "brandSpend": 5000.0,
       "totalSpend": 16570.25,
-      "revenue": 11102200.67,
+      "revenue": 11128772.83,
       "spendShareOfRevenuePct": 0.1
     },
     "topSupplier": {
@@ -514,7 +514,7 @@
   },
   "twistoWatchdog": {
     "ready": true,
-    "status": "warn",
+    "status": "ok",
     "summary": {
       "windowDays": 90,
       "twistoBatchCount": 37,
@@ -553,6 +553,6 @@
         "message": "WPJ twisto objednávky z historie objednávek."
       }
     },
-    "message": "Twisto watchdog se nepodařilo spustit: Command '['python3', '/Users/rudolfkonfal/.openclaw/workspace/reporting-v2/scripts/build_twisto_watchdog.py', '--snapshot-path', '/Users/rudolfkonfal/.openclaw/workspace/reporting-v2/data/snapshots/20260730-152629', '--generated-at', '2026-07-30T15:26:29.747458+02:00']' timed out after 300 seconds"
+    "message": null
   }
 }
