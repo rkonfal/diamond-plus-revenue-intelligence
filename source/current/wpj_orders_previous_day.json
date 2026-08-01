@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-01T01:39:08.346616+02:00",
+  "generatedAt": "2026-08-01T04:49:22.233990+02:00",
   "window": {
     "from": "2026-07-31T00:00:01+02:00",
     "to": "2026-08-01T00:00:00+02:00"
@@ -36048,10 +36048,10 @@
       },
       "dateCreated": "2026-07-31T19:31:22+02:00",
       "cancelled": false,
-      "isPaid": false,
+      "isPaid": true,
       "status": {
-        "id": 0,
-        "name": "nová"
+        "id": 1,
+        "name": "přijatá"
       },
       "totalPrice": {
         "withVat": 2365,
@@ -36124,6 +36124,60 @@
           "comment": "Autopilot: odeslána uživatelská zpráva: Upomínka nezaplacené - okamžité platby",
           "notifyStatus": "NO",
           "data": "\"{\\\"initiator\\\":\\\"autopilot\\\"}\""
+        },
+        {
+          "id": 7334599,
+          "adminId": null,
+          "orderStatus": "nová",
+          "date": "2026-08-01T05:10:10+02:00",
+          "comment": "Objednávka byla zaplacena.",
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7334600,
+          "adminId": null,
+          "orderStatus": "nová",
+          "date": "2026-08-01T05:10:10+02:00",
+          "comment": "<p>Dobré zprávy: Úhrada vaší objednávky 261304592 právě dorazila. Než dočtete tento e-mail, pustíme se do práce na expedici vaší objednávky tak, aby vám dorazila co nejdříve.</p><p>Těšíte se? 😍</p><div></div>",
+          "notifyStatus": "YES",
+          "data": "\"{\\\"email_type\\\": \\\"PAYMENT_SUCCESS\\\", \\\"subject\\\": \\\"\\\\ud83c\\\\udf89 Va\\\\u0161e \\\\u00fahrada objedn\\\\u00e1vky 261304592 dorazila, startujeme\\\", \\\"isAdminEmail\\\": false, \\\"attachments\\\": [\\\"order_invoice\\\"], \\\"email_id\\\": \\\"6a6d6392c6ead\\\"}\""
+        },
+        {
+          "id": 7334601,
+          "adminId": null,
+          "orderStatus": "nová",
+          "date": "2026-08-01T05:12:11+02:00",
+          "comment": "[FlexiBee] Objednávka byla ve FlexiBee zaktualizována",
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7334602,
+          "adminId": null,
+          "orderStatus": "nová",
+          "date": "2026-08-01T05:12:19+02:00",
+          "comment": "[Flexi] Objednávka byla realizována ve Flexi;",
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7334603,
+          "adminId": null,
+          "orderStatus": "nová",
+          "date": "2026-08-01T05:15:03+02:00",
+          "comment": "[4PX] Objednávka byla vytvořena; ID: OC149400632608010170 tracking: 601116305455 účet: CZ",
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7334604,
+          "adminId": null,
+          "orderStatus": "přijatá",
+          "date": "2026-08-01T05:15:04+02:00",
+          "comment": null,
+          "notifyStatus": "NO",
+          "data": "null"
         }
       ],
       "deliveryType": {
@@ -101962,7 +102016,7 @@
     "statuses": [
       {
         "name": "přijatá",
-        "count": 260
+        "count": 261
       },
       {
         "name": "expedováno",
@@ -101970,7 +102024,7 @@
       },
       {
         "name": "nová",
-        "count": 51
+        "count": 50
       },
       {
         "name": "doručeno",
@@ -102766,7 +102820,7 @@
         "statuses": [
           {
             "name": "přijatá",
-            "count": 260
+            "count": 261
           },
           {
             "name": "expedováno",
@@ -102774,7 +102828,7 @@
           },
           {
             "name": "nová",
-            "count": 51
+            "count": 50
           },
           {
             "name": "doručeno",
@@ -103570,7 +103624,7 @@
         "statuses": [
           {
             "name": "přijatá",
-            "count": 235
+            "count": 236
           },
           {
             "name": "expedováno",
@@ -103578,7 +103632,7 @@
           },
           {
             "name": "nová",
-            "count": 44
+            "count": 43
           },
           {
             "name": "stornovaná",
