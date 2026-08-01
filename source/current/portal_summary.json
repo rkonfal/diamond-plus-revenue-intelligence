@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-01T17:30:22.759999+02:00",
+  "generatedAt": "2026-08-01T18:00:07.579393+02:00",
   "config": {
     "warehouseCode": "CZPRGA",
     "outboundMaxPages": 20,
@@ -14,8 +14,8 @@
       "label": "CZ",
       "inventory": {
         "items": 789,
-        "availableStockTotal": 334333,
-        "pendingStockTotal": 3764,
+        "availableStockTotal": 334295,
+        "pendingStockTotal": 3802,
         "freezeStockTotal": 0,
         "lowStockItems": 100
       },
@@ -23,8 +23,8 @@
         "items": 500,
         "scannedPages": 5,
         "topLogisticsProduct": "F1401",
-        "oldestTimestamp": "2026-07-30T21:10:06+02:00",
-        "newestTimestamp": "2026-08-01T17:30:05+02:00"
+        "oldestTimestamp": "2026-07-30T21:30:03+02:00",
+        "newestTimestamp": "2026-08-01T18:00:05+02:00"
       }
     },
     "sk": {
@@ -96,7 +96,7 @@
     "pairedProducts": 369,
     "onlyInWpj": 1588,
     "onlyIn4px": 1,
-    "stockMismatch": 708,
+    "stockMismatch": 709,
     "lowAfterSales": 5,
     "manualMapped4pxAliases": 0,
     "autoMapped4pxAliases": 74
@@ -107,29 +107,29 @@
     "message": "Měsíční finance se tahají přímo z ABRA reportu Výkaz hospodaření za měsíc za všechna střediska. Cash a závazky jsou také live z ABRA API.",
     "currentMonth": {
       "label": "8/2026",
-      "revenue": 115395.43,
-      "cogsAndFees": 97081.58,
+      "revenue": 118821.03,
+      "cogsAndFees": 99475.83,
       "logistics": 0.0,
       "marketing": 0.0,
       "opex": 17278.0,
       "depreciation": 401319.0,
       "other": -3499.75,
-      "grossMargin": 18313.85,
-      "afterLogistics": 18313.85,
-      "afterMarketing": 18313.85,
-      "operatingMargin": 1035.85,
-      "ebit": -400283.15,
-      "profit": -403782.9,
-      "grossMarginPct": 15.9,
+      "grossMargin": 19345.2,
+      "afterLogistics": 19345.2,
+      "afterMarketing": 19345.2,
+      "operatingMargin": 2067.2,
+      "ebit": -399251.8,
+      "profit": -402751.55,
+      "grossMarginPct": 16.3,
       "marketingPct": 0.0,
       "logisticsPct": 0.0,
-      "operatingMarginPct": 0.9,
-      "profitPct": -349.9
+      "operatingMarginPct": 1.7,
+      "profitPct": -339.0
     },
     "cash": {
-      "cashOnAccounts": 8774033.56,
+      "cashOnAccounts": 8776193.56,
       "unpaidInvoices": 140002.81,
-      "netCashPosition": 8634030.75,
+      "netCashPosition": 8636190.75,
       "overdueInvoicesCount": 2,
       "overdueInvoicesAmount": 773.66,
       "largestPayables": [
@@ -234,8 +234,8 @@
             "accountCode": "221001",
             "accountLabel": "221001: 2901338673/2010 FIO CZK",
             "currency": "CZK: Česká koruna",
-            "balance": 782078.19,
-            "includedBalance": 782078.19
+            "balance": 784238.19,
+            "includedBalance": 784238.19
           },
           {
             "accountCode": "221111",
@@ -387,7 +387,7 @@
       "performanceSpend": 0.0,
       "brandSpend": 0.0,
       "totalSpend": 0.0,
-      "revenue": 115395.43,
+      "revenue": 118821.03,
       "spendShareOfRevenuePct": 0.0
     },
     "topSupplier": null
@@ -402,12 +402,12 @@
       "label": "2025-10-01 až 2026-08-01"
     },
     "summary": {
-      "noviceRevenueCzkEquiv": 15808131.0,
-      "networkRevenueCzkEquiv": 22373401.0,
+      "noviceRevenueCzkEquiv": 15810165.0,
+      "networkRevenueCzkEquiv": 22375435.0,
       "novicePartners": 50,
       "networkPartners": 50,
-      "noviceOrders": 9590.0,
-      "networkOrders": 13816.0,
+      "noviceOrders": 9592.0,
+      "networkOrders": 13818.0,
       "noviceOrderingContacts": 1715.0,
       "networkOrderingCustomers": 3877.0,
       "topNovicePartner": {
@@ -511,7 +511,7 @@
   },
   "twistoWatchdog": {
     "ready": true,
-    "status": "ok",
+    "status": "warn",
     "summary": {
       "windowDays": 90,
       "twistoBatchCount": 38,
@@ -550,6 +550,6 @@
         "message": "WPJ twisto objednávky z historie objednávek."
       }
     },
-    "message": null
+    "message": "Twisto watchdog se nepodařilo spustit: Command '['python3', '/Users/rudolfkonfal/.openclaw/workspace/reporting-v2/scripts/build_twisto_watchdog.py', '--snapshot-path', '/Users/rudolfkonfal/.openclaw/workspace/reporting-v2/data/snapshots/20260801-180007', '--generated-at', '2026-08-01T18:00:07.579393+02:00']' timed out after 300 seconds"
   }
 }
