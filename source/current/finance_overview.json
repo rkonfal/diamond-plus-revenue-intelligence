@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-02T08:01:32.236532+02:00",
+  "generatedAt": "2026-08-02T10:37:16.454777+02:00",
   "source": {
     "status": "live_report",
     "message": "Měsíční finance se tahají přímo z ABRA reportu Výkaz hospodaření za měsíc za všechna střediska. Cash a závazky jsou také live z ABRA API."
@@ -164,46 +164,46 @@
     },
     {
       "label": "8/2026",
-      "revenue": 177143.86,
-      "cogsAndFees": 144456.25,
+      "revenue": 208257.84,
+      "cogsAndFees": 167597.19,
       "logistics": 0.0,
       "marketing": 0.0,
       "opex": 17278.0,
       "depreciation": 401319.0,
       "other": -3499.75,
-      "grossMargin": 32687.61,
-      "afterLogistics": 32687.61,
-      "afterMarketing": 32687.61,
-      "operatingMargin": 15409.61,
-      "ebit": -385909.39,
-      "profit": -389409.14,
-      "grossMarginPct": 18.5,
+      "grossMargin": 40660.65,
+      "afterLogistics": 40660.65,
+      "afterMarketing": 40660.65,
+      "operatingMargin": 23382.65,
+      "ebit": -377936.35,
+      "profit": -381436.1,
+      "grossMarginPct": 19.5,
       "marketingPct": 0.0,
       "logisticsPct": 0.0,
-      "operatingMarginPct": 8.7,
-      "profitPct": -219.8
+      "operatingMarginPct": 11.2,
+      "profitPct": -183.2
     }
   ],
   "currentMonth": {
     "label": "8/2026",
-    "revenue": 177143.86,
-    "cogsAndFees": 144456.25,
+    "revenue": 208257.84,
+    "cogsAndFees": 167597.19,
     "logistics": 0.0,
     "marketing": 0.0,
     "opex": 17278.0,
     "depreciation": 401319.0,
     "other": -3499.75,
-    "grossMargin": 32687.61,
-    "afterLogistics": 32687.61,
-    "afterMarketing": 32687.61,
-    "operatingMargin": 15409.61,
-    "ebit": -385909.39,
-    "profit": -389409.14,
-    "grossMarginPct": 18.5,
+    "grossMargin": 40660.65,
+    "afterLogistics": 40660.65,
+    "afterMarketing": 40660.65,
+    "operatingMargin": 23382.65,
+    "ebit": -377936.35,
+    "profit": -381436.1,
+    "grossMarginPct": 19.5,
     "marketingPct": 0.0,
     "logisticsPct": 0.0,
-    "operatingMarginPct": 8.7,
-    "profitPct": -219.8
+    "operatingMarginPct": 11.2,
+    "profitPct": -183.2
   },
   "previousMonth": {
     "label": "7/2026",
@@ -227,9 +227,9 @@
     "profitPct": 12.7
   },
   "cash": {
-    "cashOnAccounts": 8813934.98,
+    "cashOnAccounts": 8818831.98,
     "unpaidInvoices": 140002.81,
-    "netCashPosition": 8673932.17,
+    "netCashPosition": 8678829.17,
     "overdueInvoicesCount": 3,
     "overdueInvoicesAmount": 9394.66,
     "largestPayables": [
@@ -334,8 +334,8 @@
           "accountCode": "221001",
           "accountLabel": "221001: 2901338673/2010 FIO CZK",
           "currency": "CZK: Česká koruna",
-          "balance": 817181.19,
-          "includedBalance": 817181.19
+          "balance": 822078.19,
+          "includedBalance": 822078.19
         },
         {
           "accountCode": "221111",
@@ -821,8 +821,8 @@
       },
       {
         "label": "8/2026",
-        "expenseTotal": 425693.12,
-        "revenueTotal": 7405.78,
+        "expenseTotal": 448834.06,
+        "revenueTotal": 39377.61,
         "topExpenseClass": {
           "code": "55",
           "label": "Odpisy a rezervy",
@@ -835,6 +835,13 @@
             "amount": 365295.0,
             "classCode": "55",
             "classLabel": "Odpisy a rezervy"
+          },
+          {
+            "code": "504001",
+            "label": "Nákup zboží 2",
+            "amount": 28470.72,
+            "classCode": "50",
+            "classLabel": "Spotřeba a zboží"
           },
           {
             "code": "551001",
@@ -863,13 +870,6 @@
             "amount": 5848.34,
             "classCode": "50",
             "classLabel": "Spotřeba a zboží"
-          },
-          {
-            "code": "504001",
-            "label": "Nákup zboží 2",
-            "amount": 5329.78,
-            "classCode": "50",
-            "classLabel": "Spotřeba a zboží"
           }
         ],
         "topExpenseClasses": [
@@ -879,14 +879,14 @@
             "amount": 401319.0
           },
           {
+            "code": "50",
+            "label": "Spotřeba a zboží",
+            "amount": 34319.06
+          },
+          {
             "code": "54",
             "label": "Jiné provozní náklady",
             "amount": 13196.0
-          },
-          {
-            "code": "50",
-            "label": "Spotřeba a zboží",
-            "amount": 11178.12
           }
         ],
         "topVendors": [
@@ -907,6 +907,10 @@
             "amount": 3650.0
           },
           {
+            "name": "Šárka Lukášová",
+            "amount": 2495.44
+          },
+          {
             "name": "TANATECH, s.r.o.",
             "amount": 2456.0
           },
@@ -915,38 +919,34 @@
             "amount": 2198.34
           },
           {
-            "name": "Hana Šedivá",
-            "amount": 1223.45
+            "name": "Michaela Jiříková",
+            "amount": 1772.81
           },
           {
-            "name": "Gabriela Wawrzyková",
-            "amount": 1157.27
+            "name": "Alena Králová",
+            "amount": 1768.68
           },
           {
-            "name": "Silva Šteigerlová",
-            "amount": 872.7
+            "name": "Blanka Havlíčková",
+            "amount": 1709.31
           },
           {
-            "name": "Petra Novotná",
-            "amount": 789.91
+            "name": "Iva Franova",
+            "amount": 1501.41
           },
           {
-            "name": "Lucie Kotasová",
-            "amount": 646.35
-          },
-          {
-            "name": "Šárka Lopourová",
-            "amount": 455.2
+            "name": "Miriam Havlinová",
+            "amount": 1403.8
           }
         ],
-        "entryCount": 41,
+        "entryCount": 96,
         "detailFile": "finance_journal_8-2026.json"
       }
     ],
     "currentMonth": {
       "label": "8/2026",
-      "expenseTotal": 425693.12,
-      "revenueTotal": 7405.78,
+      "expenseTotal": 448834.06,
+      "revenueTotal": 39377.61,
       "topExpenseClass": {
         "code": "55",
         "label": "Odpisy a rezervy",
@@ -959,6 +959,13 @@
           "amount": 365295.0,
           "classCode": "55",
           "classLabel": "Odpisy a rezervy"
+        },
+        {
+          "code": "504001",
+          "label": "Nákup zboží 2",
+          "amount": 28470.72,
+          "classCode": "50",
+          "classLabel": "Spotřeba a zboží"
         },
         {
           "code": "551001",
@@ -987,13 +994,6 @@
           "amount": 5848.34,
           "classCode": "50",
           "classLabel": "Spotřeba a zboží"
-        },
-        {
-          "code": "504001",
-          "label": "Nákup zboží 2",
-          "amount": 5329.78,
-          "classCode": "50",
-          "classLabel": "Spotřeba a zboží"
         }
       ],
       "topExpenseClasses": [
@@ -1003,14 +1003,14 @@
           "amount": 401319.0
         },
         {
+          "code": "50",
+          "label": "Spotřeba a zboží",
+          "amount": 34319.06
+        },
+        {
           "code": "54",
           "label": "Jiné provozní náklady",
           "amount": 13196.0
-        },
-        {
-          "code": "50",
-          "label": "Spotřeba a zboží",
-          "amount": 11178.12
         }
       ],
       "topVendors": [
@@ -1031,6 +1031,10 @@
           "amount": 3650.0
         },
         {
+          "name": "Šárka Lukášová",
+          "amount": 2495.44
+        },
+        {
           "name": "TANATECH, s.r.o.",
           "amount": 2456.0
         },
@@ -1039,31 +1043,27 @@
           "amount": 2198.34
         },
         {
-          "name": "Hana Šedivá",
-          "amount": 1223.45
+          "name": "Michaela Jiříková",
+          "amount": 1772.81
         },
         {
-          "name": "Gabriela Wawrzyková",
-          "amount": 1157.27
+          "name": "Alena Králová",
+          "amount": 1768.68
         },
         {
-          "name": "Silva Šteigerlová",
-          "amount": 872.7
+          "name": "Blanka Havlíčková",
+          "amount": 1709.31
         },
         {
-          "name": "Petra Novotná",
-          "amount": 789.91
+          "name": "Iva Franova",
+          "amount": 1501.41
         },
         {
-          "name": "Lucie Kotasová",
-          "amount": 646.35
-        },
-        {
-          "name": "Šárka Lopourová",
-          "amount": 455.2
+          "name": "Miriam Havlinová",
+          "amount": 1403.8
         }
       ],
-      "entryCount": 41,
+      "entryCount": 96,
       "detailFile": "finance_journal_8-2026.json"
     }
   }
