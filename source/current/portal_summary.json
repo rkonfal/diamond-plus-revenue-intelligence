@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-08T16:39:04.931451+02:00",
+  "generatedAt": "2026-08-08T17:33:54.733622+02:00",
   "config": {
     "warehouseCode": "CZPRGA",
     "outboundMaxPages": 20,
@@ -14,8 +14,8 @@
       "label": "CZ",
       "inventory": {
         "items": 789,
-        "availableStockTotal": 320187,
-        "pendingStockTotal": 3780,
+        "availableStockTotal": 320106,
+        "pendingStockTotal": 3861,
         "freezeStockTotal": 0,
         "lowStockItems": 100
       },
@@ -23,16 +23,16 @@
         "items": 600,
         "scannedPages": 6,
         "topLogisticsProduct": "F1401",
-        "oldestTimestamp": "2026-08-06T20:50:04+02:00",
-        "newestTimestamp": "2026-08-08T16:35:05+02:00"
+        "oldestTimestamp": "2026-08-06T21:00:06+02:00",
+        "newestTimestamp": "2026-08-08T17:20:05+02:00"
       }
     },
     "sk": {
       "label": "SK",
       "inventory": {
         "items": 640,
-        "availableStockTotal": 41961,
-        "pendingStockTotal": 440,
+        "availableStockTotal": 41959,
+        "pendingStockTotal": 442,
         "freezeStockTotal": 0,
         "lowStockItems": 100
       },
@@ -40,8 +40,8 @@
         "items": 100,
         "scannedPages": 1,
         "topLogisticsProduct": "F1403",
-        "oldestTimestamp": "2026-08-06T11:05:11+02:00",
-        "newestTimestamp": "2026-08-08T15:30:13+02:00"
+        "oldestTimestamp": "2026-08-06T11:25:14+02:00",
+        "newestTimestamp": "2026-08-08T17:30:13+02:00"
       }
     }
   },
@@ -60,10 +60,10 @@
       "1 problematických nebo stornovaných objednávek.",
       "2 včera prodaných produktů je teď na nízkém skladu.",
       "10 skladových pozic je v mínusu.",
-      "4 A produktů je v kritickém riziku výpadku."
+      "5 A produktů je v kritickém riziku výpadku."
     ],
     "priorities": [
-      "Prověřit A produkty v riziku výpadku (4 SKU): 52911, 135415-1, 30115.",
+      "Prověřit A produkty v riziku výpadku (5 SKU): 52911, 135415-1, 30115.",
       "Dohlédnout 52911 (Obnovující maska na obličej a krk s fullereny a polypeptidy), aktuálně 0 ks.",
       "Projít 1 problematických nebo stornovaných objednávek z včerejška.",
       "Projít nejbližší expirace v 4PX a rozhodnout o doprodeji nebo přesunu zásoby."
@@ -96,7 +96,7 @@
     "pairedProducts": 365,
     "onlyInWpj": 1603,
     "onlyIn4px": 1,
-    "stockMismatch": 687,
+    "stockMismatch": 685,
     "lowAfterSales": 8,
     "manualMapped4pxAliases": 0,
     "autoMapped4pxAliases": 74
@@ -107,29 +107,29 @@
     "message": "Měsíční finance se tahají přímo z ABRA reportu Výkaz hospodaření za měsíc za všechna střediska. Cash a závazky jsou také live z ABRA API.",
     "currentMonth": {
       "label": "8/2026",
-      "revenue": 2787268.38,
-      "cogsAndFees": 2396739.48,
+      "revenue": 2794436.97,
+      "cogsAndFees": 2401614.38,
       "logistics": 990.98,
       "marketing": 0.0,
       "opex": 29458.85,
       "depreciation": 401319.0,
       "other": -3456.03,
-      "grossMargin": 390528.9,
-      "afterLogistics": 389537.92,
-      "afterMarketing": 389537.92,
-      "operatingMargin": 360079.07,
-      "ebit": -41239.93,
-      "profit": -44695.96,
-      "grossMarginPct": 14.0,
+      "grossMargin": 392822.59,
+      "afterLogistics": 391831.61,
+      "afterMarketing": 391831.61,
+      "operatingMargin": 362372.76,
+      "ebit": -38946.24,
+      "profit": -42402.27,
+      "grossMarginPct": 14.1,
       "marketingPct": 0.0,
       "logisticsPct": 0.0,
-      "operatingMarginPct": 12.9,
-      "profitPct": -1.6
+      "operatingMarginPct": 13.0,
+      "profitPct": -1.5
     },
     "cash": {
-      "cashOnAccounts": 7375379.78,
+      "cashOnAccounts": 7377431.78,
       "unpaidInvoices": 657290.23,
-      "netCashPosition": 6718089.55,
+      "netCashPosition": 6720141.55,
       "overdueInvoicesCount": 0,
       "overdueInvoicesAmount": 0.0,
       "largestPayables": [
@@ -213,8 +213,8 @@
             "accountCode": "221001",
             "accountLabel": "221001: 2901338673/2010 FIO CZK",
             "currency": "CZK: Česká koruna",
-            "balance": 1864722.29,
-            "includedBalance": 1864722.29
+            "balance": 1866774.29,
+            "includedBalance": 1866774.29
           },
           {
             "accountCode": "221006",
@@ -387,7 +387,7 @@
       "performanceSpend": 0.0,
       "brandSpend": 0.0,
       "totalSpend": 0.0,
-      "revenue": 2787268.38,
+      "revenue": 2794436.97,
       "spendShareOfRevenuePct": 0.0
     },
     "topSupplier": null
@@ -403,11 +403,11 @@
     },
     "summary": {
       "noviceRevenueCzkEquiv": 16302335.0,
-      "networkRevenueCzkEquiv": 23039702.0,
+      "networkRevenueCzkEquiv": 23046349.0,
       "novicePartners": 50,
       "networkPartners": 50,
       "noviceOrders": 9929.0,
-      "networkOrders": 14282.0,
+      "networkOrders": 14283.0,
       "noviceOrderingContacts": 1734.0,
       "networkOrderingCustomers": 3915.0,
       "topNovicePartner": {
