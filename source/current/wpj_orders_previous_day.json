@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-10T11:43:24.929185+02:00",
+  "generatedAt": "2026-08-10T12:42:35.603966+02:00",
   "window": {
     "from": "2026-08-09T00:00:01+02:00",
     "to": "2026-08-10T00:00:00+02:00"
@@ -31748,10 +31748,10 @@
       },
       "dateCreated": "2026-08-09T10:17:31+02:00",
       "cancelled": false,
-      "isPaid": false,
+      "isPaid": true,
       "status": {
-        "id": 0,
-        "name": "nová"
+        "id": 1,
+        "name": "přijatá"
       },
       "totalPrice": {
         "withVat": 1629,
@@ -31804,6 +31804,42 @@
           "orderStatus": "nová",
           "date": "2026-08-09T10:21:38+02:00",
           "comment": "[FlexiBee] Objednávka byla nahrána do FlexiBee; ID: 696098",
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7376118,
+          "adminId": null,
+          "orderStatus": "nová",
+          "date": "2026-08-10T13:19:03+02:00",
+          "comment": "Modul FioBank - příchozí platba č. 27782495762. Komentář plátce: NOSKOVÁ GABRIELA.",
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7376119,
+          "adminId": null,
+          "orderStatus": "nová",
+          "date": "2026-08-10T13:19:03+02:00",
+          "comment": "<p>Dobré zprávy: Úhrada vaší objednávky 261307413 právě dorazila. Než dočtete tento e-mail, pustíme se do práce na expedici vaší objednávky tak, aby vám dorazila co nejdříve.</p><p>Těšíte se? 😍</p><div></div>",
+          "notifyStatus": "YES",
+          "data": "\"{\\\"email_type\\\": \\\"PAYMENT_SUCCESS\\\", \\\"subject\\\": \\\"\\\\ud83c\\\\udf89 Va\\\\u0161e \\\\u00fahrada objedn\\\\u00e1vky 261307413 dorazila, startujeme\\\", \\\"isAdminEmail\\\": false, \\\"attachments\\\": [\\\"order_invoice\\\"], \\\"email_id\\\": \\\"6a79b3a78a879\\\"}\""
+        },
+        {
+          "id": 7376120,
+          "adminId": null,
+          "orderStatus": "nová",
+          "date": "2026-08-10T13:20:03+02:00",
+          "comment": "[4PX] Objednávka byla vytvořena; ID: OC149400632608100220 tracking: 601116674753 účet: CZ",
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7376121,
+          "adminId": null,
+          "orderStatus": "přijatá",
+          "date": "2026-08-10T13:20:03+02:00",
+          "comment": null,
           "notifyStatus": "NO",
           "data": "null"
         }
@@ -35861,11 +35897,11 @@
     "statuses": [
       {
         "name": "přijatá",
-        "count": 155
+        "count": 156
       },
       {
         "name": "nová",
-        "count": 8
+        "count": 7
       }
     ],
     "paymentMethods": [
@@ -36561,11 +36597,11 @@
         "statuses": [
           {
             "name": "přijatá",
-            "count": 155
+            "count": 156
           },
           {
             "name": "nová",
-            "count": 8
+            "count": 7
           }
         ],
         "paymentMethods": [
@@ -37261,11 +37297,11 @@
         "statuses": [
           {
             "name": "přijatá",
-            "count": 137
+            "count": 138
           },
           {
             "name": "nová",
-            "count": 8
+            "count": 7
           }
         ],
         "paymentMethods": [
