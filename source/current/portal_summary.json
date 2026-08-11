@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-11T08:23:06.037754+02:00",
+  "generatedAt": "2026-08-11T10:12:15.007923+02:00",
   "config": {
     "warehouseCode": "CZPRGA",
     "outboundMaxPages": 20,
@@ -14,8 +14,8 @@
       "label": "CZ",
       "inventory": {
         "items": 789,
-        "availableStockTotal": 315203,
-        "pendingStockTotal": 1750,
+        "availableStockTotal": 314920,
+        "pendingStockTotal": 1608,
         "freezeStockTotal": 0,
         "lowStockItems": 100
       },
@@ -23,16 +23,16 @@
         "items": 400,
         "scannedPages": 4,
         "topLogisticsProduct": "F1401",
-        "oldestTimestamp": "2026-08-09T17:40:05+02:00",
-        "newestTimestamp": "2026-08-11T08:20:06+02:00"
+        "oldestTimestamp": "2026-08-09T20:00:05+02:00",
+        "newestTimestamp": "2026-08-11T10:00:07+02:00"
       }
     },
     "sk": {
       "label": "SK",
       "inventory": {
         "items": 640,
-        "availableStockTotal": 41347,
-        "pendingStockTotal": 217,
+        "availableStockTotal": 41312,
+        "pendingStockTotal": 58,
         "freezeStockTotal": 0,
         "lowStockItems": 100
       },
@@ -40,8 +40,8 @@
         "items": 100,
         "scannedPages": 1,
         "topLogisticsProduct": "F1403",
-        "oldestTimestamp": "2026-08-07T18:20:13+02:00",
-        "newestTimestamp": "2026-08-11T07:05:10+02:00"
+        "oldestTimestamp": "2026-08-07T19:35:19+02:00",
+        "newestTimestamp": "2026-08-11T08:30:26+02:00"
       }
     }
   },
@@ -70,12 +70,12 @@
     ]
   },
   "expiries": {
-    "datedSkuCount": 319,
+    "datedSkuCount": 318,
     "czSkuCount": 308,
-    "skSkuCount": 292,
-    "datedRowCount": 695,
+    "skSkuCount": 291,
+    "datedRowCount": 693,
     "czRowCount": 363,
-    "skRowCount": 332
+    "skRowCount": 330
   },
   "storeExpiry": {
     "inputRows": 0,
@@ -96,7 +96,7 @@
     "pairedProducts": 364,
     "onlyInWpj": 1605,
     "onlyIn4px": 1,
-    "stockMismatch": 680,
+    "stockMismatch": 678,
     "lowAfterSales": 4,
     "manualMapped4pxAliases": 0,
     "autoMapped4pxAliases": 74
@@ -107,32 +107,48 @@
     "message": "Měsíční finance se tahají přímo z ABRA reportu Výkaz hospodaření za měsíc za všechna střediska. Cash a závazky jsou také live z ABRA API.",
     "currentMonth": {
       "label": "8/2026",
-      "revenue": 3453447.02,
-      "cogsAndFees": 2898297.93,
-      "logistics": 990.98,
-      "marketing": 0.0,
-      "opex": 29458.85,
+      "revenue": 3496673.68,
+      "cogsAndFees": 2933306.92,
+      "logistics": 16157.73,
+      "marketing": 167479.34,
+      "opex": 330036.01,
       "depreciation": 399556.0,
       "other": -3297.42,
-      "grossMargin": 555149.09,
-      "afterLogistics": 554158.11,
-      "afterMarketing": 554158.11,
-      "operatingMargin": 524699.26,
-      "ebit": 125143.26,
-      "profit": 121845.84,
+      "grossMargin": 563366.76,
+      "afterLogistics": 547209.03,
+      "afterMarketing": 379729.69,
+      "operatingMargin": 49693.68,
+      "ebit": -349862.32,
+      "profit": -353159.74,
       "grossMarginPct": 16.1,
-      "marketingPct": 0.0,
-      "logisticsPct": 0.0,
-      "operatingMarginPct": 15.2,
-      "profitPct": 3.5
+      "marketingPct": 4.8,
+      "logisticsPct": 0.5,
+      "operatingMarginPct": 1.4,
+      "profitPct": -10.1
     },
     "cash": {
-      "cashOnAccounts": 7719608.71,
-      "unpaidInvoices": 583067.14,
-      "netCashPosition": 7136541.57,
+      "cashOnAccounts": 7574156.73,
+      "unpaidInvoices": 2638078.28,
+      "netCashPosition": 4936078.45,
       "overdueInvoicesCount": 0,
       "overdueInvoicesAmount": 0.0,
       "largestPayables": [
+        {
+          "code": "PF1004/2026",
+          "vendor": "4PX Express CZ",
+          "dueDate": "30.08.2026",
+          "amountTotal": 621163.0,
+          "amountDue": 621163.0,
+          "status": "19 dní do splatnosti"
+        },
+        {
+          "code": "PF0990/2026",
+          "vendor": "Česká pošta, s.p., Odštěpný závod Balíkové služby",
+          "dueDate": "21.08.2026",
+          "amountTotal": 448038.75,
+          "amountDue": 448038.75,
+          "status": "10 dní do splatnosti"
+        },
         {
           "code": "PF0971/2026",
           "vendor": "4PX Express CZ",
@@ -140,6 +156,30 @@
           "amountTotal": 434438.4,
           "amountDue": 434438.4,
           "status": "19 dní do splatnosti"
+        },
+        {
+          "code": "PF0984/2026",
+          "vendor": "Selfcareacademy s.r.o.",
+          "dueDate": "15.08.2026",
+          "amountTotal": 199650.0,
+          "amountDue": 199650.0,
+          "status": "4 dní do splatnosti"
+        },
+        {
+          "code": "PF0989/2026",
+          "vendor": "wpj s.r.o.",
+          "dueDate": "22.08.2026",
+          "amountTotal": 150393.0,
+          "amountDue": 150393.0,
+          "status": "11 dní do splatnosti"
+        },
+        {
+          "code": "PF1015/2026",
+          "vendor": "ISTA CORPORATION s.r.o.",
+          "dueDate": "11.08.2026",
+          "amountTotal": 148886.39,
+          "amountDue": 148886.39,
+          "status": "splatné dnes"
         },
         {
           "code": "PF0965/2026",
@@ -150,36 +190,12 @@
           "status": "19 dní do splatnosti"
         },
         {
-          "code": "Z0039/2026",
-          "vendor": "Le-Investment, spol. s r.o.",
-          "dueDate": "19.08.2026",
-          "amountTotal": 18850.0,
-          "amountDue": 18850.0,
-          "status": "8 dní do splatnosti"
-        },
-        {
-          "code": "PF0966/2026",
-          "vendor": "Meta Platforms Ireland Limited",
-          "dueDate": "30.08.2026",
-          "amountTotal": 13920.13,
-          "amountDue": 13920.13,
-          "status": "19 dní do splatnosti"
-        },
-        {
-          "code": "PF0770/2026",
-          "vendor": "ALLIANZ POJIŠŤOVNA, A. S.",
-          "dueDate": "06.09.2026",
-          "amountTotal": 9463.0,
-          "amountDue": 9463.0,
-          "status": "26 dní do splatnosti"
-        },
-        {
-          "code": "PF0972/2026",
-          "vendor": "4PX Express CZ",
-          "dueDate": "30.08.2026",
-          "amountTotal": 5929.0,
-          "amountDue": 5929.0,
-          "status": "19 dní do splatnosti"
+          "code": "PF1001/2026",
+          "vendor": "Pechmannova Partners s.r.o.",
+          "dueDate": "31.08.2026",
+          "amountTotal": 71390.0,
+          "amountDue": 71390.0,
+          "status": "20 dní do splatnosti"
         }
       ],
       "cashAccountsSource": {
@@ -190,15 +206,15 @@
             "accountCode": "221001",
             "accountLabel": "221001: 2901338673/2010 FIO CZK",
             "currency": "CZK: Česká koruna",
-            "balance": 2193634.29,
-            "includedBalance": 2193634.29
+            "balance": 2077371.29,
+            "includedBalance": 2077371.29
           },
           {
             "accountCode": "221115",
             "accountLabel": "221115: 131-3675980207/0100 KB CZK",
             "currency": "CZK: Česká koruna",
-            "balance": 2000933.99,
-            "includedBalance": 2000933.99
+            "balance": 1970182.99,
+            "includedBalance": 1970182.99
           },
           {
             "accountCode": "221006",
@@ -218,8 +234,8 @@
             "accountCode": "221005",
             "accountLabel": "221005: 2501338690/2010 FIO EUR",
             "currency": "CZK: Česká koruna",
-            "balance": 185422.1,
-            "includedBalance": 185422.1
+            "balance": 186984.12,
+            "includedBalance": 186984.12
           },
           {
             "accountCode": "211001",
@@ -368,13 +384,16 @@
     "message": "Marketing se skládá z live ABRA reportu a aktuálních položek z účetního deníku. Přímé platformy přes API: Sklik, Meta Ads, Google Ads, Ecomail, Affiliate.",
     "currentMonth": {
       "label": "8/2026",
-      "performanceSpend": 0.0,
-      "brandSpend": 0.0,
-      "totalSpend": 0.0,
-      "revenue": 3453447.02,
-      "spendShareOfRevenuePct": 0.0
+      "performanceSpend": 2479.34,
+      "brandSpend": 165000.0,
+      "totalSpend": 167479.34,
+      "revenue": 3496673.68,
+      "spendShareOfRevenuePct": 4.8
     },
-    "topSupplier": null
+    "topSupplier": {
+      "name": "Selfcareacademy s.r.o.",
+      "amount": 165000.0
+    }
   },
   "affiliate": {
     "ready": true,
@@ -386,23 +405,23 @@
       "label": "2025-10-01 až 2026-08-11"
     },
     "summary": {
-      "noviceRevenueCzkEquiv": 16382202.0,
-      "networkRevenueCzkEquiv": 23166755.0,
+      "noviceRevenueCzkEquiv": 16392383.0,
+      "networkRevenueCzkEquiv": 23176936.0,
       "novicePartners": 50,
       "networkPartners": 50,
-      "noviceOrders": 9981.0,
-      "networkOrders": 14360.0,
+      "noviceOrders": 9986.0,
+      "networkOrders": 14365.0,
       "noviceOrderingContacts": 1737.0,
       "networkOrderingCustomers": 3919.0,
       "topNovicePartner": {
         "partnerCode": "ESHOP",
         "partnerName": "E-shop (interní)",
-        "revenueCzkEquiv": 5402592.0
+        "revenueCzkEquiv": 5403171.0
       },
       "topNetworkPartner": {
         "partnerCode": "ESHOP",
         "partnerName": "E-shop (interní)",
-        "revenueCzkEquiv": 5402592.0
+        "revenueCzkEquiv": 5403171.0
       }
     }
   },
