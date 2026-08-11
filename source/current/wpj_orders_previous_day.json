@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-11T03:42:06.469599+02:00",
+  "generatedAt": "2026-08-11T06:00:03.909119+02:00",
   "window": {
     "from": "2026-08-10T00:00:01+02:00",
     "to": "2026-08-11T00:00:00+02:00"
@@ -60410,10 +60410,10 @@
       },
       "dateCreated": "2026-08-10T08:31:57+02:00",
       "cancelled": false,
-      "isPaid": false,
+      "isPaid": true,
       "status": {
-        "id": 0,
-        "name": "nová"
+        "id": 1,
+        "name": "přijatá"
       },
       "totalPrice": {
         "withVat": 55.4,
@@ -60486,6 +60486,60 @@
           "comment": "Autopilot: odeslána uživatelská zpráva: Upomínka nezaplacené - okamžité platby",
           "notifyStatus": "NO",
           "data": "\"{\\\"initiator\\\":\\\"autopilot\\\"}\""
+        },
+        {
+          "id": 7381051,
+          "adminId": null,
+          "orderStatus": "nová",
+          "date": "2026-08-11T05:01:09+02:00",
+          "comment": "Objednávka bola zaplatená.",
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7381052,
+          "adminId": null,
+          "orderStatus": "nová",
+          "date": "2026-08-11T05:01:09+02:00",
+          "comment": "<p>Dobré správy: Úhrada vašej objedávky 261307588 práve dorazila. Okamžite sme u nás teda vyhlásili expedičný poplach. Práve teraz si svalnatí, opálení a usmievaví kolegovia obliekajú kombinézy, nasadzujú prilby a štartujú motory. A akonáhle dočítate tento email, pustí sa do práce na expedícii vašej objednávky tak, aby vám dorazila čo najskôr. Tešíte sa? 😍</p>\n\n<div></div>",
+          "notifyStatus": "YES",
+          "data": "\"{\\\"email_type\\\": \\\"PAYMENT_SUCCESS\\\", \\\"subject\\\": \\\"\\\\ud83c\\\\udf89 Va\\\\u0161a \\\\u00fahrada objedn\\\\u00e1vky 261307588 dorazila, \\\\u0161tartujeme\\\", \\\"isAdminEmail\\\": false, \\\"attachments\\\": [\\\"order_invoice\\\"], \\\"email_id\\\": \\\"6a7a90757d6db\\\"}\""
+        },
+        {
+          "id": 7381053,
+          "adminId": null,
+          "orderStatus": "nová",
+          "date": "2026-08-11T05:02:06+02:00",
+          "comment": "[FlexiBee] Objednávka byla ve FlexiBee zaktualizována",
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7381054,
+          "adminId": null,
+          "orderStatus": "nová",
+          "date": "2026-08-11T05:02:10+02:00",
+          "comment": "[Flexi] Objednávka byla realizována ve Flexi;",
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7381055,
+          "adminId": null,
+          "orderStatus": "nová",
+          "date": "2026-08-11T05:05:13+02:00",
+          "comment": "[4PX] Objednávka byla vytvořena; ID: OC149400622608110010 tracking: 601116706549 účet: SK",
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7381056,
+          "adminId": null,
+          "orderStatus": "přijatá",
+          "date": "2026-08-11T05:05:13+02:00",
+          "comment": null,
+          "notifyStatus": "NO",
+          "data": "null"
         }
       ],
       "deliveryType": {
@@ -67700,7 +67754,7 @@
     "statuses": [
       {
         "name": "přijatá",
-        "count": 169
+        "count": 170
       },
       {
         "name": "expedováno",
@@ -67708,7 +67762,7 @@
       },
       {
         "name": "nová",
-        "count": 15
+        "count": 14
       },
       {
         "name": "doručeno",
@@ -68472,7 +68526,7 @@
         "statuses": [
           {
             "name": "přijatá",
-            "count": 169
+            "count": 170
           },
           {
             "name": "expedováno",
@@ -68480,7 +68534,7 @@
           },
           {
             "name": "nová",
-            "count": 15
+            "count": 14
           },
           {
             "name": "doručeno",
@@ -69976,15 +70030,11 @@
         "statuses": [
           {
             "name": "přijatá",
-            "count": 16
+            "count": 17
           },
           {
             "name": "expedováno",
             "count": 9
-          },
-          {
-            "name": "nová",
-            "count": 1
           }
         ],
         "paymentMethods": [
