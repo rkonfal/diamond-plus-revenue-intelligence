@@ -22,11 +22,11 @@
       "label": "Pozorované tržby / placený spend"
     },
     "grossMarginAfterMarketing": {
-      "value": 1696122.22,
+      "value": 2902736.98,
       "label": "Finance po marketingu, poslední plný měsíc"
     },
     "netCashPosition": {
-      "value": 6800960.09,
+      "value": 5705056.6,
       "label": "Aktuální čistá hotovostní pozice"
     },
     "measurementConfidence": {
@@ -41,7 +41,7 @@
       "headline": "Report už umí oddělit business truth, customer truth, acquisition truth a measurement truth, takže se dá řídit jako systém a ne jen číst jako dashboard.",
       "plainLanguage": [
         "Za fokus období report vidí tržby 3628923.64 Kč a spend 208343.52 Kč.",
-        "Po marketingu vychází ve financích 1696122.22 Kč, takže byznys jako celek funguje.",
+        "Po marketingu vychází ve financích 2902736.98 Kč, takže byznys jako celek funguje.",
         "Returning customers generated 315329090.87 Kč vs 12813539.29 Kč from new customers in the measured YTD window.",
         "Nejslabší místo už není customer truth, ale channel reconciliation a netto contribution."
       ],
@@ -55,52 +55,52 @@
   "businessTruth": {
     "financePreviousMonth": {
       "label": "7/2026",
-      "revenue": 11692225.04,
-      "cogsAndFees": 9351712.82,
+      "revenue": 12927958.49,
+      "cogsAndFees": 9380831.51,
       "logistics": 510953.67,
       "marketing": 133436.33,
       "opex": 2853832.8,
       "depreciation": 399556.0,
       "other": -47287.38,
-      "grossMargin": 2340512.22,
-      "afterLogistics": 1829558.55,
-      "afterMarketing": 1696122.22,
-      "operatingMargin": -1157710.58,
-      "ebit": -1557266.58,
-      "profit": -1604553.96,
-      "grossMarginPct": 20.0,
-      "marketingPct": 1.1,
-      "logisticsPct": 4.4,
-      "operatingMarginPct": -9.9,
-      "profitPct": -13.7
+      "grossMargin": 3547126.98,
+      "afterLogistics": 3036173.31,
+      "afterMarketing": 2902736.98,
+      "operatingMargin": 48904.18,
+      "ebit": -350651.82,
+      "profit": -397939.2,
+      "grossMarginPct": 27.4,
+      "marketingPct": 1.0,
+      "logisticsPct": 4.0,
+      "operatingMarginPct": 0.4,
+      "profitPct": -3.1
     },
     "financeCurrentMonth": {
       "label": "8/2026",
-      "revenue": 3863874.97,
-      "cogsAndFees": 3252006.01,
+      "revenue": 3954768.77,
+      "cogsAndFees": 3324503.5,
       "logistics": 16157.73,
       "marketing": 167479.34,
-      "opex": 330036.01,
+      "opex": 330898.39,
       "depreciation": 399556.0,
-      "other": -3591.77,
-      "grossMargin": 611868.96,
-      "afterLogistics": 595711.23,
-      "afterMarketing": 428231.89,
-      "operatingMargin": 98195.88,
-      "ebit": -301360.12,
-      "profit": -304951.89,
-      "grossMarginPct": 15.8,
-      "marketingPct": 4.3,
+      "other": -3631.34,
+      "grossMargin": 630265.27,
+      "afterLogistics": 614107.54,
+      "afterMarketing": 446628.2,
+      "operatingMargin": 115729.81,
+      "ebit": -283826.19,
+      "profit": -287457.53,
+      "grossMarginPct": 15.9,
+      "marketingPct": 4.2,
       "logisticsPct": 0.4,
-      "operatingMarginPct": 2.5,
-      "profitPct": -7.9
+      "operatingMarginPct": 2.9,
+      "profitPct": -7.3
     },
     "cash": {
-      "cashOnAccounts": 9030191.76,
-      "unpaidInvoices": 2229231.67,
-      "netCashPosition": 6800960.09,
-      "overdueInvoicesCount": 0,
-      "overdueInvoicesAmount": 0.0,
+      "cashOnAccounts": 7758679.5,
+      "unpaidInvoices": 2053622.9,
+      "netCashPosition": 5705056.6,
+      "overdueInvoicesCount": 1,
+      "overdueInvoicesAmount": 35233.73,
       "largestPayables": [
         {
           "code": "PF1004/2026",
@@ -125,14 +125,6 @@
           "amountTotal": 434438.4,
           "amountDue": 434438.4,
           "status": "18 dní do splatnosti"
-        },
-        {
-          "code": "PF0984/2026",
-          "vendor": "Selfcareacademy s.r.o.",
-          "dueDate": "15.08.2026",
-          "amountTotal": 199650.0,
-          "amountDue": 199650.0,
-          "status": "3 dní do splatnosti"
         },
         {
           "code": "PF0989/2026",
@@ -165,6 +157,14 @@
           "amountTotal": 46345.59,
           "amountDue": 46345.59,
           "status": "9 dní do splatnosti"
+        },
+        {
+          "code": "PF0997/2026",
+          "vendor": "coworkers.ai s.r.o.",
+          "dueDate": "30.08.2026",
+          "amountTotal": 43560.0,
+          "amountDue": 43560.0,
+          "status": "18 dní do splatnosti"
         }
       ],
       "cashAccountsSource": {
@@ -172,46 +172,39 @@
         "message": "Cash na účtech a pokladnách je počítán živě z ABRA obratové předvahy pro účty 221 a 211, ze CZK řádků a se započtením kladných zůstatků.",
         "accounts": [
           {
-            "accountCode": "221006",
-            "accountLabel": "221006: 2202503115/2010 FIO CZK",
-            "currency": "CZK: Česká koruna",
-            "balance": 2559648.94,
-            "includedBalance": 2559648.94
-          },
-          {
-            "accountCode": "221111",
-            "accountLabel": "221111: 107-164902 Czk THEPAY",
-            "currency": "CZK: Česká koruna",
-            "balance": 2505904.32,
-            "includedBalance": 2505904.32
-          },
-          {
             "accountCode": "221115",
             "accountLabel": "221115: 131-3675980207/0100 KB CZK",
             "currency": "CZK: Česká koruna",
-            "balance": 1978255.36,
-            "includedBalance": 1978255.36
+            "balance": 4294313.17,
+            "includedBalance": 4294313.17
+          },
+          {
+            "accountCode": "221006",
+            "accountLabel": "221006: 2202503115/2010 FIO CZK",
+            "currency": "CZK: Česká koruna",
+            "balance": 1382148.94,
+            "includedBalance": 1382148.94
           },
           {
             "accountCode": "221001",
             "accountLabel": "221001: 2901338673/2010 FIO CZK",
             "currency": "CZK: Česká koruna",
-            "balance": 1114304.29,
-            "includedBalance": 1114304.29
+            "balance": 1057384.38,
+            "includedBalance": 1057384.38
           },
           {
             "accountCode": "221002",
             "accountLabel": "221002: 131-1211280297/0100 KB EUR",
             "currency": "CZK: Česká koruna",
-            "balance": 337642.65,
-            "includedBalance": 337642.65
+            "balance": 655757.55,
+            "includedBalance": 655757.55
           },
           {
-            "accountCode": "221112",
-            "accountLabel": "221112: 107-164902 EUR THEPAY",
+            "accountCode": "221111",
+            "accountLabel": "221111: 107-164902 Czk THEPAY",
             "currency": "CZK: Česká koruna",
-            "balance": 316479.31,
-            "includedBalance": 316479.31
+            "balance": 105543.44,
+            "includedBalance": 105543.44
           },
           {
             "accountCode": "221117",
@@ -224,8 +217,15 @@
             "accountCode": "221005",
             "accountLabel": "221005: 2501338690/2010 FIO EUR",
             "currency": "CZK: Česká koruna",
-            "balance": 66193.24,
-            "includedBalance": 66193.24
+            "balance": 72446.71,
+            "includedBalance": 72446.71
+          },
+          {
+            "accountCode": "221112",
+            "accountLabel": "221112: 107-164902 EUR THEPAY",
+            "currency": "CZK: Česká koruna",
+            "balance": 39831.66,
+            "includedBalance": 39831.66
           },
           {
             "accountCode": "211001",
@@ -245,8 +245,8 @@
             "accountCode": "221004",
             "accountLabel": "221004: 2601338698/2010 FIO CZK výplaty",
             "currency": "CZK: Česká koruna",
-            "balance": 6770.0,
-            "includedBalance": 6770.0
+            "balance": 6260.0,
+            "includedBalance": 6260.0
           },
           {
             "accountCode": "221007",
@@ -314,22 +314,22 @@
           {
             "accountCode": "221001",
             "accountLabel": "221001: 2901338673/2010 FIO CZK",
-            "currency": "USD: Americký dolar",
-            "balance": -36455.4,
+            "currency": "EUR: Euro",
+            "balance": 7415.96,
             "includedBalance": 0.0
           },
           {
             "accountCode": "221001",
             "accountLabel": "221001: 2901338673/2010 FIO CZK",
-            "currency": "EUR: Euro",
-            "balance": 7433.96,
+            "currency": "USD: Americký dolar",
+            "balance": -36475.63,
             "includedBalance": 0.0
           },
           {
             "accountCode": "221002",
             "accountLabel": "221002: 131-1211280297/0100 KB EUR",
             "currency": "EUR: Euro",
-            "balance": 14417.98,
+            "balance": 27547.12,
             "includedBalance": 0.0
           },
           {
@@ -344,14 +344,14 @@
     },
     "eshopYtdTotals": {
       "previous": {
-        "count": 89669,
-        "revenueWithVat": 137777452.85,
-        "averageOrderValue": 1536.51
+        "count": 89724,
+        "revenueWithVat": 137861331.46,
+        "averageOrderValue": 1536.5
       },
       "current": {
-        "count": 75412,
-        "revenueWithVat": 124986068.74,
-        "averageOrderValue": 1657.38
+        "count": 75464,
+        "revenueWithVat": 125083427.75,
+        "averageOrderValue": 1657.52
       }
     },
     "previousDayOrders": {
@@ -387,13 +387,13 @@
     },
     "contributionTruth": {
       "previousMonth": {
-        "revenue": 11692225.04,
-        "grossMargin": 2340512.22,
-        "afterMarketing": 1696122.22,
-        "operatingMargin": -1157710.58,
-        "profit": -1604553.96,
-        "afterMarketingPct": 14.51,
-        "operatingMarginPct": -9.9,
+        "revenue": 12927958.49,
+        "grossMargin": 3547126.98,
+        "afterMarketing": 2902736.98,
+        "operatingMargin": 48904.18,
+        "profit": -397939.2,
+        "afterMarketingPct": 22.45,
+        "operatingMarginPct": 0.38,
         "paidMediaSpend": 208343.52,
         "retentionRevenueProxy": 3858229.2,
         "retentionOrdersProxy": 2594
@@ -426,37 +426,37 @@
       },
       "financeReferenceMonth": {
         "label": "7/2026",
-        "revenue": 11692225.04,
-        "grossMargin": 2340512.22,
+        "revenue": 12927958.49,
+        "grossMargin": 3547126.98,
         "logistics": 510953.67,
         "marketing": 133436.33,
         "opex": 2853832.8,
         "depreciation": 399556.0,
-        "operatingMargin": -1157710.58,
-        "profit": -1604553.96
+        "operatingMargin": 48904.18,
+        "profit": -397939.2
       },
       "ratioModel": {
-        "grossMarginPct": 20.02,
-        "logisticsPct": 4.37,
-        "marketingPct": 1.14,
-        "operatingMarginPct": -9.9,
-        "profitPct": -13.72
+        "grossMarginPct": 27.44,
+        "logisticsPct": 3.95,
+        "marketingPct": 1.03,
+        "operatingMarginPct": 0.38,
+        "profitPct": -3.08
       },
       "ytdEstimated": {
         "grossRevenueWithVat": 328142630.16,
         "netRevenueAfterCancellations": 318462422.57,
         "cancellationLeakage": 9680207.59,
-        "estimatedGrossMargin": 63748789.4,
-        "estimatedAfterLogistics": 49831887.95,
-        "estimatedAfterMarketing": 46197467.92,
-        "estimatedOperatingContribution": -31532690.71,
-        "estimatedProfitContribution": -43703413.12
+        "estimatedGrossMargin": 87378579.7,
+        "estimatedAfterLogistics": 74791940.92,
+        "estimatedAfterMarketing": 71504921.02,
+        "estimatedOperatingContribution": 1204687.01,
+        "estimatedProfitContribution": -9802683.21
       },
       "customerContributionSplitYtd": {
         "newRevenueWithVat": 12813539.29,
         "returningRevenueWithVat": 315329090.87,
-        "estimatedNewAfterMarketing": 1858784.67,
-        "estimatedReturningAfterMarketing": 45742933.94,
+        "estimatedNewAfterMarketing": 2877046.24,
+        "estimatedReturningAfterMarketing": 70801388.61,
         "retentionRevenueProxyPreviousMonth": 3858229.2
       },
       "warnings": [
@@ -1235,8 +1235,8 @@
       "performanceSpend": 128436.33,
       "brandSpend": 5000.0,
       "totalSpend": 133436.33,
-      "revenue": 11692225.04,
-      "spendShareOfRevenuePct": 1.1
+      "revenue": 12927958.49,
+      "spendShareOfRevenuePct": 1.0
     },
     "directSources": {
       "sklik": {
@@ -11992,23 +11992,23 @@
           "label": "2025-10-01 až 2026-08-12"
         },
         "summary": {
-          "noviceRevenueCzkEquiv": 16459618.0,
-          "networkRevenueCzkEquiv": 23267401.0,
+          "noviceRevenueCzkEquiv": 16462263.0,
+          "networkRevenueCzkEquiv": 23270046.0,
           "novicePartners": 50,
           "networkPartners": 50,
-          "noviceOrders": 10017.0,
-          "networkOrders": 14413.0,
+          "noviceOrders": 10020.0,
+          "networkOrders": 14416.0,
           "noviceOrderingContacts": 1738.0,
           "networkOrderingCustomers": 3922.0,
           "topNovicePartner": {
             "partnerCode": "ESHOP",
             "partnerName": "E-shop (interní)",
-            "revenueCzkEquiv": 5444091.0
+            "revenueCzkEquiv": 5445988.0
           },
           "topNetworkPartner": {
             "partnerCode": "ESHOP",
             "partnerName": "E-shop (interní)",
-            "revenueCzkEquiv": 5444091.0
+            "revenueCzkEquiv": 5445988.0
           }
         },
         "reports": {
@@ -12021,8 +12021,8 @@
             "totals": {
               "contacts": 4642.0,
               "orderingContacts": 1738.0,
-              "orders": 10017.0,
-              "revenueCzkEquiv": 16459618.0
+              "orders": 10020.0,
+              "revenueCzkEquiv": 16462263.0
             },
             "monthly": [
               {
@@ -12142,8 +12142,8 @@
                 "orderingContacts": 16.0,
                 "networkCustomers": 0.0,
                 "orderingCustomers": 0.0,
-                "orders": 448.0,
-                "revenueCzkEquiv": 682951.0
+                "orders": 451.0,
+                "revenueCzkEquiv": 685596.0
               }
             ],
             "topPartners": [
@@ -12152,8 +12152,8 @@
                 "partnerName": "E-shop (interní)",
                 "contacts": 975.0,
                 "orderingContacts": 975.0,
-                "orders": 3308.0,
-                "revenueCzkEquiv": 5444091.0
+                "orders": 3310.0,
+                "revenueCzkEquiv": 5445988.0
               },
               {
                 "partnerCode": "g73ps2",
@@ -12184,8 +12184,8 @@
                 "partnerName": "Hanka Netoličková",
                 "contacts": 199.0,
                 "orderingContacts": 40.0,
-                "orders": 340.0,
-                "revenueCzkEquiv": 514300.0
+                "orders": 341.0,
+                "revenueCzkEquiv": 515048.0
               },
               {
                 "partnerCode": "3xkqnt",
@@ -12316,10 +12316,10 @@
             "error": null,
             "partners": 50,
             "totals": {
-              "networkCustomers": 13520.0,
+              "networkCustomers": 13522.0,
               "orderingCustomers": 3922.0,
-              "orders": 14413.0,
-              "revenueCzkEquiv": 23267401.0
+              "orders": 14416.0,
+              "revenueCzkEquiv": 23270046.0
             },
             "monthly": [
               {
@@ -12439,8 +12439,8 @@
                 "orderingContacts": 0.0,
                 "networkCustomers": 0.0,
                 "orderingCustomers": 0.0,
-                "orders": 619.0,
-                "revenueCzkEquiv": 926891.0
+                "orders": 622.0,
+                "revenueCzkEquiv": 929536.0
               }
             ],
             "topPartners": [
@@ -12448,10 +12448,10 @@
                 "partnerCode": "ESHOP",
                 "partnerName": "E-shop (interní)",
                 "partnerTiandeId": null,
-                "networkCustomers": 3160.0,
+                "networkCustomers": 3161.0,
                 "orderingCustomers": 975.0,
-                "orders": 3308.0,
-                "revenueCzkEquiv": 5444091.0
+                "orders": 3310.0,
+                "revenueCzkEquiv": 5445988.0
               },
               {
                 "partnerCode": "g73ps2",
@@ -12529,10 +12529,10 @@
                 "partnerCode": "y9qnc3",
                 "partnerName": "Hanka Netoličková",
                 "partnerTiandeId": null,
-                "networkCustomers": 323.0,
+                "networkCustomers": 324.0,
                 "orderingCustomers": 91.0,
-                "orders": 340.0,
-                "revenueCzkEquiv": 514300.0
+                "orders": 341.0,
+                "revenueCzkEquiv": 515048.0
               },
               {
                 "partnerCode": "3xkqnt",
@@ -12838,7 +12838,7 @@
     "coverage": {
       "customersCount": 39328,
       "ordersProcessed": 203194,
-      "top50RevenueSharePctOfYtd": 8.31,
+      "top50RevenueSharePctOfYtd": 8.3,
       "top10RevenueSharePctOfYtd": 4.11,
       "top50OrdersSharePctOfProcessed": 2.09
     },
@@ -14032,10 +14032,10 @@
         },
         "dateCreated": "2026-08-11T22:58:31+02:00",
         "cancelled": false,
-        "isPaid": false,
+        "isPaid": true,
         "status": {
-          "id": 0,
-          "name": "nová"
+          "id": 1,
+          "name": "přijatá"
         },
         "totalPrice": {
           "withVat": 1572,
@@ -14088,6 +14088,60 @@
             "orderStatus": "nová",
             "date": "2026-08-11T23:02:20+02:00",
             "comment": "[FlexiBee] Objednávka byla nahrána do FlexiBee; ID: 696820",
+            "notifyStatus": "NO",
+            "data": "null"
+          },
+          {
+            "id": 7387641,
+            "adminId": null,
+            "orderStatus": "nová",
+            "date": "2026-08-12T09:39:03+02:00",
+            "comment": "Modul FioBank - příchozí platba č. 27786114991. Komentář plátce: ŠTĚPÁNÍKOVÁ MARTIN.",
+            "notifyStatus": "NO",
+            "data": "null"
+          },
+          {
+            "id": 7387642,
+            "adminId": null,
+            "orderStatus": "nová",
+            "date": "2026-08-12T09:39:03+02:00",
+            "comment": "<p>Dobré zprávy: Úhrada vaší objednávky 261308136 právě dorazila. Než dočtete tento e-mail, pustíme se do práce na expedici vaší objednávky tak, aby vám dorazila co nejdříve.</p><p>Těšíte se? 😍</p><div></div>",
+            "notifyStatus": "YES",
+            "data": "\"{\\\"email_type\\\": \\\"PAYMENT_SUCCESS\\\", \\\"subject\\\": \\\"\\\\ud83c\\\\udf89 Va\\\\u0161e \\\\u00fahrada objedn\\\\u00e1vky 261308136 dorazila, startujeme\\\", \\\"isAdminEmail\\\": false, \\\"attachments\\\": [\\\"order_invoice\\\"], \\\"email_id\\\": \\\"6a7c23172fad3\\\"}\""
+          },
+          {
+            "id": 7387645,
+            "adminId": null,
+            "orderStatus": "nová",
+            "date": "2026-08-12T09:40:02+02:00",
+            "comment": "[4PX] Objednávka byla vytvořena; ID: OC149400632608120145 tracking: 601116750139 účet: CZ",
+            "notifyStatus": "NO",
+            "data": "null"
+          },
+          {
+            "id": 7387646,
+            "adminId": null,
+            "orderStatus": "přijatá",
+            "date": "2026-08-12T09:40:03+02:00",
+            "comment": null,
+            "notifyStatus": "NO",
+            "data": "null"
+          },
+          {
+            "id": 7387669,
+            "adminId": null,
+            "orderStatus": "přijatá",
+            "date": "2026-08-12T09:41:54+02:00",
+            "comment": "[FlexiBee] Objednávka byla ve FlexiBee zaktualizována",
+            "notifyStatus": "NO",
+            "data": "null"
+          },
+          {
+            "id": 7387677,
+            "adminId": null,
+            "orderStatus": "přijatá",
+            "date": "2026-08-12T09:42:08+02:00",
+            "comment": "[Flexi] Objednávka byla realizována ve Flexi;",
             "notifyStatus": "NO",
             "data": "null"
           }
@@ -20786,10 +20840,10 @@
         },
         "dateCreated": "2026-08-11T21:06:19+02:00",
         "cancelled": false,
-        "isPaid": false,
+        "isPaid": true,
         "status": {
-          "id": 0,
-          "name": "nová"
+          "id": 1,
+          "name": "přijatá"
         },
         "totalPrice": {
           "withVat": 6828,
@@ -20842,6 +20896,60 @@
             "orderStatus": "nová",
             "date": "2026-08-11T21:06:47+02:00",
             "comment": "[FlexiBee] Objednávka byla nahrána do FlexiBee; ID: 696791",
+            "notifyStatus": "NO",
+            "data": "null"
+          },
+          {
+            "id": 7387227,
+            "adminId": null,
+            "orderStatus": "nová",
+            "date": "2026-08-12T08:09:04+02:00",
+            "comment": "Modul FioBank - příchozí platba č. 27785955668. Komentář plátce: Bednářová Ludmila.",
+            "notifyStatus": "NO",
+            "data": "null"
+          },
+          {
+            "id": 7387228,
+            "adminId": null,
+            "orderStatus": "nová",
+            "date": "2026-08-12T08:09:04+02:00",
+            "comment": "<p>Dobré zprávy: Úhrada vaší objednávky 261308107 právě dorazila. Než dočtete tento e-mail, pustíme se do práce na expedici vaší objednávky tak, aby vám dorazila co nejdříve.</p><p>Těšíte se? 😍</p><div></div>",
+            "notifyStatus": "YES",
+            "data": "\"{\\\"email_type\\\": \\\"PAYMENT_SUCCESS\\\", \\\"subject\\\": \\\"\\\\ud83c\\\\udf89 Va\\\\u0161e \\\\u00fahrada objedn\\\\u00e1vky 261308107 dorazila, startujeme\\\", \\\"isAdminEmail\\\": false, \\\"attachments\\\": [\\\"order_invoice\\\"], \\\"email_id\\\": \\\"6a7c0e00ab56a\\\"}\""
+          },
+          {
+            "id": 7387231,
+            "adminId": null,
+            "orderStatus": "nová",
+            "date": "2026-08-12T08:10:03+02:00",
+            "comment": "[4PX] Objednávka byla vytvořena; ID: OC149400632608120110 tracking: 601116748001 účet: CZ",
+            "notifyStatus": "NO",
+            "data": "null"
+          },
+          {
+            "id": 7387232,
+            "adminId": null,
+            "orderStatus": "přijatá",
+            "date": "2026-08-12T08:10:04+02:00",
+            "comment": null,
+            "notifyStatus": "NO",
+            "data": "null"
+          },
+          {
+            "id": 7387238,
+            "adminId": null,
+            "orderStatus": "přijatá",
+            "date": "2026-08-12T08:11:31+02:00",
+            "comment": "[FlexiBee] Objednávka byla ve FlexiBee zaktualizována",
+            "notifyStatus": "NO",
+            "data": "null"
+          },
+          {
+            "id": 7387242,
+            "adminId": null,
+            "orderStatus": "přijatá",
+            "date": "2026-08-12T08:11:42+02:00",
+            "comment": "[Flexi] Objednávka byla realizována ve Flexi;",
             "notifyStatus": "NO",
             "data": "null"
           }
@@ -25106,10 +25214,10 @@
         },
         "dateCreated": "2026-08-11T20:04:31+02:00",
         "cancelled": false,
-        "isPaid": false,
+        "isPaid": true,
         "status": {
-          "id": 0,
-          "name": "nová"
+          "id": 1,
+          "name": "přijatá"
         },
         "totalPrice": {
           "withVat": 847,
@@ -25162,6 +25270,60 @@
             "orderStatus": "nová",
             "date": "2026-08-11T20:06:48+02:00",
             "comment": "[FlexiBee] Objednávka byla nahrána do FlexiBee; ID: 696770",
+            "notifyStatus": "NO",
+            "data": "null"
+          },
+          {
+            "id": 7387225,
+            "adminId": null,
+            "orderStatus": "nová",
+            "date": "2026-08-12T08:09:04+02:00",
+            "comment": "Modul FioBank - příchozí platba č. 27785955178. Komentář plátce: KOPCOVÁ ALENA.",
+            "notifyStatus": "NO",
+            "data": "null"
+          },
+          {
+            "id": 7387226,
+            "adminId": null,
+            "orderStatus": "nová",
+            "date": "2026-08-12T08:09:04+02:00",
+            "comment": "<p>Dobré zprávy: Úhrada vaší objednávky 261308086 právě dorazila. Než dočtete tento e-mail, pustíme se do práce na expedici vaší objednávky tak, aby vám dorazila co nejdříve.</p><p>Těšíte se? 😍</p><div></div>",
+            "notifyStatus": "YES",
+            "data": "\"{\\\"email_type\\\": \\\"PAYMENT_SUCCESS\\\", \\\"subject\\\": \\\"\\\\ud83c\\\\udf89 Va\\\\u0161e \\\\u00fahrada objedn\\\\u00e1vky 261308086 dorazila, startujeme\\\", \\\"isAdminEmail\\\": false, \\\"attachments\\\": [\\\"order_invoice\\\"], \\\"email_id\\\": \\\"6a7c0e004b1af\\\"}\""
+          },
+          {
+            "id": 7387229,
+            "adminId": null,
+            "orderStatus": "nová",
+            "date": "2026-08-12T08:10:02+02:00",
+            "comment": "[4PX] Objednávka byla vytvořena; ID: OC149400632608120109 tracking: 601116747995 účet: CZ",
+            "notifyStatus": "NO",
+            "data": "null"
+          },
+          {
+            "id": 7387230,
+            "adminId": null,
+            "orderStatus": "přijatá",
+            "date": "2026-08-12T08:10:02+02:00",
+            "comment": null,
+            "notifyStatus": "NO",
+            "data": "null"
+          },
+          {
+            "id": 7387237,
+            "adminId": null,
+            "orderStatus": "přijatá",
+            "date": "2026-08-12T08:11:31+02:00",
+            "comment": "[FlexiBee] Objednávka byla ve FlexiBee zaktualizována",
+            "notifyStatus": "NO",
+            "data": "null"
+          },
+          {
+            "id": 7387241,
+            "adminId": null,
+            "orderStatus": "přijatá",
+            "date": "2026-08-12T08:11:37+02:00",
+            "comment": "[Flexi] Objednávka byla realizována ve Flexi;",
             "notifyStatus": "NO",
             "data": "null"
           }
@@ -37857,10 +38019,10 @@
         },
         "dateCreated": "2026-08-11T15:29:44+02:00",
         "cancelled": false,
-        "isPaid": false,
+        "isPaid": true,
         "status": {
-          "id": 0,
-          "name": "nová"
+          "id": 1,
+          "name": "přijatá"
         },
         "totalPrice": {
           "withVat": 119.95,
@@ -37913,6 +38075,60 @@
             "orderStatus": "nová",
             "date": "2026-08-11T15:31:35+02:00",
             "comment": "[FlexiBee] Objednávka byla nahrána do FlexiBee; ID: 696711",
+            "notifyStatus": "NO",
+            "data": "null"
+          },
+          {
+            "id": 7387800,
+            "adminId": null,
+            "orderStatus": "nová",
+            "date": "2026-08-12T09:59:05+02:00",
+            "comment": "Modul FioBank - příchozí platba č. 27786143544. Komentář plátce: Emilia Bradova.",
+            "notifyStatus": "NO",
+            "data": "null"
+          },
+          {
+            "id": 7387801,
+            "adminId": null,
+            "orderStatus": "nová",
+            "date": "2026-08-12T09:59:05+02:00",
+            "comment": "<p>Dobré správy: Úhrada vašej objedávky 261308027 práve dorazila. Okamžite sme u nás teda vyhlásili expedičný poplach. Práve teraz si svalnatí, opálení a usmievaví kolegovia obliekajú kombinézy, nasadzujú prilby a štartujú motory. A akonáhle dočítate tento email, pustí sa do práce na expedícii vašej objednávky tak, aby vám dorazila čo najskôr. Tešíte sa? 😍</p>\n\n<div></div>",
+            "notifyStatus": "YES",
+            "data": "\"{\\\"email_type\\\": \\\"PAYMENT_SUCCESS\\\", \\\"subject\\\": \\\"\\\\ud83c\\\\udf89 Va\\\\u0161a \\\\u00fahrada objedn\\\\u00e1vky 261308027 dorazila, \\\\u0161tartujeme\\\", \\\"isAdminEmail\\\": false, \\\"attachments\\\": [\\\"order_invoice\\\"], \\\"email_id\\\": \\\"6a7c27c94bf5b\\\"}\""
+          },
+          {
+            "id": 7387820,
+            "adminId": null,
+            "orderStatus": "nová",
+            "date": "2026-08-12T10:00:23+02:00",
+            "comment": "[4PX] Objednávka byla vytvořena; ID: OC149400622608120011 tracking: 601116751269 účet: SK",
+            "notifyStatus": "NO",
+            "data": "null"
+          },
+          {
+            "id": 7387821,
+            "adminId": null,
+            "orderStatus": "přijatá",
+            "date": "2026-08-12T10:00:23+02:00",
+            "comment": null,
+            "notifyStatus": "NO",
+            "data": "null"
+          },
+          {
+            "id": 7387824,
+            "adminId": null,
+            "orderStatus": "přijatá",
+            "date": "2026-08-12T10:01:48+02:00",
+            "comment": "[FlexiBee] Objednávka byla ve FlexiBee zaktualizována",
+            "notifyStatus": "NO",
+            "data": "null"
+          },
+          {
+            "id": 7387831,
+            "adminId": null,
+            "orderStatus": "přijatá",
+            "date": "2026-08-12T10:02:08+02:00",
+            "comment": "[Flexi] Objednávka byla realizována ve Flexi;",
             "notifyStatus": "NO",
             "data": "null"
           }
@@ -49308,8 +49524,8 @@
         "cancelled": false,
         "isPaid": true,
         "status": {
-          "id": 3,
-          "name": "expedováno"
+          "id": 4,
+          "name": "připraveno k vyzvednutí"
         },
         "totalPrice": {
           "withVat": 811,
@@ -49460,6 +49676,24 @@
             "adminId": null,
             "orderStatus": "expedováno",
             "date": "2026-08-11T18:00:15+02:00",
+            "comment": null,
+            "notifyStatus": "NO",
+            "data": "null"
+          },
+          {
+            "id": 7387862,
+            "adminId": null,
+            "orderStatus": "expedováno",
+            "date": "2026-08-12T10:10:04+02:00",
+            "comment": "[4PX] Změna stavu: ready_to_pickup",
+            "notifyStatus": "NO",
+            "data": "null"
+          },
+          {
+            "id": 7387863,
+            "adminId": null,
+            "orderStatus": "připraveno k vyzvednutí",
+            "date": "2026-08-12T10:10:04+02:00",
             "comment": null,
             "notifyStatus": "NO",
             "data": "null"
@@ -49768,8 +50002,8 @@
         "cancelled": false,
         "isPaid": false,
         "status": {
-          "id": 3,
-          "name": "expedováno"
+          "id": 4,
+          "name": "připraveno k vyzvednutí"
         },
         "totalPrice": {
           "withVat": 1645,
@@ -49884,6 +50118,24 @@
             "adminId": null,
             "orderStatus": "expedováno",
             "date": "2026-08-11T18:00:16+02:00",
+            "comment": null,
+            "notifyStatus": "NO",
+            "data": "null"
+          },
+          {
+            "id": 7387704,
+            "adminId": null,
+            "orderStatus": "expedováno",
+            "date": "2026-08-12T09:45:10+02:00",
+            "comment": "[4PX] Změna stavu: ready_to_pickup",
+            "notifyStatus": "NO",
+            "data": "null"
+          },
+          {
+            "id": 7387705,
+            "adminId": null,
+            "orderStatus": "připraveno k vyzvednutí",
+            "date": "2026-08-12T09:45:10+02:00",
             "comment": null,
             "notifyStatus": "NO",
             "data": "null"
@@ -52718,8 +52970,8 @@
         "cancelled": false,
         "isPaid": true,
         "status": {
-          "id": 3,
-          "name": "expedováno"
+          "id": 4,
+          "name": "připraveno k vyzvednutí"
         },
         "totalPrice": {
           "withVat": 3104,
@@ -52870,6 +53122,24 @@
             "adminId": null,
             "orderStatus": "expedováno",
             "date": "2026-08-11T18:00:15+02:00",
+            "comment": null,
+            "notifyStatus": "NO",
+            "data": "null"
+          },
+          {
+            "id": 7387765,
+            "adminId": null,
+            "orderStatus": "expedováno",
+            "date": "2026-08-12T09:55:04+02:00",
+            "comment": "[4PX] Změna stavu: ready_to_pickup",
+            "notifyStatus": "NO",
+            "data": "null"
+          },
+          {
+            "id": 7387766,
+            "adminId": null,
+            "orderStatus": "připraveno k vyzvednutí",
+            "date": "2026-08-12T09:55:04+02:00",
             "comment": null,
             "notifyStatus": "NO",
             "data": "null"
@@ -54036,10 +54306,10 @@
         },
         "dateCreated": "2026-08-11T12:02:39+02:00",
         "cancelled": false,
-        "isPaid": false,
+        "isPaid": true,
         "status": {
-          "id": 0,
-          "name": "nová"
+          "id": 1,
+          "name": "přijatá"
         },
         "totalPrice": {
           "withVat": 1308,
@@ -54092,6 +54362,60 @@
             "orderStatus": "nová",
             "date": "2026-08-11T12:06:34+02:00",
             "comment": "[FlexiBee] Objednávka byla nahrána do FlexiBee; ID: 696639",
+            "notifyStatus": "NO",
+            "data": "null"
+          },
+          {
+            "id": 7387394,
+            "adminId": null,
+            "orderStatus": "nová",
+            "date": "2026-08-12T08:59:04+02:00",
+            "comment": "Modul FioBank - příchozí platba č. 27786051403. Komentář plátce: PETRA DAREBNÍKOVÁ.",
+            "notifyStatus": "NO",
+            "data": "null"
+          },
+          {
+            "id": 7387395,
+            "adminId": null,
+            "orderStatus": "nová",
+            "date": "2026-08-12T08:59:04+02:00",
+            "comment": "<p>Dobré zprávy: Úhrada vaší objednávky 261307955 právě dorazila. Než dočtete tento e-mail, pustíme se do práce na expedici vaší objednávky tak, aby vám dorazila co nejdříve.</p><p>Těšíte se? 😍</p><div></div>",
+            "notifyStatus": "YES",
+            "data": "\"{\\\"email_type\\\": \\\"PAYMENT_SUCCESS\\\", \\\"subject\\\": \\\"\\\\ud83c\\\\udf89 Va\\\\u0161e \\\\u00fahrada objedn\\\\u00e1vky 261307955 dorazila, startujeme\\\", \\\"isAdminEmail\\\": false, \\\"attachments\\\": [\\\"order_invoice\\\"], \\\"email_id\\\": \\\"6a7c19b821065\\\"}\""
+          },
+          {
+            "id": 7387414,
+            "adminId": null,
+            "orderStatus": "nová",
+            "date": "2026-08-12T09:01:51+02:00",
+            "comment": "[FlexiBee] Objednávka byla ve FlexiBee zaktualizována",
+            "notifyStatus": "NO",
+            "data": "null"
+          },
+          {
+            "id": 7387446,
+            "adminId": null,
+            "orderStatus": "nová",
+            "date": "2026-08-12T09:15:41+02:00",
+            "comment": "[Flexi] Objednávka byla realizována ve Flexi;",
+            "notifyStatus": "NO",
+            "data": "null"
+          },
+          {
+            "id": 7387451,
+            "adminId": null,
+            "orderStatus": "nová",
+            "date": "2026-08-12T09:16:02+02:00",
+            "comment": "[4PX] Objednávka byla vytvořena; ID: OC149400632608120123 tracking: 601116748875 účet: CZ",
+            "notifyStatus": "NO",
+            "data": "null"
+          },
+          {
+            "id": 7387452,
+            "adminId": null,
+            "orderStatus": "přijatá",
+            "date": "2026-08-12T09:16:02+02:00",
+            "comment": null,
             "notifyStatus": "NO",
             "data": "null"
           }
@@ -55389,8 +55713,8 @@
         "cancelled": false,
         "isPaid": true,
         "status": {
-          "id": 3,
-          "name": "expedováno"
+          "id": 4,
+          "name": "připraveno k vyzvednutí"
         },
         "totalPrice": {
           "withVat": 2524,
@@ -55541,6 +55865,24 @@
             "adminId": null,
             "orderStatus": "expedováno",
             "date": "2026-08-11T19:25:05+02:00",
+            "comment": null,
+            "notifyStatus": "NO",
+            "data": "null"
+          },
+          {
+            "id": 7387777,
+            "adminId": null,
+            "orderStatus": "expedováno",
+            "date": "2026-08-12T09:55:04+02:00",
+            "comment": "[4PX] Změna stavu: ready_to_pickup",
+            "notifyStatus": "NO",
+            "data": "null"
+          },
+          {
+            "id": 7387778,
+            "adminId": null,
+            "orderStatus": "připraveno k vyzvednutí",
+            "date": "2026-08-12T09:55:05+02:00",
             "comment": null,
             "notifyStatus": "NO",
             "data": "null"
@@ -55706,8 +56048,8 @@
         "cancelled": false,
         "isPaid": true,
         "status": {
-          "id": 3,
-          "name": "expedováno"
+          "id": 4,
+          "name": "připraveno k vyzvednutí"
         },
         "totalPrice": {
           "withVat": 3124,
@@ -55858,6 +56200,24 @@
             "adminId": null,
             "orderStatus": "expedováno",
             "date": "2026-08-11T19:15:07+02:00",
+            "comment": null,
+            "notifyStatus": "NO",
+            "data": "null"
+          },
+          {
+            "id": 7387469,
+            "adminId": null,
+            "orderStatus": "expedováno",
+            "date": "2026-08-12T09:16:16+02:00",
+            "comment": "[4PX] Změna stavu: ready_to_pickup",
+            "notifyStatus": "NO",
+            "data": "null"
+          },
+          {
+            "id": 7387470,
+            "adminId": null,
+            "orderStatus": "připraveno k vyzvednutí",
+            "date": "2026-08-12T09:16:16+02:00",
             "comment": null,
             "notifyStatus": "NO",
             "data": "null"
@@ -57452,8 +57812,8 @@
         "cancelled": false,
         "isPaid": true,
         "status": {
-          "id": 3,
-          "name": "expedováno"
+          "id": 4,
+          "name": "připraveno k vyzvednutí"
         },
         "totalPrice": {
           "withVat": 1672,
@@ -57607,6 +57967,24 @@
             "comment": null,
             "notifyStatus": "NO",
             "data": "null"
+          },
+          {
+            "id": 7387581,
+            "adminId": null,
+            "orderStatus": "expedováno",
+            "date": "2026-08-12T09:22:32+02:00",
+            "comment": "[4PX] Změna stavu: ready_to_pickup",
+            "notifyStatus": "NO",
+            "data": "null"
+          },
+          {
+            "id": 7387582,
+            "adminId": null,
+            "orderStatus": "připraveno k vyzvednutí",
+            "date": "2026-08-12T09:22:32+02:00",
+            "comment": null,
+            "notifyStatus": "NO",
+            "data": "null"
           }
         ],
         "deliveryType": {
@@ -57721,8 +58099,8 @@
         "cancelled": false,
         "isPaid": true,
         "status": {
-          "id": 3,
-          "name": "expedováno"
+          "id": 4,
+          "name": "připraveno k vyzvednutí"
         },
         "totalPrice": {
           "withVat": 1252,
@@ -57864,6 +58242,24 @@
             "adminId": null,
             "orderStatus": "expedováno",
             "date": "2026-08-11T19:15:06+02:00",
+            "comment": null,
+            "notifyStatus": "NO",
+            "data": "null"
+          },
+          {
+            "id": 7387473,
+            "adminId": null,
+            "orderStatus": "expedováno",
+            "date": "2026-08-12T09:16:16+02:00",
+            "comment": "[4PX] Změna stavu: ready_to_pickup",
+            "notifyStatus": "NO",
+            "data": "null"
+          },
+          {
+            "id": 7387474,
+            "adminId": null,
+            "orderStatus": "připraveno k vyzvednutí",
+            "date": "2026-08-12T09:16:16+02:00",
             "comment": null,
             "notifyStatus": "NO",
             "data": "null"
@@ -58017,8 +58413,8 @@
         "cancelled": false,
         "isPaid": false,
         "status": {
-          "id": 3,
-          "name": "expedováno"
+          "id": 5,
+          "name": "doručeno"
         },
         "totalPrice": {
           "withVat": 97.35,
@@ -58134,6 +58530,33 @@
             "orderStatus": "expedováno",
             "date": "2026-08-11T16:00:09+02:00",
             "comment": null,
+            "notifyStatus": "NO",
+            "data": "null"
+          },
+          {
+            "id": 7387362,
+            "adminId": null,
+            "orderStatus": "expedováno",
+            "date": "2026-08-12T08:50:02+02:00",
+            "comment": "[4PX] Změna stavu: delivered",
+            "notifyStatus": "NO",
+            "data": "null"
+          },
+          {
+            "id": 7387363,
+            "adminId": null,
+            "orderStatus": "doručeno",
+            "date": "2026-08-12T08:50:02+02:00",
+            "comment": null,
+            "notifyStatus": "NO",
+            "data": "null"
+          },
+          {
+            "id": 7387367,
+            "adminId": null,
+            "orderStatus": "doručeno",
+            "date": "2026-08-12T08:51:39+02:00",
+            "comment": "[Flexi] Objednávka byla realizována ve Flexi;",
             "notifyStatus": "NO",
             "data": "null"
           }
@@ -60077,8 +60500,8 @@
         "cancelled": false,
         "isPaid": true,
         "status": {
-          "id": 3,
-          "name": "expedováno"
+          "id": 4,
+          "name": "připraveno k vyzvednutí"
         },
         "totalPrice": {
           "withVat": 2576,
@@ -60220,6 +60643,24 @@
             "adminId": null,
             "orderStatus": "expedováno",
             "date": "2026-08-11T19:15:06+02:00",
+            "comment": null,
+            "notifyStatus": "NO",
+            "data": "null"
+          },
+          {
+            "id": 7387307,
+            "adminId": null,
+            "orderStatus": "expedováno",
+            "date": "2026-08-12T08:30:06+02:00",
+            "comment": "[4PX] Změna stavu: ready_to_pickup",
+            "notifyStatus": "NO",
+            "data": "null"
+          },
+          {
+            "id": 7387308,
+            "adminId": null,
+            "orderStatus": "připraveno k vyzvednutí",
+            "date": "2026-08-12T08:30:06+02:00",
             "comment": null,
             "notifyStatus": "NO",
             "data": "null"
@@ -60654,8 +61095,8 @@
         "cancelled": false,
         "isPaid": false,
         "status": {
-          "id": 3,
-          "name": "expedováno"
+          "id": 4,
+          "name": "připraveno k vyzvednutí"
         },
         "totalPrice": {
           "withVat": 1665,
@@ -60770,6 +61211,24 @@
             "adminId": null,
             "orderStatus": "expedováno",
             "date": "2026-08-11T19:25:04+02:00",
+            "comment": null,
+            "notifyStatus": "NO",
+            "data": "null"
+          },
+          {
+            "id": 7387887,
+            "adminId": null,
+            "orderStatus": "expedováno",
+            "date": "2026-08-12T10:15:08+02:00",
+            "comment": "[4PX] Změna stavu: ready_to_pickup",
+            "notifyStatus": "NO",
+            "data": "null"
+          },
+          {
+            "id": 7387888,
+            "adminId": null,
+            "orderStatus": "připraveno k vyzvednutí",
+            "date": "2026-08-12T10:15:08+02:00",
             "comment": null,
             "notifyStatus": "NO",
             "data": "null"
@@ -61440,8 +61899,8 @@
         "cancelled": false,
         "isPaid": true,
         "status": {
-          "id": 3,
-          "name": "expedováno"
+          "id": 4,
+          "name": "připraveno k vyzvednutí"
         },
         "totalPrice": {
           "withVat": 315,
@@ -61595,6 +62054,24 @@
             "comment": null,
             "notifyStatus": "NO",
             "data": "null"
+          },
+          {
+            "id": 7387608,
+            "adminId": null,
+            "orderStatus": "expedováno",
+            "date": "2026-08-12T09:30:11+02:00",
+            "comment": "[4PX] Změna stavu: ready_to_pickup",
+            "notifyStatus": "NO",
+            "data": "null"
+          },
+          {
+            "id": 7387609,
+            "adminId": null,
+            "orderStatus": "připraveno k vyzvednutí",
+            "date": "2026-08-12T09:30:11+02:00",
+            "comment": null,
+            "notifyStatus": "NO",
+            "data": "null"
           }
         ],
         "deliveryType": {
@@ -61649,8 +62126,8 @@
         "cancelled": false,
         "isPaid": true,
         "status": {
-          "id": 3,
-          "name": "expedováno"
+          "id": 4,
+          "name": "připraveno k vyzvednutí"
         },
         "totalPrice": {
           "withVat": 2315,
@@ -61792,6 +62269,24 @@
             "adminId": null,
             "orderStatus": "expedováno",
             "date": "2026-08-11T19:20:06+02:00",
+            "comment": null,
+            "notifyStatus": "NO",
+            "data": "null"
+          },
+          {
+            "id": 7387712,
+            "adminId": null,
+            "orderStatus": "expedováno",
+            "date": "2026-08-12T09:45:10+02:00",
+            "comment": "[4PX] Změna stavu: ready_to_pickup",
+            "notifyStatus": "NO",
+            "data": "null"
+          },
+          {
+            "id": 7387713,
+            "adminId": null,
+            "orderStatus": "připraveno k vyzvednutí",
+            "date": "2026-08-12T09:45:11+02:00",
             "comment": null,
             "notifyStatus": "NO",
             "data": "null"
@@ -65256,8 +65751,8 @@
         "cancelled": false,
         "isPaid": true,
         "status": {
-          "id": 3,
-          "name": "expedováno"
+          "id": 4,
+          "name": "připraveno k vyzvednutí"
         },
         "totalPrice": {
           "withVat": 1648,
@@ -65399,6 +65894,24 @@
             "adminId": null,
             "orderStatus": "expedováno",
             "date": "2026-08-11T19:15:06+02:00",
+            "comment": null,
+            "notifyStatus": "NO",
+            "data": "null"
+          },
+          {
+            "id": 7387818,
+            "adminId": null,
+            "orderStatus": "expedováno",
+            "date": "2026-08-12T10:00:11+02:00",
+            "comment": "[4PX] Změna stavu: ready_to_pickup",
+            "notifyStatus": "NO",
+            "data": "null"
+          },
+          {
+            "id": 7387819,
+            "adminId": null,
+            "orderStatus": "připraveno k vyzvednutí",
+            "date": "2026-08-12T10:00:11+02:00",
             "comment": null,
             "notifyStatus": "NO",
             "data": "null"
@@ -67670,8 +68183,8 @@
         "cancelled": false,
         "isPaid": true,
         "status": {
-          "id": 3,
-          "name": "expedováno"
+          "id": 4,
+          "name": "připraveno k vyzvednutí"
         },
         "totalPrice": {
           "withVat": 641,
@@ -67822,6 +68335,24 @@
             "adminId": null,
             "orderStatus": "expedováno",
             "date": "2026-08-11T19:20:07+02:00",
+            "comment": null,
+            "notifyStatus": "NO",
+            "data": "null"
+          },
+          {
+            "id": 7387353,
+            "adminId": null,
+            "orderStatus": "expedováno",
+            "date": "2026-08-12T08:45:05+02:00",
+            "comment": "[4PX] Změna stavu: ready_to_pickup",
+            "notifyStatus": "NO",
+            "data": "null"
+          },
+          {
+            "id": 7387354,
+            "adminId": null,
+            "orderStatus": "připraveno k vyzvednutí",
+            "date": "2026-08-12T08:45:05+02:00",
             "comment": null,
             "notifyStatus": "NO",
             "data": "null"
@@ -68160,8 +68691,8 @@
         "cancelled": false,
         "isPaid": true,
         "status": {
-          "id": 3,
-          "name": "expedováno"
+          "id": 4,
+          "name": "připraveno k vyzvednutí"
         },
         "totalPrice": {
           "withVat": 1287,
@@ -68303,6 +68834,24 @@
             "adminId": null,
             "orderStatus": "expedováno",
             "date": "2026-08-11T18:00:12+02:00",
+            "comment": null,
+            "notifyStatus": "NO",
+            "data": "null"
+          },
+          {
+            "id": 7387625,
+            "adminId": null,
+            "orderStatus": "expedováno",
+            "date": "2026-08-12T09:35:12+02:00",
+            "comment": "[4PX] Změna stavu: ready_to_pickup",
+            "notifyStatus": "NO",
+            "data": "null"
+          },
+          {
+            "id": 7387626,
+            "adminId": null,
+            "orderStatus": "připraveno k vyzvednutí",
+            "date": "2026-08-12T09:35:12+02:00",
             "comment": null,
             "notifyStatus": "NO",
             "data": "null"
@@ -68916,8 +69465,8 @@
         "cancelled": false,
         "isPaid": true,
         "status": {
-          "id": 3,
-          "name": "expedováno"
+          "id": 4,
+          "name": "připraveno k vyzvednutí"
         },
         "totalPrice": {
           "withVat": 2073,
@@ -69068,6 +69617,24 @@
             "adminId": null,
             "orderStatus": "expedováno",
             "date": "2026-08-11T19:30:04+02:00",
+            "comment": null,
+            "notifyStatus": "NO",
+            "data": "null"
+          },
+          {
+            "id": 7387309,
+            "adminId": null,
+            "orderStatus": "expedováno",
+            "date": "2026-08-12T08:30:06+02:00",
+            "comment": "[4PX] Změna stavu: ready_to_pickup",
+            "notifyStatus": "NO",
+            "data": "null"
+          },
+          {
+            "id": 7387310,
+            "adminId": null,
+            "orderStatus": "připraveno k vyzvednutí",
+            "date": "2026-08-12T08:30:06+02:00",
             "comment": null,
             "notifyStatus": "NO",
             "data": "null"
@@ -69421,8 +69988,8 @@
         "cancelled": false,
         "isPaid": true,
         "status": {
-          "id": 3,
-          "name": "expedováno"
+          "id": 4,
+          "name": "připraveno k vyzvednutí"
         },
         "totalPrice": {
           "withVat": 1260,
@@ -69573,6 +70140,24 @@
             "adminId": null,
             "orderStatus": "expedováno",
             "date": "2026-08-11T19:20:07+02:00",
+            "comment": null,
+            "notifyStatus": "NO",
+            "data": "null"
+          },
+          {
+            "id": 7387747,
+            "adminId": null,
+            "orderStatus": "expedováno",
+            "date": "2026-08-12T09:50:06+02:00",
+            "comment": "[4PX] Změna stavu: ready_to_pickup",
+            "notifyStatus": "NO",
+            "data": "null"
+          },
+          {
+            "id": 7387748,
+            "adminId": null,
+            "orderStatus": "připraveno k vyzvednutí",
+            "date": "2026-08-12T09:50:06+02:00",
             "comment": null,
             "notifyStatus": "NO",
             "data": "null"
@@ -71665,8 +72250,8 @@
         "cancelled": false,
         "isPaid": true,
         "status": {
-          "id": 3,
-          "name": "expedováno"
+          "id": 4,
+          "name": "připraveno k vyzvednutí"
         },
         "totalPrice": {
           "withVat": 102.8,
@@ -71817,6 +72402,24 @@
             "adminId": null,
             "orderStatus": "expedováno",
             "date": "2026-08-11T18:50:08+02:00",
+            "comment": null,
+            "notifyStatus": "NO",
+            "data": "null"
+          },
+          {
+            "id": 7387854,
+            "adminId": null,
+            "orderStatus": "expedováno",
+            "date": "2026-08-12T10:10:04+02:00",
+            "comment": "[4PX] Změna stavu: ready_to_pickup",
+            "notifyStatus": "NO",
+            "data": "null"
+          },
+          {
+            "id": 7387855,
+            "adminId": null,
+            "orderStatus": "připraveno k vyzvednutí",
+            "date": "2026-08-12T10:10:04+02:00",
             "comment": null,
             "notifyStatus": "NO",
             "data": "null"
@@ -72828,8 +73431,8 @@
         "cancelled": false,
         "isPaid": true,
         "status": {
-          "id": 3,
-          "name": "expedováno"
+          "id": 4,
+          "name": "připraveno k vyzvednutí"
         },
         "totalPrice": {
           "withVat": 155.15,
@@ -72971,6 +73574,24 @@
             "adminId": null,
             "orderStatus": "expedováno",
             "date": "2026-08-11T14:30:07+02:00",
+            "comment": null,
+            "notifyStatus": "NO",
+            "data": "null"
+          },
+          {
+            "id": 7387250,
+            "adminId": null,
+            "orderStatus": "expedováno",
+            "date": "2026-08-12T08:15:05+02:00",
+            "comment": "[4PX] Změna stavu: ready_to_pickup",
+            "notifyStatus": "NO",
+            "data": "null"
+          },
+          {
+            "id": 7387251,
+            "adminId": null,
+            "orderStatus": "připraveno k vyzvednutí",
+            "date": "2026-08-12T08:15:05+02:00",
             "comment": null,
             "notifyStatus": "NO",
             "data": "null"
@@ -75012,8 +75633,8 @@
         "cancelled": false,
         "isPaid": true,
         "status": {
-          "id": 3,
-          "name": "expedováno"
+          "id": 4,
+          "name": "připraveno k vyzvednutí"
         },
         "totalPrice": {
           "withVat": 3118,
@@ -75155,6 +75776,24 @@
             "adminId": null,
             "orderStatus": "expedováno",
             "date": "2026-08-11T18:00:10+02:00",
+            "comment": null,
+            "notifyStatus": "NO",
+            "data": "null"
+          },
+          {
+            "id": 7387372,
+            "adminId": null,
+            "orderStatus": "expedováno",
+            "date": "2026-08-12T08:55:02+02:00",
+            "comment": "[4PX] Změna stavu: ready_to_pickup",
+            "notifyStatus": "NO",
+            "data": "null"
+          },
+          {
+            "id": 7387373,
+            "adminId": null,
+            "orderStatus": "připraveno k vyzvednutí",
+            "date": "2026-08-12T08:55:02+02:00",
             "comment": null,
             "notifyStatus": "NO",
             "data": "null"
@@ -76142,8 +76781,8 @@
         "cancelled": false,
         "isPaid": true,
         "status": {
-          "id": 3,
-          "name": "expedováno"
+          "id": 4,
+          "name": "připraveno k vyzvednutí"
         },
         "totalPrice": {
           "withVat": 1168,
@@ -76285,6 +76924,24 @@
             "adminId": null,
             "orderStatus": "expedováno",
             "date": "2026-08-11T19:25:05+02:00",
+            "comment": null,
+            "notifyStatus": "NO",
+            "data": "null"
+          },
+          {
+            "id": 7387745,
+            "adminId": null,
+            "orderStatus": "expedováno",
+            "date": "2026-08-12T09:50:06+02:00",
+            "comment": "[4PX] Změna stavu: ready_to_pickup",
+            "notifyStatus": "NO",
+            "data": "null"
+          },
+          {
+            "id": 7387746,
+            "adminId": null,
+            "orderStatus": "připraveno k vyzvednutí",
+            "date": "2026-08-12T09:50:06+02:00",
             "comment": null,
             "notifyStatus": "NO",
             "data": "null"
@@ -78398,8 +79055,8 @@
         "cancelled": false,
         "isPaid": false,
         "status": {
-          "id": 3,
-          "name": "expedováno"
+          "id": 4,
+          "name": "připraveno k vyzvednutí"
         },
         "totalPrice": {
           "withVat": 633,
@@ -78517,6 +79174,24 @@
             "comment": null,
             "notifyStatus": "NO",
             "data": "null"
+          },
+          {
+            "id": 7387749,
+            "adminId": null,
+            "orderStatus": "expedováno",
+            "date": "2026-08-12T09:50:07+02:00",
+            "comment": "[4PX] Změna stavu: ready_to_pickup",
+            "notifyStatus": "NO",
+            "data": "null"
+          },
+          {
+            "id": 7387750,
+            "adminId": null,
+            "orderStatus": "připraveno k vyzvednutí",
+            "date": "2026-08-12T09:50:07+02:00",
+            "comment": null,
+            "notifyStatus": "NO",
+            "data": "null"
           }
         ],
         "deliveryType": {
@@ -78595,8 +79270,8 @@
         "cancelled": false,
         "isPaid": true,
         "status": {
-          "id": 3,
-          "name": "expedováno"
+          "id": 4,
+          "name": "připraveno k vyzvednutí"
         },
         "totalPrice": {
           "withVat": 1229,
@@ -78747,6 +79422,24 @@
             "adminId": null,
             "orderStatus": "expedováno",
             "date": "2026-08-11T19:25:07+02:00",
+            "comment": null,
+            "notifyStatus": "NO",
+            "data": "null"
+          },
+          {
+            "id": 7387864,
+            "adminId": null,
+            "orderStatus": "expedováno",
+            "date": "2026-08-12T10:10:04+02:00",
+            "comment": "[4PX] Změna stavu: ready_to_pickup",
+            "notifyStatus": "NO",
+            "data": "null"
+          },
+          {
+            "id": 7387865,
+            "adminId": null,
+            "orderStatus": "připraveno k vyzvednutí",
+            "date": "2026-08-12T10:10:04+02:00",
             "comment": null,
             "notifyStatus": "NO",
             "data": "null"
@@ -79184,8 +79877,8 @@
         "cancelled": false,
         "isPaid": true,
         "status": {
-          "id": 3,
-          "name": "expedováno"
+          "id": 4,
+          "name": "připraveno k vyzvednutí"
         },
         "totalPrice": {
           "withVat": 640,
@@ -79336,6 +80029,24 @@
             "adminId": null,
             "orderStatus": "expedováno",
             "date": "2026-08-11T19:20:08+02:00",
+            "comment": null,
+            "notifyStatus": "NO",
+            "data": "null"
+          },
+          {
+            "id": 7387500,
+            "adminId": null,
+            "orderStatus": "expedováno",
+            "date": "2026-08-12T09:18:25+02:00",
+            "comment": "[4PX] Změna stavu: ready_to_pickup",
+            "notifyStatus": "NO",
+            "data": "null"
+          },
+          {
+            "id": 7387501,
+            "adminId": null,
+            "orderStatus": "připraveno k vyzvednutí",
+            "date": "2026-08-12T09:18:25+02:00",
             "comment": null,
             "notifyStatus": "NO",
             "data": "null"
@@ -82542,11 +83253,11 @@
         }
       ],
       "reconciliation": {
-        "financeRevenuePreviousMonth": 11692225.04,
+        "financeRevenuePreviousMonth": 12927958.49,
         "ga4ObservedRevenuePreviousMonth": 10806016.33,
         "platformClaimedRevenuePreviousMonth": 13375468.36,
-        "ga4VsFinanceGapPct": -7.58,
-        "platformClaimsVsFinanceGapPct": 14.4,
+        "ga4VsFinanceGapPct": -16.41,
+        "platformClaimsVsFinanceGapPct": 3.46,
         "paidObservedRevenueFocusWindow": 1770272.4300000002,
         "unassignedRevenueFocusWindow": 325766.26,
         "unassignedRevenueSharePctOfFocusObserved": 13.91
@@ -82573,37 +83284,37 @@
       },
       "financeReferenceMonth": {
         "label": "7/2026",
-        "revenue": 11692225.04,
-        "grossMargin": 2340512.22,
+        "revenue": 12927958.49,
+        "grossMargin": 3547126.98,
         "logistics": 510953.67,
         "marketing": 133436.33,
         "opex": 2853832.8,
         "depreciation": 399556.0,
-        "operatingMargin": -1157710.58,
-        "profit": -1604553.96
+        "operatingMargin": 48904.18,
+        "profit": -397939.2
       },
       "ratioModel": {
-        "grossMarginPct": 20.02,
-        "logisticsPct": 4.37,
-        "marketingPct": 1.14,
-        "operatingMarginPct": -9.9,
-        "profitPct": -13.72
+        "grossMarginPct": 27.44,
+        "logisticsPct": 3.95,
+        "marketingPct": 1.03,
+        "operatingMarginPct": 0.38,
+        "profitPct": -3.08
       },
       "ytdEstimated": {
         "grossRevenueWithVat": 328142630.16,
         "netRevenueAfterCancellations": 318462422.57,
         "cancellationLeakage": 9680207.59,
-        "estimatedGrossMargin": 63748789.4,
-        "estimatedAfterLogistics": 49831887.95,
-        "estimatedAfterMarketing": 46197467.92,
-        "estimatedOperatingContribution": -31532690.71,
-        "estimatedProfitContribution": -43703413.12
+        "estimatedGrossMargin": 87378579.7,
+        "estimatedAfterLogistics": 74791940.92,
+        "estimatedAfterMarketing": 71504921.02,
+        "estimatedOperatingContribution": 1204687.01,
+        "estimatedProfitContribution": -9802683.21
       },
       "customerContributionSplitYtd": {
         "newRevenueWithVat": 12813539.29,
         "returningRevenueWithVat": 315329090.87,
-        "estimatedNewAfterMarketing": 1858784.67,
-        "estimatedReturningAfterMarketing": 45742933.94,
+        "estimatedNewAfterMarketing": 2877046.24,
+        "estimatedReturningAfterMarketing": 70801388.61,
         "retentionRevenueProxyPreviousMonth": 3858229.2
       },
       "warnings": [
@@ -82920,8 +83631,8 @@
     "status": "operational_with_known_gaps",
     "headline": "Final truth engine už běží pro finance truth, měřenou YTD customer truth, měřenou YTD order truth a první decision-grade akviziční split. Hlavní chybějící vrstva je netto contribution a backend channel reconciliation.",
     "whatIsTrulyKnown": [
-      "Finance po marketingu: 1696122.22 Kč.",
-      "Čistá hotovostní pozice: 6800960.09 Kč.",
+      "Finance po marketingu: 2902736.98 Kč.",
+      "Čistá hotovostní pozice: 5705056.6 Kč.",
       "Returning customers generated 315329090.87 Kč vs 12813539.29 Kč from new customers in the measured YTD window.",
       "Zpracované objednávky v měřeném YTD: 203194"
     ],
@@ -82941,8 +83652,8 @@
     "management": {
       "headline": "Byznys je silný, customer truth je měřený, ale marketing decisioning musí pořád procházet trust vrstvou a bucket split logikou.",
       "focus": [
-        "Po marketingu zůstalo 1696122.22 Kč.",
-        "Net cash pozice je 6800960.09 Kč.",
+        "Po marketingu zůstalo 2902736.98 Kč.",
+        "Net cash pozice je 5705056.6 Kč.",
         "Returning customers generated 315329090.87 Kč vs 12813539.29 Kč from new customers in the measured YTD window."
       ],
       "questions": [
@@ -82967,8 +83678,8 @@
     "finance": {
       "headline": "Finance view už stojí na byznys realitě, další krok je netto contribution po vratkách a marži.",
       "focus": [
-        "Revenue ve financích za minulý měsíc: 11692225.04 Kč.",
-        "Operating margin: -1157710.58 Kč.",
+        "Revenue ve financích za minulý měsíc: 12927958.49 Kč.",
+        "Operating margin: 48904.18 Kč.",
         "Netto contribution je teď odhadnutá z měřené order/customer truth a finančních poměrů. Refundy, vratky a produktová marže ještě nejsou přímo joinnuté."
       ],
       "questions": [
@@ -83168,7 +83879,7 @@
     "retentionProxy": {
       "klaviyoRevenuePreviousMonth": 3858229.2,
       "klaviyoOrdersPreviousMonth": 2594,
-      "shareOfFinanceRevenuePct": 33.0
+      "shareOfFinanceRevenuePct": 29.84
     },
     "paidMixPreviousMonth": [
       {
@@ -83290,37 +84001,37 @@
     },
     "financeReferenceMonth": {
       "label": "7/2026",
-      "revenue": 11692225.04,
-      "grossMargin": 2340512.22,
+      "revenue": 12927958.49,
+      "grossMargin": 3547126.98,
       "logistics": 510953.67,
       "marketing": 133436.33,
       "opex": 2853832.8,
       "depreciation": 399556.0,
-      "operatingMargin": -1157710.58,
-      "profit": -1604553.96
+      "operatingMargin": 48904.18,
+      "profit": -397939.2
     },
     "ratioModel": {
-      "grossMarginPct": 20.02,
-      "logisticsPct": 4.37,
-      "marketingPct": 1.14,
-      "operatingMarginPct": -9.9,
-      "profitPct": -13.72
+      "grossMarginPct": 27.44,
+      "logisticsPct": 3.95,
+      "marketingPct": 1.03,
+      "operatingMarginPct": 0.38,
+      "profitPct": -3.08
     },
     "ytdEstimated": {
       "grossRevenueWithVat": 328142630.16,
       "netRevenueAfterCancellations": 318462422.57,
       "cancellationLeakage": 9680207.59,
-      "estimatedGrossMargin": 63748789.4,
-      "estimatedAfterLogistics": 49831887.95,
-      "estimatedAfterMarketing": 46197467.92,
-      "estimatedOperatingContribution": -31532690.71,
-      "estimatedProfitContribution": -43703413.12
+      "estimatedGrossMargin": 87378579.7,
+      "estimatedAfterLogistics": 74791940.92,
+      "estimatedAfterMarketing": 71504921.02,
+      "estimatedOperatingContribution": 1204687.01,
+      "estimatedProfitContribution": -9802683.21
     },
     "customerContributionSplitYtd": {
       "newRevenueWithVat": 12813539.29,
       "returningRevenueWithVat": 315329090.87,
-      "estimatedNewAfterMarketing": 1858784.67,
-      "estimatedReturningAfterMarketing": 45742933.94,
+      "estimatedNewAfterMarketing": 2877046.24,
+      "estimatedReturningAfterMarketing": 70801388.61,
       "retentionRevenueProxyPreviousMonth": 3858229.2
     },
     "warnings": [
