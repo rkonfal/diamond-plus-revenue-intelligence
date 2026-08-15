@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-15T20:38:02.127740+02:00",
+  "generatedAt": "2026-08-15T22:00:02.680570+02:00",
   "config": {
     "warehouseCode": "CZPRGA",
     "outboundMaxPages": 20,
@@ -14,8 +14,8 @@
       "label": "CZ",
       "inventory": {
         "items": 789,
-        "availableStockTotal": 305178,
-        "pendingStockTotal": 1810,
+        "availableStockTotal": 305115,
+        "pendingStockTotal": 1873,
         "freezeStockTotal": 0,
         "lowStockItems": 100
       },
@@ -24,15 +24,15 @@
         "scannedPages": 3,
         "topLogisticsProduct": "F1401",
         "oldestTimestamp": "2026-08-06T14:29:23+02:00",
-        "newestTimestamp": "2026-08-15T20:30:03+02:00"
+        "newestTimestamp": "2026-08-15T21:30:02+02:00"
       }
     },
     "sk": {
       "label": "SK",
       "inventory": {
         "items": 641,
-        "availableStockTotal": 40547,
-        "pendingStockTotal": 291,
+        "availableStockTotal": 40539,
+        "pendingStockTotal": 299,
         "freezeStockTotal": 0,
         "lowStockItems": 100
       },
@@ -40,8 +40,8 @@
         "items": 100,
         "scannedPages": 1,
         "topLogisticsProduct": "F1403",
-        "oldestTimestamp": "2026-08-11T07:05:10+02:00",
-        "newestTimestamp": "2026-08-15T20:30:16+02:00"
+        "oldestTimestamp": "2026-08-11T08:25:16+02:00",
+        "newestTimestamp": "2026-08-15T21:50:12+02:00"
       }
     }
   },
@@ -106,24 +106,24 @@
     "message": "Měsíční finance se tahají přímo z ABRA reportu Výkaz hospodaření za měsíc za všechna střediska. Cash a závazky jsou také live z ABRA API.",
     "currentMonth": {
       "label": "8/2026",
-      "revenue": 5009997.64,
-      "cogsAndFees": 4130825.96,
+      "revenue": 5018269.55,
+      "cogsAndFees": 4136748.84,
       "logistics": 16157.73,
       "marketing": 172769.42,
       "opex": 339520.0,
       "depreciation": 399556.0,
       "other": -3889.54,
-      "grossMargin": 879171.68,
-      "afterLogistics": 863013.95,
-      "afterMarketing": 690244.53,
-      "operatingMargin": 350724.53,
-      "ebit": -48831.47,
-      "profit": -52721.01,
-      "grossMarginPct": 17.5,
+      "grossMargin": 881520.71,
+      "afterLogistics": 865362.98,
+      "afterMarketing": 692593.56,
+      "operatingMargin": 353073.56,
+      "ebit": -46482.44,
+      "profit": -50371.98,
+      "grossMarginPct": 17.6,
       "marketingPct": 3.4,
       "logisticsPct": 0.3,
       "operatingMarginPct": 7.0,
-      "profitPct": -1.1
+      "profitPct": -1.0
     },
     "cash": {
       "cashOnAccounts": 8247330.59,
@@ -386,7 +386,7 @@
       "performanceSpend": 7769.42,
       "brandSpend": 165000.0,
       "totalSpend": 172769.42,
-      "revenue": 5009997.64,
+      "revenue": 5018269.55,
       "spendShareOfRevenuePct": 3.4
     },
     "topSupplier": {
@@ -404,12 +404,12 @@
       "label": "2025-10-01 až 2026-08-15"
     },
     "summary": {
-      "noviceRevenueCzkEquiv": 16646145.0,
-      "networkRevenueCzkEquiv": 23514394.0,
+      "noviceRevenueCzkEquiv": 16647780.0,
+      "networkRevenueCzkEquiv": 23516029.0,
       "novicePartners": 50,
       "networkPartners": 50,
-      "noviceOrders": 10132.0,
-      "networkOrders": 14566.0,
+      "noviceOrders": 10133.0,
+      "networkOrders": 14567.0,
       "noviceOrderingContacts": 1741.0,
       "networkOrderingCustomers": 3929.0,
       "topNovicePartner": {
@@ -513,7 +513,7 @@
   },
   "twistoWatchdog": {
     "ready": true,
-    "status": "warn",
+    "status": "ok",
     "summary": {
       "windowDays": 90,
       "twistoBatchCount": 33,
@@ -552,6 +552,6 @@
         "message": "WPJ twisto objednávky z historie objednávek."
       }
     },
-    "message": "Twisto watchdog selhal: Traceback (most recent call last):\n  File \"/Users/rudolfkonfal/.openclaw/workspace/reporting-v2/scripts/build_twisto_watchdog.py\", line 554, in <module>\n    main()\n    ~~~~^^\n  File \"/Users/rudolfkonfal/.openclaw/workspace/reporting-v2/scripts/build_twisto_watchdog.py\", line 536, in main\n    payload"
+    "message": null
   }
 }
