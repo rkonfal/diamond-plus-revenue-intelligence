@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-15T10:41:14.478391+02:00",
+  "generatedAt": "2026-08-15T12:03:00.025152+02:00",
   "window": {
     "from": "2026-08-14T00:00:01+02:00",
     "to": "2026-08-15T00:00:00+02:00"
@@ -25593,8 +25593,8 @@
       "cancelled": false,
       "isPaid": true,
       "status": {
-        "id": 3,
-        "name": "expedováno"
+        "id": 4,
+        "name": "připraveno k vyzvednutí"
       },
       "totalPrice": {
         "withVat": 431,
@@ -25736,6 +25736,24 @@
           "adminId": null,
           "orderStatus": "expedováno",
           "date": "2026-08-14T18:15:03+02:00",
+          "comment": null,
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7399827,
+          "adminId": null,
+          "orderStatus": "expedováno",
+          "date": "2026-08-15T11:25:04+02:00",
+          "comment": "[4PX] Změna stavu: ready_to_pickup",
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7399828,
+          "adminId": null,
+          "orderStatus": "připraveno k vyzvednutí",
+          "date": "2026-08-15T11:25:04+02:00",
           "comment": null,
           "notifyStatus": "NO",
           "data": "null"
@@ -47285,7 +47303,7 @@
       },
       {
         "name": "expedováno",
-        "count": 83
+        "count": 82
       },
       {
         "name": "nová",
@@ -47294,6 +47312,10 @@
       {
         "name": "stornovaná",
         "count": 2
+      },
+      {
+        "name": "připraveno k vyzvednutí",
+        "count": 1
       },
       {
         "name": "doručeno",
@@ -48033,7 +48055,7 @@
           },
           {
             "name": "expedováno",
-            "count": 83
+            "count": 82
           },
           {
             "name": "nová",
@@ -48042,6 +48064,10 @@
           {
             "name": "stornovaná",
             "count": 2
+          },
+          {
+            "name": "připraveno k vyzvednutí",
+            "count": 1
           },
           {
             "name": "doručeno",
@@ -48781,11 +48807,15 @@
           },
           {
             "name": "expedováno",
-            "count": 75
+            "count": 74
           },
           {
             "name": "nová",
             "count": 9
+          },
+          {
+            "name": "připraveno k vyzvednutí",
+            "count": 1
           },
           {
             "name": "stornovaná",
