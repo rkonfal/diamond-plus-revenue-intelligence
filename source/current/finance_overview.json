@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-16T00:03:33.606785+02:00",
+  "generatedAt": "2026-08-16T03:23:26.750123+02:00",
   "source": {
     "status": "live_report",
     "message": "Měsíční finance se tahají přímo z ABRA reportu Výkaz hospodaření za měsíc za všechna střediska. Cash a závazky jsou také live z ABRA API."
@@ -164,19 +164,19 @@
     },
     {
       "label": "8/2026",
-      "revenue": 5032435.7,
-      "cogsAndFees": 4145799.33,
+      "revenue": 5038165.74,
+      "cogsAndFees": 4149829.14,
       "logistics": 16157.73,
       "marketing": 172769.42,
       "opex": 339520.0,
       "depreciation": 399556.0,
       "other": -3889.54,
-      "grossMargin": 886636.37,
-      "afterLogistics": 870478.64,
-      "afterMarketing": 697709.22,
-      "operatingMargin": 358189.22,
-      "ebit": -41366.78,
-      "profit": -45256.32,
+      "grossMargin": 888336.6,
+      "afterLogistics": 872178.87,
+      "afterMarketing": 699409.45,
+      "operatingMargin": 359889.45,
+      "ebit": -39666.55,
+      "profit": -43556.09,
       "grossMarginPct": 17.6,
       "marketingPct": 3.4,
       "logisticsPct": 0.3,
@@ -186,19 +186,19 @@
   ],
   "currentMonth": {
     "label": "8/2026",
-    "revenue": 5032435.7,
-    "cogsAndFees": 4145799.33,
+    "revenue": 5038165.74,
+    "cogsAndFees": 4149829.14,
     "logistics": 16157.73,
     "marketing": 172769.42,
     "opex": 339520.0,
     "depreciation": 399556.0,
     "other": -3889.54,
-    "grossMargin": 886636.37,
-    "afterLogistics": 870478.64,
-    "afterMarketing": 697709.22,
-    "operatingMargin": 358189.22,
-    "ebit": -41366.78,
-    "profit": -45256.32,
+    "grossMargin": 888336.6,
+    "afterLogistics": 872178.87,
+    "afterMarketing": 699409.45,
+    "operatingMargin": 359889.45,
+    "ebit": -39666.55,
+    "profit": -43556.09,
     "grossMarginPct": 17.6,
     "marketingPct": 3.4,
     "logisticsPct": 0.3,
@@ -227,9 +227,9 @@
     "profitPct": -4.5
   },
   "cash": {
-    "cashOnAccounts": 8252866.59,
+    "cashOnAccounts": 8264944.59,
     "unpaidInvoices": 2304994.73,
-    "netCashPosition": 5947871.86,
+    "netCashPosition": 5959949.86,
     "overdueInvoicesCount": 0,
     "overdueInvoicesAmount": 0.0,
     "largestPayables": [
@@ -313,8 +313,8 @@
           "accountCode": "221001",
           "accountLabel": "221001: 2901338673/2010 FIO CZK",
           "currency": "CZK: Česká koruna",
-          "balance": 1387976.1,
-          "includedBalance": 1387976.1
+          "balance": 1400054.1,
+          "includedBalance": 1400054.1
         },
         {
           "accountCode": "221006",
@@ -821,27 +821,20 @@
       },
       {
         "label": "8/2026",
-        "expenseTotal": 4927907.01,
-        "revenueTotal": 4982744.16,
+        "expenseTotal": 4624733.82,
+        "revenueTotal": 4989097.34,
         "topExpenseClass": {
           "code": "50",
           "label": "Spotřeba a zboží",
-          "amount": 3988878.55
+          "amount": 3992908.36
         },
         "topExpenseAccounts": [
           {
             "code": "504001",
             "label": "Nákup zboží 2",
-            "amount": 3978014.98,
+            "amount": 3982044.79,
             "classCode": "50",
             "classLabel": "Spotřeba a zboží"
-          },
-          {
-            "code": "551100",
-            "label": "Odpisy majetku",
-            "amount": 363532.0,
-            "classCode": "55",
-            "classLabel": "Odpisy a rezervy"
           },
           {
             "code": "518901",
@@ -856,6 +849,13 @@
             "amount": 133542.0,
             "classCode": "51",
             "classLabel": "Služby"
+          },
+          {
+            "code": "551100",
+            "label": "Odpisy majetku",
+            "amount": 92353.0,
+            "classCode": "55",
+            "classLabel": "Odpisy a rezervy"
           },
           {
             "code": "518300",
@@ -893,32 +893,32 @@
             "classLabel": "Služby"
           },
           {
-            "code": "551001",
-            "label": "Odpisy eshop",
-            "amount": 18273.0,
-            "classCode": "55",
-            "classLabel": "Odpisy a rezervy"
-          },
-          {
-            "code": "551002",
-            "label": "Odpisy stavby",
-            "amount": 17751.0,
-            "classCode": "55",
-            "classLabel": "Odpisy a rezervy"
-          },
-          {
             "code": "518201",
             "label": "Přepravní služby",
             "amount": 16157.73,
             "classCode": "51",
             "classLabel": "Služby"
+          },
+          {
+            "code": "548200",
+            "label": "Pojistné",
+            "amount": 13196.0,
+            "classCode": "54",
+            "classLabel": "Jiné provozní náklady"
+          },
+          {
+            "code": "502100",
+            "label": "Energie",
+            "amount": 6294.77,
+            "classCode": "50",
+            "classLabel": "Spotřeba a zboží"
           }
         ],
         "topExpenseClasses": [
           {
             "code": "50",
             "label": "Spotřeba a zboží",
-            "amount": 3988878.55
+            "amount": 3992908.36
           },
           {
             "code": "51",
@@ -928,7 +928,7 @@
           {
             "code": "55",
             "label": "Odpisy a rezervy",
-            "amount": 399556.0
+            "amount": 92353.0
           },
           {
             "code": "56",
@@ -991,33 +991,26 @@
             "amount": 12180.85
           }
         ],
-        "entryCount": 11656,
+        "entryCount": 11649,
         "detailFile": "finance_journal_8-2026.json"
       }
     ],
     "currentMonth": {
       "label": "8/2026",
-      "expenseTotal": 4927907.01,
-      "revenueTotal": 4982744.16,
+      "expenseTotal": 4624733.82,
+      "revenueTotal": 4989097.34,
       "topExpenseClass": {
         "code": "50",
         "label": "Spotřeba a zboží",
-        "amount": 3988878.55
+        "amount": 3992908.36
       },
       "topExpenseAccounts": [
         {
           "code": "504001",
           "label": "Nákup zboží 2",
-          "amount": 3978014.98,
+          "amount": 3982044.79,
           "classCode": "50",
           "classLabel": "Spotřeba a zboží"
-        },
-        {
-          "code": "551100",
-          "label": "Odpisy majetku",
-          "amount": 363532.0,
-          "classCode": "55",
-          "classLabel": "Odpisy a rezervy"
         },
         {
           "code": "518901",
@@ -1032,6 +1025,13 @@
           "amount": 133542.0,
           "classCode": "51",
           "classLabel": "Služby"
+        },
+        {
+          "code": "551100",
+          "label": "Odpisy majetku",
+          "amount": 92353.0,
+          "classCode": "55",
+          "classLabel": "Odpisy a rezervy"
         },
         {
           "code": "518300",
@@ -1069,32 +1069,32 @@
           "classLabel": "Služby"
         },
         {
-          "code": "551001",
-          "label": "Odpisy eshop",
-          "amount": 18273.0,
-          "classCode": "55",
-          "classLabel": "Odpisy a rezervy"
-        },
-        {
-          "code": "551002",
-          "label": "Odpisy stavby",
-          "amount": 17751.0,
-          "classCode": "55",
-          "classLabel": "Odpisy a rezervy"
-        },
-        {
           "code": "518201",
           "label": "Přepravní služby",
           "amount": 16157.73,
           "classCode": "51",
           "classLabel": "Služby"
+        },
+        {
+          "code": "548200",
+          "label": "Pojistné",
+          "amount": 13196.0,
+          "classCode": "54",
+          "classLabel": "Jiné provozní náklady"
+        },
+        {
+          "code": "502100",
+          "label": "Energie",
+          "amount": 6294.77,
+          "classCode": "50",
+          "classLabel": "Spotřeba a zboží"
         }
       ],
       "topExpenseClasses": [
         {
           "code": "50",
           "label": "Spotřeba a zboží",
-          "amount": 3988878.55
+          "amount": 3992908.36
         },
         {
           "code": "51",
@@ -1104,7 +1104,7 @@
         {
           "code": "55",
           "label": "Odpisy a rezervy",
-          "amount": 399556.0
+          "amount": 92353.0
         },
         {
           "code": "56",
@@ -1167,7 +1167,7 @@
           "amount": 12180.85
         }
       ],
-      "entryCount": 11656,
+      "entryCount": 11649,
       "detailFile": "finance_journal_8-2026.json"
     }
   }
