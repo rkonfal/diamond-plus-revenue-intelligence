@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-16T22:51:18.774098+02:00",
+  "generatedAt": "2026-08-16T23:32:54.336050+02:00",
   "config": {
     "warehouseCode": "CZPRGA",
     "outboundMaxPages": 20,
@@ -14,8 +14,8 @@
       "label": "CZ",
       "inventory": {
         "items": 789,
-        "availableStockTotal": 303450,
-        "pendingStockTotal": 1602,
+        "availableStockTotal": 303406,
+        "pendingStockTotal": 1646,
         "freezeStockTotal": 0,
         "lowStockItems": 100
       },
@@ -23,8 +23,8 @@
         "items": 300,
         "scannedPages": 3,
         "topLogisticsProduct": "F1401",
-        "oldestTimestamp": "2026-08-14T20:25:03+02:00",
-        "newestTimestamp": "2026-08-16T22:50:03+02:00"
+        "oldestTimestamp": "2026-08-14T20:40:02+02:00",
+        "newestTimestamp": "2026-08-16T23:30:07+02:00"
       }
     },
     "sk": {
@@ -58,12 +58,13 @@
     "shipments": 123,
     "alerts": [
       "2 problematických nebo stornovaných objednávek.",
+      "1 včera prodaných produktů je teď na nízkém skladu.",
       "10 skladových pozic je v mínusu.",
-      "6 A produktů je v kritickém riziku výpadku.",
-      "V top expiracích je aspoň jedna položka do 30 dnů."
+      "6 A produktů je v kritickém riziku výpadku."
     ],
     "priorities": [
       "Prověřit A produkty v riziku výpadku (6 SKU): 52911, 135415-1, 30115.",
+      "Dohlédnout 10263 (Peelingové tampony na obličej s obsahem kyselin AHA a PHA), aktuálně 10 ks.",
       "Projít 2 problematických nebo stornovaných objednávek z včerejška.",
       "Projít nejbližší expirace v 4PX a rozhodnout o doprodeji nebo přesunu zásoby."
     ]
@@ -106,19 +107,19 @@
     "message": "Měsíční finance se tahají přímo z ABRA reportu Výkaz hospodaření za měsíc za všechna střediska. Cash a závazky jsou také live z ABRA API.",
     "currentMonth": {
       "label": "8/2026",
-      "revenue": 5227497.63,
-      "cogsAndFees": 4285696.81,
+      "revenue": 5232465.37,
+      "cogsAndFees": 4288939.3,
       "logistics": 16157.73,
       "marketing": 172769.42,
       "opex": 339520.0,
       "depreciation": 399556.0,
       "other": -3889.54,
-      "grossMargin": 941800.82,
-      "afterLogistics": 925643.09,
-      "afterMarketing": 752873.67,
-      "operatingMargin": 413353.67,
-      "ebit": 13797.67,
-      "profit": 9908.13,
+      "grossMargin": 943526.07,
+      "afterLogistics": 927368.34,
+      "afterMarketing": 754598.92,
+      "operatingMargin": 415078.92,
+      "ebit": 15522.92,
+      "profit": 11633.38,
       "grossMarginPct": 18.0,
       "marketingPct": 3.3,
       "logisticsPct": 0.3,
@@ -126,9 +127,9 @@
       "profitPct": 0.2
     },
     "cash": {
-      "cashOnAccounts": 8339759.71,
+      "cashOnAccounts": 8344545.71,
       "unpaidInvoices": 2304994.73,
-      "netCashPosition": 6034764.98,
+      "netCashPosition": 6039550.98,
       "overdueInvoicesCount": 0,
       "overdueInvoicesAmount": 0.0,
       "largestPayables": [
@@ -212,8 +213,8 @@
             "accountCode": "221001",
             "accountLabel": "221001: 2901338673/2010 FIO CZK",
             "currency": "CZK: Česká koruna",
-            "balance": 1471050.1,
-            "includedBalance": 1471050.1
+            "balance": 1475836.1,
+            "includedBalance": 1475836.1
           },
           {
             "accountCode": "221006",
@@ -386,7 +387,7 @@
       "performanceSpend": 7769.42,
       "brandSpend": 165000.0,
       "totalSpend": 172769.42,
-      "revenue": 5227497.63,
+      "revenue": 5232465.37,
       "spendShareOfRevenuePct": 3.3
     },
     "topSupplier": {
@@ -404,23 +405,23 @@
       "label": "2025-10-01 až 2026-08-16"
     },
     "summary": {
-      "noviceRevenueCzkEquiv": 16694139.0,
-      "networkRevenueCzkEquiv": 23583689.0,
+      "noviceRevenueCzkEquiv": 16697625.0,
+      "networkRevenueCzkEquiv": 23587175.0,
       "novicePartners": 50,
       "networkPartners": 50,
-      "noviceOrders": 10162.0,
-      "networkOrders": 14605.0,
+      "noviceOrders": 10164.0,
+      "networkOrders": 14607.0,
       "noviceOrderingContacts": 1745.0,
       "networkOrderingCustomers": 3932.0,
       "topNovicePartner": {
         "partnerCode": "ESHOP",
         "partnerName": "E-shop (interní)",
-        "revenueCzkEquiv": 5542089.0
+        "revenueCzkEquiv": 5543698.0
       },
       "topNetworkPartner": {
         "partnerCode": "ESHOP",
         "partnerName": "E-shop (interní)",
-        "revenueCzkEquiv": 5542089.0
+        "revenueCzkEquiv": 5543698.0
       }
     }
   },
