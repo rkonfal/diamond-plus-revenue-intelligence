@@ -76,19 +76,19 @@
     },
     "financeCurrentMonth": {
       "label": "8/2026",
-      "revenue": 6098481.24,
-      "cogsAndFees": 4989947.98,
+      "revenue": 6101948.98,
+      "cogsAndFees": 4992289.02,
       "logistics": 31314.33,
       "marketing": 175248.76,
       "opex": 351222.58,
       "depreciation": 399556.0,
       "other": -4672.6,
-      "grossMargin": 1108533.26,
-      "afterLogistics": 1077218.93,
-      "afterMarketing": 901970.17,
-      "operatingMargin": 550747.59,
-      "ebit": 151191.59,
-      "profit": 146518.99,
+      "grossMargin": 1109659.96,
+      "afterLogistics": 1078345.63,
+      "afterMarketing": 903096.87,
+      "operatingMargin": 551874.29,
+      "ebit": 152318.29,
+      "profit": 147645.69,
       "grossMarginPct": 18.2,
       "marketingPct": 2.9,
       "logisticsPct": 0.5,
@@ -344,14 +344,14 @@
     },
     "eshopYtdTotals": {
       "previous": {
-        "count": 91982,
-        "revenueWithVat": 141277651.42,
+        "count": 91988,
+        "revenueWithVat": 141287456.42,
         "averageOrderValue": 1535.93
       },
       "current": {
-        "count": 77059,
-        "revenueWithVat": 127856089.07,
-        "averageOrderValue": 1659.2
+        "count": 77062,
+        "revenueWithVat": 127860285.07,
+        "averageOrderValue": 1659.19
       }
     },
     "previousDayOrders": {
@@ -20640,10 +20640,10 @@
         },
         "dateCreated": "2026-08-18T21:26:27+02:00",
         "cancelled": false,
-        "isPaid": false,
+        "isPaid": true,
         "status": {
-          "id": 0,
-          "name": "nová"
+          "id": 1,
+          "name": "přijatá"
         },
         "totalPrice": {
           "withVat": 1837,
@@ -20696,6 +20696,60 @@
             "orderStatus": "nová",
             "date": "2026-08-18T21:26:49+02:00",
             "comment": "[FlexiBee] Objednávka byla nahrána do FlexiBee; ID: 698530",
+            "notifyStatus": "NO",
+            "data": "null"
+          },
+          {
+            "id": 7413663,
+            "adminId": null,
+            "orderStatus": "nová",
+            "date": "2026-08-19T06:19:02+02:00",
+            "comment": "Modul FioBank - příchozí platba č. 27797971752. Komentář plátce: KLOUCKOVA JITKA.",
+            "notifyStatus": "NO",
+            "data": "null"
+          },
+          {
+            "id": 7413664,
+            "adminId": null,
+            "orderStatus": "nová",
+            "date": "2026-08-19T06:19:02+02:00",
+            "comment": "<p>Dobré zprávy: Úhrada vaší objednávky 261309834 právě dorazila. Než dočtete tento e-mail, pustíme se do práce na expedici vaší objednávky tak, aby vám dorazila co nejdříve.</p><p>Těšíte se? 😍</p><div></div>",
+            "notifyStatus": "YES",
+            "data": "\"{\\\"email_type\\\": \\\"PAYMENT_SUCCESS\\\", \\\"subject\\\": \\\"\\\\ud83c\\\\udf89 Va\\\\u0161e \\\\u00fahrada objedn\\\\u00e1vky 261309834 dorazila, startujeme\\\", \\\"isAdminEmail\\\": false, \\\"attachments\\\": [\\\"order_invoice\\\"], \\\"email_id\\\": \\\"6a852eb65ef34\\\"}\""
+          },
+          {
+            "id": 7413665,
+            "adminId": null,
+            "orderStatus": "nová",
+            "date": "2026-08-19T06:20:01+02:00",
+            "comment": "[4PX] Objednávka byla vytvořena; ID: OC149400632608190076 tracking: 601117037528 účet: CZ",
+            "notifyStatus": "NO",
+            "data": "null"
+          },
+          {
+            "id": 7413666,
+            "adminId": null,
+            "orderStatus": "přijatá",
+            "date": "2026-08-19T06:20:02+02:00",
+            "comment": null,
+            "notifyStatus": "NO",
+            "data": "null"
+          },
+          {
+            "id": 7413669,
+            "adminId": null,
+            "orderStatus": "přijatá",
+            "date": "2026-08-19T06:21:49+02:00",
+            "comment": "[FlexiBee] Objednávka byla ve FlexiBee zaktualizována",
+            "notifyStatus": "NO",
+            "data": "null"
+          },
+          {
+            "id": 7413671,
+            "adminId": null,
+            "orderStatus": "přijatá",
+            "date": "2026-08-19T06:21:58+02:00",
+            "comment": "[Flexi] Objednávka byla realizována ve Flexi;",
             "notifyStatus": "NO",
             "data": "null"
           }
