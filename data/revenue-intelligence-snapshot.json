@@ -22,11 +22,11 @@
       "label": "Pozorované tržby / placený spend"
     },
     "grossMarginAfterMarketing": {
-      "value": 2225702.88,
+      "value": 2506627.47,
       "label": "Finance po marketingu, poslední plný měsíc"
     },
     "netCashPosition": {
-      "value": 7888017.68,
+      "value": 10388017.68,
       "label": "Aktuální čistá hotovostní pozice"
     },
     "measurementConfidence": {
@@ -41,7 +41,7 @@
       "headline": "Report už umí oddělit business truth, customer truth, acquisition truth a measurement truth, takže se dá řídit jako systém a ne jen číst jako dashboard.",
       "plainLanguage": [
         "Za fokus období report vidí tržby 6104813.15 Kč a spend 208343.52 Kč.",
-        "Po marketingu vychází ve financích 2225702.88 Kč, takže byznys jako celek funguje.",
+        "Po marketingu vychází ve financích 2506627.47 Kč, takže byznys jako celek funguje.",
         "Returning customers generated 315329090.87 Kč vs 12813539.29 Kč from new customers in the measured YTD window.",
         "Nejslabší místo už není customer truth, ale channel reconciliation a netto contribution."
       ],
@@ -56,49 +56,49 @@
     "financePreviousMonth": {
       "label": "7/2026",
       "revenue": 12942561.79,
-      "cogsAndFees": 9386574.66,
+      "cogsAndFees": 9105650.07,
       "logistics": 1024311.52,
       "marketing": 305972.73,
       "opex": 1899613.72,
       "depreciation": 399556.0,
       "other": -47366.33,
-      "grossMargin": 3555987.13,
-      "afterLogistics": 2531675.61,
-      "afterMarketing": 2225702.88,
-      "operatingMargin": 326089.16,
-      "ebit": -73466.84,
-      "profit": -120833.17,
-      "grossMarginPct": 27.5,
+      "grossMargin": 3836911.72,
+      "afterLogistics": 2812600.2,
+      "afterMarketing": 2506627.47,
+      "operatingMargin": 607013.75,
+      "ebit": 207457.75,
+      "profit": 160091.42,
+      "grossMarginPct": 29.6,
       "marketingPct": 2.4,
       "logisticsPct": 7.9,
-      "operatingMarginPct": 2.5,
-      "profitPct": -0.9
+      "operatingMarginPct": 4.7,
+      "profitPct": 1.2
     },
     "financeCurrentMonth": {
       "label": "8/2026",
-      "revenue": 6856772.57,
-      "cogsAndFees": 5430427.9,
+      "revenue": 6873037.43,
+      "cogsAndFees": 5477383.46,
       "logistics": 31314.33,
       "marketing": 175248.76,
       "opex": 472734.12,
       "depreciation": 399556.0,
       "other": -4839.66,
-      "grossMargin": 1426344.67,
-      "afterLogistics": 1395030.34,
-      "afterMarketing": 1219781.58,
-      "operatingMargin": 747047.46,
-      "ebit": 347491.46,
-      "profit": 342651.8,
-      "grossMarginPct": 20.8,
-      "marketingPct": 2.6,
+      "grossMargin": 1395653.97,
+      "afterLogistics": 1364339.64,
+      "afterMarketing": 1189090.88,
+      "operatingMargin": 716356.76,
+      "ebit": 316800.76,
+      "profit": 311961.1,
+      "grossMarginPct": 20.3,
+      "marketingPct": 2.5,
       "logisticsPct": 0.5,
-      "operatingMarginPct": 10.9,
-      "profitPct": 5.0
+      "operatingMarginPct": 10.4,
+      "profitPct": 4.5
     },
     "cash": {
-      "cashOnAccounts": 9720152.14,
+      "cashOnAccounts": 12220152.14,
       "unpaidInvoices": 1832134.46,
-      "netCashPosition": 7888017.68,
+      "netCashPosition": 10388017.68,
       "overdueInvoicesCount": 2,
       "overdueInvoicesAmount": 7472.36,
       "largestPayables": [
@@ -177,6 +177,13 @@
             "currency": "CZK: Česká koruna",
             "balance": 5034808.42,
             "includedBalance": 5034808.42
+          },
+          {
+            "accountCode": "221118",
+            "accountLabel": "221118: JT banka",
+            "currency": "CZK: Česká koruna",
+            "balance": 2500000.0,
+            "includedBalance": 2500000.0
           },
           {
             "accountCode": "221006",
@@ -331,27 +338,20 @@
             "currency": "EUR: Euro",
             "balance": 24281.77,
             "includedBalance": 0.0
-          },
-          {
-            "accountCode": "221003",
-            "accountLabel": "221003: 131-7690227/0100 KB CZk",
-            "currency": "CZK: Česká koruna",
-            "balance": -9922021.21,
-            "includedBalance": 0.0
           }
         ]
       }
     },
     "eshopYtdTotals": {
       "previous": {
-        "count": 92678,
-        "revenueWithVat": 142400993.04,
-        "averageOrderValue": 1536.51
+        "count": 92705,
+        "revenueWithVat": 142443395.41,
+        "averageOrderValue": 1536.52
       },
       "current": {
-        "count": 77649,
-        "revenueWithVat": 128794105.29,
-        "averageOrderValue": 1658.67
+        "count": 77668,
+        "revenueWithVat": 128821563.29,
+        "averageOrderValue": 1658.62
       }
     },
     "previousDayOrders": {
@@ -388,12 +388,12 @@
     "contributionTruth": {
       "previousMonth": {
         "revenue": 12942561.79,
-        "grossMargin": 3555987.13,
-        "afterMarketing": 2225702.88,
-        "operatingMargin": 326089.16,
-        "profit": -120833.17,
-        "afterMarketingPct": 17.2,
-        "operatingMarginPct": 2.52,
+        "grossMargin": 3836911.72,
+        "afterMarketing": 2506627.47,
+        "operatingMargin": 607013.75,
+        "profit": 160091.42,
+        "afterMarketingPct": 19.37,
+        "operatingMarginPct": 4.69,
         "paidMediaSpend": 208343.52,
         "retentionRevenueProxy": 3858229.2,
         "retentionOrdersProxy": 2594
@@ -427,36 +427,36 @@
       "financeReferenceMonth": {
         "label": "7/2026",
         "revenue": 12942561.79,
-        "grossMargin": 3555987.13,
+        "grossMargin": 3836911.72,
         "logistics": 1024311.52,
         "marketing": 305972.73,
         "opex": 1899613.72,
         "depreciation": 399556.0,
-        "operatingMargin": 326089.16,
-        "profit": -120833.17
+        "operatingMargin": 607013.75,
+        "profit": 160091.42
       },
       "ratioModel": {
-        "grossMarginPct": 27.48,
+        "grossMarginPct": 29.65,
         "logisticsPct": 7.91,
         "marketingPct": 2.36,
-        "operatingMarginPct": 2.52,
-        "profitPct": -0.93
+        "operatingMarginPct": 4.69,
+        "profitPct": 1.24
       },
       "ytdEstimated": {
         "grossRevenueWithVat": 328142630.16,
         "netRevenueAfterCancellations": 318462422.57,
         "cancellationLeakage": 9680207.59,
-        "estimatedGrossMargin": 87498000.35,
-        "estimatedAfterLogistics": 62293969.39,
-        "estimatedAfterMarketing": 54765257.65,
-        "estimatedOperatingContribution": 8023693.11,
-        "estimatedProfitContribution": -2973199.95
+        "estimatedGrossMargin": 94410381.91,
+        "estimatedAfterLogistics": 69206350.95,
+        "estimatedAfterMarketing": 61677639.21,
+        "estimatedOperatingContribution": 14936074.67,
+        "estimatedProfitContribution": 3939181.61
       },
       "customerContributionSplitYtd": {
         "newRevenueWithVat": 12813539.29,
         "returningRevenueWithVat": 315329090.87,
-        "estimatedNewAfterMarketing": 2203515.17,
-        "estimatedReturningAfterMarketing": 54226425.73,
+        "estimatedNewAfterMarketing": 2481639.27,
+        "estimatedReturningAfterMarketing": 61070796.81,
         "retentionRevenueProxyPreviousMonth": 3858229.2
       },
       "warnings": [
@@ -12888,23 +12888,23 @@
           "label": "2025-10-01 až 2026-08-20"
         },
         "summary": {
-          "noviceRevenueCzkEquiv": 16945040.0,
-          "networkRevenueCzkEquiv": 23931248.0,
+          "noviceRevenueCzkEquiv": 16946123.0,
+          "networkRevenueCzkEquiv": 23932331.0,
           "novicePartners": 50,
           "networkPartners": 50,
-          "noviceOrders": 10311.0,
-          "networkOrders": 14808.0,
+          "noviceOrders": 10313.0,
+          "networkOrders": 14810.0,
           "noviceOrderingContacts": 1757.0,
           "networkOrderingCustomers": 3956.0,
           "topNovicePartner": {
             "partnerCode": "ESHOP",
             "partnerName": "E-shop (interní)",
-            "revenueCzkEquiv": 5679949.0
+            "revenueCzkEquiv": 5680945.0
           },
           "topNetworkPartner": {
             "partnerCode": "ESHOP",
             "partnerName": "E-shop (interní)",
-            "revenueCzkEquiv": 5679949.0
+            "revenueCzkEquiv": 5680945.0
           }
         },
         "reports": {
@@ -12917,8 +12917,8 @@
             "totals": {
               "contacts": 4665.0,
               "orderingContacts": 1757.0,
-              "orders": 10311.0,
-              "revenueCzkEquiv": 16945040.0
+              "orders": 10313.0,
+              "revenueCzkEquiv": 16946123.0
             },
             "monthly": [
               {
@@ -13038,8 +13038,8 @@
                 "orderingContacts": 35.0,
                 "networkCustomers": 0.0,
                 "orderingCustomers": 0.0,
-                "orders": 742.0,
-                "revenueCzkEquiv": 1168373.0
+                "orders": 744.0,
+                "revenueCzkEquiv": 1169456.0
               }
             ],
             "topPartners": [
@@ -13048,8 +13048,8 @@
                 "partnerName": "E-shop (interní)",
                 "contacts": 993.0,
                 "orderingContacts": 993.0,
-                "orders": 3451.0,
-                "revenueCzkEquiv": 5679949.0
+                "orders": 3452.0,
+                "revenueCzkEquiv": 5680945.0
               },
               {
                 "partnerCode": "g73ps2",
@@ -13212,10 +13212,10 @@
             "error": null,
             "partners": 50,
             "totals": {
-              "networkCustomers": 13891.0,
+              "networkCustomers": 13893.0,
               "orderingCustomers": 3956.0,
-              "orders": 14808.0,
-              "revenueCzkEquiv": 23931248.0
+              "orders": 14810.0,
+              "revenueCzkEquiv": 23932331.0
             },
             "monthly": [
               {
@@ -13335,8 +13335,8 @@
                 "orderingContacts": 0.0,
                 "networkCustomers": 0.0,
                 "orderingCustomers": 0.0,
-                "orders": 1013.0,
-                "revenueCzkEquiv": 1590738.0
+                "orders": 1015.0,
+                "revenueCzkEquiv": 1591821.0
               }
             ],
             "topPartners": [
@@ -13344,10 +13344,10 @@
                 "partnerCode": "ESHOP",
                 "partnerName": "E-shop (interní)",
                 "partnerTiandeId": null,
-                "networkCustomers": 3291.0,
+                "networkCustomers": 3292.0,
                 "orderingCustomers": 993.0,
-                "orders": 3451.0,
-                "revenueCzkEquiv": 5679949.0
+                "orders": 3452.0,
+                "revenueCzkEquiv": 5680945.0
               },
               {
                 "partnerCode": "g73ps2",
@@ -112341,36 +112341,36 @@
       "financeReferenceMonth": {
         "label": "7/2026",
         "revenue": 12942561.79,
-        "grossMargin": 3555987.13,
+        "grossMargin": 3836911.72,
         "logistics": 1024311.52,
         "marketing": 305972.73,
         "opex": 1899613.72,
         "depreciation": 399556.0,
-        "operatingMargin": 326089.16,
-        "profit": -120833.17
+        "operatingMargin": 607013.75,
+        "profit": 160091.42
       },
       "ratioModel": {
-        "grossMarginPct": 27.48,
+        "grossMarginPct": 29.65,
         "logisticsPct": 7.91,
         "marketingPct": 2.36,
-        "operatingMarginPct": 2.52,
-        "profitPct": -0.93
+        "operatingMarginPct": 4.69,
+        "profitPct": 1.24
       },
       "ytdEstimated": {
         "grossRevenueWithVat": 328142630.16,
         "netRevenueAfterCancellations": 318462422.57,
         "cancellationLeakage": 9680207.59,
-        "estimatedGrossMargin": 87498000.35,
-        "estimatedAfterLogistics": 62293969.39,
-        "estimatedAfterMarketing": 54765257.65,
-        "estimatedOperatingContribution": 8023693.11,
-        "estimatedProfitContribution": -2973199.95
+        "estimatedGrossMargin": 94410381.91,
+        "estimatedAfterLogistics": 69206350.95,
+        "estimatedAfterMarketing": 61677639.21,
+        "estimatedOperatingContribution": 14936074.67,
+        "estimatedProfitContribution": 3939181.61
       },
       "customerContributionSplitYtd": {
         "newRevenueWithVat": 12813539.29,
         "returningRevenueWithVat": 315329090.87,
-        "estimatedNewAfterMarketing": 2203515.17,
-        "estimatedReturningAfterMarketing": 54226425.73,
+        "estimatedNewAfterMarketing": 2481639.27,
+        "estimatedReturningAfterMarketing": 61070796.81,
         "retentionRevenueProxyPreviousMonth": 3858229.2
       },
       "warnings": [
@@ -112687,8 +112687,8 @@
     "status": "operational_with_known_gaps",
     "headline": "Final truth engine už běží pro finance truth, měřenou YTD customer truth, měřenou YTD order truth a první decision-grade akviziční split. Hlavní chybějící vrstva je netto contribution a backend channel reconciliation.",
     "whatIsTrulyKnown": [
-      "Finance po marketingu: 2225702.88 Kč.",
-      "Čistá hotovostní pozice: 7888017.68 Kč.",
+      "Finance po marketingu: 2506627.47 Kč.",
+      "Čistá hotovostní pozice: 10388017.68 Kč.",
       "Returning customers generated 315329090.87 Kč vs 12813539.29 Kč from new customers in the measured YTD window.",
       "Zpracované objednávky v měřeném YTD: 203194"
     ],
@@ -112708,8 +112708,8 @@
     "management": {
       "headline": "Byznys je silný, customer truth je měřený, ale marketing decisioning musí pořád procházet trust vrstvou a bucket split logikou.",
       "focus": [
-        "Po marketingu zůstalo 2225702.88 Kč.",
-        "Net cash pozice je 7888017.68 Kč.",
+        "Po marketingu zůstalo 2506627.47 Kč.",
+        "Net cash pozice je 10388017.68 Kč.",
         "Returning customers generated 315329090.87 Kč vs 12813539.29 Kč from new customers in the measured YTD window."
       ],
       "questions": [
@@ -112735,7 +112735,7 @@
       "headline": "Finance view už stojí na byznys realitě, další krok je netto contribution po vratkách a marži.",
       "focus": [
         "Revenue ve financích za minulý měsíc: 12942561.79 Kč.",
-        "Operating margin: 326089.16 Kč.",
+        "Operating margin: 607013.75 Kč.",
         "Netto contribution je teď odhadnutá z měřené order/customer truth a finančních poměrů. Refundy, vratky a produktová marže ještě nejsou přímo joinnuté."
       ],
       "questions": [
@@ -113058,36 +113058,36 @@
     "financeReferenceMonth": {
       "label": "7/2026",
       "revenue": 12942561.79,
-      "grossMargin": 3555987.13,
+      "grossMargin": 3836911.72,
       "logistics": 1024311.52,
       "marketing": 305972.73,
       "opex": 1899613.72,
       "depreciation": 399556.0,
-      "operatingMargin": 326089.16,
-      "profit": -120833.17
+      "operatingMargin": 607013.75,
+      "profit": 160091.42
     },
     "ratioModel": {
-      "grossMarginPct": 27.48,
+      "grossMarginPct": 29.65,
       "logisticsPct": 7.91,
       "marketingPct": 2.36,
-      "operatingMarginPct": 2.52,
-      "profitPct": -0.93
+      "operatingMarginPct": 4.69,
+      "profitPct": 1.24
     },
     "ytdEstimated": {
       "grossRevenueWithVat": 328142630.16,
       "netRevenueAfterCancellations": 318462422.57,
       "cancellationLeakage": 9680207.59,
-      "estimatedGrossMargin": 87498000.35,
-      "estimatedAfterLogistics": 62293969.39,
-      "estimatedAfterMarketing": 54765257.65,
-      "estimatedOperatingContribution": 8023693.11,
-      "estimatedProfitContribution": -2973199.95
+      "estimatedGrossMargin": 94410381.91,
+      "estimatedAfterLogistics": 69206350.95,
+      "estimatedAfterMarketing": 61677639.21,
+      "estimatedOperatingContribution": 14936074.67,
+      "estimatedProfitContribution": 3939181.61
     },
     "customerContributionSplitYtd": {
       "newRevenueWithVat": 12813539.29,
       "returningRevenueWithVat": 315329090.87,
-      "estimatedNewAfterMarketing": 2203515.17,
-      "estimatedReturningAfterMarketing": 54226425.73,
+      "estimatedNewAfterMarketing": 2481639.27,
+      "estimatedReturningAfterMarketing": 61070796.81,
       "retentionRevenueProxyPreviousMonth": 3858229.2
     },
     "warnings": [
