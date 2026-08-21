@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-21T06:00:05.663228+02:00",
+  "generatedAt": "2026-08-21T06:46:27.864672+02:00",
   "config": {
     "warehouseCode": "CZPRGA",
     "outboundMaxPages": 20,
@@ -14,8 +14,8 @@
       "label": "CZ",
       "inventory": {
         "items": 789,
-        "availableStockTotal": 292241,
-        "pendingStockTotal": 1648,
+        "availableStockTotal": 292206,
+        "pendingStockTotal": 1683,
         "freezeStockTotal": 0,
         "lowStockItems": 100
       },
@@ -23,8 +23,8 @@
         "items": 300,
         "scannedPages": 3,
         "topLogisticsProduct": "F1401",
-        "oldestTimestamp": "2026-08-19T20:10:06+02:00",
-        "newestTimestamp": "2026-08-21T04:10:02+02:00"
+        "oldestTimestamp": "2026-08-19T20:20:04+02:00",
+        "newestTimestamp": "2026-08-21T06:30:05+02:00"
       }
     },
     "sk": {
@@ -51,20 +51,20 @@
     "orders": 269,
     "revenueWithVat": 424619.33,
     "averageOrderValue": 1578.51,
-    "problematicOrders": 2
+    "problematicOrders": 3
   },
   "report": {
     "date": "2026-08-20",
     "shipments": 261,
     "alerts": [
-      "2 problematických nebo stornovaných objednávek.",
+      "3 problematických nebo stornovaných objednávek.",
       "10 skladových pozic je v mínusu.",
       "12 A produktů je v kritickém riziku výpadku.",
       "V top expiracích je aspoň jedna položka do 30 dnů."
     ],
     "priorities": [
       "Prověřit A produkty v riziku výpadku (12 SKU): 135415-1, 52911, 61923.",
-      "Projít 2 problematických nebo stornovaných objednávek z včerejška.",
+      "Projít 3 problematických nebo stornovaných objednávek z včerejška.",
       "Projít nejbližší expirace v 4PX a rozhodnout o doprodeji nebo přesunu zásoby."
     ]
   },
@@ -106,29 +106,29 @@
     "message": "Měsíční finance se tahají přímo z ABRA reportu Výkaz hospodaření za měsíc za všechna střediska. Cash a závazky jsou také live z ABRA API.",
     "currentMonth": {
       "label": "8/2026",
-      "revenue": 6894340.74,
-      "cogsAndFees": 5490687.12,
+      "revenue": 6899171.94,
+      "cogsAndFees": 5494013.2,
       "logistics": 31314.33,
       "marketing": 175248.76,
       "opex": 472734.12,
       "depreciation": 399556.0,
       "other": -4839.66,
-      "grossMargin": 1403653.62,
-      "afterLogistics": 1372339.29,
-      "afterMarketing": 1197090.53,
-      "operatingMargin": 724356.41,
-      "ebit": 324800.41,
-      "profit": 319960.75,
+      "grossMargin": 1405158.74,
+      "afterLogistics": 1373844.41,
+      "afterMarketing": 1198595.65,
+      "operatingMargin": 725861.53,
+      "ebit": 326305.53,
+      "profit": 321465.87,
       "grossMarginPct": 20.4,
       "marketingPct": 2.5,
       "logisticsPct": 0.5,
       "operatingMarginPct": 10.5,
-      "profitPct": 4.6
+      "profitPct": 4.7
     },
     "cash": {
-      "cashOnAccounts": 12249625.6,
+      "cashOnAccounts": 12333595.6,
       "unpaidInvoices": 1832134.46,
-      "netCashPosition": 10417491.14,
+      "netCashPosition": 10501461.14,
       "overdueInvoicesCount": 2,
       "overdueInvoicesAmount": 7472.36,
       "largestPayables": [
@@ -205,8 +205,8 @@
             "accountCode": "221115",
             "accountLabel": "221115: 131-3675980207/0100 KB CZK",
             "currency": "CZK: Česká koruna",
-            "balance": 5034808.42,
-            "includedBalance": 5034808.42
+            "balance": 5118778.42,
+            "includedBalance": 5118778.42
           },
           {
             "accountCode": "221118",
@@ -386,7 +386,7 @@
       "performanceSpend": 10248.76,
       "brandSpend": 165000.0,
       "totalSpend": 175248.76,
-      "revenue": 6894340.74,
+      "revenue": 6899171.94,
       "spendShareOfRevenuePct": 2.5
     },
     "topSupplier": {
@@ -404,12 +404,12 @@
       "label": "2025-10-01 až 2026-08-21"
     },
     "summary": {
-      "noviceRevenueCzkEquiv": 16954882.0,
-      "networkRevenueCzkEquiv": 23942742.0,
+      "noviceRevenueCzkEquiv": 16954883.0,
+      "networkRevenueCzkEquiv": 23944411.0,
       "novicePartners": 50,
       "networkPartners": 50,
-      "noviceOrders": 10319.0,
-      "networkOrders": 14817.0,
+      "noviceOrders": 10320.0,
+      "networkOrders": 14819.0,
       "noviceOrderingContacts": 1757.0,
       "networkOrderingCustomers": 3956.0,
       "topNovicePartner": {
