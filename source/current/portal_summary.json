@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-21T09:11:01.694829+02:00",
+  "generatedAt": "2026-08-21T10:01:43.271013+02:00",
   "config": {
     "warehouseCode": "CZPRGA",
     "outboundMaxPages": 20,
@@ -14,8 +14,8 @@
       "label": "CZ",
       "inventory": {
         "items": 789,
-        "availableStockTotal": 292052,
-        "pendingStockTotal": 1837,
+        "availableStockTotal": 291905,
+        "pendingStockTotal": 1984,
         "freezeStockTotal": 0,
         "lowStockItems": 100
       },
@@ -23,8 +23,8 @@
         "items": 300,
         "scannedPages": 3,
         "topLogisticsProduct": "F1401",
-        "oldestTimestamp": "2026-08-19T20:45:03+02:00",
-        "newestTimestamp": "2026-08-21T09:00:07+02:00"
+        "oldestTimestamp": "2026-08-19T21:20:04+02:00",
+        "newestTimestamp": "2026-08-21T10:00:02+02:00"
       }
     },
     "sk": {
@@ -95,7 +95,7 @@
     "pairedProducts": 361,
     "onlyInWpj": 1628,
     "onlyIn4px": 1,
-    "stockMismatch": 692,
+    "stockMismatch": 693,
     "lowAfterSales": 3,
     "manualMapped4pxAliases": 0,
     "autoMapped4pxAliases": 74
@@ -106,24 +106,24 @@
     "message": "Měsíční finance se tahají přímo z ABRA reportu Výkaz hospodaření za měsíc za všechna střediska. Cash a závazky jsou také live z ABRA API.",
     "currentMonth": {
       "label": "8/2026",
-      "revenue": 6918269.66,
-      "cogsAndFees": 5515353.26,
+      "revenue": 6938103.6,
+      "cogsAndFees": 5525879.74,
       "logistics": 31314.33,
       "marketing": 175248.76,
       "opex": 472734.12,
       "depreciation": 399556.0,
       "other": -4839.66,
-      "grossMargin": 1402916.4,
-      "afterLogistics": 1371602.07,
-      "afterMarketing": 1196353.31,
-      "operatingMargin": 723619.19,
-      "ebit": 324063.19,
-      "profit": 319223.53,
-      "grossMarginPct": 20.3,
+      "grossMargin": 1412223.86,
+      "afterLogistics": 1380909.53,
+      "afterMarketing": 1205660.77,
+      "operatingMargin": 732926.65,
+      "ebit": 333370.65,
+      "profit": 328530.99,
+      "grossMarginPct": 20.4,
       "marketingPct": 2.5,
       "logisticsPct": 0.5,
-      "operatingMarginPct": 10.5,
-      "profitPct": 4.6
+      "operatingMarginPct": 10.6,
+      "profitPct": 4.7
     },
     "cash": {
       "cashOnAccounts": 12343612.97,
@@ -386,7 +386,7 @@
       "performanceSpend": 10248.76,
       "brandSpend": 165000.0,
       "totalSpend": 175248.76,
-      "revenue": 6918269.66,
+      "revenue": 6938103.6,
       "spendShareOfRevenuePct": 2.5
     },
     "topSupplier": {
@@ -404,23 +404,23 @@
       "label": "2025-10-01 až 2026-08-21"
     },
     "summary": {
-      "noviceRevenueCzkEquiv": 16958804.0,
-      "networkRevenueCzkEquiv": 23948332.0,
+      "noviceRevenueCzkEquiv": 16961116.0,
+      "networkRevenueCzkEquiv": 23950644.0,
       "novicePartners": 50,
       "networkPartners": 50,
-      "noviceOrders": 10322.0,
-      "networkOrders": 14821.0,
-      "noviceOrderingContacts": 1757.0,
-      "networkOrderingCustomers": 3956.0,
+      "noviceOrders": 10324.0,
+      "networkOrders": 14823.0,
+      "noviceOrderingContacts": 1758.0,
+      "networkOrderingCustomers": 3958.0,
       "topNovicePartner": {
         "partnerCode": "ESHOP",
         "partnerName": "E-shop (interní)",
-        "revenueCzkEquiv": 5683008.0
+        "revenueCzkEquiv": 5683437.0
       },
       "topNetworkPartner": {
         "partnerCode": "ESHOP",
         "partnerName": "E-shop (interní)",
-        "revenueCzkEquiv": 5683008.0
+        "revenueCzkEquiv": 5683437.0
       }
     }
   },
@@ -513,26 +513,26 @@
   },
   "twistoWatchdog": {
     "ready": true,
-    "status": "warn",
+    "status": "ok",
     "summary": {
       "windowDays": 90,
       "twistoBatchCount": 34,
       "twistoPaidBatchCount": 33,
-      "bankTwistoTransactionCount": 29,
-      "matchedBatchCount": 29,
-      "unmatchedBatchCount": 1,
+      "bankTwistoTransactionCount": 30,
+      "matchedBatchCount": 30,
+      "unmatchedBatchCount": 0,
       "unmatchedBankTransactions": 0,
       "twistoPaidAmount": 163240.0,
-      "twistoMatchedAmount": 316927.0,
-      "bankReceivedAmount": 316927.0,
-      "openBatchAmount": 3025.0,
+      "twistoMatchedAmount": 319952.0,
+      "bankReceivedAmount": 319952.0,
+      "openBatchAmount": 0,
       "bankVsTwistoDelta": 0.0,
       "wpjTwistoOrderCount": 4,
       "wpjTwistoOrderAmount": 5501.0,
       "twistoOrderAmount": 686746.0,
-      "historicalMatchedBatchAmount": 316927.0,
+      "historicalMatchedBatchAmount": 319952.0,
       "wpjVsTwistoOrderDelta": -681245.0,
-      "oldestOpenBatchDays": 1
+      "oldestOpenBatchDays": null
     },
     "source": {
       "twisto": {
@@ -552,6 +552,6 @@
         "message": "WPJ twisto objednávky z historie objednávek."
       }
     },
-    "message": "Twisto batch bez bankovního matchnutí: 3025.00 Kč"
+    "message": null
   }
 }
