@@ -1716,10 +1716,10 @@
       },
       "dateCreated": "2026-08-21T22:35:21+02:00",
       "cancelled": false,
-      "isPaid": false,
+      "isPaid": true,
       "status": {
-        "id": 0,
-        "name": "nová"
+        "id": 1,
+        "name": "přijatá"
       },
       "totalPrice": {
         "withVat": 576,
@@ -1792,6 +1792,60 @@
           "comment": "Autopilot: odeslána uživatelská zpráva: Upomínka nezaplacené - okamžité platby",
           "notifyStatus": "NO",
           "data": "\"{\\\"initiator\\\":\\\"autopilot\\\"}\""
+        },
+        {
+          "id": 7427446,
+          "adminId": null,
+          "orderStatus": "nová",
+          "date": "2026-08-22T08:09:18+02:00",
+          "comment": "Objednávka byla zaplacena.",
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7427447,
+          "adminId": null,
+          "orderStatus": "nová",
+          "date": "2026-08-22T08:09:19+02:00",
+          "comment": "<p>Dobré zprávy: Úhrada vaší objednávky 261310693 právě dorazila. Než dočtete tento e-mail, pustíme se do práce na expedici vaší objednávky tak, aby vám dorazila co nejdříve.</p><p>Těšíte se? 😍</p><div></div>",
+          "notifyStatus": "YES",
+          "data": "\"{\\\"email_type\\\": \\\"PAYMENT_SUCCESS\\\", \\\"subject\\\": \\\"\\\\ud83c\\\\udf89 Va\\\\u0161e \\\\u00fahrada objedn\\\\u00e1vky 261310693 dorazila, startujeme\\\", \\\"isAdminEmail\\\": false, \\\"attachments\\\": [\\\"order_invoice\\\"], \\\"email_id\\\": \\\"6a893d0f03508\\\"}\""
+        },
+        {
+          "id": 7427448,
+          "adminId": null,
+          "orderStatus": "nová",
+          "date": "2026-08-22T08:10:02+02:00",
+          "comment": "[4PX] Objednávka byla vytvořena; ID: OC149400632608220062 tracking: 601117198793 účet: CZ",
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7427449,
+          "adminId": null,
+          "orderStatus": "přijatá",
+          "date": "2026-08-22T08:10:02+02:00",
+          "comment": null,
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7427452,
+          "adminId": null,
+          "orderStatus": "přijatá",
+          "date": "2026-08-22T08:11:40+02:00",
+          "comment": "[FlexiBee] Objednávka byla ve FlexiBee zaktualizována",
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7427454,
+          "adminId": null,
+          "orderStatus": "přijatá",
+          "date": "2026-08-22T08:11:48+02:00",
+          "comment": "[Flexi] Objednávka byla realizována ve Flexi;",
+          "notifyStatus": "NO",
+          "data": "null"
         }
       ],
       "deliveryType": {
