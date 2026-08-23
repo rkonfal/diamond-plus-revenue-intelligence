@@ -76,24 +76,24 @@
     },
     "financeCurrentMonth": {
       "label": "8/2026",
-      "revenue": 7337443.43,
-      "cogsAndFees": 5818267.69,
+      "revenue": 7347820.71,
+      "cogsAndFees": 5825275.48,
       "logistics": 31314.33,
       "marketing": 175248.76,
       "opex": 472734.12,
       "depreciation": 399556.0,
       "other": -5119.64,
-      "grossMargin": 1519175.74,
-      "afterLogistics": 1487861.41,
-      "afterMarketing": 1312612.65,
-      "operatingMargin": 839878.53,
-      "ebit": 440322.53,
-      "profit": 435202.89,
+      "grossMargin": 1522545.23,
+      "afterLogistics": 1491230.9,
+      "afterMarketing": 1315982.14,
+      "operatingMargin": 843248.02,
+      "ebit": 443692.02,
+      "profit": 438572.38,
       "grossMarginPct": 20.7,
       "marketingPct": 2.4,
       "logisticsPct": 0.4,
-      "operatingMarginPct": 11.4,
-      "profitPct": 5.9
+      "operatingMarginPct": 11.5,
+      "profitPct": 6.0
     },
     "cash": {
       "cashOnAccounts": 13342252.21,
@@ -344,14 +344,14 @@
     },
     "eshopYtdTotals": {
       "previous": {
-        "count": 93651,
-        "revenueWithVat": 144027381.47,
-        "averageOrderValue": 1537.92
+        "count": 93661,
+        "revenueWithVat": 144049940.47,
+        "averageOrderValue": 1537.99
       },
       "current": {
-        "count": 78004,
-        "revenueWithVat": 129388269.34,
-        "averageOrderValue": 1658.74
+        "count": 78012,
+        "revenueWithVat": 129400393.34,
+        "averageOrderValue": 1658.72
       }
     },
     "previousDayOrders": {
@@ -13216,8 +13216,8 @@
           "label": "2025-10-01 až 2026-08-23"
         },
         "summary": {
-          "noviceRevenueCzkEquiv": 17026136.0,
-          "networkRevenueCzkEquiv": 24038004.0,
+          "noviceRevenueCzkEquiv": 17026760.0,
+          "networkRevenueCzkEquiv": 24038628.0,
           "novicePartners": 50,
           "networkPartners": 50,
           "noviceOrders": 10357.0,
@@ -13246,7 +13246,7 @@
               "contacts": 4668.0,
               "orderingContacts": 1760.0,
               "orders": 10357.0,
-              "revenueCzkEquiv": 17026136.0
+              "revenueCzkEquiv": 17026760.0
             },
             "monthly": [
               {
@@ -13367,7 +13367,7 @@
                 "networkCustomers": 0.0,
                 "orderingCustomers": 0.0,
                 "orders": 788.0,
-                "revenueCzkEquiv": 1249469.0
+                "revenueCzkEquiv": 1250093.0
               }
             ],
             "topPartners": [
@@ -13473,7 +13473,7 @@
                 "contacts": 155.0,
                 "orderingContacts": 29.0,
                 "orders": 197.0,
-                "revenueCzkEquiv": 278057.0
+                "revenueCzkEquiv": 278681.0
               },
               {
                 "partnerCode": "j3sxbv",
@@ -13540,10 +13540,10 @@
             "error": null,
             "partners": 50,
             "totals": {
-              "networkCustomers": 13952.0,
+              "networkCustomers": 13953.0,
               "orderingCustomers": 3963.0,
               "orders": 14870.0,
-              "revenueCzkEquiv": 24038004.0
+              "revenueCzkEquiv": 24038628.0
             },
             "monthly": [
               {
@@ -13664,7 +13664,7 @@
                 "networkCustomers": 0.0,
                 "orderingCustomers": 0.0,
                 "orders": 1075.0,
-                "revenueCzkEquiv": 1697494.0
+                "revenueCzkEquiv": 1698118.0
               }
             ],
             "topPartners": [
@@ -20512,10 +20512,10 @@
         },
         "dateCreated": "2026-08-22T19:37:35+02:00",
         "cancelled": false,
-        "isPaid": false,
+        "isPaid": true,
         "status": {
-          "id": 0,
-          "name": "nová"
+          "id": 1,
+          "name": "přijatá"
         },
         "totalPrice": {
           "withVat": 1251,
@@ -20568,6 +20568,60 @@
             "orderStatus": "nová",
             "date": "2026-08-22T19:41:47+02:00",
             "comment": "[FlexiBee] Objednávka byla nahrána do FlexiBee; ID: 699477",
+            "notifyStatus": "NO",
+            "data": "null"
+          },
+          {
+            "id": 7428623,
+            "adminId": null,
+            "orderStatus": "nová",
+            "date": "2026-08-23T10:39:01+02:00",
+            "comment": "Modul FioBank - příchozí platba č. 27803993287. Komentář plátce: VÁCLAVA FISKOVÁ.",
+            "notifyStatus": "NO",
+            "data": "null"
+          },
+          {
+            "id": 7428624,
+            "adminId": null,
+            "orderStatus": "nová",
+            "date": "2026-08-23T10:39:01+02:00",
+            "comment": "<p>Dobré zprávy: Úhrada vaší objednávky 261310781 právě dorazila. Než dočtete tento e-mail, pustíme se do práce na expedici vaší objednávky tak, aby vám dorazila co nejdříve.</p><p>Těšíte se? 😍</p><div></div>",
+            "notifyStatus": "YES",
+            "data": "\"{\\\"email_type\\\": \\\"PAYMENT_SUCCESS\\\", \\\"subject\\\": \\\"\\\\ud83c\\\\udf89 Va\\\\u0161e \\\\u00fahrada objedn\\\\u00e1vky 261310781 dorazila, startujeme\\\", \\\"isAdminEmail\\\": false, \\\"attachments\\\": [\\\"order_invoice\\\"], \\\"email_id\\\": \\\"6a8ab1a5b8018\\\"}\""
+          },
+          {
+            "id": 7428625,
+            "adminId": null,
+            "orderStatus": "nová",
+            "date": "2026-08-23T10:40:02+02:00",
+            "comment": "[4PX] Objednávka byla vytvořena; ID: OC149400632608230056 tracking: 601117213921 účet: CZ",
+            "notifyStatus": "NO",
+            "data": "null"
+          },
+          {
+            "id": 7428626,
+            "adminId": null,
+            "orderStatus": "přijatá",
+            "date": "2026-08-23T10:40:02+02:00",
+            "comment": null,
+            "notifyStatus": "NO",
+            "data": "null"
+          },
+          {
+            "id": 7428631,
+            "adminId": null,
+            "orderStatus": "přijatá",
+            "date": "2026-08-23T10:41:35+02:00",
+            "comment": "[FlexiBee] Objednávka byla ve FlexiBee zaktualizována",
+            "notifyStatus": "NO",
+            "data": "null"
+          },
+          {
+            "id": 7428634,
+            "adminId": null,
+            "orderStatus": "přijatá",
+            "date": "2026-08-23T10:41:44+02:00",
+            "comment": "[Flexi] Objednávka byla realizována ve Flexi;",
             "notifyStatus": "NO",
             "data": "null"
           }
