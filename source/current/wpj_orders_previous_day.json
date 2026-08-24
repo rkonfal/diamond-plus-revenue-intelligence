@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-24T13:08:07.773871+02:00",
+  "generatedAt": "2026-08-24T14:41:34.400677+02:00",
   "window": {
     "from": "2026-08-23T00:00:01+02:00",
     "to": "2026-08-24T00:00:00+02:00"
@@ -16264,10 +16264,10 @@
       },
       "dateCreated": "2026-08-23T20:11:44+02:00",
       "cancelled": false,
-      "isPaid": false,
+      "isPaid": true,
       "status": {
-        "id": 0,
-        "name": "nová"
+        "id": 1,
+        "name": "přijatá"
       },
       "totalPrice": {
         "withVat": 2226,
@@ -16320,6 +16320,60 @@
           "orderStatus": "nová",
           "date": "2026-08-23T20:12:11+02:00",
           "comment": "[FlexiBee] Objednávka byla nahrána do FlexiBee; ID: 699670",
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7432057,
+          "adminId": null,
+          "orderStatus": "nová",
+          "date": "2026-08-24T14:49:02+02:00",
+          "comment": "Modul FioBank - příchozí platba č. 27805352952. Komentář plátce: EVA SEDLÁKOVÁ.",
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7432058,
+          "adminId": null,
+          "orderStatus": "nová",
+          "date": "2026-08-24T14:49:02+02:00",
+          "comment": "<p>Dobré zprávy: Úhrada vaší objednávky 261310974 právě dorazila. Než dočtete tento e-mail, pustíme se do práce na expedici vaší objednávky tak, aby vám dorazila co nejdříve.</p><p>Těšíte se? 😍</p><div></div>",
+          "notifyStatus": "YES",
+          "data": "\"{\\\"email_type\\\": \\\"PAYMENT_SUCCESS\\\", \\\"subject\\\": \\\"\\\\ud83c\\\\udf89 Va\\\\u0161e \\\\u00fahrada objedn\\\\u00e1vky 261310974 dorazila, startujeme\\\", \\\"isAdminEmail\\\": false, \\\"attachments\\\": [\\\"order_invoice\\\"], \\\"email_id\\\": \\\"6a8c3dbe62178\\\"}\""
+        },
+        {
+          "id": 7432063,
+          "adminId": null,
+          "orderStatus": "nová",
+          "date": "2026-08-24T14:50:01+02:00",
+          "comment": "[4PX] Objednávka byla vytvořena; ID: OC149400632608240222 tracking: 601117282903 účet: CZ",
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7432064,
+          "adminId": null,
+          "orderStatus": "přijatá",
+          "date": "2026-08-24T14:50:02+02:00",
+          "comment": null,
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7432077,
+          "adminId": null,
+          "orderStatus": "přijatá",
+          "date": "2026-08-24T14:51:43+02:00",
+          "comment": "[FlexiBee] Objednávka byla ve FlexiBee zaktualizována",
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7432082,
+          "adminId": null,
+          "orderStatus": "přijatá",
+          "date": "2026-08-24T14:51:49+02:00",
+          "comment": "[Flexi] Objednávka byla realizována ve Flexi;",
           "notifyStatus": "NO",
           "data": "null"
         }
@@ -55114,11 +55168,11 @@
     "statuses": [
       {
         "name": "přijatá",
-        "count": 223
+        "count": 224
       },
       {
         "name": "nová",
-        "count": 12
+        "count": 11
       },
       {
         "name": "stornovaná",
@@ -55841,11 +55895,11 @@
         "statuses": [
           {
             "name": "přijatá",
-            "count": 223
+            "count": 224
           },
           {
             "name": "nová",
-            "count": 12
+            "count": 11
           },
           {
             "name": "stornovaná",
@@ -56568,11 +56622,11 @@
         "statuses": [
           {
             "name": "přijatá",
-            "count": 204
+            "count": 205
           },
           {
             "name": "nová",
-            "count": 11
+            "count": 10
           },
           {
             "name": "stornovaná",
