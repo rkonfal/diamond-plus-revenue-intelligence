@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-24T17:39:48.377996+02:00",
+  "generatedAt": "2026-08-24T18:23:34.204325+02:00",
   "config": {
     "warehouseCode": "CZPRGA",
     "outboundMaxPages": 20,
@@ -14,8 +14,8 @@
       "label": "CZ",
       "inventory": {
         "items": 792,
-        "availableStockTotal": 297569,
-        "pendingStockTotal": 936,
+        "availableStockTotal": 297381,
+        "pendingStockTotal": 1124,
         "freezeStockTotal": 0,
         "lowStockItems": 100
       },
@@ -23,16 +23,16 @@
         "items": 400,
         "scannedPages": 4,
         "topLogisticsProduct": "F1401",
-        "oldestTimestamp": "2026-08-22T20:00:02+02:00",
-        "newestTimestamp": "2026-08-24T17:40:02+02:00"
+        "oldestTimestamp": "2026-08-22T21:10:03+02:00",
+        "newestTimestamp": "2026-08-24T18:20:04+02:00"
       }
     },
     "sk": {
       "label": "SK",
       "inventory": {
         "items": 644,
-        "availableStockTotal": 40206,
-        "pendingStockTotal": 141,
+        "availableStockTotal": 40183,
+        "pendingStockTotal": 164,
         "freezeStockTotal": 0,
         "lowStockItems": 100
       },
@@ -40,8 +40,8 @@
         "items": 100,
         "scannedPages": 1,
         "topLogisticsProduct": "F1403",
-        "oldestTimestamp": "2026-08-19T08:05:12+02:00",
-        "newestTimestamp": "2026-08-24T17:05:18+02:00"
+        "oldestTimestamp": "2026-08-19T08:30:13+02:00",
+        "newestTimestamp": "2026-08-24T18:15:15+02:00"
       }
     }
   },
@@ -60,10 +60,10 @@
       "1 problematických nebo stornovaných objednávek.",
       "2 včera prodaných produktů je teď na nízkém skladu.",
       "10 skladových pozic je v mínusu.",
-      "10 A produktů je v kritickém riziku výpadku."
+      "11 A produktů je v kritickém riziku výpadku."
     ],
     "priorities": [
-      "Prověřit A produkty v riziku výpadku (10 SKU): 135415-1, 52911, 30115.",
+      "Prověřit A produkty v riziku výpadku (11 SKU): 135415-1, 52911, 30115.",
       "Dohlédnout 90194 (Kosmetický štětec 3v1), aktuálně 1 ks.",
       "Projít 1 problematických nebo stornovaných objednávek z včerejška.",
       "Projít nejbližší expirace v 4PX a rozhodnout o doprodeji nebo přesunu zásoby."
@@ -96,7 +96,7 @@
     "pairedProducts": 365,
     "onlyInWpj": 1631,
     "onlyIn4px": 1,
-    "stockMismatch": 691,
+    "stockMismatch": 693,
     "lowAfterSales": 4,
     "manualMapped4pxAliases": 0,
     "autoMapped4pxAliases": 74
@@ -107,19 +107,19 @@
     "message": "Měsíční finance se tahají přímo z ABRA reportu Výkaz hospodaření za měsíc za všechna střediska. Cash a závazky jsou také live z ABRA API.",
     "currentMonth": {
       "label": "8/2026",
-      "revenue": 7766535.88,
-      "cogsAndFees": 6169549.69,
+      "revenue": 7778257.96,
+      "cogsAndFees": 6179599.92,
       "logistics": 43802.09,
       "marketing": 177728.1,
       "opex": 552825.9,
       "depreciation": 399556.0,
       "other": -4449.35,
-      "grossMargin": 1596986.19,
-      "afterLogistics": 1553184.1,
-      "afterMarketing": 1375456.0,
-      "operatingMargin": 822630.1,
-      "ebit": 423074.1,
-      "profit": 418624.75,
+      "grossMargin": 1598658.04,
+      "afterLogistics": 1554855.95,
+      "afterMarketing": 1377127.85,
+      "operatingMargin": 824301.95,
+      "ebit": 424745.95,
+      "profit": 420296.6,
       "grossMarginPct": 20.6,
       "marketingPct": 2.3,
       "logisticsPct": 0.6,
@@ -127,9 +127,9 @@
       "profitPct": 5.4
     },
     "cash": {
-      "cashOnAccounts": 13025641.21,
+      "cashOnAccounts": 13027431.21,
       "unpaidInvoices": 1802210.65,
-      "netCashPosition": 11223430.56,
+      "netCashPosition": 11225220.56,
       "overdueInvoicesCount": 1,
       "overdueInvoicesAmount": 6987.46,
       "largestPayables": [
@@ -227,8 +227,8 @@
             "accountCode": "221001",
             "accountLabel": "221001: 2901338673/2010 FIO CZK",
             "currency": "CZK: Česká koruna",
-            "balance": 1320086.14,
-            "includedBalance": 1320086.14
+            "balance": 1321876.14,
+            "includedBalance": 1321876.14
           },
           {
             "accountCode": "221002",
@@ -387,7 +387,7 @@
       "performanceSpend": 12728.1,
       "brandSpend": 165000.0,
       "totalSpend": 177728.1,
-      "revenue": 7766535.88,
+      "revenue": 7778257.96,
       "spendShareOfRevenuePct": 2.3
     },
     "topSupplier": {
@@ -405,12 +405,12 @@
       "label": "2025-10-01 až 2026-08-24"
     },
     "summary": {
-      "noviceRevenueCzkEquiv": 17134724.0,
-      "networkRevenueCzkEquiv": 24170027.0,
+      "noviceRevenueCzkEquiv": 17140710.0,
+      "networkRevenueCzkEquiv": 24174271.0,
       "novicePartners": 50,
       "networkPartners": 50,
-      "noviceOrders": 10421.0,
-      "networkOrders": 14950.0,
+      "noviceOrders": 10424.0,
+      "networkOrders": 14952.0,
       "noviceOrderingContacts": 1764.0,
       "networkOrderingCustomers": 3968.0,
       "topNovicePartner": {
