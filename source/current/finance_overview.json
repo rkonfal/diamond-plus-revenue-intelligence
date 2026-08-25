@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-25T02:48:06.300642+02:00",
+  "generatedAt": "2026-08-25T04:09:56.774756+02:00",
   "source": {
     "status": "live_report",
     "message": "Měsíční finance se tahají přímo z ABRA reportu Výkaz hospodaření za měsíc za všechna střediska. Cash a závazky jsou také live z ABRA API."
@@ -170,13 +170,13 @@
       "marketing": 177728.1,
       "opex": 552825.9,
       "depreciation": 399556.0,
-      "other": -4449.35,
+      "other": -3620.02,
       "grossMargin": 1625772.82,
       "afterLogistics": 1581970.73,
       "afterMarketing": 1404242.63,
       "operatingMargin": 851416.73,
       "ebit": 451860.73,
-      "profit": 447411.38,
+      "profit": 448240.71,
       "grossMarginPct": 20.7,
       "marketingPct": 2.3,
       "logisticsPct": 0.6,
@@ -192,13 +192,13 @@
     "marketing": 177728.1,
     "opex": 552825.9,
     "depreciation": 399556.0,
-    "other": -4449.35,
+    "other": -3620.02,
     "grossMargin": 1625772.82,
     "afterLogistics": 1581970.73,
     "afterMarketing": 1404242.63,
     "operatingMargin": 851416.73,
     "ebit": 451860.73,
-    "profit": 447411.38,
+    "profit": 448240.71,
     "grossMarginPct": 20.7,
     "marketingPct": 2.3,
     "logisticsPct": 0.6,
@@ -227,9 +227,9 @@
     "profitPct": 1.2
   },
   "cash": {
-    "cashOnAccounts": 13058376.21,
-    "unpaidInvoices": 1802210.65,
-    "netCashPosition": 11256165.56,
+    "cashOnAccounts": 12750332.5,
+    "unpaidInvoices": 1467989.61,
+    "netCashPosition": 11282342.89,
     "overdueInvoicesCount": 2,
     "overdueInvoicesAmount": 7364.39,
     "largestPayables": [
@@ -248,14 +248,6 @@
         "amountTotal": 434438.4,
         "amountDue": 434438.4,
         "status": "5 dní do splatnosti"
-      },
-      {
-        "code": "PF1083/2026",
-        "vendor": "ISTA CORPORATION s.r.o.",
-        "dueDate": "25.08.2026",
-        "amountTotal": 256101.99,
-        "amountDue": 256101.99,
-        "status": "splatné dnes"
       },
       {
         "code": "PF0965/2026",
@@ -282,20 +274,28 @@
         "status": "6 dní do splatnosti"
       },
       {
-        "code": "PF1082/2026",
-        "vendor": "ISTA CORPORATION s.r.o.",
-        "dueDate": "25.08.2026",
-        "amountTotal": 60362.95,
-        "amountDue": 60362.95,
-        "status": "splatné dnes"
-      },
-      {
         "code": "PF0997/2026",
         "vendor": "coworkers.ai s.r.o.",
         "dueDate": "30.08.2026",
         "amountTotal": 43560.0,
         "amountDue": 43560.0,
         "status": "5 dní do splatnosti"
+      },
+      {
+        "code": "PF1090/2026",
+        "vendor": "FILIPES MEDIA s.r.o.",
+        "dueDate": "31.08.2026",
+        "amountTotal": 33880.0,
+        "amountDue": 33880.0,
+        "status": "6 dní do splatnosti"
+      },
+      {
+        "code": "PF1091/2026",
+        "vendor": "Rocketas s.r.o.",
+        "dueDate": "31.08.2026",
+        "amountTotal": 19693.0,
+        "amountDue": 19693.0,
+        "status": "6 dní do splatnosti"
       }
     ],
     "cashAccountsSource": {
@@ -327,15 +327,8 @@
           "accountCode": "221001",
           "accountLabel": "221001: 2901338673/2010 FIO CZK",
           "currency": "CZK: Česká koruna",
-          "balance": 1352821.14,
-          "includedBalance": 1352821.14
-        },
-        {
-          "accountCode": "221002",
-          "accountLabel": "221002: 131-1211280297/0100 KB EUR",
-          "currency": "CZK: Česká koruna",
-          "balance": 375064.18,
-          "includedBalance": 375064.18
+          "balance": 1378169.14,
+          "includedBalance": 1378169.14
         },
         {
           "accountCode": "221005",
@@ -357,6 +350,13 @@
           "currency": "CZK: Česká koruna",
           "balance": 99497.24,
           "includedBalance": 99497.24
+        },
+        {
+          "accountCode": "221002",
+          "accountLabel": "221002: 131-1211280297/0100 KB EUR",
+          "currency": "CZK: Česká koruna",
+          "balance": 41672.47,
+          "includedBalance": 41672.47
         },
         {
           "accountCode": "211001",
