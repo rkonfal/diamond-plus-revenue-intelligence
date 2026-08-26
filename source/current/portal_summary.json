@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-26T14:00:07.358795+02:00",
+  "generatedAt": "2026-08-26T17:15:05.947130+02:00",
   "config": {
     "warehouseCode": "CZPRGA",
     "outboundMaxPages": 20,
@@ -14,25 +14,25 @@
       "label": "CZ",
       "inventory": {
         "items": 792,
-        "availableStockTotal": 301040,
-        "pendingStockTotal": 1637,
+        "availableStockTotal": 316847,
+        "pendingStockTotal": 880,
         "freezeStockTotal": 0,
         "lowStockItems": 100
       },
       "outbound": {
-        "items": 400,
-        "scannedPages": 4,
+        "items": 500,
+        "scannedPages": 5,
         "topLogisticsProduct": "F1401",
-        "oldestTimestamp": "2026-08-24T21:50:03+02:00",
-        "newestTimestamp": "2026-08-26T14:00:02+02:00"
+        "oldestTimestamp": "2026-08-24T18:50:02+02:00",
+        "newestTimestamp": "2026-08-26T17:15:02+02:00"
       }
     },
     "sk": {
       "label": "SK",
       "inventory": {
         "items": 644,
-        "availableStockTotal": 47026,
-        "pendingStockTotal": 49,
+        "availableStockTotal": 46907,
+        "pendingStockTotal": 119,
         "freezeStockTotal": 0,
         "lowStockItems": 100
       },
@@ -40,8 +40,8 @@
         "items": 100,
         "scannedPages": 1,
         "topLogisticsProduct": "F1403",
-        "oldestTimestamp": "2026-08-23T10:00:16+02:00",
-        "newestTimestamp": "2026-08-26T14:00:10+02:00"
+        "oldestTimestamp": "2026-08-23T19:55:17+02:00",
+        "newestTimestamp": "2026-08-26T17:00:13+02:00"
       }
     }
   },
@@ -70,12 +70,12 @@
     ]
   },
   "expiries": {
-    "datedSkuCount": 317,
+    "datedSkuCount": 316,
     "czSkuCount": 307,
-    "skSkuCount": 294,
-    "datedRowCount": 704,
-    "czRowCount": 358,
-    "skRowCount": 346
+    "skSkuCount": 292,
+    "datedRowCount": 708,
+    "czRowCount": 364,
+    "skRowCount": 344
   },
   "storeExpiry": {
     "inputRows": 0,
@@ -92,11 +92,11 @@
     "sourceWarnings": 2
   },
   "pairing": {
-    "allCodes": 3060,
+    "allCodes": 3061,
     "pairedProducts": 356,
     "onlyInWpj": 1640,
     "onlyIn4px": 1,
-    "stockMismatch": 701,
+    "stockMismatch": 710,
     "lowAfterSales": 3,
     "manualMapped4pxAliases": 0,
     "autoMapped4pxAliases": 74
@@ -107,31 +107,31 @@
     "message": "Měsíční finance se tahají přímo z ABRA reportu Výkaz hospodaření za měsíc za všechna střediska. Cash a závazky jsou také live z ABRA API.",
     "currentMonth": {
       "label": "8/2026",
-      "revenue": 8417047.8,
-      "cogsAndFees": 8597273.28,
+      "revenue": 8529218.73,
+      "cogsAndFees": 8669451.26,
       "logistics": 43802.09,
-      "marketing": 227728.1,
-      "opex": 553209.37,
+      "marketing": 230207.44,
+      "opex": 608199.37,
       "depreciation": 399556.0,
-      "other": -3702.83,
-      "grossMargin": -180225.48,
-      "afterLogistics": -224027.57,
-      "afterMarketing": -451755.67,
-      "operatingMargin": -1004965.04,
-      "ebit": -1404521.04,
-      "profit": -1408223.87,
-      "grossMarginPct": -2.1,
+      "other": -3714.36,
+      "grossMargin": -140232.53,
+      "afterLogistics": -184034.62,
+      "afterMarketing": -414242.06,
+      "operatingMargin": -1022441.43,
+      "ebit": -1421997.43,
+      "profit": -1425711.79,
+      "grossMarginPct": -1.6,
       "marketingPct": 2.7,
       "logisticsPct": 0.5,
-      "operatingMarginPct": -11.9,
+      "operatingMarginPct": -12.0,
       "profitPct": -16.7
     },
     "cash": {
-      "cashOnAccounts": 12158893.01,
-      "unpaidInvoices": 1403602.87,
-      "netCashPosition": 10755290.14,
-      "overdueInvoicesCount": 2,
-      "overdueInvoicesAmount": 7364.39,
+      "cashOnAccounts": 12173536.55,
+      "unpaidInvoices": 1460313.84,
+      "netCashPosition": 10713222.71,
+      "overdueInvoicesCount": 1,
+      "overdueInvoicesAmount": 6987.46,
       "largestPayables": [
         {
           "code": "PF1004/2026",
@@ -174,6 +174,14 @@
           "status": "5 dní do splatnosti"
         },
         {
+          "code": "PF1119/2026",
+          "vendor": "Jindřiška Koutecká",
+          "dueDate": "01.09.2026",
+          "amountTotal": 45000.0,
+          "amountDue": 45000.0,
+          "status": "6 dní do splatnosti"
+        },
+        {
           "code": "PF0997/2026",
           "vendor": "coworkers.ai s.r.o.",
           "dueDate": "30.08.2026",
@@ -187,14 +195,6 @@
           "dueDate": "31.08.2026",
           "amountTotal": 33880.0,
           "amountDue": 33880.0,
-          "status": "5 dní do splatnosti"
-        },
-        {
-          "code": "PF1091/2026",
-          "vendor": "Rocketas s.r.o.",
-          "dueDate": "31.08.2026",
-          "amountTotal": 19693.0,
-          "amountDue": 19693.0,
           "status": "5 dní do splatnosti"
         }
       ],
@@ -227,8 +227,8 @@
             "accountCode": "221001",
             "accountLabel": "221001: 2901338673/2010 FIO CZK",
             "currency": "CZK: Česká koruna",
-            "balance": 1386546.14,
-            "includedBalance": 1386546.14
+            "balance": 1402188.68,
+            "includedBalance": 1402188.68
           },
           {
             "accountCode": "221002",
@@ -269,8 +269,8 @@
             "accountCode": "211001",
             "accountLabel": "211001: Pokladna Czk",
             "currency": "CZK: Česká koruna",
-            "balance": 14793.18,
-            "includedBalance": 14793.18
+            "balance": 13794.18,
+            "includedBalance": 13794.18
           },
           {
             "accountCode": "211000",
@@ -367,7 +367,7 @@
             "accountCode": "221001",
             "accountLabel": "221001: 2901338673/2010 FIO CZK",
             "currency": "USD: Americký dolar",
-            "balance": -37840.23,
+            "balance": -37858.51,
             "includedBalance": 0.0
           }
         ]
@@ -384,10 +384,10 @@
     "message": "Marketing se skládá z live ABRA reportu a aktuálních položek z účetního deníku. Přímé platformy přes API: Sklik, Meta Ads, Google Ads, Ecomail, Affiliate.",
     "currentMonth": {
       "label": "8/2026",
-      "performanceSpend": 62728.1,
+      "performanceSpend": 65207.44,
       "brandSpend": 165000.0,
-      "totalSpend": 227728.1,
-      "revenue": 8417047.8,
+      "totalSpend": 230207.44,
+      "revenue": 8529218.73,
       "spendShareOfRevenuePct": 2.7
     },
     "topSupplier": {
@@ -405,23 +405,23 @@
       "label": "2025-10-01 až 2026-08-26"
     },
     "summary": {
-      "noviceRevenueCzkEquiv": 17273994.0,
-      "networkRevenueCzkEquiv": 24344306.0,
+      "noviceRevenueCzkEquiv": 17284284.0,
+      "networkRevenueCzkEquiv": 24354943.0,
       "novicePartners": 50,
       "networkPartners": 50,
-      "noviceOrders": 10506.0,
-      "networkOrders": 15038.0,
-      "noviceOrderingContacts": 1772.0,
-      "networkOrderingCustomers": 3987.0,
+      "noviceOrders": 10519.0,
+      "networkOrders": 15052.0,
+      "noviceOrderingContacts": 1773.0,
+      "networkOrderingCustomers": 3988.0,
       "topNovicePartner": {
         "partnerCode": "ESHOP",
         "partnerName": "E-shop (interní)",
-        "revenueCzkEquiv": 5834492.0
+        "revenueCzkEquiv": 5841492.0
       },
       "topNetworkPartner": {
         "partnerCode": "ESHOP",
         "partnerName": "E-shop (interní)",
-        "revenueCzkEquiv": 5834492.0
+        "revenueCzkEquiv": 5841492.0
       }
     }
   },
