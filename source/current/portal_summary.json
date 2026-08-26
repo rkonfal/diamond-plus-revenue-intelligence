@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-26T08:31:36.253533+02:00",
+  "generatedAt": "2026-08-26T10:22:32.750367+02:00",
   "config": {
     "warehouseCode": "CZPRGA",
     "outboundMaxPages": 20,
@@ -14,25 +14,25 @@
       "label": "CZ",
       "inventory": {
         "items": 792,
-        "availableStockTotal": 299666,
-        "pendingStockTotal": 2129,
+        "availableStockTotal": 299260,
+        "pendingStockTotal": 2141,
         "freezeStockTotal": 0,
         "lowStockItems": 100
       },
       "outbound": {
-        "items": 300,
-        "scannedPages": 3,
+        "items": 400,
+        "scannedPages": 4,
         "topLogisticsProduct": "F1401",
-        "oldestTimestamp": "2026-08-24T22:40:05+02:00",
-        "newestTimestamp": "2026-08-26T08:30:03+02:00"
+        "oldestTimestamp": "2026-08-24T18:55:03+02:00",
+        "newestTimestamp": "2026-08-26T10:20:04+02:00"
       }
     },
     "sk": {
       "label": "SK",
       "inventory": {
         "items": 644,
-        "availableStockTotal": 39628,
-        "pendingStockTotal": 291,
+        "availableStockTotal": 39574,
+        "pendingStockTotal": 78,
         "freezeStockTotal": 0,
         "lowStockItems": 100
       },
@@ -40,8 +40,8 @@
         "items": 100,
         "scannedPages": 1,
         "topLogisticsProduct": "F1403",
-        "oldestTimestamp": "2026-08-21T11:50:12+02:00",
-        "newestTimestamp": "2026-08-26T08:30:13+02:00"
+        "oldestTimestamp": "2026-08-21T21:00:13+02:00",
+        "newestTimestamp": "2026-08-26T09:45:15+02:00"
       }
     }
   },
@@ -96,7 +96,7 @@
     "pairedProducts": 364,
     "onlyInWpj": 1632,
     "onlyIn4px": 1,
-    "stockMismatch": 692,
+    "stockMismatch": 709,
     "lowAfterSales": 3,
     "manualMapped4pxAliases": 0,
     "autoMapped4pxAliases": 74
@@ -107,29 +107,29 @@
     "message": "Měsíční finance se tahají přímo z ABRA reportu Výkaz hospodaření za měsíc za všechna střediska. Cash a závazky jsou také live z ABRA API.",
     "currentMonth": {
       "label": "8/2026",
-      "revenue": 8285555.93,
-      "cogsAndFees": 8468134.18,
+      "revenue": 8328757.68,
+      "cogsAndFees": 8511186.62,
       "logistics": 43802.09,
-      "marketing": 177728.1,
+      "marketing": 227728.1,
       "opex": 552325.9,
       "depreciation": 399556.0,
-      "other": -3620.02,
-      "grossMargin": -182578.25,
-      "afterLogistics": -226380.34,
-      "afterMarketing": -404108.44,
-      "operatingMargin": -956434.34,
-      "ebit": -1355990.34,
-      "profit": -1359610.36,
+      "other": -3702.55,
+      "grossMargin": -182428.94,
+      "afterLogistics": -226231.03,
+      "afterMarketing": -453959.13,
+      "operatingMargin": -1006285.03,
+      "ebit": -1405841.03,
+      "profit": -1409543.58,
       "grossMarginPct": -2.2,
-      "marketingPct": 2.1,
+      "marketingPct": 2.7,
       "logisticsPct": 0.5,
-      "operatingMarginPct": -11.5,
-      "profitPct": -16.4
+      "operatingMarginPct": -12.1,
+      "profitPct": -16.9
     },
     "cash": {
-      "cashOnAccounts": 12997797.85,
-      "unpaidInvoices": 1467989.61,
-      "netCashPosition": 11529808.24,
+      "cashOnAccounts": 13994237.55,
+      "unpaidInvoices": 1517989.61,
+      "netCashPosition": 12476247.94,
       "overdueInvoicesCount": 2,
       "overdueInvoicesAmount": 7364.39,
       "largestPayables": [
@@ -174,6 +174,14 @@
           "status": "5 dní do splatnosti"
         },
         {
+          "code": "PF1089/2026",
+          "vendor": "Sportovní klub basketbalu Baník Most, z. s.",
+          "dueDate": "31.08.2026",
+          "amountTotal": 50000.0,
+          "amountDue": 50000.0,
+          "status": "5 dní do splatnosti"
+        },
+        {
           "code": "PF0997/2026",
           "vendor": "coworkers.ai s.r.o.",
           "dueDate": "30.08.2026",
@@ -187,14 +195,6 @@
           "dueDate": "31.08.2026",
           "amountTotal": 33880.0,
           "amountDue": 33880.0,
-          "status": "5 dní do splatnosti"
-        },
-        {
-          "code": "PF1091/2026",
-          "vendor": "Rocketas s.r.o.",
-          "dueDate": "31.08.2026",
-          "amountTotal": 19693.0,
-          "amountDue": 19693.0,
           "status": "5 dní do splatnosti"
         }
       ],
@@ -213,8 +213,8 @@
             "accountCode": "221006",
             "accountLabel": "221006: 2202503115/2010 FIO CZK",
             "currency": "CZK: Česká koruna",
-            "balance": 2612148.94,
-            "includedBalance": 2612148.94
+            "balance": 2817148.94,
+            "includedBalance": 2817148.94
           },
           {
             "accountCode": "221118",
@@ -227,8 +227,15 @@
             "accountCode": "221001",
             "accountLabel": "221001: 2901338673/2010 FIO CZK",
             "currency": "CZK: Česká koruna",
-            "balance": 1544888.14,
-            "includedBalance": 1544888.14
+            "balance": 1354622.14,
+            "includedBalance": 1354622.14
+          },
+          {
+            "accountCode": "221111",
+            "accountLabel": "221111: 107-164902 Czk THEPAY",
+            "currency": "CZK: Česká koruna",
+            "balance": 1076712.34,
+            "includedBalance": 1076712.34
           },
           {
             "accountCode": "221005",
@@ -238,18 +245,18 @@
             "includedBalance": 232868.67
           },
           {
-            "accountCode": "221111",
-            "accountLabel": "221111: 107-164902 Czk THEPAY",
-            "currency": "CZK: Česká koruna",
-            "balance": 175279.26,
-            "includedBalance": 175279.26
-          },
-          {
             "accountCode": "221117",
             "accountLabel": "221117: Česká spořitelna",
             "currency": "CZK: Česká koruna",
             "balance": 99497.24,
             "includedBalance": 99497.24
+          },
+          {
+            "accountCode": "221112",
+            "accountLabel": "221112: 107-164902 EUR THEPAY",
+            "currency": "CZK: Česká koruna",
+            "balance": 89980.13,
+            "includedBalance": 89980.13
           },
           {
             "accountCode": "221002",
@@ -271,13 +278,6 @@
             "currency": "CZK: Česká koruna",
             "balance": 12606.0,
             "includedBalance": 12606.0
-          },
-          {
-            "accountCode": "221112",
-            "accountLabel": "221112: 107-164902 EUR THEPAY",
-            "currency": "CZK: Česká koruna",
-            "balance": 9707.51,
-            "includedBalance": 9707.51
           },
           {
             "accountCode": "221004",
@@ -384,11 +384,11 @@
     "message": "Marketing se skládá z live ABRA reportu a aktuálních položek z účetního deníku. Přímé platformy přes API: Sklik, Meta Ads, Google Ads, Ecomail, Affiliate.",
     "currentMonth": {
       "label": "8/2026",
-      "performanceSpend": 12728.1,
+      "performanceSpend": 62728.1,
       "brandSpend": 165000.0,
-      "totalSpend": 177728.1,
-      "revenue": 8285555.93,
-      "spendShareOfRevenuePct": 2.1
+      "totalSpend": 227728.1,
+      "revenue": 8328757.68,
+      "spendShareOfRevenuePct": 2.7
     },
     "topSupplier": {
       "name": "Selfcareacademy s.r.o.",
@@ -405,23 +405,23 @@
       "label": "2025-10-01 až 2026-08-26"
     },
     "summary": {
-      "noviceRevenueCzkEquiv": 17242482.0,
-      "networkRevenueCzkEquiv": 24305640.0,
+      "noviceRevenueCzkEquiv": 17254642.0,
+      "networkRevenueCzkEquiv": 24317908.0,
       "novicePartners": 50,
       "networkPartners": 50,
-      "noviceOrders": 10487.0,
-      "networkOrders": 15012.0,
+      "noviceOrders": 10494.0,
+      "networkOrders": 15020.0,
       "noviceOrderingContacts": 1771.0,
-      "networkOrderingCustomers": 3981.0,
+      "networkOrderingCustomers": 3982.0,
       "topNovicePartner": {
         "partnerCode": "ESHOP",
         "partnerName": "E-shop (interní)",
-        "revenueCzkEquiv": 5825179.0
+        "revenueCzkEquiv": 5832825.0
       },
       "topNetworkPartner": {
         "partnerCode": "ESHOP",
         "partnerName": "E-shop (interní)",
-        "revenueCzkEquiv": 5825179.0
+        "revenueCzkEquiv": 5832825.0
       }
     }
   },
