@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-26T06:00:06.093678+02:00",
+  "generatedAt": "2026-08-26T06:49:45.490218+02:00",
   "window": {
     "from": "2026-08-25T00:00:01+02:00",
     "to": "2026-08-26T00:00:00+02:00"
@@ -3772,10 +3772,10 @@
       },
       "dateCreated": "2026-08-25T22:15:16+02:00",
       "cancelled": false,
-      "isPaid": false,
+      "isPaid": true,
       "status": {
-        "id": 0,
-        "name": "nová"
+        "id": 1,
+        "name": "přijatá"
       },
       "totalPrice": {
         "withVat": 2876,
@@ -3848,6 +3848,60 @@
           "comment": "Autopilot: odeslána uživatelská zpráva: Upomínka nezaplacené - okamžité platby",
           "notifyStatus": "NO",
           "data": "\"{\\\"initiator\\\":\\\"autopilot\\\"}\""
+        },
+        {
+          "id": 7441083,
+          "adminId": null,
+          "orderStatus": "nová",
+          "date": "2026-08-26T06:39:41+02:00",
+          "comment": "Objednávka byla zaplacena.",
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7441084,
+          "adminId": null,
+          "orderStatus": "nová",
+          "date": "2026-08-26T06:39:41+02:00",
+          "comment": "<p>Dobré zprávy: Úhrada vaší objednávky 261311626 právě dorazila. Než dočtete tento e-mail, pustíme se do práce na expedici vaší objednávky tak, aby vám dorazila co nejdříve.</p><p>Těšíte se? 😍</p><div></div>",
+          "notifyStatus": "YES",
+          "data": "\"{\\\"email_type\\\": \\\"PAYMENT_SUCCESS\\\", \\\"subject\\\": \\\"\\\\ud83c\\\\udf89 Va\\\\u0161e \\\\u00fahrada objedn\\\\u00e1vky 261311626 dorazila, startujeme\\\", \\\"isAdminEmail\\\": false, \\\"attachments\\\": [\\\"order_invoice\\\"], \\\"email_id\\\": \\\"6a8e6e0daf82e\\\"}\""
+        },
+        {
+          "id": 7441085,
+          "adminId": null,
+          "orderStatus": "nová",
+          "date": "2026-08-26T06:40:03+02:00",
+          "comment": "[4PX] Objednávka byla vytvořena; ID: OC149400632608260091 tracking: 601117364079 účet: CZ",
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7441086,
+          "adminId": null,
+          "orderStatus": "přijatá",
+          "date": "2026-08-26T06:40:03+02:00",
+          "comment": null,
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7441089,
+          "adminId": null,
+          "orderStatus": "přijatá",
+          "date": "2026-08-26T06:41:55+02:00",
+          "comment": "[FlexiBee] Objednávka byla ve FlexiBee zaktualizována",
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7441091,
+          "adminId": null,
+          "orderStatus": "přijatá",
+          "date": "2026-08-26T06:42:08+02:00",
+          "comment": "[Flexi] Objednávka byla realizována ve Flexi;",
+          "notifyStatus": "NO",
+          "data": "null"
         }
       ],
       "deliveryType": {
@@ -74177,7 +74231,7 @@
     "statuses": [
       {
         "name": "přijatá",
-        "count": 169
+        "count": 170
       },
       {
         "name": "expedováno",
@@ -74189,7 +74243,7 @@
       },
       {
         "name": "nová",
-        "count": 7
+        "count": 6
       },
       {
         "name": "stornovaná",
@@ -74953,7 +75007,7 @@
         "statuses": [
           {
             "name": "přijatá",
-            "count": 169
+            "count": 170
           },
           {
             "name": "expedováno",
@@ -74965,7 +75019,7 @@
           },
           {
             "name": "nová",
-            "count": 7
+            "count": 6
           },
           {
             "name": "stornovaná",
@@ -75729,7 +75783,7 @@
         "statuses": [
           {
             "name": "přijatá",
-            "count": 151
+            "count": 152
           },
           {
             "name": "expedováno",
@@ -75737,7 +75791,7 @@
           },
           {
             "name": "nová",
-            "count": 7
+            "count": 6
           },
           {
             "name": "stornovaná",
