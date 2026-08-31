@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-31T00:32:13.333127+02:00",
+  "generatedAt": "2026-08-31T07:02:57.901852+02:00",
   "config": {
     "warehouseCode": "CZPRGA",
     "outboundMaxPages": 20,
@@ -14,8 +14,8 @@
       "label": "CZ",
       "inventory": {
         "items": 792,
-        "availableStockTotal": 354473,
-        "pendingStockTotal": 2907,
+        "availableStockTotal": 354332,
+        "pendingStockTotal": 3048,
         "freezeStockTotal": 0,
         "lowStockItems": 100
       },
@@ -23,8 +23,8 @@
         "items": 300,
         "scannedPages": 3,
         "topLogisticsProduct": "F1401",
-        "oldestTimestamp": "2026-08-29T20:20:04+02:00",
-        "newestTimestamp": "2026-08-31T00:30:05+02:00"
+        "oldestTimestamp": "2026-08-29T21:45:04+02:00",
+        "newestTimestamp": "2026-08-31T07:00:08+02:00"
       }
     },
     "sk": {
@@ -58,12 +58,13 @@
     "shipments": 296,
     "alerts": [
       "1 problematických nebo stornovaných objednávek.",
+      "1 včera prodaných produktů je teď na nízkém skladu.",
       "10 skladových pozic je v mínusu.",
-      "4 A produktů je v kritickém riziku výpadku.",
-      "V top expiracích je aspoň jedna položka do 30 dnů."
+      "4 A produktů je v kritickém riziku výpadku."
     ],
     "priorities": [
       "Prověřit A produkty v riziku výpadku (4 SKU): 135415-1, 52911, 30115.",
+      "Dohlédnout 30201 (Peeling Citrónový), aktuálně 10 ks.",
       "Projít 1 problematických nebo stornovaných objednávek z včerejška.",
       "Projít nejbližší expirace v 4PX a rozhodnout o doprodeji nebo přesunu zásoby."
     ]
@@ -95,8 +96,8 @@
     "pairedProducts": 355,
     "onlyInWpj": 1641,
     "onlyIn4px": 1,
-    "stockMismatch": 685,
-    "lowAfterSales": 2,
+    "stockMismatch": 686,
+    "lowAfterSales": 3,
     "manualMapped4pxAliases": 0,
     "autoMapped4pxAliases": 74
   },
@@ -106,29 +107,29 @@
     "message": "Měsíční finance se tahají přímo z ABRA reportu Výkaz hospodaření za měsíc za všechna střediska. Cash a závazky jsou také live z ABRA API.",
     "currentMonth": {
       "label": "8/2026",
-      "revenue": 9560269.11,
-      "cogsAndFees": 9488026.2,
+      "revenue": 9576630.26,
+      "cogsAndFees": 9498610.61,
       "logistics": 43802.09,
       "marketing": 250917.26,
       "opex": 619635.64,
       "depreciation": 399556.0,
       "other": -3900.59,
-      "grossMargin": 72242.91,
-      "afterLogistics": 28440.82,
-      "afterMarketing": -222476.44,
-      "operatingMargin": -842112.08,
-      "ebit": -1241668.08,
-      "profit": -1245568.67,
+      "grossMargin": 78019.65,
+      "afterLogistics": 34217.56,
+      "afterMarketing": -216699.7,
+      "operatingMargin": -836335.34,
+      "ebit": -1235891.34,
+      "profit": -1239791.93,
       "grossMarginPct": 0.8,
       "marketingPct": 2.6,
       "logisticsPct": 0.5,
-      "operatingMarginPct": -8.8,
-      "profitPct": -13.0
+      "operatingMarginPct": -8.7,
+      "profitPct": -12.9
     },
     "cash": {
-      "cashOnAccounts": 11794003.5,
+      "cashOnAccounts": 11888822.5,
       "unpaidInvoices": 7738113.9,
-      "netCashPosition": 4055889.6,
+      "netCashPosition": 4150708.6,
       "overdueInvoicesCount": 2,
       "overdueInvoicesAmount": 30182.46,
       "largestPayables": [
@@ -205,8 +206,8 @@
             "accountCode": "221115",
             "accountLabel": "221115: 131-3675980207/0100 KB CZK",
             "currency": "CZK: Česká koruna",
-            "balance": 3868644.04,
-            "includedBalance": 3868644.04
+            "balance": 3912311.04,
+            "includedBalance": 3912311.04
           },
           {
             "accountCode": "221006",
@@ -226,8 +227,8 @@
             "accountCode": "221001",
             "accountLabel": "221001: 2901338673/2010 FIO CZK",
             "currency": "CZK: Česká koruna",
-            "balance": 1615755.26,
-            "includedBalance": 1615755.26
+            "balance": 1666907.26,
+            "includedBalance": 1666907.26
           },
           {
             "accountCode": "221002",
@@ -386,7 +387,7 @@
       "performanceSpend": 85917.26,
       "brandSpend": 165000.0,
       "totalSpend": 250917.26,
-      "revenue": 9560269.11,
+      "revenue": 9576630.26,
       "spendShareOfRevenuePct": 2.6
     },
     "topSupplier": {
@@ -404,23 +405,23 @@
       "label": "2025-10-01 až 2026-08-31"
     },
     "summary": {
-      "noviceRevenueCzkEquiv": 17490750.0,
-      "networkRevenueCzkEquiv": 24620182.0,
+      "noviceRevenueCzkEquiv": 17494086.0,
+      "networkRevenueCzkEquiv": 24624222.0,
       "novicePartners": 50,
       "networkPartners": 50,
-      "noviceOrders": 10649.0,
-      "networkOrders": 15221.0,
+      "noviceOrders": 10653.0,
+      "networkOrders": 15227.0,
       "noviceOrderingContacts": 1788.0,
-      "networkOrderingCustomers": 4011.0,
+      "networkOrderingCustomers": 4013.0,
       "topNovicePartner": {
         "partnerCode": "ESHOP",
         "partnerName": "E-shop (interní)",
-        "revenueCzkEquiv": 5923354.0
+        "revenueCzkEquiv": 5925537.0
       },
       "topNetworkPartner": {
         "partnerCode": "ESHOP",
         "partnerName": "E-shop (interní)",
-        "revenueCzkEquiv": 5923354.0
+        "revenueCzkEquiv": 5925537.0
       }
     }
   },
