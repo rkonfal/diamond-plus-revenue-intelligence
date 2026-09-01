@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-01T10:56:50.620968+02:00",
+  "generatedAt": "2026-09-01T16:08:49.873107+02:00",
   "config": {
     "warehouseCode": "CZPRGA",
     "outboundMaxPages": 20,
@@ -14,25 +14,25 @@
       "label": "CZ",
       "inventory": {
         "items": 793,
-        "availableStockTotal": 348979,
-        "pendingStockTotal": 4236,
+        "availableStockTotal": 347734,
+        "pendingStockTotal": 1649,
         "freezeStockTotal": 0,
         "lowStockItems": 100
       },
       "outbound": {
-        "items": 600,
-        "scannedPages": 6,
+        "items": 700,
+        "scannedPages": 7,
         "topLogisticsProduct": "F1401",
-        "oldestTimestamp": "2026-08-30T22:10:04+02:00",
-        "newestTimestamp": "2026-09-01T10:50:06+02:00"
+        "oldestTimestamp": "2026-08-30T22:05:04+02:00",
+        "newestTimestamp": "2026-09-01T16:00:03+02:00"
       }
     },
     "sk": {
       "label": "SK",
       "inventory": {
         "items": 644,
-        "availableStockTotal": 44918,
-        "pendingStockTotal": 81,
+        "availableStockTotal": 44819,
+        "pendingStockTotal": 96,
         "freezeStockTotal": 0,
         "lowStockItems": 100
       },
@@ -40,8 +40,8 @@
         "items": 100,
         "scannedPages": 1,
         "topLogisticsProduct": "F1403",
-        "oldestTimestamp": "2026-08-28T13:00:21+02:00",
-        "newestTimestamp": "2026-09-01T10:50:18+02:00"
+        "oldestTimestamp": "2026-08-28T18:45:14+02:00",
+        "newestTimestamp": "2026-09-01T15:50:13+02:00"
       }
     }
   },
@@ -51,13 +51,13 @@
     "orders": 575,
     "revenueWithVat": 966546.97,
     "averageOrderValue": 1680.95,
-    "problematicOrders": 3
+    "problematicOrders": 4
   },
   "report": {
     "date": "2026-08-31",
     "shipments": 524,
     "alerts": [
-      "3 problematických nebo stornovaných objednávek.",
+      "4 problematických nebo stornovaných objednávek.",
       "2 včera prodaných produktů je teď na nízkém skladu.",
       "10 skladových pozic je v mínusu.",
       "4 A produktů je v kritickém riziku výpadku."
@@ -65,17 +65,17 @@
     "priorities": [
       "Prověřit A produkty v riziku výpadku (4 SKU): 52911, 135415-1, 30115.",
       "Dohlédnout 44402-1 (Fytogel na nohy Slaviton), aktuálně 0 ks.",
-      "Projít 3 problematických nebo stornovaných objednávek z včerejška.",
+      "Projít 4 problematických nebo stornovaných objednávek z včerejška.",
       "Projít nejbližší expirace v 4PX a rozhodnout o doprodeji nebo přesunu zásoby."
     ]
   },
   "expiries": {
-    "datedSkuCount": 312,
-    "czSkuCount": 303,
-    "skSkuCount": 291,
-    "datedRowCount": 697,
-    "czRowCount": 360,
-    "skRowCount": 337
+    "datedSkuCount": 311,
+    "czSkuCount": 302,
+    "skSkuCount": 290,
+    "datedRowCount": 694,
+    "czRowCount": 358,
+    "skRowCount": 336
   },
   "storeExpiry": {
     "inputRows": 0,
@@ -96,7 +96,7 @@
     "pairedProducts": 355,
     "onlyInWpj": 1643,
     "onlyIn4px": 1,
-    "stockMismatch": 682,
+    "stockMismatch": 680,
     "lowAfterSales": 5,
     "manualMapped4pxAliases": 0,
     "autoMapped4pxAliases": 74
@@ -107,29 +107,29 @@
     "message": "Měsíční finance se tahají přímo z ABRA reportu Výkaz hospodaření za měsíc za všechna střediska. Cash a závazky jsou také live z ABRA API.",
     "currentMonth": {
       "label": "9/2026",
-      "revenue": 115965.42,
-      "cogsAndFees": 100550.6,
+      "revenue": 309353.95,
+      "cogsAndFees": 236616.47,
       "logistics": 0.0,
       "marketing": 0.0,
       "opex": 18278.0,
       "depreciation": 399556.0,
       "other": 11702.39,
-      "grossMargin": 15414.82,
-      "afterLogistics": 15414.82,
-      "afterMarketing": 15414.82,
-      "operatingMargin": -2863.18,
-      "ebit": -402419.18,
-      "profit": -390716.79,
-      "grossMarginPct": 13.3,
+      "grossMargin": 72737.48,
+      "afterLogistics": 72737.48,
+      "afterMarketing": 72737.48,
+      "operatingMargin": 54459.48,
+      "ebit": -345096.52,
+      "profit": -333394.13,
+      "grossMarginPct": 23.5,
       "marketingPct": 0.0,
       "logisticsPct": 0.0,
-      "operatingMarginPct": -2.5,
-      "profitPct": -336.9
+      "operatingMarginPct": 17.6,
+      "profitPct": -107.8
     },
     "cash": {
-      "cashOnAccounts": 11840349.53,
+      "cashOnAccounts": 11886835.53,
       "unpaidInvoices": 2912114.88,
-      "netCashPosition": 8928234.65,
+      "netCashPosition": 8974720.65,
       "overdueInvoicesCount": 2,
       "overdueInvoicesAmount": 30182.46,
       "largestPayables": [
@@ -227,8 +227,8 @@
             "accountCode": "221001",
             "accountLabel": "221001: 2901338673/2010 FIO CZK",
             "currency": "CZK: Česká koruna",
-            "balance": 1705354.83,
-            "includedBalance": 1705354.83
+            "balance": 1751840.83,
+            "includedBalance": 1751840.83
           },
           {
             "accountCode": "221111",
@@ -387,7 +387,7 @@
       "performanceSpend": 0.0,
       "brandSpend": 0.0,
       "totalSpend": 0.0,
-      "revenue": 115965.42,
+      "revenue": 309353.95,
       "spendShareOfRevenuePct": 0.0
     },
     "topSupplier": null
@@ -402,23 +402,23 @@
       "label": "2025-10-01 až 2026-09-01"
     },
     "summary": {
-      "noviceRevenueCzkEquiv": 17699434.0,
-      "networkRevenueCzkEquiv": 24876746.0,
+      "noviceRevenueCzkEquiv": 17737611.0,
+      "networkRevenueCzkEquiv": 24918531.0,
       "novicePartners": 50,
       "networkPartners": 50,
-      "noviceOrders": 10756.0,
-      "networkOrders": 15357.0,
+      "noviceOrders": 10779.0,
+      "networkOrders": 15383.0,
       "noviceOrderingContacts": 1801.0,
-      "networkOrderingCustomers": 4029.0,
+      "networkOrderingCustomers": 4030.0,
       "topNovicePartner": {
         "partnerCode": "ESHOP",
         "partnerName": "E-shop (interní)",
-        "revenueCzkEquiv": 6055983.0
+        "revenueCzkEquiv": 6062850.0
       },
       "topNetworkPartner": {
         "partnerCode": "ESHOP",
         "partnerName": "E-shop (interní)",
-        "revenueCzkEquiv": 6055983.0
+        "revenueCzkEquiv": 6062850.0
       }
     }
   },
