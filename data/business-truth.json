@@ -22,29 +22,29 @@
   },
   "financeCurrentMonth": {
     "label": "9/2026",
-    "revenue": 4638957.16,
-    "cogsAndFees": 3838667.96,
+    "revenue": 4732890.03,
+    "cogsAndFees": 3936479.6,
     "logistics": 10583.83,
-    "marketing": 2479.34,
-    "opex": 211950.58,
+    "marketing": 202479.34,
+    "opex": 236877.29,
     "depreciation": 399556.0,
-    "other": 8352.9,
-    "grossMargin": 800289.2,
-    "afterLogistics": 789705.37,
-    "afterMarketing": 787226.03,
-    "operatingMargin": 575275.45,
-    "ebit": 175719.45,
-    "profit": 184072.35,
-    "grossMarginPct": 17.3,
-    "marketingPct": 0.1,
+    "other": 8442.33,
+    "grossMargin": 796410.43,
+    "afterLogistics": 785826.6,
+    "afterMarketing": 583347.26,
+    "operatingMargin": 346469.97,
+    "ebit": -53086.03,
+    "profit": -44643.7,
+    "grossMarginPct": 16.8,
+    "marketingPct": 4.3,
     "logisticsPct": 0.2,
-    "operatingMarginPct": 12.4,
-    "profitPct": 4.0
+    "operatingMarginPct": 7.3,
+    "profitPct": -0.9
   },
   "cash": {
-    "cashOnAccounts": 5111491.23,
-    "unpaidInvoices": 2038596.15,
-    "netCashPosition": 3072895.08,
+    "cashOnAccounts": 6424582.38,
+    "unpaidInvoices": 2304668.13,
+    "netCashPosition": 4119914.25,
     "overdueInvoicesCount": 3,
     "overdueInvoicesAmount": 208464.83,
     "largestPayables": [
@@ -63,6 +63,14 @@
         "amountTotal": 391704.85,
         "amountDue": 391704.85,
         "status": "11 dní do splatnosti"
+      },
+      {
+        "code": "PF1224/2026",
+        "vendor": "Selfcareacademy s.r.o.",
+        "dueDate": "15.09.2026",
+        "amountTotal": 242000.0,
+        "amountDue": 242000.0,
+        "status": "4 dní do splatnosti"
       },
       {
         "code": "PF1219/2026",
@@ -103,14 +111,6 @@
         "amountTotal": 86248.8,
         "amountDue": 86248.8,
         "status": "7 dní do splatnosti"
-      },
-      {
-        "code": "PF1194/2026",
-        "vendor": "General Logistics Systems Czech Republic s.r.o.",
-        "dueDate": "17.09.2026",
-        "amountTotal": 65037.75,
-        "amountDue": 65037.75,
-        "status": "6 dní do splatnosti"
       }
     ],
     "cashAccountsSource": {
@@ -125,25 +125,39 @@
           "includedBalance": 2500000.0
         },
         {
+          "accountCode": "221115",
+          "accountLabel": "221115: 131-3675980207/0100 KB CZK",
+          "currency": "CZK: Česká koruna",
+          "balance": 1609548.24,
+          "includedBalance": 1609548.24
+        },
+        {
           "accountCode": "221001",
           "accountLabel": "221001: 2901338673/2010 FIO CZK",
           "currency": "CZK: Česká koruna",
-          "balance": 1983341.79,
-          "includedBalance": 1983341.79
+          "balance": 1449804.51,
+          "includedBalance": 1449804.51
+        },
+        {
+          "accountCode": "221002",
+          "accountLabel": "221002: 131-1211280297/0100 KB EUR",
+          "currency": "CZK: Česká koruna",
+          "balance": 265688.59,
+          "includedBalance": 265688.59
         },
         {
           "accountCode": "221111",
           "accountLabel": "221111: 107-164902 Czk THEPAY",
           "currency": "CZK: Česká koruna",
-          "balance": 232044.79,
-          "includedBalance": 232044.79
+          "balance": 222937.24,
+          "includedBalance": 222937.24
         },
         {
           "accountCode": "221005",
           "accountLabel": "221005: 2501338690/2010 FIO EUR",
           "currency": "CZK: Česká koruna",
-          "balance": 150856.41,
-          "includedBalance": 150856.41
+          "balance": 168982.29,
+          "includedBalance": 168982.29
         },
         {
           "accountCode": "221117",
@@ -153,18 +167,18 @@
           "includedBalance": 99497.24
         },
         {
-          "accountCode": "221002",
-          "accountLabel": "221002: 131-1211280297/0100 KB EUR",
-          "currency": "CZK: Česká koruna",
-          "balance": 74257.28,
-          "includedBalance": 74257.28
-        },
-        {
           "accountCode": "221112",
           "accountLabel": "221112: 107-164902 EUR THEPAY",
           "currency": "CZK: Česká koruna",
-          "balance": 17107.19,
-          "includedBalance": 17107.19
+          "balance": 55950.45,
+          "includedBalance": 55950.45
+        },
+        {
+          "accountCode": "221004",
+          "accountLabel": "221004: 2601338698/2010 FIO CZK výplaty",
+          "currency": "CZK: Česká koruna",
+          "balance": 12959.0,
+          "includedBalance": 12959.0
         },
         {
           "accountCode": "211000",
@@ -181,25 +195,11 @@
           "includedBalance": 12051.31
         },
         {
-          "accountCode": "221115",
-          "accountLabel": "221115: 131-3675980207/0100 KB CZK",
-          "currency": "CZK: Česká koruna",
-          "balance": 8911.71,
-          "includedBalance": 8911.71
-        },
-        {
           "accountCode": "221006",
           "accountLabel": "221006: 2202503115/2010 FIO CZK",
           "currency": "CZK: Česká koruna",
           "balance": 7622.19,
           "includedBalance": 7622.19
-        },
-        {
-          "accountCode": "221004",
-          "accountLabel": "221004: 2601338698/2010 FIO CZK výplaty",
-          "currency": "CZK: Česká koruna",
-          "balance": 6260.0,
-          "includedBalance": 6260.0
         },
         {
           "accountCode": "221007",
@@ -274,15 +274,15 @@
         {
           "accountCode": "221001",
           "accountLabel": "221001: 2901338673/2010 FIO CZK",
-          "currency": "EUR: Euro",
-          "balance": 6606.84,
+          "currency": "PLN: Polský zlotý",
+          "balance": -3310.32,
           "includedBalance": 0.0
         },
         {
           "accountCode": "221001",
           "accountLabel": "221001: 2901338673/2010 FIO CZK",
-          "currency": "PLN: Polský zlotý",
-          "balance": -3310.32,
+          "currency": "USD: Americký dolar",
+          "balance": -38653.61,
           "includedBalance": 0.0
         }
       ]
@@ -290,14 +290,14 @@
   },
   "eshopYtdTotals": {
     "previous": {
-      "count": 101828,
-      "revenueWithVat": 157485631.61,
-      "averageOrderValue": 1546.58
+      "count": 101927,
+      "revenueWithVat": 157639463.36,
+      "averageOrderValue": 1546.59
     },
     "current": {
-      "count": 84182,
-      "revenueWithVat": 139678338.72,
-      "averageOrderValue": 1659.24
+      "count": 84250,
+      "revenueWithVat": 139809899.95,
+      "averageOrderValue": 1659.46
     }
   },
   "previousDayOrders": {
