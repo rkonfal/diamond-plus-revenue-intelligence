@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-11T00:42:43.883893+02:00",
+  "generatedAt": "2026-09-11T06:15:00.694605+02:00",
   "config": {
     "warehouseCode": "CZPRGA",
     "outboundMaxPages": 20,
@@ -14,8 +14,8 @@
       "label": "CZ",
       "inventory": {
         "items": 796,
-        "availableStockTotal": 343196,
-        "pendingStockTotal": 1909,
+        "availableStockTotal": 343117,
+        "pendingStockTotal": 1988,
         "freezeStockTotal": 0,
         "lowStockItems": 100
       },
@@ -23,16 +23,16 @@
         "items": 300,
         "scannedPages": 3,
         "topLogisticsProduct": "F1401",
-        "oldestTimestamp": "2026-09-09T19:30:07+02:00",
-        "newestTimestamp": "2026-09-11T00:40:04+02:00"
+        "oldestTimestamp": "2026-09-09T19:50:03+02:00",
+        "newestTimestamp": "2026-09-11T05:40:05+02:00"
       }
     },
     "sk": {
       "label": "SK",
       "inventory": {
         "items": 647,
-        "availableStockTotal": 42060,
-        "pendingStockTotal": 220,
+        "availableStockTotal": 42048,
+        "pendingStockTotal": 232,
         "freezeStockTotal": 0,
         "lowStockItems": 100
       },
@@ -40,8 +40,8 @@
         "items": 100,
         "scannedPages": 1,
         "topLogisticsProduct": "F1403",
-        "oldestTimestamp": "2026-09-07T20:15:38+02:00",
-        "newestTimestamp": "2026-09-11T00:15:14+02:00"
+        "oldestTimestamp": "2026-09-07T20:35:26+02:00",
+        "newestTimestamp": "2026-09-11T06:00:33+02:00"
       }
     }
   },
@@ -107,29 +107,29 @@
     "message": "Měsíční finance se tahají přímo z ABRA reportu Výkaz hospodaření za měsíc za všechna střediska. Cash a závazky jsou také live z ABRA API.",
     "currentMonth": {
       "label": "9/2026",
-      "revenue": 4627639.8,
-      "cogsAndFees": 3829358.66,
+      "revenue": 4638957.16,
+      "cogsAndFees": 3838667.96,
       "logistics": 10583.83,
       "marketing": 2479.34,
       "opex": 211950.58,
       "depreciation": 399556.0,
       "other": 8352.9,
-      "grossMargin": 798281.14,
-      "afterLogistics": 787697.31,
-      "afterMarketing": 785217.97,
-      "operatingMargin": 573267.39,
-      "ebit": 173711.39,
-      "profit": 182064.29,
+      "grossMargin": 800289.2,
+      "afterLogistics": 789705.37,
+      "afterMarketing": 787226.03,
+      "operatingMargin": 575275.45,
+      "ebit": 175719.45,
+      "profit": 184072.35,
       "grossMarginPct": 17.3,
       "marketingPct": 0.1,
       "logisticsPct": 0.2,
       "operatingMarginPct": 12.4,
-      "profitPct": 3.9
+      "profitPct": 4.0
     },
     "cash": {
-      "cashOnAccounts": 5090093.52,
+      "cashOnAccounts": 5111491.23,
       "unpaidInvoices": 2038596.15,
-      "netCashPosition": 3051497.37,
+      "netCashPosition": 3072895.08,
       "overdueInvoicesCount": 3,
       "overdueInvoicesAmount": 208464.83,
       "largestPayables": [
@@ -213,8 +213,8 @@
             "accountCode": "221001",
             "accountLabel": "221001: 2901338673/2010 FIO CZK",
             "currency": "CZK: Česká koruna",
-            "balance": 1970855.79,
-            "includedBalance": 1970855.79
+            "balance": 1983341.79,
+            "includedBalance": 1983341.79
           },
           {
             "accountCode": "221111",
@@ -264,6 +264,13 @@
             "currency": "CZK: Česká koruna",
             "balance": 12051.31,
             "includedBalance": 12051.31
+          },
+          {
+            "accountCode": "221115",
+            "accountLabel": "221115: 131-3675980207/0100 KB CZK",
+            "currency": "CZK: Česká koruna",
+            "balance": 8911.71,
+            "includedBalance": 8911.71
           },
           {
             "accountCode": "221006",
@@ -362,13 +369,6 @@
             "currency": "PLN: Polský zlotý",
             "balance": -3310.32,
             "includedBalance": 0.0
-          },
-          {
-            "accountCode": "221001",
-            "accountLabel": "221001: 2901338673/2010 FIO CZK",
-            "currency": "USD: Americký dolar",
-            "balance": -38617.06,
-            "includedBalance": 0.0
           }
         ]
       }
@@ -387,7 +387,7 @@
       "performanceSpend": 2479.34,
       "brandSpend": 0.0,
       "totalSpend": 2479.34,
-      "revenue": 4627639.8,
+      "revenue": 4638957.16,
       "spendShareOfRevenuePct": 0.1
     },
     "topSupplier": {
