@@ -76,19 +76,19 @@
     },
     "financeCurrentMonth": {
       "label": "9/2026",
-      "revenue": 5916915.37,
-      "cogsAndFees": 4852996.31,
+      "revenue": 5922730.81,
+      "cogsAndFees": 4858230.29,
       "logistics": 10583.83,
       "marketing": 202479.34,
       "opex": 240942.55,
       "depreciation": 399556.0,
       "other": 8793.63,
-      "grossMargin": 1063919.06,
-      "afterLogistics": 1053335.23,
-      "afterMarketing": 850855.89,
-      "operatingMargin": 609913.34,
-      "ebit": 210357.34,
-      "profit": 219150.97,
+      "grossMargin": 1064500.52,
+      "afterLogistics": 1053916.69,
+      "afterMarketing": 851437.35,
+      "operatingMargin": 610494.8,
+      "ebit": 210938.8,
+      "profit": 219732.43,
       "grossMarginPct": 18.0,
       "marketingPct": 3.4,
       "logisticsPct": 0.2,
@@ -344,14 +344,14 @@
     },
     "eshopYtdTotals": {
       "previous": {
-        "count": 102900,
-        "revenueWithVat": 159310776.54,
+        "count": 102902,
+        "revenueWithVat": 159313465.54,
         "averageOrderValue": 1548.21
       },
       "current": {
-        "count": 85179,
-        "revenueWithVat": 141434994.12,
-        "averageOrderValue": 1660.44
+        "count": 85185,
+        "revenueWithVat": 141441961.12,
+        "averageOrderValue": 1660.41
       }
     },
     "previousDayOrders": {
@@ -12844,16 +12844,16 @@
         "source": "live_api",
         "period": {
           "dateFrom": "2025-10-01",
-          "dateTo": "2026-09-14",
-          "label": "2025-10-01 až 2026-09-14"
+          "dateTo": "2026-09-15",
+          "label": "2025-10-01 až 2026-09-15"
         },
         "summary": {
-          "noviceRevenueCzkEquiv": 18804370.0,
-          "networkRevenueCzkEquiv": 26266451.0,
+          "noviceRevenueCzkEquiv": 18805281.0,
+          "networkRevenueCzkEquiv": 26267362.0,
           "novicePartners": 50,
           "networkPartners": 50,
-          "noviceOrders": 11438.0,
-          "networkOrders": 16254.0,
+          "noviceOrders": 11439.0,
+          "networkOrders": 16255.0,
           "noviceOrderingContacts": 1898.0,
           "networkOrderingCustomers": 4145.0,
           "topNovicePartner": {
@@ -12877,8 +12877,8 @@
             "totals": {
               "contacts": 5048.0,
               "orderingContacts": 1898.0,
-              "orders": 11438.0,
-              "revenueCzkEquiv": 18804370.0
+              "orders": 11439.0,
+              "revenueCzkEquiv": 18805281.0
             },
             "monthly": [
               {
@@ -13008,8 +13008,8 @@
                 "orderingContacts": 87.0,
                 "networkCustomers": 0.0,
                 "orderingCustomers": 0.0,
-                "orders": 696.0,
-                "revenueCzkEquiv": 1134468.0
+                "orders": 697.0,
+                "revenueCzkEquiv": 1135379.0
               }
             ],
             "topPartners": [
@@ -13182,10 +13182,10 @@
             "error": null,
             "partners": 50,
             "totals": {
-              "networkCustomers": 15267.0,
+              "networkCustomers": 15268.0,
               "orderingCustomers": 4145.0,
-              "orders": 16254.0,
-              "revenueCzkEquiv": 26266451.0
+              "orders": 16255.0,
+              "revenueCzkEquiv": 26267362.0
             },
             "monthly": [
               {
@@ -13315,8 +13315,8 @@
                 "orderingContacts": 0.0,
                 "networkCustomers": 0.0,
                 "orderingCustomers": 0.0,
-                "orders": 894.0,
-                "revenueCzkEquiv": 1427509.0
+                "orders": 895.0,
+                "revenueCzkEquiv": 1428420.0
               }
             ],
             "topPartners": [
@@ -16081,10 +16081,10 @@
         },
         "dateCreated": "2026-09-14T22:51:20+02:00",
         "cancelled": false,
-        "isPaid": false,
+        "isPaid": true,
         "status": {
-          "id": 0,
-          "name": "nová"
+          "id": 1,
+          "name": "přijatá"
         },
         "totalPrice": {
           "withVat": 79.45,
@@ -16157,6 +16157,60 @@
             "comment": "Autopilot: odeslána uživatelská zpráva: Upomínka nezaplacené - okamžité platby",
             "notifyStatus": "NO",
             "data": "\"{\\\"initiator\\\":\\\"autopilot\\\"}\""
+          },
+          {
+            "id": 7537065,
+            "adminId": null,
+            "orderStatus": "nová",
+            "date": "2026-09-15T01:33:09+02:00",
+            "comment": "Objednávka bola zaplatená.",
+            "notifyStatus": "NO",
+            "data": "null"
+          },
+          {
+            "id": 7537066,
+            "adminId": null,
+            "orderStatus": "nová",
+            "date": "2026-09-15T01:33:09+02:00",
+            "comment": "<p>Dobré správy: Úhrada vašej objedávky 261318160 práve dorazila. Okamžite sme u nás teda vyhlásili expedičný poplach. Práve teraz si svalnatí, opálení a usmievaví kolegovia obliekajú kombinézy, nasadzujú prilby a štartujú motory. A akonáhle dočítate tento email, pustí sa do práce na expedícii vašej objednávky tak, aby vám dorazila čo najskôr. Tešíte sa? 😍</p>\n\n<div></div>",
+            "notifyStatus": "YES",
+            "data": "\"{\\\"email_type\\\": \\\"PAYMENT_SUCCESS\\\", \\\"subject\\\": \\\"\\\\ud83c\\\\udf89 Va\\\\u0161a \\\\u00fahrada objedn\\\\u00e1vky 261318160 dorazila, \\\\u0161tartujeme\\\", \\\"isAdminEmail\\\": false, \\\"attachments\\\": [\\\"order_invoice\\\"], \\\"email_id\\\": \\\"6aa88435f1263\\\"}\""
+          },
+          {
+            "id": 7537067,
+            "adminId": null,
+            "orderStatus": "nová",
+            "date": "2026-09-15T01:35:10+02:00",
+            "comment": "[4PX] Objednávka byla vytvořena; ID: OC149400622609150008 tracking: 601118311911 účet: SK",
+            "notifyStatus": "NO",
+            "data": "null"
+          },
+          {
+            "id": 7537068,
+            "adminId": null,
+            "orderStatus": "přijatá",
+            "date": "2026-09-15T01:35:10+02:00",
+            "comment": null,
+            "notifyStatus": "NO",
+            "data": "null"
+          },
+          {
+            "id": 7537069,
+            "adminId": null,
+            "orderStatus": "přijatá",
+            "date": "2026-09-15T01:36:21+02:00",
+            "comment": "[FlexiBee] Objednávka byla ve FlexiBee zaktualizována",
+            "notifyStatus": "NO",
+            "data": "null"
+          },
+          {
+            "id": 7537070,
+            "adminId": null,
+            "orderStatus": "přijatá",
+            "date": "2026-09-15T01:36:25+02:00",
+            "comment": "[Flexi] Objednávka byla realizována ve Flexi;",
+            "notifyStatus": "NO",
+            "data": "null"
           }
         ],
         "deliveryType": {
