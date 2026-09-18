@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-18T12:06:10.941285+02:00",
+  "generatedAt": "2026-09-18T17:11:27.350788+02:00",
   "config": {
     "warehouseCode": "CZPRGA",
     "outboundMaxPages": 20,
@@ -14,8 +14,8 @@
       "label": "CZ",
       "inventory": {
         "items": 800,
-        "availableStockTotal": 327223,
-        "pendingStockTotal": 496,
+        "availableStockTotal": 326451,
+        "pendingStockTotal": 811,
         "freezeStockTotal": 0,
         "lowStockItems": 100
       },
@@ -23,16 +23,16 @@
         "items": 400,
         "scannedPages": 4,
         "topLogisticsProduct": "F1401",
-        "oldestTimestamp": "2026-09-16T20:30:03+02:00",
-        "newestTimestamp": "2026-09-18T12:05:03+02:00"
+        "oldestTimestamp": "2026-09-16T22:45:04+02:00",
+        "newestTimestamp": "2026-09-18T17:10:02+02:00"
       }
     },
     "sk": {
       "label": "SK",
       "inventory": {
         "items": 651,
-        "availableStockTotal": 40719,
-        "pendingStockTotal": 152,
+        "availableStockTotal": 40708,
+        "pendingStockTotal": 10,
         "freezeStockTotal": 0,
         "lowStockItems": 100
       },
@@ -40,8 +40,8 @@
         "items": 100,
         "scannedPages": 1,
         "topLogisticsProduct": "F1403",
-        "oldestTimestamp": "2026-09-14T16:50:16+02:00",
-        "newestTimestamp": "2026-09-18T12:00:40+02:00"
+        "oldestTimestamp": "2026-09-14T16:55:19+02:00",
+        "newestTimestamp": "2026-09-18T13:50:22+02:00"
       }
     }
   },
@@ -72,10 +72,10 @@
   "expiries": {
     "datedSkuCount": 314,
     "czSkuCount": 307,
-    "skSkuCount": 295,
-    "datedRowCount": 691,
-    "czRowCount": 356,
-    "skRowCount": 335
+    "skSkuCount": 294,
+    "datedRowCount": 689,
+    "czRowCount": 355,
+    "skRowCount": 334
   },
   "storeExpiry": {
     "inputRows": 0,
@@ -92,11 +92,11 @@
     "sourceWarnings": 2
   },
   "pairing": {
-    "allCodes": 3087,
+    "allCodes": 3083,
     "pairedProducts": 356,
     "onlyInWpj": 1656,
     "onlyIn4px": 1,
-    "stockMismatch": 688,
+    "stockMismatch": 689,
     "lowAfterSales": 4,
     "manualMapped4pxAliases": 0,
     "autoMapped4pxAliases": 77
@@ -107,29 +107,29 @@
     "message": "Měsíční finance se tahají přímo z ABRA reportu Výkaz hospodaření za měsíc za všechna střediska. Cash a závazky jsou také live z ABRA API.",
     "currentMonth": {
       "label": "9/2026",
-      "revenue": 7474657.2,
-      "cogsAndFees": 6035369.56,
+      "revenue": 7594989.79,
+      "cogsAndFees": 6118400.69,
       "logistics": 23530.16,
       "marketing": 213493.68,
       "opex": 243888.06,
       "depreciation": 399556.0,
-      "other": 7792.46,
-      "grossMargin": 1439287.64,
-      "afterLogistics": 1415757.48,
-      "afterMarketing": 1202263.8,
-      "operatingMargin": 958375.74,
-      "ebit": 558819.74,
-      "profit": 566612.2,
-      "grossMarginPct": 19.3,
-      "marketingPct": 2.9,
+      "other": 7903.83,
+      "grossMargin": 1476589.1,
+      "afterLogistics": 1453058.94,
+      "afterMarketing": 1239565.26,
+      "operatingMargin": 995677.2,
+      "ebit": 596121.2,
+      "profit": 604025.03,
+      "grossMarginPct": 19.4,
+      "marketingPct": 2.8,
       "logisticsPct": 0.3,
-      "operatingMarginPct": 12.8,
-      "profitPct": 7.6
+      "operatingMarginPct": 13.1,
+      "profitPct": 8.0
     },
     "cash": {
-      "cashOnAccounts": 8734234.17,
+      "cashOnAccounts": 8809407.35,
       "unpaidInvoices": 2249618.34,
-      "netCashPosition": 6484615.83,
+      "netCashPosition": 6559789.01,
       "overdueInvoicesCount": 4,
       "overdueInvoicesAmount": 208950.03,
       "largestPayables": [
@@ -206,8 +206,8 @@
             "accountCode": "221001",
             "accountLabel": "221001: 2901338673/2010 FIO CZK",
             "currency": "CZK: Česká koruna",
-            "balance": 2539710.67,
-            "includedBalance": 2539710.67
+            "balance": 2584140.67,
+            "includedBalance": 2584140.67
           },
           {
             "accountCode": "221118",
@@ -255,8 +255,8 @@
             "accountCode": "221002",
             "accountLabel": "221002: 131-1211280297/0100 KB EUR",
             "currency": "CZK: Česká koruna",
-            "balance": 31038.23,
-            "includedBalance": 31038.23
+            "balance": 61781.41,
+            "includedBalance": 61781.41
           },
           {
             "accountCode": "221004",
@@ -387,8 +387,8 @@
       "performanceSpend": 4958.68,
       "brandSpend": 208535.0,
       "totalSpend": 213493.68,
-      "revenue": 7474657.2,
-      "spendShareOfRevenuePct": 2.9
+      "revenue": 7594989.79,
+      "spendShareOfRevenuePct": 2.8
     },
     "topSupplier": {
       "name": "Selfcareacademy s.r.o.",
@@ -405,23 +405,23 @@
       "label": "2025-10-01 až 2026-09-18"
     },
     "summary": {
-      "noviceRevenueCzkEquiv": 19209281.0,
-      "networkRevenueCzkEquiv": 26782487.0,
+      "noviceRevenueCzkEquiv": 19242278.0,
+      "networkRevenueCzkEquiv": 26826868.0,
       "novicePartners": 50,
       "networkPartners": 50,
-      "noviceOrders": 11670.0,
-      "networkOrders": 16541.0,
-      "noviceOrderingContacts": 1955.0,
-      "networkOrderingCustomers": 4217.0,
+      "noviceOrders": 11685.0,
+      "networkOrders": 16559.0,
+      "noviceOrderingContacts": 1960.0,
+      "networkOrderingCustomers": 4222.0,
       "topNovicePartner": {
         "partnerCode": "ESHOP",
         "partnerName": "E-shop (interní)",
-        "revenueCzkEquiv": 6713508.0
+        "revenueCzkEquiv": 6733652.0
       },
       "topNetworkPartner": {
         "partnerCode": "ESHOP",
         "partnerName": "E-shop (interní)",
-        "revenueCzkEquiv": 6713508.0
+        "revenueCzkEquiv": 6733652.0
       }
     }
   },
@@ -518,12 +518,12 @@
     "summary": {
       "windowDays": 90,
       "twistoBatchCount": 28,
-      "twistoPaidBatchCount": 27,
+      "twistoPaidBatchCount": 28,
       "bankTwistoTransactionCount": 28,
       "matchedBatchCount": 28,
       "unmatchedBatchCount": 0,
       "unmatchedBankTransactions": 0,
-      "twistoPaidAmount": 136878.0,
+      "twistoPaidAmount": 143589.0,
       "twistoMatchedAmount": 143589.0,
       "bankReceivedAmount": 143589.0,
       "openBatchAmount": 0,
