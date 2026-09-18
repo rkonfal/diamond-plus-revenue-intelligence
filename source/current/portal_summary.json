@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-18T06:53:46.050389+02:00",
+  "generatedAt": "2026-09-18T12:06:10.941285+02:00",
   "config": {
     "warehouseCode": "CZPRGA",
     "outboundMaxPages": 20,
@@ -14,25 +14,25 @@
       "label": "CZ",
       "inventory": {
         "items": 800,
-        "availableStockTotal": 327566,
-        "pendingStockTotal": 2189,
+        "availableStockTotal": 327223,
+        "pendingStockTotal": 496,
         "freezeStockTotal": 0,
         "lowStockItems": 100
       },
       "outbound": {
-        "items": 300,
-        "scannedPages": 3,
+        "items": 400,
+        "scannedPages": 4,
         "topLogisticsProduct": "F1401",
-        "oldestTimestamp": "2026-09-16T21:30:04+02:00",
-        "newestTimestamp": "2026-09-18T06:50:02+02:00"
+        "oldestTimestamp": "2026-09-16T20:30:03+02:00",
+        "newestTimestamp": "2026-09-18T12:05:03+02:00"
       }
     },
     "sk": {
       "label": "SK",
       "inventory": {
         "items": 651,
-        "availableStockTotal": 40888,
-        "pendingStockTotal": 243,
+        "availableStockTotal": 40719,
+        "pendingStockTotal": 152,
         "freezeStockTotal": 0,
         "lowStockItems": 100
       },
@@ -40,8 +40,8 @@
         "items": 100,
         "scannedPages": 1,
         "topLogisticsProduct": "F1403",
-        "oldestTimestamp": "2026-09-14T12:50:19+02:00",
-        "newestTimestamp": "2026-09-17T21:25:12+02:00"
+        "oldestTimestamp": "2026-09-14T16:50:16+02:00",
+        "newestTimestamp": "2026-09-18T12:00:40+02:00"
       }
     }
   },
@@ -70,11 +70,11 @@
     ]
   },
   "expiries": {
-    "datedSkuCount": 313,
-    "czSkuCount": 306,
-    "skSkuCount": 296,
-    "datedRowCount": 688,
-    "czRowCount": 353,
+    "datedSkuCount": 314,
+    "czSkuCount": 307,
+    "skSkuCount": 295,
+    "datedRowCount": 691,
+    "czRowCount": 356,
     "skRowCount": 335
   },
   "storeExpiry": {
@@ -92,14 +92,14 @@
     "sourceWarnings": 2
   },
   "pairing": {
-    "allCodes": 3081,
-    "pairedProducts": 355,
-    "onlyInWpj": 1657,
-    "onlyIn4px": 3,
-    "stockMismatch": 701,
+    "allCodes": 3087,
+    "pairedProducts": 356,
+    "onlyInWpj": 1656,
+    "onlyIn4px": 1,
+    "stockMismatch": 688,
     "lowAfterSales": 4,
     "manualMapped4pxAliases": 0,
-    "autoMapped4pxAliases": 74
+    "autoMapped4pxAliases": 77
   },
   "finance": {
     "ready": true,
@@ -107,29 +107,29 @@
     "message": "Měsíční finance se tahají přímo z ABRA reportu Výkaz hospodaření za měsíc za všechna střediska. Cash a závazky jsou také live z ABRA API.",
     "currentMonth": {
       "label": "9/2026",
-      "revenue": 7369935.46,
-      "cogsAndFees": 5939589.73,
+      "revenue": 7474657.2,
+      "cogsAndFees": 6035369.56,
       "logistics": 23530.16,
       "marketing": 213493.68,
       "opex": 243888.06,
       "depreciation": 399556.0,
-      "other": 7653.83,
-      "grossMargin": 1430345.73,
-      "afterLogistics": 1406815.57,
-      "afterMarketing": 1193321.89,
-      "operatingMargin": 949433.83,
-      "ebit": 549877.83,
-      "profit": 557531.66,
-      "grossMarginPct": 19.4,
+      "other": 7792.46,
+      "grossMargin": 1439287.64,
+      "afterLogistics": 1415757.48,
+      "afterMarketing": 1202263.8,
+      "operatingMargin": 958375.74,
+      "ebit": 558819.74,
+      "profit": 566612.2,
+      "grossMarginPct": 19.3,
       "marketingPct": 2.9,
       "logisticsPct": 0.3,
-      "operatingMarginPct": 12.9,
+      "operatingMarginPct": 12.8,
       "profitPct": 7.6
     },
     "cash": {
-      "cashOnAccounts": 7604621.17,
+      "cashOnAccounts": 8734234.17,
       "unpaidInvoices": 2249618.34,
-      "netCashPosition": 5355002.83,
+      "netCashPosition": 6484615.83,
       "overdueInvoicesCount": 4,
       "overdueInvoicesAmount": 208950.03,
       "largestPayables": [
@@ -203,18 +203,18 @@
         "message": "Cash na účtech a pokladnách je počítán živě z ABRA obratové předvahy pro účty 221 a 211, ze CZK řádků a se započtením kladných zůstatků.",
         "accounts": [
           {
+            "accountCode": "221001",
+            "accountLabel": "221001: 2901338673/2010 FIO CZK",
+            "currency": "CZK: Česká koruna",
+            "balance": 2539710.67,
+            "includedBalance": 2539710.67
+          },
+          {
             "accountCode": "221118",
             "accountLabel": "221118: JT banka",
             "currency": "CZK: Česká koruna",
             "balance": 2500000.0,
             "includedBalance": 2500000.0
-          },
-          {
-            "accountCode": "221001",
-            "accountLabel": "221001: 2901338673/2010 FIO CZK",
-            "currency": "CZK: Česká koruna",
-            "balance": 2495528.67,
-            "includedBalance": 2495528.67
           },
           {
             "accountCode": "221115",
@@ -227,8 +227,15 @@
             "accountCode": "221111",
             "accountLabel": "221111: 107-164902 Czk THEPAY",
             "currency": "CZK: Česká koruna",
-            "balance": 561637.4,
-            "includedBalance": 561637.4
+            "balance": 1508384.65,
+            "includedBalance": 1508384.65
+          },
+          {
+            "accountCode": "221112",
+            "accountLabel": "221112: 107-164902 EUR THEPAY",
+            "currency": "CZK: Česká koruna",
+            "balance": 231424.37,
+            "includedBalance": 231424.37
           },
           {
             "accountCode": "221005",
@@ -243,13 +250,6 @@
             "currency": "CZK: Česká koruna",
             "balance": 99497.24,
             "includedBalance": 99497.24
-          },
-          {
-            "accountCode": "221112",
-            "accountLabel": "221112: 107-164902 EUR THEPAY",
-            "currency": "CZK: Česká koruna",
-            "balance": 92740.62,
-            "includedBalance": 92740.62
           },
           {
             "accountCode": "221002",
@@ -387,7 +387,7 @@
       "performanceSpend": 4958.68,
       "brandSpend": 208535.0,
       "totalSpend": 213493.68,
-      "revenue": 7369935.46,
+      "revenue": 7474657.2,
       "spendShareOfRevenuePct": 2.9
     },
     "topSupplier": {
@@ -405,23 +405,23 @@
       "label": "2025-10-01 až 2026-09-18"
     },
     "summary": {
-      "noviceRevenueCzkEquiv": 19196600.0,
-      "networkRevenueCzkEquiv": 26765180.0,
+      "noviceRevenueCzkEquiv": 19209281.0,
+      "networkRevenueCzkEquiv": 26782487.0,
       "novicePartners": 50,
       "networkPartners": 50,
-      "noviceOrders": 11659.0,
-      "networkOrders": 16527.0,
-      "noviceOrderingContacts": 1953.0,
-      "networkOrderingCustomers": 4215.0,
+      "noviceOrders": 11670.0,
+      "networkOrders": 16541.0,
+      "noviceOrderingContacts": 1955.0,
+      "networkOrderingCustomers": 4217.0,
       "topNovicePartner": {
         "partnerCode": "ESHOP",
         "partnerName": "E-shop (interní)",
-        "revenueCzkEquiv": 6705256.0
+        "revenueCzkEquiv": 6713508.0
       },
       "topNetworkPartner": {
         "partnerCode": "ESHOP",
         "partnerName": "E-shop (interní)",
-        "revenueCzkEquiv": 6705256.0
+        "revenueCzkEquiv": 6713508.0
       }
     }
   },
@@ -517,22 +517,22 @@
     "status": "ok",
     "summary": {
       "windowDays": 90,
-      "twistoBatchCount": 27,
+      "twistoBatchCount": 28,
       "twistoPaidBatchCount": 27,
-      "bankTwistoTransactionCount": 27,
-      "matchedBatchCount": 27,
+      "bankTwistoTransactionCount": 28,
+      "matchedBatchCount": 28,
       "unmatchedBatchCount": 0,
       "unmatchedBankTransactions": 0,
       "twistoPaidAmount": 136878.0,
-      "twistoMatchedAmount": 136878.0,
-      "bankReceivedAmount": 136878.0,
+      "twistoMatchedAmount": 143589.0,
+      "bankReceivedAmount": 143589.0,
       "openBatchAmount": 0,
       "bankVsTwistoDelta": 0.0,
       "wpjTwistoOrderCount": 2,
       "wpjTwistoOrderAmount": 2059.0,
-      "twistoOrderAmount": 705505.0,
-      "historicalMatchedBatchAmount": 136878.0,
-      "wpjVsTwistoOrderDelta": -703446.0,
+      "twistoOrderAmount": 712216.0,
+      "historicalMatchedBatchAmount": 143589.0,
+      "wpjVsTwistoOrderDelta": -710157.0,
       "oldestOpenBatchDays": null
     },
     "source": {
