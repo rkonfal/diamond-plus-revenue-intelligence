@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-19T02:08:11.829314+02:00",
+  "generatedAt": "2026-09-19T06:45:25.746499+02:00",
   "window": {
     "from": "2026-09-18T00:00:01+02:00",
     "to": "2026-09-19T00:00:00+02:00"
@@ -12361,10 +12361,10 @@
       },
       "dateCreated": "2026-09-18T17:24:33+02:00",
       "cancelled": false,
-      "isPaid": false,
+      "isPaid": true,
       "status": {
-        "id": 0,
-        "name": "nová"
+        "id": 1,
+        "name": "přijatá"
       },
       "totalPrice": {
         "withVat": 3468,
@@ -12417,6 +12417,60 @@
           "orderStatus": "nová",
           "date": "2026-09-18T17:26:54+02:00",
           "comment": "[FlexiBee] Objednávka byla nahrána do FlexiBee; ID: 708030",
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7558228,
+          "adminId": null,
+          "orderStatus": "nová",
+          "date": "2026-09-19T07:09:22+02:00",
+          "comment": "Modul FioBank - příchozí platba č. 27851161339. Komentář plátce: Lidaříková Miroslava.",
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7558229,
+          "adminId": null,
+          "orderStatus": "nová",
+          "date": "2026-09-19T07:09:22+02:00",
+          "comment": "<p>Dobré zprávy: Úhrada vaší objednávky 261319349 právě dorazila. Než dočtete tento e-mail, pustíme se do práce na expedici vaší objednávky tak, aby vám dorazila co nejdříve.</p><p>Těšíte se? 😍</p><div></div>",
+          "notifyStatus": "YES",
+          "data": "\"{\\\"email_type\\\": \\\"PAYMENT_SUCCESS\\\", \\\"subject\\\": \\\"\\\\ud83c\\\\udf89 Va\\\\u0161e \\\\u00fahrada objedn\\\\u00e1vky 261319349 dorazila, startujeme\\\", \\\"isAdminEmail\\\": false, \\\"attachments\\\": [\\\"order_invoice\\\"], \\\"email_id\\\": \\\"6aae190225aba\\\"}\""
+        },
+        {
+          "id": 7558230,
+          "adminId": null,
+          "orderStatus": "nová",
+          "date": "2026-09-19T07:10:03+02:00",
+          "comment": "[4PX] Objednávka byla vytvořena; ID: OC149400632609190049 tracking: 601118505454 účet: CZ",
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7558231,
+          "adminId": null,
+          "orderStatus": "přijatá",
+          "date": "2026-09-19T07:10:03+02:00",
+          "comment": null,
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7558232,
+          "adminId": null,
+          "orderStatus": "přijatá",
+          "date": "2026-09-19T07:11:48+02:00",
+          "comment": "[FlexiBee] Objednávka byla ve FlexiBee zaktualizována",
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7558233,
+          "adminId": null,
+          "orderStatus": "přijatá",
+          "date": "2026-09-19T07:12:03+02:00",
+          "comment": "[Flexi] Objednávka byla realizována ve Flexi;",
           "notifyStatus": "NO",
           "data": "null"
         }
@@ -50810,7 +50864,7 @@
     "statuses": [
       {
         "name": "přijatá",
-        "count": 108
+        "count": 109
       },
       {
         "name": "expedováno",
@@ -50818,7 +50872,7 @@
       },
       {
         "name": "nová",
-        "count": 12
+        "count": 11
       },
       {
         "name": "doručeno",
@@ -51549,7 +51603,7 @@
         "statuses": [
           {
             "name": "přijatá",
-            "count": 108
+            "count": 109
           },
           {
             "name": "expedováno",
@@ -51557,7 +51611,7 @@
           },
           {
             "name": "nová",
-            "count": 12
+            "count": 11
           },
           {
             "name": "doručeno",
@@ -52288,7 +52342,7 @@
         "statuses": [
           {
             "name": "přijatá",
-            "count": 104
+            "count": 105
           },
           {
             "name": "expedováno",
@@ -52296,7 +52350,7 @@
           },
           {
             "name": "nová",
-            "count": 12
+            "count": 11
           },
           {
             "name": "doručeno",
