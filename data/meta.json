@@ -9,47 +9,50 @@
   "sourceStatus": {
     "portal": {
       "ready": true,
-      "mode": "live_channels",
-      "message": "Marketing je teď skládaný přímo z live marketing API. Revenue benchmark bere z finance snapshotu. Přímé platformy přes API: Sklik, Meta Ads, Google Ads, Ecomail, Ecomail, Affiliate.",
+      "mode": "live_report",
+      "message": "Marketing se skládá z live ABRA reportu a aktuálních položek z účetního deníku. Přímé platformy přes API: Sklik, Meta Ads, Google Ads, Ecomail, Affiliate.",
       "currentMonth": {
-        "label": "3/2026",
-        "performanceSpend": 247455.98,
-        "brandSpend": 0.0,
-        "totalSpend": 247455.98,
-        "revenue": 16130000.0,
-        "spendShareOfRevenuePct": 1.5
+        "label": "9/2026",
+        "performanceSpend": 4958.68,
+        "brandSpend": 208535.0,
+        "totalSpend": 213493.68,
+        "revenue": 7834471.31,
+        "spendShareOfRevenuePct": 2.7
       },
-      "topSupplier": null
+      "topSupplier": {
+        "name": "Selfcareacademy s.r.o.",
+        "amount": 200000.0
+      }
     },
     "finance": {
       "ready": true,
-      "mode": "mixed_live_legacy",
-      "message": "Závazky z přijatých faktur jsou tahány živě z ABRA API. Cash na účtech zatím zůstává na legacy snapshotu. Účetní deník fallbacknul na poslední snapshot (Remote end closed connection without response). Live cash adapter selhal (<urlopen error [Errno 61] Connection refused>).",
+      "mode": "live_report",
+      "message": "Měsíční finance se tahají přímo z ABRA reportu Výkaz hospodaření za měsíc za všechna střediska. Cash a závazky jsou také live z ABRA API.",
       "currentMonth": {
-        "label": "3/2026",
-        "revenue": 16130000,
-        "cogsAndFees": 11566057.87,
-        "logistics": 100848.43,
-        "marketing": 245438.02,
-        "opex": 1019389.35,
-        "depreciation": 385502.0,
-        "other": -1175388.08,
-        "grossMargin": 4563942.13,
-        "afterLogistics": 4463093.7,
-        "afterMarketing": 4217655.68,
-        "operatingMargin": 3198266.33,
-        "ebit": 2812764.33,
-        "profit": 1637376.25,
-        "grossMarginPct": 28.3,
-        "marketingPct": 1.5,
-        "logisticsPct": 0.6,
-        "operatingMarginPct": 19.8,
-        "profitPct": 10.2
+        "label": "9/2026",
+        "revenue": 7834471.31,
+        "cogsAndFees": 6286675.32,
+        "logistics": 23530.16,
+        "marketing": 213493.68,
+        "opex": 243888.06,
+        "depreciation": 399556.0,
+        "other": 7903.83,
+        "grossMargin": 1547795.99,
+        "afterLogistics": 1524265.83,
+        "afterMarketing": 1310772.15,
+        "operatingMargin": 1066884.09,
+        "ebit": 667328.09,
+        "profit": 675231.92,
+        "grossMarginPct": 19.8,
+        "marketingPct": 2.7,
+        "logisticsPct": 0.3,
+        "operatingMarginPct": 13.6,
+        "profitPct": 8.6
       },
       "cash": {
-        "cashOnAccounts": 10255308.0,
+        "cashOnAccounts": 8894427.02,
         "unpaidInvoices": 2249618.34,
-        "netCashPosition": 8675748.0,
+        "netCashPosition": 6644808.68,
         "overdueInvoicesCount": 4,
         "overdueInvoicesAmount": 208950.03,
         "largestPayables": [
@@ -119,13 +122,183 @@
           }
         ],
         "cashAccountsSource": {
-          "status": "error",
-          "message": "Live cash z ABRA obratové předvahy se nepodařilo načíst (<urlopen error [Errno 61] Connection refused>)."
+          "status": "live",
+          "message": "Cash na účtech a pokladnách je počítán živě z ABRA obratové předvahy pro účty 221 a 211, ze CZK řádků a se započtením kladných zůstatků.",
+          "accounts": [
+            {
+              "accountCode": "221001",
+              "accountLabel": "221001: 2901338673/2010 FIO CZK",
+              "currency": "CZK: Česká koruna",
+              "balance": 2667451.67,
+              "includedBalance": 2667451.67
+            },
+            {
+              "accountCode": "221118",
+              "accountLabel": "221118: JT banka",
+              "currency": "CZK: Česká koruna",
+              "balance": 2500000.0,
+              "includedBalance": 2500000.0
+            },
+            {
+              "accountCode": "221115",
+              "accountLabel": "221115: 131-3675980207/0100 KB CZK",
+              "currency": "CZK: Česká koruna",
+              "balance": 1579108.19,
+              "includedBalance": 1579108.19
+            },
+            {
+              "accountCode": "221111",
+              "accountLabel": "221111: 107-164902 Czk THEPAY",
+              "currency": "CZK: Česká koruna",
+              "balance": 1508384.65,
+              "includedBalance": 1508384.65
+            },
+            {
+              "accountCode": "221112",
+              "accountLabel": "221112: 107-164902 EUR THEPAY",
+              "currency": "CZK: Česká koruna",
+              "balance": 231424.37,
+              "includedBalance": 231424.37
+            },
+            {
+              "accountCode": "221005",
+              "accountLabel": "221005: 2501338690/2010 FIO EUR",
+              "currency": "CZK: Česká koruna",
+              "balance": 198172.25,
+              "includedBalance": 198172.25
+            },
+            {
+              "accountCode": "221117",
+              "accountLabel": "221117: Česká spořitelna",
+              "currency": "CZK: Česká koruna",
+              "balance": 99497.24,
+              "includedBalance": 99497.24
+            },
+            {
+              "accountCode": "221002",
+              "accountLabel": "221002: 131-1211280297/0100 KB EUR",
+              "currency": "CZK: Česká koruna",
+              "balance": 61781.41,
+              "includedBalance": 61781.41
+            },
+            {
+              "accountCode": "221004",
+              "accountLabel": "221004: 2601338698/2010 FIO CZK výplaty",
+              "currency": "CZK: Česká koruna",
+              "balance": 12959.0,
+              "includedBalance": 12959.0
+            },
+            {
+              "accountCode": "211000",
+              "accountLabel": "211000: Pokladna - Klinika Biorezonance",
+              "currency": "CZK: Česká koruna",
+              "balance": 12606.0,
+              "includedBalance": 12606.0
+            },
+            {
+              "accountCode": "211001",
+              "accountLabel": "211001: Pokladna Czk",
+              "currency": "CZK: Česká koruna",
+              "balance": 8484.31,
+              "includedBalance": 8484.31
+            },
+            {
+              "accountCode": "221006",
+              "accountLabel": "221006: 2202503115/2010 FIO CZK",
+              "currency": "CZK: Česká koruna",
+              "balance": 7622.19,
+              "includedBalance": 7622.19
+            },
+            {
+              "accountCode": "221007",
+              "accountLabel": "221007: 2002503110/2010 FIO CZK",
+              "currency": "CZK: Česká koruna",
+              "balance": 4554.65,
+              "includedBalance": 4554.65
+            },
+            {
+              "accountCode": "221116",
+              "accountLabel": "221116: Bankovní účty",
+              "currency": "CZK: Česká koruna",
+              "balance": 1880.57,
+              "includedBalance": 1880.57
+            },
+            {
+              "accountCode": "221113",
+              "accountLabel": "221113: 203-164902 Czk THEPAY klinika",
+              "currency": "CZK: Česká koruna",
+              "balance": 500.0,
+              "includedBalance": 500.0
+            },
+            {
+              "accountCode": "221120",
+              "accountLabel": "221120: Bankovní účty",
+              "currency": "CZK: Česká koruna",
+              "balance": 0.42,
+              "includedBalance": 0.42
+            },
+            {
+              "accountCode": "221008",
+              "accountLabel": "221008: 2901338702/2010 FIO CZK",
+              "currency": "CZK: Česká koruna",
+              "balance": 0.1,
+              "includedBalance": 0.1
+            },
+            {
+              "accountCode": "211001",
+              "accountLabel": "211001: Pokladna Czk",
+              "currency": "EUR: Euro",
+              "balance": -240.0,
+              "includedBalance": 0.0
+            },
+            {
+              "accountCode": "211002",
+              "accountLabel": "211002: Pokladna Eur",
+              "currency": "CZK: Česká koruna",
+              "balance": -482.4,
+              "includedBalance": 0.0
+            },
+            {
+              "accountCode": "211002",
+              "accountLabel": "211002: Pokladna Eur",
+              "currency": "EUR: Euro",
+              "balance": -20.0,
+              "includedBalance": 0.0
+            },
+            {
+              "accountCode": "221000",
+              "accountLabel": "221000: Bankovní účty",
+              "currency": "EUR: Euro",
+              "balance": -1057.49,
+              "includedBalance": 0.0
+            },
+            {
+              "accountCode": "221000",
+              "accountLabel": "221000: Bankovní účty",
+              "currency": "CZK: Česká koruna",
+              "balance": 0.0,
+              "includedBalance": 0.0
+            },
+            {
+              "accountCode": "221001",
+              "accountLabel": "221001: 2901338673/2010 FIO CZK",
+              "currency": "CHF: Švýcarský frank",
+              "balance": -217.02,
+              "includedBalance": 0.0
+            },
+            {
+              "accountCode": "221001",
+              "accountLabel": "221001: 2901338673/2010 FIO CZK",
+              "currency": "PLN: Polský zlotý",
+              "balance": -3310.32,
+              "includedBalance": 0.0
+            }
+          ]
         }
       },
       "reportExport": {
-        "status": "error",
-        "message": "ABRA report Výkaz hospodaření za měsíc se nepodařilo stáhnout (<urlopen error [Errno 61] Connection refused>)."
+        "status": "live",
+        "message": "Report Výkaz hospodaření za měsíc se tahá přímo z ABRA report endpointu."
       }
     },
     "wpj": {

@@ -1,50 +1,50 @@
 {
   "financePreviousMonth": {
-    "label": "2/2026",
-    "revenue": 13602558,
-    "cogsAndFees": 9398910,
-    "logistics": 1102853,
-    "marketing": 911050,
-    "opex": 2102171.8,
-    "depreciation": 385502,
-    "other": 220487,
-    "grossMargin": 4203648,
-    "afterLogistics": 3100795,
-    "afterMarketing": 2189745,
-    "operatingMargin": 87573.2,
-    "ebit": -297928.8,
-    "profit": -77441.8,
-    "grossMarginPct": 30.9,
-    "marketingPct": 6.7,
-    "logisticsPct": 8.1,
-    "operatingMarginPct": 0.6,
-    "profitPct": -0.6
+    "label": "8/2026",
+    "revenue": 11284752.38,
+    "cogsAndFees": 10474858.0,
+    "logistics": 451563.2,
+    "marketing": 534514.99,
+    "opex": 1944279.89,
+    "depreciation": 399556.0,
+    "other": -40584.54,
+    "grossMargin": 809894.38,
+    "afterLogistics": 358331.18,
+    "afterMarketing": -176183.81,
+    "operatingMargin": -2120463.7,
+    "ebit": -2520019.7,
+    "profit": -2560604.24,
+    "grossMarginPct": 7.2,
+    "marketingPct": 4.7,
+    "logisticsPct": 4.0,
+    "operatingMarginPct": -18.8,
+    "profitPct": -22.7
   },
   "financeCurrentMonth": {
-    "label": "3/2026",
-    "revenue": 16130000,
-    "cogsAndFees": 11566057.87,
-    "logistics": 100848.43,
-    "marketing": 245438.02,
-    "opex": 1019389.35,
-    "depreciation": 385502.0,
-    "other": -1175388.08,
-    "grossMargin": 4563942.13,
-    "afterLogistics": 4463093.7,
-    "afterMarketing": 4217655.68,
-    "operatingMargin": 3198266.33,
-    "ebit": 2812764.33,
-    "profit": 1637376.25,
-    "grossMarginPct": 28.3,
-    "marketingPct": 1.5,
-    "logisticsPct": 0.6,
-    "operatingMarginPct": 19.8,
-    "profitPct": 10.2
+    "label": "9/2026",
+    "revenue": 7834471.31,
+    "cogsAndFees": 6286675.32,
+    "logistics": 23530.16,
+    "marketing": 213493.68,
+    "opex": 243888.06,
+    "depreciation": 399556.0,
+    "other": 7903.83,
+    "grossMargin": 1547795.99,
+    "afterLogistics": 1524265.83,
+    "afterMarketing": 1310772.15,
+    "operatingMargin": 1066884.09,
+    "ebit": 667328.09,
+    "profit": 675231.92,
+    "grossMarginPct": 19.8,
+    "marketingPct": 2.7,
+    "logisticsPct": 0.3,
+    "operatingMarginPct": 13.6,
+    "profitPct": 8.6
   },
   "cash": {
-    "cashOnAccounts": 10255308.0,
+    "cashOnAccounts": 8894427.02,
     "unpaidInvoices": 2249618.34,
-    "netCashPosition": 8675748.0,
+    "netCashPosition": 6644808.68,
     "overdueInvoicesCount": 4,
     "overdueInvoicesAmount": 208950.03,
     "largestPayables": [
@@ -114,20 +114,190 @@
       }
     ],
     "cashAccountsSource": {
-      "status": "error",
-      "message": "Live cash z ABRA obratové předvahy se nepodařilo načíst (<urlopen error [Errno 61] Connection refused>)."
+      "status": "live",
+      "message": "Cash na účtech a pokladnách je počítán živě z ABRA obratové předvahy pro účty 221 a 211, ze CZK řádků a se započtením kladných zůstatků.",
+      "accounts": [
+        {
+          "accountCode": "221001",
+          "accountLabel": "221001: 2901338673/2010 FIO CZK",
+          "currency": "CZK: Česká koruna",
+          "balance": 2667451.67,
+          "includedBalance": 2667451.67
+        },
+        {
+          "accountCode": "221118",
+          "accountLabel": "221118: JT banka",
+          "currency": "CZK: Česká koruna",
+          "balance": 2500000.0,
+          "includedBalance": 2500000.0
+        },
+        {
+          "accountCode": "221115",
+          "accountLabel": "221115: 131-3675980207/0100 KB CZK",
+          "currency": "CZK: Česká koruna",
+          "balance": 1579108.19,
+          "includedBalance": 1579108.19
+        },
+        {
+          "accountCode": "221111",
+          "accountLabel": "221111: 107-164902 Czk THEPAY",
+          "currency": "CZK: Česká koruna",
+          "balance": 1508384.65,
+          "includedBalance": 1508384.65
+        },
+        {
+          "accountCode": "221112",
+          "accountLabel": "221112: 107-164902 EUR THEPAY",
+          "currency": "CZK: Česká koruna",
+          "balance": 231424.37,
+          "includedBalance": 231424.37
+        },
+        {
+          "accountCode": "221005",
+          "accountLabel": "221005: 2501338690/2010 FIO EUR",
+          "currency": "CZK: Česká koruna",
+          "balance": 198172.25,
+          "includedBalance": 198172.25
+        },
+        {
+          "accountCode": "221117",
+          "accountLabel": "221117: Česká spořitelna",
+          "currency": "CZK: Česká koruna",
+          "balance": 99497.24,
+          "includedBalance": 99497.24
+        },
+        {
+          "accountCode": "221002",
+          "accountLabel": "221002: 131-1211280297/0100 KB EUR",
+          "currency": "CZK: Česká koruna",
+          "balance": 61781.41,
+          "includedBalance": 61781.41
+        },
+        {
+          "accountCode": "221004",
+          "accountLabel": "221004: 2601338698/2010 FIO CZK výplaty",
+          "currency": "CZK: Česká koruna",
+          "balance": 12959.0,
+          "includedBalance": 12959.0
+        },
+        {
+          "accountCode": "211000",
+          "accountLabel": "211000: Pokladna - Klinika Biorezonance",
+          "currency": "CZK: Česká koruna",
+          "balance": 12606.0,
+          "includedBalance": 12606.0
+        },
+        {
+          "accountCode": "211001",
+          "accountLabel": "211001: Pokladna Czk",
+          "currency": "CZK: Česká koruna",
+          "balance": 8484.31,
+          "includedBalance": 8484.31
+        },
+        {
+          "accountCode": "221006",
+          "accountLabel": "221006: 2202503115/2010 FIO CZK",
+          "currency": "CZK: Česká koruna",
+          "balance": 7622.19,
+          "includedBalance": 7622.19
+        },
+        {
+          "accountCode": "221007",
+          "accountLabel": "221007: 2002503110/2010 FIO CZK",
+          "currency": "CZK: Česká koruna",
+          "balance": 4554.65,
+          "includedBalance": 4554.65
+        },
+        {
+          "accountCode": "221116",
+          "accountLabel": "221116: Bankovní účty",
+          "currency": "CZK: Česká koruna",
+          "balance": 1880.57,
+          "includedBalance": 1880.57
+        },
+        {
+          "accountCode": "221113",
+          "accountLabel": "221113: 203-164902 Czk THEPAY klinika",
+          "currency": "CZK: Česká koruna",
+          "balance": 500.0,
+          "includedBalance": 500.0
+        },
+        {
+          "accountCode": "221120",
+          "accountLabel": "221120: Bankovní účty",
+          "currency": "CZK: Česká koruna",
+          "balance": 0.42,
+          "includedBalance": 0.42
+        },
+        {
+          "accountCode": "221008",
+          "accountLabel": "221008: 2901338702/2010 FIO CZK",
+          "currency": "CZK: Česká koruna",
+          "balance": 0.1,
+          "includedBalance": 0.1
+        },
+        {
+          "accountCode": "211001",
+          "accountLabel": "211001: Pokladna Czk",
+          "currency": "EUR: Euro",
+          "balance": -240.0,
+          "includedBalance": 0.0
+        },
+        {
+          "accountCode": "211002",
+          "accountLabel": "211002: Pokladna Eur",
+          "currency": "CZK: Česká koruna",
+          "balance": -482.4,
+          "includedBalance": 0.0
+        },
+        {
+          "accountCode": "211002",
+          "accountLabel": "211002: Pokladna Eur",
+          "currency": "EUR: Euro",
+          "balance": -20.0,
+          "includedBalance": 0.0
+        },
+        {
+          "accountCode": "221000",
+          "accountLabel": "221000: Bankovní účty",
+          "currency": "EUR: Euro",
+          "balance": -1057.49,
+          "includedBalance": 0.0
+        },
+        {
+          "accountCode": "221000",
+          "accountLabel": "221000: Bankovní účty",
+          "currency": "CZK: Česká koruna",
+          "balance": 0.0,
+          "includedBalance": 0.0
+        },
+        {
+          "accountCode": "221001",
+          "accountLabel": "221001: 2901338673/2010 FIO CZK",
+          "currency": "CHF: Švýcarský frank",
+          "balance": -217.02,
+          "includedBalance": 0.0
+        },
+        {
+          "accountCode": "221001",
+          "accountLabel": "221001: 2901338673/2010 FIO CZK",
+          "currency": "PLN: Polský zlotý",
+          "balance": -3310.32,
+          "includedBalance": 0.0
+        }
+      ]
     }
   },
   "eshopYtdTotals": {
     "previous": {
-      "count": 104631,
-      "revenueWithVat": 162191027.51,
-      "averageOrderValue": 1550.12
+      "count": 104635,
+      "revenueWithVat": 162196028.51,
+      "averageOrderValue": 1550.11
     },
     "current": {
-      "count": 86517,
-      "revenueWithVat": 143828459.8,
-      "averageOrderValue": 1662.43
+      "count": 86521,
+      "revenueWithVat": 143833700.8,
+      "averageOrderValue": 1662.41
     }
   },
   "previousDayOrders": {
@@ -163,13 +333,13 @@
   },
   "contributionTruth": {
     "previousMonth": {
-      "revenue": 13602558.0,
-      "grossMargin": 4203648.0,
-      "afterMarketing": 2189745.0,
-      "operatingMargin": 87573.2,
-      "profit": -77441.8,
-      "afterMarketingPct": 16.1,
-      "operatingMarginPct": 0.64,
+      "revenue": 11284752.38,
+      "grossMargin": 809894.38,
+      "afterMarketing": -176183.81,
+      "operatingMargin": -2120463.7,
+      "profit": -2560604.24,
+      "afterMarketingPct": -1.56,
+      "operatingMarginPct": -18.79,
       "paidMediaSpend": 279758.24,
       "retentionRevenueProxy": 3858229.2,
       "retentionOrdersProxy": 2594
@@ -201,38 +371,38 @@
       "nextUnlock": "Napojit refundy a vratky podle order_id a produktový cost nebo marži podle SKU, aby ratio model nahradila měřená contribution."
     },
     "financeReferenceMonth": {
-      "label": "2/2026",
-      "revenue": 13602558.0,
-      "grossMargin": 4203648.0,
-      "logistics": 1102853.0,
-      "marketing": 911050.0,
-      "opex": 2102171.8,
-      "depreciation": 385502.0,
-      "operatingMargin": 87573.2,
-      "profit": -77441.8
+      "label": "8/2026",
+      "revenue": 11284752.38,
+      "grossMargin": 809894.38,
+      "logistics": 451563.2,
+      "marketing": 534514.99,
+      "opex": 1944279.89,
+      "depreciation": 399556.0,
+      "operatingMargin": -2120463.7,
+      "profit": -2560604.24
     },
     "ratioModel": {
-      "grossMarginPct": 30.9,
-      "logisticsPct": 8.11,
-      "marketingPct": 6.7,
-      "operatingMarginPct": 0.64,
-      "profitPct": -0.57
+      "grossMarginPct": 7.18,
+      "logisticsPct": 4.0,
+      "marketingPct": 4.74,
+      "operatingMarginPct": -18.79,
+      "profitPct": -22.69
     },
     "ytdEstimated": {
       "grossRevenueWithVat": 328142630.16,
       "netRevenueAfterCancellations": 318462422.57,
       "cancellationLeakage": 9680207.59,
-      "estimatedGrossMargin": 98415601.37,
-      "estimatedAfterLogistics": 72595660.87,
-      "estimatedAfterMarketing": 51266202.84,
-      "estimatedOperatingContribution": 2050259.48,
-      "estimatedProfitContribution": -1813063.63
+      "estimatedGrossMargin": 22855701.0,
+      "estimatedAfterLogistics": 10112318.98,
+      "estimatedAfterMarketing": 0.0,
+      "estimatedOperatingContribution": -59840746.53,
+      "estimatedProfitContribution": -72261774.3
     },
     "customerContributionSplitYtd": {
       "newRevenueWithVat": 12813539.29,
       "returningRevenueWithVat": 315329090.87,
-      "estimatedNewAfterMarketing": 2062728.47,
-      "estimatedReturningAfterMarketing": 50761797.9,
+      "estimatedNewAfterMarketing": 0.0,
+      "estimatedReturningAfterMarketing": 0.0,
       "retentionRevenueProxyPreviousMonth": 3858229.2
     },
     "warnings": [
