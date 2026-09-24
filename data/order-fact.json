@@ -13770,10 +13770,10 @@
       },
       "dateCreated": "2026-09-23T20:14:42+02:00",
       "cancelled": false,
-      "isPaid": false,
+      "isPaid": true,
       "status": {
-        "id": 0,
-        "name": "nová"
+        "id": 1,
+        "name": "přijatá"
       },
       "totalPrice": {
         "withVat": 21.9,
@@ -13846,6 +13846,60 @@
           "comment": "Autopilot: odeslána uživatelská zpráva: Upomínka nezaplacené - okamžité platby",
           "notifyStatus": "NO",
           "data": "\"{\\\"initiator\\\":\\\"autopilot\\\"}\""
+        },
+        {
+          "id": 7582490,
+          "adminId": null,
+          "orderStatus": "nová",
+          "date": "2026-09-24T12:11:25+02:00",
+          "comment": "Objednávka bola zaplatená.",
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7582491,
+          "adminId": null,
+          "orderStatus": "nová",
+          "date": "2026-09-24T12:11:25+02:00",
+          "comment": "<p>Dobré správy: Úhrada vašej objedávky 261320986 práve dorazila. Okamžite sme u nás teda vyhlásili expedičný poplach. Práve teraz si svalnatí, opálení a usmievaví kolegovia obliekajú kombinézy, nasadzujú prilby a štartujú motory. A akonáhle dočítate tento email, pustí sa do práce na expedícii vašej objednávky tak, aby vám dorazila čo najskôr. Tešíte sa? 😍</p>\n\n<div></div>",
+          "notifyStatus": "YES",
+          "data": "\"{\\\"email_type\\\": \\\"PAYMENT_SUCCESS\\\", \\\"subject\\\": \\\"\\\\ud83c\\\\udf89 Va\\\\u0161a \\\\u00fahrada objedn\\\\u00e1vky 261320986 dorazila, \\\\u0161tartujeme\\\", \\\"isAdminEmail\\\": false, \\\"attachments\\\": [\\\"order_invoice\\\"], \\\"email_id\\\": \\\"6ab4f74d841d2\\\"}\""
+        },
+        {
+          "id": 7582492,
+          "adminId": null,
+          "orderStatus": "nová",
+          "date": "2026-09-24T12:11:43+02:00",
+          "comment": "[FlexiBee] Objednávka byla ve FlexiBee zaktualizována",
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7582494,
+          "adminId": null,
+          "orderStatus": "nová",
+          "date": "2026-09-24T12:11:47+02:00",
+          "comment": "[Flexi] Objednávka byla realizována ve Flexi;",
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7582517,
+          "adminId": null,
+          "orderStatus": "nová",
+          "date": "2026-09-24T12:15:39+02:00",
+          "comment": "[4PX] Objednávka byla vytvořena; ID: OC149400622609240025 tracking: 601118762715 účet: SK",
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7582518,
+          "adminId": null,
+          "orderStatus": "přijatá",
+          "date": "2026-09-24T12:15:39+02:00",
+          "comment": null,
+          "notifyStatus": "NO",
+          "data": "null"
         }
       ],
       "deliveryType": {
@@ -29971,8 +30025,8 @@
       "cancelled": false,
       "isPaid": true,
       "status": {
-        "id": 1,
-        "name": "přijatá"
+        "id": 3,
+        "name": "expedováno"
       },
       "totalPrice": {
         "withVat": 49.3,
@@ -30079,6 +30133,51 @@
           "orderStatus": "přijatá",
           "date": "2026-09-23T16:56:50+02:00",
           "comment": "[Flexi] Objednávka byla realizována ve Flexi;",
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7583097,
+          "adminId": null,
+          "orderStatus": "přijatá",
+          "date": "2026-09-24T14:35:23+02:00",
+          "comment": "[4PX] Číslo balíku: 13915098308526",
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7583098,
+          "adminId": null,
+          "orderStatus": "přijatá",
+          "date": "2026-09-24T14:35:23+02:00",
+          "comment": "[4PX] Změna stavu: carrier_picked_up",
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7583099,
+          "adminId": null,
+          "orderStatus": "expedováno",
+          "date": "2026-09-24T14:35:23+02:00",
+          "comment": "<p><p dir=\"ltr\">Vašu objednávku dnes prevzala <strong>spoločnosť DPD</strong>, ktorá vás čoskoro kontaktuje <strong>ohľadom presného termínu vyzdvihnutia v pobočke DPD PickUp</strong>.<br />\nBuďte pripravení na prevzatie a <strong>sledujte</strong> svoj balík <strong>online</strong> <a href=\"https://www.dpdgroup.com/sk/mydpd/my-parcels/track?parcelNumber=13915098308526\">tu</a> pod číslom <strong>13915098308526</strong>.</p>\n\n<p dir=\"ltr\">Za objednávku ste zaplatili prostredníctvom bezpečnej online platby.</p>\n</p>\n\n<p> </p>\n\n<p>Nezabudnite, že sme tu pre Vás a že sa na nás môžete kedykoľvek obrátiť.</p>",
+          "notifyStatus": "YES",
+          "data": "\"{\\\"email_type\\\": \\\"Zpr\\\\u00e1vy u\\\\u017eivatel\\\\u016fm: Odesl\\\\u00e1no\\\", \\\"subject\\\": \\\"Kr\\\\u00e1lovstv\\\\u00ed tianDe- objedn\\\\u00e1vka 261320916 je na ceste k V\\\\u00e1m\\\", \\\"isAdminEmail\\\": false, \\\"initiator\\\": \\\"autopilot\\\", \\\"email_id\\\": \\\"6ab5190bcb5b6\\\"}\""
+        },
+        {
+          "id": 7583100,
+          "adminId": null,
+          "orderStatus": "expedováno",
+          "date": "2026-09-24T14:35:23+02:00",
+          "comment": "Autopilot: odeslána uživatelská zpráva: Odesláno",
+          "notifyStatus": "NO",
+          "data": "\"{\\\"initiator\\\":\\\"autopilot\\\"}\""
+        },
+        {
+          "id": 7583101,
+          "adminId": null,
+          "orderStatus": "expedováno",
+          "date": "2026-09-24T14:35:23+02:00",
+          "comment": null,
           "notifyStatus": "NO",
           "data": "null"
         }
@@ -47861,8 +47960,8 @@
       "cancelled": false,
       "isPaid": true,
       "status": {
-        "id": 3,
-        "name": "expedováno"
+        "id": 4,
+        "name": "připraveno k vyzvednutí"
       },
       "totalPrice": {
         "withVat": 567,
@@ -48013,6 +48112,24 @@
           "adminId": null,
           "orderStatus": "expedováno",
           "date": "2026-09-23T21:10:11+02:00",
+          "comment": null,
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7582614,
+          "adminId": null,
+          "orderStatus": "expedováno",
+          "date": "2026-09-24T12:40:18+02:00",
+          "comment": "[4PX] Změna stavu: ready_to_pickup",
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7582615,
+          "adminId": null,
+          "orderStatus": "připraveno k vyzvednutí",
+          "date": "2026-09-24T12:40:19+02:00",
           "comment": null,
           "notifyStatus": "NO",
           "data": "null"
@@ -48387,8 +48504,8 @@
       "cancelled": false,
       "isPaid": true,
       "status": {
-        "id": 3,
-        "name": "expedováno"
+        "id": 5,
+        "name": "doručeno"
       },
       "totalPrice": {
         "withVat": 577,
@@ -48533,6 +48650,24 @@
           "comment": null,
           "notifyStatus": "NO",
           "data": "null"
+        },
+        {
+          "id": 7583363,
+          "adminId": null,
+          "orderStatus": "expedováno",
+          "date": "2026-09-24T15:20:21+02:00",
+          "comment": "[4PX] Změna stavu: delivered",
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7583364,
+          "adminId": null,
+          "orderStatus": "doručeno",
+          "date": "2026-09-24T15:20:21+02:00",
+          "comment": null,
+          "notifyStatus": "NO",
+          "data": "null"
         }
       ],
       "deliveryType": {
@@ -48647,8 +48782,8 @@
       "cancelled": false,
       "isPaid": true,
       "status": {
-        "id": 3,
-        "name": "expedováno"
+        "id": 5,
+        "name": "doručeno"
       },
       "totalPrice": {
         "withVat": 1746,
@@ -48799,6 +48934,24 @@
           "adminId": null,
           "orderStatus": "expedováno",
           "date": "2026-09-23T21:20:14+02:00",
+          "comment": null,
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7583322,
+          "adminId": null,
+          "orderStatus": "expedováno",
+          "date": "2026-09-24T15:10:23+02:00",
+          "comment": "[4PX] Změna stavu: delivered",
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7583323,
+          "adminId": null,
+          "orderStatus": "doručeno",
+          "date": "2026-09-24T15:10:23+02:00",
           "comment": null,
           "notifyStatus": "NO",
           "data": "null"
@@ -49176,8 +49329,8 @@
       "cancelled": false,
       "isPaid": true,
       "status": {
-        "id": 3,
-        "name": "expedováno"
+        "id": 4,
+        "name": "připraveno k vyzvednutí"
       },
       "totalPrice": {
         "withVat": 740,
@@ -49311,6 +49464,24 @@
           "orderStatus": "přijatá",
           "date": "2026-09-23T21:15:10+02:00",
           "comment": "[4PX] Číslo balíku: NB1139241503C",
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7582478,
+          "adminId": null,
+          "orderStatus": "expedováno",
+          "date": "2026-09-24T12:10:18+02:00",
+          "comment": "[4PX] Změna stavu: ready_to_pickup",
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7582479,
+          "adminId": null,
+          "orderStatus": "připraveno k vyzvednutí",
+          "date": "2026-09-24T12:10:18+02:00",
+          "comment": null,
           "notifyStatus": "NO",
           "data": "null"
         }
@@ -49986,8 +50157,8 @@
       "cancelled": false,
       "isPaid": false,
       "status": {
-        "id": 3,
-        "name": "expedováno"
+        "id": 5,
+        "name": "doručeno"
       },
       "totalPrice": {
         "withVat": 750,
@@ -50105,6 +50276,33 @@
           "comment": null,
           "notifyStatus": "NO",
           "data": "null"
+        },
+        {
+          "id": 7583037,
+          "adminId": null,
+          "orderStatus": "expedováno",
+          "date": "2026-09-24T14:25:20+02:00",
+          "comment": "[4PX] Změna stavu: delivered",
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7583038,
+          "adminId": null,
+          "orderStatus": "doručeno",
+          "date": "2026-09-24T14:25:20+02:00",
+          "comment": null,
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7583054,
+          "adminId": null,
+          "orderStatus": "doručeno",
+          "date": "2026-09-24T14:26:45+02:00",
+          "comment": "[Flexi] Objednávka byla realizována ve Flexi;",
+          "notifyStatus": "NO",
+          "data": "null"
         }
       ],
       "deliveryType": {
@@ -50159,8 +50357,8 @@
       "cancelled": false,
       "isPaid": true,
       "status": {
-        "id": 3,
-        "name": "expedováno"
+        "id": 5,
+        "name": "doručeno"
       },
       "totalPrice": {
         "withVat": 2908,
@@ -50302,6 +50500,24 @@
           "adminId": null,
           "orderStatus": "expedováno",
           "date": "2026-09-23T21:20:14+02:00",
+          "comment": null,
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7583263,
+          "adminId": null,
+          "orderStatus": "expedováno",
+          "date": "2026-09-24T15:00:25+02:00",
+          "comment": "[4PX] Změna stavu: delivered",
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7583264,
+          "adminId": null,
+          "orderStatus": "doručeno",
+          "date": "2026-09-24T15:00:25+02:00",
           "comment": null,
           "notifyStatus": "NO",
           "data": "null"
@@ -50503,8 +50719,8 @@
       "cancelled": false,
       "isPaid": true,
       "status": {
-        "id": 3,
-        "name": "expedováno"
+        "id": 4,
+        "name": "připraveno k vyzvednutí"
       },
       "totalPrice": {
         "withVat": 986,
@@ -50655,6 +50871,24 @@
           "adminId": null,
           "orderStatus": "expedováno",
           "date": "2026-09-23T21:15:10+02:00",
+          "comment": null,
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7583067,
+          "adminId": null,
+          "orderStatus": "expedováno",
+          "date": "2026-09-24T14:30:49+02:00",
+          "comment": "[4PX] Změna stavu: ready_to_pickup",
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7583068,
+          "adminId": null,
+          "orderStatus": "připraveno k vyzvednutí",
+          "date": "2026-09-24T14:30:49+02:00",
           "comment": null,
           "notifyStatus": "NO",
           "data": "null"
@@ -51083,8 +51317,8 @@
       "cancelled": false,
       "isPaid": true,
       "status": {
-        "id": 4,
-        "name": "připraveno k vyzvednutí"
+        "id": 5,
+        "name": "doručeno"
       },
       "totalPrice": {
         "withVat": 2040,
@@ -51247,6 +51481,24 @@
           "comment": null,
           "notifyStatus": "NO",
           "data": "null"
+        },
+        {
+          "id": 7582589,
+          "adminId": null,
+          "orderStatus": "připraveno k vyzvednutí",
+          "date": "2026-09-24T12:30:21+02:00",
+          "comment": "[4PX] Změna stavu: delivered",
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7582590,
+          "adminId": null,
+          "orderStatus": "doručeno",
+          "date": "2026-09-24T12:30:21+02:00",
+          "comment": null,
+          "notifyStatus": "NO",
+          "data": "null"
         }
       ],
       "deliveryType": {
@@ -51385,8 +51637,8 @@
       "cancelled": false,
       "isPaid": true,
       "status": {
-        "id": 3,
-        "name": "expedováno"
+        "id": 5,
+        "name": "doručeno"
       },
       "totalPrice": {
         "withVat": 1529,
@@ -51531,6 +51783,24 @@
           "comment": null,
           "notifyStatus": "NO",
           "data": "null"
+        },
+        {
+          "id": 7583029,
+          "adminId": null,
+          "orderStatus": "expedováno",
+          "date": "2026-09-24T14:25:20+02:00",
+          "comment": "[4PX] Změna stavu: delivered",
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7583030,
+          "adminId": null,
+          "orderStatus": "doručeno",
+          "date": "2026-09-24T14:25:20+02:00",
+          "comment": null,
+          "notifyStatus": "NO",
+          "data": "null"
         }
       ],
       "deliveryType": {
@@ -51669,8 +51939,8 @@
       "cancelled": false,
       "isPaid": true,
       "status": {
-        "id": 3,
-        "name": "expedováno"
+        "id": 5,
+        "name": "doručeno"
       },
       "totalPrice": {
         "withVat": 3079,
@@ -51821,6 +52091,24 @@
           "adminId": null,
           "orderStatus": "expedováno",
           "date": "2026-09-23T21:30:15+02:00",
+          "comment": null,
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7583261,
+          "adminId": null,
+          "orderStatus": "expedováno",
+          "date": "2026-09-24T15:00:25+02:00",
+          "comment": "[4PX] Změna stavu: delivered",
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7583262,
+          "adminId": null,
+          "orderStatus": "doručeno",
+          "date": "2026-09-24T15:00:25+02:00",
           "comment": null,
           "notifyStatus": "NO",
           "data": "null"
@@ -52521,8 +52809,8 @@
       "cancelled": false,
       "isPaid": false,
       "status": {
-        "id": 4,
-        "name": "připraveno k vyzvednutí"
+        "id": 5,
+        "name": "doručeno"
       },
       "totalPrice": {
         "withVat": 3369,
@@ -52656,6 +52944,33 @@
           "orderStatus": "připraveno k vyzvednutí",
           "date": "2026-09-24T10:35:16+02:00",
           "comment": null,
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7583106,
+          "adminId": null,
+          "orderStatus": "připraveno k vyzvednutí",
+          "date": "2026-09-24T14:35:23+02:00",
+          "comment": "[4PX] Změna stavu: delivered",
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7583107,
+          "adminId": null,
+          "orderStatus": "doručeno",
+          "date": "2026-09-24T14:35:23+02:00",
+          "comment": null,
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7583131,
+          "adminId": null,
+          "orderStatus": "doručeno",
+          "date": "2026-09-24T14:37:29+02:00",
+          "comment": "[Flexi] Objednávka byla realizována ve Flexi;",
           "notifyStatus": "NO",
           "data": "null"
         }
@@ -53188,8 +53503,8 @@
       "cancelled": false,
       "isPaid": true,
       "status": {
-        "id": 3,
-        "name": "expedováno"
+        "id": 5,
+        "name": "doručeno"
       },
       "totalPrice": {
         "withVat": 2434,
@@ -53343,6 +53658,24 @@
           "comment": "<p><p dir=\"ltr\">Vaši objednávku si dnes převzala<strong> Česká pošta</strong>, která Vás bude brzy kontaktovat ohledně přesného termínu doručení.<br />\r\nBuďte na převzetí připraven/á a <strong>sledujte</strong> svůj balíček <strong>online</strong> <a href=\"https://www.postaonline.cz/trackandtrace/-/zasilka/cislo?parcelNumbers=DR1139312108C\">zde</a> pod číslem <strong>DR1139312108C</strong>.</p>\r\n\r\n<p dir=\"ltr\">Objednávku jste <strong>uhradil/a bezpečnou platbou online.</strong></p></p><p> </p><p>Nezapomeňte, že jsme tu pro Vás, a že se na nás můžete kdykoliv obrátit. </p>",
           "notifyStatus": "YES",
           "data": "\"{\\\"email_type\\\": \\\"Zpr\\\\u00e1vy u\\\\u017eivatel\\\\u016fm: Odesl\\\\u00e1no\\\", \\\"subject\\\": \\\"Kr\\\\u00e1lovstv\\\\u00ed tianDe - objedn\\\\u00e1vka 261320820 je na cest\\\\u011b k V\\\\u00e1m\\\", \\\"isAdminEmail\\\": false, \\\"initiator\\\": \\\"autopilot\\\", \\\"email_id\\\": \\\"6ab428c77dff9\\\"}\""
+        },
+        {
+          "id": 7582747,
+          "adminId": null,
+          "orderStatus": "expedováno",
+          "date": "2026-09-24T13:20:23+02:00",
+          "comment": "[4PX] Změna stavu: delivered",
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7582748,
+          "adminId": null,
+          "orderStatus": "doručeno",
+          "date": "2026-09-24T13:20:23+02:00",
+          "comment": null,
+          "notifyStatus": "NO",
+          "data": "null"
         }
       ],
       "deliveryType": {
@@ -54465,8 +54798,8 @@
       "cancelled": false,
       "isPaid": true,
       "status": {
-        "id": 3,
-        "name": "expedováno"
+        "id": 5,
+        "name": "doručeno"
       },
       "totalPrice": {
         "withVat": 3065,
@@ -54608,6 +54941,42 @@
           "adminId": null,
           "orderStatus": "expedováno",
           "date": "2026-09-23T19:55:04+02:00",
+          "comment": null,
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7583041,
+          "adminId": null,
+          "orderStatus": "expedováno",
+          "date": "2026-09-24T14:25:21+02:00",
+          "comment": "[4PX] Změna stavu: ready_to_pickup",
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7583042,
+          "adminId": null,
+          "orderStatus": "připraveno k vyzvednutí",
+          "date": "2026-09-24T14:25:21+02:00",
+          "comment": null,
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7583247,
+          "adminId": null,
+          "orderStatus": "připraveno k vyzvednutí",
+          "date": "2026-09-24T14:55:22+02:00",
+          "comment": "[4PX] Změna stavu: delivered",
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7583248,
+          "adminId": null,
+          "orderStatus": "doručeno",
+          "date": "2026-09-24T14:55:22+02:00",
           "comment": null,
           "notifyStatus": "NO",
           "data": "null"
@@ -55167,8 +55536,8 @@
       "cancelled": false,
       "isPaid": true,
       "status": {
-        "id": 3,
-        "name": "expedováno"
+        "id": 5,
+        "name": "doručeno"
       },
       "totalPrice": {
         "withVat": 1632,
@@ -55310,6 +55679,24 @@
           "adminId": null,
           "orderStatus": "expedováno",
           "date": "2026-09-23T20:10:07+02:00",
+          "comment": null,
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7582844,
+          "adminId": null,
+          "orderStatus": "expedováno",
+          "date": "2026-09-24T13:40:21+02:00",
+          "comment": "[4PX] Změna stavu: delivered",
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7582845,
+          "adminId": null,
+          "orderStatus": "doručeno",
+          "date": "2026-09-24T13:40:21+02:00",
           "comment": null,
           "notifyStatus": "NO",
           "data": "null"
@@ -55475,8 +55862,8 @@
       "cancelled": false,
       "isPaid": true,
       "status": {
-        "id": 3,
-        "name": "expedováno"
+        "id": 5,
+        "name": "doručeno"
       },
       "totalPrice": {
         "withVat": 85.8,
@@ -55621,6 +56008,24 @@
           "comment": null,
           "notifyStatus": "NO",
           "data": "null"
+        },
+        {
+          "id": 7582581,
+          "adminId": null,
+          "orderStatus": "expedováno",
+          "date": "2026-09-24T12:30:20+02:00",
+          "comment": "[4PX] Změna stavu: delivered",
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7582582,
+          "adminId": null,
+          "orderStatus": "doručeno",
+          "date": "2026-09-24T12:30:20+02:00",
+          "comment": null,
+          "notifyStatus": "NO",
+          "data": "null"
         }
       ],
       "deliveryType": {
@@ -55759,8 +56164,8 @@
       "cancelled": false,
       "isPaid": true,
       "status": {
-        "id": 3,
-        "name": "expedováno"
+        "id": 4,
+        "name": "připraveno k vyzvednutí"
       },
       "totalPrice": {
         "withVat": 1177,
@@ -55911,6 +56316,24 @@
           "adminId": null,
           "orderStatus": "expedováno",
           "date": "2026-09-23T19:55:04+02:00",
+          "comment": null,
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7582583,
+          "adminId": null,
+          "orderStatus": "expedováno",
+          "date": "2026-09-24T12:30:20+02:00",
+          "comment": "[4PX] Změna stavu: ready_to_pickup",
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7582584,
+          "adminId": null,
+          "orderStatus": "připraveno k vyzvednutí",
+          "date": "2026-09-24T12:30:20+02:00",
           "comment": null,
           "notifyStatus": "NO",
           "data": "null"
@@ -56219,8 +56642,8 @@
       "cancelled": false,
       "isPaid": true,
       "status": {
-        "id": 3,
-        "name": "expedováno"
+        "id": 5,
+        "name": "doručeno"
       },
       "totalPrice": {
         "withVat": 1631,
@@ -56362,6 +56785,24 @@
           "adminId": null,
           "orderStatus": "expedováno",
           "date": "2026-09-23T20:00:10+02:00",
+          "comment": null,
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7582846,
+          "adminId": null,
+          "orderStatus": "expedováno",
+          "date": "2026-09-24T13:40:21+02:00",
+          "comment": "[4PX] Změna stavu: delivered",
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7582847,
+          "adminId": null,
+          "orderStatus": "doručeno",
+          "date": "2026-09-24T13:40:21+02:00",
           "comment": null,
           "notifyStatus": "NO",
           "data": "null"
@@ -56551,8 +56992,8 @@
       "cancelled": false,
       "isPaid": true,
       "status": {
-        "id": 3,
-        "name": "expedováno"
+        "id": 5,
+        "name": "doručeno"
       },
       "totalPrice": {
         "withVat": 1157,
@@ -56697,6 +57138,24 @@
           "comment": null,
           "notifyStatus": "NO",
           "data": "null"
+        },
+        {
+          "id": 7582783,
+          "adminId": null,
+          "orderStatus": "expedováno",
+          "date": "2026-09-24T13:25:21+02:00",
+          "comment": "[4PX] Změna stavu: delivered",
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7582784,
+          "adminId": null,
+          "orderStatus": "doručeno",
+          "date": "2026-09-24T13:25:21+02:00",
+          "comment": null,
+          "notifyStatus": "NO",
+          "data": "null"
         }
       ],
       "deliveryType": {
@@ -56835,8 +57294,8 @@
       "cancelled": false,
       "isPaid": true,
       "status": {
-        "id": 3,
-        "name": "expedováno"
+        "id": 5,
+        "name": "doručeno"
       },
       "totalPrice": {
         "withVat": 3378,
@@ -56978,6 +57437,24 @@
           "adminId": null,
           "orderStatus": "expedováno",
           "date": "2026-09-23T20:20:14+02:00",
+          "comment": null,
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7583324,
+          "adminId": null,
+          "orderStatus": "expedováno",
+          "date": "2026-09-24T15:10:23+02:00",
+          "comment": "[4PX] Změna stavu: delivered",
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7583325,
+          "adminId": null,
+          "orderStatus": "doručeno",
+          "date": "2026-09-24T15:10:23+02:00",
           "comment": null,
           "notifyStatus": "NO",
           "data": "null"
@@ -57179,8 +57656,8 @@
       "cancelled": false,
       "isPaid": true,
       "status": {
-        "id": 3,
-        "name": "expedováno"
+        "id": 5,
+        "name": "doručeno"
       },
       "totalPrice": {
         "withVat": 1608,
@@ -57325,6 +57802,24 @@
           "comment": null,
           "notifyStatus": "NO",
           "data": "null"
+        },
+        {
+          "id": 7583338,
+          "adminId": null,
+          "orderStatus": "expedováno",
+          "date": "2026-09-24T15:15:23+02:00",
+          "comment": "[4PX] Změna stavu: delivered",
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7583339,
+          "adminId": null,
+          "orderStatus": "doručeno",
+          "date": "2026-09-24T15:15:23+02:00",
+          "comment": null,
+          "notifyStatus": "NO",
+          "data": "null"
         }
       ],
       "deliveryType": {
@@ -57463,8 +57958,8 @@
       "cancelled": false,
       "isPaid": true,
       "status": {
-        "id": 3,
-        "name": "expedováno"
+        "id": 4,
+        "name": "připraveno k vyzvednutí"
       },
       "totalPrice": {
         "withVat": 1016,
@@ -57618,6 +58113,24 @@
           "comment": null,
           "notifyStatus": "NO",
           "data": "null"
+        },
+        {
+          "id": 7582409,
+          "adminId": null,
+          "orderStatus": "expedováno",
+          "date": "2026-09-24T11:50:21+02:00",
+          "comment": "[4PX] Změna stavu: ready_to_pickup",
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7582410,
+          "adminId": null,
+          "orderStatus": "připraveno k vyzvednutí",
+          "date": "2026-09-24T11:50:21+02:00",
+          "comment": null,
+          "notifyStatus": "NO",
+          "data": "null"
         }
       ],
       "deliveryType": {
@@ -57696,8 +58209,8 @@
       "cancelled": false,
       "isPaid": false,
       "status": {
-        "id": 3,
-        "name": "expedováno"
+        "id": 5,
+        "name": "doručeno"
       },
       "totalPrice": {
         "withVat": 2289,
@@ -57813,6 +58326,33 @@
           "orderStatus": "expedováno",
           "date": "2026-09-23T20:20:14+02:00",
           "comment": null,
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7582976,
+          "adminId": null,
+          "orderStatus": "doručeno",
+          "date": "2026-09-24T14:10:22+02:00",
+          "comment": null,
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7582975,
+          "adminId": null,
+          "orderStatus": "expedováno",
+          "date": "2026-09-24T14:10:22+02:00",
+          "comment": "[4PX] Změna stavu: delivered",
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7582983,
+          "adminId": null,
+          "orderStatus": "doručeno",
+          "date": "2026-09-24T14:11:58+02:00",
+          "comment": "[Flexi] Objednávka byla realizována ve Flexi;",
           "notifyStatus": "NO",
           "data": "null"
         }
@@ -58159,8 +58699,8 @@
       "cancelled": false,
       "isPaid": true,
       "status": {
-        "id": 3,
-        "name": "expedováno"
+        "id": 5,
+        "name": "doručeno"
       },
       "totalPrice": {
         "withVat": 1934,
@@ -58311,6 +58851,24 @@
           "adminId": null,
           "orderStatus": "expedováno",
           "date": "2026-09-23T21:30:16+02:00",
+          "comment": null,
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7583269,
+          "adminId": null,
+          "orderStatus": "expedováno",
+          "date": "2026-09-24T15:00:25+02:00",
+          "comment": "[4PX] Změna stavu: delivered",
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7583270,
+          "adminId": null,
+          "orderStatus": "doručeno",
+          "date": "2026-09-24T15:00:25+02:00",
           "comment": null,
           "notifyStatus": "NO",
           "data": "null"
@@ -59086,8 +59644,8 @@
       "cancelled": false,
       "isPaid": true,
       "status": {
-        "id": 4,
-        "name": "připraveno k vyzvednutí"
+        "id": 5,
+        "name": "doručeno"
       },
       "totalPrice": {
         "withVat": 65.25,
@@ -59247,6 +59805,24 @@
           "adminId": null,
           "orderStatus": "připraveno k vyzvednutí",
           "date": "2026-09-24T11:05:17+02:00",
+          "comment": null,
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7582887,
+          "adminId": null,
+          "orderStatus": "připraveno k vyzvednutí",
+          "date": "2026-09-24T13:55:20+02:00",
+          "comment": "[4PX] Změna stavu: delivered",
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7582888,
+          "adminId": null,
+          "orderStatus": "doručeno",
+          "date": "2026-09-24T13:55:20+02:00",
           "comment": null,
           "notifyStatus": "NO",
           "data": "null"
@@ -60267,8 +60843,8 @@
       "cancelled": false,
       "isPaid": false,
       "status": {
-        "id": 3,
-        "name": "expedováno"
+        "id": 4,
+        "name": "připraveno k vyzvednutí"
       },
       "totalPrice": {
         "withVat": 572,
@@ -60383,6 +60959,24 @@
           "adminId": null,
           "orderStatus": "expedováno",
           "date": "2026-09-23T19:55:05+02:00",
+          "comment": null,
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7582585,
+          "adminId": null,
+          "orderStatus": "expedováno",
+          "date": "2026-09-24T12:30:20+02:00",
+          "comment": "[4PX] Změna stavu: ready_to_pickup",
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7582586,
+          "adminId": null,
+          "orderStatus": "připraveno k vyzvednutí",
+          "date": "2026-09-24T12:30:20+02:00",
           "comment": null,
           "notifyStatus": "NO",
           "data": "null"
@@ -60784,8 +61378,8 @@
       "cancelled": false,
       "isPaid": true,
       "status": {
-        "id": 3,
-        "name": "expedováno"
+        "id": 5,
+        "name": "doručeno"
       },
       "totalPrice": {
         "withVat": 2447,
@@ -60927,6 +61521,24 @@
           "adminId": null,
           "orderStatus": "expedováno",
           "date": "2026-09-23T20:20:14+02:00",
+          "comment": null,
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7582607,
+          "adminId": null,
+          "orderStatus": "expedováno",
+          "date": "2026-09-24T12:35:20+02:00",
+          "comment": "[4PX] Změna stavu: delivered",
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7582608,
+          "adminId": null,
+          "orderStatus": "doručeno",
+          "date": "2026-09-24T12:35:20+02:00",
           "comment": null,
           "notifyStatus": "NO",
           "data": "null"
@@ -61080,8 +61692,8 @@
       "cancelled": false,
       "isPaid": true,
       "status": {
-        "id": 4,
-        "name": "připraveno k vyzvednutí"
+        "id": 5,
+        "name": "doručeno"
       },
       "totalPrice": {
         "withVat": 2090,
@@ -61250,6 +61862,24 @@
           "adminId": null,
           "orderStatus": "připraveno k vyzvednutí",
           "date": "2026-09-24T10:10:18+02:00",
+          "comment": null,
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7582910,
+          "adminId": null,
+          "orderStatus": "připraveno k vyzvednutí",
+          "date": "2026-09-24T14:00:23+02:00",
+          "comment": "[4PX] Změna stavu: delivered",
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7582911,
+          "adminId": null,
+          "orderStatus": "doručeno",
+          "date": "2026-09-24T14:00:23+02:00",
           "comment": null,
           "notifyStatus": "NO",
           "data": "null"
@@ -61950,8 +62580,8 @@
       "cancelled": false,
       "isPaid": true,
       "status": {
-        "id": 3,
-        "name": "expedováno"
+        "id": 5,
+        "name": "doručeno"
       },
       "totalPrice": {
         "withVat": 2303,
@@ -62102,6 +62732,24 @@
           "adminId": null,
           "orderStatus": "expedováno",
           "date": "2026-09-23T20:10:07+02:00",
+          "comment": null,
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7583216,
+          "adminId": null,
+          "orderStatus": "expedováno",
+          "date": "2026-09-24T14:50:22+02:00",
+          "comment": "[4PX] Změna stavu: delivered",
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7583217,
+          "adminId": null,
+          "orderStatus": "doručeno",
+          "date": "2026-09-24T14:50:22+02:00",
           "comment": null,
           "notifyStatus": "NO",
           "data": "null"
@@ -63804,8 +64452,8 @@
       "cancelled": false,
       "isPaid": true,
       "status": {
-        "id": 3,
-        "name": "expedováno"
+        "id": 5,
+        "name": "doručeno"
       },
       "totalPrice": {
         "withVat": 1283,
@@ -63950,6 +64598,42 @@
           "comment": null,
           "notifyStatus": "NO",
           "data": "null"
+        },
+        {
+          "id": 7582424,
+          "adminId": null,
+          "orderStatus": "expedováno",
+          "date": "2026-09-24T11:55:30+02:00",
+          "comment": "[4PX] Změna stavu: ready_to_pickup",
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7582425,
+          "adminId": null,
+          "orderStatus": "připraveno k vyzvednutí",
+          "date": "2026-09-24T11:55:30+02:00",
+          "comment": null,
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7582785,
+          "adminId": null,
+          "orderStatus": "připraveno k vyzvednutí",
+          "date": "2026-09-24T13:25:22+02:00",
+          "comment": "[4PX] Změna stavu: delivered",
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7582786,
+          "adminId": null,
+          "orderStatus": "doručeno",
+          "date": "2026-09-24T13:25:22+02:00",
+          "comment": null,
+          "notifyStatus": "NO",
+          "data": "null"
         }
       ],
       "deliveryType": {
@@ -64040,8 +64724,8 @@
       "cancelled": false,
       "isPaid": true,
       "status": {
-        "id": 3,
-        "name": "expedováno"
+        "id": 4,
+        "name": "připraveno k vyzvednutí"
       },
       "totalPrice": {
         "withVat": 3276,
@@ -64192,6 +64876,24 @@
           "adminId": null,
           "orderStatus": "expedováno",
           "date": "2026-09-23T19:55:04+02:00",
+          "comment": null,
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7582801,
+          "adminId": null,
+          "orderStatus": "expedováno",
+          "date": "2026-09-24T13:30:21+02:00",
+          "comment": "[4PX] Změna stavu: ready_to_pickup",
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7582802,
+          "adminId": null,
+          "orderStatus": "připraveno k vyzvednutí",
+          "date": "2026-09-24T13:30:21+02:00",
           "comment": null,
           "notifyStatus": "NO",
           "data": "null"
@@ -64393,8 +65095,8 @@
       "cancelled": false,
       "isPaid": true,
       "status": {
-        "id": 3,
-        "name": "expedováno"
+        "id": 4,
+        "name": "připraveno k vyzvednutí"
       },
       "totalPrice": {
         "withVat": 1646,
@@ -64536,6 +65238,24 @@
           "adminId": null,
           "orderStatus": "expedováno",
           "date": "2026-09-23T21:15:11+02:00",
+          "comment": null,
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7582668,
+          "adminId": null,
+          "orderStatus": "expedováno",
+          "date": "2026-09-24T12:55:23+02:00",
+          "comment": "[4PX] Změna stavu: ready_to_pickup",
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7582669,
+          "adminId": null,
+          "orderStatus": "připraveno k vyzvednutí",
+          "date": "2026-09-24T12:55:23+02:00",
           "comment": null,
           "notifyStatus": "NO",
           "data": "null"
@@ -64725,8 +65445,8 @@
       "cancelled": false,
       "isPaid": true,
       "status": {
-        "id": 3,
-        "name": "expedováno"
+        "id": 5,
+        "name": "doručeno"
       },
       "totalPrice": {
         "withVat": 5325,
@@ -64868,6 +65588,24 @@
           "adminId": null,
           "orderStatus": "expedováno",
           "date": "2026-09-23T20:10:08+02:00",
+          "comment": null,
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7582916,
+          "adminId": null,
+          "orderStatus": "expedováno",
+          "date": "2026-09-24T14:00:23+02:00",
+          "comment": "[4PX] Změna stavu: delivered",
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7582917,
+          "adminId": null,
+          "orderStatus": "doručeno",
+          "date": "2026-09-24T14:00:23+02:00",
           "comment": null,
           "notifyStatus": "NO",
           "data": "null"
@@ -66020,8 +66758,8 @@
       "cancelled": false,
       "isPaid": true,
       "status": {
-        "id": 3,
-        "name": "expedováno"
+        "id": 4,
+        "name": "připraveno k vyzvednutí"
       },
       "totalPrice": {
         "withVat": 429,
@@ -66163,6 +66901,24 @@
           "adminId": null,
           "orderStatus": "expedováno",
           "date": "2026-09-23T19:55:06+02:00",
+          "comment": null,
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7583069,
+          "adminId": null,
+          "orderStatus": "expedováno",
+          "date": "2026-09-24T14:30:49+02:00",
+          "comment": "[4PX] Změna stavu: ready_to_pickup",
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7583070,
+          "adminId": null,
+          "orderStatus": "připraveno k vyzvednutí",
+          "date": "2026-09-24T14:30:49+02:00",
           "comment": null,
           "notifyStatus": "NO",
           "data": "null"
@@ -66516,8 +67272,8 @@
       "cancelled": false,
       "isPaid": false,
       "status": {
-        "id": 3,
-        "name": "expedováno"
+        "id": 4,
+        "name": "připraveno k vyzvednutí"
       },
       "totalPrice": {
         "withVat": 1980,
@@ -66632,6 +67388,24 @@
           "adminId": null,
           "orderStatus": "expedováno",
           "date": "2026-09-23T19:55:06+02:00",
+          "comment": null,
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7583043,
+          "adminId": null,
+          "orderStatus": "expedováno",
+          "date": "2026-09-24T14:25:21+02:00",
+          "comment": "[4PX] Změna stavu: ready_to_pickup",
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7583044,
+          "adminId": null,
+          "orderStatus": "připraveno k vyzvednutí",
+          "date": "2026-09-24T14:25:21+02:00",
           "comment": null,
           "notifyStatus": "NO",
           "data": "null"
@@ -66773,8 +67547,8 @@
       "cancelled": false,
       "isPaid": false,
       "status": {
-        "id": 4,
-        "name": "připraveno k vyzvednutí"
+        "id": 5,
+        "name": "doručeno"
       },
       "totalPrice": {
         "withVat": 667,
@@ -66910,6 +67684,33 @@
           "comment": null,
           "notifyStatus": "NO",
           "data": "null"
+        },
+        {
+          "id": 7583340,
+          "adminId": null,
+          "orderStatus": "připraveno k vyzvednutí",
+          "date": "2026-09-24T15:15:23+02:00",
+          "comment": "[4PX] Změna stavu: delivered",
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7583341,
+          "adminId": null,
+          "orderStatus": "doručeno",
+          "date": "2026-09-24T15:15:23+02:00",
+          "comment": null,
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7583355,
+          "adminId": null,
+          "orderStatus": "doručeno",
+          "date": "2026-09-24T15:17:00+02:00",
+          "comment": "[Flexi] Objednávka byla realizována ve Flexi;",
+          "notifyStatus": "NO",
+          "data": "null"
         }
       ],
       "deliveryType": {
@@ -67000,8 +67801,8 @@
       "cancelled": false,
       "isPaid": true,
       "status": {
-        "id": 3,
-        "name": "expedováno"
+        "id": 5,
+        "name": "doručeno"
       },
       "totalPrice": {
         "withVat": 577,
@@ -67143,6 +67944,24 @@
           "adminId": null,
           "orderStatus": "expedováno",
           "date": "2026-09-23T20:10:07+02:00",
+          "comment": null,
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7582813,
+          "adminId": null,
+          "orderStatus": "expedováno",
+          "date": "2026-09-24T13:35:21+02:00",
+          "comment": "[4PX] Změna stavu: delivered",
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7582814,
+          "adminId": null,
+          "orderStatus": "doručeno",
+          "date": "2026-09-24T13:35:21+02:00",
           "comment": null,
           "notifyStatus": "NO",
           "data": "null"
@@ -68605,8 +69424,8 @@
       "cancelled": false,
       "isPaid": true,
       "status": {
-        "id": 3,
-        "name": "expedováno"
+        "id": 5,
+        "name": "doručeno"
       },
       "totalPrice": {
         "withVat": 2023,
@@ -68748,6 +69567,24 @@
           "adminId": null,
           "orderStatus": "expedováno",
           "date": "2026-09-23T20:20:14+02:00",
+          "comment": null,
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7582773,
+          "adminId": null,
+          "orderStatus": "expedováno",
+          "date": "2026-09-24T13:25:21+02:00",
+          "comment": "[4PX] Změna stavu: delivered",
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7582774,
+          "adminId": null,
+          "orderStatus": "doručeno",
+          "date": "2026-09-24T13:25:21+02:00",
           "comment": null,
           "notifyStatus": "NO",
           "data": "null"
@@ -69218,8 +70055,8 @@
       "cancelled": false,
       "isPaid": false,
       "status": {
-        "id": 3,
-        "name": "expedováno"
+        "id": 5,
+        "name": "doručeno"
       },
       "totalPrice": {
         "withVat": 1692,
@@ -69335,6 +70172,33 @@
           "orderStatus": "expedováno",
           "date": "2026-09-23T21:30:15+02:00",
           "comment": null,
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7583386,
+          "adminId": null,
+          "orderStatus": "expedováno",
+          "date": "2026-09-24T15:25:25+02:00",
+          "comment": "[4PX] Změna stavu: delivered",
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7583387,
+          "adminId": null,
+          "orderStatus": "doručeno",
+          "date": "2026-09-24T15:25:25+02:00",
+          "comment": null,
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7583404,
+          "adminId": null,
+          "orderStatus": "doručeno",
+          "date": "2026-09-24T15:27:06+02:00",
+          "comment": "[Flexi] Objednávka byla realizována ve Flexi;",
           "notifyStatus": "NO",
           "data": "null"
         }
@@ -69535,8 +70399,8 @@
       "cancelled": false,
       "isPaid": true,
       "status": {
-        "id": 3,
-        "name": "expedováno"
+        "id": 4,
+        "name": "připraveno k vyzvednutí"
       },
       "totalPrice": {
         "withVat": 3094,
@@ -69679,6 +70543,24 @@
           "orderStatus": "přijatá",
           "date": "2026-09-23T19:55:07+02:00",
           "comment": "[4PX] Změna stavu: carrier_picked_up",
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7582753,
+          "adminId": null,
+          "orderStatus": "expedováno",
+          "date": "2026-09-24T13:20:23+02:00",
+          "comment": "[4PX] Změna stavu: ready_to_pickup",
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7582754,
+          "adminId": null,
+          "orderStatus": "připraveno k vyzvednutí",
+          "date": "2026-09-24T13:20:23+02:00",
+          "comment": null,
           "notifyStatus": "NO",
           "data": "null"
         }
@@ -70348,8 +71230,8 @@
       "cancelled": false,
       "isPaid": true,
       "status": {
-        "id": 3,
-        "name": "expedováno"
+        "id": 4,
+        "name": "připraveno k vyzvednutí"
       },
       "totalPrice": {
         "withVat": 1245,
@@ -70500,6 +71382,24 @@
           "adminId": null,
           "orderStatus": "expedováno",
           "date": "2026-09-23T21:20:16+02:00",
+          "comment": null,
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7582775,
+          "adminId": null,
+          "orderStatus": "expedováno",
+          "date": "2026-09-24T13:25:21+02:00",
+          "comment": "[4PX] Změna stavu: ready_to_pickup",
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7582776,
+          "adminId": null,
+          "orderStatus": "připraveno k vyzvednutí",
+          "date": "2026-09-24T13:25:21+02:00",
           "comment": null,
           "notifyStatus": "NO",
           "data": "null"
@@ -70937,8 +71837,8 @@
       "cancelled": false,
       "isPaid": true,
       "status": {
-        "id": 3,
-        "name": "expedováno"
+        "id": 5,
+        "name": "doručeno"
       },
       "totalPrice": {
         "withVat": 4461,
@@ -71089,6 +71989,24 @@
           "adminId": null,
           "orderStatus": "expedováno",
           "date": "2026-09-23T20:10:07+02:00",
+          "comment": null,
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7582771,
+          "adminId": null,
+          "orderStatus": "expedováno",
+          "date": "2026-09-24T13:25:21+02:00",
+          "comment": "[4PX] Změna stavu: delivered",
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7582772,
+          "adminId": null,
+          "orderStatus": "doručeno",
+          "date": "2026-09-24T13:25:21+02:00",
           "comment": null,
           "notifyStatus": "NO",
           "data": "null"
@@ -72220,8 +73138,8 @@
       "cancelled": false,
       "isPaid": true,
       "status": {
-        "id": 3,
-        "name": "expedováno"
+        "id": 5,
+        "name": "doručeno"
       },
       "totalPrice": {
         "withVat": 699,
@@ -72363,6 +73281,24 @@
           "adminId": null,
           "orderStatus": "expedováno",
           "date": "2026-09-23T20:15:18+02:00",
+          "comment": null,
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7582815,
+          "adminId": null,
+          "orderStatus": "expedováno",
+          "date": "2026-09-24T13:35:21+02:00",
+          "comment": "[4PX] Změna stavu: delivered",
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7582816,
+          "adminId": null,
+          "orderStatus": "doručeno",
+          "date": "2026-09-24T13:35:21+02:00",
           "comment": null,
           "notifyStatus": "NO",
           "data": "null"
@@ -73523,8 +74459,8 @@
       "cancelled": false,
       "isPaid": true,
       "status": {
-        "id": 4,
-        "name": "připraveno k vyzvednutí"
+        "id": 5,
+        "name": "doručeno"
       },
       "totalPrice": {
         "withVat": 2065,
@@ -73711,6 +74647,24 @@
           "adminId": null,
           "orderStatus": "připraveno k vyzvednutí",
           "date": "2026-09-24T10:20:17+02:00",
+          "comment": null,
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7582442,
+          "adminId": null,
+          "orderStatus": "připraveno k vyzvednutí",
+          "date": "2026-09-24T12:00:19+02:00",
+          "comment": "[4PX] Změna stavu: delivered",
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7582443,
+          "adminId": null,
+          "orderStatus": "doručeno",
+          "date": "2026-09-24T12:00:19+02:00",
           "comment": null,
           "notifyStatus": "NO",
           "data": "null"
@@ -74333,8 +75287,8 @@
       "cancelled": false,
       "isPaid": true,
       "status": {
-        "id": 3,
-        "name": "expedováno"
+        "id": 4,
+        "name": "připraveno k vyzvednutí"
       },
       "totalPrice": {
         "withVat": 1723,
@@ -74488,6 +75442,24 @@
           "comment": null,
           "notifyStatus": "NO",
           "data": "null"
+        },
+        {
+          "id": 7582678,
+          "adminId": null,
+          "orderStatus": "expedováno",
+          "date": "2026-09-24T12:55:23+02:00",
+          "comment": "[4PX] Změna stavu: ready_to_pickup",
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7582679,
+          "adminId": null,
+          "orderStatus": "připraveno k vyzvednutí",
+          "date": "2026-09-24T12:55:23+02:00",
+          "comment": null,
+          "notifyStatus": "NO",
+          "data": "null"
         }
       ],
       "deliveryType": {
@@ -74602,8 +75574,8 @@
       "cancelled": false,
       "isPaid": true,
       "status": {
-        "id": 3,
-        "name": "expedováno"
+        "id": 4,
+        "name": "připraveno k vyzvednutí"
       },
       "totalPrice": {
         "withVat": 3381,
@@ -74754,6 +75726,24 @@
           "adminId": null,
           "orderStatus": "expedováno",
           "date": "2026-09-23T21:15:11+02:00",
+          "comment": null,
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7582691,
+          "adminId": null,
+          "orderStatus": "expedováno",
+          "date": "2026-09-24T13:00:24+02:00",
+          "comment": "[4PX] Změna stavu: ready_to_pickup",
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7582692,
+          "adminId": null,
+          "orderStatus": "připraveno k vyzvednutí",
+          "date": "2026-09-24T13:00:24+02:00",
           "comment": null,
           "notifyStatus": "NO",
           "data": "null"
@@ -75320,8 +76310,8 @@
       "cancelled": false,
       "isPaid": true,
       "status": {
-        "id": 3,
-        "name": "expedováno"
+        "id": 5,
+        "name": "doručeno"
       },
       "totalPrice": {
         "withVat": 1687,
@@ -75463,6 +76453,24 @@
           "adminId": null,
           "orderStatus": "expedováno",
           "date": "2026-09-24T02:40:11+02:00",
+          "comment": null,
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7582512,
+          "adminId": null,
+          "orderStatus": "expedováno",
+          "date": "2026-09-24T12:15:27+02:00",
+          "comment": "[4PX] Změna stavu: delivered",
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7582513,
+          "adminId": null,
+          "orderStatus": "doručeno",
+          "date": "2026-09-24T12:15:27+02:00",
           "comment": null,
           "notifyStatus": "NO",
           "data": "null"
@@ -75861,8 +76869,8 @@
       "cancelled": false,
       "isPaid": true,
       "status": {
-        "id": 3,
-        "name": "expedováno"
+        "id": 5,
+        "name": "doručeno"
       },
       "totalPrice": {
         "withVat": 1445,
@@ -76004,6 +77012,24 @@
           "adminId": null,
           "orderStatus": "expedováno",
           "date": "2026-09-23T20:10:10+02:00",
+          "comment": null,
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7582918,
+          "adminId": null,
+          "orderStatus": "expedováno",
+          "date": "2026-09-24T14:00:23+02:00",
+          "comment": "[4PX] Změna stavu: delivered",
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7582919,
+          "adminId": null,
+          "orderStatus": "doručeno",
+          "date": "2026-09-24T14:00:23+02:00",
           "comment": null,
           "notifyStatus": "NO",
           "data": "null"
@@ -76438,8 +77464,8 @@
       "cancelled": false,
       "isPaid": true,
       "status": {
-        "id": 3,
-        "name": "expedováno"
+        "id": 4,
+        "name": "připraveno k vyzvednutí"
       },
       "totalPrice": {
         "withVat": 729,
@@ -76581,6 +77607,24 @@
           "adminId": null,
           "orderStatus": "expedováno",
           "date": "2026-09-23T19:55:07+02:00",
+          "comment": null,
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7582703,
+          "adminId": null,
+          "orderStatus": "expedováno",
+          "date": "2026-09-24T13:05:21+02:00",
+          "comment": "[4PX] Změna stavu: ready_to_pickup",
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7582704,
+          "adminId": null,
+          "orderStatus": "připraveno k vyzvednutí",
+          "date": "2026-09-24T13:05:21+02:00",
           "comment": null,
           "notifyStatus": "NO",
           "data": "null"
@@ -78264,8 +79308,8 @@
       "cancelled": false,
       "isPaid": true,
       "status": {
-        "id": 4,
-        "name": "připraveno k vyzvednutí"
+        "id": 5,
+        "name": "doručeno"
       },
       "totalPrice": {
         "withVat": 1613,
@@ -78437,6 +79481,24 @@
           "comment": null,
           "notifyStatus": "NO",
           "data": "null"
+        },
+        {
+          "id": 7582616,
+          "adminId": null,
+          "orderStatus": "připraveno k vyzvednutí",
+          "date": "2026-09-24T12:40:19+02:00",
+          "comment": "[4PX] Změna stavu: delivered",
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7582617,
+          "adminId": null,
+          "orderStatus": "doručeno",
+          "date": "2026-09-24T12:40:19+02:00",
+          "comment": null,
+          "notifyStatus": "NO",
+          "data": "null"
         }
       ],
       "deliveryType": {
@@ -78575,8 +79637,8 @@
       "cancelled": false,
       "isPaid": true,
       "status": {
-        "id": 4,
-        "name": "připraveno k vyzvednutí"
+        "id": 5,
+        "name": "doručeno"
       },
       "totalPrice": {
         "withVat": 1612,
@@ -78748,6 +79810,24 @@
           "comment": null,
           "notifyStatus": "NO",
           "data": "null"
+        },
+        {
+          "id": 7582731,
+          "adminId": null,
+          "orderStatus": "připraveno k vyzvednutí",
+          "date": "2026-09-24T13:15:23+02:00",
+          "comment": "[4PX] Změna stavu: delivered",
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7582732,
+          "adminId": null,
+          "orderStatus": "doručeno",
+          "date": "2026-09-24T13:15:23+02:00",
+          "comment": null,
+          "notifyStatus": "NO",
+          "data": "null"
         }
       ],
       "deliveryType": {
@@ -78910,8 +79990,8 @@
       "cancelled": false,
       "isPaid": true,
       "status": {
-        "id": 4,
-        "name": "připraveno k vyzvednutí"
+        "id": 5,
+        "name": "doručeno"
       },
       "totalPrice": {
         "withVat": 5106,
@@ -79080,6 +80160,24 @@
           "adminId": null,
           "orderStatus": "připraveno k vyzvednutí",
           "date": "2026-09-24T10:15:16+02:00",
+          "comment": null,
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7583361,
+          "adminId": null,
+          "orderStatus": "připraveno k vyzvednutí",
+          "date": "2026-09-24T15:20:21+02:00",
+          "comment": "[4PX] Změna stavu: delivered",
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7583362,
+          "adminId": null,
+          "orderStatus": "doručeno",
+          "date": "2026-09-24T15:20:21+02:00",
           "comment": null,
           "notifyStatus": "NO",
           "data": "null"
@@ -79634,8 +80732,8 @@
       "cancelled": false,
       "isPaid": true,
       "status": {
-        "id": 4,
-        "name": "připraveno k vyzvednutí"
+        "id": 5,
+        "name": "doručeno"
       },
       "totalPrice": {
         "withVat": 1002,
@@ -79804,6 +80902,24 @@
           "adminId": null,
           "orderStatus": "připraveno k vyzvednutí",
           "date": "2026-09-24T11:25:19+02:00",
+          "comment": null,
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7582733,
+          "adminId": null,
+          "orderStatus": "připraveno k vyzvednutí",
+          "date": "2026-09-24T13:15:23+02:00",
+          "comment": "[4PX] Změna stavu: delivered",
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7582734,
+          "adminId": null,
+          "orderStatus": "doručeno",
+          "date": "2026-09-24T13:15:23+02:00",
           "comment": null,
           "notifyStatus": "NO",
           "data": "null"
@@ -80614,8 +81730,8 @@
       "cancelled": false,
       "isPaid": true,
       "status": {
-        "id": 3,
-        "name": "expedováno"
+        "id": 5,
+        "name": "doručeno"
       },
       "totalPrice": {
         "withVat": 4503,
@@ -80757,6 +81873,24 @@
           "adminId": null,
           "orderStatus": "expedováno",
           "date": "2026-09-23T20:20:14+02:00",
+          "comment": null,
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7583212,
+          "adminId": null,
+          "orderStatus": "expedováno",
+          "date": "2026-09-24T14:50:22+02:00",
+          "comment": "[4PX] Změna stavu: delivered",
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7583213,
+          "adminId": null,
+          "orderStatus": "doručeno",
+          "date": "2026-09-24T14:50:22+02:00",
           "comment": null,
           "notifyStatus": "NO",
           "data": "null"
@@ -81030,8 +82164,8 @@
       "cancelled": false,
       "isPaid": true,
       "status": {
-        "id": 3,
-        "name": "expedováno"
+        "id": 4,
+        "name": "připraveno k vyzvednutí"
       },
       "totalPrice": {
         "withVat": 2790,
@@ -81173,6 +82307,24 @@
           "adminId": null,
           "orderStatus": "expedováno",
           "date": "2026-09-23T21:15:10+02:00",
+          "comment": null,
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7582508,
+          "adminId": null,
+          "orderStatus": "expedováno",
+          "date": "2026-09-24T12:15:27+02:00",
+          "comment": "[4PX] Změna stavu: ready_to_pickup",
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7582509,
+          "adminId": null,
+          "orderStatus": "připraveno k vyzvednutí",
+          "date": "2026-09-24T12:15:27+02:00",
           "comment": null,
           "notifyStatus": "NO",
           "data": "null"
@@ -81966,8 +83118,8 @@
       "cancelled": false,
       "isPaid": true,
       "status": {
-        "id": 3,
-        "name": "expedováno"
+        "id": 5,
+        "name": "doručeno"
       },
       "totalPrice": {
         "withVat": 2486,
@@ -82109,6 +83261,24 @@
           "adminId": null,
           "orderStatus": "expedováno",
           "date": "2026-09-23T20:15:18+02:00",
+          "comment": null,
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7582864,
+          "adminId": null,
+          "orderStatus": "expedováno",
+          "date": "2026-09-24T13:50:21+02:00",
+          "comment": "[4PX] Změna stavu: delivered",
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7582865,
+          "adminId": null,
+          "orderStatus": "doručeno",
+          "date": "2026-09-24T13:50:21+02:00",
           "comment": null,
           "notifyStatus": "NO",
           "data": "null"
@@ -82612,8 +83782,8 @@
       "cancelled": false,
       "isPaid": true,
       "status": {
-        "id": 3,
-        "name": "expedováno"
+        "id": 5,
+        "name": "doručeno"
       },
       "totalPrice": {
         "withVat": 43.25,
@@ -82758,6 +83928,24 @@
           "comment": null,
           "notifyStatus": "NO",
           "data": "null"
+        },
+        {
+          "id": 7582965,
+          "adminId": null,
+          "orderStatus": "expedováno",
+          "date": "2026-09-24T14:10:21+02:00",
+          "comment": "[4PX] Změna stavu: delivered",
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7582966,
+          "adminId": null,
+          "orderStatus": "doručeno",
+          "date": "2026-09-24T14:10:21+02:00",
+          "comment": null,
+          "notifyStatus": "NO",
+          "data": "null"
         }
       ],
       "deliveryType": {
@@ -82872,8 +84060,8 @@
       "cancelled": false,
       "isPaid": true,
       "status": {
-        "id": 3,
-        "name": "expedováno"
+        "id": 4,
+        "name": "připraveno k vyzvednutí"
       },
       "totalPrice": {
         "withVat": 65.35,
@@ -83015,6 +84203,24 @@
           "adminId": null,
           "orderStatus": "expedováno",
           "date": "2026-09-23T19:35:03+02:00",
+          "comment": null,
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7582618,
+          "adminId": null,
+          "orderStatus": "expedováno",
+          "date": "2026-09-24T12:40:19+02:00",
+          "comment": "[4PX] Změna stavu: ready_to_pickup",
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7582619,
+          "adminId": null,
+          "orderStatus": "připraveno k vyzvednutí",
+          "date": "2026-09-24T12:40:19+02:00",
           "comment": null,
           "notifyStatus": "NO",
           "data": "null"
@@ -83748,8 +84954,8 @@
       "cancelled": false,
       "isPaid": false,
       "status": {
-        "id": 3,
-        "name": "expedováno"
+        "id": 4,
+        "name": "připraveno k vyzvednutí"
       },
       "totalPrice": {
         "withVat": 463,
@@ -83864,6 +85070,24 @@
           "adminId": null,
           "orderStatus": "expedováno",
           "date": "2026-09-23T21:10:12+02:00",
+          "comment": null,
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7583365,
+          "adminId": null,
+          "orderStatus": "expedováno",
+          "date": "2026-09-24T15:20:21+02:00",
+          "comment": "[4PX] Změna stavu: ready_to_pickup",
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7583366,
+          "adminId": null,
+          "orderStatus": "připraveno k vyzvednutí",
+          "date": "2026-09-24T15:20:21+02:00",
           "comment": null,
           "notifyStatus": "NO",
           "data": "null"
