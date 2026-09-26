@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-09-25T23:41:47.113672+02:00",
+  "generatedAt": "2026-09-26T02:17:16.239442+02:00",
   "config": {
     "warehouseCode": "CZPRGA",
     "outboundMaxPages": 20,
     "reportWindow": {
-      "from": "2026-09-24T00:00:01+02:00",
-      "to": "2026-09-25T00:00:00+02:00"
+      "from": "2026-09-25T00:00:01+02:00",
+      "to": "2026-09-26T00:00:00+02:00"
     }
   },
   "warnings": [],
@@ -20,10 +20,10 @@
         "lowStockItems": 100
       },
       "outbound": {
-        "items": 500,
-        "scannedPages": 5,
+        "items": 200,
+        "scannedPages": 2,
         "topLogisticsProduct": "F1401",
-        "oldestTimestamp": "2026-09-23T19:30:08+02:00",
+        "oldestTimestamp": "2026-09-24T22:30:02+02:00",
         "newestTimestamp": "2026-09-25T23:30:04+02:00"
       }
     },
@@ -48,22 +48,22 @@
   "wpJ": {
     "ready": true,
     "message": "WPJ připojeno a ranní report je vygenerovaný.",
-    "orders": 269,
-    "revenueWithVat": 494116.52,
-    "averageOrderValue": 1836.86,
-    "problematicOrders": 1
+    "orders": 226,
+    "revenueWithVat": 413516.98,
+    "averageOrderValue": 1829.72,
+    "problematicOrders": 0
   },
   "report": {
-    "date": "2026-09-24",
-    "shipments": 265,
+    "date": "2026-09-25",
+    "shipments": 216,
     "alerts": [
-      "1 problematických nebo stornovaných objednávek.",
+      "2 včera prodaných produktů je teď na nízkém skladu.",
       "10 skladových pozic je v mínusu.",
       "5 A produktů je v kritickém riziku výpadku."
     ],
     "priorities": [
       "Prověřit A produkty v riziku výpadku (5 SKU): 135415-1, 30115, 20115.",
-      "Projít 1 problematických nebo stornovaných objednávek z včerejška.",
+      "Dohlédnout POP00069 (Cévy – žíly, originální bylinné kapky, 50 ml), aktuálně 0 ks.",
       "Projít nejbližší expirace v 4PX a rozhodnout o doprodeji nebo přesunu zásoby."
     ]
   },
@@ -95,7 +95,7 @@
     "onlyInWpj": 1657,
     "onlyIn4px": 1,
     "stockMismatch": 686,
-    "lowAfterSales": 1,
+    "lowAfterSales": 4,
     "manualMapped4pxAliases": 0,
     "autoMapped4pxAliases": 77
   },
@@ -137,7 +137,7 @@
           "dueDate": "30.09.2026",
           "amountTotal": 519203.42,
           "amountDue": 519203.42,
-          "status": "5 dní do splatnosti"
+          "status": "4 dní do splatnosti"
         },
         {
           "code": "PF1158/2026",
@@ -145,7 +145,7 @@
           "dueDate": "01.09.2026",
           "amountTotal": 129966.14,
           "amountDue": 129966.14,
-          "status": "24 dní PO SPLATNOSTI"
+          "status": "25 dní PO SPLATNOSTI"
         },
         {
           "code": "PF1159/2026",
@@ -153,7 +153,7 @@
           "dueDate": "01.09.2026",
           "amountTotal": 55303.69,
           "amountDue": 55303.69,
-          "status": "24 dní PO SPLATNOSTI"
+          "status": "25 dní PO SPLATNOSTI"
         },
         {
           "code": "PF1270/2026",
@@ -161,7 +161,7 @@
           "dueDate": "31.10.2026",
           "amountTotal": 52268.0,
           "amountDue": 52268.0,
-          "status": "36 dní do splatnosti"
+          "status": "35 dní do splatnosti"
         },
         {
           "code": "PF1201/2026",
@@ -169,7 +169,7 @@
           "dueDate": "30.09.2026",
           "amountTotal": 43560.0,
           "amountDue": 43560.0,
-          "status": "5 dní do splatnosti"
+          "status": "4 dní do splatnosti"
         },
         {
           "code": "PF1292/2026",
@@ -177,7 +177,7 @@
           "dueDate": "23.10.2026",
           "amountTotal": 40837.5,
           "amountDue": 40837.5,
-          "status": "28 dní do splatnosti"
+          "status": "27 dní do splatnosti"
         },
         {
           "code": "PF1272/2026",
@@ -185,7 +185,7 @@
           "dueDate": "17.10.2026",
           "amountTotal": 37905.07,
           "amountDue": 37905.07,
-          "status": "22 dní do splatnosti"
+          "status": "21 dní do splatnosti"
         },
         {
           "code": "PF1260/2026",
@@ -193,7 +193,7 @@
           "dueDate": "30.09.2026",
           "amountTotal": 33880.0,
           "amountDue": 33880.0,
-          "status": "5 dní do splatnosti"
+          "status": "4 dní do splatnosti"
         }
       ],
       "cashAccountsSource": {
@@ -399,8 +399,8 @@
     "message": "Affiliate přehled se skládá přímo z živých API endpointů affiliate portálu, bez závislosti na HTML exportech.",
     "period": {
       "dateFrom": "2025-10-01",
-      "dateTo": "2026-09-25",
-      "label": "2025-10-01 až 2026-09-25"
+      "dateTo": "2026-09-26",
+      "label": "2025-10-01 až 2026-09-26"
     },
     "summary": {
       "noviceRevenueCzkEquiv": 19916919.0,
@@ -438,75 +438,75 @@
     "currentMonth": {
       "label": "9/2026",
       "dateFrom": "2026-09-01",
-      "dateTo": "2026-09-24",
-      "activeUsers": 47863,
-      "sessions": 107755,
-      "engagedSessions": 70589,
-      "screenPageViews": 542474,
-      "ecommercePurchases": 7455.0,
-      "purchaseRevenue": 9383891.15,
-      "averageSessionDuration": 280.21,
-      "bounceRatePct": 0.34,
-      "engagementRatePct": 65.51,
-      "purchaseRatePct": 6.92,
-      "revenuePerSession": 87.09
+      "dateTo": "2026-09-25",
+      "activeUsers": 48745,
+      "sessions": 112888,
+      "engagedSessions": 75094,
+      "screenPageViews": 562942,
+      "ecommercePurchases": 7720.0,
+      "purchaseRevenue": 9726901.45,
+      "averageSessionDuration": 276.08,
+      "bounceRatePct": 0.33,
+      "engagementRatePct": 66.52,
+      "purchaseRatePct": 6.84,
+      "revenuePerSession": 86.16
     },
     "last7days": {
       "label": "last7days",
-      "dateFrom": "2026-09-18",
-      "dateTo": "2026-09-24",
-      "activeUsers": 14970,
-      "sessions": 28431,
-      "engagedSessions": 19041,
-      "screenPageViews": 139804,
-      "ecommercePurchases": 1915.0,
-      "purchaseRevenue": 2443769.3,
-      "averageSessionDuration": 289.08,
+      "dateFrom": "2026-09-19",
+      "dateTo": "2026-09-25",
+      "activeUsers": 14696,
+      "sessions": 29335,
+      "engagedSessions": 19648,
+      "screenPageViews": 142539,
+      "ecommercePurchases": 1989.0,
+      "purchaseRevenue": 2524573.4,
+      "averageSessionDuration": 277.75,
       "bounceRatePct": 0.33,
-      "engagementRatePct": 66.97,
-      "purchaseRatePct": 6.74,
-      "revenuePerSession": 85.95
+      "engagementRatePct": 66.98,
+      "purchaseRatePct": 6.78,
+      "revenuePerSession": 86.06
     },
     "topChannel7d": {
-      "sessions": 7868.0,
-      "activeUsers": 3856.0,
-      "engagedSessions": 5777.0,
-      "ecommercePurchases": 692.0,
-      "purchaseRevenue": 869830.38,
+      "sessions": 7927.0,
+      "activeUsers": 3793.0,
+      "engagedSessions": 5794.0,
+      "ecommercePurchases": 737.0,
+      "purchaseRevenue": 908400.93,
       "channel": "Paid Search",
-      "purchaseRatePct": 8.8,
-      "revenuePerSession": 110.55
+      "purchaseRatePct": 9.3,
+      "revenuePerSession": 114.6
     },
     "countries7d": [
       {
         "country": "Czechia",
-        "activeUsers": 12324.0,
-        "ecommercePurchases": 1735.0,
-        "purchaseRevenue": 2392836.29
+        "activeUsers": 12016.0,
+        "ecommercePurchases": 1803.0,
+        "purchaseRevenue": 2478019.6
       },
       {
         "country": "Slovakia",
-        "activeUsers": 1466.0,
-        "ecommercePurchases": 150.0,
-        "purchaseRevenue": 10941.29
+        "activeUsers": 1535.0,
+        "ecommercePurchases": 158.0,
+        "purchaseRevenue": 11034.08
       },
       {
         "country": "United States",
-        "activeUsers": 661.0,
+        "activeUsers": 592.0,
         "ecommercePurchases": 0.0,
         "purchaseRevenue": 0.0
       },
       {
-        "country": "India",
-        "activeUsers": 90.0,
-        "ecommercePurchases": 0.0,
-        "purchaseRevenue": 0.0
+        "country": "Germany",
+        "activeUsers": 108.0,
+        "ecommercePurchases": 4.0,
+        "purchaseRevenue": 5605.75
       },
       {
-        "country": "Austria",
-        "activeUsers": 67.0,
-        "ecommercePurchases": 8.0,
-        "purchaseRevenue": 11918.51
+        "country": "Netherlands",
+        "activeUsers": 66.0,
+        "ecommercePurchases": 0.0,
+        "purchaseRevenue": 0.0
       }
     ]
   },
