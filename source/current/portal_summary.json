@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-29T09:44:38.725728+02:00",
+  "generatedAt": "2026-09-29T17:01:41.745390+02:00",
   "config": {
     "warehouseCode": "CZPRGA",
     "outboundMaxPages": 20,
@@ -14,25 +14,25 @@
       "label": "CZ",
       "inventory": {
         "items": 808,
-        "availableStockTotal": 334877,
-        "pendingStockTotal": 2974,
+        "availableStockTotal": 332708,
+        "pendingStockTotal": 1267,
         "freezeStockTotal": 0,
         "lowStockItems": 100
       },
       "outbound": {
-        "items": 400,
-        "scannedPages": 4,
+        "items": 600,
+        "scannedPages": 6,
         "topLogisticsProduct": "F1401",
-        "oldestTimestamp": "2026-09-27T23:45:07+02:00",
-        "newestTimestamp": "2026-09-29T09:40:09+02:00"
+        "oldestTimestamp": "2026-09-27T22:05:12+02:00",
+        "newestTimestamp": "2026-09-29T17:00:10+02:00"
       }
     },
     "sk": {
       "label": "SK",
       "inventory": {
         "items": 659,
-        "availableStockTotal": 43483,
-        "pendingStockTotal": 149,
+        "availableStockTotal": 43595,
+        "pendingStockTotal": 116,
         "freezeStockTotal": 0,
         "lowStockItems": 100
       },
@@ -40,8 +40,8 @@
         "items": 100,
         "scannedPages": 1,
         "topLogisticsProduct": "F1403",
-        "oldestTimestamp": "2026-09-25T17:20:15+02:00",
-        "newestTimestamp": "2026-09-29T08:35:24+02:00"
+        "oldestTimestamp": "2026-09-27T13:40:16+02:00",
+        "newestTimestamp": "2026-09-29T16:45:35+02:00"
       }
     }
   },
@@ -49,13 +49,13 @@
     "ready": true,
     "message": "WPJ připojeno a ranní report je vygenerovaný.",
     "orders": 379,
-    "revenueWithVat": 644203.33,
-    "averageOrderValue": 1699.74,
+    "revenueWithVat": 644397.33,
+    "averageOrderValue": 1700.26,
     "problematicOrders": 2
   },
   "report": {
     "date": "2026-09-28",
-    "shipments": 368,
+    "shipments": 364,
     "alerts": [
       "2 problematických nebo stornovaných objednávek.",
       "2 včera prodaných produktů je teď na nízkém skladu.",
@@ -70,12 +70,12 @@
     ]
   },
   "expiries": {
-    "datedSkuCount": 320,
-    "czSkuCount": 314,
-    "skSkuCount": 301,
-    "datedRowCount": 715,
-    "czRowCount": 362,
-    "skRowCount": 353
+    "datedSkuCount": 318,
+    "czSkuCount": 311,
+    "skSkuCount": 300,
+    "datedRowCount": 710,
+    "czRowCount": 358,
+    "skRowCount": 352
   },
   "storeExpiry": {
     "inputRows": 0,
@@ -93,10 +93,10 @@
   },
   "pairing": {
     "allCodes": 3083,
-    "pairedProducts": 362,
-    "onlyInWpj": 1658,
+    "pairedProducts": 360,
+    "onlyInWpj": 1660,
     "onlyIn4px": 1,
-    "stockMismatch": 704,
+    "stockMismatch": 697,
     "lowAfterSales": 2,
     "manualMapped4pxAliases": 0,
     "autoMapped4pxAliases": 77
@@ -107,32 +107,56 @@
     "message": "Měsíční finance se tahají přímo z ABRA reportu Výkaz hospodaření za měsíc za všechna střediska. Cash a závazky jsou také live z ABRA API.",
     "currentMonth": {
       "label": "9/2026",
-      "revenue": 11206105.05,
-      "cogsAndFees": 8854304.97,
+      "revenue": 11474647.8,
+      "cogsAndFees": 9040929.17,
       "logistics": 35221.08,
       "marketing": 215973.02,
       "opex": 455159.78,
       "depreciation": 399556.0,
       "other": 6154.64,
-      "grossMargin": 2351800.08,
-      "afterLogistics": 2316579.0,
-      "afterMarketing": 2100605.98,
-      "operatingMargin": 1645446.2,
-      "ebit": 1245890.2,
-      "profit": 1252044.84,
-      "grossMarginPct": 21.0,
+      "grossMargin": 2433718.63,
+      "afterLogistics": 2398497.55,
+      "afterMarketing": 2182524.53,
+      "operatingMargin": 1727364.75,
+      "ebit": 1327808.75,
+      "profit": 1333963.39,
+      "grossMarginPct": 21.2,
       "marketingPct": 1.9,
       "logisticsPct": 0.3,
-      "operatingMarginPct": 14.7,
-      "profitPct": 11.2
+      "operatingMarginPct": 15.1,
+      "profitPct": 11.6
     },
     "cash": {
-      "cashOnAccounts": 8495856.91,
-      "unpaidInvoices": 370672.68,
-      "netCashPosition": 8125184.23,
-      "overdueInvoicesCount": 4,
-      "overdueInvoicesAmount": 208950.03,
+      "cashOnAccounts": 8636910.91,
+      "unpaidInvoices": 3992831.98,
+      "netCashPosition": 4644078.93,
+      "overdueInvoicesCount": 7,
+      "overdueInvoicesAmount": 3830919.5,
       "largestPayables": [
+        {
+          "code": "PF1296/2026",
+          "vendor": "\"ASTI GROUP\" SIA",
+          "dueDate": "28.09.2026",
+          "amountTotal": 2886760.08,
+          "amountDue": 2886760.08,
+          "status": "1 dní PO SPLATNOSTI"
+        },
+        {
+          "code": "PF1298/2026",
+          "vendor": "\"ASTI GROUP\" SIA",
+          "dueDate": "28.09.2026",
+          "amountTotal": 385228.32,
+          "amountDue": 385228.32,
+          "status": "1 dní PO SPLATNOSTI"
+        },
+        {
+          "code": "PF1299/2026",
+          "vendor": "\"ASTI GROUP\" SIA",
+          "dueDate": "28.09.2026",
+          "amountTotal": 325256.12,
+          "amountDue": 325256.12,
+          "status": "1 dní PO SPLATNOSTI"
+        },
         {
           "code": "PF1158/2026",
           "vendor": "Meta Platforms Ireland Limited",
@@ -158,44 +182,20 @@
           "status": "32 dní do splatnosti"
         },
         {
+          "code": "PF1297/2026",
+          "vendor": "\"ASTI GROUP\" SIA",
+          "dueDate": "28.09.2026",
+          "amountTotal": 47919.95,
+          "amountDue": 47919.95,
+          "status": "1 dní PO SPLATNOSTI"
+        },
+        {
           "code": "PF1292/2026",
           "vendor": "4PX Express CZ",
           "dueDate": "23.10.2026",
           "amountTotal": 40837.5,
           "amountDue": 40837.5,
           "status": "24 dní do splatnosti"
-        },
-        {
-          "code": "PF1272/2026",
-          "vendor": "AG Experts s.r.o.",
-          "dueDate": "17.10.2026",
-          "amountTotal": 37905.07,
-          "amountDue": 37905.07,
-          "status": "18 dní do splatnosti"
-        },
-        {
-          "code": "PF1293/2026",
-          "vendor": "FILIPES MEDIA s.r.o.",
-          "dueDate": "06.10.2026",
-          "amountTotal": 29040.0,
-          "amountDue": 29040.0,
-          "status": "7 dní do splatnosti"
-        },
-        {
-          "code": "PF1125/2026",
-          "vendor": "Amenity Resorts s.r.o.",
-          "dueDate": "27.08.2026",
-          "amountTotal": 23195.0,
-          "amountDue": 23195.0,
-          "status": "33 dní PO SPLATNOSTI"
-        },
-        {
-          "code": "PF1283/2026",
-          "vendor": "Alza.cz a.s.",
-          "dueDate": "04.10.2026",
-          "amountTotal": 949.0,
-          "amountDue": 949.0,
-          "status": "5 dní do splatnosti"
         }
       ],
       "cashAccountsSource": {
@@ -206,8 +206,8 @@
             "accountCode": "221001",
             "accountLabel": "221001: 2901338673/2010 FIO CZK",
             "currency": "CZK: Česká koruna",
-            "balance": 4241574.43,
-            "includedBalance": 4241574.43
+            "balance": 4382628.43,
+            "includedBalance": 4382628.43
           },
           {
             "accountCode": "221118",
@@ -387,7 +387,7 @@
       "performanceSpend": 7438.02,
       "brandSpend": 208535.0,
       "totalSpend": 215973.02,
-      "revenue": 11206105.05,
+      "revenue": 11474647.8,
       "spendShareOfRevenuePct": 1.9
     },
     "topSupplier": {
@@ -405,23 +405,23 @@
       "label": "2025-10-01 až 2026-09-29"
     },
     "summary": {
-      "noviceRevenueCzkEquiv": 20100457.0,
-      "networkRevenueCzkEquiv": 27923584.0,
+      "noviceRevenueCzkEquiv": 20145716.0,
+      "networkRevenueCzkEquiv": 27988029.0,
       "novicePartners": 50,
       "networkPartners": 50,
-      "noviceOrders": 12153.0,
-      "networkOrders": 17183.0,
-      "noviceOrderingContacts": 2051.0,
-      "networkOrderingCustomers": 4357.0,
+      "noviceOrders": 12181.0,
+      "networkOrders": 17223.0,
+      "noviceOrderingContacts": 2055.0,
+      "networkOrderingCustomers": 4364.0,
       "topNovicePartner": {
         "partnerCode": "ESHOP",
         "partnerName": "E-shop (interní)",
-        "revenueCzkEquiv": 7131750.0
+        "revenueCzkEquiv": 7160499.0
       },
       "topNetworkPartner": {
         "partnerCode": "ESHOP",
         "partnerName": "E-shop (interní)",
-        "revenueCzkEquiv": 7131750.0
+        "revenueCzkEquiv": 7160499.0
       }
     }
   },
