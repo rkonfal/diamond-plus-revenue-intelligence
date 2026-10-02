@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-02T00:31:34.704524+02:00",
+  "generatedAt": "2026-10-02T06:45:14.385664+02:00",
   "config": {
     "warehouseCode": "CZPRGA",
     "outboundMaxPages": 20,
@@ -14,8 +14,8 @@
       "label": "CZ",
       "inventory": {
         "items": 808,
-        "availableStockTotal": 335791,
-        "pendingStockTotal": 1442,
+        "availableStockTotal": 335636,
+        "pendingStockTotal": 1597,
         "freezeStockTotal": 0,
         "lowStockItems": 100
       },
@@ -23,8 +23,8 @@
         "items": 300,
         "scannedPages": 3,
         "topLogisticsProduct": "F1401",
-        "oldestTimestamp": "2026-09-30T23:00:05+02:00",
-        "newestTimestamp": "2026-10-02T00:20:03+02:00"
+        "oldestTimestamp": "2026-09-30T23:15:05+02:00",
+        "newestTimestamp": "2026-10-02T06:45:03+02:00"
       }
     },
     "sk": {
@@ -105,29 +105,29 @@
     "message": "Měsíční finance se tahají přímo z ABRA reportu Výkaz hospodaření za měsíc za všechna střediska. Cash a závazky jsou také live z ABRA API.",
     "currentMonth": {
       "label": "10/2026",
-      "revenue": 416450.66,
-      "cogsAndFees": 339086.99,
+      "revenue": 433851.04,
+      "cogsAndFees": 350773.45,
       "logistics": 0.0,
       "marketing": 0.0,
       "opex": 77916.88,
       "depreciation": 399556.0,
       "other": -25619.99,
-      "grossMargin": 77363.67,
-      "afterLogistics": 77363.67,
-      "afterMarketing": 77363.67,
-      "operatingMargin": -553.21,
-      "ebit": -400109.21,
-      "profit": -425729.2,
-      "grossMarginPct": 18.6,
+      "grossMargin": 83077.59,
+      "afterLogistics": 83077.59,
+      "afterMarketing": 83077.59,
+      "operatingMargin": 5160.71,
+      "ebit": -394395.29,
+      "profit": -420015.28,
+      "grossMarginPct": 19.1,
       "marketingPct": 0.0,
       "logisticsPct": 0.0,
-      "operatingMarginPct": -0.1,
-      "profitPct": -102.2
+      "operatingMarginPct": 1.2,
+      "profitPct": -96.8
     },
     "cash": {
-      "cashOnAccounts": 10982013.36,
-      "unpaidInvoices": 950016.18,
-      "netCashPosition": 10031997.18,
+      "cashOnAccounts": 11060015.13,
+      "unpaidInvoices": 910016.18,
+      "netCashPosition": 10149998.95,
       "overdueInvoicesCount": 4,
       "overdueInvoicesAmount": 461775.24,
       "largestPayables": [
@@ -188,12 +188,12 @@
           "status": "4 dní do splatnosti"
         },
         {
-          "code": "PF1322/2026",
-          "vendor": "Radynacestu, s.r.o.",
-          "dueDate": "05.10.2026",
-          "amountTotal": 20000.0,
-          "amountDue": 20000.0,
-          "status": "3 dní do splatnosti"
+          "code": "PF1307/2026",
+          "vendor": "Fluence s.r.o.",
+          "dueDate": "07.10.2026",
+          "amountTotal": 10285.0,
+          "amountDue": 10285.0,
+          "status": "5 dní do splatnosti"
         }
       ],
       "cashAccountsSource": {
@@ -204,15 +204,15 @@
             "accountCode": "221001",
             "accountLabel": "221001: 2901338673/2010 FIO CZK",
             "currency": "CZK: Česká koruna",
-            "balance": 5059813.56,
-            "includedBalance": 5059813.56
+            "balance": 5044249.56,
+            "includedBalance": 5044249.56
           },
           {
             "accountCode": "221115",
             "accountLabel": "221115: 131-3675980207/0100 KB CZK",
             "currency": "CZK: Česká koruna",
-            "balance": 2867212.04,
-            "includedBalance": 2867212.04
+            "balance": 2960777.81,
+            "includedBalance": 2960777.81
           },
           {
             "accountCode": "221118",
@@ -385,7 +385,7 @@
       "performanceSpend": 0.0,
       "brandSpend": 0.0,
       "totalSpend": 0.0,
-      "revenue": 416450.66,
+      "revenue": 433851.04,
       "spendShareOfRevenuePct": 0.0
     },
     "topSupplier": null
@@ -401,13 +401,13 @@
     },
     "summary": {
       "noviceRevenueCzkEquiv": 0.0,
-      "networkRevenueCzkEquiv": 28759743.0,
+      "networkRevenueCzkEquiv": 28764201.0,
       "novicePartners": 1,
       "networkPartners": 50,
       "noviceOrders": 0.0,
-      "networkOrders": 17669.0,
+      "networkOrders": 17674.0,
       "noviceOrderingContacts": 0.0,
-      "networkOrderingCustomers": 4493.0,
+      "networkOrderingCustomers": 4497.0,
       "topNovicePartner": {
         "partnerCode": "yn8wxm",
         "partnerName": "Iveta Liptayová",
@@ -416,7 +416,7 @@
       "topNetworkPartner": {
         "partnerCode": "ESHOP",
         "partnerName": "E-shop (interní)",
-        "revenueCzkEquiv": 7457589.0
+        "revenueCzkEquiv": 7461159.0
       }
     }
   },
