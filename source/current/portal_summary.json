@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-06T11:46:54.964012+02:00",
+  "generatedAt": "2026-10-06T18:36:36.087277+02:00",
   "config": {
     "warehouseCode": "CZPRGA",
     "outboundMaxPages": 20,
@@ -14,25 +14,25 @@
       "label": "CZ",
       "inventory": {
         "items": 808,
-        "availableStockTotal": 323850,
-        "pendingStockTotal": 1740,
+        "availableStockTotal": 326621,
+        "pendingStockTotal": 1062,
         "freezeStockTotal": 0,
         "lowStockItems": 100
       },
       "outbound": {
-        "items": 500,
-        "scannedPages": 5,
+        "items": 700,
+        "scannedPages": 7,
         "topLogisticsProduct": "F1401",
-        "oldestTimestamp": "2026-10-04T23:40:05+02:00",
-        "newestTimestamp": "2026-10-06T11:45:02+02:00"
+        "oldestTimestamp": "2026-10-04T19:40:11+02:00",
+        "newestTimestamp": "2026-10-06T18:30:05+02:00"
       }
     },
     "sk": {
       "label": "SK",
       "inventory": {
         "items": 659,
-        "availableStockTotal": 48648,
-        "pendingStockTotal": 105,
+        "availableStockTotal": 48725,
+        "pendingStockTotal": 92,
         "freezeStockTotal": 0,
         "lowStockItems": 100
       },
@@ -40,8 +40,8 @@
         "items": 100,
         "scannedPages": 1,
         "topLogisticsProduct": "F1403",
-        "oldestTimestamp": "2026-10-03T10:30:20+02:00",
-        "newestTimestamp": "2026-10-06T11:25:16+02:00"
+        "oldestTimestamp": "2026-10-04T11:10:20+02:00",
+        "newestTimestamp": "2026-10-06T18:35:13+02:00"
       }
     }
   },
@@ -69,11 +69,11 @@
   },
   "expiries": {
     "datedSkuCount": 320,
-    "czSkuCount": 314,
+    "czSkuCount": 315,
     "skSkuCount": 300,
     "datedRowCount": 717,
-    "czRowCount": 362,
-    "skRowCount": 355
+    "czRowCount": 363,
+    "skRowCount": 354
   },
   "storeExpiry": {
     "inputRows": 0,
@@ -90,11 +90,11 @@
     "sourceWarnings": 2
   },
   "pairing": {
-    "allCodes": 3087,
+    "allCodes": 3090,
     "pairedProducts": 361,
-    "onlyInWpj": 1660,
+    "onlyInWpj": 1663,
     "onlyIn4px": 1,
-    "stockMismatch": 707,
+    "stockMismatch": 714,
     "lowAfterSales": 1,
     "manualMapped4pxAliases": 0,
     "autoMapped4pxAliases": 76
@@ -105,29 +105,29 @@
     "message": "Měsíční finance se tahají přímo z ABRA reportu Výkaz hospodaření za měsíc za všechna střediska. Cash a závazky jsou také live z ABRA API.",
     "currentMonth": {
       "label": "10/2026",
-      "revenue": 1885166.97,
-      "cogsAndFees": 1417493.89,
+      "revenue": 2100456.31,
+      "cogsAndFees": 1566126.36,
       "logistics": 9494.92,
       "marketing": 2479.34,
       "opex": 101284.45,
       "depreciation": 399556.0,
       "other": -39395.95,
-      "grossMargin": 467673.08,
-      "afterLogistics": 458178.16,
-      "afterMarketing": 455698.82,
-      "operatingMargin": 354414.37,
-      "ebit": -45141.63,
-      "profit": -84537.58,
-      "grossMarginPct": 24.8,
+      "grossMargin": 534329.95,
+      "afterLogistics": 524835.03,
+      "afterMarketing": 522355.69,
+      "operatingMargin": 421071.24,
+      "ebit": 21515.24,
+      "profit": -17880.71,
+      "grossMarginPct": 25.4,
       "marketingPct": 0.1,
       "logisticsPct": 0.5,
-      "operatingMarginPct": 18.8,
-      "profitPct": -4.5
+      "operatingMarginPct": 20.0,
+      "profitPct": -0.9
     },
     "cash": {
-      "cashOnAccounts": 8027041.04,
-      "unpaidInvoices": 1617334.35,
-      "netCashPosition": 6409706.69,
+      "cashOnAccounts": 8099699.04,
+      "unpaidInvoices": 1450227.49,
+      "netCashPosition": 6649471.55,
       "overdueInvoicesCount": 3,
       "overdueInvoicesAmount": 408275.51,
       "largestPayables": [
@@ -154,14 +154,6 @@
           "amountTotal": 133487.33,
           "amountDue": 133487.33,
           "status": "10 dní do splatnosti"
-        },
-        {
-          "code": "PF1357/2026",
-          "vendor": "ProfiSMS s.r.o.",
-          "dueDate": "12.10.2026",
-          "amountTotal": 100000.0,
-          "amountDue": 100000.0,
-          "status": "6 dní do splatnosti"
         },
         {
           "code": "PF1348/2026",
@@ -194,6 +186,14 @@
           "amountTotal": 40837.5,
           "amountDue": 40837.5,
           "status": "17 dní do splatnosti"
+        },
+        {
+          "code": "Z0075/2026",
+          "vendor": "ORLEN Unipetrol RPA s.r.o.",
+          "dueDate": "16.10.2026",
+          "amountTotal": 37319.26,
+          "amountDue": 37319.26,
+          "status": "10 dní do splatnosti"
         }
       ],
       "cashAccountsSource": {
@@ -218,8 +218,8 @@
             "accountCode": "221001",
             "accountLabel": "221001: 2901338673/2010 FIO CZK",
             "currency": "CZK: Česká koruna",
-            "balance": 1105961.5,
-            "includedBalance": 1105961.5
+            "balance": 1178619.5,
+            "includedBalance": 1178619.5
           },
           {
             "accountCode": "221111",
@@ -385,7 +385,7 @@
       "performanceSpend": 2479.34,
       "brandSpend": 0.0,
       "totalSpend": 2479.34,
-      "revenue": 1885166.97,
+      "revenue": 2100456.31,
       "spendShareOfRevenuePct": 0.1
     },
     "topSupplier": null
@@ -401,13 +401,13 @@
     },
     "summary": {
       "noviceRevenueCzkEquiv": 0.0,
-      "networkRevenueCzkEquiv": 29150325.0,
+      "networkRevenueCzkEquiv": 29178690.0,
       "novicePartners": 2,
       "networkPartners": 50,
       "noviceOrders": 0.0,
-      "networkOrders": 17961.0,
+      "networkOrders": 17985.0,
       "noviceOrderingContacts": 0.0,
-      "networkOrderingCustomers": 4540.0,
+      "networkOrderingCustomers": 4542.0,
       "topNovicePartner": {
         "partnerCode": "pqopo3",
         "partnerName": "tarabovamilka66@gmail.com",
@@ -416,7 +416,7 @@
       "topNetworkPartner": {
         "partnerCode": "ESHOP",
         "partnerName": "E-shop (interní)",
-        "revenueCzkEquiv": 7586796.0
+        "revenueCzkEquiv": 7597995.0
       }
     }
   },
