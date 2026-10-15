@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-15T00:20:58.055797+02:00",
+  "generatedAt": "2026-10-15T06:00:05.128780+02:00",
   "window": {
     "from": "2026-10-14T00:00:01+02:00",
     "to": "2026-10-15T00:00:00+02:00"
@@ -38175,10 +38175,10 @@
       },
       "dateCreated": "2026-10-14T14:17:39+02:00",
       "cancelled": false,
-      "isPaid": false,
+      "isPaid": true,
       "status": {
-        "id": 0,
-        "name": "nová"
+        "id": 1,
+        "name": "přijatá"
       },
       "totalPrice": {
         "withVat": 1604,
@@ -38231,6 +38231,60 @@
           "orderStatus": "nová",
           "date": "2026-10-14T14:21:37+02:00",
           "comment": "[FlexiBee] Objednávka byla nahrána do FlexiBee; ID: 716686",
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7688904,
+          "adminId": null,
+          "orderStatus": "nová",
+          "date": "2026-10-15T06:19:02+02:00",
+          "comment": "Modul FioBank - příchozí platba č. 27895445929.",
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7688905,
+          "adminId": null,
+          "orderStatus": "nová",
+          "date": "2026-10-15T06:19:02+02:00",
+          "comment": "<p>Dobré zprávy: Úhrada vaší objednávky 261328020 právě dorazila. Než dočtete tento e-mail, pustíme se do práce na expedici vaší objednávky tak, aby vám dorazila co nejdříve.</p><p>Těšíte se? 😍</p><div></div>",
+          "notifyStatus": "YES",
+          "data": "\"{\\\"email_type\\\": \\\"PAYMENT_SUCCESS\\\", \\\"subject\\\": \\\"\\\\ud83c\\\\udf89 Va\\\\u0161e \\\\u00fahrada objedn\\\\u00e1vky 261328020 dorazila, startujeme\\\", \\\"isAdminEmail\\\": false, \\\"attachments\\\": [\\\"order_invoice\\\"], \\\"email_id\\\": \\\"6ad05436cb8de\\\"}\""
+        },
+        {
+          "id": 7688906,
+          "adminId": null,
+          "orderStatus": "nová",
+          "date": "2026-10-15T06:20:02+02:00",
+          "comment": "[4PX] Objednávka byla vytvořena; ID: OC149400632610150109 tracking: 601119773071 účet: CZ",
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7688907,
+          "adminId": null,
+          "orderStatus": "přijatá",
+          "date": "2026-10-15T06:20:02+02:00",
+          "comment": null,
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7688912,
+          "adminId": null,
+          "orderStatus": "přijatá",
+          "date": "2026-10-15T06:22:07+02:00",
+          "comment": "[FlexiBee] Objednávka byla ve FlexiBee zaktualizována",
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7688914,
+          "adminId": null,
+          "orderStatus": "přijatá",
+          "date": "2026-10-15T06:22:13+02:00",
+          "comment": "[Flexi] Objednávka byla realizována ve Flexi;",
           "notifyStatus": "NO",
           "data": "null"
         }
@@ -78932,7 +78986,7 @@
     "statuses": [
       {
         "name": "přijatá",
-        "count": 194
+        "count": 195
       },
       {
         "name": "expedováno",
@@ -78940,7 +78994,7 @@
       },
       {
         "name": "nová",
-        "count": 19
+        "count": 18
       },
       {
         "name": "doručeno",
@@ -79733,7 +79787,7 @@
         "statuses": [
           {
             "name": "přijatá",
-            "count": 194
+            "count": 195
           },
           {
             "name": "expedováno",
@@ -79741,7 +79795,7 @@
           },
           {
             "name": "nová",
-            "count": 19
+            "count": 18
           },
           {
             "name": "doručeno",
@@ -80534,7 +80588,7 @@
         "statuses": [
           {
             "name": "přijatá",
-            "count": 175
+            "count": 176
           },
           {
             "name": "expedováno",
@@ -80542,7 +80596,7 @@
           },
           {
             "name": "nová",
-            "count": 18
+            "count": 17
           }
         ],
         "paymentMethods": [
