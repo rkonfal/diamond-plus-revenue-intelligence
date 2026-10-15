@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-15T06:00:05.128780+02:00",
+  "generatedAt": "2026-10-15T11:07:37.939898+02:00",
   "config": {
     "warehouseCode": "CZPRGA",
     "outboundMaxPages": 20,
@@ -14,25 +14,25 @@
       "label": "CZ",
       "inventory": {
         "items": 810,
-        "availableStockTotal": 302825,
-        "pendingStockTotal": 2165,
+        "availableStockTotal": 302004,
+        "pendingStockTotal": 1285,
         "freezeStockTotal": 0,
         "lowStockItems": 100
       },
       "outbound": {
-        "items": 300,
-        "scannedPages": 3,
+        "items": 400,
+        "scannedPages": 4,
         "topLogisticsProduct": "F1401",
-        "oldestTimestamp": "2026-10-13T23:20:03+02:00",
-        "newestTimestamp": "2026-10-15T05:55:04+02:00"
+        "oldestTimestamp": "2026-10-13T22:20:56+02:00",
+        "newestTimestamp": "2026-10-15T11:05:02+02:00"
       }
     },
     "sk": {
       "label": "SK",
       "inventory": {
         "items": 661,
-        "availableStockTotal": 46314,
-        "pendingStockTotal": 269,
+        "availableStockTotal": 46243,
+        "pendingStockTotal": 71,
         "freezeStockTotal": 0,
         "lowStockItems": 100
       },
@@ -40,8 +40,8 @@
         "items": 100,
         "scannedPages": 1,
         "topLogisticsProduct": "F1403",
-        "oldestTimestamp": "2026-10-11T20:10:55+02:00",
-        "newestTimestamp": "2026-10-15T05:00:14+02:00"
+        "oldestTimestamp": "2026-10-11T21:40:19+02:00",
+        "newestTimestamp": "2026-10-15T10:45:29+02:00"
       }
     }
   },
@@ -71,9 +71,9 @@
     "datedSkuCount": 321,
     "czSkuCount": 316,
     "skSkuCount": 302,
-    "datedRowCount": 727,
-    "czRowCount": 371,
-    "skRowCount": 356
+    "datedRowCount": 722,
+    "czRowCount": 369,
+    "skRowCount": 353
   },
   "storeExpiry": {
     "inputRows": 0,
@@ -94,7 +94,7 @@
     "pairedProducts": 361,
     "onlyInWpj": 1681,
     "onlyIn4px": 1,
-    "stockMismatch": 724,
+    "stockMismatch": 727,
     "lowAfterSales": 4,
     "manualMapped4pxAliases": 0,
     "autoMapped4pxAliases": 76
@@ -105,29 +105,29 @@
     "message": "Měsíční finance se tahají přímo z ABRA reportu Výkaz hospodaření za měsíc za všechna střediska. Cash a závazky jsou také live z ABRA API.",
     "currentMonth": {
       "label": "10/2026",
-      "revenue": 5544543.0,
-      "cogsAndFees": 4147470.85,
+      "revenue": 5651958.34,
+      "cogsAndFees": 4241742.28,
       "logistics": 24609.95,
-      "marketing": 204958.68,
+      "marketing": 612748.99,
       "opex": 361515.25,
       "depreciation": 399556.0,
       "other": -39433.83,
-      "grossMargin": 1397072.15,
-      "afterLogistics": 1372462.2,
-      "afterMarketing": 1167503.52,
-      "operatingMargin": 805988.27,
-      "ebit": 406432.27,
-      "profit": 366998.44,
-      "grossMarginPct": 25.2,
-      "marketingPct": 3.7,
+      "grossMargin": 1410216.06,
+      "afterLogistics": 1385606.11,
+      "afterMarketing": 772857.12,
+      "operatingMargin": 411341.87,
+      "ebit": 11785.87,
+      "profit": -27647.96,
+      "grossMarginPct": 25.0,
+      "marketingPct": 10.8,
       "logisticsPct": 0.4,
-      "operatingMarginPct": 14.5,
-      "profitPct": 6.6
+      "operatingMarginPct": 7.3,
+      "profitPct": -0.5
     },
     "cash": {
-      "cashOnAccounts": 9013274.37,
-      "unpaidInvoices": 3240096.31,
-      "netCashPosition": 5773178.06,
+      "cashOnAccounts": 9060105.37,
+      "unpaidInvoices": 3250773.31,
+      "netCashPosition": 5809332.06,
       "overdueInvoicesCount": 4,
       "overdueInvoicesAmount": 409563.14,
       "largestPayables": [
@@ -140,7 +140,7 @@
           "status": "15 dní do splatnosti"
         },
         {
-          "code": "PF1365/2026",
+          "code": "Z0079/2026",
           "vendor": "FANTAZMA, spol. s r.o.",
           "dueDate": "01.11.2026",
           "amountTotal": 603600.0,
@@ -218,8 +218,8 @@
             "accountCode": "221001",
             "accountLabel": "221001: 2901338673/2010 FIO CZK",
             "currency": "CZK: Česká koruna",
-            "balance": 1909278.26,
-            "includedBalance": 1909278.26
+            "balance": 1956109.26,
+            "includedBalance": 1956109.26
           },
           {
             "accountCode": "221115",
@@ -382,11 +382,11 @@
     "message": "Marketing se skládá z live ABRA reportu a aktuálních položek z účetního deníku. Přímé platformy přes API: Sklik, Meta Ads, Google Ads, Ecomail, Affiliate.",
     "currentMonth": {
       "label": "10/2026",
-      "performanceSpend": 4958.68,
+      "performanceSpend": 412748.99,
       "brandSpend": 200000.0,
-      "totalSpend": 204958.68,
-      "revenue": 5544543.0,
-      "spendShareOfRevenuePct": 3.7
+      "totalSpend": 612748.99,
+      "revenue": 5651958.34,
+      "spendShareOfRevenuePct": 10.8
     },
     "topSupplier": {
       "name": "Selfcareacademy s.r.o.",
@@ -404,22 +404,22 @@
     },
     "summary": {
       "noviceRevenueCzkEquiv": 0.0,
-      "networkRevenueCzkEquiv": 30119360.0,
-      "novicePartners": 3,
+      "networkRevenueCzkEquiv": 30140298.0,
+      "novicePartners": 4,
       "networkPartners": 50,
       "noviceOrders": 0.0,
-      "networkOrders": 18632.0,
+      "networkOrders": 18646.0,
       "noviceOrderingContacts": 0.0,
-      "networkOrderingCustomers": 4646.0,
+      "networkOrderingCustomers": 4648.0,
       "topNovicePartner": {
-        "partnerCode": "pqopo3",
-        "partnerName": "tarabovamilka66@gmail.com",
+        "partnerCode": "yn8wxm",
+        "partnerName": "Iveta Liptayová",
         "revenueCzkEquiv": 0.0
       },
       "topNetworkPartner": {
         "partnerCode": "ESHOP",
         "partnerName": "E-shop (interní)",
-        "revenueCzkEquiv": 7923257.0
+        "revenueCzkEquiv": 7930096.0
       }
     }
   },
@@ -515,22 +515,22 @@
     "status": "ok",
     "summary": {
       "windowDays": 90,
-      "twistoBatchCount": 20,
+      "twistoBatchCount": 21,
       "twistoPaidBatchCount": 20,
-      "bankTwistoTransactionCount": 20,
-      "matchedBatchCount": 20,
+      "bankTwistoTransactionCount": 21,
+      "matchedBatchCount": 21,
       "unmatchedBatchCount": 0,
       "unmatchedBankTransactions": 0,
       "twistoPaidAmount": 81319.0,
-      "twistoMatchedAmount": 81319.0,
-      "bankReceivedAmount": 81319.0,
+      "twistoMatchedAmount": 85525.0,
+      "bankReceivedAmount": 85525.0,
       "openBatchAmount": 0,
       "bankVsTwistoDelta": 0.0,
       "wpjTwistoOrderCount": 1,
       "wpjTwistoOrderAmount": 875.0,
-      "twistoOrderAmount": 724612.0,
-      "historicalMatchedBatchAmount": 81319.0,
-      "wpjVsTwistoOrderDelta": -723737.0,
+      "twistoOrderAmount": 728818.0,
+      "historicalMatchedBatchAmount": 85525.0,
+      "wpjVsTwistoOrderDelta": -727943.0,
       "oldestOpenBatchDays": null
     },
     "source": {
