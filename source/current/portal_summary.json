@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-16T18:46:16.279739+02:00",
+  "generatedAt": "2026-10-16T22:36:20.399860+02:00",
   "config": {
     "warehouseCode": "CZPRGA",
     "outboundMaxPages": 20,
@@ -14,8 +14,8 @@
       "label": "CZ",
       "inventory": {
         "items": 810,
-        "availableStockTotal": 303074,
-        "pendingStockTotal": 704,
+        "availableStockTotal": 302643,
+        "pendingStockTotal": 1135,
         "freezeStockTotal": 0,
         "lowStockItems": 100
       },
@@ -23,16 +23,16 @@
         "items": 500,
         "scannedPages": 5,
         "topLogisticsProduct": "F1401",
-        "oldestTimestamp": "2026-10-14T18:25:04+02:00",
-        "newestTimestamp": "2026-10-16T18:35:02+02:00"
+        "oldestTimestamp": "2026-10-14T20:50:04+02:00",
+        "newestTimestamp": "2026-10-16T22:30:05+02:00"
       }
     },
     "sk": {
       "label": "SK",
       "inventory": {
         "items": 661,
-        "availableStockTotal": 46946,
-        "pendingStockTotal": 84,
+        "availableStockTotal": 46885,
+        "pendingStockTotal": 145,
         "freezeStockTotal": 0,
         "lowStockItems": 100
       },
@@ -40,8 +40,8 @@
         "items": 100,
         "scannedPages": 1,
         "topLogisticsProduct": "F1403",
-        "oldestTimestamp": "2026-10-12T19:10:46+02:00",
-        "newestTimestamp": "2026-10-16T16:40:23+02:00"
+        "oldestTimestamp": "2026-10-12T21:25:19+02:00",
+        "newestTimestamp": "2026-10-16T22:15:14+02:00"
       }
     }
   },
@@ -62,7 +62,7 @@
       "5 A produktů je v kritickém riziku výpadku."
     ],
     "priorities": [
-      "Prověřit A produkty v riziku výpadku (5 SKU): 30115, 120105, 56005.",
+      "Prověřit A produkty v riziku výpadku (5 SKU): 30115, 120105, 12115.",
       "Dohlédnout BAL036 (Rituál krásy a relaxace), aktuálně 2 ks.",
       "Projít nejbližší expirace v 4PX a rozhodnout o doprodeji nebo přesunu zásoby."
     ]
@@ -105,29 +105,29 @@
     "message": "Měsíční finance se tahají přímo z ABRA reportu Výkaz hospodaření za měsíc za všechna střediska. Cash a závazky jsou také live z ABRA API.",
     "currentMonth": {
       "label": "10/2026",
-      "revenue": 6155423.9,
-      "cogsAndFees": 4605561.44,
+      "revenue": 6207777.61,
+      "cogsAndFees": 4645206.36,
       "logistics": 24609.95,
       "marketing": 612748.99,
       "opex": 363852.45,
       "depreciation": 399556.0,
       "other": -39526.75,
-      "grossMargin": 1549862.46,
-      "afterLogistics": 1525252.51,
-      "afterMarketing": 912503.52,
-      "operatingMargin": 548651.07,
-      "ebit": 149095.07,
-      "profit": 109568.32,
+      "grossMargin": 1562571.25,
+      "afterLogistics": 1537961.3,
+      "afterMarketing": 925212.31,
+      "operatingMargin": 561359.86,
+      "ebit": 161803.86,
+      "profit": 122277.11,
       "grossMarginPct": 25.2,
-      "marketingPct": 10.0,
+      "marketingPct": 9.9,
       "logisticsPct": 0.4,
-      "operatingMarginPct": 8.9,
-      "profitPct": 1.8
+      "operatingMarginPct": 9.0,
+      "profitPct": 2.0
     },
     "cash": {
-      "cashOnAccounts": 10063897.13,
+      "cashOnAccounts": 10075932.58,
       "unpaidInvoices": 3253601.31,
-      "netCashPosition": 6810295.82,
+      "netCashPosition": 6822331.27,
       "overdueInvoicesCount": 5,
       "overdueInvoicesAmount": 505416.43,
       "largestPayables": [
@@ -218,8 +218,8 @@
             "accountCode": "221001",
             "accountLabel": "221001: 2901338673/2010 FIO CZK",
             "currency": "CZK: Česká koruna",
-            "balance": 2164193.26,
-            "includedBalance": 2164193.26
+            "balance": 2171160.26,
+            "includedBalance": 2171160.26
           },
           {
             "accountCode": "221115",
@@ -246,8 +246,8 @@
             "accountCode": "221005",
             "accountLabel": "221005: 2501338690/2010 FIO EUR",
             "currency": "CZK: Česká koruna",
-            "balance": 136511.92,
-            "includedBalance": 136511.92
+            "balance": 141580.37,
+            "includedBalance": 141580.37
           },
           {
             "accountCode": "221117",
@@ -385,8 +385,8 @@
       "performanceSpend": 412748.99,
       "brandSpend": 200000.0,
       "totalSpend": 612748.99,
-      "revenue": 6155423.9,
-      "spendShareOfRevenuePct": 10.0
+      "revenue": 6207777.61,
+      "spendShareOfRevenuePct": 9.9
     },
     "topSupplier": {
       "name": "Selfcareacademy s.r.o.",
@@ -404,22 +404,22 @@
     },
     "summary": {
       "noviceRevenueCzkEquiv": 0.0,
-      "networkRevenueCzkEquiv": 30292278.0,
+      "networkRevenueCzkEquiv": 30298318.0,
       "novicePartners": 6,
       "networkPartners": 50,
       "noviceOrders": 0.0,
-      "networkOrders": 18731.0,
+      "networkOrders": 18743.0,
       "noviceOrderingContacts": 0.0,
       "networkOrderingCustomers": 4656.0,
       "topNovicePartner": {
-        "partnerCode": "yn8wxm",
-        "partnerName": "Iveta Liptayová",
+        "partnerCode": "ujwcqe",
+        "partnerName": "Daniela Hlavatá",
         "revenueCzkEquiv": 0.0
       },
       "topNetworkPartner": {
         "partnerCode": "ESHOP",
         "partnerName": "E-shop (interní)",
-        "revenueCzkEquiv": 7986539.0
+        "revenueCzkEquiv": 7986662.0
       }
     }
   },
