@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-22T11:09:19.644100+02:00",
+  "generatedAt": "2026-10-22T16:42:46.079859+02:00",
   "source": {
     "status": "live_report",
     "message": "Měsíční finance se tahají přímo z ABRA reportu Výkaz hospodaření za měsíc za všechna střediska. Cash a závazky jsou také live z ABRA API."
@@ -208,46 +208,46 @@
     },
     {
       "label": "10/2026",
-      "revenue": 7777189.06,
-      "cogsAndFees": 5887792.25,
+      "revenue": 7941699.69,
+      "cogsAndFees": 6021850.2,
       "logistics": 24609.95,
       "marketing": 615228.33,
       "opex": 598027.02,
       "depreciation": 399556.0,
-      "other": -38219.86,
-      "grossMargin": 1889396.81,
-      "afterLogistics": 1864786.86,
-      "afterMarketing": 1249558.53,
-      "operatingMargin": 651531.51,
-      "ebit": 251975.51,
-      "profit": 213755.65,
-      "grossMarginPct": 24.3,
-      "marketingPct": 7.9,
+      "other": -38301.7,
+      "grossMargin": 1919849.49,
+      "afterLogistics": 1895239.54,
+      "afterMarketing": 1280011.21,
+      "operatingMargin": 681984.19,
+      "ebit": 282428.19,
+      "profit": 244126.49,
+      "grossMarginPct": 24.2,
+      "marketingPct": 7.7,
       "logisticsPct": 0.3,
-      "operatingMarginPct": 8.4,
-      "profitPct": 2.7
+      "operatingMarginPct": 8.6,
+      "profitPct": 3.1
     }
   ],
   "currentMonth": {
     "label": "10/2026",
-    "revenue": 7777189.06,
-    "cogsAndFees": 5887792.25,
+    "revenue": 7941699.69,
+    "cogsAndFees": 6021850.2,
     "logistics": 24609.95,
     "marketing": 615228.33,
     "opex": 598027.02,
     "depreciation": 399556.0,
-    "other": -38219.86,
-    "grossMargin": 1889396.81,
-    "afterLogistics": 1864786.86,
-    "afterMarketing": 1249558.53,
-    "operatingMargin": 651531.51,
-    "ebit": 251975.51,
-    "profit": 213755.65,
-    "grossMarginPct": 24.3,
-    "marketingPct": 7.9,
+    "other": -38301.7,
+    "grossMargin": 1919849.49,
+    "afterLogistics": 1895239.54,
+    "afterMarketing": 1280011.21,
+    "operatingMargin": 681984.19,
+    "ebit": 282428.19,
+    "profit": 244126.49,
+    "grossMarginPct": 24.2,
+    "marketingPct": 7.7,
     "logisticsPct": 0.3,
-    "operatingMarginPct": 8.4,
-    "profitPct": 2.7
+    "operatingMarginPct": 8.6,
+    "profitPct": 3.1
   },
   "previousMonth": {
     "label": "9/2026",
@@ -271,9 +271,9 @@
     "profitPct": 1.5
   },
   "cash": {
-    "cashOnAccounts": 9858996.22,
+    "cashOnAccounts": 10998627.81,
     "unpaidInvoices": 2063509.62,
-    "netCashPosition": 7795486.6,
+    "netCashPosition": 8935118.19,
     "overdueInvoicesCount": 4,
     "overdueInvoicesAmount": 411175.84,
     "largestPayables": [
@@ -347,18 +347,18 @@
       "message": "Cash na účtech a pokladnách je počítán živě z ABRA obratové předvahy pro účty 221 a 211, ze CZK řádků a se započtením kladných zůstatků.",
       "accounts": [
         {
+          "accountCode": "221001",
+          "accountLabel": "221001: 2901338673/2010 FIO CZK",
+          "currency": "CZK: Česká koruna",
+          "balance": 2983380.45,
+          "includedBalance": 2983380.45
+        },
+        {
           "accountCode": "221119",
           "accountLabel": "221119: Bankovní účty",
           "currency": "CZK: Česká koruna",
           "balance": 2975542.99,
           "includedBalance": 2975542.99
-        },
-        {
-          "accountCode": "221001",
-          "accountLabel": "221001: 2901338673/2010 FIO CZK",
-          "currency": "CZK: Česká koruna",
-          "balance": 2948337.45,
-          "includedBalance": 2948337.45
         },
         {
           "accountCode": "221118",
@@ -371,22 +371,36 @@
           "accountCode": "221115",
           "accountLabel": "221115: 131-3675980207/0100 KB CZK",
           "currency": "CZK: Česká koruna",
-          "balance": 900332.4,
-          "includedBalance": 900332.4
+          "balance": 1425738.17,
+          "includedBalance": 1425738.17
+        },
+        {
+          "accountCode": "221002",
+          "accountLabel": "221002: 131-1211280297/0100 KB EUR",
+          "currency": "CZK: Česká koruna",
+          "balance": 408897.3,
+          "includedBalance": 408897.3
         },
         {
           "accountCode": "221111",
           "accountLabel": "221111: 107-164902 Czk THEPAY",
           "currency": "CZK: Česká koruna",
-          "balance": 233488.48,
-          "includedBalance": 233488.48
+          "balance": 301015.95,
+          "includedBalance": 301015.95
         },
         {
           "accountCode": "221005",
           "accountLabel": "221005: 2501338690/2010 FIO EUR",
           "currency": "CZK: Česká koruna",
-          "balance": 151062.56,
-          "includedBalance": 151062.56
+          "balance": 164947.18,
+          "includedBalance": 164947.18
+        },
+        {
+          "accountCode": "221112",
+          "accountLabel": "221112: 107-164902 EUR THEPAY",
+          "currency": "CZK: Česká koruna",
+          "balance": 112087.58,
+          "includedBalance": 112087.58
         },
         {
           "accountCode": "221117",
@@ -394,13 +408,6 @@
           "currency": "CZK: Česká koruna",
           "balance": 99497.24,
           "includedBalance": 99497.24
-        },
-        {
-          "accountCode": "221112",
-          "accountLabel": "221112: 107-164902 EUR THEPAY",
-          "currency": "CZK: Česká koruna",
-          "balance": 23214.15,
-          "includedBalance": 23214.15
         },
         {
           "accountCode": "211000",
@@ -505,13 +512,6 @@
           "accountLabel": "221001: 2901338673/2010 FIO CZK",
           "currency": "CHF: Švýcarský frank",
           "balance": -217.02,
-          "includedBalance": 0.0
-        },
-        {
-          "accountCode": "221001",
-          "accountLabel": "221001: 2901338673/2010 FIO CZK",
-          "currency": "PLN: Polský zlotý",
-          "balance": -3310.32,
           "includedBalance": 0.0
         }
       ]
@@ -865,18 +865,18 @@
       },
       {
         "label": "10/2026",
-        "expenseTotal": 3701766.44,
+        "expenseTotal": 3699987.53,
         "revenueTotal": 4770301.3,
         "topExpenseClass": {
           "code": "50",
           "label": "Spotřeba a zboží",
-          "amount": 3148479.17
+          "amount": 3146481.59
         },
         "topExpenseAccounts": [
           {
             "code": "504001",
             "label": "Nákup zboží 2",
-            "amount": 3129377.37,
+            "amount": 3127379.79,
             "classCode": "50",
             "classLabel": "Spotřeba a zboží"
           },
@@ -904,7 +904,7 @@
           {
             "code": "568100",
             "label": "Bankovní poplatky",
-            "amount": 32935.22,
+            "amount": 33153.89,
             "classCode": "56",
             "classLabel": "Finanční náklady"
           },
@@ -962,7 +962,7 @@
           {
             "code": "50",
             "label": "Spotřeba a zboží",
-            "amount": 3148479.17
+            "amount": 3146481.59
           },
           {
             "code": "51",
@@ -972,7 +972,7 @@
           {
             "code": "56",
             "label": "Finanční náklady",
-            "amount": 48061.9
+            "amount": 48280.57
           },
           {
             "code": "54",
@@ -1030,24 +1030,24 @@
             "amount": 6691.06
           }
         ],
-        "entryCount": 11687,
+        "entryCount": 11686,
         "detailFile": "finance_journal_10-2026.json"
       }
     ],
     "currentMonth": {
       "label": "10/2026",
-      "expenseTotal": 3701766.44,
+      "expenseTotal": 3699987.53,
       "revenueTotal": 4770301.3,
       "topExpenseClass": {
         "code": "50",
         "label": "Spotřeba a zboží",
-        "amount": 3148479.17
+        "amount": 3146481.59
       },
       "topExpenseAccounts": [
         {
           "code": "504001",
           "label": "Nákup zboží 2",
-          "amount": 3129377.37,
+          "amount": 3127379.79,
           "classCode": "50",
           "classLabel": "Spotřeba a zboží"
         },
@@ -1075,7 +1075,7 @@
         {
           "code": "568100",
           "label": "Bankovní poplatky",
-          "amount": 32935.22,
+          "amount": 33153.89,
           "classCode": "56",
           "classLabel": "Finanční náklady"
         },
@@ -1133,7 +1133,7 @@
         {
           "code": "50",
           "label": "Spotřeba a zboží",
-          "amount": 3148479.17
+          "amount": 3146481.59
         },
         {
           "code": "51",
@@ -1143,7 +1143,7 @@
         {
           "code": "56",
           "label": "Finanční náklady",
-          "amount": 48061.9
+          "amount": 48280.57
         },
         {
           "code": "54",
@@ -1201,7 +1201,7 @@
           "amount": 6691.06
         }
       ],
-      "entryCount": 11687,
+      "entryCount": 11686,
       "detailFile": "finance_journal_10-2026.json"
     }
   }
