@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-27T06:08:43.649863+01:00",
+  "generatedAt": "2026-10-27T13:14:48.002827+01:00",
   "config": {
     "warehouseCode": "CZPRGA",
     "outboundMaxPages": 20,
@@ -14,25 +14,25 @@
       "label": "CZ",
       "inventory": {
         "items": 819,
-        "availableStockTotal": 291978,
-        "pendingStockTotal": 1878,
+        "availableStockTotal": 292350,
+        "pendingStockTotal": 663,
         "freezeStockTotal": 0,
         "lowStockItems": 100
       },
       "outbound": {
-        "items": 300,
-        "scannedPages": 3,
+        "items": 400,
+        "scannedPages": 4,
         "topLogisticsProduct": "F1401",
-        "oldestTimestamp": "2026-10-25T19:55:04+01:00",
-        "newestTimestamp": "2026-10-27T05:55:03+01:00"
+        "oldestTimestamp": "2026-10-25T20:30:04+01:00",
+        "newestTimestamp": "2026-10-27T13:15:05+01:00"
       }
     },
     "sk": {
       "label": "SK",
       "inventory": {
         "items": 670,
-        "availableStockTotal": 47005,
-        "pendingStockTotal": 101,
+        "availableStockTotal": 46594,
+        "pendingStockTotal": 42,
         "freezeStockTotal": 0,
         "lowStockItems": 100
       },
@@ -40,8 +40,8 @@
         "items": 100,
         "scannedPages": 1,
         "topLogisticsProduct": "F1403",
-        "oldestTimestamp": "2026-10-21T20:30:10+02:00",
-        "newestTimestamp": "2026-10-27T00:20:09+01:00"
+        "oldestTimestamp": "2026-10-22T13:10:16+02:00",
+        "newestTimestamp": "2026-10-27T12:10:27+01:00"
       }
     }
   },
@@ -69,11 +69,11 @@
   },
   "expiries": {
     "datedSkuCount": 329,
-    "czSkuCount": 323,
+    "czSkuCount": 322,
     "skSkuCount": 311,
-    "datedRowCount": 731,
-    "czRowCount": 370,
-    "skRowCount": 361
+    "datedRowCount": 725,
+    "czRowCount": 369,
+    "skRowCount": 356
   },
   "storeExpiry": {
     "inputRows": 0,
@@ -94,7 +94,7 @@
     "pairedProducts": 366,
     "onlyInWpj": 1694,
     "onlyIn4px": 1,
-    "stockMismatch": 735,
+    "stockMismatch": 745,
     "lowAfterSales": 1,
     "manualMapped4pxAliases": 0,
     "autoMapped4pxAliases": 84
@@ -105,31 +105,31 @@
     "message": "Měsíční finance se tahají přímo z ABRA reportu Výkaz hospodaření za měsíc za všechna střediska. Cash a závazky jsou také live z ABRA API.",
     "currentMonth": {
       "label": "10/2026",
-      "revenue": 9134334.32,
-      "cogsAndFees": 6896011.14,
+      "revenue": 9277575.29,
+      "cogsAndFees": 7096321.17,
       "logistics": 37171.0,
-      "marketing": 617707.67,
-      "opex": 703939.94,
+      "marketing": 620187.01,
+      "opex": 706422.42,
       "depreciation": 399556.0,
-      "other": -38324.54,
-      "grossMargin": 2238323.18,
-      "afterLogistics": 2201152.18,
-      "afterMarketing": 1583444.51,
-      "operatingMargin": 879504.57,
-      "ebit": 479948.57,
-      "profit": 441624.03,
-      "grossMarginPct": 24.5,
-      "marketingPct": 6.8,
+      "other": -38338.38,
+      "grossMargin": 2181254.12,
+      "afterLogistics": 2144083.12,
+      "afterMarketing": 1523896.11,
+      "operatingMargin": 817473.69,
+      "ebit": 417917.69,
+      "profit": 379579.31,
+      "grossMarginPct": 23.5,
+      "marketingPct": 6.7,
       "logisticsPct": 0.4,
-      "operatingMarginPct": 9.6,
-      "profitPct": 4.8
+      "operatingMarginPct": 8.8,
+      "profitPct": 4.1
     },
     "cash": {
-      "cashOnAccounts": 12367471.44,
-      "unpaidInvoices": 2558954.82,
-      "netCashPosition": 9808516.62,
-      "overdueInvoicesCount": 4,
-      "overdueInvoicesAmount": 424317.07,
+      "cashOnAccounts": 12420395.61,
+      "unpaidInvoices": 2673668.59,
+      "netCashPosition": 9746727.02,
+      "overdueInvoicesCount": 6,
+      "overdueInvoicesAmount": 426363.43,
       "largestPayables": [
         {
           "code": "PF1376/2026",
@@ -172,6 +172,14 @@
           "status": "2 dní do splatnosti"
         },
         {
+          "code": "PF1453/2026",
+          "vendor": "ISTA CORPORATION s.r.o.",
+          "dueDate": "02.11.2026",
+          "amountTotal": 112667.41,
+          "amountDue": 112667.41,
+          "status": "6 dní do splatnosti"
+        },
+        {
           "code": "PF1441/2026",
           "vendor": "ISTA CORPORATION s.r.o.",
           "dueDate": "28.10.2026",
@@ -186,14 +194,6 @@
           "amountTotal": 52268.0,
           "amountDue": 52268.0,
           "status": "4 dní do splatnosti"
-        },
-        {
-          "code": "PF1443/2026",
-          "vendor": "FILIPES MEDIA s.r.o.",
-          "dueDate": "31.10.2026",
-          "amountTotal": 48400.0,
-          "amountDue": 48400.0,
-          "status": "4 dní do splatnosti"
         }
       ],
       "cashAccountsSource": {
@@ -204,8 +204,8 @@
             "accountCode": "221001",
             "accountLabel": "221001: 2901338673/2010 FIO CZK",
             "currency": "CZK: Česká koruna",
-            "balance": 3541786.24,
-            "includedBalance": 3541786.24
+            "balance": 3593353.28,
+            "includedBalance": 3593353.28
           },
           {
             "accountCode": "221119",
@@ -246,8 +246,8 @@
             "accountCode": "221005",
             "accountLabel": "221005: 2501338690/2010 FIO EUR",
             "currency": "CZK: Česká koruna",
-            "balance": 182399.47,
-            "includedBalance": 182399.47
+            "balance": 183756.6,
+            "includedBalance": 183756.6
           },
           {
             "accountCode": "221112",
@@ -382,11 +382,11 @@
     "message": "Marketing se skládá z live ABRA reportu a aktuálních položek z účetního deníku. Přímé platformy přes API: Sklik, Meta Ads, Google Ads, Ecomail, Affiliate.",
     "currentMonth": {
       "label": "10/2026",
-      "performanceSpend": 417707.67,
+      "performanceSpend": 420187.01,
       "brandSpend": 200000.0,
-      "totalSpend": 617707.67,
-      "revenue": 9134334.32,
-      "spendShareOfRevenuePct": 6.8
+      "totalSpend": 620187.01,
+      "revenue": 9277575.29,
+      "spendShareOfRevenuePct": 6.7
     },
     "topSupplier": {
       "name": "Selfcareacademy s.r.o.",
@@ -404,22 +404,22 @@
     },
     "summary": {
       "noviceRevenueCzkEquiv": 0.0,
-      "networkRevenueCzkEquiv": 31202925.0,
+      "networkRevenueCzkEquiv": 31246154.0,
       "novicePartners": 6,
       "networkPartners": 50,
       "noviceOrders": 0.0,
-      "networkOrders": 19296.0,
+      "networkOrders": 19334.0,
       "noviceOrderingContacts": 0.0,
-      "networkOrderingCustomers": 4723.0,
+      "networkOrderingCustomers": 4724.0,
       "topNovicePartner": {
-        "partnerCode": "zfhpy4",
-        "partnerName": "dana.hancikova@centrum.cz",
+        "partnerCode": "pqopo3",
+        "partnerName": "tarabovamilka66@gmail.com",
         "revenueCzkEquiv": 0.0
       },
       "topNetworkPartner": {
         "partnerCode": "ESHOP",
         "partnerName": "E-shop (interní)",
-        "revenueCzkEquiv": 8298250.0
+        "revenueCzkEquiv": 8314335.0
       }
     }
   },
