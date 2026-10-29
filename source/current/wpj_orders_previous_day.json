@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-29T08:20:22.154383+01:00",
+  "generatedAt": "2026-10-29T16:00:05.224491+01:00",
   "window": {
     "from": "2026-10-28T00:00:01+01:00",
     "to": "2026-10-29T00:00:00+01:00"
@@ -2487,8 +2487,8 @@
       "cancelled": false,
       "isPaid": true,
       "status": {
-        "id": 1,
-        "name": "přijatá"
+        "id": 3,
+        "name": "expedováno"
       },
       "totalPrice": {
         "withVat": 68.65,
@@ -2595,6 +2595,51 @@
           "orderStatus": "přijatá",
           "date": "2026-10-28T22:47:29+01:00",
           "comment": "[Flexi] Objednávka byla realizována ve Flexi;",
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7741173,
+          "adminId": null,
+          "orderStatus": "přijatá",
+          "date": "2026-10-29T14:40:11+01:00",
+          "comment": "[4PX] Číslo balíku: 13915098308657",
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7741174,
+          "adminId": null,
+          "orderStatus": "přijatá",
+          "date": "2026-10-29T14:40:11+01:00",
+          "comment": "[4PX] Změna stavu: carrier_picked_up",
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7741175,
+          "adminId": null,
+          "orderStatus": "expedováno",
+          "date": "2026-10-29T14:40:11+01:00",
+          "comment": "<p><p dir=\"ltr\">Vašu objednávku dnes prevzala <strong>spoločnosť DPD</strong>, ktorá vás čoskoro kontaktuje <strong>ohľadom presného termínu vyzdvihnutia v pobočke DPD PickUp</strong>.<br />\nBuďte pripravení na prevzatie a <strong>sledujte</strong> svoj balík <strong>online</strong> <a href=\"https://www.dpdgroup.com/sk/mydpd/my-parcels/track?parcelNumber=13915098308657\">tu</a> pod číslom <strong>13915098308657</strong>.</p>\n\n<p dir=\"ltr\">Za objednávku ste zaplatili prostredníctvom bezpečnej online platby.</p>\n</p>\n\n<p> </p>\n\n<p>Nezabudnite, že sme tu pre Vás a že sa na nás môžete kedykoľvek obrátiť.</p>",
+          "notifyStatus": "YES",
+          "data": "\"{\\\"email_type\\\": \\\"Zpr\\\\u00e1vy u\\\\u017eivatel\\\\u016fm: Odesl\\\\u00e1no\\\", \\\"subject\\\": \\\"Kr\\\\u00e1lovstv\\\\u00ed tianDe- objedn\\\\u00e1vka 261331601 je na ceste k V\\\\u00e1m\\\", \\\"isAdminEmail\\\": false, \\\"initiator\\\": \\\"autopilot\\\", \\\"email_id\\\": \\\"6ae34cbb2a6f1\\\"}\""
+        },
+        {
+          "id": 7741176,
+          "adminId": null,
+          "orderStatus": "expedováno",
+          "date": "2026-10-29T14:40:11+01:00",
+          "comment": "Autopilot: odeslána uživatelská zpráva: Odesláno",
+          "notifyStatus": "NO",
+          "data": "\"{\\\"initiator\\\":\\\"autopilot\\\"}\""
+        },
+        {
+          "id": 7741177,
+          "adminId": null,
+          "orderStatus": "expedováno",
+          "date": "2026-10-29T14:40:11+01:00",
+          "comment": null,
           "notifyStatus": "NO",
           "data": "null"
         }
@@ -5030,11 +5075,11 @@
         "code": "CZK"
       },
       "dateCreated": "2026-10-28T21:49:36+01:00",
-      "cancelled": false,
+      "cancelled": true,
       "isPaid": false,
       "status": {
-        "id": 0,
-        "name": "nová"
+        "id": 9,
+        "name": "stornovaná"
       },
       "totalPrice": {
         "withVat": 2183,
@@ -5107,6 +5152,33 @@
           "comment": "Autopilot: odeslána uživatelská zpráva: Upomínka nezaplacené - okamžité platby",
           "notifyStatus": "NO",
           "data": "\"{\\\"initiator\\\":\\\"autopilot\\\"}\""
+        },
+        {
+          "id": 7741035,
+          "adminId": 25,
+          "orderStatus": "nová",
+          "date": "2026-10-29T14:12:37+01:00",
+          "comment": "[API] Stornování objednávky.Důvod: Zákazník zrušil objednávku (duplicitní objednávka vzniklá při problémech s platbou)",
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7741036,
+          "adminId": 25,
+          "orderStatus": "stornovaná",
+          "date": "2026-10-29T14:12:37+01:00",
+          "comment": "Objednávka stornována.",
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7741037,
+          "adminId": 25,
+          "orderStatus": "stornovaná",
+          "date": "2026-10-29T14:12:38+01:00",
+          "comment": "<p>mrzí nás to, ale potvrzujeme, že vaše objednávku 261331591 byla stornována 😢.</p><p>Zákazník zrušil objednávku (duplicitní objednávka vzniklá při problémech s platbou)</p>",
+          "notifyStatus": "YES",
+          "data": "\"{\\\"email_type\\\": \\\"ORDER_STORNO\\\", \\\"subject\\\": \\\"Va\\\\u0161e objedn\\\\u00e1vka 261331591 byla stornovan\\\\u00e1 \\\\ud83d\\\\ude22\\\", \\\"isAdminEmail\\\": false, \\\"email_id\\\": \\\"6ae34646161fa\\\"}\""
         }
       ],
       "deliveryType": {
@@ -31739,10 +31811,10 @@
       },
       "dateCreated": "2026-10-28T16:54:29+01:00",
       "cancelled": false,
-      "isPaid": false,
+      "isPaid": true,
       "status": {
-        "id": 0,
-        "name": "nová"
+        "id": 1,
+        "name": "přijatá"
       },
       "totalPrice": {
         "withVat": 1923,
@@ -31795,6 +31867,60 @@
           "orderStatus": "nová",
           "date": "2026-10-28T16:56:47+01:00",
           "comment": "[FlexiBee] Objednávka byla nahrána do FlexiBee; ID: 720142",
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7741158,
+          "adminId": null,
+          "orderStatus": "nová",
+          "date": "2026-10-29T14:39:04+01:00",
+          "comment": "Modul FioBank - příchozí platba č. 27916991978. Komentář plátce: LADA VALEŠOVÁ.",
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7741159,
+          "adminId": null,
+          "orderStatus": "nová",
+          "date": "2026-10-29T14:39:04+01:00",
+          "comment": "<p>Dobré zprávy: Úhrada vaší objednávky 261331479 právě dorazila. Než dočtete tento e-mail, pustíme se do práce na expedici vaší objednávky tak, aby vám dorazila co nejdříve.</p><p>Těšíte se? 😍</p><div></div>",
+          "notifyStatus": "YES",
+          "data": "\"{\\\"email_type\\\": \\\"PAYMENT_SUCCESS\\\", \\\"subject\\\": \\\"\\\\ud83c\\\\udf89 Va\\\\u0161e \\\\u00fahrada objedn\\\\u00e1vky 261331479 dorazila, startujeme\\\", \\\"isAdminEmail\\\": false, \\\"attachments\\\": [\\\"order_invoice\\\"], \\\"email_id\\\": \\\"6ae34c7843954\\\"}\""
+        },
+        {
+          "id": 7741163,
+          "adminId": null,
+          "orderStatus": "nová",
+          "date": "2026-10-29T14:40:01+01:00",
+          "comment": "[4PX] Objednávka byla vytvořena; ID: OC149400632610290263 tracking: 601120456595 účet: CZ",
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7741164,
+          "adminId": null,
+          "orderStatus": "přijatá",
+          "date": "2026-10-29T14:40:02+01:00",
+          "comment": null,
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7741197,
+          "adminId": null,
+          "orderStatus": "přijatá",
+          "date": "2026-10-29T14:41:58+01:00",
+          "comment": "[FlexiBee] Objednávka byla ve FlexiBee zaktualizována",
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7741202,
+          "adminId": null,
+          "orderStatus": "přijatá",
+          "date": "2026-10-29T14:42:10+01:00",
+          "comment": "[Flexi] Objednávka byla realizována ve Flexi;",
           "notifyStatus": "NO",
           "data": "null"
         }
@@ -38055,8 +38181,8 @@
       "cancelled": false,
       "isPaid": true,
       "status": {
-        "id": 1,
-        "name": "přijatá"
+        "id": 3,
+        "name": "expedováno"
       },
       "totalPrice": {
         "withVat": 61.85,
@@ -38163,6 +38289,33 @@
           "orderStatus": "přijatá",
           "date": "2026-10-28T14:11:44+01:00",
           "comment": "[Flexi] Objednávka byla realizována ve Flexi;",
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7741178,
+          "adminId": null,
+          "orderStatus": "přijatá",
+          "date": "2026-10-29T14:40:11+01:00",
+          "comment": "[4PX] Číslo balíku: 13915098308656",
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7741179,
+          "adminId": null,
+          "orderStatus": "přijatá",
+          "date": "2026-10-29T14:40:11+01:00",
+          "comment": "[4PX] Změna stavu: carrier_picked_up",
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7741180,
+          "adminId": null,
+          "orderStatus": "expedováno",
+          "date": "2026-10-29T14:40:11+01:00",
+          "comment": null,
           "notifyStatus": "NO",
           "data": "null"
         }
@@ -44448,8 +44601,8 @@
       "cancelled": false,
       "isPaid": true,
       "status": {
-        "id": 1,
-        "name": "přijatá"
+        "id": 3,
+        "name": "expedováno"
       },
       "totalPrice": {
         "withVat": 54.1,
@@ -44549,6 +44702,33 @@
           "comment": "[Flexi] Objednávka byla realizována ve Flexi;",
           "notifyStatus": "NO",
           "data": "null"
+        },
+        {
+          "id": 7741189,
+          "adminId": null,
+          "orderStatus": "přijatá",
+          "date": "2026-10-29T14:40:11+01:00",
+          "comment": "[4PX] Číslo balíku: 13915098308659",
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7741190,
+          "adminId": null,
+          "orderStatus": "přijatá",
+          "date": "2026-10-29T14:40:11+01:00",
+          "comment": "[4PX] Změna stavu: carrier_picked_up",
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7741191,
+          "adminId": null,
+          "orderStatus": "expedováno",
+          "date": "2026-10-29T14:40:12+01:00",
+          "comment": null,
+          "notifyStatus": "NO",
+          "data": "null"
         }
       ],
       "deliveryType": {
@@ -44625,10 +44805,10 @@
       },
       "dateCreated": "2026-10-28T11:48:33+01:00",
       "cancelled": false,
-      "isPaid": false,
+      "isPaid": true,
       "status": {
-        "id": 0,
-        "name": "nová"
+        "id": 1,
+        "name": "přijatá"
       },
       "totalPrice": {
         "withVat": 378,
@@ -44681,6 +44861,60 @@
           "orderStatus": "nová",
           "date": "2026-10-28T11:51:35+01:00",
           "comment": "[FlexiBee] Objednávka byla nahrána do FlexiBee; ID: 720086",
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7739849,
+          "adminId": null,
+          "orderStatus": "nová",
+          "date": "2026-10-29T09:19:54+01:00",
+          "comment": "Modul FioBank - příchozí platba č. 27916699586. Komentář plátce: Hana Al-Lamiová.",
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7739850,
+          "adminId": null,
+          "orderStatus": "nová",
+          "date": "2026-10-29T09:19:54+01:00",
+          "comment": "<p>Dobré zprávy: Úhrada vaší objednávky 261331423 právě dorazila. Než dočtete tento e-mail, pustíme se do práce na expedici vaší objednávky tak, aby vám dorazila co nejdříve.</p><p>Těšíte se? 😍</p><div></div>",
+          "notifyStatus": "YES",
+          "data": "\"{\\\"email_type\\\": \\\"PAYMENT_SUCCESS\\\", \\\"subject\\\": \\\"\\\\ud83c\\\\udf89 Va\\\\u0161e \\\\u00fahrada objedn\\\\u00e1vky 261331423 dorazila, startujeme\\\", \\\"isAdminEmail\\\": false, \\\"attachments\\\": [\\\"order_invoice\\\"], \\\"email_id\\\": \\\"6ae301aa5537f\\\"}\""
+        },
+        {
+          "id": 7739855,
+          "adminId": null,
+          "orderStatus": "nová",
+          "date": "2026-10-29T09:20:05+01:00",
+          "comment": "[4PX] Objednávka byla vytvořena; ID: OC149400632610290169 tracking: 601120435155 účet: CZ",
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7739856,
+          "adminId": null,
+          "orderStatus": "přijatá",
+          "date": "2026-10-29T09:20:05+01:00",
+          "comment": null,
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7739862,
+          "adminId": null,
+          "orderStatus": "přijatá",
+          "date": "2026-10-29T09:22:21+01:00",
+          "comment": "[FlexiBee] Objednávka byla ve FlexiBee zaktualizována",
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7739865,
+          "adminId": null,
+          "orderStatus": "přijatá",
+          "date": "2026-10-29T09:22:30+01:00",
+          "comment": "[Flexi] Objednávka byla realizována ve Flexi;",
           "notifyStatus": "NO",
           "data": "null"
         }
@@ -50422,8 +50656,8 @@
       "cancelled": false,
       "isPaid": true,
       "status": {
-        "id": 1,
-        "name": "přijatá"
+        "id": 3,
+        "name": "expedováno"
       },
       "totalPrice": {
         "withVat": 20.4,
@@ -50514,6 +50748,33 @@
           "comment": null,
           "notifyStatus": "NO",
           "data": "null"
+        },
+        {
+          "id": 7741186,
+          "adminId": null,
+          "orderStatus": "přijatá",
+          "date": "2026-10-29T14:40:11+01:00",
+          "comment": "[4PX] Číslo balíku: 13915098308660",
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7741187,
+          "adminId": null,
+          "orderStatus": "přijatá",
+          "date": "2026-10-29T14:40:11+01:00",
+          "comment": "[4PX] Změna stavu: carrier_picked_up",
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7741188,
+          "adminId": null,
+          "orderStatus": "expedováno",
+          "date": "2026-10-29T14:40:11+01:00",
+          "comment": null,
+          "notifyStatus": "NO",
+          "data": "null"
         }
       ],
       "deliveryType": {
@@ -50568,8 +50829,8 @@
       "cancelled": false,
       "isPaid": true,
       "status": {
-        "id": 1,
-        "name": "přijatá"
+        "id": 3,
+        "name": "expedováno"
       },
       "totalPrice": {
         "withVat": 38.6,
@@ -50666,6 +50927,33 @@
           "adminId": null,
           "orderStatus": "přijatá",
           "date": "2026-10-28T09:05:16+01:00",
+          "comment": null,
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7741215,
+          "adminId": null,
+          "orderStatus": "přijatá",
+          "date": "2026-10-29T14:45:03+01:00",
+          "comment": "[4PX] Číslo balíku: 13915098308658",
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7741216,
+          "adminId": null,
+          "orderStatus": "přijatá",
+          "date": "2026-10-29T14:45:03+01:00",
+          "comment": "[4PX] Změna stavu: carrier_picked_up",
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7741217,
+          "adminId": null,
+          "orderStatus": "expedováno",
+          "date": "2026-10-29T14:45:04+01:00",
           "comment": null,
           "notifyStatus": "NO",
           "data": "null"
@@ -56872,20 +57160,24 @@
     "orders": 246,
     "revenueWithVat": 432156.05,
     "averageOrderValue": 1756.73,
-    "cancelledOrders": 2,
-    "problematicOrders": 2,
+    "cancelledOrders": 3,
+    "problematicOrders": 3,
     "statuses": [
       {
         "name": "přijatá",
-        "count": 232
+        "count": 229
       },
       {
         "name": "nová",
-        "count": 12
+        "count": 9
+      },
+      {
+        "name": "expedováno",
+        "count": 5
       },
       {
         "name": "stornovaná",
-        "count": 2
+        "count": 3
       }
     ],
     "paymentMethods": [
@@ -57626,20 +57918,24 @@
         "orders": 246,
         "revenueWithVat": 432156.05,
         "averageOrderValue": 1756.73,
-        "cancelledOrders": 2,
-        "problematicOrders": 2,
+        "cancelledOrders": 3,
+        "problematicOrders": 3,
         "statuses": [
           {
             "name": "přijatá",
-            "count": 232
+            "count": 229
           },
           {
             "name": "nová",
-            "count": 12
+            "count": 9
+          },
+          {
+            "name": "expedováno",
+            "count": 5
           },
           {
             "name": "stornovaná",
-            "count": 2
+            "count": 3
           }
         ],
         "paymentMethods": [
@@ -58380,20 +58676,20 @@
         "orders": 219,
         "revenueWithVat": 370232.68,
         "averageOrderValue": 1690.56,
-        "cancelledOrders": 2,
-        "problematicOrders": 2,
+        "cancelledOrders": 3,
+        "problematicOrders": 3,
         "statuses": [
           {
             "name": "přijatá",
-            "count": 207
+            "count": 209
           },
           {
             "name": "nová",
-            "count": 10
+            "count": 7
           },
           {
             "name": "stornovaná",
-            "count": 2
+            "count": 3
           }
         ],
         "paymentMethods": [
@@ -59108,7 +59404,11 @@
         "statuses": [
           {
             "name": "přijatá",
-            "count": 25
+            "count": 20
+          },
+          {
+            "name": "expedováno",
+            "count": 5
           },
           {
             "name": "nová",
