@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-30T19:14:15.489427+01:00",
+  "generatedAt": "2026-10-30T23:28:22.659799+01:00",
   "config": {
     "warehouseCode": "CZPRGA",
     "outboundMaxPages": 20,
@@ -14,8 +14,8 @@
       "label": "CZ",
       "inventory": {
         "items": 820,
-        "availableStockTotal": 377730,
-        "pendingStockTotal": 1426,
+        "availableStockTotal": 376497,
+        "pendingStockTotal": 2659,
         "freezeStockTotal": 0,
         "lowStockItems": 100
       },
@@ -23,16 +23,16 @@
         "items": 600,
         "scannedPages": 6,
         "topLogisticsProduct": "F1401",
-        "oldestTimestamp": "2026-10-28T18:30:02+01:00",
-        "newestTimestamp": "2026-10-30T19:10:09+01:00"
+        "oldestTimestamp": "2026-10-28T23:55:05+01:00",
+        "newestTimestamp": "2026-10-30T23:15:03+01:00"
       }
     },
     "sk": {
       "label": "SK",
       "inventory": {
         "items": 671,
-        "availableStockTotal": 50932,
-        "pendingStockTotal": 135,
+        "availableStockTotal": 50801,
+        "pendingStockTotal": 266,
         "freezeStockTotal": 0,
         "lowStockItems": 100
       },
@@ -40,8 +40,8 @@
         "items": 100,
         "scannedPages": 1,
         "topLogisticsProduct": "F1406",
-        "oldestTimestamp": "2026-10-26T12:50:18+01:00",
-        "newestTimestamp": "2026-10-30T19:10:20+01:00"
+        "oldestTimestamp": "2026-10-26T20:00:15+01:00",
+        "newestTimestamp": "2026-10-30T23:10:16+01:00"
       }
     }
   },
@@ -55,15 +55,15 @@
   },
   "report": {
     "date": "2026-10-29",
-    "shipments": 287,
+    "shipments": 284,
     "alerts": [
       "1 problematických nebo stornovaných objednávek.",
       "1 včera prodaných produktů je teď na nízkém skladu.",
       "10 skladových pozic je v mínusu.",
-      "8 A produktů je v kritickém riziku výpadku."
+      "5 A produktů je v kritickém riziku výpadku."
     ],
     "priorities": [
-      "Prověřit A produkty v riziku výpadku (8 SKU): 30115, 56005, 120105.",
+      "Prověřit A produkty v riziku výpadku (5 SKU): 30115, 56005, 120105.",
       "Dohlédnout BI0023 (Probiomix), aktuálně 5 ks.",
       "Projít 1 problematických nebo stornovaných objednávek z včerejška.",
       "Projít nejbližší expirace v 4PX a rozhodnout o doprodeji nebo přesunu zásoby."
@@ -93,10 +93,10 @@
   },
   "pairing": {
     "allCodes": 3129,
-    "pairedProducts": 367,
-    "onlyInWpj": 1697,
+    "pairedProducts": 366,
+    "onlyInWpj": 1698,
     "onlyIn4px": 1,
-    "stockMismatch": 742,
+    "stockMismatch": 737,
     "lowAfterSales": 2,
     "manualMapped4pxAliases": 0,
     "autoMapped4pxAliases": 84
@@ -107,29 +107,29 @@
     "message": "Měsíční finance se tahají přímo z ABRA reportu Výkaz hospodaření za měsíc za všechna střediska. Cash a závazky jsou také live z ABRA API.",
     "currentMonth": {
       "label": "10/2026",
-      "revenue": 10420781.71,
-      "cogsAndFees": 7893041.32,
+      "revenue": 10538278.25,
+      "cogsAndFees": 7978824.93,
       "logistics": 47261.48,
       "marketing": 620187.01,
       "opex": 830725.1,
       "depreciation": 399556.0,
       "other": -40558.63,
-      "grossMargin": 2527740.39,
-      "afterLogistics": 2480478.91,
-      "afterMarketing": 1860291.9,
-      "operatingMargin": 1029566.8,
-      "ebit": 630010.8,
-      "profit": 589452.17,
+      "grossMargin": 2559453.32,
+      "afterLogistics": 2512191.84,
+      "afterMarketing": 1892004.83,
+      "operatingMargin": 1061279.73,
+      "ebit": 661723.73,
+      "profit": 621165.1,
       "grossMarginPct": 24.3,
-      "marketingPct": 6.0,
-      "logisticsPct": 0.5,
-      "operatingMarginPct": 9.9,
-      "profitPct": 5.7
+      "marketingPct": 5.9,
+      "logisticsPct": 0.4,
+      "operatingMarginPct": 10.1,
+      "profitPct": 5.9
     },
     "cash": {
-      "cashOnAccounts": 11482560.67,
+      "cashOnAccounts": 11538194.48,
       "unpaidInvoices": 1398295.41,
-      "netCashPosition": 10084265.26,
+      "netCashPosition": 10139899.07,
       "overdueInvoicesCount": 8,
       "overdueInvoicesAmount": 440774.03,
       "largestPayables": [
@@ -206,8 +206,8 @@
             "accountCode": "221001",
             "accountLabel": "221001: 2901338673/2010 FIO CZK",
             "currency": "CZK: Česká koruna",
-            "balance": 4042903.68,
-            "includedBalance": 4042903.68
+            "balance": 4096938.68,
+            "includedBalance": 4096938.68
           },
           {
             "accountCode": "221119",
@@ -276,8 +276,8 @@
             "accountCode": "221005",
             "accountLabel": "221005: 2501338690/2010 FIO EUR",
             "currency": "CZK: Česká koruna",
-            "balance": 2342.99,
-            "includedBalance": 2342.99
+            "balance": 3941.8,
+            "includedBalance": 3941.8
           },
           {
             "accountCode": "221116",
@@ -387,8 +387,8 @@
       "performanceSpend": 420187.01,
       "brandSpend": 200000.0,
       "totalSpend": 620187.01,
-      "revenue": 10420781.71,
-      "spendShareOfRevenuePct": 6.0
+      "revenue": 10538278.25,
+      "spendShareOfRevenuePct": 5.9
     },
     "topSupplier": {
       "name": "Selfcareacademy s.r.o.",
@@ -406,22 +406,22 @@
     },
     "summary": {
       "noviceRevenueCzkEquiv": 0.0,
-      "networkRevenueCzkEquiv": 31663188.0,
+      "networkRevenueCzkEquiv": 31707177.0,
       "novicePartners": 8,
       "networkPartners": 50,
       "noviceOrders": 0.0,
-      "networkOrders": 19583.0,
+      "networkOrders": 19606.0,
       "noviceOrderingContacts": 0.0,
-      "networkOrderingCustomers": 4763.0,
+      "networkOrderingCustomers": 4765.0,
       "topNovicePartner": {
-        "partnerCode": "yn8wxm",
-        "partnerName": "Iveta Liptayová",
+        "partnerCode": "dkrgy3",
+        "partnerName": "Lucia Štěpová",
         "revenueCzkEquiv": 0.0
       },
       "topNetworkPartner": {
         "partnerCode": "ESHOP",
         "partnerName": "E-shop (interní)",
-        "revenueCzkEquiv": 8459204.0
+        "revenueCzkEquiv": 8475252.0
       }
     }
   },
@@ -545,8 +545,8 @@
         "accountId": "2901338673",
         "bankId": "2010",
         "currency": "CZK",
-        "dateStart": "2026-08-01+0200",
-        "dateEnd": "2026-10-30+0100"
+        "dateStart": "2026-08-02+0200",
+        "dateEnd": "2026-10-31+0100"
       },
       "wpj": {
         "status": "ok",
