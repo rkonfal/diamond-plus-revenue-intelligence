@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-04T00:37:32.155541+01:00",
+  "generatedAt": "2026-11-04T09:19:00.007734+01:00",
   "config": {
     "warehouseCode": "CZPRGA",
     "outboundMaxPages": 20,
@@ -14,8 +14,8 @@
       "label": "CZ",
       "inventory": {
         "items": 820,
-        "availableStockTotal": 392813,
-        "pendingStockTotal": 2306,
+        "availableStockTotal": 392018,
+        "pendingStockTotal": 2269,
         "freezeStockTotal": 0,
         "lowStockItems": 100
       },
@@ -23,16 +23,16 @@
         "items": 400,
         "scannedPages": 4,
         "topLogisticsProduct": "F1401",
-        "oldestTimestamp": "2026-11-02T18:10:04+01:00",
-        "newestTimestamp": "2026-11-04T00:30:07+01:00"
+        "oldestTimestamp": "2026-11-02T21:30:08+01:00",
+        "newestTimestamp": "2026-11-04T09:10:11+01:00"
       }
     },
     "sk": {
       "label": "SK",
       "inventory": {
         "items": 671,
-        "availableStockTotal": 57086,
-        "pendingStockTotal": 167,
+        "availableStockTotal": 56999,
+        "pendingStockTotal": 50,
         "freezeStockTotal": 0,
         "lowStockItems": 100
       },
@@ -40,8 +40,8 @@
         "items": 100,
         "scannedPages": 1,
         "topLogisticsProduct": "F1406",
-        "oldestTimestamp": "2026-10-31T22:55:48+01:00",
-        "newestTimestamp": "2026-11-03T21:50:21+01:00"
+        "oldestTimestamp": "2026-11-01T07:35:20+01:00",
+        "newestTimestamp": "2026-11-04T09:10:25+01:00"
       }
     }
   },
@@ -64,18 +64,18 @@
     ],
     "priorities": [
       "Prověřit A produkty v riziku výpadku (5 SKU): 30115, 56005, 120105.",
-      "Dohlédnout 56005 (Hydrogelové polštářky na oční víčka s červenými mořskými řasami a yuzu), aktuálně 9 ks.",
+      "Dohlédnout 56005 (Hydrogelové polštářky na oční víčka s červenými mořskými řasami a yuzu), aktuálně 8 ks.",
       "Projít 2 problematických nebo stornovaných objednávek z včerejška.",
       "Projít nejbližší expirace v 4PX a rozhodnout o doprodeji nebo přesunu zásoby."
     ]
   },
   "expiries": {
-    "datedSkuCount": 328,
-    "czSkuCount": 317,
-    "skSkuCount": 310,
-    "datedRowCount": 754,
-    "czRowCount": 388,
-    "skRowCount": 366
+    "datedSkuCount": 327,
+    "czSkuCount": 316,
+    "skSkuCount": 309,
+    "datedRowCount": 751,
+    "czRowCount": 387,
+    "skRowCount": 364
   },
   "storeExpiry": {
     "inputRows": 0,
@@ -92,11 +92,11 @@
     "sourceWarnings": 2
   },
   "pairing": {
-    "allCodes": 3135,
-    "pairedProducts": 365,
-    "onlyInWpj": 1701,
+    "allCodes": 3138,
+    "pairedProducts": 364,
+    "onlyInWpj": 1705,
     "onlyIn4px": 1,
-    "stockMismatch": 733,
+    "stockMismatch": 734,
     "lowAfterSales": 1,
     "manualMapped4pxAliases": 0,
     "autoMapped4pxAliases": 84
@@ -107,31 +107,31 @@
     "message": "Měsíční finance se tahají přímo z ABRA reportu Výkaz hospodaření za měsíc za všechna střediska. Cash a závazky jsou také live z ABRA API.",
     "currentMonth": {
       "label": "11/2026",
-      "revenue": 1249896.98,
-      "cogsAndFees": 972113.35,
+      "revenue": 1320322.96,
+      "cogsAndFees": 1025013.39,
       "logistics": 0.0,
       "marketing": 0.0,
       "opex": 8790.15,
       "depreciation": 399556.0,
       "other": 49126.74,
-      "grossMargin": 277783.63,
-      "afterLogistics": 277783.63,
-      "afterMarketing": 277783.63,
-      "operatingMargin": 268993.48,
-      "ebit": -130562.52,
-      "profit": -81435.78,
-      "grossMarginPct": 22.2,
+      "grossMargin": 295309.57,
+      "afterLogistics": 295309.57,
+      "afterMarketing": 295309.57,
+      "operatingMargin": 286519.42,
+      "ebit": -113036.58,
+      "profit": -63909.84,
+      "grossMarginPct": 22.4,
       "marketingPct": 0.0,
       "logisticsPct": 0.0,
-      "operatingMarginPct": 21.5,
-      "profitPct": -6.5
+      "operatingMarginPct": 21.7,
+      "profitPct": -4.8
     },
     "cash": {
-      "cashOnAccounts": 11660365.24,
-      "unpaidInvoices": 13013966.63,
-      "netCashPosition": -1353601.39,
-      "overdueInvoicesCount": 8,
-      "overdueInvoicesAmount": 674199.55,
+      "cashOnAccounts": 11758571.41,
+      "unpaidInvoices": 13011788.6,
+      "netCashPosition": -1253217.19,
+      "overdueInvoicesCount": 7,
+      "overdueInvoicesAmount": 672914.02,
       "largestPayables": [
         {
           "code": "PF1489/2026",
@@ -220,15 +220,15 @@
             "accountCode": "221115",
             "accountLabel": "221115: 131-3675980207/0100 KB CZK",
             "currency": "CZK: Česká koruna",
-            "balance": 2347805.53,
-            "includedBalance": 2347805.53
+            "balance": 2411140.53,
+            "includedBalance": 2411140.53
           },
           {
             "accountCode": "221001",
             "accountLabel": "221001: 2901338673/2010 FIO CZK",
             "currency": "CZK: Česká koruna",
-            "balance": 949346.65,
-            "includedBalance": 949346.65
+            "balance": 983182.15,
+            "includedBalance": 983182.15
           },
           {
             "accountCode": "221111",
@@ -262,8 +262,8 @@
             "accountCode": "221005",
             "accountLabel": "221005: 2501338690/2010 FIO EUR",
             "currency": "CZK: Česká koruna",
-            "balance": 61464.06,
-            "includedBalance": 61464.06
+            "balance": 62499.73,
+            "includedBalance": 62499.73
           },
           {
             "accountCode": "211000",
@@ -332,7 +332,7 @@
             "accountCode": "211001",
             "accountLabel": "211001: Pokladna Czk",
             "currency": "CZK: Česká koruna",
-            "balance": -30325.68,
+            "balance": -31611.21,
             "includedBalance": 0.0
           },
           {
@@ -387,7 +387,7 @@
       "performanceSpend": 0.0,
       "brandSpend": 0.0,
       "totalSpend": 0.0,
-      "revenue": 1249896.98,
+      "revenue": 1320322.96,
       "spendShareOfRevenuePct": 0.0
     },
     "topSupplier": null
@@ -403,22 +403,22 @@
     },
     "summary": {
       "noviceRevenueCzkEquiv": 0.0,
-      "networkRevenueCzkEquiv": 32323160.0,
+      "networkRevenueCzkEquiv": 32335174.0,
       "novicePartners": 10,
       "networkPartners": 50,
       "noviceOrders": 0.0,
-      "networkOrders": 19999.0,
+      "networkOrders": 20008.0,
       "noviceOrderingContacts": 0.0,
-      "networkOrderingCustomers": 4838.0,
+      "networkOrderingCustomers": 4839.0,
       "topNovicePartner": {
-        "partnerCode": "r04z25",
-        "partnerName": "Veronika Slezáková",
+        "partnerCode": "sqjei0",
+        "partnerName": "dagmar.kopickova@seznam.cz",
         "revenueCzkEquiv": 0.0
       },
       "topNetworkPartner": {
         "partnerCode": "ESHOP",
         "partnerName": "E-shop (interní)",
-        "revenueCzkEquiv": 8728309.0
+        "revenueCzkEquiv": 8731385.0
       }
     }
   },
