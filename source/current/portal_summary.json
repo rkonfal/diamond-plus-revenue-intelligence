@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-05T06:45:20.952980+01:00",
+  "generatedAt": "2026-11-05T15:01:42.475448+01:00",
   "config": {
     "warehouseCode": "CZPRGA",
     "outboundMaxPages": 20,
@@ -14,25 +14,25 @@
       "label": "CZ",
       "inventory": {
         "items": 820,
-        "availableStockTotal": 388980,
-        "pendingStockTotal": 2470,
+        "availableStockTotal": 388159,
+        "pendingStockTotal": 741,
         "freezeStockTotal": 0,
         "lowStockItems": 100
       },
       "outbound": {
-        "items": 400,
-        "scannedPages": 4,
+        "items": 600,
+        "scannedPages": 6,
         "topLogisticsProduct": "F1401",
-        "oldestTimestamp": "2026-11-03T20:30:08+01:00",
-        "newestTimestamp": "2026-11-05T06:45:02+01:00"
+        "oldestTimestamp": "2026-11-03T18:24:12+01:00",
+        "newestTimestamp": "2026-11-05T15:00:06+01:00"
       }
     },
     "sk": {
       "label": "SK",
       "inventory": {
         "items": 671,
-        "availableStockTotal": 56588,
-        "pendingStockTotal": 239,
+        "availableStockTotal": 56714,
+        "pendingStockTotal": 0,
         "freezeStockTotal": 0,
         "lowStockItems": 100
       },
@@ -40,8 +40,8 @@
         "items": 100,
         "scannedPages": 1,
         "topLogisticsProduct": "F1406",
-        "oldestTimestamp": "2026-11-02T09:50:31+01:00",
-        "newestTimestamp": "2026-11-05T02:55:12+01:00"
+        "oldestTimestamp": "2026-11-02T18:30:16+01:00",
+        "newestTimestamp": "2026-11-05T13:10:11+01:00"
       }
     }
   },
@@ -57,13 +57,13 @@
     "date": "2026-11-04",
     "shipments": 380,
     "alerts": [
-      "2 včera prodaných produktů je teď na nízkém skladu.",
+      "1 včera prodaných produktů je teď na nízkém skladu.",
       "10 skladových pozic je v mínusu.",
       "6 A produktů je v kritickém riziku výpadku."
     ],
     "priorities": [
       "Prověřit A produkty v riziku výpadku (6 SKU): 120105, 30115, 56005.",
-      "Dohlédnout 56005 (Hydrogelové polštářky na oční víčka s červenými mořskými řasami a yuzu), aktuálně 5 ks.",
+      "Dohlédnout 56005 (Hydrogelové polštářky na oční víčka s červenými mořskými řasami a yuzu), aktuálně 3 ks.",
       "Projít nejbližší expirace v 4PX a rozhodnout o doprodeji nebo přesunu zásoby."
     ]
   },
@@ -71,9 +71,9 @@
     "datedSkuCount": 328,
     "czSkuCount": 319,
     "skSkuCount": 304,
-    "datedRowCount": 750,
-    "czRowCount": 390,
-    "skRowCount": 360
+    "datedRowCount": 745,
+    "czRowCount": 389,
+    "skRowCount": 356
   },
   "storeExpiry": {
     "inputRows": 0,
@@ -90,11 +90,11 @@
     "sourceWarnings": 2
   },
   "pairing": {
-    "allCodes": 3139,
-    "pairedProducts": 364,
-    "onlyInWpj": 1707,
+    "allCodes": 3144,
+    "pairedProducts": 365,
+    "onlyInWpj": 1711,
     "onlyIn4px": 1,
-    "stockMismatch": 705,
+    "stockMismatch": 707,
     "lowAfterSales": 3,
     "manualMapped4pxAliases": 0,
     "autoMapped4pxAliases": 84
@@ -105,29 +105,29 @@
     "message": "Měsíční finance se tahají přímo z ABRA reportu Výkaz hospodaření za měsíc za všechna střediska. Cash a závazky jsou také live z ABRA API.",
     "currentMonth": {
       "label": "11/2026",
-      "revenue": 1717455.5,
-      "cogsAndFees": 1353870.37,
+      "revenue": 1947845.26,
+      "cogsAndFees": 1583541.67,
       "logistics": 427.15,
       "marketing": 2479.34,
       "opex": 45487.04,
       "depreciation": 399556.0,
       "other": 63782.05,
-      "grossMargin": 363585.13,
-      "afterLogistics": 363157.98,
-      "afterMarketing": 360678.64,
-      "operatingMargin": 315191.6,
-      "ebit": -84364.4,
-      "profit": -20582.35,
-      "grossMarginPct": 21.2,
+      "grossMargin": 364303.59,
+      "afterLogistics": 363876.44,
+      "afterMarketing": 361397.1,
+      "operatingMargin": 315910.06,
+      "ebit": -83645.94,
+      "profit": -19863.89,
+      "grossMarginPct": 18.7,
       "marketingPct": 0.1,
       "logisticsPct": 0.0,
-      "operatingMarginPct": 18.4,
-      "profitPct": -1.2
+      "operatingMarginPct": 16.2,
+      "profitPct": -1.0
     },
     "cash": {
-      "cashOnAccounts": 9161488.89,
+      "cashOnAccounts": 9263226.89,
       "unpaidInvoices": 5756035.09,
-      "netCashPosition": 3405453.8,
+      "netCashPosition": 3507191.8,
       "overdueInvoicesCount": 1,
       "overdueInvoicesAmount": 1278.0,
       "largestPayables": [
@@ -218,8 +218,8 @@
             "accountCode": "221001",
             "accountLabel": "221001: 2901338673/2010 FIO CZK",
             "currency": "CZK: Česká koruna",
-            "balance": 830002.49,
-            "includedBalance": 830002.49
+            "balance": 931740.49,
+            "includedBalance": 931740.49
           },
           {
             "accountCode": "221111",
@@ -385,7 +385,7 @@
       "performanceSpend": 2479.34,
       "brandSpend": 0.0,
       "totalSpend": 2479.34,
-      "revenue": 1717455.5,
+      "revenue": 1947845.26,
       "spendShareOfRevenuePct": 0.1
     },
     "topSupplier": null
@@ -401,22 +401,22 @@
     },
     "summary": {
       "noviceRevenueCzkEquiv": 0.0,
-      "networkRevenueCzkEquiv": 32442367.0,
+      "networkRevenueCzkEquiv": 32481803.0,
       "novicePartners": 10,
       "networkPartners": 50,
       "noviceOrders": 0.0,
-      "networkOrders": 20075.0,
+      "networkOrders": 20108.0,
       "noviceOrderingContacts": 0.0,
-      "networkOrderingCustomers": 4844.0,
+      "networkOrderingCustomers": 4848.0,
       "topNovicePartner": {
-        "partnerCode": "dkrgy3",
-        "partnerName": "Lucia Štěpová",
+        "partnerCode": "axq2zz",
+        "partnerName": "vlcicepaja@seznam.cz",
         "revenueCzkEquiv": 0.0
       },
       "topNetworkPartner": {
         "partnerCode": "ESHOP",
         "partnerName": "E-shop (interní)",
-        "revenueCzkEquiv": 8764788.0
+        "revenueCzkEquiv": 8771499.0
       }
     }
   },
