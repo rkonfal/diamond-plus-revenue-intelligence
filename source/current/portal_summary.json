@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-05T15:01:42.475448+01:00",
+  "generatedAt": "2026-11-05T22:00:04.103273+01:00",
   "config": {
     "warehouseCode": "CZPRGA",
     "outboundMaxPages": 20,
@@ -14,25 +14,25 @@
       "label": "CZ",
       "inventory": {
         "items": 820,
-        "availableStockTotal": 388159,
-        "pendingStockTotal": 741,
+        "availableStockTotal": 387046,
+        "pendingStockTotal": 1672,
         "freezeStockTotal": 0,
         "lowStockItems": 100
       },
       "outbound": {
-        "items": 600,
-        "scannedPages": 6,
+        "items": 700,
+        "scannedPages": 7,
         "topLogisticsProduct": "F1401",
-        "oldestTimestamp": "2026-11-03T18:24:12+01:00",
-        "newestTimestamp": "2026-11-05T15:00:06+01:00"
+        "oldestTimestamp": "2026-11-03T18:25:03+01:00",
+        "newestTimestamp": "2026-11-05T21:55:03+01:00"
       }
     },
     "sk": {
       "label": "SK",
       "inventory": {
         "items": 671,
-        "availableStockTotal": 56714,
-        "pendingStockTotal": 0,
+        "availableStockTotal": 56580,
+        "pendingStockTotal": 134,
         "freezeStockTotal": 0,
         "lowStockItems": 100
       },
@@ -40,8 +40,8 @@
         "items": 100,
         "scannedPages": 1,
         "topLogisticsProduct": "F1406",
-        "oldestTimestamp": "2026-11-02T18:30:16+01:00",
-        "newestTimestamp": "2026-11-05T13:10:11+01:00"
+        "oldestTimestamp": "2026-11-02T22:00:26+01:00",
+        "newestTimestamp": "2026-11-05T21:25:12+01:00"
       }
     }
   },
@@ -59,10 +59,10 @@
     "alerts": [
       "1 včera prodaných produktů je teď na nízkém skladu.",
       "10 skladových pozic je v mínusu.",
-      "6 A produktů je v kritickém riziku výpadku."
+      "5 A produktů je v kritickém riziku výpadku."
     ],
     "priorities": [
-      "Prověřit A produkty v riziku výpadku (6 SKU): 120105, 30115, 56005.",
+      "Prověřit A produkty v riziku výpadku (5 SKU): 120105, 30115, 56005.",
       "Dohlédnout 56005 (Hydrogelové polštářky na oční víčka s červenými mořskými řasami a yuzu), aktuálně 3 ks.",
       "Projít nejbližší expirace v 4PX a rozhodnout o doprodeji nebo přesunu zásoby."
     ]
@@ -94,7 +94,7 @@
     "pairedProducts": 365,
     "onlyInWpj": 1711,
     "onlyIn4px": 1,
-    "stockMismatch": 707,
+    "stockMismatch": 706,
     "lowAfterSales": 3,
     "manualMapped4pxAliases": 0,
     "autoMapped4pxAliases": 84
@@ -105,29 +105,29 @@
     "message": "Měsíční finance se tahají přímo z ABRA reportu Výkaz hospodaření za měsíc za všechna střediska. Cash a závazky jsou také live z ABRA API.",
     "currentMonth": {
       "label": "11/2026",
-      "revenue": 1947845.26,
-      "cogsAndFees": 1583541.67,
+      "revenue": 2093490.48,
+      "cogsAndFees": 1687781.93,
       "logistics": 427.15,
       "marketing": 2479.34,
       "opex": 45487.04,
       "depreciation": 399556.0,
       "other": 63782.05,
-      "grossMargin": 364303.59,
-      "afterLogistics": 363876.44,
-      "afterMarketing": 361397.1,
-      "operatingMargin": 315910.06,
-      "ebit": -83645.94,
-      "profit": -19863.89,
-      "grossMarginPct": 18.7,
+      "grossMargin": 405708.55,
+      "afterLogistics": 405281.4,
+      "afterMarketing": 402802.06,
+      "operatingMargin": 357315.02,
+      "ebit": -42240.98,
+      "profit": 21541.07,
+      "grossMarginPct": 19.4,
       "marketingPct": 0.1,
       "logisticsPct": 0.0,
-      "operatingMarginPct": 16.2,
-      "profitPct": -1.0
+      "operatingMarginPct": 17.1,
+      "profitPct": 1.0
     },
     "cash": {
-      "cashOnAccounts": 9263226.89,
+      "cashOnAccounts": 9302744.0,
       "unpaidInvoices": 5756035.09,
-      "netCashPosition": 3507191.8,
+      "netCashPosition": 3546708.91,
       "overdueInvoicesCount": 1,
       "overdueInvoicesAmount": 1278.0,
       "largestPayables": [
@@ -218,8 +218,8 @@
             "accountCode": "221001",
             "accountLabel": "221001: 2901338673/2010 FIO CZK",
             "currency": "CZK: Česká koruna",
-            "balance": 931740.49,
-            "includedBalance": 931740.49
+            "balance": 969931.49,
+            "includedBalance": 969931.49
           },
           {
             "accountCode": "221111",
@@ -239,8 +239,8 @@
             "accountCode": "221005",
             "accountLabel": "221005: 2501338690/2010 FIO EUR",
             "currency": "CZK: Česká koruna",
-            "balance": 99522.66,
-            "includedBalance": 99522.66
+            "balance": 100848.77,
+            "includedBalance": 100848.77
           },
           {
             "accountCode": "221117",
@@ -385,7 +385,7 @@
       "performanceSpend": 2479.34,
       "brandSpend": 0.0,
       "totalSpend": 2479.34,
-      "revenue": 1947845.26,
+      "revenue": 2093490.48,
       "spendShareOfRevenuePct": 0.1
     },
     "topSupplier": null
@@ -401,22 +401,22 @@
     },
     "summary": {
       "noviceRevenueCzkEquiv": 0.0,
-      "networkRevenueCzkEquiv": 32481803.0,
+      "networkRevenueCzkEquiv": 32525420.0,
       "novicePartners": 10,
       "networkPartners": 50,
       "noviceOrders": 0.0,
-      "networkOrders": 20108.0,
+      "networkOrders": 20133.0,
       "noviceOrderingContacts": 0.0,
-      "networkOrderingCustomers": 4848.0,
+      "networkOrderingCustomers": 4852.0,
       "topNovicePartner": {
-        "partnerCode": "axq2zz",
-        "partnerName": "vlcicepaja@seznam.cz",
+        "partnerCode": "ujwcqe",
+        "partnerName": "Daniela Hlavatá",
         "revenueCzkEquiv": 0.0
       },
       "topNetworkPartner": {
         "partnerCode": "ESHOP",
         "partnerName": "E-shop (interní)",
-        "revenueCzkEquiv": 8771499.0
+        "revenueCzkEquiv": 8782954.0
       }
     }
   },
