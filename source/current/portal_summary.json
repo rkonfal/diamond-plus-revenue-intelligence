@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-07T10:14:10.811473+01:00",
+  "generatedAt": "2026-11-07T16:19:35.660214+01:00",
   "config": {
     "warehouseCode": "CZPRGA",
     "outboundMaxPages": 20,
@@ -14,25 +14,25 @@
       "label": "CZ",
       "inventory": {
         "items": 820,
-        "availableStockTotal": 382993,
-        "pendingStockTotal": 2763,
+        "availableStockTotal": 382086,
+        "pendingStockTotal": 3670,
         "freezeStockTotal": 0,
         "lowStockItems": 100
       },
       "outbound": {
-        "items": 400,
-        "scannedPages": 4,
+        "items": 500,
+        "scannedPages": 5,
         "topLogisticsProduct": "F1401",
-        "oldestTimestamp": "2026-11-05T20:50:10+01:00",
-        "newestTimestamp": "2026-11-07T10:10:04+01:00"
+        "oldestTimestamp": "2026-11-05T20:20:01+01:00",
+        "newestTimestamp": "2026-11-07T16:10:02+01:00"
       }
     },
     "sk": {
       "label": "SK",
       "inventory": {
         "items": 671,
-        "availableStockTotal": 56049,
-        "pendingStockTotal": 378,
+        "availableStockTotal": 55969,
+        "pendingStockTotal": 458,
         "freezeStockTotal": 0,
         "lowStockItems": 100
       },
@@ -40,8 +40,8 @@
         "items": 100,
         "scannedPages": 1,
         "topLogisticsProduct": "F1406",
-        "oldestTimestamp": "2026-11-04T08:23:07+01:00",
-        "newestTimestamp": "2026-11-07T09:35:13+01:00"
+        "oldestTimestamp": "2026-11-04T09:45:19+01:00",
+        "newestTimestamp": "2026-11-07T16:05:11+01:00"
       }
     }
   },
@@ -55,7 +55,7 @@
   },
   "report": {
     "date": "2026-11-06",
-    "shipments": 348,
+    "shipments": 350,
     "alerts": [
       "1 problematických nebo stornovaných objednávek.",
       "2 včera prodaných produktů je teď na nízkém skladu.",
@@ -64,7 +64,7 @@
     ],
     "priorities": [
       "Prověřit A produkty v riziku výpadku (5 SKU): 120105, 30115, 56005.",
-      "Dohlédnout 56005 (Hydrogelové polštářky na oční víčka s červenými mořskými řasami a yuzu), aktuálně 2 ks.",
+      "Dohlédnout 56005 (Hydrogelové polštářky na oční víčka s červenými mořskými řasami a yuzu), aktuálně 1 ks.",
       "Projít 1 problematických nebo stornovaných objednávek z včerejška.",
       "Projít nejbližší expirace v 4PX a rozhodnout o doprodeji nebo přesunu zásoby."
     ]
@@ -96,7 +96,7 @@
     "pairedProducts": 365,
     "onlyInWpj": 1712,
     "onlyIn4px": 1,
-    "stockMismatch": 712,
+    "stockMismatch": 709,
     "lowAfterSales": 4,
     "manualMapped4pxAliases": 0,
     "autoMapped4pxAliases": 84
@@ -107,29 +107,29 @@
     "message": "Měsíční finance se tahají přímo z ABRA reportu Výkaz hospodaření za měsíc za všechna střediska. Cash a závazky jsou také live z ABRA API.",
     "currentMonth": {
       "label": "11/2026",
-      "revenue": 2588989.29,
-      "cogsAndFees": 2035569.62,
+      "revenue": 2676893.68,
+      "cogsAndFees": 2096102.74,
       "logistics": 427.15,
       "marketing": 2479.34,
       "opex": 55470.86,
       "depreciation": 399556.0,
       "other": 63706.83,
-      "grossMargin": 553419.67,
-      "afterLogistics": 552992.52,
-      "afterMarketing": 550513.18,
-      "operatingMargin": 495042.32,
-      "ebit": 95486.32,
-      "profit": 159193.15,
-      "grossMarginPct": 21.4,
+      "grossMargin": 580790.94,
+      "afterLogistics": 580363.79,
+      "afterMarketing": 577884.45,
+      "operatingMargin": 522413.59,
+      "ebit": 122857.59,
+      "profit": 186564.42,
+      "grossMarginPct": 21.7,
       "marketingPct": 0.1,
       "logisticsPct": 0.0,
-      "operatingMarginPct": 19.1,
-      "profitPct": 6.1
+      "operatingMarginPct": 19.5,
+      "profitPct": 7.0
     },
     "cash": {
-      "cashOnAccounts": 9512724.16,
+      "cashOnAccounts": 9542571.16,
       "unpaidInvoices": 6295431.72,
-      "netCashPosition": 3217292.44,
+      "netCashPosition": 3247139.44,
       "overdueInvoicesCount": 1,
       "overdueInvoicesAmount": 1278.0,
       "largestPayables": [
@@ -220,8 +220,8 @@
             "accountCode": "221001",
             "accountLabel": "221001: 2901338673/2010 FIO CZK",
             "currency": "CZK: Česká koruna",
-            "balance": 1161658.73,
-            "includedBalance": 1161658.73
+            "balance": 1191505.73,
+            "includedBalance": 1191505.73
           },
           {
             "accountCode": "221111",
@@ -387,7 +387,7 @@
       "performanceSpend": 2479.34,
       "brandSpend": 0.0,
       "totalSpend": 2479.34,
-      "revenue": 2588989.29,
+      "revenue": 2676893.68,
       "spendShareOfRevenuePct": 0.1
     },
     "topSupplier": null
@@ -403,13 +403,13 @@
     },
     "summary": {
       "noviceRevenueCzkEquiv": 0.0,
-      "networkRevenueCzkEquiv": 32672652.0,
+      "networkRevenueCzkEquiv": 32696625.0,
       "novicePartners": 11,
       "networkPartners": 50,
       "noviceOrders": 0.0,
-      "networkOrders": 20241.0,
+      "networkOrders": 20259.0,
       "noviceOrderingContacts": 0.0,
-      "networkOrderingCustomers": 4873.0,
+      "networkOrderingCustomers": 4876.0,
       "topNovicePartner": {
         "partnerCode": "7q6lzy",
         "partnerName": "Monika Rezková",
@@ -418,7 +418,7 @@
       "topNetworkPartner": {
         "partnerCode": "ESHOP",
         "partnerName": "E-shop (interní)",
-        "revenueCzkEquiv": 8828873.0
+        "revenueCzkEquiv": 8839639.0
       }
     }
   },
