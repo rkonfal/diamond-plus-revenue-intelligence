@@ -33485,11 +33485,11 @@
         "code": "EUR"
       },
       "dateCreated": "2026-11-07T20:23:11+01:00",
-      "cancelled": false,
+      "cancelled": true,
       "isPaid": false,
       "status": {
-        "id": 0,
-        "name": "nová"
+        "id": 9,
+        "name": "stornovaná"
       },
       "totalPrice": {
         "withVat": 43,
@@ -33544,6 +33544,33 @@
           "comment": "[FlexiBee] Objednávka byla nahrána do FlexiBee; ID: 723863",
           "notifyStatus": "NO",
           "data": "null"
+        },
+        {
+          "id": 7793530,
+          "adminId": null,
+          "orderStatus": "stornovaná",
+          "date": "2026-11-08T06:59:18+01:00",
+          "comment": "Objednávka stornována.",
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7793531,
+          "adminId": null,
+          "orderStatus": "stornovaná",
+          "date": "2026-11-08T06:59:18+01:00",
+          "comment": "<p>zákazník stornoval objednávku <strong>261335203</strong>.</p><p> </p>",
+          "notifyStatus": "YES",
+          "data": "\"{\\\"email_type\\\": \\\"ORDER_ADMIN_USER_STORNO\\\", \\\"subject\\\": \\\"Objedn\\\\u00e1vka 261335203 byla stornov\\\\u00e1na z\\\\u00e1kazn\\\\u00edkem\\\", \\\"isAdminEmail\\\": false, \\\"email_id\\\": \\\"6af00fb6c3042\\\"}\""
+        },
+        {
+          "id": 7793532,
+          "adminId": null,
+          "orderStatus": "stornovaná",
+          "date": "2026-11-08T06:59:19+01:00",
+          "comment": "<p>mrzí nás to, ale potvrdzujeme, že vaša objednávku 261335203 bola stornovaná 😢.</p>\n\n<p></p>\n\n<p>Došlo k stornovaniu omylom? Chcete stále tovar, ktorý ste si vybrali? Zavolajte nám prosím na +420 373 700 900 (poč 8:00-17:00, pi 8:00-16:00) a zachránime ho pre vás.</p>",
+          "notifyStatus": "YES",
+          "data": "\"{\\\"email_type\\\": \\\"ORDER_STORNO\\\", \\\"subject\\\": \\\"Va\\\\u0161a objedn\\\\u00e1vka 261335203 bola stornovan\\\\u00e1 \\\\ud83d\\\\ude22\\\", \\\"isAdminEmail\\\": false, \\\"email_id\\\": \\\"6af00fb717cf9\\\"}\""
         }
       ],
       "deliveryType": {
@@ -48082,10 +48109,10 @@
       },
       "dateCreated": "2026-11-07T18:04:52+01:00",
       "cancelled": false,
-      "isPaid": false,
+      "isPaid": true,
       "status": {
-        "id": 0,
-        "name": "nová"
+        "id": 1,
+        "name": "přijatá"
       },
       "totalPrice": {
         "withVat": 933,
@@ -48138,6 +48165,60 @@
           "orderStatus": "nová",
           "date": "2026-11-07T18:06:57+01:00",
           "comment": "[FlexiBee] Objednávka byla nahrána do FlexiBee; ID: 723795",
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7793502,
+          "adminId": null,
+          "orderStatus": "nová",
+          "date": "2026-11-08T01:59:06+01:00",
+          "comment": "Modul FioBank - příchozí platba č. 27936389503. Komentář plátce: Markéta Jánská.",
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7793503,
+          "adminId": null,
+          "orderStatus": "nová",
+          "date": "2026-11-08T01:59:06+01:00",
+          "comment": "<p>Dobré zprávy: Úhrada vaší objednávky 261335135 právě dorazila. Než dočtete tento e-mail, pustíme se do práce na expedici vaší objednávky tak, aby vám dorazila co nejdříve.</p><p>Těšíte se? 😍</p><div></div>",
+          "notifyStatus": "YES",
+          "data": "\"{\\\"email_type\\\": \\\"PAYMENT_SUCCESS\\\", \\\"subject\\\": \\\"\\\\ud83c\\\\udf89 Va\\\\u0161e \\\\u00fahrada objedn\\\\u00e1vky 261335135 dorazila, startujeme\\\", \\\"isAdminEmail\\\": false, \\\"attachments\\\": [\\\"order_invoice\\\"], \\\"email_id\\\": \\\"6aefc95ad6d44\\\"}\""
+        },
+        {
+          "id": 7793504,
+          "adminId": null,
+          "orderStatus": "nová",
+          "date": "2026-11-08T02:00:05+01:00",
+          "comment": "[4PX] Objednávka byla vytvořena; ID: OC149400632611080185 tracking: 601120952617 účet: CZ",
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7793505,
+          "adminId": null,
+          "orderStatus": "přijatá",
+          "date": "2026-11-08T02:00:05+01:00",
+          "comment": null,
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7793506,
+          "adminId": null,
+          "orderStatus": "přijatá",
+          "date": "2026-11-08T02:01:54+01:00",
+          "comment": "[FlexiBee] Objednávka byla ve FlexiBee zaktualizována",
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7793507,
+          "adminId": null,
+          "orderStatus": "přijatá",
+          "date": "2026-11-08T02:02:03+01:00",
+          "comment": "[Flexi] Objednávka byla realizována ve Flexi;",
           "notifyStatus": "NO",
           "data": "null"
         }
