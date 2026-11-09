@@ -13,13 +13,16 @@
       "message": "Marketing se skládá z live ABRA reportu a aktuálních položek z účetního deníku. Přímé platformy přes API: Sklik, Meta Ads, Google Ads, Ecomail, Affiliate.",
       "currentMonth": {
         "label": "11/2026",
-        "performanceSpend": 2479.34,
+        "performanceSpend": 4958.68,
         "brandSpend": 0.0,
-        "totalSpend": 2479.34,
-        "revenue": 3162152.6,
+        "totalSpend": 4958.68,
+        "revenue": 3433259.38,
         "spendShareOfRevenuePct": 0.1
       },
-      "topSupplier": null
+      "topSupplier": {
+        "name": "Seznam.cz, a.s.",
+        "amount": 2479.34
+      }
     },
     "finance": {
       "ready": true,
@@ -27,31 +30,31 @@
       "message": "Měsíční finance se tahají přímo z ABRA reportu Výkaz hospodaření za měsíc za všechna střediska. Cash a závazky jsou také live z ABRA API.",
       "currentMonth": {
         "label": "11/2026",
-        "revenue": 3162152.6,
-        "cogsAndFees": 2440630.23,
+        "revenue": 3433259.38,
+        "cogsAndFees": 2708850.19,
         "logistics": 427.15,
-        "marketing": 2479.34,
-        "opex": 55470.86,
+        "marketing": 4958.68,
+        "opex": 176432.03,
         "depreciation": 399556.0,
-        "other": 63706.83,
-        "grossMargin": 721522.37,
-        "afterLogistics": 721095.22,
-        "afterMarketing": 718615.88,
-        "operatingMargin": 663145.02,
-        "ebit": 263589.02,
-        "profit": 327295.85,
-        "grossMarginPct": 22.8,
+        "other": 63159.63,
+        "grossMargin": 724409.19,
+        "afterLogistics": 723982.04,
+        "afterMarketing": 719023.36,
+        "operatingMargin": 542591.33,
+        "ebit": 143035.33,
+        "profit": 206194.96,
+        "grossMarginPct": 21.1,
         "marketingPct": 0.1,
         "logisticsPct": 0.0,
-        "operatingMarginPct": 21.0,
-        "profitPct": 10.4
+        "operatingMarginPct": 15.8,
+        "profitPct": 6.0
       },
       "cash": {
-        "cashOnAccounts": 9828988.21,
-        "unpaidInvoices": 6295431.72,
-        "netCashPosition": 3533556.49,
-        "overdueInvoicesCount": 1,
-        "overdueInvoicesAmount": 1278.0,
+        "cashOnAccounts": 10062309.97,
+        "unpaidInvoices": 5971107.8,
+        "netCashPosition": 4091202.17,
+        "overdueInvoicesCount": 2,
+        "overdueInvoicesAmount": 1799.99,
         "largestPayables": [
           {
             "code": "PF1482/2026",
@@ -86,12 +89,12 @@
             "status": "21 dní do splatnosti"
           },
           {
-            "code": "PF1523/2026",
-            "vendor": "ISTA CORPORATION s.r.o.",
-            "dueDate": "12.11.2026",
-            "amountTotal": 401189.19,
-            "amountDue": 401189.19,
-            "status": "3 dní do splatnosti"
+            "code": "PF1535/2026",
+            "vendor": "wpj s.r.o.",
+            "dueDate": "22.11.2026",
+            "amountTotal": 145313.0,
+            "amountDue": 145313.0,
+            "status": "13 dní do splatnosti"
           },
           {
             "code": "PF1503/2026",
@@ -140,22 +143,22 @@
               "accountCode": "221001",
               "accountLabel": "221001: 2901338673/2010 FIO CZK",
               "currency": "CZK: Česká koruna",
-              "balance": 1473120.73,
-              "includedBalance": 1473120.73
+              "balance": 1576624.13,
+              "includedBalance": 1576624.13
             },
             {
               "accountCode": "221111",
               "accountLabel": "221111: 107-164902 Czk THEPAY",
               "currency": "CZK: Česká koruna",
-              "balance": 452848.27,
-              "includedBalance": 452848.27
+              "balance": 781963.63,
+              "includedBalance": 781963.63
             },
             {
-              "accountCode": "221002",
-              "accountLabel": "221002: 131-1211280297/0100 KB EUR",
+              "accountCode": "221112",
+              "accountLabel": "221112: 107-164902 EUR THEPAY",
               "currency": "CZK: Česká koruna",
-              "balance": 340847.42,
-              "includedBalance": 340847.42
+              "balance": 135086.94,
+              "includedBalance": 135086.94
             },
             {
               "accountCode": "221117",
@@ -165,11 +168,18 @@
               "includedBalance": 99497.24
             },
             {
-              "accountCode": "221112",
-              "accountLabel": "221112: 107-164902 EUR THEPAY",
+              "accountCode": "221005",
+              "accountLabel": "221005: 2501338690/2010 FIO EUR",
               "currency": "CZK: Česká koruna",
-              "balance": 62958.36,
-              "includedBalance": 62958.36
+              "balance": 48245.72,
+              "includedBalance": 48245.72
+            },
+            {
+              "accountCode": "221002",
+              "accountLabel": "221002: 131-1211280297/0100 KB EUR",
+              "currency": "CZK: Česká koruna",
+              "balance": 33254.22,
+              "includedBalance": 33254.22
             },
             {
               "accountCode": "211000",
@@ -177,13 +187,6 @@
               "currency": "CZK: Česká koruna",
               "balance": 14709.0,
               "includedBalance": 14709.0
-            },
-            {
-              "accountCode": "221005",
-              "accountLabel": "221005: 2501338690/2010 FIO EUR",
-              "currency": "CZK: Česká koruna",
-              "balance": 12078.1,
-              "includedBalance": 12078.1
             },
             {
               "accountCode": "221006",
@@ -302,8 +305,8 @@
       "ready": true,
       "message": "WPJ připojeno a ranní report je vygenerovaný.",
       "orders": 227,
-      "revenueWithVat": 408467.5,
-      "averageOrderValue": 1799.42,
+      "revenueWithVat": 409123.34,
+      "averageOrderValue": 1802.31,
       "problematicOrders": 0
     }
   }
