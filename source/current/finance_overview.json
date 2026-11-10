@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-10T10:08:29.455710+01:00",
+  "generatedAt": "2026-11-10T18:00:05.140530+01:00",
   "source": {
     "status": "live_report",
     "message": "Měsíční finance se tahají přímo z ABRA reportu Výkaz hospodaření za měsíc za všechna střediska. Cash a závazky jsou také live z ABRA API."
@@ -215,13 +215,13 @@
       "marketing": 615877.06,
       "opex": 2078191.82,
       "depreciation": 399556.0,
-      "other": -90740.18,
+      "other": -89118.69,
       "grossMargin": 2687378.57,
       "afterLogistics": 2002444.48,
       "afterMarketing": 1386567.42,
       "operatingMargin": -691624.4,
       "ebit": -1091180.4,
-      "profit": -1181920.58,
+      "profit": -1180299.09,
       "grossMarginPct": 24.1,
       "marketingPct": 5.5,
       "logisticsPct": 6.1,
@@ -230,46 +230,46 @@
     },
     {
       "label": "11/2026",
-      "revenue": 3705903.21,
-      "cogsAndFees": 2903287.1,
+      "revenue": 3980239.03,
+      "cogsAndFees": 3081246.36,
       "logistics": 427.15,
       "marketing": 4958.68,
-      "opex": 178029.03,
+      "opex": 782065.98,
       "depreciation": 399556.0,
-      "other": 63144.91,
-      "grossMargin": 802616.11,
-      "afterLogistics": 802188.96,
-      "afterMarketing": 797230.28,
-      "operatingMargin": 619201.25,
-      "ebit": 219645.25,
-      "profit": 282790.16,
-      "grossMarginPct": 21.7,
+      "other": 63132.95,
+      "grossMargin": 898992.67,
+      "afterLogistics": 898565.52,
+      "afterMarketing": 893606.84,
+      "operatingMargin": 111540.86,
+      "ebit": -288015.14,
+      "profit": -224882.19,
+      "grossMarginPct": 22.6,
       "marketingPct": 0.1,
       "logisticsPct": 0.0,
-      "operatingMarginPct": 16.7,
-      "profitPct": 7.6
+      "operatingMarginPct": 2.8,
+      "profitPct": -5.6
     }
   ],
   "currentMonth": {
     "label": "11/2026",
-    "revenue": 3705903.21,
-    "cogsAndFees": 2903287.1,
+    "revenue": 3980239.03,
+    "cogsAndFees": 3081246.36,
     "logistics": 427.15,
     "marketing": 4958.68,
-    "opex": 178029.03,
+    "opex": 782065.98,
     "depreciation": 399556.0,
-    "other": 63144.91,
-    "grossMargin": 802616.11,
-    "afterLogistics": 802188.96,
-    "afterMarketing": 797230.28,
-    "operatingMargin": 619201.25,
-    "ebit": 219645.25,
-    "profit": 282790.16,
-    "grossMarginPct": 21.7,
+    "other": 63132.95,
+    "grossMargin": 898992.67,
+    "afterLogistics": 898565.52,
+    "afterMarketing": 893606.84,
+    "operatingMargin": 111540.86,
+    "ebit": -288015.14,
+    "profit": -224882.19,
+    "grossMarginPct": 22.6,
     "marketingPct": 0.1,
     "logisticsPct": 0.0,
-    "operatingMarginPct": 16.7,
-    "profitPct": 7.6
+    "operatingMarginPct": 2.8,
+    "profitPct": -5.6
   },
   "previousMonth": {
     "label": "10/2026",
@@ -279,13 +279,13 @@
     "marketing": 615877.06,
     "opex": 2078191.82,
     "depreciation": 399556.0,
-    "other": -90740.18,
+    "other": -89118.69,
     "grossMargin": 2687378.57,
     "afterLogistics": 2002444.48,
     "afterMarketing": 1386567.42,
     "operatingMargin": -691624.4,
     "ebit": -1091180.4,
-    "profit": -1181920.58,
+    "profit": -1180299.09,
     "grossMarginPct": 24.1,
     "marketingPct": 5.5,
     "logisticsPct": 6.1,
@@ -293,9 +293,9 @@
     "profitPct": -10.6
   },
   "cash": {
-    "cashOnAccounts": 10167777.75,
-    "unpaidInvoices": 6598877.04,
-    "netCashPosition": 3568900.71,
+    "cashOnAccounts": 10260932.84,
+    "unpaidInvoices": 6586058.04,
+    "netCashPosition": 3674874.8,
     "overdueInvoicesCount": 2,
     "overdueInvoicesAmount": 1517.0,
     "largestPayables": [
@@ -386,8 +386,8 @@
           "accountCode": "221001",
           "accountLabel": "221001: 2901338673/2010 FIO CZK",
           "currency": "CZK: Česká koruna",
-          "balance": 1681073.06,
-          "includedBalance": 1681073.06
+          "balance": 1774228.15,
+          "includedBalance": 1774228.15
         },
         {
           "accountCode": "221111",
@@ -887,20 +887,27 @@
       },
       {
         "label": "11/2026",
-        "expenseTotal": 3263770.47,
-        "revenueTotal": 3567368.25,
+        "expenseTotal": 4045778.64,
+        "revenueTotal": 3856674.92,
         "topExpenseClass": {
           "code": "50",
           "label": "Spotřeba a zboží",
-          "amount": 2670423.74
+          "amount": 2848383.0
         },
         "topExpenseAccounts": [
           {
             "code": "504001",
             "label": "Nákup zboží 2",
-            "amount": 2632393.57,
+            "amount": 2810352.83,
             "classCode": "50",
             "classLabel": "Spotřeba a zboží"
+          },
+          {
+            "code": "513001",
+            "label": "Reprezentace a občerstvení",
+            "amount": 609257.3,
+            "classCode": "51",
+            "classLabel": "Služby"
           },
           {
             "code": "551100",
@@ -947,7 +954,7 @@
           {
             "code": "518401",
             "label": "Licenční poplatky",
-            "amount": 14010.96,
+            "amount": 14447.91,
             "classCode": "51",
             "classLabel": "Služby"
           },
@@ -971,20 +978,18 @@
             "amount": 5903.82,
             "classCode": "51",
             "classLabel": "Služby"
-          },
-          {
-            "code": "513001",
-            "label": "Reprezentace a občerstvení",
-            "amount": 5657.3,
-            "classCode": "51",
-            "classLabel": "Služby"
           }
         ],
         "topExpenseClasses": [
           {
             "code": "50",
             "label": "Spotřeba a zboží",
-            "amount": 2670423.74
+            "amount": 2848383.0
+          },
+          {
+            "code": "51",
+            "label": "Služby",
+            "amount": 759799.33
           },
           {
             "code": "55",
@@ -992,14 +997,9 @@
             "amount": 399556.0
           },
           {
-            "code": "51",
-            "label": "Služby",
-            "amount": 155762.38
-          },
-          {
             "code": "56",
             "label": "Finanční náklady",
-            "amount": 24832.35
+            "amount": 24844.31
           },
           {
             "code": "54",
@@ -1008,6 +1008,10 @@
           }
         ],
         "topVendors": [
+          {
+            "name": "FANTAZMA, spol. s r.o.",
+            "amount": 603600.0
+          },
           {
             "name": "Diamond",
             "amount": 151977.52
@@ -1051,32 +1055,35 @@
           {
             "name": "Hana Štursová",
             "amount": 5905.34
-          },
-          {
-            "name": "VSP Auto, s.r.o.",
-            "amount": 5903.82
           }
         ],
-        "entryCount": 8243,
+        "entryCount": 8779,
         "detailFile": "finance_journal_11-2026.json"
       }
     ],
     "currentMonth": {
       "label": "11/2026",
-      "expenseTotal": 3263770.47,
-      "revenueTotal": 3567368.25,
+      "expenseTotal": 4045778.64,
+      "revenueTotal": 3856674.92,
       "topExpenseClass": {
         "code": "50",
         "label": "Spotřeba a zboží",
-        "amount": 2670423.74
+        "amount": 2848383.0
       },
       "topExpenseAccounts": [
         {
           "code": "504001",
           "label": "Nákup zboží 2",
-          "amount": 2632393.57,
+          "amount": 2810352.83,
           "classCode": "50",
           "classLabel": "Spotřeba a zboží"
+        },
+        {
+          "code": "513001",
+          "label": "Reprezentace a občerstvení",
+          "amount": 609257.3,
+          "classCode": "51",
+          "classLabel": "Služby"
         },
         {
           "code": "551100",
@@ -1123,7 +1130,7 @@
         {
           "code": "518401",
           "label": "Licenční poplatky",
-          "amount": 14010.96,
+          "amount": 14447.91,
           "classCode": "51",
           "classLabel": "Služby"
         },
@@ -1147,20 +1154,18 @@
           "amount": 5903.82,
           "classCode": "51",
           "classLabel": "Služby"
-        },
-        {
-          "code": "513001",
-          "label": "Reprezentace a občerstvení",
-          "amount": 5657.3,
-          "classCode": "51",
-          "classLabel": "Služby"
         }
       ],
       "topExpenseClasses": [
         {
           "code": "50",
           "label": "Spotřeba a zboží",
-          "amount": 2670423.74
+          "amount": 2848383.0
+        },
+        {
+          "code": "51",
+          "label": "Služby",
+          "amount": 759799.33
         },
         {
           "code": "55",
@@ -1168,14 +1173,9 @@
           "amount": 399556.0
         },
         {
-          "code": "51",
-          "label": "Služby",
-          "amount": 155762.38
-        },
-        {
           "code": "56",
           "label": "Finanční náklady",
-          "amount": 24832.35
+          "amount": 24844.31
         },
         {
           "code": "54",
@@ -1184,6 +1184,10 @@
         }
       ],
       "topVendors": [
+        {
+          "name": "FANTAZMA, spol. s r.o.",
+          "amount": 603600.0
+        },
         {
           "name": "Diamond",
           "amount": 151977.52
@@ -1227,13 +1231,9 @@
         {
           "name": "Hana Štursová",
           "amount": 5905.34
-        },
-        {
-          "name": "VSP Auto, s.r.o.",
-          "amount": 5903.82
         }
       ],
-      "entryCount": 8243,
+      "entryCount": 8779,
       "detailFile": "finance_journal_11-2026.json"
     }
   }

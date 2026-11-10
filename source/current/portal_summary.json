@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-10T10:08:29.455710+01:00",
+  "generatedAt": "2026-11-10T18:00:05.140530+01:00",
   "config": {
     "warehouseCode": "CZPRGA",
     "outboundMaxPages": 20,
@@ -14,25 +14,25 @@
       "label": "CZ",
       "inventory": {
         "items": 829,
-        "availableStockTotal": 372927,
-        "pendingStockTotal": 1936,
+        "availableStockTotal": 377576,
+        "pendingStockTotal": 1275,
         "freezeStockTotal": 0,
         "lowStockItems": 100
       },
       "outbound": {
-        "items": 400,
-        "scannedPages": 4,
+        "items": 600,
+        "scannedPages": 6,
         "topLogisticsProduct": "F1401",
-        "oldestTimestamp": "2026-11-08T22:30:05+01:00",
-        "newestTimestamp": "2026-11-10T10:05:08+01:00"
+        "oldestTimestamp": "2026-11-08T18:50:06+01:00",
+        "newestTimestamp": "2026-11-10T18:00:03+01:00"
       }
     },
     "sk": {
       "label": "SK",
       "inventory": {
         "items": 680,
-        "availableStockTotal": 54780,
-        "pendingStockTotal": 124,
+        "availableStockTotal": 55112,
+        "pendingStockTotal": 44,
         "freezeStockTotal": 0,
         "lowStockItems": 100
       },
@@ -40,8 +40,8 @@
         "items": 100,
         "scannedPages": 1,
         "topLogisticsProduct": "F1406",
-        "oldestTimestamp": "2026-11-07T14:00:13+01:00",
-        "newestTimestamp": "2026-11-10T10:00:17+01:00"
+        "oldestTimestamp": "2026-11-07T21:20:20+01:00",
+        "newestTimestamp": "2026-11-10T18:00:15+01:00"
       }
     }
   },
@@ -58,24 +58,24 @@
     "shipments": 366,
     "alerts": [
       "2 problematických nebo stornovaných objednávek.",
-      "2 včera prodaných produktů je teď na nízkém skladu.",
+      "1 včera prodaných produktů je teď na nízkém skladu.",
       "10 skladových pozic je v mínusu.",
       "6 A produktů je v kritickém riziku výpadku."
     ],
     "priorities": [
       "Prověřit A produkty v riziku výpadku (6 SKU): 120105, 30115, 56005.",
-      "Dohlédnout 10261 (Enzymový pudr na mytí obličeje), aktuálně 1 ks.",
+      "Dohlédnout BI0023 (Probiomix), aktuálně 3 ks.",
       "Projít 2 problematických nebo stornovaných objednávek z včerejška.",
       "Projít nejbližší expirace v 4PX a rozhodnout o doprodeji nebo přesunu zásoby."
     ]
   },
   "expiries": {
-    "datedSkuCount": 326,
-    "czSkuCount": 317,
-    "skSkuCount": 304,
-    "datedRowCount": 736,
-    "czRowCount": 382,
-    "skRowCount": 354
+    "datedSkuCount": 336,
+    "czSkuCount": 329,
+    "skSkuCount": 313,
+    "datedRowCount": 765,
+    "czRowCount": 402,
+    "skRowCount": 363
   },
   "storeExpiry": {
     "inputRows": 0,
@@ -93,10 +93,10 @@
   },
   "pairing": {
     "allCodes": 3145,
-    "pairedProducts": 365,
-    "onlyInWpj": 1712,
+    "pairedProducts": 369,
+    "onlyInWpj": 1711,
     "onlyIn4px": 1,
-    "stockMismatch": 703,
+    "stockMismatch": 704,
     "lowAfterSales": 3,
     "manualMapped4pxAliases": 0,
     "autoMapped4pxAliases": 92
@@ -107,29 +107,29 @@
     "message": "Měsíční finance se tahají přímo z ABRA reportu Výkaz hospodaření za měsíc za všechna střediska. Cash a závazky jsou také live z ABRA API.",
     "currentMonth": {
       "label": "11/2026",
-      "revenue": 3705903.21,
-      "cogsAndFees": 2903287.1,
+      "revenue": 3980239.03,
+      "cogsAndFees": 3081246.36,
       "logistics": 427.15,
       "marketing": 4958.68,
-      "opex": 178029.03,
+      "opex": 782065.98,
       "depreciation": 399556.0,
-      "other": 63144.91,
-      "grossMargin": 802616.11,
-      "afterLogistics": 802188.96,
-      "afterMarketing": 797230.28,
-      "operatingMargin": 619201.25,
-      "ebit": 219645.25,
-      "profit": 282790.16,
-      "grossMarginPct": 21.7,
+      "other": 63132.95,
+      "grossMargin": 898992.67,
+      "afterLogistics": 898565.52,
+      "afterMarketing": 893606.84,
+      "operatingMargin": 111540.86,
+      "ebit": -288015.14,
+      "profit": -224882.19,
+      "grossMarginPct": 22.6,
       "marketingPct": 0.1,
       "logisticsPct": 0.0,
-      "operatingMarginPct": 16.7,
-      "profitPct": 7.6
+      "operatingMarginPct": 2.8,
+      "profitPct": -5.6
     },
     "cash": {
-      "cashOnAccounts": 10167777.75,
-      "unpaidInvoices": 6598877.04,
-      "netCashPosition": 3568900.71,
+      "cashOnAccounts": 10260932.84,
+      "unpaidInvoices": 6586058.04,
+      "netCashPosition": 3674874.8,
       "overdueInvoicesCount": 2,
       "overdueInvoicesAmount": 1517.0,
       "largestPayables": [
@@ -220,8 +220,8 @@
             "accountCode": "221001",
             "accountLabel": "221001: 2901338673/2010 FIO CZK",
             "currency": "CZK: Česká koruna",
-            "balance": 1681073.06,
-            "includedBalance": 1681073.06
+            "balance": 1774228.15,
+            "includedBalance": 1774228.15
           },
           {
             "accountCode": "221111",
@@ -387,7 +387,7 @@
       "performanceSpend": 4958.68,
       "brandSpend": 0.0,
       "totalSpend": 4958.68,
-      "revenue": 3705903.21,
+      "revenue": 3980239.03,
       "spendShareOfRevenuePct": 0.1
     },
     "topSupplier": {
@@ -406,22 +406,22 @@
     },
     "summary": {
       "noviceRevenueCzkEquiv": 0.0,
-      "networkRevenueCzkEquiv": 32944304.0,
-      "novicePartners": 13,
+      "networkRevenueCzkEquiv": 33004024.0,
+      "novicePartners": 14,
       "networkPartners": 50,
       "noviceOrders": 0.0,
-      "networkOrders": 20421.0,
+      "networkOrders": 20457.0,
       "noviceOrderingContacts": 0.0,
-      "networkOrderingCustomers": 4894.0,
+      "networkOrderingCustomers": 4901.0,
       "topNovicePartner": {
-        "partnerCode": "r04z25",
-        "partnerName": "Veronika Slezáková",
+        "partnerCode": "kwnyb5",
+        "partnerName": "Lucia Dolesova",
         "revenueCzkEquiv": 0.0
       },
       "topNetworkPartner": {
         "partnerCode": "ESHOP",
         "partnerName": "E-shop (interní)",
-        "revenueCzkEquiv": 8915310.0
+        "revenueCzkEquiv": 8930645.0
       }
     }
   },
