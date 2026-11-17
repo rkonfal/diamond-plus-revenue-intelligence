@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-17T04:44:35.012321+01:00",
+  "generatedAt": "2026-11-17T14:46:14.876375+01:00",
   "config": {
     "warehouseCode": "CZPRGA",
     "outboundMaxPages": 20,
@@ -14,25 +14,25 @@
       "label": "CZ",
       "inventory": {
         "items": 829,
-        "availableStockTotal": 393520,
-        "pendingStockTotal": 2102,
+        "availableStockTotal": 392357,
+        "pendingStockTotal": 3265,
         "freezeStockTotal": 0,
         "lowStockItems": 100
       },
       "outbound": {
-        "items": 300,
-        "scannedPages": 3,
+        "items": 400,
+        "scannedPages": 4,
         "topLogisticsProduct": "F1401",
-        "oldestTimestamp": "2026-11-15T22:10:07+01:00",
-        "newestTimestamp": "2026-11-17T02:50:04+01:00"
+        "oldestTimestamp": "2026-11-15T22:15:04+01:00",
+        "newestTimestamp": "2026-11-17T14:40:05+01:00"
       }
     },
     "sk": {
       "label": "SK",
       "inventory": {
         "items": 680,
-        "availableStockTotal": 58490,
-        "pendingStockTotal": 244,
+        "availableStockTotal": 58376,
+        "pendingStockTotal": 358,
         "freezeStockTotal": 0,
         "lowStockItems": 100
       },
@@ -40,8 +40,8 @@
         "items": 100,
         "scannedPages": 1,
         "topLogisticsProduct": "F1406",
-        "oldestTimestamp": "2026-11-12T21:30:57+01:00",
-        "newestTimestamp": "2026-11-17T01:20:13+01:00"
+        "oldestTimestamp": "2026-11-13T10:45:20+01:00",
+        "newestTimestamp": "2026-11-17T14:45:15+01:00"
       }
     }
   },
@@ -63,7 +63,7 @@
     ],
     "priorities": [
       "Prověřit A produkty v riziku výpadku (5 SKU): 120105, 30115, 56005.",
-      "Dohlédnout 60144 (Zubní pasta Zelený čaj a ženšen Sanchi), aktuálně 2 ks.",
+      "Dohlédnout 60144 (Zubní pasta Zelený čaj a ženšen Sanchi), aktuálně 1 ks.",
       "Projít nejbližší expirace v 4PX a rozhodnout o doprodeji nebo přesunu zásoby."
     ]
   },
@@ -94,7 +94,7 @@
     "pairedProducts": 368,
     "onlyInWpj": 1720,
     "onlyIn4px": 1,
-    "stockMismatch": 704,
+    "stockMismatch": 711,
     "lowAfterSales": 9,
     "manualMapped4pxAliases": 0,
     "autoMapped4pxAliases": 92
@@ -105,29 +105,29 @@
     "message": "Měsíční finance se tahají přímo z ABRA reportu Výkaz hospodaření za měsíc za všechna střediska. Cash a závazky jsou také live z ABRA API.",
     "currentMonth": {
       "label": "11/2026",
-      "revenue": 6479354.92,
-      "cogsAndFees": 5136642.81,
+      "revenue": 6608566.69,
+      "cogsAndFees": 5223185.85,
       "logistics": 33593.76,
       "marketing": 204958.68,
       "opex": 1298141.97,
       "depreciation": 399556.0,
       "other": 60690.12,
-      "grossMargin": 1342712.11,
-      "afterLogistics": 1309118.35,
-      "afterMarketing": 1104159.67,
-      "operatingMargin": -193982.3,
-      "ebit": -593538.3,
-      "profit": -532848.18,
-      "grossMarginPct": 20.7,
-      "marketingPct": 3.2,
+      "grossMargin": 1385380.84,
+      "afterLogistics": 1351787.08,
+      "afterMarketing": 1146828.4,
+      "operatingMargin": -151313.57,
+      "ebit": -550869.57,
+      "profit": -490179.45,
+      "grossMarginPct": 21.0,
+      "marketingPct": 3.1,
       "logisticsPct": 0.5,
-      "operatingMarginPct": -3.0,
-      "profitPct": -8.2
+      "operatingMarginPct": -2.3,
+      "profitPct": -7.4
     },
     "cash": {
-      "cashOnAccounts": 11020082.95,
+      "cashOnAccounts": 11071738.95,
       "unpaidInvoices": 9065266.06,
-      "netCashPosition": 1954816.89,
+      "netCashPosition": 2006472.89,
       "overdueInvoicesCount": 4,
       "overdueInvoicesAmount": 6254.6,
       "largestPayables": [
@@ -211,8 +211,8 @@
             "accountCode": "221001",
             "accountLabel": "221001: 2901338673/2010 FIO CZK",
             "currency": "CZK: Česká koruna",
-            "balance": 2583528.16,
-            "includedBalance": 2583528.16
+            "balance": 2635184.16,
+            "includedBalance": 2635184.16
           },
           {
             "accountCode": "221118",
@@ -385,8 +385,8 @@
       "performanceSpend": 4958.68,
       "brandSpend": 200000.0,
       "totalSpend": 204958.68,
-      "revenue": 6479354.92,
-      "spendShareOfRevenuePct": 3.2
+      "revenue": 6608566.69,
+      "spendShareOfRevenuePct": 3.1
     },
     "topSupplier": {
       "name": "Selfcareacademy s.r.o.",
@@ -404,22 +404,22 @@
     },
     "summary": {
       "noviceRevenueCzkEquiv": 0.0,
-      "networkRevenueCzkEquiv": 33702837.0,
+      "networkRevenueCzkEquiv": 33749178.0,
       "novicePartners": 18,
       "networkPartners": 50,
       "noviceOrders": 0.0,
-      "networkOrders": 20912.0,
+      "networkOrders": 20941.0,
       "noviceOrderingContacts": 0.0,
       "networkOrderingCustomers": 4994.0,
       "topNovicePartner": {
-        "partnerCode": "rvsj6r",
-        "partnerName": "Zdeňka Šebestová",
+        "partnerCode": "yb5tfo",
+        "partnerName": "Kateřina Mrnková",
         "revenueCzkEquiv": 0.0
       },
       "topNetworkPartner": {
         "partnerCode": "ESHOP",
         "partnerName": "E-shop (interní)",
-        "revenueCzkEquiv": 9156539.0
+        "revenueCzkEquiv": 9171998.0
       }
     }
   },
