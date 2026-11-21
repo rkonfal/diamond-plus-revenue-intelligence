@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-21T10:37:54.570590+01:00",
+  "generatedAt": "2026-11-21T17:42:07.336848+01:00",
   "config": {
     "warehouseCode": "CZPRGA",
     "outboundMaxPages": 20,
@@ -14,25 +14,25 @@
       "label": "CZ",
       "inventory": {
         "items": 830,
-        "availableStockTotal": 337057,
-        "pendingStockTotal": 16113,
+        "availableStockTotal": 332552,
+        "pendingStockTotal": 20618,
         "freezeStockTotal": 0,
         "lowStockItems": 100
       },
       "outbound": {
-        "items": 1500,
-        "scannedPages": 15,
+        "items": 1800,
+        "scannedPages": 18,
         "topLogisticsProduct": "F1401",
-        "oldestTimestamp": "2026-11-19T23:00:27+01:00",
-        "newestTimestamp": "2026-11-21T10:35:06+01:00"
+        "oldestTimestamp": "2026-11-19T23:29:37+01:00",
+        "newestTimestamp": "2026-11-21T17:40:08+01:00"
       }
     },
     "sk": {
       "label": "SK",
       "inventory": {
         "items": 680,
-        "availableStockTotal": 53151,
-        "pendingStockTotal": 1184,
+        "availableStockTotal": 52756,
+        "pendingStockTotal": 1579,
         "freezeStockTotal": 0,
         "lowStockItems": 100
       },
@@ -40,8 +40,8 @@
         "items": 200,
         "scannedPages": 2,
         "topLogisticsProduct": "F1406",
-        "oldestTimestamp": "2026-11-19T01:16:39+01:00",
-        "newestTimestamp": "2026-11-21T10:35:27+01:00"
+        "oldestTimestamp": "2026-11-19T14:21:06+01:00",
+        "newestTimestamp": "2026-11-21T16:55:38+01:00"
       }
     }
   },
@@ -55,7 +55,7 @@
   },
   "report": {
     "date": "2026-11-20",
-    "shipments": 1432,
+    "shipments": 1433,
     "alerts": [
       "6 problematických nebo stornovaných objednávek.",
       "2 včera prodaných produktů je teď na nízkém skladu.",
@@ -64,7 +64,7 @@
     ],
     "priorities": [
       "Prověřit A produkty v riziku výpadku (7 SKU): 120105, 30115, 60144.",
-      "Dohlédnout 30129 (Nákoleníky s bodovou turmalínovou vrstvou), aktuálně 5 ks.",
+      "Dohlédnout 113007 (Funkční komplex Piaoliang), aktuálně 5 ks.",
       "Projít 6 problematických nebo stornovaných objednávek z včerejška.",
       "Projít nejbližší expirace v 4PX a rozhodnout o doprodeji nebo přesunu zásoby."
     ]
@@ -96,7 +96,7 @@
     "pairedProducts": 364,
     "onlyInWpj": 1724,
     "onlyIn4px": 1,
-    "stockMismatch": 725,
+    "stockMismatch": 740,
     "lowAfterSales": 3,
     "manualMapped4pxAliases": 0,
     "autoMapped4pxAliases": 91
@@ -107,29 +107,29 @@
     "message": "Měsíční finance se tahají přímo z ABRA reportu Výkaz hospodaření za měsíc za všechna střediska. Cash a závazky jsou také live z ABRA API.",
     "currentMonth": {
       "label": "11/2026",
-      "revenue": 13677445.0,
-      "cogsAndFees": 10618385.74,
+      "revenue": 14232135.57,
+      "cogsAndFees": 11047808.31,
       "logistics": 62969.8,
       "marketing": 207438.02,
       "opex": 1393174.2,
       "depreciation": 399556.0,
       "other": 47239.59,
-      "grossMargin": 3059059.26,
-      "afterLogistics": 2996089.46,
-      "afterMarketing": 2788651.44,
-      "operatingMargin": 1395477.24,
-      "ebit": 995921.24,
-      "profit": 1043160.83,
+      "grossMargin": 3184327.26,
+      "afterLogistics": 3121357.46,
+      "afterMarketing": 2913919.44,
+      "operatingMargin": 1520745.24,
+      "ebit": 1121189.24,
+      "profit": 1168428.83,
       "grossMarginPct": 22.4,
       "marketingPct": 1.5,
-      "logisticsPct": 0.5,
-      "operatingMarginPct": 10.2,
-      "profitPct": 7.6
+      "logisticsPct": 0.4,
+      "operatingMarginPct": 10.7,
+      "profitPct": 8.2
     },
     "cash": {
-      "cashOnAccounts": 12534376.98,
+      "cashOnAccounts": 12759467.91,
       "unpaidInvoices": 1182375.2,
-      "netCashPosition": 11352001.78,
+      "netCashPosition": 11577092.71,
       "overdueInvoicesCount": 3,
       "overdueInvoicesAmount": 41329.63,
       "largestPayables": [
@@ -213,8 +213,8 @@
             "accountCode": "221001",
             "accountLabel": "221001: 2901338673/2010 FIO CZK",
             "currency": "CZK: Česká koruna",
-            "balance": 3921023.09,
-            "includedBalance": 3921023.09
+            "balance": 4144368.09,
+            "includedBalance": 4144368.09
           },
           {
             "accountCode": "221118",
@@ -248,8 +248,8 @@
             "accountCode": "221005",
             "accountLabel": "221005: 2501338690/2010 FIO EUR",
             "currency": "CZK: Česká koruna",
-            "balance": 85323.11,
-            "includedBalance": 85323.11
+            "balance": 87069.04,
+            "includedBalance": 87069.04
           },
           {
             "accountCode": "211000",
@@ -387,7 +387,7 @@
       "performanceSpend": 7438.02,
       "brandSpend": 200000.0,
       "totalSpend": 207438.02,
-      "revenue": 13677445.0,
+      "revenue": 14232135.57,
       "spendShareOfRevenuePct": 1.5
     },
     "topSupplier": {
@@ -406,22 +406,22 @@
     },
     "summary": {
       "noviceRevenueCzkEquiv": 0.0,
-      "networkRevenueCzkEquiv": 36239549.0,
-      "novicePartners": 20,
+      "networkRevenueCzkEquiv": 36406218.0,
+      "novicePartners": 21,
       "networkPartners": 50,
       "noviceOrders": 0.0,
-      "networkOrders": 22049.0,
+      "networkOrders": 22127.0,
       "noviceOrderingContacts": 0.0,
-      "networkOrderingCustomers": 5165.0,
+      "networkOrderingCustomers": 5179.0,
       "topNovicePartner": {
-        "partnerCode": "rvsj6r",
-        "partnerName": "Zdeňka Šebestová",
+        "partnerCode": "kgz3ao",
+        "partnerName": "evalazorova@seznam.cz",
         "revenueCzkEquiv": 0.0
       },
       "topNetworkPartner": {
         "partnerCode": "ESHOP",
         "partnerName": "E-shop (interní)",
-        "revenueCzkEquiv": 9904124.0
+        "revenueCzkEquiv": 9953471.0
       }
     }
   },
