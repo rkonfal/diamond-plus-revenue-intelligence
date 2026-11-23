@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-11-22T21:08:30.128938+01:00",
+  "generatedAt": "2026-11-23T02:47:14.396859+01:00",
   "config": {
     "warehouseCode": "CZPRGA",
     "outboundMaxPages": 20,
     "reportWindow": {
-      "from": "2026-11-21T00:00:01+01:00",
-      "to": "2026-11-22T00:00:00+01:00"
+      "from": "2026-11-22T00:00:01+01:00",
+      "to": "2026-11-23T00:00:00+01:00"
     }
   },
   "warnings": [
@@ -16,8 +16,8 @@
       "label": "CZ",
       "inventory": {
         "items": 830,
-        "availableStockTotal": 305375,
-        "pendingStockTotal": 31998,
+        "availableStockTotal": 294308,
+        "pendingStockTotal": 43065,
         "freezeStockTotal": 0,
         "lowStockItems": 100
       },
@@ -25,16 +25,16 @@
         "items": 2000,
         "scannedPages": 20,
         "topLogisticsProduct": "F1401",
-        "oldestTimestamp": "2026-11-21T18:25:40+01:00",
-        "newestTimestamp": "2026-11-22T20:51:17+01:00"
+        "oldestTimestamp": "2026-11-22T15:45:04+01:00",
+        "newestTimestamp": "2026-11-23T02:23:30+01:00"
       }
     },
     "sk": {
       "label": "SK",
       "inventory": {
         "items": 680,
-        "availableStockTotal": 50159,
-        "pendingStockTotal": 1778,
+        "availableStockTotal": 49057,
+        "pendingStockTotal": 2880,
         "freezeStockTotal": 0,
         "lowStockItems": 100
       },
@@ -42,32 +42,32 @@
         "items": 300,
         "scannedPages": 3,
         "topLogisticsProduct": "F1406",
-        "oldestTimestamp": "2026-11-20T13:30:29+01:00",
-        "newestTimestamp": "2026-11-22T20:52:41+01:00"
+        "oldestTimestamp": "2026-11-21T00:29:40+01:00",
+        "newestTimestamp": "2026-11-23T01:35:25+01:00"
       }
     }
   },
   "wpJ": {
     "ready": true,
     "message": "WPJ připojeno a ranní report je vygenerovaný.",
-    "orders": 933,
-    "revenueWithVat": 1912255.79,
-    "averageOrderValue": 2049.58,
-    "problematicOrders": 10
+    "orders": 3083,
+    "revenueWithVat": 6139453.95,
+    "averageOrderValue": 1991.39,
+    "problematicOrders": 15
   },
   "report": {
-    "date": "2026-11-21",
-    "shipments": 341,
+    "date": "2026-11-22",
+    "shipments": 2130,
     "alerts": [
-      "10 problematických nebo stornovaných objednávek.",
-      "1 včera prodaných produktů je teď na nízkém skladu.",
+      "15 problematických nebo stornovaných objednávek.",
+      "3 včera prodaných produktů je teď na nízkém skladu.",
       "10 skladových pozic je v mínusu.",
       "11 A produktů je v kritickém riziku výpadku."
     ],
     "priorities": [
       "Prověřit A produkty v riziku výpadku (11 SKU): 120105, 30115, 60144.",
-      "Dohlédnout 113007 (Funkční komplex Piaoliang), aktuálně 5 ks.",
-      "Projít 10 problematických nebo stornovaných objednávek z včerejška.",
+      "Dohlédnout 14601/1 (Vícefunkční krém na obličej s mucinem hlemýžďů- 1 sáček), aktuálně 3 ks.",
+      "Projít 15 problematických nebo stornovaných objednávek z včerejška.",
       "Rozšířit 4PX pull, aby ranní report neřezal starší včerejší zásilky.",
       "Projít nejbližší expirace v 4PX a rozhodnout o doprodeji nebo přesunu zásoby."
     ]
@@ -99,8 +99,8 @@
     "pairedProducts": 364,
     "onlyInWpj": 1724,
     "onlyIn4px": 1,
-    "stockMismatch": 867,
-    "lowAfterSales": 4,
+    "stockMismatch": 714,
+    "lowAfterSales": 7,
     "manualMapped4pxAliases": 0,
     "autoMapped4pxAliases": 91
   },
@@ -110,29 +110,29 @@
     "message": "Měsíční finance se tahají přímo z ABRA reportu Výkaz hospodaření za měsíc za všechna střediska. Cash a závazky jsou také live z ABRA API.",
     "currentMonth": {
       "label": "11/2026",
-      "revenue": 17331313.69,
-      "cogsAndFees": 13485217.82,
+      "revenue": 18581022.83,
+      "cogsAndFees": 14465230.14,
       "logistics": 62969.8,
       "marketing": 207438.02,
       "opex": 1393174.2,
       "depreciation": 399556.0,
       "other": 47239.59,
-      "grossMargin": 3846095.87,
-      "afterLogistics": 3783126.07,
-      "afterMarketing": 3575688.05,
-      "operatingMargin": 2182513.85,
-      "ebit": 1782957.85,
-      "profit": 1830197.44,
+      "grossMargin": 4115792.69,
+      "afterLogistics": 4052822.89,
+      "afterMarketing": 3845384.87,
+      "operatingMargin": 2452210.67,
+      "ebit": 2052654.67,
+      "profit": 2099894.26,
       "grossMarginPct": 22.2,
-      "marketingPct": 1.2,
-      "logisticsPct": 0.4,
-      "operatingMarginPct": 12.6,
-      "profitPct": 10.6
+      "marketingPct": 1.1,
+      "logisticsPct": 0.3,
+      "operatingMarginPct": 13.2,
+      "profitPct": 11.3
     },
     "cash": {
-      "cashOnAccounts": 14041225.35,
+      "cashOnAccounts": 14431038.59,
       "unpaidInvoices": 1182375.2,
-      "netCashPosition": 12858850.15,
+      "netCashPosition": 13248663.39,
       "overdueInvoicesCount": 3,
       "overdueInvoicesAmount": 41329.63,
       "largestPayables": [
@@ -142,7 +142,7 @@
           "dueDate": "30.11.2026",
           "amountTotal": 568386.38,
           "amountDue": 568386.38,
-          "status": "8 dní do splatnosti"
+          "status": "7 dní do splatnosti"
         },
         {
           "code": "PF1583/2026",
@@ -150,7 +150,7 @@
           "dueDate": "27.11.2026",
           "amountTotal": 311938.0,
           "amountDue": 311938.0,
-          "status": "5 dní do splatnosti"
+          "status": "4 dní do splatnosti"
         },
         {
           "code": "PF1480/2026",
@@ -158,7 +158,7 @@
           "dueDate": "30.11.2026",
           "amountTotal": 59290.0,
           "amountDue": 59290.0,
-          "status": "8 dní do splatnosti"
+          "status": "7 dní do splatnosti"
         },
         {
           "code": "PF1593/2026",
@@ -166,7 +166,7 @@
           "dueDate": "30.11.2026",
           "amountTotal": 48400.0,
           "amountDue": 48400.0,
-          "status": "8 dní do splatnosti"
+          "status": "7 dní do splatnosti"
         },
         {
           "code": "PF1530/2026",
@@ -174,7 +174,7 @@
           "dueDate": "30.11.2026",
           "amountTotal": 43562.42,
           "amountDue": 43562.42,
-          "status": "8 dní do splatnosti"
+          "status": "7 dní do splatnosti"
         },
         {
           "code": "PF1447/2026",
@@ -182,7 +182,7 @@
           "dueDate": "20.11.2026",
           "amountTotal": 39812.63,
           "amountDue": 39812.63,
-          "status": "2 dní PO SPLATNOSTI"
+          "status": "3 dní PO SPLATNOSTI"
         },
         {
           "code": "PF1473/2026",
@@ -190,7 +190,7 @@
           "dueDate": "29.11.2026",
           "amountTotal": 37950.0,
           "amountDue": 37950.0,
-          "status": "7 dní do splatnosti"
+          "status": "6 dní do splatnosti"
         },
         {
           "code": "Z0091/2026",
@@ -198,7 +198,7 @@
           "dueDate": "29.11.2026",
           "amountTotal": 34960.7,
           "amountDue": 34960.7,
-          "status": "7 dní do splatnosti"
+          "status": "6 dní do splatnosti"
         }
       ],
       "cashAccountsSource": {
@@ -209,8 +209,8 @@
             "accountCode": "221001",
             "accountLabel": "221001: 2901338673/2010 FIO CZK",
             "currency": "CZK: Česká koruna",
-            "balance": 5393053.09,
-            "includedBalance": 5393053.09
+            "balance": 5776148.09,
+            "includedBalance": 5776148.09
           },
           {
             "accountCode": "221119",
@@ -234,18 +234,18 @@
             "includedBalance": 919525.32
           },
           {
+            "accountCode": "221005",
+            "accountLabel": "221005: 2501338690/2010 FIO EUR",
+            "currency": "CZK: Česká koruna",
+            "balance": 126859.72,
+            "includedBalance": 126859.72
+          },
+          {
             "accountCode": "221112",
             "accountLabel": "221112: 107-164902 EUR THEPAY",
             "currency": "CZK: Česká koruna",
             "balance": 124235.13,
             "includedBalance": 124235.13
-          },
-          {
-            "accountCode": "221005",
-            "accountLabel": "221005: 2501338690/2010 FIO EUR",
-            "currency": "CZK: Česká koruna",
-            "balance": 120141.48,
-            "includedBalance": 120141.48
           },
           {
             "accountCode": "221117",
@@ -390,8 +390,8 @@
       "performanceSpend": 7438.02,
       "brandSpend": 200000.0,
       "totalSpend": 207438.02,
-      "revenue": 17331313.69,
-      "spendShareOfRevenuePct": 1.2
+      "revenue": 18581022.83,
+      "spendShareOfRevenuePct": 1.1
     },
     "topSupplier": {
       "name": "Selfcareacademy s.r.o.",
@@ -404,18 +404,18 @@
     "message": "Affiliate přehled se skládá přímo z živých API endpointů affiliate portálu, bez závislosti na HTML exportech.",
     "period": {
       "dateFrom": "2026-10-01",
-      "dateTo": "2026-11-22",
-      "label": "2026-10-01 až 2026-11-22"
+      "dateTo": "2026-11-23",
+      "label": "2026-10-01 až 2026-11-23"
     },
     "summary": {
       "noviceRevenueCzkEquiv": 0.0,
-      "networkRevenueCzkEquiv": 37710852.0,
+      "networkRevenueCzkEquiv": 38140400.0,
       "novicePartners": 25,
       "networkPartners": 50,
       "noviceOrders": 0.0,
-      "networkOrders": 22786.0,
+      "networkOrders": 22996.0,
       "noviceOrderingContacts": 0.0,
-      "networkOrderingCustomers": 5276.0,
+      "networkOrderingCustomers": 5311.0,
       "topNovicePartner": {
         "partnerCode": "45e50v",
         "partnerName": "jskrbkova@seznam.cz",
@@ -424,7 +424,7 @@
       "topNetworkPartner": {
         "partnerCode": "ESHOP",
         "partnerName": "E-shop (interní)",
-        "revenueCzkEquiv": 10380403.0
+        "revenueCzkEquiv": 10497683.0
       }
     }
   },
@@ -443,75 +443,75 @@
     "currentMonth": {
       "label": "11/2026",
       "dateFrom": "2026-11-01",
-      "dateTo": "2026-11-21",
-      "activeUsers": 42366,
-      "sessions": 135200,
-      "engagedSessions": 92356,
-      "screenPageViews": 806647,
-      "ecommercePurchases": 10001.0,
-      "purchaseRevenue": 14460897.49,
-      "averageSessionDuration": 333.51,
-      "bounceRatePct": 0.32,
-      "engagementRatePct": 68.31,
-      "purchaseRatePct": 7.4,
-      "revenuePerSession": 106.96
+      "dateTo": "2026-11-22",
+      "activeUsers": 47302,
+      "sessions": 166868,
+      "engagedSessions": 115622,
+      "screenPageViews": 933556,
+      "ecommercePurchases": 12585.0,
+      "purchaseRevenue": 18316132.05,
+      "averageSessionDuration": 313.74,
+      "bounceRatePct": 0.31,
+      "engagementRatePct": 69.29,
+      "purchaseRatePct": 7.54,
+      "revenuePerSession": 109.76
     },
     "last7days": {
       "label": "last7days",
-      "dateFrom": "2026-11-15",
-      "dateTo": "2026-11-21",
-      "activeUsers": 25982,
-      "sessions": 72013,
-      "engagedSessions": 50229,
-      "screenPageViews": 447665,
-      "ecommercePurchases": 5758.0,
-      "purchaseRevenue": 9181100.14,
-      "averageSessionDuration": 349.02,
+      "dateFrom": "2026-11-16",
+      "dateTo": "2026-11-22",
+      "activeUsers": 30824,
+      "sessions": 102252,
+      "engagedSessions": 70486,
+      "screenPageViews": 552979,
+      "ecommercePurchases": 8079.0,
+      "purchaseRevenue": 12709401.37,
+      "averageSessionDuration": 306.48,
       "bounceRatePct": 0.31,
-      "engagementRatePct": 69.75,
-      "purchaseRatePct": 8.0,
-      "revenuePerSession": 127.49
+      "engagementRatePct": 68.93,
+      "purchaseRatePct": 7.9,
+      "revenuePerSession": 124.29
     },
     "topChannel7d": {
-      "sessions": 18169.0,
-      "activeUsers": 6989.0,
-      "engagedSessions": 13992.0,
-      "ecommercePurchases": 1763.0,
-      "purchaseRevenue": 2745093.34,
+      "sessions": 25018.0,
+      "activeUsers": 8316.0,
+      "engagedSessions": 18861.0,
+      "ecommercePurchases": 2308.0,
+      "purchaseRevenue": 3598821.12,
       "channel": "Paid Search",
-      "purchaseRatePct": 9.7,
-      "revenuePerSession": 151.09
+      "purchaseRatePct": 9.23,
+      "revenuePerSession": 143.85
     },
     "countries7d": [
       {
         "country": "Czechia",
-        "activeUsers": 22145.0,
-        "ecommercePurchases": 5330.0,
-        "purchaseRevenue": 9054690.98
+        "activeUsers": 26469.0,
+        "ecommercePurchases": 7503.0,
+        "purchaseRevenue": 12548628.81
       },
       {
         "country": "Slovakia",
-        "activeUsers": 2059.0,
-        "ecommercePurchases": 372.0,
-        "purchaseRevenue": 28746.33
+        "activeUsers": 2314.0,
+        "ecommercePurchases": 494.0,
+        "purchaseRevenue": 38953.78
       },
       {
         "country": "United States",
-        "activeUsers": 847.0,
+        "activeUsers": 1021.0,
         "ecommercePurchases": 1.0,
         "purchaseRevenue": 2003.0
       },
       {
         "country": "Netherlands",
-        "activeUsers": 318.0,
+        "activeUsers": 513.0,
         "ecommercePurchases": 1.0,
         "purchaseRevenue": 2092.0
       },
       {
         "country": "Germany",
-        "activeUsers": 196.0,
-        "ecommercePurchases": 17.0,
-        "purchaseRevenue": 35953.6
+        "activeUsers": 248.0,
+        "ecommercePurchases": 24.0,
+        "purchaseRevenue": 39390.86
       }
     ]
   },
@@ -522,19 +522,19 @@
       "windowDays": 90,
       "twistoBatchCount": 15,
       "twistoPaidBatchCount": 15,
-      "bankTwistoTransactionCount": 16,
-      "matchedBatchCount": 16,
+      "bankTwistoTransactionCount": 15,
+      "matchedBatchCount": 15,
       "unmatchedBatchCount": 0,
       "unmatchedBankTransactions": 0,
       "twistoPaidAmount": 68552.0,
-      "twistoMatchedAmount": 71601.0,
-      "bankReceivedAmount": 71601.0,
+      "twistoMatchedAmount": 68552.0,
+      "bankReceivedAmount": 68552.0,
       "openBatchAmount": 0,
       "bankVsTwistoDelta": 0.0,
       "wpjTwistoOrderCount": 4,
       "wpjTwistoOrderAmount": 11609.0,
       "twistoOrderAmount": 758347.0,
-      "historicalMatchedBatchAmount": 71601.0,
+      "historicalMatchedBatchAmount": 68552.0,
       "wpjVsTwistoOrderDelta": -746738.0,
       "oldestOpenBatchDays": null
     },
@@ -548,8 +548,8 @@
         "accountId": "2901338673",
         "bankId": "2010",
         "currency": "CZK",
-        "dateStart": "2026-08-24+0200",
-        "dateEnd": "2026-11-22+0100"
+        "dateStart": "2026-08-25+0200",
+        "dateEnd": "2026-11-23+0100"
       },
       "wpj": {
         "status": "ok",
