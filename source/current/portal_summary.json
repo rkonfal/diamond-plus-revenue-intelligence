@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-23T02:47:14.396859+01:00",
+  "generatedAt": "2026-11-23T12:33:08.326534+01:00",
   "config": {
     "warehouseCode": "CZPRGA",
     "outboundMaxPages": 20,
@@ -16,8 +16,8 @@
       "label": "CZ",
       "inventory": {
         "items": 830,
-        "availableStockTotal": 294308,
-        "pendingStockTotal": 43065,
+        "availableStockTotal": 290599,
+        "pendingStockTotal": 40119,
         "freezeStockTotal": 0,
         "lowStockItems": 100
       },
@@ -25,16 +25,16 @@
         "items": 2000,
         "scannedPages": 20,
         "topLogisticsProduct": "F1401",
-        "oldestTimestamp": "2026-11-22T15:45:04+01:00",
-        "newestTimestamp": "2026-11-23T02:23:30+01:00"
+        "oldestTimestamp": "2026-11-22T18:03:33+01:00",
+        "newestTimestamp": "2026-11-23T12:30:10+01:00"
       }
     },
     "sk": {
       "label": "SK",
       "inventory": {
         "items": 680,
-        "availableStockTotal": 49057,
-        "pendingStockTotal": 2880,
+        "availableStockTotal": 48407,
+        "pendingStockTotal": 3260,
         "freezeStockTotal": 0,
         "lowStockItems": 100
       },
@@ -42,8 +42,8 @@
         "items": 300,
         "scannedPages": 3,
         "topLogisticsProduct": "F1406",
-        "oldestTimestamp": "2026-11-21T00:29:40+01:00",
-        "newestTimestamp": "2026-11-23T01:35:25+01:00"
+        "oldestTimestamp": "2026-11-21T11:55:43+01:00",
+        "newestTimestamp": "2026-11-23T12:25:23+01:00"
       }
     }
   },
@@ -53,13 +53,13 @@
     "orders": 3083,
     "revenueWithVat": 6139453.95,
     "averageOrderValue": 1991.39,
-    "problematicOrders": 15
+    "problematicOrders": 17
   },
   "report": {
     "date": "2026-11-22",
-    "shipments": 2130,
+    "shipments": 1864,
     "alerts": [
-      "15 problematických nebo stornovaných objednávek.",
+      "17 problematických nebo stornovaných objednávek.",
       "3 včera prodaných produktů je teď na nízkém skladu.",
       "10 skladových pozic je v mínusu.",
       "11 A produktů je v kritickém riziku výpadku."
@@ -67,7 +67,7 @@
     "priorities": [
       "Prověřit A produkty v riziku výpadku (11 SKU): 120105, 30115, 60144.",
       "Dohlédnout 14601/1 (Vícefunkční krém na obličej s mucinem hlemýžďů- 1 sáček), aktuálně 3 ks.",
-      "Projít 15 problematických nebo stornovaných objednávek z včerejška.",
+      "Projít 17 problematických nebo stornovaných objednávek z včerejška.",
       "Rozšířit 4PX pull, aby ranní report neřezal starší včerejší zásilky.",
       "Projít nejbližší expirace v 4PX a rozhodnout o doprodeji nebo přesunu zásoby."
     ]
@@ -76,9 +76,9 @@
     "datedSkuCount": 332,
     "czSkuCount": 326,
     "skSkuCount": 310,
-    "datedRowCount": 739,
-    "czRowCount": 385,
-    "skRowCount": 354
+    "datedRowCount": 740,
+    "czRowCount": 388,
+    "skRowCount": 352
   },
   "storeExpiry": {
     "inputRows": 0,
@@ -99,8 +99,8 @@
     "pairedProducts": 364,
     "onlyInWpj": 1724,
     "onlyIn4px": 1,
-    "stockMismatch": 714,
-    "lowAfterSales": 7,
+    "stockMismatch": 719,
+    "lowAfterSales": 8,
     "manualMapped4pxAliases": 0,
     "autoMapped4pxAliases": 91
   },
@@ -110,29 +110,29 @@
     "message": "Měsíční finance se tahají přímo z ABRA reportu Výkaz hospodaření za měsíc za všechna střediska. Cash a závazky jsou také live z ABRA API.",
     "currentMonth": {
       "label": "11/2026",
-      "revenue": 18581022.83,
-      "cogsAndFees": 14465230.14,
+      "revenue": 18953676.03,
+      "cogsAndFees": 14787947.5,
       "logistics": 62969.8,
-      "marketing": 207438.02,
-      "opex": 1393174.2,
+      "marketing": 219817.36,
+      "opex": 1408024.45,
       "depreciation": 399556.0,
-      "other": 47239.59,
-      "grossMargin": 4115792.69,
-      "afterLogistics": 4052822.89,
-      "afterMarketing": 3845384.87,
-      "operatingMargin": 2452210.67,
-      "ebit": 2052654.67,
-      "profit": 2099894.26,
-      "grossMarginPct": 22.2,
-      "marketingPct": 1.1,
+      "other": 47714.61,
+      "grossMargin": 4165728.53,
+      "afterLogistics": 4102758.73,
+      "afterMarketing": 3882941.37,
+      "operatingMargin": 2474916.92,
+      "ebit": 2075360.92,
+      "profit": 2123075.53,
+      "grossMarginPct": 22.0,
+      "marketingPct": 1.2,
       "logisticsPct": 0.3,
-      "operatingMarginPct": 13.2,
-      "profitPct": 11.3
+      "operatingMarginPct": 13.1,
+      "profitPct": 11.2
     },
     "cash": {
-      "cashOnAccounts": 14431038.59,
-      "unpaidInvoices": 1182375.2,
-      "netCashPosition": 13248663.39,
+      "cashOnAccounts": 14976709.78,
+      "unpaidInvoices": 1227328.0,
+      "netCashPosition": 13749381.78,
       "overdueInvoicesCount": 3,
       "overdueInvoicesAmount": 41329.63,
       "largestPayables": [
@@ -209,8 +209,8 @@
             "accountCode": "221001",
             "accountLabel": "221001: 2901338673/2010 FIO CZK",
             "currency": "CZK: Česká koruna",
-            "balance": 5776148.09,
-            "includedBalance": 5776148.09
+            "balance": 6299204.09,
+            "includedBalance": 6299204.09
           },
           {
             "accountCode": "221119",
@@ -237,8 +237,8 @@
             "accountCode": "221005",
             "accountLabel": "221005: 2501338690/2010 FIO EUR",
             "currency": "CZK: Česká koruna",
-            "balance": 126859.72,
-            "includedBalance": 126859.72
+            "balance": 149474.91,
+            "includedBalance": 149474.91
           },
           {
             "accountCode": "221112",
@@ -387,11 +387,11 @@
     "message": "Marketing se skládá z live ABRA reportu a aktuálních položek z účetního deníku. Přímé platformy přes API: Sklik, Meta Ads, Google Ads, Ecomail, Affiliate.",
     "currentMonth": {
       "label": "11/2026",
-      "performanceSpend": 7438.02,
-      "brandSpend": 200000.0,
-      "totalSpend": 207438.02,
-      "revenue": 18581022.83,
-      "spendShareOfRevenuePct": 1.1
+      "performanceSpend": 9917.36,
+      "brandSpend": 209900.0,
+      "totalSpend": 219817.36,
+      "revenue": 18953676.03,
+      "spendShareOfRevenuePct": 1.2
     },
     "topSupplier": {
       "name": "Selfcareacademy s.r.o.",
@@ -409,22 +409,22 @@
     },
     "summary": {
       "noviceRevenueCzkEquiv": 0.0,
-      "networkRevenueCzkEquiv": 38140400.0,
+      "networkRevenueCzkEquiv": 38146644.0,
       "novicePartners": 25,
       "networkPartners": 50,
       "noviceOrders": 0.0,
-      "networkOrders": 22996.0,
+      "networkOrders": 23008.0,
       "noviceOrderingContacts": 0.0,
-      "networkOrderingCustomers": 5311.0,
+      "networkOrderingCustomers": 5314.0,
       "topNovicePartner": {
-        "partnerCode": "45e50v",
-        "partnerName": "jskrbkova@seznam.cz",
+        "partnerCode": "xgn01b",
+        "partnerName": "vlckova.martina@centrum.cz",
         "revenueCzkEquiv": 0.0
       },
       "topNetworkPartner": {
         "partnerCode": "ESHOP",
         "partnerName": "E-shop (interní)",
-        "revenueCzkEquiv": 10497683.0
+        "revenueCzkEquiv": 10497829.0
       }
     }
   },
@@ -520,22 +520,22 @@
     "status": "ok",
     "summary": {
       "windowDays": 90,
-      "twistoBatchCount": 15,
-      "twistoPaidBatchCount": 15,
-      "bankTwistoTransactionCount": 15,
-      "matchedBatchCount": 15,
+      "twistoBatchCount": 17,
+      "twistoPaidBatchCount": 17,
+      "bankTwistoTransactionCount": 17,
+      "matchedBatchCount": 17,
       "unmatchedBatchCount": 0,
       "unmatchedBankTransactions": 0,
-      "twistoPaidAmount": 68552.0,
-      "twistoMatchedAmount": 68552.0,
-      "bankReceivedAmount": 68552.0,
+      "twistoPaidAmount": 100989.0,
+      "twistoMatchedAmount": 100989.0,
+      "bankReceivedAmount": 100989.0,
       "openBatchAmount": 0,
       "bankVsTwistoDelta": 0.0,
       "wpjTwistoOrderCount": 4,
       "wpjTwistoOrderAmount": 11609.0,
-      "twistoOrderAmount": 758347.0,
-      "historicalMatchedBatchAmount": 68552.0,
-      "wpjVsTwistoOrderDelta": -746738.0,
+      "twistoOrderAmount": 790784.0,
+      "historicalMatchedBatchAmount": 100989.0,
+      "wpjVsTwistoOrderDelta": -779175.0,
       "oldestOpenBatchDays": null
     },
     "source": {
