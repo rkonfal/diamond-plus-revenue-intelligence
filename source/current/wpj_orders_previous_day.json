@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-25T04:01:59.531844+01:00",
+  "generatedAt": "2026-11-25T15:41:39.086110+01:00",
   "window": {
     "from": "2026-11-24T00:00:01+01:00",
     "to": "2026-11-25T00:00:00+01:00"
@@ -17920,10 +17920,10 @@
       },
       "dateCreated": "2026-11-24T11:56:43+01:00",
       "cancelled": false,
-      "isPaid": false,
+      "isPaid": true,
       "status": {
-        "id": 0,
-        "name": "nová"
+        "id": 1,
+        "name": "přijatá"
       },
       "totalPrice": {
         "withVat": 1067,
@@ -17976,6 +17976,60 @@
           "orderStatus": "nová",
           "date": "2026-11-24T11:57:42+01:00",
           "comment": "[FlexiBee] Objednávka byla nahrána do FlexiBee; ID: 735570",
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7955335,
+          "adminId": null,
+          "orderStatus": "nová",
+          "date": "2026-11-25T09:19:02+01:00",
+          "comment": "Modul FioBank - příchozí platba č. 27965733189. Komentář plátce: Libuše Ortová.",
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7955336,
+          "adminId": null,
+          "orderStatus": "nová",
+          "date": "2026-11-25T09:19:02+01:00",
+          "comment": "<p>Dobré zprávy: Úhrada vaší objednávky 261346929 právě dorazila. Než dočtete tento e-mail, pustíme se do práce na expedici vaší objednávky tak, aby vám dorazila co nejdříve.</p><p>Těšíte se? 😍</p><div></div>",
+          "notifyStatus": "YES",
+          "data": "\"{\\\"email_type\\\": \\\"PAYMENT_SUCCESS\\\", \\\"subject\\\": \\\"\\\\ud83c\\\\udf89 Va\\\\u0161e \\\\u00fahrada objedn\\\\u00e1vky 261346929 dorazila, startujeme\\\", \\\"isAdminEmail\\\": false, \\\"attachments\\\": [\\\"order_invoice\\\"], \\\"email_id\\\": \\\"6b0699f6b3c9b\\\"}\""
+        },
+        {
+          "id": 7955339,
+          "adminId": null,
+          "orderStatus": "nová",
+          "date": "2026-11-25T09:20:05+01:00",
+          "comment": "[4PX] Objednávka byla vytvořena; ID: OC149400632611250113 tracking: 601122604172 účet: CZ",
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7955340,
+          "adminId": null,
+          "orderStatus": "přijatá",
+          "date": "2026-11-25T09:20:05+01:00",
+          "comment": null,
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7955377,
+          "adminId": null,
+          "orderStatus": "přijatá",
+          "date": "2026-11-25T09:22:49+01:00",
+          "comment": "[FlexiBee] Objednávka byla ve FlexiBee zaktualizována",
+          "notifyStatus": "NO",
+          "data": "null"
+        },
+        {
+          "id": 7955381,
+          "adminId": null,
+          "orderStatus": "přijatá",
+          "date": "2026-11-25T09:22:54+01:00",
+          "comment": "[Flexi] Objednávka byla realizována ve Flexi;",
           "notifyStatus": "NO",
           "data": "null"
         }
@@ -28570,15 +28624,15 @@
     "statuses": [
       {
         "name": "přijatá",
-        "count": 118
-      },
-      {
-        "name": "nová",
-        "count": 8
+        "count": 119
       },
       {
         "name": "doručeno",
         "count": 8
+      },
+      {
+        "name": "nová",
+        "count": 7
       },
       {
         "name": "stornovaná",
@@ -29306,15 +29360,15 @@
         "statuses": [
           {
             "name": "přijatá",
-            "count": 118
-          },
-          {
-            "name": "nová",
-            "count": 8
+            "count": 119
           },
           {
             "name": "doručeno",
             "count": 8
+          },
+          {
+            "name": "nová",
+            "count": 7
           },
           {
             "name": "stornovaná",
@@ -30042,11 +30096,11 @@
         "statuses": [
           {
             "name": "přijatá",
-            "count": 110
+            "count": 111
           },
           {
             "name": "nová",
-            "count": 8
+            "count": 7
           },
           {
             "name": "stornovaná",

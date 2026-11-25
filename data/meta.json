@@ -16,7 +16,7 @@
         "performanceSpend": 9917.36,
         "brandSpend": 209900.0,
         "totalSpend": 219817.36,
-        "revenue": 19727584.11,
+        "revenue": 19977723.28,
         "spendShareOfRevenuePct": 1.1
       },
       "topSupplier": {
@@ -30,29 +30,29 @@
       "message": "Měsíční finance se tahají přímo z ABRA reportu Výkaz hospodaření za měsíc za všechna střediska. Cash a závazky jsou také live z ABRA API.",
       "currentMonth": {
         "label": "11/2026",
-        "revenue": 19727584.11,
-        "cogsAndFees": 15389460.99,
+        "revenue": 19977723.28,
+        "cogsAndFees": 15565714.01,
         "logistics": 99886.88,
         "marketing": 219817.36,
-        "opex": 1408024.45,
+        "opex": 1413988.32,
         "depreciation": 399556.0,
-        "other": 52645.42,
-        "grossMargin": 4338123.12,
-        "afterLogistics": 4238236.24,
-        "afterMarketing": 4018418.88,
-        "operatingMargin": 2610394.43,
-        "ebit": 2210838.43,
-        "profit": 2263483.85,
-        "grossMarginPct": 22.0,
+        "other": 52635.42,
+        "grossMargin": 4412009.27,
+        "afterLogistics": 4312122.39,
+        "afterMarketing": 4092305.03,
+        "operatingMargin": 2678316.71,
+        "ebit": 2278760.71,
+        "profit": 2331396.13,
+        "grossMarginPct": 22.1,
         "marketingPct": 1.1,
         "logisticsPct": 0.5,
-        "operatingMarginPct": 13.2,
-        "profitPct": 11.5
+        "operatingMarginPct": 13.4,
+        "profitPct": 11.7
       },
       "cash": {
-        "cashOnAccounts": 15412615.41,
+        "cashOnAccounts": 12780594.51,
         "unpaidInvoices": 41524.63,
-        "netCashPosition": 15371090.78,
+        "netCashPosition": 12739069.88,
         "overdueInvoicesCount": 4,
         "overdueInvoicesAmount": 41524.63,
         "largestPayables": [
@@ -94,18 +94,18 @@
           "message": "Cash na účtech a pokladnách je počítán živě z ABRA obratové předvahy pro účty 221 a 211, ze CZK řádků a se započtením kladných zůstatků.",
           "accounts": [
             {
-              "accountCode": "221001",
-              "accountLabel": "221001: 2901338673/2010 FIO CZK",
-              "currency": "CZK: Česká koruna",
-              "balance": 6732348.3,
-              "includedBalance": 6732348.3
-            },
-            {
               "accountCode": "221119",
               "accountLabel": "221119: Bankovní účty",
               "currency": "CZK: Česká koruna",
               "balance": 4857983.04,
               "includedBalance": 4857983.04
+            },
+            {
+              "accountCode": "221001",
+              "accountLabel": "221001: 2901338673/2010 FIO CZK",
+              "currency": "CZK: Česká koruna",
+              "balance": 3964828.3,
+              "includedBalance": 3964828.3
             },
             {
               "accountCode": "221118",
@@ -122,11 +122,11 @@
               "includedBalance": 919525.32
             },
             {
-              "accountCode": "221005",
-              "accountLabel": "221005: 2501338690/2010 FIO EUR",
+              "accountCode": "221002",
+              "accountLabel": "221002: 131-1211280297/0100 KB EUR",
               "currency": "CZK: Česká koruna",
-              "balance": 152236.33,
-              "includedBalance": 152236.33
+              "balance": 254751.13,
+              "includedBalance": 254751.13
             },
             {
               "accountCode": "221112",
@@ -141,6 +141,13 @@
               "currency": "CZK: Česká koruna",
               "balance": 99497.24,
               "includedBalance": 99497.24
+            },
+            {
+              "accountCode": "221005",
+              "accountLabel": "221005: 2501338690/2010 FIO EUR",
+              "currency": "CZK: Česká koruna",
+              "balance": 32984.3,
+              "includedBalance": 32984.3
             },
             {
               "accountCode": "211000",
@@ -209,7 +216,7 @@
               "accountCode": "211001",
               "accountLabel": "211001: Pokladna Czk",
               "currency": "CZK: Česká koruna",
-              "balance": -12882.17,
+              "balance": -19182.18,
               "includedBalance": 0.0
             },
             {
@@ -252,13 +259,6 @@
               "accountLabel": "221001: 2901338673/2010 FIO CZK",
               "currency": "PLN: Polský zlotý",
               "balance": -3310.32,
-              "includedBalance": 0.0
-            },
-            {
-              "accountCode": "221001",
-              "accountLabel": "221001: 2901338673/2010 FIO CZK",
-              "currency": "USD: Americký dolar",
-              "balance": -39789.84,
               "includedBalance": 0.0
             }
           ]
