@@ -26,7 +26,7 @@
       "label": "Finance po marketingu, poslední plný měsíc"
     },
     "netCashPosition": {
-      "value": 12703879.64,
+      "value": 22839120.43,
       "label": "Aktuální čistá hotovostní pozice"
     },
     "measurementConfidence": {
@@ -76,31 +76,31 @@
     },
     "financeCurrentMonth": {
       "label": "11/2026",
-      "revenue": 20485396.47,
-      "cogsAndFees": 15979901.48,
+      "revenue": 20576595.52,
+      "cogsAndFees": 16137366.27,
       "logistics": 99886.88,
       "marketing": 222296.7,
-      "opex": 1415313.07,
+      "opex": 1422202.12,
       "depreciation": 399556.0,
-      "other": 52635.42,
-      "grossMargin": 4505494.99,
-      "afterLogistics": 4405608.11,
-      "afterMarketing": 4183311.41,
-      "operatingMargin": 2767998.34,
-      "ebit": 2368442.34,
-      "profit": 2421077.76,
-      "grossMarginPct": 22.0,
+      "other": 52900.99,
+      "grossMargin": 4439229.25,
+      "afterLogistics": 4339342.37,
+      "afterMarketing": 4117045.67,
+      "operatingMargin": 2694843.55,
+      "ebit": 2295287.55,
+      "profit": 2348188.54,
+      "grossMarginPct": 21.6,
       "marketingPct": 1.1,
       "logisticsPct": 0.5,
-      "operatingMarginPct": 13.5,
-      "profitPct": 11.8
+      "operatingMarginPct": 13.1,
+      "profitPct": 11.4
     },
     "cash": {
-      "cashOnAccounts": 13063260.24,
-      "unpaidInvoices": 359380.6,
-      "netCashPosition": 12703879.64,
-      "overdueInvoicesCount": 4,
-      "overdueInvoicesAmount": 41524.63,
+      "cashOnAccounts": 23205390.08,
+      "unpaidInvoices": 366269.65,
+      "netCashPosition": 22839120.43,
+      "overdueInvoicesCount": 7,
+      "overdueInvoicesAmount": 48413.68,
       "largestPayables": [
         {
           "code": "PF1607/2026",
@@ -125,6 +125,14 @@
           "amountTotal": 39812.63,
           "amountDue": 39812.63,
           "status": "7 dní PO SPLATNOSTI"
+        },
+        {
+          "code": "PF1613/2026",
+          "vendor": "OpenAI OpCo, LLC",
+          "dueDate": "18.11.2026",
+          "amountTotal": 6000.0,
+          "amountDue": 6000.0,
+          "status": "9 dní PO SPLATNOSTI"
         },
         {
           "code": "PF1606/2026",
@@ -157,20 +165,19 @@
           "amountTotal": 601.0,
           "amountDue": 601.0,
           "status": "9 dní do splatnosti"
-        },
-        {
-          "code": "PF1605/2026",
-          "vendor": "ISTA CORPORATION s.r.o.",
-          "dueDate": "01.12.2026",
-          "amountTotal": 406.76,
-          "amountDue": 406.76,
-          "status": "4 dní do splatnosti"
         }
       ],
       "cashAccountsSource": {
         "status": "live",
         "message": "Cash na účtech a pokladnách je počítán živě z ABRA obratové předvahy pro účty 221 a 211, ze CZK řádků a se započtením kladných zůstatků.",
         "accounts": [
+          {
+            "accountCode": "221111",
+            "accountLabel": "221111: 107-164902 Czk THEPAY",
+            "currency": "CZK: Česká koruna",
+            "balance": 10073517.65,
+            "includedBalance": 10073517.65
+          },
           {
             "accountCode": "221119",
             "accountLabel": "221119: Bankovní účty",
@@ -182,8 +189,8 @@
             "accountCode": "221001",
             "accountLabel": "221001: 2901338673/2010 FIO CZK",
             "currency": "CZK: Česká koruna",
-            "balance": 4245907.3,
-            "includedBalance": 4245907.3
+            "balance": 4227702.3,
+            "includedBalance": 4227702.3
           },
           {
             "accountCode": "221118",
@@ -193,11 +200,11 @@
             "includedBalance": 2500000.0
           },
           {
-            "accountCode": "221111",
-            "accountLabel": "221111: 107-164902 Czk THEPAY",
+            "accountCode": "221112",
+            "accountLabel": "221112: 107-164902 EUR THEPAY",
             "currency": "CZK: Česká koruna",
-            "balance": 919525.32,
-            "includedBalance": 919525.32
+            "balance": 1128181.05,
+            "includedBalance": 1128181.05
           },
           {
             "accountCode": "221002",
@@ -205,13 +212,6 @@
             "currency": "CZK: Česká koruna",
             "balance": 254751.13,
             "includedBalance": 254751.13
-          },
-          {
-            "accountCode": "221112",
-            "accountLabel": "221112: 107-164902 EUR THEPAY",
-            "currency": "CZK: Česká koruna",
-            "balance": 124235.13,
-            "includedBalance": 124235.13
           },
           {
             "accountCode": "221117",
@@ -224,8 +224,8 @@
             "accountCode": "221005",
             "accountLabel": "221005: 2501338690/2010 FIO EUR",
             "currency": "CZK: Česká koruna",
-            "balance": 34571.03,
-            "includedBalance": 34571.03
+            "balance": 36967.62,
+            "includedBalance": 36967.62
           },
           {
             "accountCode": "211000",
@@ -344,14 +344,14 @@
     },
     "eshopYtdTotals": {
       "previous": {
-        "count": 134940,
-        "revenueWithVat": 215916613.04,
-        "averageOrderValue": 1600.09
+        "count": 135007,
+        "revenueWithVat": 216018178.71,
+        "averageOrderValue": 1600.05
       },
       "current": {
-        "count": 113669,
-        "revenueWithVat": 193121508.54,
-        "averageOrderValue": 1698.98
+        "count": 113707,
+        "revenueWithVat": 193155781.44,
+        "averageOrderValue": 1698.71
       }
     },
     "previousDayOrders": {
@@ -10891,18 +10891,18 @@
           "dateFrom": "2026-11-01",
           "dateTo": "2026-11-27",
           "campaignCount": 24,
-          "emailAttributedRevenueCzk": 5236428.3,
+          "emailAttributedRevenueCzk": 5243742.3,
           "smsAttributedRevenueCzk": 0.0,
-          "totalAttributedRevenueCzk": 5236428.3,
-          "emailAttributedOrders": 2908.0,
+          "totalAttributedRevenueCzk": 5243742.3,
+          "emailAttributedOrders": 2913.0,
           "smsAttributedOrders": 0.0,
-          "totalAttributedOrders": 2908.0,
+          "totalAttributedOrders": 2913.0,
           "emailRecipients": 218345,
           "smsRecipients": 0,
           "totalRecipients": 218345,
-          "emailClicks": 3951,
+          "emailClicks": 3952,
           "smsClicks": 0,
-          "totalClicks": 3951,
+          "totalClicks": 3952,
           "clickRate": 0.0181
         },
         "previousMonth": {
@@ -10910,9 +10910,9 @@
           "dateFrom": "2026-10-01",
           "dateTo": "2026-10-31",
           "campaignCount": 76,
-          "emailAttributedRevenueCzk": 4560021.8,
+          "emailAttributedRevenueCzk": 4560275.2,
           "smsAttributedRevenueCzk": 0.0,
-          "totalAttributedRevenueCzk": 4560021.8,
+          "totalAttributedRevenueCzk": 4560275.2,
           "emailAttributedOrders": 3092.0,
           "smsAttributedOrders": 0.0,
           "totalAttributedOrders": 3092.0,
@@ -10943,9 +10943,9 @@
           },
           {
             "date": "2026-11-02",
-            "emailAttributedRevenueCzk": 372826.45,
+            "emailAttributedRevenueCzk": 373389.45,
             "smsAttributedRevenueCzk": 0.0,
-            "totalAttributedRevenueCzk": 372826.45,
+            "totalAttributedRevenueCzk": 373389.45,
             "emailAttributedOrders": 248.0,
             "smsAttributedOrders": 0.0,
             "totalAttributedOrders": 248.0,
@@ -11016,16 +11016,16 @@
             "emailRecipients": 1349,
             "smsRecipients": 0,
             "totalRecipients": 1349,
-            "emailClicks": 233,
+            "emailClicks": 234,
             "smsClicks": 0,
-            "totalClicks": 233,
-            "clickRate": 0.1727
+            "totalClicks": 234,
+            "clickRate": 0.1735
           },
           {
             "date": "2026-11-13",
-            "emailAttributedRevenueCzk": 893673.45,
+            "emailAttributedRevenueCzk": 894126.45,
             "smsAttributedRevenueCzk": 0.0,
-            "totalAttributedRevenueCzk": 893673.45,
+            "totalAttributedRevenueCzk": 894126.45,
             "emailAttributedOrders": 527.0,
             "smsAttributedOrders": 0.0,
             "totalAttributedOrders": 527.0,
@@ -11039,9 +11039,9 @@
           },
           {
             "date": "2026-11-16",
-            "emailAttributedRevenueCzk": 217410.65,
+            "emailAttributedRevenueCzk": 218221.65,
             "smsAttributedRevenueCzk": 0.0,
-            "totalAttributedRevenueCzk": 217410.65,
+            "totalAttributedRevenueCzk": 218221.65,
             "emailAttributedOrders": 84.0,
             "smsAttributedOrders": 0.0,
             "totalAttributedOrders": 84.0,
@@ -11071,12 +11071,12 @@
           },
           {
             "date": "2026-11-18",
-            "emailAttributedRevenueCzk": 2087908.75,
+            "emailAttributedRevenueCzk": 2092419.75,
             "smsAttributedRevenueCzk": 0.0,
-            "totalAttributedRevenueCzk": 2087908.75,
-            "emailAttributedOrders": 1050.0,
+            "totalAttributedRevenueCzk": 2092419.75,
+            "emailAttributedOrders": 1051.0,
             "smsAttributedOrders": 0.0,
-            "totalAttributedOrders": 1050.0,
+            "totalAttributedOrders": 1051.0,
             "emailRecipients": 37294,
             "smsRecipients": 0,
             "totalRecipients": 37294,
@@ -11087,9 +11087,9 @@
           },
           {
             "date": "2026-11-23",
-            "emailAttributedRevenueCzk": 37352.95,
+            "emailAttributedRevenueCzk": 37657.95,
             "smsAttributedRevenueCzk": 0.0,
-            "totalAttributedRevenueCzk": 37352.95,
+            "totalAttributedRevenueCzk": 37657.95,
             "emailAttributedOrders": 21.0,
             "smsAttributedOrders": 0.0,
             "totalAttributedOrders": 21.0,
@@ -11103,12 +11103,12 @@
           },
           {
             "date": "2026-11-24",
-            "emailAttributedRevenueCzk": 12397.0,
+            "emailAttributedRevenueCzk": 13068.0,
             "smsAttributedRevenueCzk": 0.0,
-            "totalAttributedRevenueCzk": 12397.0,
-            "emailAttributedOrders": 6.0,
+            "totalAttributedRevenueCzk": 13068.0,
+            "emailAttributedOrders": 10.0,
             "smsAttributedOrders": 0.0,
-            "totalAttributedOrders": 6.0,
+            "totalAttributedOrders": 10.0,
             "emailRecipients": 1360,
             "smsRecipients": 0,
             "totalRecipients": 1360,
@@ -11217,9 +11217,9 @@
           },
           {
             "date": "2026-10-08",
-            "emailAttributedRevenueCzk": 109261.2,
+            "emailAttributedRevenueCzk": 109278.6,
             "smsAttributedRevenueCzk": 0.0,
-            "totalAttributedRevenueCzk": 109261.2,
+            "totalAttributedRevenueCzk": 109278.6,
             "emailAttributedOrders": 63.0,
             "smsAttributedOrders": 0.0,
             "totalAttributedOrders": 63.0,
@@ -11393,9 +11393,9 @@
           },
           {
             "date": "2026-10-23",
-            "emailAttributedRevenueCzk": 149059.15,
+            "emailAttributedRevenueCzk": 149295.15,
             "smsAttributedRevenueCzk": 0.0,
-            "totalAttributedRevenueCzk": 149059.15,
+            "totalAttributedRevenueCzk": 149295.15,
             "emailAttributedOrders": 89.0,
             "smsAttributedOrders": 0.0,
             "totalAttributedOrders": 89.0,
@@ -11531,11 +11531,11 @@
             "scheduledAt": "2026-11-18T07:00:00+01:00",
             "updatedAt": "2026-11-18T06:00:41+01:00",
             "recipients": 35211,
-            "openRate": 0.2223,
+            "openRate": 0.2225,
             "clickRate": 0.0155,
             "conversionRate": 0.025900996847576043,
             "attributedOrders": 912.0,
-            "attributedRevenueCzk": 1916046.6,
+            "attributedRevenueCzk": 1920557.6,
             "archiveUrl": "https://tiande.ecomailapp.cz/campaigns/render/879/33bfde0a6eda9a11e1d20aa7aa79327b"
           },
           {
@@ -11548,11 +11548,11 @@
             "scheduledAt": null,
             "updatedAt": "2026-11-13T13:48:35+01:00",
             "recipients": 35231,
-            "openRate": 0.2459,
+            "openRate": 0.24600000000000002,
             "clickRate": 0.0097,
             "conversionRate": 0.01243223297663989,
             "attributedOrders": 438.0,
-            "attributedRevenueCzk": 877993.95,
+            "attributedRevenueCzk": 878446.95,
             "archiveUrl": "https://tiande.ecomailapp.cz/campaigns/render/873/a0807a4773b299f98f8e199f1443942e"
           },
           {
@@ -11586,7 +11586,7 @@
             "clickRate": 0.0102,
             "conversionRate": 0.00598358787326191,
             "attributedOrders": 210.0,
-            "attributedRevenueCzk": 369788.4,
+            "attributedRevenueCzk": 370351.4,
             "archiveUrl": "https://tiande.ecomailapp.cz/campaigns/render/848/e1fd4489aeebdbe64d9e92942a2a37f3"
           },
           {
@@ -11599,7 +11599,7 @@
             "scheduledAt": "2026-11-04T18:00:00+01:00",
             "updatedAt": "2026-11-04T17:00:54+01:00",
             "recipients": 35072,
-            "openRate": 0.2615,
+            "openRate": 0.2616,
             "clickRate": 0.0088,
             "conversionRate": 0.005759580291970803,
             "attributedOrders": 202.0,
@@ -11637,7 +11637,7 @@
             "clickRate": 0.1545,
             "conversionRate": 0.061764705882352944,
             "attributedOrders": 84.0,
-            "attributedRevenueCzk": 217410.65,
+            "attributedRevenueCzk": 218221.65,
             "archiveUrl": "https://tiande.ecomailapp.cz/campaigns/render/877/b30fa2e5ccc7fe3813f81c3a840d7913"
           },
           {
@@ -11686,7 +11686,7 @@
             "scheduledAt": null,
             "updatedAt": "2026-10-29T15:03:15+01:00",
             "recipients": 5000,
-            "openRate": 0.3671,
+            "openRate": 0.36729999999999996,
             "clickRate": 0.0791,
             "conversionRate": 0.0264,
             "attributedOrders": 132.0,
@@ -11807,11 +11807,11 @@
             "scheduledAt": "2026-11-18T07:00:00+01:00",
             "updatedAt": "2026-11-18T06:00:41+01:00",
             "recipients": 35211,
-            "openRate": 0.2223,
+            "openRate": 0.2225,
             "clickRate": 0.0155,
             "conversionRate": 0.025900996847576043,
             "attributedOrders": 912.0,
-            "attributedRevenueCzk": 1916046.6,
+            "attributedRevenueCzk": 1920557.6,
             "archiveUrl": "https://tiande.ecomailapp.cz/campaigns/render/879/33bfde0a6eda9a11e1d20aa7aa79327b"
           },
           {
@@ -11824,11 +11824,11 @@
             "scheduledAt": null,
             "updatedAt": "2026-11-13T13:48:35+01:00",
             "recipients": 35231,
-            "openRate": 0.2459,
+            "openRate": 0.24600000000000002,
             "clickRate": 0.0097,
             "conversionRate": 0.01243223297663989,
             "attributedOrders": 438.0,
-            "attributedRevenueCzk": 877993.95,
+            "attributedRevenueCzk": 878446.95,
             "archiveUrl": "https://tiande.ecomailapp.cz/campaigns/render/873/a0807a4773b299f98f8e199f1443942e"
           },
           {
@@ -11862,7 +11862,7 @@
             "clickRate": 0.0102,
             "conversionRate": 0.00598358787326191,
             "attributedOrders": 210.0,
-            "attributedRevenueCzk": 369788.4,
+            "attributedRevenueCzk": 370351.4,
             "archiveUrl": "https://tiande.ecomailapp.cz/campaigns/render/848/e1fd4489aeebdbe64d9e92942a2a37f3"
           },
           {
@@ -11875,7 +11875,7 @@
             "scheduledAt": "2026-11-04T18:00:00+01:00",
             "updatedAt": "2026-11-04T17:00:54+01:00",
             "recipients": 35072,
-            "openRate": 0.2615,
+            "openRate": 0.2616,
             "clickRate": 0.0088,
             "conversionRate": 0.005759580291970803,
             "attributedOrders": 202.0,
@@ -11913,7 +11913,7 @@
             "clickRate": 0.1545,
             "conversionRate": 0.061764705882352944,
             "attributedOrders": 84.0,
-            "attributedRevenueCzk": 217410.65,
+            "attributedRevenueCzk": 218221.65,
             "archiveUrl": "https://tiande.ecomailapp.cz/campaigns/render/877/b30fa2e5ccc7fe3813f81c3a840d7913"
           },
           {
@@ -11962,7 +11962,7 @@
             "scheduledAt": null,
             "updatedAt": "2026-10-29T15:03:15+01:00",
             "recipients": 5000,
-            "openRate": 0.3671,
+            "openRate": 0.36729999999999996,
             "clickRate": 0.0791,
             "conversionRate": 0.0264,
             "attributedOrders": 132.0,
@@ -12085,9 +12085,9 @@
             "recipients": 1360,
             "openRate": 0.33240000000000003,
             "clickRate": 0.1059,
-            "conversionRate": 0.004411764705882353,
-            "attributedOrders": 6.0,
-            "attributedRevenueCzk": 12397.0,
+            "conversionRate": 0.007352941176470588,
+            "attributedOrders": 10.0,
+            "attributedRevenueCzk": 13068.0,
             "archiveUrl": "https://tiande.ecomailapp.cz/campaigns/render/885/9b3dc98724763f9df09f23259a3d71f6"
           },
           {
@@ -12100,11 +12100,11 @@
             "scheduledAt": "2026-11-23T19:30:00+01:00",
             "updatedAt": "2026-11-23T18:30:35+01:00",
             "recipients": 1359,
-            "openRate": 0.3873,
+            "openRate": 0.38880000000000003,
             "clickRate": 0.1414,
             "conversionRate": 0.01545253863134658,
             "attributedOrders": 21.0,
-            "attributedRevenueCzk": 37352.95,
+            "attributedRevenueCzk": 37657.95,
             "archiveUrl": "https://tiande.ecomailapp.cz/campaigns/render/884/913486b55f97db12751211dd3af6ef27"
           },
           {
@@ -12136,8 +12136,8 @@
             "recipients": 1737,
             "openRate": 0.298,
             "clickRate": 0.0294,
-            "conversionRate": 0.04548071387449626,
-            "attributedOrders": 79.0,
+            "conversionRate": 0.04605641911341393,
+            "attributedOrders": 80.0,
             "attributedRevenueCzk": 7258.85,
             "archiveUrl": "https://tiande.ecomailapp.cz/campaigns/render/881/f774755c9495e0a7b48421079ebee5bd"
           },
@@ -12151,11 +12151,11 @@
             "scheduledAt": "2026-11-18T07:00:00+01:00",
             "updatedAt": "2026-11-18T06:00:41+01:00",
             "recipients": 35211,
-            "openRate": 0.2223,
+            "openRate": 0.2225,
             "clickRate": 0.0155,
             "conversionRate": 0.025900996847576043,
             "attributedOrders": 912.0,
-            "attributedRevenueCzk": 1916046.6,
+            "attributedRevenueCzk": 1920557.6,
             "archiveUrl": "https://tiande.ecomailapp.cz/campaigns/render/879/33bfde0a6eda9a11e1d20aa7aa79327b"
           },
           {
@@ -12189,7 +12189,7 @@
             "clickRate": 0.1545,
             "conversionRate": 0.061764705882352944,
             "attributedOrders": 84.0,
-            "attributedRevenueCzk": 217410.65,
+            "attributedRevenueCzk": 218221.65,
             "archiveUrl": "https://tiande.ecomailapp.cz/campaigns/render/877/b30fa2e5ccc7fe3813f81c3a840d7913"
           },
           {
@@ -12272,7 +12272,7 @@
             "scheduledAt": null,
             "updatedAt": "2026-10-29T15:03:15+01:00",
             "recipients": 5000,
-            "openRate": 0.3671,
+            "openRate": 0.36729999999999996,
             "clickRate": 0.0791,
             "conversionRate": 0.0264,
             "attributedOrders": 132.0,
@@ -12323,7 +12323,7 @@
             "scheduledAt": null,
             "updatedAt": "2026-10-28T19:10:53+01:00",
             "recipients": 5004,
-            "openRate": 0.2206,
+            "openRate": 0.2208,
             "clickRate": 0.07519999999999999,
             "conversionRate": 0.008792965627498001,
             "attributedOrders": 44.0,
@@ -12364,18 +12364,18 @@
           "dateFrom": "2026-11-01",
           "dateTo": "2026-11-27",
           "campaignCount": 24,
-          "emailAttributedRevenueCzk": 5236428.3,
+          "emailAttributedRevenueCzk": 5243742.3,
           "smsAttributedRevenueCzk": 0.0,
-          "totalAttributedRevenueCzk": 5236428.3,
-          "emailAttributedOrders": 2908.0,
+          "totalAttributedRevenueCzk": 5243742.3,
+          "emailAttributedOrders": 2913.0,
           "smsAttributedOrders": 0.0,
-          "totalAttributedOrders": 2908.0,
+          "totalAttributedOrders": 2913.0,
           "emailRecipients": 218345,
           "smsRecipients": 0,
           "totalRecipients": 218345,
-          "emailClicks": 3951,
+          "emailClicks": 3952,
           "smsClicks": 0,
-          "totalClicks": 3951,
+          "totalClicks": 3952,
           "clickRate": 0.0181
         },
         "previousMonth": {
@@ -12383,9 +12383,9 @@
           "dateFrom": "2026-10-01",
           "dateTo": "2026-10-31",
           "campaignCount": 76,
-          "emailAttributedRevenueCzk": 4560021.8,
+          "emailAttributedRevenueCzk": 4560275.2,
           "smsAttributedRevenueCzk": 0.0,
-          "totalAttributedRevenueCzk": 4560021.8,
+          "totalAttributedRevenueCzk": 4560275.2,
           "emailAttributedOrders": 3092.0,
           "smsAttributedOrders": 0.0,
           "totalAttributedOrders": 3092.0,
@@ -12416,9 +12416,9 @@
           },
           {
             "date": "2026-11-02",
-            "emailAttributedRevenueCzk": 372826.45,
+            "emailAttributedRevenueCzk": 373389.45,
             "smsAttributedRevenueCzk": 0.0,
-            "totalAttributedRevenueCzk": 372826.45,
+            "totalAttributedRevenueCzk": 373389.45,
             "emailAttributedOrders": 248.0,
             "smsAttributedOrders": 0.0,
             "totalAttributedOrders": 248.0,
@@ -12489,16 +12489,16 @@
             "emailRecipients": 1349,
             "smsRecipients": 0,
             "totalRecipients": 1349,
-            "emailClicks": 233,
+            "emailClicks": 234,
             "smsClicks": 0,
-            "totalClicks": 233,
-            "clickRate": 0.1727
+            "totalClicks": 234,
+            "clickRate": 0.1735
           },
           {
             "date": "2026-11-13",
-            "emailAttributedRevenueCzk": 893673.45,
+            "emailAttributedRevenueCzk": 894126.45,
             "smsAttributedRevenueCzk": 0.0,
-            "totalAttributedRevenueCzk": 893673.45,
+            "totalAttributedRevenueCzk": 894126.45,
             "emailAttributedOrders": 527.0,
             "smsAttributedOrders": 0.0,
             "totalAttributedOrders": 527.0,
@@ -12512,9 +12512,9 @@
           },
           {
             "date": "2026-11-16",
-            "emailAttributedRevenueCzk": 217410.65,
+            "emailAttributedRevenueCzk": 218221.65,
             "smsAttributedRevenueCzk": 0.0,
-            "totalAttributedRevenueCzk": 217410.65,
+            "totalAttributedRevenueCzk": 218221.65,
             "emailAttributedOrders": 84.0,
             "smsAttributedOrders": 0.0,
             "totalAttributedOrders": 84.0,
@@ -12544,12 +12544,12 @@
           },
           {
             "date": "2026-11-18",
-            "emailAttributedRevenueCzk": 2087908.75,
+            "emailAttributedRevenueCzk": 2092419.75,
             "smsAttributedRevenueCzk": 0.0,
-            "totalAttributedRevenueCzk": 2087908.75,
-            "emailAttributedOrders": 1050.0,
+            "totalAttributedRevenueCzk": 2092419.75,
+            "emailAttributedOrders": 1051.0,
             "smsAttributedOrders": 0.0,
-            "totalAttributedOrders": 1050.0,
+            "totalAttributedOrders": 1051.0,
             "emailRecipients": 37294,
             "smsRecipients": 0,
             "totalRecipients": 37294,
@@ -12560,9 +12560,9 @@
           },
           {
             "date": "2026-11-23",
-            "emailAttributedRevenueCzk": 37352.95,
+            "emailAttributedRevenueCzk": 37657.95,
             "smsAttributedRevenueCzk": 0.0,
-            "totalAttributedRevenueCzk": 37352.95,
+            "totalAttributedRevenueCzk": 37657.95,
             "emailAttributedOrders": 21.0,
             "smsAttributedOrders": 0.0,
             "totalAttributedOrders": 21.0,
@@ -12576,12 +12576,12 @@
           },
           {
             "date": "2026-11-24",
-            "emailAttributedRevenueCzk": 12397.0,
+            "emailAttributedRevenueCzk": 13068.0,
             "smsAttributedRevenueCzk": 0.0,
-            "totalAttributedRevenueCzk": 12397.0,
-            "emailAttributedOrders": 6.0,
+            "totalAttributedRevenueCzk": 13068.0,
+            "emailAttributedOrders": 10.0,
             "smsAttributedOrders": 0.0,
-            "totalAttributedOrders": 6.0,
+            "totalAttributedOrders": 10.0,
             "emailRecipients": 1360,
             "smsRecipients": 0,
             "totalRecipients": 1360,
@@ -12690,9 +12690,9 @@
           },
           {
             "date": "2026-10-08",
-            "emailAttributedRevenueCzk": 109261.2,
+            "emailAttributedRevenueCzk": 109278.6,
             "smsAttributedRevenueCzk": 0.0,
-            "totalAttributedRevenueCzk": 109261.2,
+            "totalAttributedRevenueCzk": 109278.6,
             "emailAttributedOrders": 63.0,
             "smsAttributedOrders": 0.0,
             "totalAttributedOrders": 63.0,
@@ -12866,9 +12866,9 @@
           },
           {
             "date": "2026-10-23",
-            "emailAttributedRevenueCzk": 149059.15,
+            "emailAttributedRevenueCzk": 149295.15,
             "smsAttributedRevenueCzk": 0.0,
-            "totalAttributedRevenueCzk": 149059.15,
+            "totalAttributedRevenueCzk": 149295.15,
             "emailAttributedOrders": 89.0,
             "smsAttributedOrders": 0.0,
             "totalAttributedOrders": 89.0,
@@ -13004,11 +13004,11 @@
             "scheduledAt": "2026-11-18T07:00:00+01:00",
             "updatedAt": "2026-11-18T06:00:41+01:00",
             "recipients": 35211,
-            "openRate": 0.2223,
+            "openRate": 0.2225,
             "clickRate": 0.0155,
             "conversionRate": 0.025900996847576043,
             "attributedOrders": 912.0,
-            "attributedRevenueCzk": 1916046.6,
+            "attributedRevenueCzk": 1920557.6,
             "archiveUrl": "https://tiande.ecomailapp.cz/campaigns/render/879/33bfde0a6eda9a11e1d20aa7aa79327b"
           },
           {
@@ -13021,11 +13021,11 @@
             "scheduledAt": null,
             "updatedAt": "2026-11-13T13:48:35+01:00",
             "recipients": 35231,
-            "openRate": 0.2459,
+            "openRate": 0.24600000000000002,
             "clickRate": 0.0097,
             "conversionRate": 0.01243223297663989,
             "attributedOrders": 438.0,
-            "attributedRevenueCzk": 877993.95,
+            "attributedRevenueCzk": 878446.95,
             "archiveUrl": "https://tiande.ecomailapp.cz/campaigns/render/873/a0807a4773b299f98f8e199f1443942e"
           },
           {
@@ -13059,7 +13059,7 @@
             "clickRate": 0.0102,
             "conversionRate": 0.00598358787326191,
             "attributedOrders": 210.0,
-            "attributedRevenueCzk": 369788.4,
+            "attributedRevenueCzk": 370351.4,
             "archiveUrl": "https://tiande.ecomailapp.cz/campaigns/render/848/e1fd4489aeebdbe64d9e92942a2a37f3"
           },
           {
@@ -13072,7 +13072,7 @@
             "scheduledAt": "2026-11-04T18:00:00+01:00",
             "updatedAt": "2026-11-04T17:00:54+01:00",
             "recipients": 35072,
-            "openRate": 0.2615,
+            "openRate": 0.2616,
             "clickRate": 0.0088,
             "conversionRate": 0.005759580291970803,
             "attributedOrders": 202.0,
@@ -13110,7 +13110,7 @@
             "clickRate": 0.1545,
             "conversionRate": 0.061764705882352944,
             "attributedOrders": 84.0,
-            "attributedRevenueCzk": 217410.65,
+            "attributedRevenueCzk": 218221.65,
             "archiveUrl": "https://tiande.ecomailapp.cz/campaigns/render/877/b30fa2e5ccc7fe3813f81c3a840d7913"
           },
           {
@@ -13159,7 +13159,7 @@
             "scheduledAt": null,
             "updatedAt": "2026-10-29T15:03:15+01:00",
             "recipients": 5000,
-            "openRate": 0.3671,
+            "openRate": 0.36729999999999996,
             "clickRate": 0.0791,
             "conversionRate": 0.0264,
             "attributedOrders": 132.0,
@@ -13280,11 +13280,11 @@
             "scheduledAt": "2026-11-18T07:00:00+01:00",
             "updatedAt": "2026-11-18T06:00:41+01:00",
             "recipients": 35211,
-            "openRate": 0.2223,
+            "openRate": 0.2225,
             "clickRate": 0.0155,
             "conversionRate": 0.025900996847576043,
             "attributedOrders": 912.0,
-            "attributedRevenueCzk": 1916046.6,
+            "attributedRevenueCzk": 1920557.6,
             "archiveUrl": "https://tiande.ecomailapp.cz/campaigns/render/879/33bfde0a6eda9a11e1d20aa7aa79327b"
           },
           {
@@ -13297,11 +13297,11 @@
             "scheduledAt": null,
             "updatedAt": "2026-11-13T13:48:35+01:00",
             "recipients": 35231,
-            "openRate": 0.2459,
+            "openRate": 0.24600000000000002,
             "clickRate": 0.0097,
             "conversionRate": 0.01243223297663989,
             "attributedOrders": 438.0,
-            "attributedRevenueCzk": 877993.95,
+            "attributedRevenueCzk": 878446.95,
             "archiveUrl": "https://tiande.ecomailapp.cz/campaigns/render/873/a0807a4773b299f98f8e199f1443942e"
           },
           {
@@ -13335,7 +13335,7 @@
             "clickRate": 0.0102,
             "conversionRate": 0.00598358787326191,
             "attributedOrders": 210.0,
-            "attributedRevenueCzk": 369788.4,
+            "attributedRevenueCzk": 370351.4,
             "archiveUrl": "https://tiande.ecomailapp.cz/campaigns/render/848/e1fd4489aeebdbe64d9e92942a2a37f3"
           },
           {
@@ -13348,7 +13348,7 @@
             "scheduledAt": "2026-11-04T18:00:00+01:00",
             "updatedAt": "2026-11-04T17:00:54+01:00",
             "recipients": 35072,
-            "openRate": 0.2615,
+            "openRate": 0.2616,
             "clickRate": 0.0088,
             "conversionRate": 0.005759580291970803,
             "attributedOrders": 202.0,
@@ -13386,7 +13386,7 @@
             "clickRate": 0.1545,
             "conversionRate": 0.061764705882352944,
             "attributedOrders": 84.0,
-            "attributedRevenueCzk": 217410.65,
+            "attributedRevenueCzk": 218221.65,
             "archiveUrl": "https://tiande.ecomailapp.cz/campaigns/render/877/b30fa2e5ccc7fe3813f81c3a840d7913"
           },
           {
@@ -13435,7 +13435,7 @@
             "scheduledAt": null,
             "updatedAt": "2026-10-29T15:03:15+01:00",
             "recipients": 5000,
-            "openRate": 0.3671,
+            "openRate": 0.36729999999999996,
             "clickRate": 0.0791,
             "conversionRate": 0.0264,
             "attributedOrders": 132.0,
@@ -13558,9 +13558,9 @@
             "recipients": 1360,
             "openRate": 0.33240000000000003,
             "clickRate": 0.1059,
-            "conversionRate": 0.004411764705882353,
-            "attributedOrders": 6.0,
-            "attributedRevenueCzk": 12397.0,
+            "conversionRate": 0.007352941176470588,
+            "attributedOrders": 10.0,
+            "attributedRevenueCzk": 13068.0,
             "archiveUrl": "https://tiande.ecomailapp.cz/campaigns/render/885/9b3dc98724763f9df09f23259a3d71f6"
           },
           {
@@ -13573,11 +13573,11 @@
             "scheduledAt": "2026-11-23T19:30:00+01:00",
             "updatedAt": "2026-11-23T18:30:35+01:00",
             "recipients": 1359,
-            "openRate": 0.3873,
+            "openRate": 0.38880000000000003,
             "clickRate": 0.1414,
             "conversionRate": 0.01545253863134658,
             "attributedOrders": 21.0,
-            "attributedRevenueCzk": 37352.95,
+            "attributedRevenueCzk": 37657.95,
             "archiveUrl": "https://tiande.ecomailapp.cz/campaigns/render/884/913486b55f97db12751211dd3af6ef27"
           },
           {
@@ -13609,8 +13609,8 @@
             "recipients": 1737,
             "openRate": 0.298,
             "clickRate": 0.0294,
-            "conversionRate": 0.04548071387449626,
-            "attributedOrders": 79.0,
+            "conversionRate": 0.04605641911341393,
+            "attributedOrders": 80.0,
             "attributedRevenueCzk": 7258.85,
             "archiveUrl": "https://tiande.ecomailapp.cz/campaigns/render/881/f774755c9495e0a7b48421079ebee5bd"
           },
@@ -13624,11 +13624,11 @@
             "scheduledAt": "2026-11-18T07:00:00+01:00",
             "updatedAt": "2026-11-18T06:00:41+01:00",
             "recipients": 35211,
-            "openRate": 0.2223,
+            "openRate": 0.2225,
             "clickRate": 0.0155,
             "conversionRate": 0.025900996847576043,
             "attributedOrders": 912.0,
-            "attributedRevenueCzk": 1916046.6,
+            "attributedRevenueCzk": 1920557.6,
             "archiveUrl": "https://tiande.ecomailapp.cz/campaigns/render/879/33bfde0a6eda9a11e1d20aa7aa79327b"
           },
           {
@@ -13662,7 +13662,7 @@
             "clickRate": 0.1545,
             "conversionRate": 0.061764705882352944,
             "attributedOrders": 84.0,
-            "attributedRevenueCzk": 217410.65,
+            "attributedRevenueCzk": 218221.65,
             "archiveUrl": "https://tiande.ecomailapp.cz/campaigns/render/877/b30fa2e5ccc7fe3813f81c3a840d7913"
           },
           {
@@ -13745,7 +13745,7 @@
             "scheduledAt": null,
             "updatedAt": "2026-10-29T15:03:15+01:00",
             "recipients": 5000,
-            "openRate": 0.3671,
+            "openRate": 0.36729999999999996,
             "clickRate": 0.0791,
             "conversionRate": 0.0264,
             "attributedOrders": 132.0,
@@ -13796,7 +13796,7 @@
             "scheduledAt": null,
             "updatedAt": "2026-10-28T19:10:53+01:00",
             "recipients": 5004,
-            "openRate": 0.2206,
+            "openRate": 0.2208,
             "clickRate": 0.07519999999999999,
             "conversionRate": 0.008792965627498001,
             "attributedOrders": 44.0,
@@ -13833,22 +13833,22 @@
         },
         "summary": {
           "noviceRevenueCzkEquiv": 0.0,
-          "networkRevenueCzkEquiv": 38327132.0,
+          "networkRevenueCzkEquiv": 38332251.0,
           "novicePartners": 27,
           "networkPartners": 50,
           "noviceOrders": 0.0,
-          "networkOrders": 23134.0,
+          "networkOrders": 23140.0,
           "noviceOrderingContacts": 0.0,
-          "networkOrderingCustomers": 5340.0,
+          "networkOrderingCustomers": 5341.0,
           "topNovicePartner": {
-            "partnerCode": "pr6qy8",
-            "partnerName": "m.postrihacova@icloud.com",
+            "partnerCode": "45e50v",
+            "partnerName": "jskrbkova@seznam.cz",
             "revenueCzkEquiv": 0.0
           },
           "topNetworkPartner": {
             "partnerCode": "ESHOP",
             "partnerName": "E-shop (interní)",
-            "revenueCzkEquiv": 10559973.0
+            "revenueCzkEquiv": 10560074.0
           }
         },
         "reports": {
@@ -13867,48 +13867,8 @@
             "monthly": [],
             "topPartners": [
               {
-                "partnerCode": "pr6qy8",
-                "partnerName": "m.postrihacova@icloud.com",
-                "contacts": 0.0,
-                "orderingContacts": 0.0,
-                "orders": 0.0,
-                "revenueCzkEquiv": 0.0
-              },
-              {
-                "partnerCode": "77qpe3",
-                "partnerName": "Lucie Maryšková",
-                "contacts": 0.0,
-                "orderingContacts": 0.0,
-                "orders": 0.0,
-                "revenueCzkEquiv": 0.0
-              },
-              {
-                "partnerCode": "1dmvp2",
-                "partnerName": "anulka.bacovska@email.cz",
-                "contacts": 0.0,
-                "orderingContacts": 0.0,
-                "orders": 0.0,
-                "revenueCzkEquiv": 0.0
-              },
-              {
                 "partnerCode": "45e50v",
                 "partnerName": "jskrbkova@seznam.cz",
-                "contacts": 0.0,
-                "orderingContacts": 0.0,
-                "orders": 0.0,
-                "revenueCzkEquiv": 0.0
-              },
-              {
-                "partnerCode": "wfo2eg",
-                "partnerName": "Soňa Adamcová",
-                "contacts": 0.0,
-                "orderingContacts": 0.0,
-                "orders": 0.0,
-                "revenueCzkEquiv": 0.0
-              },
-              {
-                "partnerCode": "kgz3ao",
-                "partnerName": "evalazorova@seznam.cz",
                 "contacts": 0.0,
                 "orderingContacts": 0.0,
                 "orders": 0.0,
@@ -13923,24 +13883,8 @@
                 "revenueCzkEquiv": 0.0
               },
               {
-                "partnerCode": "mykltv",
-                "partnerName": "olcasvo@post.cz",
-                "contacts": 0.0,
-                "orderingContacts": 0.0,
-                "orders": 0.0,
-                "revenueCzkEquiv": 0.0
-              },
-              {
-                "partnerCode": "95mq9f",
-                "partnerName": "Michaela Šindlerová",
-                "contacts": 0.0,
-                "orderingContacts": 0.0,
-                "orders": 0.0,
-                "revenueCzkEquiv": 0.0
-              },
-              {
-                "partnerCode": "xgn01b",
-                "partnerName": "vlckova.martina@centrum.cz",
+                "partnerCode": "pr6qy8",
+                "partnerName": "m.postrihacova@icloud.com",
                 "contacts": 0.0,
                 "orderingContacts": 0.0,
                 "orders": 0.0,
@@ -13955,8 +13899,88 @@
                 "revenueCzkEquiv": 0.0
               },
               {
+                "partnerCode": "mykltv",
+                "partnerName": "olcasvo@post.cz",
+                "contacts": 0.0,
+                "orderingContacts": 0.0,
+                "orders": 0.0,
+                "revenueCzkEquiv": 0.0
+              },
+              {
+                "partnerCode": "xgn01b",
+                "partnerName": "vlckova.martina@centrum.cz",
+                "contacts": 0.0,
+                "orderingContacts": 0.0,
+                "orders": 0.0,
+                "revenueCzkEquiv": 0.0
+              },
+              {
                 "partnerCode": "yb5tfo",
                 "partnerName": "Kateřina Mrnková",
+                "contacts": 0.0,
+                "orderingContacts": 0.0,
+                "orders": 0.0,
+                "revenueCzkEquiv": 0.0
+              },
+              {
+                "partnerCode": "wfo2eg",
+                "partnerName": "Soňa Adamcová",
+                "contacts": 0.0,
+                "orderingContacts": 0.0,
+                "orders": 0.0,
+                "revenueCzkEquiv": 0.0
+              },
+              {
+                "partnerCode": "1dmvp2",
+                "partnerName": "anulka.bacovska@email.cz",
+                "contacts": 0.0,
+                "orderingContacts": 0.0,
+                "orders": 0.0,
+                "revenueCzkEquiv": 0.0
+              },
+              {
+                "partnerCode": "77qpe3",
+                "partnerName": "Lucie Maryšková",
+                "contacts": 0.0,
+                "orderingContacts": 0.0,
+                "orders": 0.0,
+                "revenueCzkEquiv": 0.0
+              },
+              {
+                "partnerCode": "kgz3ao",
+                "partnerName": "evalazorova@seznam.cz",
+                "contacts": 0.0,
+                "orderingContacts": 0.0,
+                "orders": 0.0,
+                "revenueCzkEquiv": 0.0
+              },
+              {
+                "partnerCode": "95mq9f",
+                "partnerName": "Michaela Šindlerová",
+                "contacts": 0.0,
+                "orderingContacts": 0.0,
+                "orders": 0.0,
+                "revenueCzkEquiv": 0.0
+              },
+              {
+                "partnerCode": "agbmxj",
+                "partnerName": "DAGMAR Najkrová",
+                "contacts": 0.0,
+                "orderingContacts": 0.0,
+                "orders": 0.0,
+                "revenueCzkEquiv": 0.0
+              },
+              {
+                "partnerCode": "kwnyb5",
+                "partnerName": "Lucia Dolesova",
+                "contacts": 0.0,
+                "orderingContacts": 0.0,
+                "orders": 0.0,
+                "revenueCzkEquiv": 0.0
+              },
+              {
+                "partnerCode": "epml6m",
+                "partnerName": "Jana Hiclová",
                 "contacts": 0.0,
                 "orderingContacts": 0.0,
                 "orders": 0.0,
@@ -13971,16 +13995,8 @@
                 "revenueCzkEquiv": 0.0
               },
               {
-                "partnerCode": "ujwcqe",
-                "partnerName": "Daniela Hlavatá",
-                "contacts": 0.0,
-                "orderingContacts": 0.0,
-                "orders": 0.0,
-                "revenueCzkEquiv": 0.0
-              },
-              {
-                "partnerCode": "zfhpy4",
-                "partnerName": "dana.hancikova@centrum.cz",
+                "partnerCode": "zphcf3",
+                "partnerName": "Marie Fialková",
                 "contacts": 0.0,
                 "orderingContacts": 0.0,
                 "orders": 0.0,
@@ -14003,24 +14019,8 @@
                 "revenueCzkEquiv": 0.0
               },
               {
-                "partnerCode": "agbmxj",
-                "partnerName": "DAGMAR Najkrová",
-                "contacts": 0.0,
-                "orderingContacts": 0.0,
-                "orders": 0.0,
-                "revenueCzkEquiv": 0.0
-              },
-              {
-                "partnerCode": "dkrgy3",
-                "partnerName": "Lucia Štěpová",
-                "contacts": 0.0,
-                "orderingContacts": 0.0,
-                "orders": 0.0,
-                "revenueCzkEquiv": 0.0
-              },
-              {
-                "partnerCode": "epml6m",
-                "partnerName": "Jana Hiclová",
+                "partnerCode": "zfhpy4",
+                "partnerName": "dana.hancikova@centrum.cz",
                 "contacts": 0.0,
                 "orderingContacts": 0.0,
                 "orders": 0.0,
@@ -14035,10 +14035,10 @@
             "error": null,
             "partners": 50,
             "totals": {
-              "networkCustomers": 21715.0,
-              "orderingCustomers": 5340.0,
-              "orders": 23134.0,
-              "revenueCzkEquiv": 38327132.0
+              "networkCustomers": 21721.0,
+              "orderingCustomers": 5341.0,
+              "orders": 23140.0,
+              "revenueCzkEquiv": 38332251.0
             },
             "monthly": [
               {
@@ -14188,8 +14188,8 @@
                 "orderingContacts": 0.0,
                 "networkCustomers": 0.0,
                 "orderingCustomers": 0.0,
-                "orders": 3301.0,
-                "revenueCzkEquiv": 6268877.0
+                "orders": 3307.0,
+                "revenueCzkEquiv": 6273996.0
               }
             ],
             "topPartners": [
@@ -14197,19 +14197,19 @@
                 "partnerCode": "ESHOP",
                 "partnerName": "E-shop (interní)",
                 "partnerTiandeId": null,
-                "networkCustomers": 6027.0,
+                "networkCustomers": 6028.0,
                 "orderingCustomers": 1432.0,
-                "orders": 6232.0,
-                "revenueCzkEquiv": 10559973.0
+                "orders": 6233.0,
+                "revenueCzkEquiv": 10560074.0
               },
               {
                 "partnerCode": "g73ps2",
                 "partnerName": "Jiřina Radová",
                 "partnerTiandeId": null,
-                "networkCustomers": 1343.0,
+                "networkCustomers": 1344.0,
                 "orderingCustomers": 368.0,
-                "orders": 1433.0,
-                "revenueCzkEquiv": 2650314.0
+                "orders": 1434.0,
+                "revenueCzkEquiv": 2650916.0
               },
               {
                 "partnerCode": "ihcwc1",
@@ -14251,10 +14251,10 @@
                 "partnerCode": "r88ri8",
                 "partnerName": "Andrea Svitáková",
                 "partnerTiandeId": null,
-                "networkCustomers": 521.0,
+                "networkCustomers": 522.0,
                 "orderingCustomers": 118.0,
-                "orders": 547.0,
-                "revenueCzkEquiv": 1038372.0
+                "orders": 548.0,
+                "revenueCzkEquiv": 1039940.0
               },
               {
                 "partnerCode": "oj1slw",
@@ -14269,10 +14269,10 @@
                 "partnerCode": "3xkqnt",
                 "partnerName": "Věra Hauerová",
                 "partnerTiandeId": null,
-                "networkCustomers": 476.0,
+                "networkCustomers": 477.0,
                 "orderingCustomers": 121.0,
-                "orders": 501.0,
-                "revenueCzkEquiv": 921809.0
+                "orders": 502.0,
+                "revenueCzkEquiv": 923418.0
               },
               {
                 "partnerCode": "y9qnc3",
@@ -16457,10 +16457,10 @@
         },
         "dateCreated": "2026-11-26T21:50:34+01:00",
         "cancelled": false,
-        "isPaid": false,
+        "isPaid": true,
         "status": {
-          "id": 0,
-          "name": "nová"
+          "id": 1,
+          "name": "přijatá"
         },
         "totalPrice": {
           "withVat": 744,
@@ -16513,6 +16513,60 @@
             "orderStatus": "nová",
             "date": "2026-11-26T21:53:18+01:00",
             "comment": "[FlexiBee] Objednávka byla nahrána do FlexiBee; ID: 735913",
+            "notifyStatus": "NO",
+            "data": "null"
+          },
+          {
+            "id": 7974402,
+            "adminId": null,
+            "orderStatus": "nová",
+            "date": "2026-11-27T10:59:03+01:00",
+            "comment": "Modul FioBank - příchozí platba č. 27969174645. Komentář plátce: JINDŘICH BENEŠ.",
+            "notifyStatus": "NO",
+            "data": "null"
+          },
+          {
+            "id": 7974403,
+            "adminId": null,
+            "orderStatus": "nová",
+            "date": "2026-11-27T10:59:03+01:00",
+            "comment": "<p>Dobré zprávy: Úhrada vaší objednávky 261347274 právě dorazila. Než dočtete tento e-mail, pustíme se do práce na expedici vaší objednávky tak, aby vám dorazila co nejdříve.</p><p>Těšíte se? 😍</p><div></div>",
+            "notifyStatus": "YES",
+            "data": "\"{\\\"email_type\\\": \\\"PAYMENT_SUCCESS\\\", \\\"subject\\\": \\\"\\\\ud83c\\\\udf89 Va\\\\u0161e \\\\u00fahrada objedn\\\\u00e1vky 261347274 dorazila, startujeme\\\", \\\"isAdminEmail\\\": false, \\\"attachments\\\": [\\\"order_invoice\\\"], \\\"email_id\\\": \\\"6b0954674a5b6\\\"}\""
+          },
+          {
+            "id": 7974406,
+            "adminId": null,
+            "orderStatus": "nová",
+            "date": "2026-11-27T11:00:04+01:00",
+            "comment": "[4PX] Objednávka byla vytvořena; ID: OC149400632611270108 tracking: 601122942335 účet: CZ",
+            "notifyStatus": "NO",
+            "data": "null"
+          },
+          {
+            "id": 7974407,
+            "adminId": null,
+            "orderStatus": "přijatá",
+            "date": "2026-11-27T11:00:04+01:00",
+            "comment": null,
+            "notifyStatus": "NO",
+            "data": "null"
+          },
+          {
+            "id": 7974424,
+            "adminId": null,
+            "orderStatus": "přijatá",
+            "date": "2026-11-27T11:02:52+01:00",
+            "comment": "[FlexiBee] Objednávka byla ve FlexiBee zaktualizována",
+            "notifyStatus": "NO",
+            "data": "null"
+          },
+          {
+            "id": 7974426,
+            "adminId": null,
+            "orderStatus": "přijatá",
+            "date": "2026-11-27T11:02:57+01:00",
+            "comment": "[Flexi] Objednávka byla realizována ve Flexi;",
             "notifyStatus": "NO",
             "data": "null"
           }
@@ -24015,10 +24069,10 @@
         },
         "dateCreated": "2026-11-26T17:32:44+01:00",
         "cancelled": false,
-        "isPaid": false,
+        "isPaid": true,
         "status": {
-          "id": 0,
-          "name": "nová"
+          "id": 1,
+          "name": "přijatá"
         },
         "totalPrice": {
           "withVat": 1108,
@@ -24071,6 +24125,60 @@
             "orderStatus": "nová",
             "date": "2026-11-26T17:37:42+01:00",
             "comment": "[FlexiBee] Objednávka byla nahrána do FlexiBee; ID: 735878",
+            "notifyStatus": "NO",
+            "data": "null"
+          },
+          {
+            "id": 7973708,
+            "adminId": null,
+            "orderStatus": "nová",
+            "date": "2026-11-27T07:29:02+01:00",
+            "comment": "Modul FioBank - příchozí platba č. 27968912030. Komentář plátce: RANDOVÁ ANNA.",
+            "notifyStatus": "NO",
+            "data": "null"
+          },
+          {
+            "id": 7973709,
+            "adminId": null,
+            "orderStatus": "nová",
+            "date": "2026-11-27T07:29:02+01:00",
+            "comment": "<p>Dobré zprávy: Úhrada vaší objednávky 261347239 právě dorazila. Než dočtete tento e-mail, pustíme se do práce na expedici vaší objednávky tak, aby vám dorazila co nejdříve.</p><p>Těšíte se? 😍</p><div></div>",
+            "notifyStatus": "YES",
+            "data": "\"{\\\"email_type\\\": \\\"PAYMENT_SUCCESS\\\", \\\"subject\\\": \\\"\\\\ud83c\\\\udf89 Va\\\\u0161e \\\\u00fahrada objedn\\\\u00e1vky 261347239 dorazila, startujeme\\\", \\\"isAdminEmail\\\": false, \\\"attachments\\\": [\\\"order_invoice\\\"], \\\"email_id\\\": \\\"6b09232e80914\\\"}\""
+          },
+          {
+            "id": 7973712,
+            "adminId": null,
+            "orderStatus": "nová",
+            "date": "2026-11-27T07:30:04+01:00",
+            "comment": "[4PX] Objednávka byla vytvořena; ID: OC149400632611270074 tracking: 601122902056 účet: CZ",
+            "notifyStatus": "NO",
+            "data": "null"
+          },
+          {
+            "id": 7973713,
+            "adminId": null,
+            "orderStatus": "přijatá",
+            "date": "2026-11-27T07:30:04+01:00",
+            "comment": null,
+            "notifyStatus": "NO",
+            "data": "null"
+          },
+          {
+            "id": 7973716,
+            "adminId": null,
+            "orderStatus": "přijatá",
+            "date": "2026-11-27T07:32:44+01:00",
+            "comment": "[FlexiBee] Objednávka byla ve FlexiBee zaktualizována",
+            "notifyStatus": "NO",
+            "data": "null"
+          },
+          {
+            "id": 7973717,
+            "adminId": null,
+            "orderStatus": "přijatá",
+            "date": "2026-11-27T07:32:51+01:00",
+            "comment": "[Flexi] Objednávka byla realizována ve Flexi;",
             "notifyStatus": "NO",
             "data": "null"
           }
@@ -27923,8 +28031,8 @@
         "cancelled": false,
         "isPaid": false,
         "status": {
-          "id": 3,
-          "name": "expedováno"
+          "id": 4,
+          "name": "připraveno k vyzvednutí"
         },
         "totalPrice": {
           "withVat": 3539,
@@ -28049,6 +28157,24 @@
             "orderStatus": "expedováno",
             "date": "2026-11-26T20:50:02+01:00",
             "comment": "[4PX] Změna stavu: carrier_picked_up",
+            "notifyStatus": "NO",
+            "data": "null"
+          },
+          {
+            "id": 7974756,
+            "adminId": null,
+            "orderStatus": "expedováno",
+            "date": "2026-11-27T12:05:02+01:00",
+            "comment": "[4PX] Změna stavu: ready_to_pickup",
+            "notifyStatus": "NO",
+            "data": "null"
+          },
+          {
+            "id": 7974757,
+            "adminId": null,
+            "orderStatus": "připraveno k vyzvednutí",
+            "date": "2026-11-27T12:05:02+01:00",
+            "comment": null,
             "notifyStatus": "NO",
             "data": "null"
           }
@@ -30161,8 +30287,8 @@
         "cancelled": false,
         "isPaid": true,
         "status": {
-          "id": 3,
-          "name": "expedováno"
+          "id": 4,
+          "name": "připraveno k vyzvednutí"
         },
         "totalPrice": {
           "withVat": 64,
@@ -30313,6 +30439,24 @@
             "adminId": null,
             "orderStatus": "expedováno",
             "date": "2026-11-26T21:15:04+01:00",
+            "comment": null,
+            "notifyStatus": "NO",
+            "data": "null"
+          },
+          {
+            "id": 7973785,
+            "adminId": null,
+            "orderStatus": "expedováno",
+            "date": "2026-11-27T08:15:19+01:00",
+            "comment": "[4PX] Změna stavu: ready_to_pickup",
+            "notifyStatus": "NO",
+            "data": "null"
+          },
+          {
+            "id": 7973786,
+            "adminId": null,
+            "orderStatus": "připraveno k vyzvednutí",
+            "date": "2026-11-27T08:15:19+01:00",
             "comment": null,
             "notifyStatus": "NO",
             "data": "null"
@@ -32792,8 +32936,8 @@
         "cancelled": false,
         "isPaid": true,
         "status": {
-          "id": 3,
-          "name": "expedováno"
+          "id": 4,
+          "name": "připraveno k vyzvednutí"
         },
         "totalPrice": {
           "withVat": 2682,
@@ -32935,6 +33079,24 @@
             "adminId": null,
             "orderStatus": "expedováno",
             "date": "2026-11-26T19:20:09+01:00",
+            "comment": null,
+            "notifyStatus": "NO",
+            "data": "null"
+          },
+          {
+            "id": 7974702,
+            "adminId": null,
+            "orderStatus": "expedováno",
+            "date": "2026-11-27T11:55:14+01:00",
+            "comment": "[4PX] Změna stavu: ready_to_pickup",
+            "notifyStatus": "NO",
+            "data": "null"
+          },
+          {
+            "id": 7974703,
+            "adminId": null,
+            "orderStatus": "připraveno k vyzvednutí",
+            "date": "2026-11-27T11:55:14+01:00",
             "comment": null,
             "notifyStatus": "NO",
             "data": "null"
@@ -33907,8 +34069,8 @@
         "cancelled": false,
         "isPaid": true,
         "status": {
-          "id": 3,
-          "name": "expedováno"
+          "id": 4,
+          "name": "připraveno k vyzvednutí"
         },
         "totalPrice": {
           "withVat": 566,
@@ -34062,6 +34224,24 @@
             "comment": null,
             "notifyStatus": "NO",
             "data": "null"
+          },
+          {
+            "id": 7973892,
+            "adminId": null,
+            "orderStatus": "expedováno",
+            "date": "2026-11-27T08:50:04+01:00",
+            "comment": "[4PX] Změna stavu: ready_to_pickup",
+            "notifyStatus": "NO",
+            "data": "null"
+          },
+          {
+            "id": 7973893,
+            "adminId": null,
+            "orderStatus": "připraveno k vyzvednutí",
+            "date": "2026-11-27T08:50:04+01:00",
+            "comment": null,
+            "notifyStatus": "NO",
+            "data": "null"
           }
         ],
         "deliveryType": {
@@ -34116,8 +34296,8 @@
         "cancelled": false,
         "isPaid": true,
         "status": {
-          "id": 3,
-          "name": "expedováno"
+          "id": 4,
+          "name": "připraveno k vyzvednutí"
         },
         "totalPrice": {
           "withVat": 1932,
@@ -34268,6 +34448,24 @@
             "adminId": null,
             "orderStatus": "expedováno",
             "date": "2026-11-26T19:25:13+01:00",
+            "comment": null,
+            "notifyStatus": "NO",
+            "data": "null"
+          },
+          {
+            "id": 7974758,
+            "adminId": null,
+            "orderStatus": "expedováno",
+            "date": "2026-11-27T12:05:02+01:00",
+            "comment": "[4PX] Změna stavu: ready_to_pickup",
+            "notifyStatus": "NO",
+            "data": "null"
+          },
+          {
+            "id": 7974759,
+            "adminId": null,
+            "orderStatus": "připraveno k vyzvednutí",
+            "date": "2026-11-27T12:05:02+01:00",
             "comment": null,
             "notifyStatus": "NO",
             "data": "null"
@@ -35960,8 +36158,8 @@
         "cancelled": false,
         "isPaid": true,
         "status": {
-          "id": 3,
-          "name": "expedováno"
+          "id": 5,
+          "name": "doručeno"
         },
         "totalPrice": {
           "withVat": 2685,
@@ -36103,6 +36301,24 @@
             "adminId": null,
             "orderStatus": "expedováno",
             "date": "2026-11-26T19:45:05+01:00",
+            "comment": null,
+            "notifyStatus": "NO",
+            "data": "null"
+          },
+          {
+            "id": 7974850,
+            "adminId": null,
+            "orderStatus": "expedováno",
+            "date": "2026-11-27T12:35:01+01:00",
+            "comment": "[4PX] Změna stavu: delivered",
+            "notifyStatus": "NO",
+            "data": "null"
+          },
+          {
+            "id": 7974851,
+            "adminId": null,
+            "orderStatus": "doručeno",
+            "date": "2026-11-27T12:35:01+01:00",
             "comment": null,
             "notifyStatus": "NO",
             "data": "null"
@@ -36256,8 +36472,8 @@
         "cancelled": false,
         "isPaid": true,
         "status": {
-          "id": 3,
-          "name": "expedováno"
+          "id": 4,
+          "name": "připraveno k vyzvednutí"
         },
         "totalPrice": {
           "withVat": 33.05,
@@ -36408,6 +36624,24 @@
             "adminId": null,
             "orderStatus": "expedováno",
             "date": "2026-11-26T21:20:06+01:00",
+            "comment": null,
+            "notifyStatus": "NO",
+            "data": "null"
+          },
+          {
+            "id": 7974347,
+            "adminId": null,
+            "orderStatus": "expedováno",
+            "date": "2026-11-27T10:40:21+01:00",
+            "comment": "[4PX] Změna stavu: ready_to_pickup",
+            "notifyStatus": "NO",
+            "data": "null"
+          },
+          {
+            "id": 7974348,
+            "adminId": null,
+            "orderStatus": "připraveno k vyzvednutí",
+            "date": "2026-11-27T10:40:21+01:00",
             "comment": null,
             "notifyStatus": "NO",
             "data": "null"
@@ -38751,8 +38985,8 @@
         "cancelled": false,
         "isPaid": true,
         "status": {
-          "id": 3,
-          "name": "expedováno"
+          "id": 4,
+          "name": "připraveno k vyzvednutí"
         },
         "totalPrice": {
           "withVat": 915,
@@ -38903,6 +39137,24 @@
             "adminId": null,
             "orderStatus": "expedováno",
             "date": "2026-11-26T19:25:12+01:00",
+            "comment": null,
+            "notifyStatus": "NO",
+            "data": "null"
+          },
+          {
+            "id": 7974418,
+            "adminId": null,
+            "orderStatus": "expedováno",
+            "date": "2026-11-27T11:00:09+01:00",
+            "comment": "[4PX] Změna stavu: ready_to_pickup",
+            "notifyStatus": "NO",
+            "data": "null"
+          },
+          {
+            "id": 7974419,
+            "adminId": null,
+            "orderStatus": "připraveno k vyzvednutí",
+            "date": "2026-11-27T11:00:10+01:00",
             "comment": null,
             "notifyStatus": "NO",
             "data": "null"
@@ -39489,8 +39741,8 @@
         "cancelled": false,
         "isPaid": true,
         "status": {
-          "id": 3,
-          "name": "expedováno"
+          "id": 4,
+          "name": "připraveno k vyzvednutí"
         },
         "totalPrice": {
           "withVat": 410,
@@ -39623,6 +39875,24 @@
             "adminId": null,
             "orderStatus": "expedováno",
             "date": "2026-11-26T19:25:17+01:00",
+            "comment": null,
+            "notifyStatus": "NO",
+            "data": "null"
+          },
+          {
+            "id": 7974525,
+            "adminId": null,
+            "orderStatus": "expedováno",
+            "date": "2026-11-27T11:25:02+01:00",
+            "comment": "[4PX] Změna stavu: ready_to_pickup",
+            "notifyStatus": "NO",
+            "data": "null"
+          },
+          {
+            "id": 7974526,
+            "adminId": null,
+            "orderStatus": "připraveno k vyzvednutí",
+            "date": "2026-11-27T11:25:02+01:00",
             "comment": null,
             "notifyStatus": "NO",
             "data": "null"
@@ -40334,8 +40604,8 @@
         "cancelled": false,
         "isPaid": true,
         "status": {
-          "id": 3,
-          "name": "expedováno"
+          "id": 4,
+          "name": "připraveno k vyzvednutí"
         },
         "totalPrice": {
           "withVat": 448,
@@ -40486,6 +40756,24 @@
             "adminId": null,
             "orderStatus": "expedováno",
             "date": "2026-11-26T19:20:11+01:00",
+            "comment": null,
+            "notifyStatus": "NO",
+            "data": "null"
+          },
+          {
+            "id": 7974249,
+            "adminId": null,
+            "orderStatus": "expedováno",
+            "date": "2026-11-27T10:20:07+01:00",
+            "comment": "[4PX] Změna stavu: ready_to_pickup",
+            "notifyStatus": "NO",
+            "data": "null"
+          },
+          {
+            "id": 7974250,
+            "adminId": null,
+            "orderStatus": "připraveno k vyzvednutí",
+            "date": "2026-11-27T10:20:07+01:00",
             "comment": null,
             "notifyStatus": "NO",
             "data": "null"
@@ -40752,8 +41040,8 @@
         "cancelled": false,
         "isPaid": true,
         "status": {
-          "id": 3,
-          "name": "expedováno"
+          "id": 4,
+          "name": "připraveno k vyzvednutí"
         },
         "totalPrice": {
           "withVat": 1610,
@@ -40904,6 +41192,24 @@
             "adminId": null,
             "orderStatus": "expedováno",
             "date": "2026-11-26T19:25:17+01:00",
+            "comment": null,
+            "notifyStatus": "NO",
+            "data": "null"
+          },
+          {
+            "id": 7974747,
+            "adminId": null,
+            "orderStatus": "expedováno",
+            "date": "2026-11-27T12:00:08+01:00",
+            "comment": "[4PX] Změna stavu: ready_to_pickup",
+            "notifyStatus": "NO",
+            "data": "null"
+          },
+          {
+            "id": 7974748,
+            "adminId": null,
+            "orderStatus": "připraveno k vyzvednutí",
+            "date": "2026-11-27T12:00:08+01:00",
             "comment": null,
             "notifyStatus": "NO",
             "data": "null"
@@ -41535,8 +41841,8 @@
         "cancelled": false,
         "isPaid": true,
         "status": {
-          "id": 3,
-          "name": "expedováno"
+          "id": 4,
+          "name": "připraveno k vyzvednutí"
         },
         "totalPrice": {
           "withVat": 1141,
@@ -41678,6 +41984,24 @@
             "adminId": null,
             "orderStatus": "expedováno",
             "date": "2026-11-26T20:35:07+01:00",
+            "comment": null,
+            "notifyStatus": "NO",
+            "data": "null"
+          },
+          {
+            "id": 7974461,
+            "adminId": null,
+            "orderStatus": "expedováno",
+            "date": "2026-11-27T11:10:06+01:00",
+            "comment": "[4PX] Změna stavu: ready_to_pickup",
+            "notifyStatus": "NO",
+            "data": "null"
+          },
+          {
+            "id": 7974462,
+            "adminId": null,
+            "orderStatus": "připraveno k vyzvednutí",
+            "date": "2026-11-27T11:10:06+01:00",
             "comment": null,
             "notifyStatus": "NO",
             "data": "null"
@@ -44772,7 +45096,7 @@
     "headline": "Final truth engine už běží pro finance truth, měřenou YTD customer truth, měřenou YTD order truth a první decision-grade akviziční split. Hlavní chybějící vrstva je netto contribution a backend channel reconciliation.",
     "whatIsTrulyKnown": [
       "Finance po marketingu: 2169441.31 Kč.",
-      "Čistá hotovostní pozice: 12703879.64 Kč.",
+      "Čistá hotovostní pozice: 22839120.43 Kč.",
       "Returning customers generated 315329090.87 Kč vs 12813539.29 Kč from new customers in the measured YTD window.",
       "Zpracované objednávky v měřeném YTD: 203194"
     ],
@@ -44793,7 +45117,7 @@
       "headline": "Byznys je silný, customer truth je měřený, ale marketing decisioning musí pořád procházet trust vrstvou a bucket split logikou.",
       "focus": [
         "Po marketingu zůstalo 2169441.31 Kč.",
-        "Net cash pozice je 12703879.64 Kč.",
+        "Net cash pozice je 22839120.43 Kč.",
         "Returning customers generated 315329090.87 Kč vs 12813539.29 Kč from new customers in the measured YTD window."
       ],
       "questions": [
